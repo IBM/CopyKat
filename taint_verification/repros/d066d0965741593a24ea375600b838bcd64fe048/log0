@@ -1,0 +1,1332 @@
+Warning: Permanently added '[localhost]:61729' (ED25519) to the list of known hosts.
+2024/05/22 19:19:11 fuzzer started
+2024/05/22 19:19:13 dialing manager at localhost:34093
+syzkaller login: [  175.027148][ T8040] cgroup: Unknown subsys name 'net'
+[  175.181949][ T8040] cgroup: Unknown subsys name 'rlimit'
+2024/05/22 19:19:13 syscalls: 3922
+2024/05/22 19:19:13 code coverage: enabled
+2024/05/22 19:19:13 comparison tracing: enabled
+2024/05/22 19:19:13 extra coverage: enabled
+2024/05/22 19:19:13 delay kcov mmap: enabled
+2024/05/22 19:19:13 setuid sandbox: enabled
+2024/05/22 19:19:13 namespace sandbox: enabled
+2024/05/22 19:19:13 Android sandbox: /sys/fs/selinux/policy does not exist
+2024/05/22 19:19:13 fault injection: enabled
+2024/05/22 19:19:13 leak checking: CONFIG_DEBUG_KMEMLEAK is not enabled
+2024/05/22 19:19:13 net packet injection: enabled
+2024/05/22 19:19:13 net device setup: enabled
+2024/05/22 19:19:13 concurrency sanitizer: /sys/kernel/debug/kcsan does not exist
+2024/05/22 19:19:13 devlink PCI setup: PCI device 0000:00:10.0 is not available
+2024/05/22 19:19:13 NIC VF setup: PCI device 0000:00:11.0 is not available
+2024/05/22 19:19:13 USB emulation: enabled
+2024/05/22 19:19:13 hci packet injection: enabled
+2024/05/22 19:19:13 wifi device emulation: enabled
+2024/05/22 19:19:13 802.15.4 emulation: enabled
+2024/05/22 19:19:13 fetching corpus: 0, signal 0/2000 (executing program)
+2024/05/22 19:19:14 fetching corpus: 50, signal 25548/28364 (executing program)
+2024/05/22 19:19:14 fetching corpus: 100, signal 35473/38941 (executing program)
+2024/05/22 19:19:14 fetching corpus: 150, signal 44265/48088 (executing program)
+2024/05/22 19:19:15 fetching corpus: 200, signal 49858/53937 (executing program)
+2024/05/22 19:19:15 fetching corpus: 250, signal 54929/59178 (executing program)
+2024/05/22 19:19:15 fetching corpus: 300, signal 57942/62396 (executing program)
+2024/05/22 19:19:15 fetching corpus: 350, signal 62431/66687 (executing program)
+2024/05/22 19:19:16 fetching corpus: 399, signal 65982/70001 (executing program)
+2024/05/22 19:19:16 fetching corpus: 441, signal 68213/72128 (executing program)
+2024/05/22 19:19:16 fetching corpus: 441, signal 68213/72495 (executing program)
+2024/05/22 19:19:16 fetching corpus: 441, signal 68213/72878 (executing program)
+2024/05/22 19:19:16 fetching corpus: 441, signal 68213/73263 (executing program)
+2024/05/22 19:19:16 fetching corpus: 441, signal 68213/73645 (executing program)
+2024/05/22 19:19:16 fetching corpus: 441, signal 68213/74031 (executing program)
+2024/05/22 19:19:16 fetching corpus: 441, signal 68213/74378 (executing program)
+2024/05/22 19:19:16 fetching corpus: 441, signal 68213/74767 (executing program)
+2024/05/22 19:19:16 fetching corpus: 441, signal 68213/75167 (executing program)
+2024/05/22 19:19:16 fetching corpus: 441, signal 68213/75563 (executing program)
+2024/05/22 19:19:16 fetching corpus: 441, signal 68213/75952 (executing program)
+2024/05/22 19:19:16 fetching corpus: 441, signal 68213/76332 (executing program)
+2024/05/22 19:19:16 fetching corpus: 441, signal 68213/76734 (executing program)
+2024/05/22 19:19:16 fetching corpus: 441, signal 68213/77119 (executing program)
+2024/05/22 19:19:16 fetching corpus: 441, signal 68213/77517 (executing program)
+2024/05/22 19:19:16 fetching corpus: 441, signal 68213/77919 (executing program)
+2024/05/22 19:19:16 fetching corpus: 441, signal 68213/78322 (executing program)
+2024/05/22 19:19:16 fetching corpus: 441, signal 68213/78693 (executing program)
+2024/05/22 19:19:16 fetching corpus: 441, signal 68213/79092 (executing program)
+2024/05/22 19:19:16 fetching corpus: 441, signal 68213/79490 (executing program)
+2024/05/22 19:19:16 fetching corpus: 441, signal 68213/79873 (executing program)
+2024/05/22 19:19:16 fetching corpus: 441, signal 68213/80273 (executing program)
+2024/05/22 19:19:16 fetching corpus: 441, signal 68213/80657 (executing program)
+2024/05/22 19:19:16 fetching corpus: 441, signal 68213/81037 (executing program)
+2024/05/22 19:19:16 fetching corpus: 441, signal 68213/81419 (executing program)
+2024/05/22 19:19:16 fetching corpus: 441, signal 68213/81826 (executing program)
+2024/05/22 19:19:16 fetching corpus: 441, signal 68213/82231 (executing program)
+2024/05/22 19:19:16 fetching corpus: 441, signal 68213/82629 (executing program)
+2024/05/22 19:19:16 fetching corpus: 441, signal 68213/83023 (executing program)
+2024/05/22 19:19:16 fetching corpus: 441, signal 68213/83404 (executing program)
+2024/05/22 19:19:16 fetching corpus: 441, signal 68213/83821 (executing program)
+2024/05/22 19:19:16 fetching corpus: 441, signal 68213/84248 (executing program)
+2024/05/22 19:19:16 fetching corpus: 442, signal 68221/84653 (executing program)
+2024/05/22 19:19:16 fetching corpus: 442, signal 68221/84814 (executing program)
+2024/05/22 19:19:16 fetching corpus: 442, signal 68221/84814 (executing program)
+2024/05/22 19:19:22 starting 1 fuzzer processes
+[  184.230025][ T8027] memfd_create() without MFD_EXEC nor MFD_NOEXEC_SEAL, pid=8027 'syz-fuzzer'
+19:19:22 executing program 0:
+chown(0x0, 0xee00, 0x0)
+
+[  203.606230][ T8054] Bluetooth: hci0: unexpected cc 0x0c03 length: 249 > 1
+[  203.609286][ T8054] Bluetooth: hci0: unexpected cc 0x1003 length: 249 > 9
+[  203.611236][ T8054] Bluetooth: hci0: unexpected cc 0x1001 length: 249 > 9
+[  203.625414][ T8054] Bluetooth: hci0: unexpected cc 0x0c23 length: 249 > 4
+[  203.627958][ T8054] Bluetooth: hci0: unexpected cc 0x0c25 length: 249 > 3
+[  203.629696][ T8054] Bluetooth: hci0: unexpected cc 0x0c38 length: 249 > 2
+[  204.667486][ T8051] chnl_net:caif_netlink_parms(): no params data found
+[  204.881403][ T8051] bridge0: port 1(bridge_slave_0) entered blocking state
+[  204.886650][ T8051] bridge0: port 1(bridge_slave_0) entered disabled state
+[  204.887688][ T8051] bridge_slave_0: entered allmulticast mode
+[  204.890312][ T8051] bridge_slave_0: entered promiscuous mode
+[  204.900060][ T8051] bridge0: port 2(bridge_slave_1) entered blocking state
+[  204.901418][ T8051] bridge0: port 2(bridge_slave_1) entered disabled state
+[  204.902510][ T8051] bridge_slave_1: entered allmulticast mode
+[  204.909166][ T8051] bridge_slave_1: entered promiscuous mode
+[  204.974585][ T8051] bond0: (slave bond_slave_0): Enslaving as an active interface with an up link
+[  204.980353][ T8051] bond0: (slave bond_slave_1): Enslaving as an active interface with an up link
+[  205.044461][ T8051] team0: Port device team_slave_0 added
+[  205.049739][ T8051] team0: Port device team_slave_1 added
+[  205.109406][ T8051] batman_adv: batadv0: Adding interface: batadv_slave_0
+[  205.110232][ T8051] batman_adv: batadv0: The MTU of interface batadv_slave_0 is too small (1500) to handle the transport of batman-adv packets. Packets going over this interface will be fragmented on layer2 which could impact the performance. Setting the MTU to 1560 would solve the problem.
+[  205.115997][ T8051] batman_adv: batadv0: Not using interface batadv_slave_0 (retrying later): interface not active
+[  205.120875][ T8051] batman_adv: batadv0: Adding interface: batadv_slave_1
+[  205.121664][ T8051] batman_adv: batadv0: The MTU of interface batadv_slave_1 is too small (1500) to handle the transport of batman-adv packets. Packets going over this interface will be fragmented on layer2 which could impact the performance. Setting the MTU to 1560 would solve the problem.
+[  205.129459][ T8051] batman_adv: batadv0: Not using interface batadv_slave_1 (retrying later): interface not active
+[  205.218824][ T8051] hsr_slave_0: entered promiscuous mode
+[  205.228015][ T8051] hsr_slave_1: entered promiscuous mode
+[  205.355322][ T1221] ieee802154 phy0 wpan0: encryption failed: -22
+[  205.356311][ T1221] ieee802154 phy1 wpan1: encryption failed: -22
+[  205.671821][ T8051] netdevsim netdevsim0 netdevsim0: renamed from eth0
+[  205.674639][ T8054] Bluetooth: hci0: command 0x0409 tx timeout
+[  205.699228][ T8051] netdevsim netdevsim0 netdevsim1: renamed from eth1
+[  205.713424][ T8051] netdevsim netdevsim0 netdevsim2: renamed from eth2
+[  205.720794][ T8051] netdevsim netdevsim0 netdevsim3: renamed from eth3
+[  205.895255][ T8051] 8021q: adding VLAN 0 to HW filter on device bond0
+[  205.912794][ T4418] IPv6: ADDRCONF(NETDEV_CHANGE): veth1: link becomes ready
+[  205.915745][ T4418] IPv6: ADDRCONF(NETDEV_CHANGE): veth0: link becomes ready
+[  205.931992][ T8051] 8021q: adding VLAN 0 to HW filter on device team0
+[  205.941562][ T4418] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_to_bridge: link becomes ready
+[  205.945713][ T4418] IPv6: ADDRCONF(NETDEV_CHANGE): bridge_slave_0: link becomes ready
+[  205.949587][ T4418] bridge0: port 1(bridge_slave_0) entered blocking state
+[  205.950582][ T4418] bridge0: port 1(bridge_slave_0) entered forwarding state
+[  205.957301][ T4418] IPv6: ADDRCONF(NETDEV_CHANGE): bridge0: link becomes ready
+[  205.965757][ T4418] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_to_bridge: link becomes ready
+[  205.969367][ T4418] IPv6: ADDRCONF(NETDEV_CHANGE): bridge_slave_1: link becomes ready
+[  205.971798][ T4418] bridge0: port 2(bridge_slave_1) entered blocking state
+[  205.972629][ T4418] bridge0: port 2(bridge_slave_1) entered forwarding state
+[  205.991581][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_to_bond: link becomes ready
+[  206.009083][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_to_bond: link becomes ready
+[  206.025753][ T4448] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_to_team: link becomes ready
+[  206.031755][ T4448] IPv6: ADDRCONF(NETDEV_CHANGE): team_slave_0: link becomes ready
+[  206.045151][ T4448] IPv6: ADDRCONF(NETDEV_CHANGE): team0: link becomes ready
+[  206.046929][ T4448] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_to_team: link becomes ready
+[  206.049763][ T4448] IPv6: ADDRCONF(NETDEV_CHANGE): team_slave_1: link becomes ready
+[  206.061753][ T4448] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_to_hsr: link becomes ready
+[  206.065792][ T4448] IPv6: ADDRCONF(NETDEV_CHANGE): hsr_slave_0: link becomes ready
+[  206.078025][ T4448] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_to_hsr: link becomes ready
+[  206.079848][ T4448] IPv6: ADDRCONF(NETDEV_CHANGE): hsr_slave_1: link becomes ready
+[  206.097895][ T8051] IPv6: ADDRCONF(NETDEV_CHANGE): hsr0: link becomes ready
+[  206.426239][ T4448] IPv6: ADDRCONF(NETDEV_CHANGE): vxcan1: link becomes ready
+[  206.427261][ T4448] IPv6: ADDRCONF(NETDEV_CHANGE): vxcan0: link becomes ready
+[  206.447313][ T8051] 8021q: adding VLAN 0 to HW filter on device batadv0
+[  206.478374][ T4448] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_virt_wifi: link becomes ready
+[  206.480276][ T4448] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_virt_wifi: link becomes ready
+[  206.517257][ T4448] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_vlan: link becomes ready
+[  206.519592][ T4448] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_vlan: link becomes ready
+[  206.522642][ T4448] IPv6: ADDRCONF(NETDEV_CHANGE): vlan0: link becomes ready
+[  206.528553][ T4448] IPv6: ADDRCONF(NETDEV_CHANGE): vlan1: link becomes ready
+[  206.540395][ T8051] veth0_vlan: entered promiscuous mode
+[  206.560567][ T8051] veth1_vlan: entered promiscuous mode
+[  206.605589][ T4448] IPv6: ADDRCONF(NETDEV_CHANGE): macvlan0: link becomes ready
+[  206.607343][ T4448] IPv6: ADDRCONF(NETDEV_CHANGE): macvlan1: link becomes ready
+[  206.609190][ T4448] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_macvtap: link becomes ready
+[  206.611920][ T4448] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_macvtap: link becomes ready
+[  206.622810][ T8051] veth0_macvtap: entered promiscuous mode
+[  206.632572][ T8051] veth1_macvtap: entered promiscuous mode
+[  206.666556][ T8051] batman_adv: batadv0: Interface activated: batadv_slave_0
+[  206.667677][ T4448] IPv6: ADDRCONF(NETDEV_CHANGE): macvtap0: link becomes ready
+[  206.669663][ T4448] IPv6: ADDRCONF(NETDEV_CHANGE): macsec0: link becomes ready
+[  206.672395][ T4448] IPv6: ADDRCONF(NETDEV_CHANGE): batadv_slave_0: link becomes ready
+[  206.677174][ T4448] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_to_batadv: link becomes ready
+[  206.691256][ T8051] batman_adv: batadv0: Interface activated: batadv_slave_1
+[  206.694018][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): batadv_slave_1: link becomes ready
+[  206.695888][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_to_batadv: link becomes ready
+[  206.711663][ T8051] netdevsim netdevsim0 netdevsim0: set [1, 0] type 2 family 0 port 6081 - 0
+[  206.712748][ T8051] netdevsim netdevsim0 netdevsim1: set [1, 0] type 2 family 0 port 6081 - 0
+[  206.726146][ T8051] netdevsim netdevsim0 netdevsim2: set [1, 0] type 2 family 0 port 6081 - 0
+[  206.727116][ T8051] netdevsim netdevsim0 netdevsim3: set [1, 0] type 2 family 0 port 6081 - 0
+[  206.849504][ T8051] ieee80211 phy3: Selected rate control algorithm 'minstrel_ht'
+[  206.972066][   T35] wlan0: Created IBSS using preconfigured BSSID 50:50:50:50:50:50
+[  206.976435][   T35] wlan0: Creating new IBSS network, BSSID 50:50:50:50:50:50
+[  206.979860][ T8274] IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+[  207.012039][ T8051] ieee80211 phy4: Selected rate control algorithm 'minstrel_ht'
+[  207.099043][   T35] wlan1: Created IBSS using preconfigured BSSID 50:50:50:50:50:50
+[  207.100074][   T35] wlan1: Creating new IBSS network, BSSID 50:50:50:50:50:50
+[  207.103657][    T7] IPv6: ADDRCONF(NETDEV_CHANGE): wlan1: link becomes ready
+[  207.759294][ T4407] Bluetooth: hci0: command 0x041b tx timeout
+19:19:47 executing program 0:
+chown(0x0, 0xee00, 0x0)
+
+2024/05/22 19:19:47 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+[  209.835683][ T8054] Bluetooth: hci0: command 0x040f tx timeout
+19:19:48 executing program 0:
+chown(0x0, 0xee00, 0x0)
+
+[  211.914841][ T4407] Bluetooth: hci0: command 0x0419 tx timeout
+19:19:50 executing program 0:
+chown(0x0, 0xee00, 0x0)
+
+19:19:52 executing program 0:
+r0 = socket$nl_route(0x10, 0x3, 0x0)
+r1 = socket$inet6_icmp_raw(0xa, 0x3, 0x3a)
+ioctl$sock_SIOCGIFINDEX(r1, 0x8933, &(0x7f0000000000)={'bridge0\x00', <r2=>0x0})
+sendmsg$nl_route(r0, &(0x7f0000000280)={0x0, 0x0, &(0x7f0000000580)={&(0x7f0000000740)=@newlink={0xd0, 0x10, 0x403, 0x0, 0x0, {}, [@IFLA_LINKINFO={0xa8, 0x12, 0x0, 0x1, @vlan={{0x9}, {0x98, 0x2, 0x0, 0x1, [@IFLA_VLAN_ID={0x6}, @IFLA_VLAN_FLAGS={0xc}, @IFLA_VLAN_FLAGS={0xc, 0x2, {0xa54}}, @IFLA_VLAN_INGRESS_QOS={0x10, 0x4, 0x0, 0x1, [@IFLA_VLAN_QOS_MAPPING={0xc, 0x1, {0x6}}]}, @IFLA_VLAN_INGRESS_QOS={0x64, 0x4, 0x0, 0x1, [@IFLA_VLAN_QOS_MAPPING={0xc}, @IFLA_VLAN_QOS_MAPPING={0xc, 0x1, {0x0, 0x68}}, @IFLA_VLAN_QOS_MAPPING={0xc, 0x1, {0x5, 0x95ee}}, @IFLA_VLAN_QOS_MAPPING={0xc, 0x1, {0x3, 0x8001}}, @IFLA_VLAN_QOS_MAPPING={0xc, 0x1, {0xb22, 0x1}}, @IFLA_VLAN_QOS_MAPPING={0xc, 0x1, {0x4, 0x1}}, @IFLA_VLAN_QOS_MAPPING={0xc, 0x1, {0x6, 0x2}}, @IFLA_VLAN_QOS_MAPPING={0xc, 0x1, {0xae7f, 0x1}}]}]}}}, @IFLA_LINK={0x8, 0x5, r2}]}, 0xd0}, 0x1, 0xba01}, 0x0)
+
+2024/05/22 19:19:54 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2297, Ip:0x85ffe255}
+2024/05/22 19:19:54 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x30be, Ip:0x85ffe243}
+2024/05/22 19:19:54 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 19:19:54 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x30be, Ip:0x85ffa1f0}
+2024/05/22 19:19:54 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 19:19:54 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3e9b, Ip:0x833c12dd}
+19:19:54 executing program 0:
+r0 = socket$nl_route(0x10, 0x3, 0x0)
+r1 = socket$inet6_icmp_raw(0xa, 0x3, 0x3a)
+ioctl$sock_SIOCGIFINDEX(r1, 0x8933, &(0x7f0000000000)={'bridge0\x00', <r2=>0x0})
+sendmsg$nl_route(r0, &(0x7f0000000280)={0x0, 0x0, &(0x7f0000000580)={&(0x7f0000000740)=@newlink={0xd0, 0x10, 0x403, 0x0, 0x0, {}, [@IFLA_LINKINFO={0xa8, 0x12, 0x0, 0x1, @vlan={{0x9}, {0x98, 0x2, 0x0, 0x1, [@IFLA_VLAN_ID={0x6}, @IFLA_VLAN_FLAGS={0xc}, @IFLA_VLAN_FLAGS={0xc, 0x2, {0xa54}}, @IFLA_VLAN_INGRESS_QOS={0x10, 0x4, 0x0, 0x1, [@IFLA_VLAN_QOS_MAPPING={0xc, 0x1, {0x6}}]}, @IFLA_VLAN_INGRESS_QOS={0x64, 0x4, 0x0, 0x1, [@IFLA_VLAN_QOS_MAPPING={0xc}, @IFLA_VLAN_QOS_MAPPING={0xc, 0x1, {0x0, 0x68}}, @IFLA_VLAN_QOS_MAPPING={0xc, 0x1, {0x5, 0x95ee}}, @IFLA_VLAN_QOS_MAPPING={0xc, 0x1, {0x3, 0x8001}}, @IFLA_VLAN_QOS_MAPPING={0xc, 0x1, {0xb22, 0x1}}, @IFLA_VLAN_QOS_MAPPING={0xc, 0x1, {0x4, 0x1}}, @IFLA_VLAN_QOS_MAPPING={0xc, 0x1, {0x6, 0x2}}, @IFLA_VLAN_QOS_MAPPING={0xc, 0x1, {0xae7f, 0x1}}]}]}}}, @IFLA_LINK={0x8, 0x5, r2}]}, 0xd0}, 0x1, 0xba01}, 0x0)
+
+2024/05/22 19:19:54 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x4de3, Ip:0x85ffa202}
+19:19:55 executing program 0:
+r0 = socket$nl_route(0x10, 0x3, 0x0)
+r1 = socket$inet6_icmp_raw(0xa, 0x3, 0x3a)
+ioctl$sock_SIOCGIFINDEX(r1, 0x8933, &(0x7f0000000000)={'bridge0\x00', <r2=>0x0})
+sendmsg$nl_route(r0, &(0x7f0000000280)={0x0, 0x0, &(0x7f0000000580)={&(0x7f0000000740)=@newlink={0xd0, 0x10, 0x403, 0x0, 0x0, {}, [@IFLA_LINKINFO={0xa8, 0x12, 0x0, 0x1, @vlan={{0x9}, {0x98, 0x2, 0x0, 0x1, [@IFLA_VLAN_ID={0x6}, @IFLA_VLAN_FLAGS={0xc}, @IFLA_VLAN_FLAGS={0xc, 0x2, {0xa54}}, @IFLA_VLAN_INGRESS_QOS={0x10, 0x4, 0x0, 0x1, [@IFLA_VLAN_QOS_MAPPING={0xc, 0x1, {0x6}}]}, @IFLA_VLAN_INGRESS_QOS={0x64, 0x4, 0x0, 0x1, [@IFLA_VLAN_QOS_MAPPING={0xc}, @IFLA_VLAN_QOS_MAPPING={0xc, 0x1, {0x0, 0x68}}, @IFLA_VLAN_QOS_MAPPING={0xc, 0x1, {0x5, 0x95ee}}, @IFLA_VLAN_QOS_MAPPING={0xc, 0x1, {0x3, 0x8001}}, @IFLA_VLAN_QOS_MAPPING={0xc, 0x1, {0xb22, 0x1}}, @IFLA_VLAN_QOS_MAPPING={0xc, 0x1, {0x4, 0x1}}, @IFLA_VLAN_QOS_MAPPING={0xc, 0x1, {0x6, 0x2}}, @IFLA_VLAN_QOS_MAPPING={0xc, 0x1, {0xae7f, 0x1}}]}]}}}, @IFLA_LINK={0x8, 0x5, r2}]}, 0xd0}, 0x1, 0xba01}, 0x0)
+
+19:19:56 executing program 0:
+r0 = socket$nl_route(0x10, 0x3, 0x0)
+r1 = socket$inet6_icmp_raw(0xa, 0x3, 0x3a)
+ioctl$sock_SIOCGIFINDEX(r1, 0x8933, &(0x7f0000000000)={'bridge0\x00', <r2=>0x0})
+sendmsg$nl_route(r0, &(0x7f0000000280)={0x0, 0x0, &(0x7f0000000580)={&(0x7f0000000740)=@newlink={0xd0, 0x10, 0x403, 0x0, 0x0, {}, [@IFLA_LINKINFO={0xa8, 0x12, 0x0, 0x1, @vlan={{0x9}, {0x98, 0x2, 0x0, 0x1, [@IFLA_VLAN_ID={0x6}, @IFLA_VLAN_FLAGS={0xc}, @IFLA_VLAN_FLAGS={0xc, 0x2, {0xa54}}, @IFLA_VLAN_INGRESS_QOS={0x10, 0x4, 0x0, 0x1, [@IFLA_VLAN_QOS_MAPPING={0xc, 0x1, {0x6}}]}, @IFLA_VLAN_INGRESS_QOS={0x64, 0x4, 0x0, 0x1, [@IFLA_VLAN_QOS_MAPPING={0xc}, @IFLA_VLAN_QOS_MAPPING={0xc, 0x1, {0x0, 0x68}}, @IFLA_VLAN_QOS_MAPPING={0xc, 0x1, {0x5, 0x95ee}}, @IFLA_VLAN_QOS_MAPPING={0xc, 0x1, {0x3, 0x8001}}, @IFLA_VLAN_QOS_MAPPING={0xc, 0x1, {0xb22, 0x1}}, @IFLA_VLAN_QOS_MAPPING={0xc, 0x1, {0x4, 0x1}}, @IFLA_VLAN_QOS_MAPPING={0xc, 0x1, {0x6, 0x2}}, @IFLA_VLAN_QOS_MAPPING={0xc, 0x1, {0xae7f, 0x1}}]}]}}}, @IFLA_LINK={0x8, 0x5, r2}]}, 0xd0}, 0x1, 0xba01}, 0x0)
+
+19:19:58 executing program 0:
+bpf$PROG_LOAD(0x5, &(0x7f0000000b00)={0x0, 0xf, &(0x7f0000000340)=ANY=[@ANYBLOB="1800000000000000000000000000000018110000", @ANYRES32, @ANYBLOB="0000000000000000b702000014000000b7030000000000008500000083000000bf09000000000000550901000000000095"], 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+r0 = openat$vhost_vsock(0xffffffffffffff9c, &(0x7f0000000640), 0x2, 0x0)
+ioctl$VHOST_SET_VRING_BASE(r0, 0xaf01, 0x0)
+r1 = eventfd(0x0)
+syz_emit_ethernet(0x46, &(0x7f0000000340)=ANY=[@ANYBLOB="3c82bf073aaebbbbbbbbbbbb86dd6001010000101100fe8000000000000000000000000000bbfe8000000000000000000000000000aa00000000001090780200000000"], 0x0)
+ioctl$VHOST_SET_VRING_BASE(r0, 0x4008af12, &(0x7f0000000200)={0x1, 0x101})
+ioctl$VHOST_SET_VRING_ADDR(r0, 0x4028af11, &(0x7f00000001c0)={0x0, 0x0, 0x0, &(0x7f00000002c0)=""/138, 0x0})
+ioctl$VHOST_SET_MEM_TABLE(r0, 0x4008af03, &(0x7f0000000940)={0x1, 0x0, [{0x0, 0xc3, &(0x7f0000000540)=""/195}]})
+ioctl$VHOST_SET_LOG_FD(r0, 0x4004af07, &(0x7f0000000240)=r1)
+ioctl$VHOST_SET_VRING_KICK(r0, 0x4008af20, &(0x7f0000000040)={0x1, r1})
+ioctl$VHOST_SET_VRING_ADDR(r0, 0x4028af11, &(0x7f0000000280)={0x1, 0x1, &(0x7f0000000380)=""/233, &(0x7f00000000c0)=""/87, &(0x7f0000000480)=""/74})
+ioctl$VHOST_VSOCK_SET_RUNNING(r0, 0x4004af61, &(0x7f0000000000)=0x20000)
+r2 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000000)='cpuacct.usage_percpu_sys\x00', 0x275a, 0x0)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x0, 0x10012, r2, 0x0)
+sendmsg$IPSET_CMD_CREATE(0xffffffffffffffff, 0x0, 0x0)
+
+2024/05/22 19:20:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2b8d, Ip:0x8170f374}
+19:20:00 executing program 0:
+bpf$PROG_LOAD(0x5, &(0x7f0000000b00)={0x0, 0xf, &(0x7f0000000340)=ANY=[@ANYBLOB="1800000000000000000000000000000018110000", @ANYRES32, @ANYBLOB="0000000000000000b702000014000000b7030000000000008500000083000000bf09000000000000550901000000000095"], 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+r0 = openat$vhost_vsock(0xffffffffffffff9c, &(0x7f0000000640), 0x2, 0x0)
+ioctl$VHOST_SET_VRING_BASE(r0, 0xaf01, 0x0)
+r1 = eventfd(0x0)
+syz_emit_ethernet(0x46, &(0x7f0000000340)=ANY=[@ANYBLOB="3c82bf073aaebbbbbbbbbbbb86dd6001010000101100fe8000000000000000000000000000bbfe8000000000000000000000000000aa00000000001090780200000000"], 0x0)
+ioctl$VHOST_SET_VRING_BASE(r0, 0x4008af12, &(0x7f0000000200)={0x1, 0x101})
+ioctl$VHOST_SET_VRING_ADDR(r0, 0x4028af11, &(0x7f00000001c0)={0x0, 0x0, 0x0, &(0x7f00000002c0)=""/138, 0x0})
+ioctl$VHOST_SET_MEM_TABLE(r0, 0x4008af03, &(0x7f0000000940)={0x1, 0x0, [{0x0, 0xc3, &(0x7f0000000540)=""/195}]})
+ioctl$VHOST_SET_LOG_FD(r0, 0x4004af07, &(0x7f0000000240)=r1)
+ioctl$VHOST_SET_VRING_KICK(r0, 0x4008af20, &(0x7f0000000040)={0x1, r1})
+ioctl$VHOST_SET_VRING_ADDR(r0, 0x4028af11, &(0x7f0000000280)={0x1, 0x1, &(0x7f0000000380)=""/233, &(0x7f00000000c0)=""/87, &(0x7f0000000480)=""/74})
+ioctl$VHOST_VSOCK_SET_RUNNING(r0, 0x4004af61, &(0x7f0000000000)=0x20000)
+r2 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000000)='cpuacct.usage_percpu_sys\x00', 0x275a, 0x0)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x0, 0x10012, r2, 0x0)
+sendmsg$IPSET_CMD_CREATE(0xffffffffffffffff, 0x0, 0x0)
+
+2024/05/22 19:20:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x313d, Ip:0x8170cde2}
+2024/05/22 19:20:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 19:20:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x350d, Ip:0x8170cdf5}
+2024/05/22 19:20:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+2024/05/22 19:20:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3e9b, Ip:0x833c12dd}
+2024/05/22 19:20:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x52a, Ip:0x85bfd17a}
+2024/05/22 19:20:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2065, Ip:0x85bfc7cc}
+2024/05/22 19:20:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x304a, Ip:0x85bfd168}
+2024/05/22 19:20:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 19:20:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2065, Ip:0x85bfc7cc}
+2024/05/22 19:20:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x304a, Ip:0x85bfc93b}
+2024/05/22 19:20:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 19:20:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x59b6, Ip:0x85bfc94d}
+2024/05/22 19:20:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2983, Ip:0x85bfe065}
+2024/05/22 19:20:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2b00, Ip:0x85bfe509}
+2024/05/22 19:20:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x304a, Ip:0x85bfe053}
+2024/05/22 19:20:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 19:20:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x94b, Ip:0x85bfdf83}
+2024/05/22 19:20:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x96b, Ip:0x85bfcfa8}
+2024/05/22 19:20:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2065, Ip:0x85bfc7cc}
+2024/05/22 19:20:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x304a, Ip:0x85bfcf96}
+2024/05/22 19:20:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 19:20:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2065, Ip:0x85bfc7cc}
+2024/05/22 19:20:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x304a, Ip:0x85bfc93b}
+2024/05/22 19:20:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 19:20:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x59b6, Ip:0x85bfc94d}
+2024/05/22 19:20:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x826, Ip:0x85be7a71}
+2024/05/22 19:20:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x24ba, Ip:0x85bff130}
+2024/05/22 19:20:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 19:20:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x414a, Ip:0x85be7a5f}
+2024/05/22 19:20:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+2024/05/22 19:20:00 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x5547, Ip:0x81ebd996}
+19:20:01 executing program 0:
+bpf$PROG_LOAD(0x5, &(0x7f0000000b00)={0x0, 0xf, &(0x7f0000000340)=ANY=[@ANYBLOB="1800000000000000000000000000000018110000", @ANYRES32, @ANYBLOB="0000000000000000b702000014000000b7030000000000008500000083000000bf09000000000000550901000000000095"], 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+r0 = openat$vhost_vsock(0xffffffffffffff9c, &(0x7f0000000640), 0x2, 0x0)
+ioctl$VHOST_SET_VRING_BASE(r0, 0xaf01, 0x0)
+r1 = eventfd(0x0)
+syz_emit_ethernet(0x46, &(0x7f0000000340)=ANY=[@ANYBLOB="3c82bf073aaebbbbbbbbbbbb86dd6001010000101100fe8000000000000000000000000000bbfe8000000000000000000000000000aa00000000001090780200000000"], 0x0)
+ioctl$VHOST_SET_VRING_BASE(r0, 0x4008af12, &(0x7f0000000200)={0x1, 0x101})
+ioctl$VHOST_SET_VRING_ADDR(r0, 0x4028af11, &(0x7f00000001c0)={0x0, 0x0, 0x0, &(0x7f00000002c0)=""/138, 0x0})
+ioctl$VHOST_SET_MEM_TABLE(r0, 0x4008af03, &(0x7f0000000940)={0x1, 0x0, [{0x0, 0xc3, &(0x7f0000000540)=""/195}]})
+ioctl$VHOST_SET_LOG_FD(r0, 0x4004af07, &(0x7f0000000240)=r1)
+ioctl$VHOST_SET_VRING_KICK(r0, 0x4008af20, &(0x7f0000000040)={0x1, r1})
+ioctl$VHOST_SET_VRING_ADDR(r0, 0x4028af11, &(0x7f0000000280)={0x1, 0x1, &(0x7f0000000380)=""/233, &(0x7f00000000c0)=""/87, &(0x7f0000000480)=""/74})
+ioctl$VHOST_VSOCK_SET_RUNNING(r0, 0x4004af61, &(0x7f0000000000)=0x20000)
+r2 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000000)='cpuacct.usage_percpu_sys\x00', 0x275a, 0x0)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x0, 0x10012, r2, 0x0)
+sendmsg$IPSET_CMD_CREATE(0xffffffffffffffff, 0x0, 0x0)
+
+19:20:03 executing program 0:
+bpf$PROG_LOAD(0x5, &(0x7f0000000b00)={0x0, 0xf, &(0x7f0000000340)=ANY=[@ANYBLOB="1800000000000000000000000000000018110000", @ANYRES32, @ANYBLOB="0000000000000000b702000014000000b7030000000000008500000083000000bf09000000000000550901000000000095"], 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+r0 = openat$vhost_vsock(0xffffffffffffff9c, &(0x7f0000000640), 0x2, 0x0)
+ioctl$VHOST_SET_VRING_BASE(r0, 0xaf01, 0x0)
+r1 = eventfd(0x0)
+syz_emit_ethernet(0x46, &(0x7f0000000340)=ANY=[@ANYBLOB="3c82bf073aaebbbbbbbbbbbb86dd6001010000101100fe8000000000000000000000000000bbfe8000000000000000000000000000aa00000000001090780200000000"], 0x0)
+ioctl$VHOST_SET_VRING_BASE(r0, 0x4008af12, &(0x7f0000000200)={0x1, 0x101})
+ioctl$VHOST_SET_VRING_ADDR(r0, 0x4028af11, &(0x7f00000001c0)={0x0, 0x0, 0x0, &(0x7f00000002c0)=""/138, 0x0})
+ioctl$VHOST_SET_MEM_TABLE(r0, 0x4008af03, &(0x7f0000000940)={0x1, 0x0, [{0x0, 0xc3, &(0x7f0000000540)=""/195}]})
+ioctl$VHOST_SET_LOG_FD(r0, 0x4004af07, &(0x7f0000000240)=r1)
+ioctl$VHOST_SET_VRING_KICK(r0, 0x4008af20, &(0x7f0000000040)={0x1, r1})
+ioctl$VHOST_SET_VRING_ADDR(r0, 0x4028af11, &(0x7f0000000280)={0x1, 0x1, &(0x7f0000000380)=""/233, &(0x7f00000000c0)=""/87, &(0x7f0000000480)=""/74})
+ioctl$VHOST_VSOCK_SET_RUNNING(r0, 0x4004af61, &(0x7f0000000000)=0x20000)
+r2 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000000)='cpuacct.usage_percpu_sys\x00', 0x275a, 0x0)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x0, 0x10012, r2, 0x0)
+sendmsg$IPSET_CMD_CREATE(0xffffffffffffffff, 0x0, 0x0)
+
+19:20:04 executing program 0:
+bpf$PROG_LOAD(0x5, &(0x7f0000000b00)={0x0, 0xf, &(0x7f0000000340)=ANY=[@ANYBLOB="1800000000000000000000000000000018110000", @ANYRES32, @ANYBLOB="0000000000000000b702000014000000b7030000000000008500000083000000bf09000000000000550901000000000095"], 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+r0 = openat$vhost_vsock(0xffffffffffffff9c, &(0x7f0000000640), 0x2, 0x0)
+ioctl$VHOST_SET_VRING_BASE(r0, 0xaf01, 0x0)
+r1 = eventfd(0x0)
+syz_emit_ethernet(0x46, &(0x7f0000000340)=ANY=[@ANYBLOB="3c82bf073aaebbbbbbbbbbbb86dd6001010000101100fe8000000000000000000000000000bbfe8000000000000000000000000000aa00000000001090780200000000"], 0x0)
+ioctl$VHOST_SET_VRING_BASE(r0, 0x4008af12, &(0x7f0000000200)={0x1, 0x101})
+ioctl$VHOST_SET_VRING_ADDR(r0, 0x4028af11, &(0x7f00000001c0)={0x0, 0x0, 0x0, &(0x7f00000002c0)=""/138, 0x0})
+ioctl$VHOST_SET_MEM_TABLE(r0, 0x4008af03, &(0x7f0000000940)={0x1, 0x0, [{0x0, 0xc3, &(0x7f0000000540)=""/195}]})
+ioctl$VHOST_SET_LOG_FD(r0, 0x4004af07, &(0x7f0000000240)=r1)
+ioctl$VHOST_SET_VRING_KICK(r0, 0x4008af20, &(0x7f0000000040)={0x1, r1})
+ioctl$VHOST_SET_VRING_ADDR(r0, 0x4028af11, &(0x7f0000000280)={0x1, 0x1, &(0x7f0000000380)=""/233, &(0x7f00000000c0)=""/87, &(0x7f0000000480)=""/74})
+ioctl$VHOST_VSOCK_SET_RUNNING(r0, 0x4004af61, &(0x7f0000000000)=0x20000)
+r2 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000000)='cpuacct.usage_percpu_sys\x00', 0x275a, 0x0)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x0, 0x10012, r2, 0x0)
+sendmsg$IPSET_CMD_CREATE(0xffffffffffffffff, 0x0, 0x0)
+
+19:20:06 executing program 0:
+bpf$PROG_LOAD(0x5, &(0x7f0000000b00)={0x0, 0xf, &(0x7f0000000340)=ANY=[@ANYBLOB="1800000000000000000000000000000018110000", @ANYRES32, @ANYBLOB="0000000000000000b702000014000000b7030000000000008500000083000000bf09000000000000550901000000000095"], 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+r0 = openat$vhost_vsock(0xffffffffffffff9c, &(0x7f0000000640), 0x2, 0x0)
+ioctl$VHOST_SET_VRING_BASE(r0, 0xaf01, 0x0)
+r1 = eventfd(0x0)
+syz_emit_ethernet(0x46, &(0x7f0000000340)=ANY=[@ANYBLOB="3c82bf073aaebbbbbbbbbbbb86dd6001010000101100fe8000000000000000000000000000bbfe8000000000000000000000000000aa00000000001090780200000000"], 0x0)
+ioctl$VHOST_SET_VRING_BASE(r0, 0x4008af12, &(0x7f0000000200)={0x1, 0x101})
+ioctl$VHOST_SET_VRING_ADDR(r0, 0x4028af11, &(0x7f00000001c0)={0x0, 0x0, 0x0, &(0x7f00000002c0)=""/138, 0x0})
+ioctl$VHOST_SET_MEM_TABLE(r0, 0x4008af03, &(0x7f0000000940)={0x1, 0x0, [{0x0, 0xc3, &(0x7f0000000540)=""/195}]})
+ioctl$VHOST_SET_LOG_FD(r0, 0x4004af07, &(0x7f0000000240)=r1)
+ioctl$VHOST_SET_VRING_KICK(r0, 0x4008af20, &(0x7f0000000040)={0x1, r1})
+ioctl$VHOST_SET_VRING_ADDR(r0, 0x4028af11, &(0x7f0000000280)={0x1, 0x1, &(0x7f0000000380)=""/233, &(0x7f00000000c0)=""/87, &(0x7f0000000480)=""/74})
+ioctl$VHOST_VSOCK_SET_RUNNING(r0, 0x4004af61, &(0x7f0000000000)=0x20000)
+r2 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000000)='cpuacct.usage_percpu_sys\x00', 0x275a, 0x0)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x0, 0x10012, r2, 0x0)
+sendmsg$IPSET_CMD_CREATE(0xffffffffffffffff, 0x0, 0x0)
+
+19:20:07 executing program 0:
+bpf$PROG_LOAD(0x5, &(0x7f0000000b00)={0x0, 0xf, &(0x7f0000000340)=ANY=[@ANYBLOB="1800000000000000000000000000000018110000", @ANYRES32, @ANYBLOB="0000000000000000b702000014000000b7030000000000008500000083000000bf09000000000000550901000000000095"], 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+r0 = openat$vhost_vsock(0xffffffffffffff9c, &(0x7f0000000640), 0x2, 0x0)
+ioctl$VHOST_SET_VRING_BASE(r0, 0xaf01, 0x0)
+r1 = eventfd(0x0)
+syz_emit_ethernet(0x46, &(0x7f0000000340)=ANY=[@ANYBLOB="3c82bf073aaebbbbbbbbbbbb86dd6001010000101100fe8000000000000000000000000000bbfe8000000000000000000000000000aa00000000001090780200000000"], 0x0)
+ioctl$VHOST_SET_VRING_BASE(r0, 0x4008af12, &(0x7f0000000200)={0x1, 0x101})
+ioctl$VHOST_SET_VRING_ADDR(r0, 0x4028af11, &(0x7f00000001c0)={0x0, 0x0, 0x0, &(0x7f00000002c0)=""/138, 0x0})
+ioctl$VHOST_SET_MEM_TABLE(r0, 0x4008af03, &(0x7f0000000940)={0x1, 0x0, [{0x0, 0xc3, &(0x7f0000000540)=""/195}]})
+ioctl$VHOST_SET_LOG_FD(r0, 0x4004af07, &(0x7f0000000240)=r1)
+ioctl$VHOST_SET_VRING_KICK(r0, 0x4008af20, &(0x7f0000000040)={0x1, r1})
+ioctl$VHOST_SET_VRING_ADDR(r0, 0x4028af11, &(0x7f0000000280)={0x1, 0x1, &(0x7f0000000380)=""/233, &(0x7f00000000c0)=""/87, &(0x7f0000000480)=""/74})
+ioctl$VHOST_VSOCK_SET_RUNNING(r0, 0x4004af61, &(0x7f0000000000)=0x20000)
+r2 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000000)='cpuacct.usage_percpu_sys\x00', 0x275a, 0x0)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x0, 0x10012, r2, 0x0)
+sendmsg$IPSET_CMD_CREATE(0xffffffffffffffff, 0x0, 0x0)
+
+19:20:09 executing program 0:
+bpf$PROG_LOAD(0x5, &(0x7f0000000b00)={0x0, 0xf, &(0x7f0000000340)=ANY=[@ANYBLOB="1800000000000000000000000000000018110000", @ANYRES32, @ANYBLOB="0000000000000000b702000014000000b7030000000000008500000083000000bf09000000000000550901000000000095"], 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+r0 = openat$vhost_vsock(0xffffffffffffff9c, &(0x7f0000000640), 0x2, 0x0)
+ioctl$VHOST_SET_VRING_BASE(r0, 0xaf01, 0x0)
+r1 = eventfd(0x0)
+syz_emit_ethernet(0x46, &(0x7f0000000340)=ANY=[@ANYBLOB="3c82bf073aaebbbbbbbbbbbb86dd6001010000101100fe8000000000000000000000000000bbfe8000000000000000000000000000aa00000000001090780200000000"], 0x0)
+ioctl$VHOST_SET_VRING_BASE(r0, 0x4008af12, &(0x7f0000000200)={0x1, 0x101})
+ioctl$VHOST_SET_VRING_ADDR(r0, 0x4028af11, &(0x7f00000001c0)={0x0, 0x0, 0x0, &(0x7f00000002c0)=""/138, 0x0})
+ioctl$VHOST_SET_MEM_TABLE(r0, 0x4008af03, &(0x7f0000000940)={0x1, 0x0, [{0x0, 0xc3, &(0x7f0000000540)=""/195}]})
+ioctl$VHOST_SET_LOG_FD(r0, 0x4004af07, &(0x7f0000000240)=r1)
+ioctl$VHOST_SET_VRING_KICK(r0, 0x4008af20, &(0x7f0000000040)={0x1, r1})
+ioctl$VHOST_SET_VRING_ADDR(r0, 0x4028af11, &(0x7f0000000280)={0x1, 0x1, &(0x7f0000000380)=""/233, &(0x7f00000000c0)=""/87, &(0x7f0000000480)=""/74})
+ioctl$VHOST_VSOCK_SET_RUNNING(r0, 0x4004af61, &(0x7f0000000000)=0x20000)
+r2 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000000)='cpuacct.usage_percpu_sys\x00', 0x275a, 0x0)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x0, 0x10012, r2, 0x0)
+sendmsg$IPSET_CMD_CREATE(0xffffffffffffffff, 0x0, 0x0)
+
+19:20:10 executing program 0:
+bpf$PROG_LOAD(0x5, &(0x7f0000000b00)={0x0, 0xf, &(0x7f0000000340)=ANY=[@ANYBLOB="1800000000000000000000000000000018110000", @ANYRES32, @ANYBLOB="0000000000000000b702000014000000b7030000000000008500000083000000bf09000000000000550901000000000095"], 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+r0 = openat$vhost_vsock(0xffffffffffffff9c, &(0x7f0000000640), 0x2, 0x0)
+ioctl$VHOST_SET_VRING_BASE(r0, 0xaf01, 0x0)
+r1 = eventfd(0x0)
+syz_emit_ethernet(0x46, &(0x7f0000000340)=ANY=[@ANYBLOB="3c82bf073aaebbbbbbbbbbbb86dd6001010000101100fe8000000000000000000000000000bbfe8000000000000000000000000000aa00000000001090780200000000"], 0x0)
+ioctl$VHOST_SET_VRING_BASE(r0, 0x4008af12, &(0x7f0000000200)={0x1, 0x101})
+ioctl$VHOST_SET_VRING_ADDR(r0, 0x4028af11, &(0x7f00000001c0)={0x0, 0x0, 0x0, &(0x7f00000002c0)=""/138, 0x0})
+ioctl$VHOST_SET_MEM_TABLE(r0, 0x4008af03, &(0x7f0000000940)={0x1, 0x0, [{0x0, 0xc3, &(0x7f0000000540)=""/195}]})
+ioctl$VHOST_SET_LOG_FD(r0, 0x4004af07, &(0x7f0000000240)=r1)
+ioctl$VHOST_SET_VRING_KICK(r0, 0x4008af20, &(0x7f0000000040)={0x1, r1})
+ioctl$VHOST_SET_VRING_ADDR(r0, 0x4028af11, &(0x7f0000000280)={0x1, 0x1, &(0x7f0000000380)=""/233, &(0x7f00000000c0)=""/87, &(0x7f0000000480)=""/74})
+ioctl$VHOST_VSOCK_SET_RUNNING(r0, 0x4004af61, &(0x7f0000000000)=0x20000)
+r2 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000000)='cpuacct.usage_percpu_sys\x00', 0x275a, 0x0)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x0, 0x10012, r2, 0x0)
+sendmsg$IPSET_CMD_CREATE(0xffffffffffffffff, 0x0, 0x0)
+
+19:20:12 executing program 0:
+bpf$PROG_LOAD(0x5, &(0x7f0000000b00)={0x0, 0xf, &(0x7f0000000340)=ANY=[@ANYBLOB="1800000000000000000000000000000018110000", @ANYRES32, @ANYBLOB="0000000000000000b702000014000000b7030000000000008500000083000000bf09000000000000550901000000000095"], 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+r0 = openat$vhost_vsock(0xffffffffffffff9c, &(0x7f0000000640), 0x2, 0x0)
+ioctl$VHOST_SET_VRING_BASE(r0, 0xaf01, 0x0)
+r1 = eventfd(0x0)
+syz_emit_ethernet(0x46, &(0x7f0000000340)=ANY=[@ANYBLOB="3c82bf073aaebbbbbbbbbbbb86dd6001010000101100fe8000000000000000000000000000bbfe8000000000000000000000000000aa00000000001090780200000000"], 0x0)
+ioctl$VHOST_SET_VRING_BASE(r0, 0x4008af12, &(0x7f0000000200)={0x1, 0x101})
+ioctl$VHOST_SET_VRING_ADDR(r0, 0x4028af11, &(0x7f00000001c0)={0x0, 0x0, 0x0, &(0x7f00000002c0)=""/138, 0x0})
+ioctl$VHOST_SET_MEM_TABLE(r0, 0x4008af03, &(0x7f0000000940)={0x1, 0x0, [{0x0, 0xc3, &(0x7f0000000540)=""/195}]})
+ioctl$VHOST_SET_LOG_FD(r0, 0x4004af07, &(0x7f0000000240)=r1)
+ioctl$VHOST_SET_VRING_KICK(r0, 0x4008af20, &(0x7f0000000040)={0x1, r1})
+ioctl$VHOST_SET_VRING_ADDR(r0, 0x4028af11, &(0x7f0000000280)={0x1, 0x1, &(0x7f0000000380)=""/233, &(0x7f00000000c0)=""/87, &(0x7f0000000480)=""/74})
+ioctl$VHOST_VSOCK_SET_RUNNING(r0, 0x4004af61, &(0x7f0000000000)=0x20000)
+r2 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000000)='cpuacct.usage_percpu_sys\x00', 0x275a, 0x0)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x0, 0x10012, r2, 0x0)
+sendmsg$IPSET_CMD_CREATE(0xffffffffffffffff, 0x0, 0x0)
+
+19:20:13 executing program 0:
+bpf$PROG_LOAD(0x5, &(0x7f0000000b00)={0x0, 0xf, &(0x7f0000000340)=ANY=[@ANYBLOB="1800000000000000000000000000000018110000", @ANYRES32, @ANYBLOB="0000000000000000b702000014000000b7030000000000008500000083000000bf09000000000000550901000000000095"], 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+r0 = openat$vhost_vsock(0xffffffffffffff9c, &(0x7f0000000640), 0x2, 0x0)
+ioctl$VHOST_SET_VRING_BASE(r0, 0xaf01, 0x0)
+r1 = eventfd(0x0)
+syz_emit_ethernet(0x46, &(0x7f0000000340)=ANY=[@ANYBLOB="3c82bf073aaebbbbbbbbbbbb86dd6001010000101100fe8000000000000000000000000000bbfe8000000000000000000000000000aa00000000001090780200000000"], 0x0)
+ioctl$VHOST_SET_VRING_BASE(r0, 0x4008af12, &(0x7f0000000200)={0x1, 0x101})
+ioctl$VHOST_SET_VRING_ADDR(r0, 0x4028af11, &(0x7f00000001c0)={0x0, 0x0, 0x0, &(0x7f00000002c0)=""/138, 0x0})
+ioctl$VHOST_SET_MEM_TABLE(r0, 0x4008af03, &(0x7f0000000940)={0x1, 0x0, [{0x0, 0xc3, &(0x7f0000000540)=""/195}]})
+ioctl$VHOST_SET_LOG_FD(r0, 0x4004af07, &(0x7f0000000240)=r1)
+ioctl$VHOST_SET_VRING_KICK(r0, 0x4008af20, &(0x7f0000000040)={0x1, r1})
+ioctl$VHOST_SET_VRING_ADDR(r0, 0x4028af11, &(0x7f0000000280)={0x1, 0x1, &(0x7f0000000380)=""/233, &(0x7f00000000c0)=""/87, &(0x7f0000000480)=""/74})
+ioctl$VHOST_VSOCK_SET_RUNNING(r0, 0x4004af61, &(0x7f0000000000)=0x20000)
+r2 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000000)='cpuacct.usage_percpu_sys\x00', 0x275a, 0x0)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x0, 0x10012, r2, 0x0)
+sendmsg$IPSET_CMD_CREATE(0xffffffffffffffff, 0x0, 0x0)
+
+19:20:15 executing program 0:
+bpf$PROG_LOAD(0x5, &(0x7f0000000b00)={0x0, 0xf, &(0x7f0000000340)=ANY=[@ANYBLOB="1800000000000000000000000000000018110000", @ANYRES32, @ANYBLOB="0000000000000000b702000014000000b7030000000000008500000083000000bf09000000000000550901000000000095"], 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+r0 = openat$vhost_vsock(0xffffffffffffff9c, &(0x7f0000000640), 0x2, 0x0)
+ioctl$VHOST_SET_VRING_BASE(r0, 0xaf01, 0x0)
+r1 = eventfd(0x0)
+syz_emit_ethernet(0x46, &(0x7f0000000340)=ANY=[@ANYBLOB="3c82bf073aaebbbbbbbbbbbb86dd6001010000101100fe8000000000000000000000000000bbfe8000000000000000000000000000aa00000000001090780200000000"], 0x0)
+ioctl$VHOST_SET_VRING_BASE(r0, 0x4008af12, &(0x7f0000000200)={0x1, 0x101})
+ioctl$VHOST_SET_VRING_ADDR(r0, 0x4028af11, &(0x7f00000001c0)={0x0, 0x0, 0x0, &(0x7f00000002c0)=""/138, 0x0})
+ioctl$VHOST_SET_MEM_TABLE(r0, 0x4008af03, &(0x7f0000000940)={0x1, 0x0, [{0x0, 0xc3, &(0x7f0000000540)=""/195}]})
+ioctl$VHOST_SET_LOG_FD(r0, 0x4004af07, &(0x7f0000000240)=r1)
+ioctl$VHOST_SET_VRING_KICK(r0, 0x4008af20, &(0x7f0000000040)={0x1, r1})
+ioctl$VHOST_SET_VRING_ADDR(r0, 0x4028af11, &(0x7f0000000280)={0x1, 0x1, &(0x7f0000000380)=""/233, &(0x7f00000000c0)=""/87, &(0x7f0000000480)=""/74})
+ioctl$VHOST_VSOCK_SET_RUNNING(r0, 0x4004af61, &(0x7f0000000000)=0x20000)
+r2 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000000)='cpuacct.usage_percpu_sys\x00', 0x275a, 0x0)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x0, 0x10012, r2, 0x0)
+sendmsg$IPSET_CMD_CREATE(0xffffffffffffffff, 0x0, 0x0)
+
+19:20:16 executing program 0:
+bpf$PROG_LOAD(0x5, &(0x7f0000000b00)={0x0, 0xf, &(0x7f0000000340)=ANY=[@ANYBLOB="1800000000000000000000000000000018110000", @ANYRES32, @ANYBLOB="0000000000000000b702000014000000b7030000000000008500000083000000bf09000000000000550901000000000095"], 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+r0 = openat$vhost_vsock(0xffffffffffffff9c, &(0x7f0000000640), 0x2, 0x0)
+ioctl$VHOST_SET_VRING_BASE(r0, 0xaf01, 0x0)
+r1 = eventfd(0x0)
+syz_emit_ethernet(0x46, &(0x7f0000000340)=ANY=[@ANYBLOB="3c82bf073aaebbbbbbbbbbbb86dd6001010000101100fe8000000000000000000000000000bbfe8000000000000000000000000000aa00000000001090780200000000"], 0x0)
+ioctl$VHOST_SET_VRING_BASE(r0, 0x4008af12, &(0x7f0000000200)={0x1, 0x101})
+ioctl$VHOST_SET_VRING_ADDR(r0, 0x4028af11, &(0x7f00000001c0)={0x0, 0x0, 0x0, &(0x7f00000002c0)=""/138, 0x0})
+ioctl$VHOST_SET_MEM_TABLE(r0, 0x4008af03, &(0x7f0000000940)={0x1, 0x0, [{0x0, 0xc3, &(0x7f0000000540)=""/195}]})
+ioctl$VHOST_SET_LOG_FD(r0, 0x4004af07, &(0x7f0000000240)=r1)
+ioctl$VHOST_SET_VRING_KICK(r0, 0x4008af20, &(0x7f0000000040)={0x1, r1})
+ioctl$VHOST_SET_VRING_ADDR(r0, 0x4028af11, &(0x7f0000000280)={0x1, 0x1, &(0x7f0000000380)=""/233, &(0x7f00000000c0)=""/87, &(0x7f0000000480)=""/74})
+ioctl$VHOST_VSOCK_SET_RUNNING(r0, 0x4004af61, &(0x7f0000000000)=0x20000)
+r2 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000000)='cpuacct.usage_percpu_sys\x00', 0x275a, 0x0)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x0, 0x10012, r2, 0x0)
+sendmsg$IPSET_CMD_CREATE(0xffffffffffffffff, 0x0, 0x0)
+
+19:20:18 executing program 0:
+bpf$PROG_LOAD(0x5, &(0x7f0000000b00)={0x0, 0xf, &(0x7f0000000340)=ANY=[@ANYBLOB="1800000000000000000000000000000018110000", @ANYRES32, @ANYBLOB="0000000000000000b702000014000000b7030000000000008500000083000000bf09000000000000550901000000000095"], 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+r0 = openat$vhost_vsock(0xffffffffffffff9c, &(0x7f0000000640), 0x2, 0x0)
+ioctl$VHOST_SET_VRING_BASE(r0, 0xaf01, 0x0)
+r1 = eventfd(0x0)
+syz_emit_ethernet(0x46, &(0x7f0000000340)=ANY=[@ANYBLOB="3c82bf073aaebbbbbbbbbbbb86dd6001010000101100fe8000000000000000000000000000bbfe8000000000000000000000000000aa00000000001090780200000000"], 0x0)
+ioctl$VHOST_SET_VRING_BASE(r0, 0x4008af12, &(0x7f0000000200)={0x1, 0x101})
+ioctl$VHOST_SET_VRING_ADDR(r0, 0x4028af11, &(0x7f00000001c0)={0x0, 0x0, 0x0, &(0x7f00000002c0)=""/138, 0x0})
+ioctl$VHOST_SET_MEM_TABLE(r0, 0x4008af03, &(0x7f0000000940)={0x1, 0x0, [{0x0, 0xc3, &(0x7f0000000540)=""/195}]})
+ioctl$VHOST_SET_LOG_FD(r0, 0x4004af07, &(0x7f0000000240)=r1)
+ioctl$VHOST_SET_VRING_KICK(r0, 0x4008af20, &(0x7f0000000040)={0x1, r1})
+ioctl$VHOST_SET_VRING_ADDR(r0, 0x4028af11, &(0x7f0000000280)={0x1, 0x1, &(0x7f0000000380)=""/233, &(0x7f00000000c0)=""/87, &(0x7f0000000480)=""/74})
+ioctl$VHOST_VSOCK_SET_RUNNING(r0, 0x4004af61, &(0x7f0000000000)=0x20000)
+r2 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000000)='cpuacct.usage_percpu_sys\x00', 0x275a, 0x0)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x0, 0x10012, r2, 0x0)
+sendmsg$IPSET_CMD_CREATE(0xffffffffffffffff, 0x0, 0x0)
+
+19:20:19 executing program 0:
+bpf$PROG_LOAD(0x5, &(0x7f0000000b00)={0x0, 0xf, &(0x7f0000000340)=ANY=[@ANYBLOB="1800000000000000000000000000000018110000", @ANYRES32, @ANYBLOB="0000000000000000b702000014000000b7030000000000008500000083000000bf09000000000000550901000000000095"], 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+r0 = openat$vhost_vsock(0xffffffffffffff9c, &(0x7f0000000640), 0x2, 0x0)
+ioctl$VHOST_SET_VRING_BASE(r0, 0xaf01, 0x0)
+r1 = eventfd(0x0)
+syz_emit_ethernet(0x46, &(0x7f0000000340)=ANY=[@ANYBLOB="3c82bf073aaebbbbbbbbbbbb86dd6001010000101100fe8000000000000000000000000000bbfe8000000000000000000000000000aa00000000001090780200000000"], 0x0)
+ioctl$VHOST_SET_VRING_BASE(r0, 0x4008af12, &(0x7f0000000200)={0x1, 0x101})
+ioctl$VHOST_SET_VRING_ADDR(r0, 0x4028af11, &(0x7f00000001c0)={0x0, 0x0, 0x0, &(0x7f00000002c0)=""/138, 0x0})
+ioctl$VHOST_SET_MEM_TABLE(r0, 0x4008af03, &(0x7f0000000940)={0x1, 0x0, [{0x0, 0xc3, &(0x7f0000000540)=""/195}]})
+ioctl$VHOST_SET_LOG_FD(r0, 0x4004af07, &(0x7f0000000240)=r1)
+ioctl$VHOST_SET_VRING_KICK(r0, 0x4008af20, &(0x7f0000000040)={0x1, r1})
+ioctl$VHOST_SET_VRING_ADDR(r0, 0x4028af11, &(0x7f0000000280)={0x1, 0x1, &(0x7f0000000380)=""/233, &(0x7f00000000c0)=""/87, &(0x7f0000000480)=""/74})
+ioctl$VHOST_VSOCK_SET_RUNNING(r0, 0x4004af61, &(0x7f0000000000)=0x20000)
+r2 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000000)='cpuacct.usage_percpu_sys\x00', 0x275a, 0x0)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x0, 0x10012, r2, 0x0)
+sendmsg$IPSET_CMD_CREATE(0xffffffffffffffff, 0x0, 0x0)
+
+19:20:21 executing program 0:
+bpf$PROG_LOAD(0x5, &(0x7f0000000b00)={0x0, 0xf, &(0x7f0000000340)=ANY=[@ANYBLOB="1800000000000000000000000000000018110000", @ANYRES32, @ANYBLOB="0000000000000000b702000014000000b7030000000000008500000083000000bf09000000000000550901000000000095"], 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+r0 = openat$vhost_vsock(0xffffffffffffff9c, &(0x7f0000000640), 0x2, 0x0)
+ioctl$VHOST_SET_VRING_BASE(r0, 0xaf01, 0x0)
+r1 = eventfd(0x0)
+syz_emit_ethernet(0x46, &(0x7f0000000340)=ANY=[@ANYBLOB="3c82bf073aaebbbbbbbbbbbb86dd6001010000101100fe8000000000000000000000000000bbfe8000000000000000000000000000aa00000000001090780200000000"], 0x0)
+ioctl$VHOST_SET_VRING_BASE(r0, 0x4008af12, &(0x7f0000000200)={0x1, 0x101})
+ioctl$VHOST_SET_VRING_ADDR(r0, 0x4028af11, &(0x7f00000001c0)={0x0, 0x0, 0x0, &(0x7f00000002c0)=""/138, 0x0})
+ioctl$VHOST_SET_MEM_TABLE(r0, 0x4008af03, &(0x7f0000000940)={0x1, 0x0, [{0x0, 0xc3, &(0x7f0000000540)=""/195}]})
+ioctl$VHOST_SET_LOG_FD(r0, 0x4004af07, &(0x7f0000000240)=r1)
+ioctl$VHOST_SET_VRING_KICK(r0, 0x4008af20, &(0x7f0000000040)={0x1, r1})
+ioctl$VHOST_SET_VRING_ADDR(r0, 0x4028af11, &(0x7f0000000280)={0x1, 0x1, &(0x7f0000000380)=""/233, &(0x7f00000000c0)=""/87, &(0x7f0000000480)=""/74})
+ioctl$VHOST_VSOCK_SET_RUNNING(r0, 0x4004af61, &(0x7f0000000000)=0x20000)
+r2 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000000)='cpuacct.usage_percpu_sys\x00', 0x275a, 0x0)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x0, 0x10012, r2, 0x0)
+sendmsg$IPSET_CMD_CREATE(0xffffffffffffffff, 0x0, 0x0)
+
+19:20:23 executing program 0:
+bpf$PROG_LOAD(0x5, &(0x7f0000000b00)={0x0, 0xf, &(0x7f0000000340)=ANY=[@ANYBLOB="1800000000000000000000000000000018110000", @ANYRES32, @ANYBLOB="0000000000000000b702000014000000b7030000000000008500000083000000bf09000000000000550901000000000095"], 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+r0 = openat$vhost_vsock(0xffffffffffffff9c, &(0x7f0000000640), 0x2, 0x0)
+ioctl$VHOST_SET_VRING_BASE(r0, 0xaf01, 0x0)
+r1 = eventfd(0x0)
+syz_emit_ethernet(0x46, &(0x7f0000000340)=ANY=[@ANYBLOB="3c82bf073aaebbbbbbbbbbbb86dd6001010000101100fe8000000000000000000000000000bbfe8000000000000000000000000000aa00000000001090780200000000"], 0x0)
+ioctl$VHOST_SET_VRING_BASE(r0, 0x4008af12, &(0x7f0000000200)={0x1, 0x101})
+ioctl$VHOST_SET_VRING_ADDR(r0, 0x4028af11, &(0x7f00000001c0)={0x0, 0x0, 0x0, &(0x7f00000002c0)=""/138, 0x0})
+ioctl$VHOST_SET_MEM_TABLE(r0, 0x4008af03, &(0x7f0000000940)={0x1, 0x0, [{0x0, 0xc3, &(0x7f0000000540)=""/195}]})
+ioctl$VHOST_SET_LOG_FD(r0, 0x4004af07, &(0x7f0000000240)=r1)
+ioctl$VHOST_SET_VRING_KICK(r0, 0x4008af20, &(0x7f0000000040)={0x1, r1})
+ioctl$VHOST_SET_VRING_ADDR(r0, 0x4028af11, &(0x7f0000000280)={0x1, 0x1, &(0x7f0000000380)=""/233, &(0x7f00000000c0)=""/87, &(0x7f0000000480)=""/74})
+ioctl$VHOST_VSOCK_SET_RUNNING(r0, 0x4004af61, &(0x7f0000000000)=0x20000)
+r2 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000000)='cpuacct.usage_percpu_sys\x00', 0x275a, 0x0)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x0, 0x10012, r2, 0x0)
+sendmsg$IPSET_CMD_CREATE(0xffffffffffffffff, 0x0, 0x0)
+
+19:20:24 executing program 0:
+bpf$PROG_LOAD(0x5, &(0x7f0000000b00)={0x0, 0xf, &(0x7f0000000340)=ANY=[@ANYBLOB="1800000000000000000000000000000018110000", @ANYRES32, @ANYBLOB="0000000000000000b702000014000000b7030000000000008500000083000000bf09000000000000550901000000000095"], 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+r0 = openat$vhost_vsock(0xffffffffffffff9c, &(0x7f0000000640), 0x2, 0x0)
+ioctl$VHOST_SET_VRING_BASE(r0, 0xaf01, 0x0)
+r1 = eventfd(0x0)
+syz_emit_ethernet(0x46, &(0x7f0000000340)=ANY=[@ANYBLOB="3c82bf073aaebbbbbbbbbbbb86dd6001010000101100fe8000000000000000000000000000bbfe8000000000000000000000000000aa00000000001090780200000000"], 0x0)
+ioctl$VHOST_SET_VRING_BASE(r0, 0x4008af12, &(0x7f0000000200)={0x1, 0x101})
+ioctl$VHOST_SET_VRING_ADDR(r0, 0x4028af11, &(0x7f00000001c0)={0x0, 0x0, 0x0, &(0x7f00000002c0)=""/138, 0x0})
+ioctl$VHOST_SET_MEM_TABLE(r0, 0x4008af03, &(0x7f0000000940)={0x1, 0x0, [{0x0, 0xc3, &(0x7f0000000540)=""/195}]})
+ioctl$VHOST_SET_LOG_FD(r0, 0x4004af07, &(0x7f0000000240)=r1)
+ioctl$VHOST_SET_VRING_KICK(r0, 0x4008af20, &(0x7f0000000040)={0x1, r1})
+ioctl$VHOST_SET_VRING_ADDR(r0, 0x4028af11, &(0x7f0000000280)={0x1, 0x1, &(0x7f0000000380)=""/233, &(0x7f00000000c0)=""/87, &(0x7f0000000480)=""/74})
+ioctl$VHOST_VSOCK_SET_RUNNING(r0, 0x4004af61, &(0x7f0000000000)=0x20000)
+r2 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000000)='cpuacct.usage_percpu_sys\x00', 0x275a, 0x0)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x0, 0x10012, r2, 0x0)
+sendmsg$IPSET_CMD_CREATE(0xffffffffffffffff, 0x0, 0x0)
+
+19:20:26 executing program 0:
+bpf$PROG_LOAD(0x5, &(0x7f0000000b00)={0x0, 0xf, &(0x7f0000000340)=ANY=[@ANYBLOB="1800000000000000000000000000000018110000", @ANYRES32, @ANYBLOB="0000000000000000b702000014000000b7030000000000008500000083000000bf09000000000000550901000000000095"], 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+r0 = openat$vhost_vsock(0xffffffffffffff9c, &(0x7f0000000640), 0x2, 0x0)
+ioctl$VHOST_SET_VRING_BASE(r0, 0xaf01, 0x0)
+r1 = eventfd(0x0)
+syz_emit_ethernet(0x46, &(0x7f0000000340)=ANY=[@ANYBLOB="3c82bf073aaebbbbbbbbbbbb86dd6001010000101100fe8000000000000000000000000000bbfe8000000000000000000000000000aa00000000001090780200000000"], 0x0)
+ioctl$VHOST_SET_VRING_BASE(r0, 0x4008af12, &(0x7f0000000200)={0x1, 0x101})
+ioctl$VHOST_SET_VRING_ADDR(r0, 0x4028af11, &(0x7f00000001c0)={0x0, 0x0, 0x0, &(0x7f00000002c0)=""/138, 0x0})
+ioctl$VHOST_SET_MEM_TABLE(r0, 0x4008af03, &(0x7f0000000940)={0x1, 0x0, [{0x0, 0xc3, &(0x7f0000000540)=""/195}]})
+ioctl$VHOST_SET_LOG_FD(r0, 0x4004af07, &(0x7f0000000240)=r1)
+ioctl$VHOST_SET_VRING_KICK(r0, 0x4008af20, &(0x7f0000000040)={0x1, r1})
+ioctl$VHOST_SET_VRING_ADDR(r0, 0x4028af11, &(0x7f0000000280)={0x1, 0x1, &(0x7f0000000380)=""/233, &(0x7f00000000c0)=""/87, &(0x7f0000000480)=""/74})
+ioctl$VHOST_VSOCK_SET_RUNNING(r0, 0x4004af61, &(0x7f0000000000)=0x20000)
+r2 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000000)='cpuacct.usage_percpu_sys\x00', 0x275a, 0x0)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x0, 0x10012, r2, 0x0)
+sendmsg$IPSET_CMD_CREATE(0xffffffffffffffff, 0x0, 0x0)
+
+19:20:27 executing program 0:
+r0 = socket$nl_route(0x10, 0x3, 0x0)
+sendmsg$nl_route(r0, &(0x7f0000000080)={0x0, 0x0, &(0x7f0000000500)={&(0x7f0000000340)=@newlink={0x44, 0x10, 0x439, 0x0, 0x0, {}, [@IFLA_LINKINFO={0x24, 0x12, 0x0, 0x1, @geneve={{0xb}, {0x14, 0x2, 0x0, 0x1, [@IFLA_GENEVE_UDP_ZERO_CSUM6_TX={0x5, 0x9, 0x2}, @IFLA_GENEVE_UDP_CSUM={0x5, 0xa}]}}}]}, 0x44}}, 0x0)
+
+19:20:29 executing program 0:
+r0 = socket$nl_route(0x10, 0x3, 0x0)
+sendmsg$nl_route(r0, &(0x7f0000000080)={0x0, 0x0, &(0x7f0000000500)={&(0x7f0000000340)=@newlink={0x44, 0x10, 0x439, 0x0, 0x0, {}, [@IFLA_LINKINFO={0x24, 0x12, 0x0, 0x1, @geneve={{0xb}, {0x14, 0x2, 0x0, 0x1, [@IFLA_GENEVE_UDP_ZERO_CSUM6_TX={0x5, 0x9, 0x2}, @IFLA_GENEVE_UDP_CSUM={0x5, 0xa}]}}}]}, 0x44}}, 0x0)
+
+2024/05/22 19:20:29 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x30be, Ip:0x85ffa1f0}
+2024/05/22 19:20:29 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 19:20:29 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3e9b, Ip:0x833c12dd}
+2024/05/22 19:20:29 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x4de3, Ip:0x85ffa202}
+19:20:30 executing program 0:
+r0 = socket$nl_route(0x10, 0x3, 0x0)
+sendmsg$nl_route(r0, &(0x7f0000000080)={0x0, 0x0, &(0x7f0000000500)={&(0x7f0000000340)=@newlink={0x44, 0x10, 0x439, 0x0, 0x0, {}, [@IFLA_LINKINFO={0x24, 0x12, 0x0, 0x1, @geneve={{0xb}, {0x14, 0x2, 0x0, 0x1, [@IFLA_GENEVE_UDP_ZERO_CSUM6_TX={0x5, 0x9, 0x2}, @IFLA_GENEVE_UDP_CSUM={0x5, 0xa}]}}}]}, 0x44}}, 0x0)
+
+19:20:32 executing program 0:
+r0 = socket$nl_route(0x10, 0x3, 0x0)
+sendmsg$nl_route(r0, &(0x7f0000000080)={0x0, 0x0, &(0x7f0000000500)={&(0x7f0000000340)=@newlink={0x44, 0x10, 0x439, 0x0, 0x0, {}, [@IFLA_LINKINFO={0x24, 0x12, 0x0, 0x1, @geneve={{0xb}, {0x14, 0x2, 0x0, 0x1, [@IFLA_GENEVE_UDP_ZERO_CSUM6_TX={0x5, 0x9, 0x2}, @IFLA_GENEVE_UDP_CSUM={0x5, 0xa}]}}}]}, 0x44}}, 0x0)
+
+19:20:33 executing program 0:
+r0 = openat$procfs(0xffffffffffffff9c, &(0x7f000000c380)='/proc/crypto\x00', 0x0, 0x0)
+read$FUSE(r0, &(0x7f0000000200)={0x2020}, 0x2020)
+syz_mount_image$tmpfs(&(0x7f00000000c0), &(0x7f0000000040)='./file0\x00', 0x841040, 0x0, 0x0, 0x0, &(0x7f0000000180))
+mount(&(0x7f0000000300), &(0x7f0000000140)='./file0\x00', &(0x7f0000000000)='cgroup2\x00', 0x0, 0x0)
+r1 = syz_open_procfs(0x0, &(0x7f0000000080)='mountstats\x00')
+preadv2(r1, &(0x7f00000001c0)=[{&(0x7f0000002240)=""/148, 0x94}], 0x1, 0xd0d, 0x0, 0x0)
+
+19:20:35 executing program 0:
+r0 = openat$procfs(0xffffffffffffff9c, &(0x7f000000c380)='/proc/crypto\x00', 0x0, 0x0)
+read$FUSE(r0, &(0x7f0000000200)={0x2020}, 0x2020)
+syz_mount_image$tmpfs(&(0x7f00000000c0), &(0x7f0000000040)='./file0\x00', 0x841040, 0x0, 0x0, 0x0, &(0x7f0000000180))
+mount(&(0x7f0000000300), &(0x7f0000000140)='./file0\x00', &(0x7f0000000000)='cgroup2\x00', 0x0, 0x0)
+r1 = syz_open_procfs(0x0, &(0x7f0000000080)='mountstats\x00')
+preadv2(r1, &(0x7f00000001c0)=[{&(0x7f0000002240)=""/148, 0x94}], 0x1, 0xd0d, 0x0, 0x0)
+
+2024/05/22 19:20:35 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+2024/05/22 19:20:35 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x53e9, Ip:0x81235ebf}
+2024/05/22 19:20:35 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+2024/05/22 19:20:35 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x5547, Ip:0x81ebd996}
+2024/05/22 19:20:35 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2b09, Ip:0x8191ced7}
+2024/05/22 19:20:35 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 19:20:35 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x363c, Ip:0x8191cec7}
+2024/05/22 19:20:35 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+2024/05/22 19:20:35 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+19:20:36 executing program 0:
+r0 = openat$procfs(0xffffffffffffff9c, &(0x7f000000c380)='/proc/crypto\x00', 0x0, 0x0)
+read$FUSE(r0, &(0x7f0000000200)={0x2020}, 0x2020)
+syz_mount_image$tmpfs(&(0x7f00000000c0), &(0x7f0000000040)='./file0\x00', 0x841040, 0x0, 0x0, 0x0, &(0x7f0000000180))
+mount(&(0x7f0000000300), &(0x7f0000000140)='./file0\x00', &(0x7f0000000000)='cgroup2\x00', 0x0, 0x0)
+r1 = syz_open_procfs(0x0, &(0x7f0000000080)='mountstats\x00')
+preadv2(r1, &(0x7f00000001c0)=[{&(0x7f0000002240)=""/148, 0x94}], 0x1, 0xd0d, 0x0, 0x0)
+
+19:20:38 executing program 0:
+r0 = openat$procfs(0xffffffffffffff9c, &(0x7f000000c380)='/proc/crypto\x00', 0x0, 0x0)
+read$FUSE(r0, &(0x7f0000000200)={0x2020}, 0x2020)
+syz_mount_image$tmpfs(&(0x7f00000000c0), &(0x7f0000000040)='./file0\x00', 0x841040, 0x0, 0x0, 0x0, &(0x7f0000000180))
+mount(&(0x7f0000000300), &(0x7f0000000140)='./file0\x00', &(0x7f0000000000)='cgroup2\x00', 0x0, 0x0)
+r1 = syz_open_procfs(0x0, &(0x7f0000000080)='mountstats\x00')
+preadv2(r1, &(0x7f00000001c0)=[{&(0x7f0000002240)=""/148, 0x94}], 0x1, 0xd0d, 0x0, 0x0)
+
+19:20:40 executing program 0:
+r0 = openat$procfs(0xffffffffffffff9c, &(0x7f000000c380)='/proc/crypto\x00', 0x0, 0x0)
+read$FUSE(r0, &(0x7f0000000200)={0x2020}, 0x2020)
+syz_mount_image$tmpfs(&(0x7f00000000c0), &(0x7f0000000040)='./file0\x00', 0x841040, 0x0, 0x0, 0x0, &(0x7f0000000180))
+mount(&(0x7f0000000300), &(0x7f0000000140)='./file0\x00', &(0x7f0000000000)='cgroup2\x00', 0x0, 0x0)
+r1 = syz_open_procfs(0x0, &(0x7f0000000080)='mountstats\x00')
+preadv2(r1, &(0x7f00000001c0)=[{&(0x7f0000002240)=""/148, 0x94}], 0x1, 0xd0d, 0x0, 0x0)
+
+19:20:41 executing program 0:
+r0 = openat$procfs(0xffffffffffffff9c, &(0x7f000000c380)='/proc/crypto\x00', 0x0, 0x0)
+read$FUSE(r0, &(0x7f0000000200)={0x2020}, 0x2020)
+syz_mount_image$tmpfs(&(0x7f00000000c0), &(0x7f0000000040)='./file0\x00', 0x841040, 0x0, 0x0, 0x0, &(0x7f0000000180))
+mount(&(0x7f0000000300), &(0x7f0000000140)='./file0\x00', &(0x7f0000000000)='cgroup2\x00', 0x0, 0x0)
+r1 = syz_open_procfs(0x0, &(0x7f0000000080)='mountstats\x00')
+preadv2(r1, &(0x7f00000001c0)=[{&(0x7f0000002240)=""/148, 0x94}], 0x1, 0xd0d, 0x0, 0x0)
+
+19:20:43 executing program 0:
+r0 = openat$procfs(0xffffffffffffff9c, &(0x7f000000c380)='/proc/crypto\x00', 0x0, 0x0)
+read$FUSE(r0, &(0x7f0000000200)={0x2020}, 0x2020)
+syz_mount_image$tmpfs(&(0x7f00000000c0), &(0x7f0000000040)='./file0\x00', 0x841040, 0x0, 0x0, 0x0, &(0x7f0000000180))
+mount(&(0x7f0000000300), &(0x7f0000000140)='./file0\x00', &(0x7f0000000000)='cgroup2\x00', 0x0, 0x0)
+r1 = syz_open_procfs(0x0, &(0x7f0000000080)='mountstats\x00')
+preadv2(r1, &(0x7f00000001c0)=[{&(0x7f0000002240)=""/148, 0x94}], 0x1, 0xd0d, 0x0, 0x0)
+
+19:20:44 executing program 0:
+r0 = openat$procfs(0xffffffffffffff9c, &(0x7f000000c380)='/proc/crypto\x00', 0x0, 0x0)
+read$FUSE(r0, &(0x7f0000000200)={0x2020}, 0x2020)
+syz_mount_image$tmpfs(&(0x7f00000000c0), &(0x7f0000000040)='./file0\x00', 0x841040, 0x0, 0x0, 0x0, &(0x7f0000000180))
+mount(&(0x7f0000000300), &(0x7f0000000140)='./file0\x00', &(0x7f0000000000)='cgroup2\x00', 0x0, 0x0)
+r1 = syz_open_procfs(0x0, &(0x7f0000000080)='mountstats\x00')
+preadv2(r1, &(0x7f00000001c0)=[{&(0x7f0000002240)=""/148, 0x94}], 0x1, 0xd0d, 0x0, 0x0)
+
+[  266.795441][ T1221] ieee802154 phy0 wpan0: encryption failed: -22
+[  266.796283][ T1221] ieee802154 phy1 wpan1: encryption failed: -22
+19:20:46 executing program 0:
+r0 = openat$procfs(0xffffffffffffff9c, &(0x7f000000c380)='/proc/crypto\x00', 0x0, 0x0)
+read$FUSE(r0, &(0x7f0000000200)={0x2020}, 0x2020)
+syz_mount_image$tmpfs(&(0x7f00000000c0), &(0x7f0000000040)='./file0\x00', 0x841040, 0x0, 0x0, 0x0, &(0x7f0000000180))
+mount(&(0x7f0000000300), &(0x7f0000000140)='./file0\x00', &(0x7f0000000000)='cgroup2\x00', 0x0, 0x0)
+r1 = syz_open_procfs(0x0, &(0x7f0000000080)='mountstats\x00')
+preadv2(r1, &(0x7f00000001c0)=[{&(0x7f0000002240)=""/148, 0x94}], 0x1, 0xd0d, 0x0, 0x0)
+
+19:20:47 executing program 0:
+r0 = openat$procfs(0xffffffffffffff9c, &(0x7f000000c380)='/proc/crypto\x00', 0x0, 0x0)
+read$FUSE(r0, &(0x7f0000000200)={0x2020}, 0x2020)
+syz_mount_image$tmpfs(&(0x7f00000000c0), &(0x7f0000000040)='./file0\x00', 0x841040, 0x0, 0x0, 0x0, &(0x7f0000000180))
+mount(&(0x7f0000000300), &(0x7f0000000140)='./file0\x00', &(0x7f0000000000)='cgroup2\x00', 0x0, 0x0)
+r1 = syz_open_procfs(0x0, &(0x7f0000000080)='mountstats\x00')
+preadv2(r1, &(0x7f00000001c0)=[{&(0x7f0000002240)=""/148, 0x94}], 0x1, 0xd0d, 0x0, 0x0)
+
+19:20:49 executing program 0:
+r0 = openat$procfs(0xffffffffffffff9c, &(0x7f000000c380)='/proc/crypto\x00', 0x0, 0x0)
+read$FUSE(r0, &(0x7f0000000200)={0x2020}, 0x2020)
+syz_mount_image$tmpfs(&(0x7f00000000c0), &(0x7f0000000040)='./file0\x00', 0x841040, 0x0, 0x0, 0x0, &(0x7f0000000180))
+mount(&(0x7f0000000300), &(0x7f0000000140)='./file0\x00', &(0x7f0000000000)='cgroup2\x00', 0x0, 0x0)
+r1 = syz_open_procfs(0x0, &(0x7f0000000080)='mountstats\x00')
+preadv2(r1, &(0x7f00000001c0)=[{&(0x7f0000002240)=""/148, 0x94}], 0x1, 0xd0d, 0x0, 0x0)
+
+19:20:51 executing program 0:
+r0 = openat$procfs(0xffffffffffffff9c, &(0x7f000000c380)='/proc/crypto\x00', 0x0, 0x0)
+read$FUSE(r0, &(0x7f0000000200)={0x2020}, 0x2020)
+syz_mount_image$tmpfs(&(0x7f00000000c0), &(0x7f0000000040)='./file0\x00', 0x841040, 0x0, 0x0, 0x0, &(0x7f0000000180))
+mount(&(0x7f0000000300), &(0x7f0000000140)='./file0\x00', &(0x7f0000000000)='cgroup2\x00', 0x0, 0x0)
+r1 = syz_open_procfs(0x0, &(0x7f0000000080)='mountstats\x00')
+preadv2(r1, &(0x7f00000001c0)=[{&(0x7f0000002240)=""/148, 0x94}], 0x1, 0xd0d, 0x0, 0x0)
+
+19:20:53 executing program 0:
+r0 = openat$procfs(0xffffffffffffff9c, &(0x7f000000c380)='/proc/crypto\x00', 0x0, 0x0)
+read$FUSE(r0, &(0x7f0000000200)={0x2020}, 0x2020)
+syz_mount_image$tmpfs(&(0x7f00000000c0), &(0x7f0000000040)='./file0\x00', 0x841040, 0x0, 0x0, 0x0, &(0x7f0000000180))
+mount(&(0x7f0000000300), &(0x7f0000000140)='./file0\x00', &(0x7f0000000000)='cgroup2\x00', 0x0, 0x0)
+r1 = syz_open_procfs(0x0, &(0x7f0000000080)='mountstats\x00')
+preadv2(r1, &(0x7f00000001c0)=[{&(0x7f0000002240)=""/148, 0x94}], 0x1, 0xd0d, 0x0, 0x0)
+
+19:20:54 executing program 0:
+r0 = openat$procfs(0xffffffffffffff9c, &(0x7f000000c380)='/proc/crypto\x00', 0x0, 0x0)
+read$FUSE(r0, &(0x7f0000000200)={0x2020}, 0x2020)
+syz_mount_image$tmpfs(&(0x7f00000000c0), &(0x7f0000000040)='./file0\x00', 0x841040, 0x0, 0x0, 0x0, &(0x7f0000000180))
+mount(&(0x7f0000000300), &(0x7f0000000140)='./file0\x00', &(0x7f0000000000)='cgroup2\x00', 0x0, 0x0)
+r1 = syz_open_procfs(0x0, &(0x7f0000000080)='mountstats\x00')
+preadv2(r1, &(0x7f00000001c0)=[{&(0x7f0000002240)=""/148, 0x94}], 0x1, 0xd0d, 0x0, 0x0)
+
+19:20:56 executing program 0:
+r0 = openat$procfs(0xffffffffffffff9c, &(0x7f000000c380)='/proc/crypto\x00', 0x0, 0x0)
+read$FUSE(r0, &(0x7f0000000200)={0x2020}, 0x2020)
+syz_mount_image$tmpfs(&(0x7f00000000c0), &(0x7f0000000040)='./file0\x00', 0x841040, 0x0, 0x0, 0x0, &(0x7f0000000180))
+mount(&(0x7f0000000300), &(0x7f0000000140)='./file0\x00', &(0x7f0000000000)='cgroup2\x00', 0x0, 0x0)
+r1 = syz_open_procfs(0x0, &(0x7f0000000080)='mountstats\x00')
+preadv2(r1, &(0x7f00000001c0)=[{&(0x7f0000002240)=""/148, 0x94}], 0x1, 0xd0d, 0x0, 0x0)
+
+19:20:57 executing program 0:
+r0 = openat$procfs(0xffffffffffffff9c, &(0x7f000000c380)='/proc/crypto\x00', 0x0, 0x0)
+read$FUSE(r0, &(0x7f0000000200)={0x2020}, 0x2020)
+syz_mount_image$tmpfs(&(0x7f00000000c0), &(0x7f0000000040)='./file0\x00', 0x841040, 0x0, 0x0, 0x0, &(0x7f0000000180))
+mount(&(0x7f0000000300), &(0x7f0000000140)='./file0\x00', &(0x7f0000000000)='cgroup2\x00', 0x0, 0x0)
+r1 = syz_open_procfs(0x0, &(0x7f0000000080)='mountstats\x00')
+preadv2(r1, &(0x7f00000001c0)=[{&(0x7f0000002240)=""/148, 0x94}], 0x1, 0xd0d, 0x0, 0x0)
+
+19:20:59 executing program 0:
+r0 = socket$nl_generic(0x10, 0x3, 0x10)
+r1 = syz_genetlink_get_family_id$ethtool(&(0x7f0000000040), 0xffffffffffffffff)
+sendmsg$ETHTOOL_MSG_COALESCE_SET(r0, &(0x7f0000000540)={0x0, 0x0, &(0x7f00000001c0)={&(0x7f00000003c0)={0x3c, r1, 0x1, 0x0, 0x0, {}, [@ETHTOOL_A_COALESCE_USE_CQE_MODE_TX={0x5, 0x18, 0x1}, @ETHTOOL_A_COALESCE_HEADER={0x18, 0x1, 0x0, 0x1, [@ETHTOOL_A_HEADER_DEV_NAME={0x14, 0x2, 'netdevsim0\x00'}]}, @ETHTOOL_A_COALESCE_USE_CQE_MODE_RX={0x5, 0x19, 0x1}]}, 0x3c}}, 0x0)
+
+19:21:01 executing program 0:
+r0 = socket$nl_generic(0x10, 0x3, 0x10)
+r1 = syz_genetlink_get_family_id$ethtool(&(0x7f0000000040), 0xffffffffffffffff)
+sendmsg$ETHTOOL_MSG_COALESCE_SET(r0, &(0x7f0000000540)={0x0, 0x0, &(0x7f00000001c0)={&(0x7f00000003c0)={0x3c, r1, 0x1, 0x0, 0x0, {}, [@ETHTOOL_A_COALESCE_USE_CQE_MODE_TX={0x5, 0x18, 0x1}, @ETHTOOL_A_COALESCE_HEADER={0x18, 0x1, 0x0, 0x1, [@ETHTOOL_A_HEADER_DEV_NAME={0x14, 0x2, 'netdevsim0\x00'}]}, @ETHTOOL_A_COALESCE_USE_CQE_MODE_RX={0x5, 0x19, 0x1}]}, 0x3c}}, 0x0)
+
+2024/05/22 19:21:01 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x30be, Ip:0x85ff2f15}
+2024/05/22 19:21:01 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 19:21:01 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3858, Ip:0x85ff2f25}
+2024/05/22 19:21:01 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3e9b, Ip:0x833c12dd}
+2024/05/22 19:21:01 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x13f6, Ip:0x862cc7c9}
+2024/05/22 19:21:01 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x30be, Ip:0x85ffa1f0}
+2024/05/22 19:21:01 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 19:21:01 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3e9b, Ip:0x833c12dd}
+2024/05/22 19:21:01 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x4de3, Ip:0x85ffa202}
+19:21:02 executing program 0:
+r0 = socket$nl_generic(0x10, 0x3, 0x10)
+r1 = syz_genetlink_get_family_id$ethtool(&(0x7f0000000040), 0xffffffffffffffff)
+sendmsg$ETHTOOL_MSG_COALESCE_SET(r0, &(0x7f0000000540)={0x0, 0x0, &(0x7f00000001c0)={&(0x7f00000003c0)={0x3c, r1, 0x1, 0x0, 0x0, {}, [@ETHTOOL_A_COALESCE_USE_CQE_MODE_TX={0x5, 0x18, 0x1}, @ETHTOOL_A_COALESCE_HEADER={0x18, 0x1, 0x0, 0x1, [@ETHTOOL_A_HEADER_DEV_NAME={0x14, 0x2, 'netdevsim0\x00'}]}, @ETHTOOL_A_COALESCE_USE_CQE_MODE_RX={0x5, 0x19, 0x1}]}, 0x3c}}, 0x0)
+
+19:21:04 executing program 0:
+r0 = socket$nl_generic(0x10, 0x3, 0x10)
+r1 = syz_genetlink_get_family_id$ethtool(&(0x7f0000000040), 0xffffffffffffffff)
+sendmsg$ETHTOOL_MSG_COALESCE_SET(r0, &(0x7f0000000540)={0x0, 0x0, &(0x7f00000001c0)={&(0x7f00000003c0)={0x3c, r1, 0x1, 0x0, 0x0, {}, [@ETHTOOL_A_COALESCE_USE_CQE_MODE_TX={0x5, 0x18, 0x1}, @ETHTOOL_A_COALESCE_HEADER={0x18, 0x1, 0x0, 0x1, [@ETHTOOL_A_HEADER_DEV_NAME={0x14, 0x2, 'netdevsim0\x00'}]}, @ETHTOOL_A_COALESCE_USE_CQE_MODE_RX={0x5, 0x19, 0x1}]}, 0x3c}}, 0x0)
+
+19:21:05 executing program 0:
+r0 = socket$nl_generic(0x10, 0x3, 0x10)
+r1 = syz_genetlink_get_family_id$ethtool(&(0x7f0000000040), 0xffffffffffffffff)
+sendmsg$ETHTOOL_MSG_COALESCE_SET(r0, &(0x7f0000000540)={0x0, 0x0, &(0x7f00000001c0)={&(0x7f00000003c0)={0x3c, r1, 0x1, 0x0, 0x0, {}, [@ETHTOOL_A_COALESCE_USE_CQE_MODE_TX={0x5, 0x18, 0x1}, @ETHTOOL_A_COALESCE_HEADER={0x18, 0x1, 0x0, 0x1, [@ETHTOOL_A_HEADER_DEV_NAME={0x14, 0x2, 'netdevsim0\x00'}]}, @ETHTOOL_A_COALESCE_USE_CQE_MODE_RX={0x5, 0x19, 0x1}]}, 0x3c}}, 0x0)
+
+19:21:07 executing program 0:
+r0 = socket$nl_generic(0x10, 0x3, 0x10)
+r1 = syz_genetlink_get_family_id$ethtool(&(0x7f0000000040), 0xffffffffffffffff)
+sendmsg$ETHTOOL_MSG_COALESCE_SET(r0, &(0x7f0000000540)={0x0, 0x0, &(0x7f00000001c0)={&(0x7f00000003c0)={0x3c, r1, 0x1, 0x0, 0x0, {}, [@ETHTOOL_A_COALESCE_USE_CQE_MODE_TX={0x5, 0x18, 0x1}, @ETHTOOL_A_COALESCE_HEADER={0x18, 0x1, 0x0, 0x1, [@ETHTOOL_A_HEADER_DEV_NAME={0x14, 0x2, 'netdevsim0\x00'}]}, @ETHTOOL_A_COALESCE_USE_CQE_MODE_RX={0x5, 0x19, 0x1}]}, 0x3c}}, 0x0)
+
+19:21:08 executing program 0:
+r0 = socket$nl_generic(0x10, 0x3, 0x10)
+r1 = syz_genetlink_get_family_id$ethtool(&(0x7f0000000040), 0xffffffffffffffff)
+sendmsg$ETHTOOL_MSG_COALESCE_SET(r0, &(0x7f0000000540)={0x0, 0x0, &(0x7f00000001c0)={&(0x7f00000003c0)={0x3c, r1, 0x1, 0x0, 0x0, {}, [@ETHTOOL_A_COALESCE_USE_CQE_MODE_TX={0x5, 0x18, 0x1}, @ETHTOOL_A_COALESCE_HEADER={0x18, 0x1, 0x0, 0x1, [@ETHTOOL_A_HEADER_DEV_NAME={0x14, 0x2, 'netdevsim0\x00'}]}, @ETHTOOL_A_COALESCE_USE_CQE_MODE_RX={0x5, 0x19, 0x1}]}, 0x3c}}, 0x0)
+
+19:21:10 executing program 0:
+r0 = socket(0x1e, 0x4, 0x0)
+r1 = socket(0x1e, 0x4, 0x0)
+setsockopt$packet_tx_ring(r1, 0x10f, 0x87, &(0x7f0000000440)=@req={0x3fc}, 0x10)
+setsockopt$packet_tx_ring(r0, 0x10f, 0x87, &(0x7f0000000440)=@req={0x3fc}, 0x10)
+sendmmsg(r0, &(0x7f00000030c0)=[{{0x0, 0x0, 0x0}}], 0x1, 0x0)
+r2 = socket(0x1e, 0x4, 0x0)
+setsockopt$packet_tx_ring(r2, 0x10f, 0x87, &(0x7f0000000440)=@req={0x3fc}, 0x10)
+
+19:21:11 executing program 0:
+r0 = socket(0x1e, 0x4, 0x0)
+r1 = socket(0x1e, 0x4, 0x0)
+setsockopt$packet_tx_ring(r1, 0x10f, 0x87, &(0x7f0000000440)=@req={0x3fc}, 0x10)
+setsockopt$packet_tx_ring(r0, 0x10f, 0x87, &(0x7f0000000440)=@req={0x3fc}, 0x10)
+sendmmsg(r0, &(0x7f00000030c0)=[{{0x0, 0x0, 0x0}}], 0x1, 0x0)
+r2 = socket(0x1e, 0x4, 0x0)
+setsockopt$packet_tx_ring(r2, 0x10f, 0x87, &(0x7f0000000440)=@req={0x3fc}, 0x10)
+
+2024/05/22 19:21:11 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3036, Ip:0x8724c2b6}
+2024/05/22 19:21:11 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 19:21:11 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x48e3, Ip:0x8724c2a4}
+2024/05/22 19:21:11 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3036, Ip:0x8724c2b6}
+2024/05/22 19:21:11 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 19:21:11 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x48e3, Ip:0x8724c2a4}
+2024/05/22 19:21:11 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x30be, Ip:0x85ffa1f0}
+2024/05/22 19:21:11 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 19:21:11 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x4de3, Ip:0x85ffa202}
+2024/05/22 19:21:11 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3036, Ip:0x8724c2b6}
+2024/05/22 19:21:11 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 19:21:11 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x48e3, Ip:0x8724c2a4}
+19:21:13 executing program 0:
+r0 = socket(0x1e, 0x4, 0x0)
+r1 = socket(0x1e, 0x4, 0x0)
+setsockopt$packet_tx_ring(r1, 0x10f, 0x87, &(0x7f0000000440)=@req={0x3fc}, 0x10)
+setsockopt$packet_tx_ring(r0, 0x10f, 0x87, &(0x7f0000000440)=@req={0x3fc}, 0x10)
+sendmmsg(r0, &(0x7f00000030c0)=[{{0x0, 0x0, 0x0}}], 0x1, 0x0)
+r2 = socket(0x1e, 0x4, 0x0)
+setsockopt$packet_tx_ring(r2, 0x10f, 0x87, &(0x7f0000000440)=@req={0x3fc}, 0x10)
+
+19:21:14 executing program 0:
+r0 = socket(0x1e, 0x4, 0x0)
+r1 = socket(0x1e, 0x4, 0x0)
+setsockopt$packet_tx_ring(r1, 0x10f, 0x87, &(0x7f0000000440)=@req={0x3fc}, 0x10)
+setsockopt$packet_tx_ring(r0, 0x10f, 0x87, &(0x7f0000000440)=@req={0x3fc}, 0x10)
+sendmmsg(r0, &(0x7f00000030c0)=[{{0x0, 0x0, 0x0}}], 0x1, 0x0)
+r2 = socket(0x1e, 0x4, 0x0)
+setsockopt$packet_tx_ring(r2, 0x10f, 0x87, &(0x7f0000000440)=@req={0x3fc}, 0x10)
+
+19:21:16 executing program 0:
+r0 = socket(0x1e, 0x4, 0x0)
+r1 = socket(0x1e, 0x4, 0x0)
+setsockopt$packet_tx_ring(r1, 0x10f, 0x87, &(0x7f0000000440)=@req={0x3fc}, 0x10)
+setsockopt$packet_tx_ring(r0, 0x10f, 0x87, &(0x7f0000000440)=@req={0x3fc}, 0x10)
+sendmmsg(r0, &(0x7f00000030c0)=[{{0x0, 0x0, 0x0}}], 0x1, 0x0)
+r2 = socket(0x1e, 0x4, 0x0)
+setsockopt$packet_tx_ring(r2, 0x10f, 0x87, &(0x7f0000000440)=@req={0x3fc}, 0x10)
+
+19:21:17 executing program 0:
+r0 = socket(0x1e, 0x4, 0x0)
+r1 = socket(0x1e, 0x4, 0x0)
+setsockopt$packet_tx_ring(r1, 0x10f, 0x87, &(0x7f0000000440)=@req={0x3fc}, 0x10)
+setsockopt$packet_tx_ring(r0, 0x10f, 0x87, &(0x7f0000000440)=@req={0x3fc}, 0x10)
+sendmmsg(r0, &(0x7f00000030c0)=[{{0x0, 0x0, 0x0}}], 0x1, 0x0)
+r2 = socket(0x1e, 0x4, 0x0)
+setsockopt$packet_tx_ring(r2, 0x10f, 0x87, &(0x7f0000000440)=@req={0x3fc}, 0x10)
+
+19:21:19 executing program 0:
+r0 = socket(0x1e, 0x4, 0x0)
+r1 = socket(0x1e, 0x4, 0x0)
+setsockopt$packet_tx_ring(r1, 0x10f, 0x87, &(0x7f0000000440)=@req={0x3fc}, 0x10)
+setsockopt$packet_tx_ring(r0, 0x10f, 0x87, &(0x7f0000000440)=@req={0x3fc}, 0x10)
+sendmmsg(r0, &(0x7f00000030c0)=[{{0x0, 0x0, 0x0}}], 0x1, 0x0)
+r2 = socket(0x1e, 0x4, 0x0)
+setsockopt$packet_tx_ring(r2, 0x10f, 0x87, &(0x7f0000000440)=@req={0x3fc}, 0x10)
+
+19:21:20 executing program 0:
+r0 = socket(0x1e, 0x4, 0x0)
+r1 = socket(0x1e, 0x4, 0x0)
+setsockopt$packet_tx_ring(r1, 0x10f, 0x87, &(0x7f0000000440)=@req={0x3fc}, 0x10)
+setsockopt$packet_tx_ring(r0, 0x10f, 0x87, &(0x7f0000000440)=@req={0x3fc}, 0x10)
+sendmmsg(r0, &(0x7f00000030c0)=[{{0x0, 0x0, 0x0}}], 0x1, 0x0)
+r2 = socket(0x1e, 0x4, 0x0)
+setsockopt$packet_tx_ring(r2, 0x10f, 0x87, &(0x7f0000000440)=@req={0x3fc}, 0x10)
+
+19:21:22 executing program 0:
+r0 = socket(0x1e, 0x4, 0x0)
+r1 = socket(0x1e, 0x4, 0x0)
+setsockopt$packet_tx_ring(r1, 0x10f, 0x87, &(0x7f0000000440)=@req={0x3fc}, 0x10)
+setsockopt$packet_tx_ring(r0, 0x10f, 0x87, &(0x7f0000000440)=@req={0x3fc}, 0x10)
+sendmmsg(r0, &(0x7f00000030c0)=[{{0x0, 0x0, 0x0}}], 0x1, 0x0)
+r2 = socket(0x1e, 0x4, 0x0)
+setsockopt$packet_tx_ring(r2, 0x10f, 0x87, &(0x7f0000000440)=@req={0x3fc}, 0x10)
+
+19:21:23 executing program 0:
+r0 = socket(0x1e, 0x4, 0x0)
+r1 = socket(0x1e, 0x4, 0x0)
+setsockopt$packet_tx_ring(r1, 0x10f, 0x87, &(0x7f0000000440)=@req={0x3fc}, 0x10)
+setsockopt$packet_tx_ring(r0, 0x10f, 0x87, &(0x7f0000000440)=@req={0x3fc}, 0x10)
+sendmmsg(r0, &(0x7f00000030c0)=[{{0x0, 0x0, 0x0}}], 0x1, 0x0)
+r2 = socket(0x1e, 0x4, 0x0)
+setsockopt$packet_tx_ring(r2, 0x10f, 0x87, &(0x7f0000000440)=@req={0x3fc}, 0x10)
+
+19:21:25 executing program 0:
+r0 = socket(0x1e, 0x4, 0x0)
+r1 = socket(0x1e, 0x4, 0x0)
+setsockopt$packet_tx_ring(r1, 0x10f, 0x87, &(0x7f0000000440)=@req={0x3fc}, 0x10)
+setsockopt$packet_tx_ring(r0, 0x10f, 0x87, &(0x7f0000000440)=@req={0x3fc}, 0x10)
+sendmmsg(r0, &(0x7f00000030c0)=[{{0x0, 0x0, 0x0}}], 0x1, 0x0)
+r2 = socket(0x1e, 0x4, 0x0)
+setsockopt$packet_tx_ring(r2, 0x10f, 0x87, &(0x7f0000000440)=@req={0x3fc}, 0x10)
+
+19:21:26 executing program 0:
+r0 = socket(0x1e, 0x4, 0x0)
+r1 = socket(0x1e, 0x4, 0x0)
+setsockopt$packet_tx_ring(r1, 0x10f, 0x87, &(0x7f0000000440)=@req={0x3fc}, 0x10)
+setsockopt$packet_tx_ring(r0, 0x10f, 0x87, &(0x7f0000000440)=@req={0x3fc}, 0x10)
+sendmmsg(r0, &(0x7f00000030c0)=[{{0x0, 0x0, 0x0}}], 0x1, 0x0)
+r2 = socket(0x1e, 0x4, 0x0)
+setsockopt$packet_tx_ring(r2, 0x10f, 0x87, &(0x7f0000000440)=@req={0x3fc}, 0x10)
+
+19:21:28 executing program 0:
+r0 = socket(0x1e, 0x4, 0x0)
+r1 = socket(0x1e, 0x4, 0x0)
+setsockopt$packet_tx_ring(r1, 0x10f, 0x87, &(0x7f0000000440)=@req={0x3fc}, 0x10)
+setsockopt$packet_tx_ring(r0, 0x10f, 0x87, &(0x7f0000000440)=@req={0x3fc}, 0x10)
+sendmmsg(r0, &(0x7f00000030c0)=[{{0x0, 0x0, 0x0}}], 0x1, 0x0)
+r2 = socket(0x1e, 0x4, 0x0)
+setsockopt$packet_tx_ring(r2, 0x10f, 0x87, &(0x7f0000000440)=@req={0x3fc}, 0x10)
+
+19:21:30 executing program 0:
+r0 = socket(0x1e, 0x4, 0x0)
+r1 = socket(0x1e, 0x4, 0x0)
+setsockopt$packet_tx_ring(r1, 0x10f, 0x87, &(0x7f0000000440)=@req={0x3fc}, 0x10)
+setsockopt$packet_tx_ring(r0, 0x10f, 0x87, &(0x7f0000000440)=@req={0x3fc}, 0x10)
+sendmmsg(r0, &(0x7f00000030c0)=[{{0x0, 0x0, 0x0}}], 0x1, 0x0)
+r2 = socket(0x1e, 0x4, 0x0)
+setsockopt$packet_tx_ring(r2, 0x10f, 0x87, &(0x7f0000000440)=@req={0x3fc}, 0x10)
+
+19:21:31 executing program 0:
+r0 = socket(0x1e, 0x4, 0x0)
+r1 = socket(0x1e, 0x4, 0x0)
+setsockopt$packet_tx_ring(r1, 0x10f, 0x87, &(0x7f0000000440)=@req={0x3fc}, 0x10)
+setsockopt$packet_tx_ring(r0, 0x10f, 0x87, &(0x7f0000000440)=@req={0x3fc}, 0x10)
+sendmmsg(r0, &(0x7f00000030c0)=[{{0x0, 0x0, 0x0}}], 0x1, 0x0)
+r2 = socket(0x1e, 0x4, 0x0)
+setsockopt$packet_tx_ring(r2, 0x10f, 0x87, &(0x7f0000000440)=@req={0x3fc}, 0x10)
+
+19:21:33 executing program 0:
+r0 = socket(0x1e, 0x4, 0x0)
+r1 = socket(0x1e, 0x4, 0x0)
+setsockopt$packet_tx_ring(r1, 0x10f, 0x87, &(0x7f0000000440)=@req={0x3fc}, 0x10)
+setsockopt$packet_tx_ring(r0, 0x10f, 0x87, &(0x7f0000000440)=@req={0x3fc}, 0x10)
+sendmmsg(r0, &(0x7f00000030c0)=[{{0x0, 0x0, 0x0}}], 0x1, 0x0)
+r2 = socket(0x1e, 0x4, 0x0)
+setsockopt$packet_tx_ring(r2, 0x10f, 0x87, &(0x7f0000000440)=@req={0x3fc}, 0x10)
+
+19:21:34 executing program 0:
+lsetxattr$security_capability(&(0x7f0000000000)='./cgroup.cpu/cpuset.cpus\x00', &(0x7f0000000080), &(0x7f00000000c0)=@v2={0x2000000, [{0x200, 0x20009}, {0x0, 0x7ffffffe}]}, 0x14, 0x0)
+open(&(0x7f0000000040)='./cgroup.cpu/cpuset.cpus\x00', 0x121342, 0x0)
+
+2024/05/22 19:21:36 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x5d8, Ip:0x8191d095}
+2024/05/22 19:21:36 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 19:21:36 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x363c, Ip:0x8191d085}
+2024/05/22 19:21:36 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x47cf, Ip:0x81bc6364}
+2024/05/22 19:21:36 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+2024/05/22 19:21:36 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+19:21:36 executing program 0:
+lsetxattr$security_capability(&(0x7f0000000000)='./cgroup.cpu/cpuset.cpus\x00', &(0x7f0000000080), &(0x7f00000000c0)=@v2={0x2000000, [{0x200, 0x20009}, {0x0, 0x7ffffffe}]}, 0x14, 0x0)
+open(&(0x7f0000000040)='./cgroup.cpu/cpuset.cpus\x00', 0x121342, 0x0)
+
+19:21:37 executing program 0:
+lsetxattr$security_capability(&(0x7f0000000000)='./cgroup.cpu/cpuset.cpus\x00', &(0x7f0000000080), &(0x7f00000000c0)=@v2={0x2000000, [{0x200, 0x20009}, {0x0, 0x7ffffffe}]}, 0x14, 0x0)
+open(&(0x7f0000000040)='./cgroup.cpu/cpuset.cpus\x00', 0x121342, 0x0)
+
+19:21:39 executing program 0:
+lsetxattr$security_capability(&(0x7f0000000000)='./cgroup.cpu/cpuset.cpus\x00', &(0x7f0000000080), &(0x7f00000000c0)=@v2={0x2000000, [{0x200, 0x20009}, {0x0, 0x7ffffffe}]}, 0x14, 0x0)
+open(&(0x7f0000000040)='./cgroup.cpu/cpuset.cpus\x00', 0x121342, 0x0)
+
+19:21:40 executing program 0:
+lsetxattr$security_capability(&(0x7f0000000000)='./cgroup.cpu/cpuset.cpus\x00', &(0x7f0000000080), &(0x7f00000000c0)=@v2={0x2000000, [{0x200, 0x20009}, {0x0, 0x7ffffffe}]}, 0x14, 0x0)
+open(&(0x7f0000000040)='./cgroup.cpu/cpuset.cpus\x00', 0x121342, 0x0)
+
+19:21:42 executing program 0:
+lsetxattr$security_capability(&(0x7f0000000000)='./cgroup.cpu/cpuset.cpus\x00', &(0x7f0000000080), &(0x7f00000000c0)=@v2={0x2000000, [{0x200, 0x20009}, {0x0, 0x7ffffffe}]}, 0x14, 0x0)
+open(&(0x7f0000000040)='./cgroup.cpu/cpuset.cpus\x00', 0x121342, 0x0)
+
+19:21:43 executing program 0:
+lsetxattr$security_capability(&(0x7f0000000000)='./cgroup.cpu/cpuset.cpus\x00', &(0x7f0000000080), &(0x7f00000000c0)=@v2={0x2000000, [{0x200, 0x20009}, {0x0, 0x7ffffffe}]}, 0x14, 0x0)
+open(&(0x7f0000000040)='./cgroup.cpu/cpuset.cpus\x00', 0x121342, 0x0)
+
+19:21:45 executing program 0:
+syz_mount_image$hfs(&(0x7f0000000140), &(0x7f0000000040)='./bus\x00', 0x2810880, &(0x7f0000000300)=ANY=[], 0x8b, 0x28e, &(0x7f0000000680)="$eJzs3U1r1EAcx/HfJNt1a2tNbUUQD1IteJK2XsRLQYqvwZOo3RWKSwWtoF4snsUX4N2LL8AX4UkEz3ry5AvoLTKzSXeiedi2dsel3w/sGpN5+E+STeYfKBGAE+v2xvcPN37aj5FixZJuSZHddFktSed1ofN8e2drp9/r1jUUSx25j5FcTfNXmc3tXllVW8/VyCT2fy3N+utwPNI0TX+EDgIhdbJ/47KNkXQq+3XGfuFJtxs6gMDMnvb0QnOh4wAAhGUG9/cou8/PZvP3KJKWs9u+f///diZwvEe1FzqAwLz7v8uyUmOP71m3aZjvuRTObo/yLPGg/djJY1uDM6swwTRNWaWLJZp+tNXvXd980u9GeqP1jFdsUdK6ulnOmmmIdqkkNy1qa/TWasy4MUzZMaxVxL9Q1unhe2xmPpsv5p5J9F7d/flfKzW2exdBsn+k7kwN41+pbtGNMhmUqhjlvOvkYnHH1o4yrspIlO+peRUfECTFONultdr6o9ZgdKvVo3PtLJTWWmuotWhrffRqDc/m6prHzbwzd82SfumTNrz5f2T39rJG+WXaMq5kdmbk4ynNDVuuZOKv2r1U2mZ0uPHgUN7qoW5q7tnLV48f9Pu9pyycoIX8JPhf4vl3C63x9NU+8q7r6ECFpboy+aVzhAbzi3Rjp2EuSxiv4UGvLvN6nAFh3OzFwwzyPy9fWXEpkv1KaubpadO0zWtxtSI3OOe+T3stmez5fHUGNFOdwY2ac125Jl31VjbkXImNc7p2rJPEbOir7vP8HwAAAAAAAAAAAAAAAAAAYNKM428zQo8RAAAAAAAAAAAAAAAAAAAAAIBJV/3+346O8f2/hZfp8P5fIIzfAQAA///stXSM")
+r0 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000280)='cgroup.controllers\x00', 0x275a, 0x0)
+ftruncate(r0, 0x2ff8)
+
+[  327.567989][ T8541] loop0: detected capacity change from 0 to 64
+[  328.238715][ T1221] ieee802154 phy0 wpan0: encryption failed: -22
+[  328.239474][ T1221] ieee802154 phy1 wpan1: encryption failed: -22
+2024/05/22 19:21:47 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x1bb7, Ip:0x81bb4bc6}
+19:21:47 executing program 0:
+accept() (enabled_site: 14387, site_type: 1)
+syz_mount_image$hfs(&(0x7f0000000140), &(0x7f0000000040)='./bus\x00', 0x2810880, &(0x7f0000000300)=ANY=[], 0x8b, 0x28e, &(0x7f0000000680)="$eJzs3U1r1EAcx/HfJNt1a2tNbUUQD1IteJK2XsRLQYqvwZOo3RWKSwWtoF4snsUX4N2LL8AX4UkEz3ry5AvoLTKzSXeiedi2dsel3w/sGpN5+E+STeYfKBGAE+v2xvcPN37aj5FixZJuSZHddFktSed1ofN8e2drp9/r1jUUSx25j5FcTfNXmc3tXllVW8/VyCT2fy3N+utwPNI0TX+EDgIhdbJ/47KNkXQq+3XGfuFJtxs6gMDMnvb0QnOh4wAAhGUG9/cou8/PZvP3KJKWs9u+f///diZwvEe1FzqAwLz7v8uyUmOP71m3aZjvuRTObo/yLPGg/djJY1uDM6swwTRNWaWLJZp+tNXvXd980u9GeqP1jFdsUdK6ulnOmmmIdqkkNy1qa/TWasy4MUzZMaxVxL9Q1unhe2xmPpsv5p5J9F7d/flfKzW2exdBsn+k7kwN41+pbtGNMhmUqhjlvOvkYnHH1o4yrspIlO+peRUfECTFONultdr6o9ZgdKvVo3PtLJTWWmuotWhrffRqDc/m6prHzbwzd82SfumTNrz5f2T39rJG+WXaMq5kdmbk4ynNDVuuZOKv2r1U2mZ0uPHgUN7qoW5q7tnLV48f9Pu9pyycoIX8JPhf4vl3C63x9NU+8q7r6ECFpboy+aVzhAbzi3Rjp2EuSxiv4UGvLvN6nAFh3OzFwwzyPy9fWXEpkv1KaubpadO0zWtxtSI3OOe+T3stmez5fHUGNFOdwY2ac125Jl31VjbkXImNc7p2rJPEbOir7vP8HwAAAAAAAAAAAAAAAAAAYNKM428zQo8RAAAAAAAAAAAAAAAAAAAAAIBJV/3+346O8f2/hZfp8P5fIIzfAQAA///stXSM")
+r0 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000280)='cgroup.controllers\x00', 0x275a, 0x0)
+ftruncate(r0, 0x2ff8)
+
+2024/05/22 19:21:47 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x1bf4, Ip:0x81bb4bd8}
+2024/05/22 19:21:47 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2b09, Ip:0x8191ced7}
+2024/05/22 19:21:47 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x363c, Ip:0x8191cec7}
+2024/05/22 19:21:47 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x1c13, Ip:0x81b665d9}
+2024/05/22 19:21:47 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x3833, Ip:0x82023d48}
+2024/05/22 19:21:47 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x4038, Ip:0x820270aa}
+2024/05/22 19:21:47 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x4bf9, Ip:0x82024380}
+2024/05/22 19:21:47 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+2024/05/22 19:21:47 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x3792, Ip:0x820178f4}
+2024/05/22 19:21:47 KDO: #0: memintrinsic id=14387
+[  329.257270][ T8546] loop0: detected capacity change from 0 to 64
+[  329.267060][ T8546] BUG: KASAN: unknown-crash in hfs_inode_read_fork+0x48/0x270
+[  329.268292][ T8546] Write of size 8 at addr ffff8880b3e61b30 by task syz-executor.0/8546
+[  329.269170][ T8546] 
+[  329.269669][ T8546] CPU: 0 PID: 8546 Comm: syz-executor.0 Not tainted 6.4.1-00011-gc173c3c31378 #20
+[  329.270646][ T8546] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+[  329.272106][ T8546] Call Trace:
+[  329.272491][ T8546]  <TASK>
+[  329.272817][ T8546]  dump_stack_lvl+0x1ce/0x2c0
+[  329.273894][ T8546]  ? nf_tcp_handle_invalid+0x3d0/0x3d0
+[  329.274857][ T8546]  ? preempt_count_add+0xa0/0xf0
+[  329.275420][ T8546]  ? panic+0x620/0x620
+[  329.275891][ T8546]  print_report+0x163/0x540
+[  329.276397][ T8546]  ? lock_release+0x4c6/0x630
+[  329.276920][ T8546]  ? __virt_addr_valid+0x1cc/0x240
+[  329.277498][ T8546]  ? __phys_addr+0x99/0x110
+[  329.278018][ T8546]  kdo_kasan_report+0x7f/0x90
+[  329.278555][ T8546]  ? hfs_inode_read_fork+0x48/0x270
+[  329.279138][ T8546]  ? hfs_inode_read_fork+0x48/0x270
+[  329.279717][ T8546]  propagate_taint+0x1e1/0x210
+[  329.280252][ T8546]  ? hfs_inode_read_fork+0x48/0x270
+[  329.280836][ T8546]  ? hfs_inode_read_fork+0x48/0x270
+[  329.281425][ T8546]  __kdo_asan_memcpy+0x69/0xa0
+[  329.281967][ T8546]  hfs_inode_read_fork+0x48/0x270
+[  329.282534][ T8546]  hfs_btree_open+0x2a4/0x720
+[  329.283054][ T8546]  ? hfs_mdb_get+0xd0a/0x1200
+[  329.283588][ T8546]  hfs_mdb_get+0xd60/0x1200
+[  329.284106][ T8546]  ? hfs_xattr_set+0x3a0/0x3a0
+[  329.284644][ T8546]  ? lockdep_softirqs_off+0x270/0x270
+[  329.285258][ T8546]  hfs_fill_super+0xbf9/0x1010
+[  329.285804][ T8546]  ? vsnprintf+0x1200/0x1200
+[  329.286339][ T8546]  ? hfs_mount+0x40/0x40
+[  329.286827][ T8546]  ? ptr_to_hashval+0x80/0x80
+[  329.287366][ T8546]  ? snprintf+0xda/0x120
+[  329.287871][ T8546]  ? set_blocksize+0x19e/0x290
+[  329.288464][ T8546]  mount_bdev+0x215/0x300
+[  329.288965][ T8546]  ? hfs_mount+0x40/0x40
+[  329.289485][ T8546]  ? hfs_mark_mdb_dirty+0x100/0x100
+[  329.290103][ T8546]  legacy_get_tree+0x86/0x100
+[  329.290672][ T8546]  vfs_get_tree+0x57/0x1d0
+[  329.291209][ T8546]  do_new_mount+0x284/0x750
+[  329.291753][ T8546]  ? security_capable+0x5e/0x80
+[  329.292345][ T8546]  ? do_move_mount_old+0x140/0x140
+[  329.292948][ T8546]  ? path_mount+0x481/0xb90
+[  329.293484][ T8546]  __se_sys_mount+0x347/0x3c0
+[  329.294050][ T8546]  ? __x64_sys_mount+0x70/0x70
+[  329.294625][ T8546]  ? syscall_enter_from_user_mode+0x32/0x230
+[  329.295318][ T8546]  ? lockdep_hardirqs_on+0xdd/0x180
+[  329.295930][ T8546]  ? syscall_enter_from_user_mode+0x32/0x230
+[  329.296628][ T8546]  do_syscall_64+0x41/0x90
+[  329.297171][ T8546]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  329.297863][ T8546] RIP: 0033:0x7f9118091bae
+[  329.298397][ T8546] Code: 48 c7 c0 ff ff ff ff eb aa e8 be 0d 00 00 66 2e 0f 1f 84 00 00 00 00 00 0f 1f 40 00 f3 0f 1e fa 49 89 ca b8 a5 00 00 00 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 b0 ff ff ff f7 d8 64 89 01 48
+[  329.300463][ T8546] RSP: 002b:00007f9118ee8e38 EFLAGS: 00000202 ORIG_RAX: 00000000000000a5
+[  329.301414][ T8546] RAX: ffffffffffffffda RBX: 000000000000028e RCX: 00007f9118091bae
+[  329.302302][ T8546] RDX: 0000000020000140 RSI: 0000000020000040 RDI: 00007f9118ee8e90
+[  329.303189][ T8546] RBP: 00007f9118ee8ed0 R08: 00007f9118ee8ed0 R09: 0000000002810880
+[  329.304073][ T8546] R10: 0000000002810880 R11: 0000000000000202 R12: 0000000020000140
+[  329.304958][ T8546] R13: 0000000020000040 R14: 00007f9118ee8e90 R15: 0000000020000300
+[  329.305869][ T8546]  </TASK>
+[  329.324373][ T8546] 
+[  329.324710][ T8546] Allocated by task 8546:
+[  329.325231][ T8546]  kasan_set_track+0x4f/0x70
+[  329.326053][ T8546]  __kasan_slab_alloc+0x50/0x60
+[  329.326643][ T8546]  slab_post_alloc_hook+0x64/0x380
+[  329.327462][ T8546]  kmem_cache_alloc_lru+0x10d/0x2a0
+[  329.328076][ T8546]  hfs_alloc_inode+0x28/0x40
+[  329.328847][ T8546]  iget_locked+0x190/0x710
+[  329.329395][ T8546]  hfs_btree_open+0xe0/0x720
+[  329.330179][ T8546]  hfs_mdb_get+0xd60/0x1200
+[  329.330730][ T8546]  hfs_fill_super+0xbf9/0x1010
+[  329.331515][ T8546]  mount_bdev+0x215/0x300
+[  329.332042][ T8546]  legacy_get_tree+0x86/0x100
+[  329.332815][ T8546]  vfs_get_tree+0x57/0x1d0
+[  329.333583][ T8546]  do_new_mount+0x284/0x750
+[  329.334358][ T8546]  __se_sys_mount+0x347/0x3c0
+[  329.334926][ T8546]  do_syscall_64+0x41/0x90
+[  329.337264][ T8546]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  329.338002][ T8546] 
+[  329.338500][ T8546] The buggy address belongs to the object at ffff8880b3e61a00
+[  329.338500][ T8546]  which belongs to the cache hfs_inode_cache of size 1512
+[  329.347547][ T8546] The buggy address is located 304 bytes inside of
+[  329.347547][ T8546]  1512-byte region [ffff8880b3e61a00, ffff8880b3e61fe8)
+[  329.349261][ T8546] 
+[  329.349609][ T8546] The buggy address belongs to the physical page:
+[  329.353966][ T8546] page:ffffea0002cf9800 refcount:1 mapcount:0 mapping:0000000000000000 index:0x0 pfn:0xb3e60
+[  329.355343][ T8546] head:ffffea0002cf9800 order:3 entire_mapcount:0 nr_pages_mapped:0 pincount:0
+[  329.364368][ T8546] memcg:ffff88807c55fd01
+[  329.364877][ T8546] flags: 0xfff00000010200(slab|head|node=0|zone=1|lastcpupid=0x7ff)
+[  329.366065][ T8546] page_type: 0xffffffff()
+[  329.366590][ T8546] raw: 00fff00000010200 ffff88800ff59780 dead000000000122 0000000000000000
+[  329.367762][ T8546] raw: 0000000000000000 0000000080130013 00000001ffffffff ffff88807c55fd01
+[  329.368711][ T8546] page dumped because: kasan: bad access detected
+[  329.369708][ T8546] page_owner tracks the page as allocated
+[  329.370507][ T8546] page last allocated via order 3, migratetype Unmovable, gfp_mask 0x1d20c0(__GFP_IO|__GFP_FS|__GFP_NOWARN|__GFP_NORETRY|__GFP_COMP|__GFP_NOMEMALLOC|__GFP_HARDWALL), pid 8541, tgid 8540 (syz-executor.0), ts 327587965363, free_ts 327551646608
+[  329.384903][ T8546]  post_alloc_hook+0x1e6/0x210
+[  329.385505][ T8546]  get_page_from_freelist+0x260a/0x2790
+[  329.386393][ T8546]  __alloc_pages+0x1f2/0x480
+[  329.386949][ T8546]  alloc_slab_page+0x6a/0x160
+[  329.387722][ T8546]  new_slab+0x84/0x2f0
+[  329.388224][ T8546]  ___slab_alloc+0xa85/0x10a0
+[  329.388996][ T8546]  kmem_cache_alloc_lru+0x1a7/0x2a0
+[  329.389653][ T8546]  hfs_alloc_inode+0x28/0x40
+[  329.390419][ T8546]  iget_locked+0x190/0x710
+[  329.390958][ T8546]  hfs_btree_open+0xe0/0x720
+[  329.391722][ T8546]  hfs_mdb_get+0xd60/0x1200
+[  329.392269][ T8546]  hfs_fill_super+0xbf9/0x1010
+[  329.404342][ T8546]  mount_bdev+0x215/0x300
+[  329.404863][ T8546]  legacy_get_tree+0x86/0x100
+[  329.405694][ T8546]  vfs_get_tree+0x57/0x1d0
+[  329.406232][ T8546]  do_new_mount+0x284/0x750
+[  329.406990][ T8546] page last free stack trace:
+[  329.407546][ T8546]  free_unref_page_prepare+0x75a/0x820
+[  329.408403][ T8546]  free_unref_page+0x37/0x300
+[  329.408970][ T8546]  __unfreeze_partials+0x1b1/0x1f0
+[  329.409770][ T8546]  put_cpu_partial+0x116/0x180
+[  329.410344][ T8546]  qlist_free_all+0x22/0x60
+[  329.411104][ T8546]  kasan_quarantine_reduce+0x14b/0x160
+[  329.411750][ T8546]  __kasan_slab_alloc+0x23/0x60
+[  329.420784][ T8546]  slab_post_alloc_hook+0x64/0x380
+[  329.421395][ T8546]  kmem_cache_alloc+0x111/0x2a0
+[  329.422154][ T8546]  ptlock_alloc+0x22/0x70
+[  329.422654][ T8546]  pte_alloc_one+0xbb/0x2d0
+[  329.424756][ T8546]  handle_mm_fault+0x263e/0x4080
+[  329.425350][ T8546]  exc_page_fault+0x266/0x7e0
+[  329.426087][ T8546]  asm_exc_page_fault+0x26/0x30
+[  329.426893][ T8546] 
+[  329.427387][ T8546] Memory state around the buggy address:
+[  329.428011][ T8546]  ffff8880b3e61a00: ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec
+[  329.429086][ T8546]  ffff8880b3e61a80: ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec
+[  329.429968][ T8546] >ffff8880b3e61b00: ec ec ec ec ec ec ee ec ec ec ec ec ec ec ec ec
+[  329.436757][ T8546]                                      ^
+[  329.437411][ T8546]  ffff8880b3e61b80: ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec
+[  329.438492][ T8546]  ffff8880b3e61c00: ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec
+[  329.439361][ T8546] BUG: KASAN: unknown-crash in hfs_inode_read_fork+0x48/0x270
+[  329.444889][ T8546] Write of size 8 at addr ffff8880630a5486 by task syz-executor.0/8546
+[  329.446132][ T8546] 
+[  329.446435][ T8546] CPU: 0 PID: 8546 Comm: syz-executor.0 Not tainted 6.4.1-00011-gc173c3c31378 #20
+[  329.447422][ T8546] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+[  329.448395][ T8546] Call Trace:
+[  329.448777][ T8546]  <TASK>
+[  329.449114][ T8546]  dump_stack_lvl+0x1ce/0x2c0
+[  329.449654][ T8546]  ? nf_tcp_handle_invalid+0x3d0/0x3d0
+[  329.450257][ T8546]  ? preempt_count_add+0xa0/0xf0
+[  329.450810][ T8546]  ? panic+0x620/0x620
+[  329.451282][ T8546]  print_report+0x163/0x540
+[  329.451793][ T8546]  ? __virt_addr_valid+0x1cc/0x240
+[  329.452365][ T8546]  ? __phys_addr+0x99/0x110
+[  329.452876][ T8546]  kdo_kasan_report+0x7f/0x90
+[  329.453430][ T8546]  ? hfs_inode_read_fork+0x48/0x270
+[  329.454031][ T8546]  ? hfs_inode_read_fork+0x48/0x270
+[  329.454605][ T8546]  propagate_taint+0x1f6/0x210
+[  329.455136][ T8546]  ? hfs_inode_read_fork+0x48/0x270
+[  329.455711][ T8546]  ? hfs_inode_read_fork+0x48/0x270
+[  329.456290][ T8546]  __kdo_asan_memcpy+0x69/0xa0
+[  329.456868][ T8546]  hfs_inode_read_fork+0x48/0x270
+[  329.457434][ T8546]  hfs_btree_open+0x2a4/0x720
+[  329.457956][ T8546]  ? hfs_mdb_get+0xd0a/0x1200
+[  329.458486][ T8546]  hfs_mdb_get+0xd60/0x1200
+[  329.459002][ T8546]  ? hfs_xattr_set+0x3a0/0x3a0
+[  329.459533][ T8546]  ? lockdep_softirqs_off+0x270/0x270
+[  329.460145][ T8546]  hfs_fill_super+0xbf9/0x1010
+[  329.460681][ T8546]  ? vsnprintf+0x1200/0x1200
+[  329.461207][ T8546]  ? hfs_mount+0x40/0x40
+[  329.461693][ T8546]  ? ptr_to_hashval+0x80/0x80
+[  329.462228][ T8546]  ? snprintf+0xda/0x120
+[  329.462714][ T8546]  ? set_blocksize+0x19e/0x290
+[  329.463257][ T8546]  mount_bdev+0x215/0x300
+[  329.463742][ T8546]  ? hfs_mount+0x40/0x40
+[  329.464217][ T8546]  ? hfs_mark_mdb_dirty+0x100/0x100
+[  329.464792][ T8546]  legacy_get_tree+0x86/0x100
+[  329.465333][ T8546]  vfs_get_tree+0x57/0x1d0
+[  329.465833][ T8546]  do_new_mount+0x284/0x750
+[  329.466337][ T8546]  ? security_capable+0x5e/0x80
+[  329.466886][ T8546]  ? do_move_mount_old+0x140/0x140
+[  329.467449][ T8546]  ? path_mount+0x481/0xb90
+[  329.467962][ T8546]  __se_sys_mount+0x347/0x3c0
+[  329.468490][ T8546]  ? __x64_sys_mount+0x70/0x70
+[  329.469021][ T8546]  ? syscall_enter_from_user_mode+0x32/0x230
+[  329.469681][ T8546]  ? lockdep_hardirqs_on+0xdd/0x180
+[  329.470255][ T8546]  ? syscall_enter_from_user_mode+0x32/0x230
+[  329.470911][ T8546]  do_syscall_64+0x41/0x90
+[  329.471413][ T8546]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  329.472062][ T8546] RIP: 0033:0x7f9118091bae
+[  329.472556][ T8546] Code: 48 c7 c0 ff ff ff ff eb aa e8 be 0d 00 00 66 2e 0f 1f 84 00 00 00 00 00 0f 1f 40 00 f3 0f 1e fa 49 89 ca b8 a5 00 00 00 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 b0 ff ff ff f7 d8 64 89 01 48
+[  329.474585][ T8546] RSP: 002b:00007f9118ee8e38 EFLAGS: 00000202 ORIG_RAX: 00000000000000a5
+[  329.475485][ T8546] RAX: ffffffffffffffda RBX: 000000000000028e RCX: 00007f9118091bae
+[  329.476334][ T8546] RDX: 0000000020000140 RSI: 0000000020000040 RDI: 00007f9118ee8e90
+[  329.477178][ T8546] RBP: 00007f9118ee8ed0 R08: 00007f9118ee8ed0 R09: 0000000002810880
+[  329.478079][ T8546] R10: 0000000002810880 R11: 0000000000000202 R12: 0000000020000140
+[  329.478955][ T8546] R13: 0000000020000040 R14: 00007f9118ee8e90 R15: 0000000020000300
+[  329.479848][ T8546]  </TASK>
+[  329.533997][ T8546] 
+[  329.534331][ T8546] The buggy address belongs to the physical page:
+[  329.535241][ T8546] page:ffffea00018c2940 refcount:2 mapcount:0 mapping:ffff8881488a28e8 index:0x0 pfn:0x630a5
+[  329.536544][ T8546] memcg:ffff88807a546000
+[  329.537020][ T8546] aops:def_blk_aops ino:700000
+[  329.537776][ T8546] flags: 0xfff30000002052(referenced|lru|workingset|private|node=0|zone=1|lastcpupid=0x7ff)
+[  329.539058][ T8546] page_type: 0xffffffff()
+[  329.539553][ T8546] raw: 00fff30000002052 ffffea00017d8148 ffffea00018c2988 ffff8881488a28e8
+[  329.546826][ T8546] raw: 0000000000000000 ffff88806df8c1d0 00000002ffffffff ffff88807a546000
+[  329.547778][ T8546] page dumped because: kasan: bad access detected
+[  329.548694][ T8546] page_owner tracks the page as allocated
+[  329.553552][ T8546] page last allocated via order 0, migratetype Movable, gfp_mask 0x148c48(GFP_NOFS|__GFP_NOFAIL|__GFP_COMP|__GFP_HARDWALL|__GFP_MOVABLE), pid 8546, tgid 8545 (syz-executor.0), ts 329259975332, free_ts 329256285922
+[  329.555958][ T8546]  post_alloc_hook+0x1e6/0x210
+[  329.556503][ T8546]  get_page_from_freelist+0x260a/0x2790
+[  329.564224][ T8546]  __alloc_pages+0x1f2/0x480
+[  329.564774][ T8546]  folio_alloc+0x1e/0x60
+[  329.565476][ T8546]  filemap_alloc_folio+0xd7/0x460
+[  329.566077][ T8546]  __filemap_get_folio+0x291/0x830
+[  329.566859][ T8546]  pagecache_get_page+0x2a/0x1a0
+[  329.567422][ T8546]  __getblk_gfp+0x1b5/0xb40
+[  329.568143][ T8546]  __bread_gfp+0x2c/0x340
+[  329.568642][ T8546]  hfs_mdb_get+0x37d/0x1200
+[  329.569366][ T8546]  hfs_fill_super+0xbf9/0x1010
+[  329.569911][ T8546]  mount_bdev+0x215/0x300
+[  329.575737][ T8546]  legacy_get_tree+0x86/0x100
+[  329.576300][ T8546]  vfs_get_tree+0x57/0x1d0
+[  329.577014][ T8546]  do_new_mount+0x284/0x750
+[  329.577539][ T8546]  __se_sys_mount+0x347/0x3c0
+[  329.578278][ T8546] page last free stack trace:
+[  329.578799][ T8546]  free_unref_page_prepare+0x75a/0x820
+[  329.579611][ T8546]  free_unref_page_list+0x49c/0x640
+[  329.580198][ T8546]  release_pages+0x1fc4/0x22d0
+[  329.586997][ T8546]  tlb_flush_mmu+0xcf/0x170
+[  329.587528][ T8546]  tlb_finish_mmu+0x9f/0x140
+[  329.588254][ T8546]  unmap_region+0x1f3/0x240
+[  329.588771][ T8546]  do_vmi_align_munmap+0xea6/0x1420
+[  329.598451][ T8546]  do_vmi_munmap+0x1fc/0x230
+[  329.599010][ T8546]  __vm_munmap+0x23c/0x420
+[  329.599744][ T8546]  __x64_sys_munmap+0x36/0x40
+[  329.600296][ T8546]  do_syscall_64+0x41/0x90
+[  329.604626][ T8546]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  329.612298][ T8546] 
+[  329.612590][ T8546] Memory state around the buggy address:
+[  329.616576][ T8546]  ffff8880630a5380: eb eb eb eb eb eb eb eb eb eb eb eb eb eb eb eb
+[  329.617486][ T8546]  ffff8880630a5400: ed ed ed ed ed ed ed ed ed ed ed ed ed ed ed ed
+[  329.618586][ T8546] >ffff8880630a5480: ed ed ed ed ed ed ed ed ed ed ed ed ed ed ed ed
+[  329.619451][ T8546]                    ^
+[  329.620105][ T8546]  ffff8880630a5500: ed ed ed ed ed ed ed ed ed ed ed ed ed ed ed ed
+[  329.620966][ T8546]  ffff8880630a5580: ed ed ed ed ed ed ed ed ed ed ed ed ed ed ed ed
+[  329.633465][ T8546] Kernel panic - not syncing: KDO: memcpy hit (id: hfs_inode_read_fork+0x48/0x270, callid: 14387S)
+[  329.634635][ T8546] CPU: 0 PID: 8546 Comm: syz-executor.0 Not tainted 6.4.1-00011-gc173c3c31378 #20
+[  329.635609][ T8546] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+[  329.636573][ T8546] Call Trace:
+[  329.636940][ T8546]  <TASK>
+[  329.637294][ T8546]  dump_stack_lvl+0x1ce/0x2c0
+[  329.637899][ T8546]  ? nf_tcp_handle_invalid+0x3d0/0x3d0
+[  329.638498][ T8546]  ? panic+0x620/0x620
+[  329.638959][ T8546]  ? vscnprintf+0x5d/0x80
+[  329.639441][ T8546]  panic+0x2ba/0x620
+[  329.639878][ T8546]  ? hfs_inode_read_fork+0x48/0x270
+[  329.640449][ T8546]  ? __wake_up_klogd+0xb7/0xf0
+[  329.640983][ T8546]  ? kdo_sanitizer_cov_write+0x100/0x100
+[  329.641665][ T8546]  ? __phys_addr+0x99/0x110
+[  329.642176][ T8546]  ? kdo_kasan_report+0x7f/0x90
+[  329.642713][ T8546]  ? hfs_inode_read_fork+0x48/0x270
+[  329.643282][ T8546]  ? hfs_inode_read_fork+0x48/0x270
+[  329.643855][ T8546]  propagate_taint+0x20a/0x210
+[  329.644380][ T8546]  ? hfs_inode_read_fork+0x48/0x270
+[  329.644950][ T8546]  ? hfs_inode_read_fork+0x48/0x270
+[  329.645550][ T8546]  __kdo_asan_memcpy+0x69/0xa0
+[  329.646098][ T8546]  hfs_inode_read_fork+0x48/0x270
+[  329.646653][ T8546]  hfs_btree_open+0x2a4/0x720
+[  329.647169][ T8546]  ? hfs_mdb_get+0xd0a/0x1200
+[  329.647696][ T8546]  hfs_mdb_get+0xd60/0x1200
+[  329.648202][ T8546]  ? hfs_xattr_set+0x3a0/0x3a0
+[  329.648730][ T8546]  ? lockdep_softirqs_off+0x270/0x270
+[  329.649353][ T8546]  hfs_fill_super+0xbf9/0x1010
+[  329.649908][ T8546]  ? vsnprintf+0x1200/0x1200
+[  329.650432][ T8546]  ? hfs_mount+0x40/0x40
+[  329.650913][ T8546]  ? ptr_to_hashval+0x80/0x80
+[  329.651442][ T8546]  ? snprintf+0xda/0x120
+[  329.651922][ T8546]  ? set_blocksize+0x19e/0x290
+[  329.652462][ T8546]  mount_bdev+0x215/0x300
+[  329.652947][ T8546]  ? hfs_mount+0x40/0x40
+[  329.653442][ T8546]  ? hfs_mark_mdb_dirty+0x100/0x100
+[  329.654034][ T8546]  legacy_get_tree+0x86/0x100
+[  329.654559][ T8546]  vfs_get_tree+0x57/0x1d0
+[  329.655053][ T8546]  do_new_mount+0x284/0x750
+[  329.655552][ T8546]  ? security_capable+0x5e/0x80
+[  329.656097][ T8546]  ? do_move_mount_old+0x140/0x140
+[  329.656657][ T8546]  ? path_mount+0x481/0xb90
+[  329.657165][ T8546]  __se_sys_mount+0x347/0x3c0
+[  329.657738][ T8546]  ? __x64_sys_mount+0x70/0x70
+[  329.658267][ T8546]  ? syscall_enter_from_user_mode+0x32/0x230
+[  329.658942][ T8546]  ? lockdep_hardirqs_on+0xdd/0x180
+[  329.659535][ T8546]  ? syscall_enter_from_user_mode+0x32/0x230
+[  329.660186][ T8546]  do_syscall_64+0x41/0x90
+[  329.660685][ T8546]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  329.661347][ T8546] RIP: 0033:0x7f9118091bae
+[  329.661866][ T8546] Code: 48 c7 c0 ff ff ff ff eb aa e8 be 0d 00 00 66 2e 0f 1f 84 00 00 00 00 00 0f 1f 40 00 f3 0f 1e fa 49 89 ca b8 a5 00 00 00 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 b0 ff ff ff f7 d8 64 89 01 48
+[  329.663891][ T8546] RSP: 002b:00007f9118ee8e38 EFLAGS: 00000202 ORIG_RAX: 00000000000000a5
+[  329.664786][ T8546] RAX: ffffffffffffffda RBX: 000000000000028e RCX: 00007f9118091bae
+[  329.665630][ T8546] RDX: 0000000020000140 RSI: 0000000020000040 RDI: 00007f9118ee8e90
+[  329.666473][ T8546] RBP: 00007f9118ee8ed0 R08: 00007f9118ee8ed0 R09: 0000000002810880
+[  329.667317][ T8546] R10: 0000000002810880 R11: 0000000000000202 R12: 0000000020000140
+[  329.668156][ T8546] R13: 0000000020000040 R14: 00007f9118ee8e90 R15: 0000000020000300
+[  329.669009][ T8546]  </TASK>
+[  329.669402][ T8546] Kernel Offset: disabled
+[  329.669870][ T8546] Rebooting in 86400 seconds..
+
+VM DIAGNOSIS:
+19:21:47  Registers:
+info registers vcpu 0
+RAX=0000000000000005 RBX=0000000000000000 RCX=ffffffff8392d9be RDX=00000000000003f9
+RSI=dffffc0000000000 RDI=ffffffff8e7ea860 RBP=00000000000003f9 RSP=ffffc900057eef58
+R8 =ffffffff8e7ea867 R9 =ffffffff814f0843 R10=fffff52000afddcc R11=dffffc0000000001
+R12=ffffffff8e502653 R13=ffffffff8e7ea820 R14=0000000000000005 R15=ffffffff8e7ea820
+RIP=ffffffff8392d9c8 RFL=00000006 [-----P-] CPL=0 II=0 A20=1 SMM=0 HLT=0
+ES =0000 0000000000000000 ffffffff 00c00000
+CS =0010 0000000000000000 ffffffff 00a09b00 DPL=0 CS64 [-RA]
+SS =0018 0000000000000000 ffffffff 00c09300 DPL=0 DS   [-WA]
+DS =0000 0000000000000000 ffffffff 00c00000
+FS =0000 00007f9118ee9640 ffffffff 00c00000
+GS =0000 ffff8880ba000000 ffffffff 00c00000
+LDT=0000 0000000000000000 ffffffff 00c00000
+TR =0040 fffffe0000003000 00004087 00008b00 DPL=0 TSS64-busy
+GDT=     fffffe0000001000 0000007f
+IDT=     fffffe0000000000 00000fff
+CR0=80050033 CR2=00007f9556f09350 CR3=00000000737ba000 CR4=00350ef0
+DR0=0000000000000000 DR1=0000000000000000 DR2=0000000000000000 DR3=0000000000000000 
+DR6=00000000fffe0ff0 DR7=0000000000000400
+EFER=0000000000000d01
+FCW=037f FSW=0000 [ST=0] FTW=00 MXCSR=00001f80
+FPR0=0000000000000000 0000 FPR1=0000000000000000 0000
+FPR2=0000000000000000 0000 FPR3=0000000000000000 0000
+FPR4=0000000000000000 0000 FPR5=0000000000000000 0000
+FPR6=0000000000000000 0000 FPR7=0000000000000000 0000
+YMM00=0000000000000000 0000000000000000 00000000000f4240 0000000000000000
+YMM01=0000000000000000 0000000000000000 0000000000000000 00000000000f4240
+YMM02=0000000000000000 0000000000000000 00007f9118cfb1a0 00007f9118cfb1a0
+YMM03=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffffffff
+YMM04=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffffffff
+YMM05=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffffff00
+YMM06=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffffffff
+YMM07=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffffff00
+YMM08=0000000000000000 0000000000000000 2570756c6c25706f 6f6c2f7665642f00
+YMM09=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM10=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM11=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM12=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM13=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM14=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM15=0000000000000000 0000000000000000 0000000000000000 0000000000000000

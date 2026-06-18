@@ -1,0 +1,734 @@
+syzkaller login: [  161.156712][ T7970] sshd (7970) used greatest stack depth: 20288 bytes left
+Warning: Permanently added '[localhost]:59451' (ED25519) to the list of known hosts.
+2024/05/22 21:08:09 fuzzer started
+2024/05/22 21:08:10 dialing manager at localhost:34093
+[  177.218167][ T8035] cgroup: Unknown subsys name 'net'
+[  177.362124][ T8035] cgroup: Unknown subsys name 'rlimit'
+2024/05/22 21:08:11 syscalls: 3922
+2024/05/22 21:08:11 code coverage: enabled
+2024/05/22 21:08:11 comparison tracing: enabled
+2024/05/22 21:08:11 extra coverage: enabled
+2024/05/22 21:08:11 delay kcov mmap: enabled
+2024/05/22 21:08:11 setuid sandbox: enabled
+2024/05/22 21:08:11 namespace sandbox: enabled
+2024/05/22 21:08:11 Android sandbox: /sys/fs/selinux/policy does not exist
+2024/05/22 21:08:11 fault injection: enabled
+2024/05/22 21:08:11 leak checking: CONFIG_DEBUG_KMEMLEAK is not enabled
+2024/05/22 21:08:11 net packet injection: enabled
+2024/05/22 21:08:11 net device setup: enabled
+2024/05/22 21:08:11 concurrency sanitizer: /sys/kernel/debug/kcsan does not exist
+2024/05/22 21:08:11 devlink PCI setup: PCI device 0000:00:10.0 is not available
+2024/05/22 21:08:11 NIC VF setup: PCI device 0000:00:11.0 is not available
+2024/05/22 21:08:11 USB emulation: enabled
+2024/05/22 21:08:11 hci packet injection: enabled
+2024/05/22 21:08:11 wifi device emulation: enabled
+2024/05/22 21:08:11 802.15.4 emulation: enabled
+2024/05/22 21:08:11 fetching corpus: 0, signal 0/2000 (executing program)
+2024/05/22 21:08:11 fetching corpus: 50, signal 24930/28271 (executing program)
+2024/05/22 21:08:12 fetching corpus: 100, signal 34002/38695 (executing program)
+2024/05/22 21:08:12 fetching corpus: 150, signal 38989/44966 (executing program)
+2024/05/22 21:08:12 fetching corpus: 200, signal 42799/50045 (executing program)
+2024/05/22 21:08:12 fetching corpus: 250, signal 47931/56257 (executing program)
+2024/05/22 21:08:13 fetching corpus: 300, signal 53551/62742 (executing program)
+2024/05/22 21:08:13 fetching corpus: 350, signal 58640/68656 (executing program)
+2024/05/22 21:08:13 fetching corpus: 400, signal 62392/73267 (executing program)
+2024/05/22 21:08:13 fetching corpus: 450, signal 65869/77493 (executing program)
+2024/05/22 21:08:13 fetching corpus: 500, signal 69252/81580 (executing program)
+2024/05/22 21:08:13 fetching corpus: 550, signal 72018/85060 (executing program)
+2024/05/22 21:08:14 fetching corpus: 600, signal 75688/89281 (executing program)
+2024/05/22 21:08:14 fetching corpus: 650, signal 78279/92517 (executing program)
+2024/05/22 21:08:14 fetching corpus: 700, signal 80256/95137 (executing program)
+2024/05/22 21:08:14 fetching corpus: 750, signal 82832/98200 (executing program)
+2024/05/22 21:08:14 fetching corpus: 800, signal 85096/100965 (executing program)
+2024/05/22 21:08:14 fetching corpus: 850, signal 88171/104329 (executing program)
+2024/05/22 21:08:14 fetching corpus: 900, signal 89724/106390 (executing program)
+2024/05/22 21:08:15 fetching corpus: 950, signal 94692/110990 (executing program)
+2024/05/22 21:08:15 fetching corpus: 1000, signal 97315/113798 (executing program)
+2024/05/22 21:08:15 fetching corpus: 1049, signal 99861/116402 (executing program)
+2024/05/22 21:08:15 fetching corpus: 1099, signal 102070/118723 (executing program)
+2024/05/22 21:08:15 fetching corpus: 1149, signal 104280/120945 (executing program)
+2024/05/22 21:08:16 fetching corpus: 1199, signal 106490/123238 (executing program)
+2024/05/22 21:08:16 fetching corpus: 1249, signal 108224/125096 (executing program)
+2024/05/22 21:08:16 fetching corpus: 1299, signal 110665/127353 (executing program)
+2024/05/22 21:08:16 fetching corpus: 1349, signal 111975/128806 (executing program)
+2024/05/22 21:08:16 fetching corpus: 1399, signal 113562/130387 (executing program)
+2024/05/22 21:08:16 fetching corpus: 1449, signal 115385/132099 (executing program)
+2024/05/22 21:08:17 fetching corpus: 1499, signal 117141/133715 (executing program)
+2024/05/22 21:08:17 fetching corpus: 1549, signal 118367/135004 (executing program)
+2024/05/22 21:08:17 fetching corpus: 1599, signal 120011/136497 (executing program)
+2024/05/22 21:08:17 fetching corpus: 1649, signal 121577/137890 (executing program)
+2024/05/22 21:08:17 fetching corpus: 1698, signal 122664/138971 (executing program)
+2024/05/22 21:08:17 fetching corpus: 1748, signal 123704/139991 (executing program)
+2024/05/22 21:08:18 fetching corpus: 1798, signal 125831/141569 (executing program)
+2024/05/22 21:08:18 fetching corpus: 1827, signal 127112/142640 (executing program)
+2024/05/22 21:08:18 fetching corpus: 1827, signal 127112/143061 (executing program)
+2024/05/22 21:08:18 fetching corpus: 1827, signal 127112/143484 (executing program)
+2024/05/22 21:08:18 fetching corpus: 1827, signal 127112/143889 (executing program)
+2024/05/22 21:08:18 fetching corpus: 1827, signal 127112/144320 (executing program)
+2024/05/22 21:08:18 fetching corpus: 1827, signal 127112/144722 (executing program)
+2024/05/22 21:08:18 fetching corpus: 1827, signal 127112/145139 (executing program)
+2024/05/22 21:08:18 fetching corpus: 1827, signal 127112/145556 (executing program)
+2024/05/22 21:08:18 fetching corpus: 1827, signal 127112/145980 (executing program)
+2024/05/22 21:08:18 fetching corpus: 1827, signal 127112/146352 (executing program)
+2024/05/22 21:08:18 fetching corpus: 1827, signal 127112/146748 (executing program)
+2024/05/22 21:08:18 fetching corpus: 1827, signal 127112/147178 (executing program)
+2024/05/22 21:08:18 fetching corpus: 1827, signal 127112/147575 (executing program)
+2024/05/22 21:08:18 fetching corpus: 1827, signal 127112/147999 (executing program)
+2024/05/22 21:08:18 fetching corpus: 1827, signal 127112/148422 (executing program)
+2024/05/22 21:08:18 fetching corpus: 1827, signal 127112/148819 (executing program)
+2024/05/22 21:08:18 fetching corpus: 1827, signal 127112/149262 (executing program)
+2024/05/22 21:08:18 fetching corpus: 1827, signal 127112/149690 (executing program)
+2024/05/22 21:08:18 fetching corpus: 1827, signal 127112/150106 (executing program)
+2024/05/22 21:08:18 fetching corpus: 1827, signal 127112/150502 (executing program)
+2024/05/22 21:08:18 fetching corpus: 1827, signal 127112/150920 (executing program)
+2024/05/22 21:08:18 fetching corpus: 1827, signal 127112/151351 (executing program)
+2024/05/22 21:08:18 fetching corpus: 1827, signal 127112/151726 (executing program)
+2024/05/22 21:08:18 fetching corpus: 1827, signal 127112/152148 (executing program)
+2024/05/22 21:08:18 fetching corpus: 1827, signal 127112/152529 (executing program)
+2024/05/22 21:08:18 fetching corpus: 1827, signal 127112/152914 (executing program)
+2024/05/22 21:08:18 fetching corpus: 1827, signal 127112/153342 (executing program)
+2024/05/22 21:08:18 fetching corpus: 1827, signal 127112/153744 (executing program)
+2024/05/22 21:08:18 fetching corpus: 1827, signal 127112/154140 (executing program)
+2024/05/22 21:08:18 fetching corpus: 1827, signal 127112/154540 (executing program)
+2024/05/22 21:08:18 fetching corpus: 1827, signal 127112/154941 (executing program)
+2024/05/22 21:08:18 fetching corpus: 1827, signal 127112/155359 (executing program)
+2024/05/22 21:08:18 fetching corpus: 1827, signal 127112/155776 (executing program)
+2024/05/22 21:08:18 fetching corpus: 1827, signal 127112/156208 (executing program)
+2024/05/22 21:08:18 fetching corpus: 1827, signal 127112/156610 (executing program)
+2024/05/22 21:08:18 fetching corpus: 1827, signal 127112/156992 (executing program)
+2024/05/22 21:08:18 fetching corpus: 1827, signal 127112/157428 (executing program)
+2024/05/22 21:08:18 fetching corpus: 1827, signal 127112/157808 (executing program)
+2024/05/22 21:08:18 fetching corpus: 1827, signal 127112/158236 (executing program)
+2024/05/22 21:08:18 fetching corpus: 1827, signal 127112/158670 (executing program)
+2024/05/22 21:08:18 fetching corpus: 1827, signal 127112/159062 (executing program)
+2024/05/22 21:08:18 fetching corpus: 1827, signal 127112/159477 (executing program)
+2024/05/22 21:08:18 fetching corpus: 1827, signal 127112/159806 (executing program)
+2024/05/22 21:08:18 fetching corpus: 1827, signal 127112/159806 (executing program)
+2024/05/22 21:08:25 starting 1 fuzzer processes
+[  191.248346][ T8021] memfd_create() without MFD_EXEC nor MFD_NOEXEC_SEAL, pid=8021 'syz-fuzzer'
+21:08:25 executing program 0:
+r0 = socket$nl_generic(0x10, 0x3, 0x10)
+r1 = syz_genetlink_get_family_id$nl80211(&(0x7f0000000080), 0xffffffffffffffff)
+ioctl$sock_SIOCGIFINDEX_80211(r0, 0x8933, &(0x7f00000000c0)={'wlan1\x00', <r2=>0x0})
+sendmsg$NL80211_CMD_SET_INTERFACE(r0, &(0x7f0000000100)={0x0, 0x0, &(0x7f0000000140)={&(0x7f0000000180)={0x24, r1, 0x5, 0x0, 0x0, {{}, {@val={0x8, 0x3, r2}, @void}}, [@NL80211_ATTR_IFTYPE={0x8, 0x5, 0x2}]}, 0x24}}, 0x0)
+sendmsg$NL80211_CMD_CONNECT(r0, &(0x7f00000001c0)={0x0, 0x0, &(0x7f0000000200)={&(0x7f0000000240)={0x44, r1, 0x5, 0x0, 0x0, {{}, {@val={0x8, 0x3, r2}, @void}}, [@NL80211_ATTR_SSID={0xa, 0x34, @default_ap_ssid}, @NL80211_ATTR_MAC={0xa, 0x6, @from_mac}, @NL80211_ATTR_AUTH_TYPE={0x8}, @chandef_params=[@NL80211_ATTR_WIPHY_FREQ={0x8}]]}, 0x44}}, 0x0)
+syz_80211_inject_frame(&(0x7f00000002c0)=@device_b, &(0x7f0000000300)=@mgmt_frame=@probe_response={@wo_ht={{}, {}, @device_b, @device_a, @from_mac}, 0x0, @default, 0x1, @val={0x0, 0x6, @default_ap_ssid}, @val={0x1, 0x8, [{0x2, 0x1}, {0x4, 0x1}, {0xb, 0x1}, {0x16, 0x1}, {0xc}, {0x12}, {0x18}, {0x24}]}, @void, @void, @void, @void, @void, @void}, 0x36)
+nanosleep(&(0x7f0000000340)={0x0, 0x2faf080}, &(0x7f0000000380))
+syz_80211_inject_frame(&(0x7f00000003c0)=@device_b, &(0x7f0000000400)=@mgmt_frame=@auth={@wo_ht={{}, {}, @device_b, @device_a, @from_mac, {0x0, 0x1}}, 0x0, 0x2, 0x0, @void}, 0x1e)
+nanosleep(&(0x7f0000000440)={0x0, 0x2faf080}, &(0x7f0000000480))
+syz_80211_inject_frame(&(0x7f00000004c0)=@device_b, &(0x7f0000000500)=@mgmt_frame=@assoc_resp={@wo_ht={{}, {}, @device_b, @device_a, @from_mac, {0x0, 0x2}}, 0x1, 0x0, @default, @val={0x1, 0x8, [{0x2, 0x1}, {0x4, 0x1}, {0xb, 0x1}, {0x16, 0x1}, {0xc}, {0x12}, {0x18}, {0x24}]}, @void}, 0x28)
+
+[  205.336703][ T1219] ieee802154 phy0 wpan0: encryption failed: -22
+[  205.337693][ T1219] ieee802154 phy1 wpan1: encryption failed: -22
+[  211.377646][ T8049] Bluetooth: hci0: unexpected cc 0x0c03 length: 249 > 1
+[  211.380480][ T8049] Bluetooth: hci0: unexpected cc 0x1003 length: 249 > 9
+[  211.382508][ T8049] Bluetooth: hci0: unexpected cc 0x1001 length: 249 > 9
+[  211.394681][ T8049] Bluetooth: hci0: unexpected cc 0x0c23 length: 249 > 4
+[  211.397214][ T8049] Bluetooth: hci0: unexpected cc 0x0c25 length: 249 > 3
+[  211.398976][ T8049] Bluetooth: hci0: unexpected cc 0x0c38 length: 249 > 2
+[  212.438094][ T8046] chnl_net:caif_netlink_parms(): no params data found
+[  212.651304][ T8046] bridge0: port 1(bridge_slave_0) entered blocking state
+[  212.655276][ T8046] bridge0: port 1(bridge_slave_0) entered disabled state
+[  212.656261][ T8046] bridge_slave_0: entered allmulticast mode
+[  212.659004][ T8046] bridge_slave_0: entered promiscuous mode
+[  212.670029][ T8046] bridge0: port 2(bridge_slave_1) entered blocking state
+[  212.671366][ T8046] bridge0: port 2(bridge_slave_1) entered disabled state
+[  212.672343][ T8046] bridge_slave_1: entered allmulticast mode
+[  212.678496][ T8046] bridge_slave_1: entered promiscuous mode
+[  212.746889][ T8046] bond0: (slave bond_slave_0): Enslaving as an active interface with an up link
+[  212.753187][ T8046] bond0: (slave bond_slave_1): Enslaving as an active interface with an up link
+[  212.826692][ T8046] team0: Port device team_slave_0 added
+[  212.831574][ T8046] team0: Port device team_slave_1 added
+[  212.895026][ T8046] batman_adv: batadv0: Adding interface: batadv_slave_0
+[  212.895872][ T8046] batman_adv: batadv0: The MTU of interface batadv_slave_0 is too small (1500) to handle the transport of batman-adv packets. Packets going over this interface will be fragmented on layer2 which could impact the performance. Setting the MTU to 1560 would solve the problem.
+[  212.898756][ T8046] batman_adv: batadv0: Not using interface batadv_slave_0 (retrying later): interface not active
+[  212.913069][ T8046] batman_adv: batadv0: Adding interface: batadv_slave_1
+[  212.915066][ T8046] batman_adv: batadv0: The MTU of interface batadv_slave_1 is too small (1500) to handle the transport of batman-adv packets. Packets going over this interface will be fragmented on layer2 which could impact the performance. Setting the MTU to 1560 would solve the problem.
+[  212.918036][ T8046] batman_adv: batadv0: Not using interface batadv_slave_1 (retrying later): interface not active
+[  213.011919][ T8046] hsr_slave_0: entered promiscuous mode
+[  213.018869][ T8046] hsr_slave_1: entered promiscuous mode
+[  213.442222][ T8046] netdevsim netdevsim0 netdevsim0: renamed from eth0
+[  213.468855][ T8046] netdevsim netdevsim0 netdevsim1: renamed from eth1
+[  213.482608][ T8046] netdevsim netdevsim0 netdevsim2: renamed from eth2
+[  213.497334][ T8049] Bluetooth: hci0: command 0x0409 tx timeout
+[  213.508371][ T8046] netdevsim netdevsim0 netdevsim3: renamed from eth3
+[  213.691106][ T8046] 8021q: adding VLAN 0 to HW filter on device bond0
+[  213.711648][    T7] IPv6: ADDRCONF(NETDEV_CHANGE): veth1: link becomes ready
+[  213.720561][    T7] IPv6: ADDRCONF(NETDEV_CHANGE): veth0: link becomes ready
+[  213.735343][ T8046] 8021q: adding VLAN 0 to HW filter on device team0
+[  213.746629][    T7] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_to_bridge: link becomes ready
+[  213.748715][    T7] IPv6: ADDRCONF(NETDEV_CHANGE): bridge_slave_0: link becomes ready
+[  213.752366][    T7] bridge0: port 1(bridge_slave_0) entered blocking state
+[  213.753512][    T7] bridge0: port 1(bridge_slave_0) entered forwarding state
+[  213.759706][    T7] IPv6: ADDRCONF(NETDEV_CHANGE): bridge0: link becomes ready
+[  213.775028][ T4453] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_to_bridge: link becomes ready
+[  213.776932][ T4453] IPv6: ADDRCONF(NETDEV_CHANGE): bridge_slave_1: link becomes ready
+[  213.779552][ T4453] bridge0: port 2(bridge_slave_1) entered blocking state
+[  213.780403][ T4453] bridge0: port 2(bridge_slave_1) entered forwarding state
+[  213.796468][ T4453] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_to_bond: link becomes ready
+[  213.811819][ T4453] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_to_bond: link becomes ready
+[  213.831807][ T4453] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_to_team: link becomes ready
+[  213.834754][ T4453] IPv6: ADDRCONF(NETDEV_CHANGE): team_slave_0: link becomes ready
+[  213.841823][ T4453] IPv6: ADDRCONF(NETDEV_CHANGE): team0: link becomes ready
+[  213.856174][ T4453] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_to_team: link becomes ready
+[  213.858606][ T4453] IPv6: ADDRCONF(NETDEV_CHANGE): team_slave_1: link becomes ready
+[  213.873210][ T4453] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_to_hsr: link becomes ready
+[  213.875893][ T4453] IPv6: ADDRCONF(NETDEV_CHANGE): hsr_slave_0: link becomes ready
+[  213.891694][ T4453] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_to_hsr: link becomes ready
+[  213.899210][ T4453] IPv6: ADDRCONF(NETDEV_CHANGE): hsr_slave_1: link becomes ready
+[  213.914963][ T8046] IPv6: ADDRCONF(NETDEV_CHANGE): hsr0: link becomes ready
+[  214.210506][ T4453] IPv6: ADDRCONF(NETDEV_CHANGE): vxcan1: link becomes ready
+[  214.211637][ T4453] IPv6: ADDRCONF(NETDEV_CHANGE): vxcan0: link becomes ready
+[  214.232565][ T8046] 8021q: adding VLAN 0 to HW filter on device batadv0
+[  214.267402][ T4453] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_virt_wifi: link becomes ready
+[  214.269468][ T4453] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_virt_wifi: link becomes ready
+[  214.310633][ T4453] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_vlan: link becomes ready
+[  214.312641][ T4453] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_vlan: link becomes ready
+[  214.318957][ T4453] IPv6: ADDRCONF(NETDEV_CHANGE): vlan0: link becomes ready
+[  214.322268][ T4453] IPv6: ADDRCONF(NETDEV_CHANGE): vlan1: link becomes ready
+[  214.330715][ T8046] veth0_vlan: entered promiscuous mode
+[  214.348629][ T8046] veth1_vlan: entered promiscuous mode
+[  214.393017][ T4453] IPv6: ADDRCONF(NETDEV_CHANGE): macvlan0: link becomes ready
+[  214.395576][ T4453] IPv6: ADDRCONF(NETDEV_CHANGE): macvlan1: link becomes ready
+[  214.398448][ T4453] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_macvtap: link becomes ready
+[  214.400442][ T4453] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_macvtap: link becomes ready
+[  214.412851][ T8046] veth0_macvtap: entered promiscuous mode
+[  214.420429][ T8046] veth1_macvtap: entered promiscuous mode
+[  214.453236][ T8046] batman_adv: batadv0: Interface activated: batadv_slave_0
+[  214.454914][ T4453] IPv6: ADDRCONF(NETDEV_CHANGE): macvtap0: link becomes ready
+[  214.456938][ T4453] IPv6: ADDRCONF(NETDEV_CHANGE): macsec0: link becomes ready
+[  214.459622][ T4453] IPv6: ADDRCONF(NETDEV_CHANGE): batadv_slave_0: link becomes ready
+[  214.461502][ T4453] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_to_batadv: link becomes ready
+[  214.479733][ T8046] batman_adv: batadv0: Interface activated: batadv_slave_1
+[  214.481128][    T7] IPv6: ADDRCONF(NETDEV_CHANGE): batadv_slave_1: link becomes ready
+[  214.483120][    T7] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_to_batadv: link becomes ready
+[  214.496167][ T8046] netdevsim netdevsim0 netdevsim0: set [1, 0] type 2 family 0 port 6081 - 0
+[  214.497301][ T8046] netdevsim netdevsim0 netdevsim1: set [1, 0] type 2 family 0 port 6081 - 0
+[  214.498321][ T8046] netdevsim netdevsim0 netdevsim2: set [1, 0] type 2 family 0 port 6081 - 0
+[  214.499331][ T8046] netdevsim netdevsim0 netdevsim3: set [1, 0] type 2 family 0 port 6081 - 0
+[  214.641295][ T8046] ieee80211 phy3: Selected rate control algorithm 'minstrel_ht'
+[  214.769160][   T46] wlan0: Created IBSS using preconfigured BSSID 50:50:50:50:50:50
+[  214.770282][   T46] wlan0: Creating new IBSS network, BSSID 50:50:50:50:50:50
+[  214.774093][  T741] IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+[  214.809405][ T8046] ieee80211 phy4: Selected rate control algorithm 'minstrel_ht'
+[  214.902029][ T1053] wlan1: Created IBSS using preconfigured BSSID 50:50:50:50:50:50
+[  214.903087][ T1053] wlan1: Creating new IBSS network, BSSID 50:50:50:50:50:50
+[  214.909160][ T8269] IPv6: ADDRCONF(NETDEV_CHANGE): wlan1: link becomes ready
+[  215.577792][ T8049] Bluetooth: hci0: command 0x041b tx timeout
+[  215.851632][ T8282] mac80211_hwsim: wmediumd released netlink socket, switching to perfect channel medium
+[  215.890298][ T8269] wlan1: authenticate with 08:02:11:00:00:00
+[  215.907359][ T8269] wlan1: send auth to 08:02:11:00:00:00 (try 1/3)
+[  215.922969][ T2752] wlan1: authenticated
+[  215.927507][ T8269] mac80211_hwsim hwsim3 wlan1: disabling HT/VHT/HE as WMM/QoS is not supported by the AP
+[  215.929476][ T8283] mac80211_hwsim: wmediumd released netlink socket, switching to perfect channel medium
+[  215.940954][ T1053] wlan1: associate with 08:02:11:00:00:00 (try 1/3)
+[  215.986152][ T1053] wlan1: RX AssocResp from 08:02:11:00:00:00 (capab=0x1 status=0 aid=1)
+[  215.987577][ T1053] wlan1: associated
+[  215.989254][ T8282] mac80211_hwsim: wmediumd released netlink socket, switching to perfect channel medium
+2024/05/22 21:08:51 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x30be, Ip:0x85ff2f15}
+2024/05/22 21:08:51 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 21:08:51 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3858, Ip:0x85ff2f25}
+2024/05/22 21:08:51 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3e9b, Ip:0x833c12dd}
+2024/05/22 21:08:51 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x13f6, Ip:0x862cc7c9}
+21:08:51 executing program 0:
+accept() (enabled_site: 73, site_type: 1)
+r0 = socket$nl_generic(0x10, 0x3, 0x10)
+r1 = syz_genetlink_get_family_id$nl80211(&(0x7f0000000080), 0xffffffffffffffff)
+ioctl$sock_SIOCGIFINDEX_80211(r0, 0x8933, &(0x7f00000000c0)={'wlan1\x00', <r2=>0x0})
+sendmsg$NL80211_CMD_SET_INTERFACE(r0, &(0x7f0000000100)={0x0, 0x0, &(0x7f0000000140)={&(0x7f0000000180)={0x24, r1, 0x5, 0x0, 0x0, {{}, {@val={0x8, 0x3, r2}, @void}}, [@NL80211_ATTR_IFTYPE={0x8, 0x5, 0x2}]}, 0x24}}, 0x0)
+sendmsg$NL80211_CMD_CONNECT(r0, &(0x7f00000001c0)={0x0, 0x0, &(0x7f0000000200)={&(0x7f0000000240)={0x44, r1, 0x5, 0x0, 0x0, {{}, {@val={0x8, 0x3, r2}, @void}}, [@NL80211_ATTR_SSID={0xa, 0x34, @default_ap_ssid}, @NL80211_ATTR_MAC={0xa, 0x6, @from_mac}, @NL80211_ATTR_AUTH_TYPE={0x8}, @chandef_params=[@NL80211_ATTR_WIPHY_FREQ={0x8}]]}, 0x44}}, 0x0)
+syz_80211_inject_frame(&(0x7f00000002c0)=@device_b, &(0x7f0000000300)=@mgmt_frame=@probe_response={@wo_ht={{}, {}, @device_b, @device_a, @from_mac}, 0x0, @default, 0x1, @val={0x0, 0x6, @default_ap_ssid}, @val={0x1, 0x8, [{0x2, 0x1}, {0x4, 0x1}, {0xb, 0x1}, {0x16, 0x1}, {0xc}, {0x12}, {0x18}, {0x24}]}, @void, @void, @void, @void, @void, @void}, 0x36)
+nanosleep(&(0x7f0000000340)={0x0, 0x2faf080}, &(0x7f0000000380))
+syz_80211_inject_frame(&(0x7f00000003c0)=@device_b, &(0x7f0000000400)=@mgmt_frame=@auth={@wo_ht={{}, {}, @device_b, @device_a, @from_mac, {0x0, 0x1}}, 0x0, 0x2, 0x0, @void}, 0x1e)
+nanosleep(&(0x7f0000000440)={0x0, 0x2faf080}, &(0x7f0000000480))
+syz_80211_inject_frame(&(0x7f00000004c0)=@device_b, &(0x7f0000000500)=@mgmt_frame=@assoc_resp={@wo_ht={{}, {}, @device_b, @device_a, @from_mac, {0x0, 0x2}}, 0x1, 0x0, @default, @val={0x1, 0x8, [{0x2, 0x1}, {0x4, 0x1}, {0xb, 0x1}, {0x16, 0x1}, {0xc}, {0x12}, {0x18}, {0x24}]}, @void}, 0x28)
+
+2024/05/22 21:08:51 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2297, Ip:0x85ffe255}
+2024/05/22 21:08:51 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x30be, Ip:0x85ffe243}
+2024/05/22 21:08:51 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 21:08:51 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x30be, Ip:0x85ffa1f0}
+2024/05/22 21:08:51 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 21:08:51 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3e9b, Ip:0x833c12dd}
+2024/05/22 21:08:51 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x4de3, Ip:0x85ffa202}
+2024/05/22 21:08:51 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x13f6, Ip:0x862cc7c9}
+2024/05/22 21:08:51 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x59bd, Ip:0x835b1664}
+2024/05/22 21:08:51 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x30be, Ip:0x85ffa1f0}
+2024/05/22 21:08:51 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 21:08:51 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3e9b, Ip:0x833c12dd}
+2024/05/22 21:08:51 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x4de3, Ip:0x85ffa202}
+2024/05/22 21:08:51 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x49, Ip:0x86fe78f6}
+2024/05/22 21:08:51 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0xd46, Ip:0x84922e69}
+2024/05/22 21:08:51 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x13f6, Ip:0x862cc7c9}
+2024/05/22 21:08:51 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x256e, Ip:0x8708b3af}
+2024/05/22 21:08:51 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x2d85, Ip:0x87112fb3}
+2024/05/22 21:08:51 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x43b9, Ip:0x8711301f}
+2024/05/22 21:08:51 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x4d7b, Ip:0x86fe7d1b}
+2024/05/22 21:08:51 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x4de1, Ip:0x86fe920f}
+2024/05/22 21:08:51 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x59bd, Ip:0x835b1664}
+2024/05/22 21:08:51 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x30be, Ip:0x85ff2f15}
+2024/05/22 21:08:51 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 21:08:51 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3858, Ip:0x85ff2f25}
+2024/05/22 21:08:51 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3e9b, Ip:0x833c12dd}
+2024/05/22 21:08:51 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x13f6, Ip:0x862cc7c9}
+2024/05/22 21:08:51 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x2e38, Ip:0x84916355}
+2024/05/22 21:08:51 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2151, Ip:0x8158bef7}
+2024/05/22 21:08:51 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 21:08:51 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x598d, Ip:0x8158bee5}
+2024/05/22 21:08:51 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x30be, Ip:0x85ff2f15}
+2024/05/22 21:08:51 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 21:08:51 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3858, Ip:0x85ff2f25}
+2024/05/22 21:08:51 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3e9b, Ip:0x833c12dd}
+2024/05/22 21:08:51 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x13f6, Ip:0x862cc7c9}
+2024/05/22 21:08:51 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x2e38, Ip:0x84916355}
+2024/05/22 21:08:51 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2151, Ip:0x8158bef7}
+2024/05/22 21:08:51 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 21:08:51 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x598d, Ip:0x8158bee5}
+2024/05/22 21:08:51 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x30be, Ip:0x85ff2f15}
+2024/05/22 21:08:51 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 21:08:51 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3858, Ip:0x85ff2f25}
+2024/05/22 21:08:51 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3e9b, Ip:0x833c12dd}
+2024/05/22 21:08:51 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x13f6, Ip:0x862cc7c9}
+2024/05/22 21:08:51 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x2e38, Ip:0x84916355}
+2024/05/22 21:08:51 KDO: #0: memintrinsic id=73
+[  217.656936][ T4405] Bluetooth: hci0: command 0x040f tx timeout
+[  217.894797][ T8286] mac80211_hwsim: wmediumd released netlink socket, switching to perfect channel medium
+[  217.967406][ T8287] mac80211_hwsim: wmediumd released netlink socket, switching to perfect channel medium
+[  218.023190][ T8286] mac80211_hwsim: wmediumd released netlink socket, switching to perfect channel medium
+21:08:53 executing program 0:
+accept() (enabled_site: 3398, site_type: 1)
+r0 = socket$nl_generic(0x10, 0x3, 0x10)
+r1 = syz_genetlink_get_family_id$nl80211(&(0x7f0000000080), 0xffffffffffffffff)
+ioctl$sock_SIOCGIFINDEX_80211(r0, 0x8933, &(0x7f00000000c0)={'wlan1\x00', <r2=>0x0})
+sendmsg$NL80211_CMD_SET_INTERFACE(r0, &(0x7f0000000100)={0x0, 0x0, &(0x7f0000000140)={&(0x7f0000000180)={0x24, r1, 0x5, 0x0, 0x0, {{}, {@val={0x8, 0x3, r2}, @void}}, [@NL80211_ATTR_IFTYPE={0x8, 0x5, 0x2}]}, 0x24}}, 0x0)
+sendmsg$NL80211_CMD_CONNECT(r0, &(0x7f00000001c0)={0x0, 0x0, &(0x7f0000000200)={&(0x7f0000000240)={0x44, r1, 0x5, 0x0, 0x0, {{}, {@val={0x8, 0x3, r2}, @void}}, [@NL80211_ATTR_SSID={0xa, 0x34, @default_ap_ssid}, @NL80211_ATTR_MAC={0xa, 0x6, @from_mac}, @NL80211_ATTR_AUTH_TYPE={0x8}, @chandef_params=[@NL80211_ATTR_WIPHY_FREQ={0x8}]]}, 0x44}}, 0x0)
+syz_80211_inject_frame(&(0x7f00000002c0)=@device_b, &(0x7f0000000300)=@mgmt_frame=@probe_response={@wo_ht={{}, {}, @device_b, @device_a, @from_mac}, 0x0, @default, 0x1, @val={0x0, 0x6, @default_ap_ssid}, @val={0x1, 0x8, [{0x2, 0x1}, {0x4, 0x1}, {0xb, 0x1}, {0x16, 0x1}, {0xc}, {0x12}, {0x18}, {0x24}]}, @void, @void, @void, @void, @void, @void}, 0x36)
+nanosleep(&(0x7f0000000340)={0x0, 0x2faf080}, &(0x7f0000000380))
+syz_80211_inject_frame(&(0x7f00000003c0)=@device_b, &(0x7f0000000400)=@mgmt_frame=@auth={@wo_ht={{}, {}, @device_b, @device_a, @from_mac, {0x0, 0x1}}, 0x0, 0x2, 0x0, @void}, 0x1e)
+nanosleep(&(0x7f0000000440)={0x0, 0x2faf080}, &(0x7f0000000480))
+syz_80211_inject_frame(&(0x7f00000004c0)=@device_b, &(0x7f0000000500)=@mgmt_frame=@assoc_resp={@wo_ht={{}, {}, @device_b, @device_a, @from_mac, {0x0, 0x2}}, 0x1, 0x0, @default, @val={0x1, 0x8, [{0x2, 0x1}, {0x4, 0x1}, {0xb, 0x1}, {0x16, 0x1}, {0xc}, {0x12}, {0x18}, {0x24}]}, @void}, 0x28)
+
+2024/05/22 21:08:53 KDO: #0: memintrinsic id=3398
+[  219.736678][ T8049] Bluetooth: hci0: command 0x0419 tx timeout
+[  219.928063][ T8290] mac80211_hwsim: wmediumd released netlink socket, switching to perfect channel medium
+[  220.012260][ T8291] mac80211_hwsim: wmediumd released netlink socket, switching to perfect channel medium
+[  220.076985][ T8290] mac80211_hwsim: wmediumd released netlink socket, switching to perfect channel medium
+2024/05/22 21:08:55 KDO: #0: memintrinsic id=11653
+21:08:55 executing program 0:
+accept() (enabled_site: 11653, site_type: 1)
+r0 = socket$nl_generic(0x10, 0x3, 0x10)
+r1 = syz_genetlink_get_family_id$nl80211(&(0x7f0000000080), 0xffffffffffffffff)
+ioctl$sock_SIOCGIFINDEX_80211(r0, 0x8933, &(0x7f00000000c0)={'wlan1\x00', <r2=>0x0})
+sendmsg$NL80211_CMD_SET_INTERFACE(r0, &(0x7f0000000100)={0x0, 0x0, &(0x7f0000000140)={&(0x7f0000000180)={0x24, r1, 0x5, 0x0, 0x0, {{}, {@val={0x8, 0x3, r2}, @void}}, [@NL80211_ATTR_IFTYPE={0x8, 0x5, 0x2}]}, 0x24}}, 0x0)
+sendmsg$NL80211_CMD_CONNECT(r0, &(0x7f00000001c0)={0x0, 0x0, &(0x7f0000000200)={&(0x7f0000000240)={0x44, r1, 0x5, 0x0, 0x0, {{}, {@val={0x8, 0x3, r2}, @void}}, [@NL80211_ATTR_SSID={0xa, 0x34, @default_ap_ssid}, @NL80211_ATTR_MAC={0xa, 0x6, @from_mac}, @NL80211_ATTR_AUTH_TYPE={0x8}, @chandef_params=[@NL80211_ATTR_WIPHY_FREQ={0x8}]]}, 0x44}}, 0x0)
+syz_80211_inject_frame(&(0x7f00000002c0)=@device_b, &(0x7f0000000300)=@mgmt_frame=@probe_response={@wo_ht={{}, {}, @device_b, @device_a, @from_mac}, 0x0, @default, 0x1, @val={0x0, 0x6, @default_ap_ssid}, @val={0x1, 0x8, [{0x2, 0x1}, {0x4, 0x1}, {0xb, 0x1}, {0x16, 0x1}, {0xc}, {0x12}, {0x18}, {0x24}]}, @void, @void, @void, @void, @void, @void}, 0x36)
+nanosleep(&(0x7f0000000340)={0x0, 0x2faf080}, &(0x7f0000000380))
+syz_80211_inject_frame(&(0x7f00000003c0)=@device_b, &(0x7f0000000400)=@mgmt_frame=@auth={@wo_ht={{}, {}, @device_b, @device_a, @from_mac, {0x0, 0x1}}, 0x0, 0x2, 0x0, @void}, 0x1e)
+nanosleep(&(0x7f0000000440)={0x0, 0x2faf080}, &(0x7f0000000480))
+syz_80211_inject_frame(&(0x7f00000004c0)=@device_b, &(0x7f0000000500)=@mgmt_frame=@assoc_resp={@wo_ht={{}, {}, @device_b, @device_a, @from_mac, {0x0, 0x2}}, 0x1, 0x0, @default, @val={0x1, 0x8, [{0x2, 0x1}, {0x4, 0x1}, {0xb, 0x1}, {0x16, 0x1}, {0xc}, {0x12}, {0x18}, {0x24}]}, @void}, 0x28)
+
+[  221.946344][ T8294] mac80211_hwsim: wmediumd released netlink socket, switching to perfect channel medium
+[  222.010707][ T8295] mac80211_hwsim: wmediumd released netlink socket, switching to perfect channel medium
+[  222.066328][ T8295] mac80211_hwsim: wmediumd released netlink socket, switching to perfect channel medium
+2024/05/22 21:08:57 KDO: #0: memintrinsic id=17337
+21:08:57 executing program 0:
+accept() (enabled_site: 17337, site_type: 1)
+r0 = socket$nl_generic(0x10, 0x3, 0x10)
+r1 = syz_genetlink_get_family_id$nl80211(&(0x7f0000000080), 0xffffffffffffffff)
+ioctl$sock_SIOCGIFINDEX_80211(r0, 0x8933, &(0x7f00000000c0)={'wlan1\x00', <r2=>0x0})
+sendmsg$NL80211_CMD_SET_INTERFACE(r0, &(0x7f0000000100)={0x0, 0x0, &(0x7f0000000140)={&(0x7f0000000180)={0x24, r1, 0x5, 0x0, 0x0, {{}, {@val={0x8, 0x3, r2}, @void}}, [@NL80211_ATTR_IFTYPE={0x8, 0x5, 0x2}]}, 0x24}}, 0x0)
+sendmsg$NL80211_CMD_CONNECT(r0, &(0x7f00000001c0)={0x0, 0x0, &(0x7f0000000200)={&(0x7f0000000240)={0x44, r1, 0x5, 0x0, 0x0, {{}, {@val={0x8, 0x3, r2}, @void}}, [@NL80211_ATTR_SSID={0xa, 0x34, @default_ap_ssid}, @NL80211_ATTR_MAC={0xa, 0x6, @from_mac}, @NL80211_ATTR_AUTH_TYPE={0x8}, @chandef_params=[@NL80211_ATTR_WIPHY_FREQ={0x8}]]}, 0x44}}, 0x0)
+syz_80211_inject_frame(&(0x7f00000002c0)=@device_b, &(0x7f0000000300)=@mgmt_frame=@probe_response={@wo_ht={{}, {}, @device_b, @device_a, @from_mac}, 0x0, @default, 0x1, @val={0x0, 0x6, @default_ap_ssid}, @val={0x1, 0x8, [{0x2, 0x1}, {0x4, 0x1}, {0xb, 0x1}, {0x16, 0x1}, {0xc}, {0x12}, {0x18}, {0x24}]}, @void, @void, @void, @void, @void, @void}, 0x36)
+nanosleep(&(0x7f0000000340)={0x0, 0x2faf080}, &(0x7f0000000380))
+syz_80211_inject_frame(&(0x7f00000003c0)=@device_b, &(0x7f0000000400)=@mgmt_frame=@auth={@wo_ht={{}, {}, @device_b, @device_a, @from_mac, {0x0, 0x1}}, 0x0, 0x2, 0x0, @void}, 0x1e)
+nanosleep(&(0x7f0000000440)={0x0, 0x2faf080}, &(0x7f0000000480))
+syz_80211_inject_frame(&(0x7f00000004c0)=@device_b, &(0x7f0000000500)=@mgmt_frame=@assoc_resp={@wo_ht={{}, {}, @device_b, @device_a, @from_mac, {0x0, 0x2}}, 0x1, 0x0, @default, @val={0x1, 0x8, [{0x2, 0x1}, {0x4, 0x1}, {0xb, 0x1}, {0x16, 0x1}, {0xc}, {0x12}, {0x18}, {0x24}]}, @void}, 0x28)
+
+[  223.886980][ T8298] mac80211_hwsim: wmediumd released netlink socket, switching to perfect channel medium
+[  223.950529][ T8299] mac80211_hwsim: wmediumd released netlink socket, switching to perfect channel medium
+[  224.006121][ T8299] mac80211_hwsim: wmediumd released netlink socket, switching to perfect channel medium
+2024/05/22 21:08:59 KDO: #0: memintrinsic id=11832
+21:08:59 executing program 0:
+accept() (enabled_site: 11832, site_type: 1)
+r0 = socket$nl_generic(0x10, 0x3, 0x10)
+r1 = syz_genetlink_get_family_id$nl80211(&(0x7f0000000080), 0xffffffffffffffff)
+ioctl$sock_SIOCGIFINDEX_80211(r0, 0x8933, &(0x7f00000000c0)={'wlan1\x00', <r2=>0x0})
+sendmsg$NL80211_CMD_SET_INTERFACE(r0, &(0x7f0000000100)={0x0, 0x0, &(0x7f0000000140)={&(0x7f0000000180)={0x24, r1, 0x5, 0x0, 0x0, {{}, {@val={0x8, 0x3, r2}, @void}}, [@NL80211_ATTR_IFTYPE={0x8, 0x5, 0x2}]}, 0x24}}, 0x0)
+sendmsg$NL80211_CMD_CONNECT(r0, &(0x7f00000001c0)={0x0, 0x0, &(0x7f0000000200)={&(0x7f0000000240)={0x44, r1, 0x5, 0x0, 0x0, {{}, {@val={0x8, 0x3, r2}, @void}}, [@NL80211_ATTR_SSID={0xa, 0x34, @default_ap_ssid}, @NL80211_ATTR_MAC={0xa, 0x6, @from_mac}, @NL80211_ATTR_AUTH_TYPE={0x8}, @chandef_params=[@NL80211_ATTR_WIPHY_FREQ={0x8}]]}, 0x44}}, 0x0)
+syz_80211_inject_frame(&(0x7f00000002c0)=@device_b, &(0x7f0000000300)=@mgmt_frame=@probe_response={@wo_ht={{}, {}, @device_b, @device_a, @from_mac}, 0x0, @default, 0x1, @val={0x0, 0x6, @default_ap_ssid}, @val={0x1, 0x8, [{0x2, 0x1}, {0x4, 0x1}, {0xb, 0x1}, {0x16, 0x1}, {0xc}, {0x12}, {0x18}, {0x24}]}, @void, @void, @void, @void, @void, @void}, 0x36)
+nanosleep(&(0x7f0000000340)={0x0, 0x2faf080}, &(0x7f0000000380))
+syz_80211_inject_frame(&(0x7f00000003c0)=@device_b, &(0x7f0000000400)=@mgmt_frame=@auth={@wo_ht={{}, {}, @device_b, @device_a, @from_mac, {0x0, 0x1}}, 0x0, 0x2, 0x0, @void}, 0x1e)
+nanosleep(&(0x7f0000000440)={0x0, 0x2faf080}, &(0x7f0000000480))
+syz_80211_inject_frame(&(0x7f00000004c0)=@device_b, &(0x7f0000000500)=@mgmt_frame=@assoc_resp={@wo_ht={{}, {}, @device_b, @device_a, @from_mac, {0x0, 0x2}}, 0x1, 0x0, @default, @val={0x1, 0x8, [{0x2, 0x1}, {0x4, 0x1}, {0xb, 0x1}, {0x16, 0x1}, {0xc}, {0x12}, {0x18}, {0x24}]}, @void}, 0x28)
+
+[  225.825661][ T8302] BUG: KASAN: unknown-crash in hwsim_cloned_frame_received_nl+0x165/0x890
+[  225.827738][ T8302] Write of size 8 at addr ffff8880b2148600 by task syz-executor.0/8302
+[  225.828933][ T8302] 
+[  225.829413][ T8302] CPU: 0 PID: 8302 Comm: syz-executor.0 Not tainted 6.4.1-00011-gc173c3c31378 #20
+[  225.830977][ T8302] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+[  225.832048][ T8302] Call Trace:
+[  225.832460][ T8302]  <TASK>
+[  225.832835][ T8302]  dump_stack_lvl+0x1ce/0x2c0
+[  225.833419][ T8302]  ? nf_tcp_handle_invalid+0x3d0/0x3d0
+[  225.834090][ T8302]  ? preempt_count_add+0xa0/0xf0
+[  225.834688][ T8302]  ? panic+0x620/0x620
+[  225.835195][ T8302]  ? __kasan_slab_alloc+0x50/0x60
+[  225.835812][ T8302]  ? slab_post_alloc_hook+0x7f/0x380
+[  225.836469][ T8302]  print_report+0x163/0x540
+[  225.837029][ T8302]  ? rcu_is_watching+0x39/0x70
+[  225.837629][ T8302]  ? kmem_cache_alloc_node+0x181/0x310
+[  225.838304][ T8302]  ? __virt_addr_valid+0x1cc/0x240
+[  225.838962][ T8302]  ? __phys_addr+0x99/0x110
+[  225.839525][ T8302]  kdo_kasan_report+0x7f/0x90
+[  225.840099][ T8302]  ? hwsim_cloned_frame_received_nl+0x165/0x890
+[  225.840831][ T8302]  ? hwsim_cloned_frame_received_nl+0x165/0x890
+[  225.841569][ T8302]  propagate_taint+0x1e1/0x210
+[  225.842148][ T8302]  ? hwsim_cloned_frame_received_nl+0x165/0x890
+[  225.842878][ T8302]  ? hwsim_cloned_frame_received_nl+0x165/0x890
+[  225.843611][ T8302]  __kdo_asan_memcpy+0x69/0xa0
+[  225.844182][ T8302]  hwsim_cloned_frame_received_nl+0x165/0x890
+[  225.844903][ T8302]  ? hwsim_register_received_nl+0x250/0x250
+[  225.845601][ T8302]  ? __nla_parse+0x40/0x50
+[  225.846153][ T8302]  ? genl_family_rcv_msg_attrs_parse+0x162/0x1b0
+[  225.846908][ T8302]  genl_rcv_msg+0xb6f/0xbc0
+[  225.847463][ T8302]  ? genl_bind+0x240/0x240
+[  225.847999][ T8302]  ? __local_bh_enable_ip+0x14c/0x1b0
+[  225.848632][ T8302]  ? lockdep_hardirqs_on+0xdd/0x180
+[  225.849251][ T8302]  ? local_bh_enable+0x5/0x20
+[  225.849820][ T8302]  ? __local_bh_enable_ip+0x14c/0x1b0
+[  225.850454][ T8302]  ? _local_bh_enable+0x70/0x70
+[  225.851033][ T8302]  ? dev_hard_start_xmit+0x5be/0x600
+[  225.851668][ T8302]  ? __lock_acquire+0x911/0x10d0
+[  225.852270][ T8302]  ? hwsim_register_received_nl+0x250/0x250
+[  225.852977][ T8302]  netlink_rcv_skb+0x184/0x2b0
+[  225.853553][ T8302]  ? genl_bind+0x240/0x240
+[  225.854098][ T8302]  ? netlink_ack+0xac0/0xac0
+[  225.854666][ T8302]  ? __lock_acquire+0x10d0/0x10d0
+[  225.855272][ T8302]  ? down_read+0x54/0x250
+[  225.855797][ T8302]  ? preempt_count_sub+0x13/0xc0
+[  225.856388][ T8302]  ? down_read+0x175/0x250
+[  225.856929][ T8302]  genl_rcv+0x28/0x40
+[  225.857417][ T8302]  netlink_unicast+0x605/0x6c0
+[  225.858009][ T8302]  ? copyout_mc+0x80/0x80
+[  225.858540][ T8302]  ? netlink_detachskb+0x90/0x90
+[  225.859149][ T8302]  ? __phys_addr_symbol+0x3b/0x50
+[  225.859775][ T8302]  ? __check_object_size+0x3f9/0x850
+[  225.860432][ T8302]  netlink_sendmsg+0x826/0x990
+[  225.861050][ T8302]  ? netlink_getsockopt+0x570/0x570
+[  225.861705][ T8302]  ? kdo_copy_from_user+0x6a/0xf0
+[  225.862334][ T8302]  ? bpf_lsm_socket_sendmsg+0x9/0x10
+[  225.862984][ T8302]  ? netlink_getsockopt+0x570/0x570
+[  225.863625][ T8302]  __sys_sendto+0x3d9/0x500
+[  225.864186][ T8302]  ? __ia32_sys_getpeername+0x50/0x50
+[  225.864865][ T8302]  ? print_irqtrace_events+0x110/0x110
+[  225.865529][ T8302]  ? syscall_enter_from_user_mode+0x32/0x230
+[  225.866267][ T8302]  __x64_sys_sendto+0x78/0x90
+[  225.866847][ T8302]  do_syscall_64+0x41/0x90
+[  225.867402][ T8302]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  225.868113][ T8302] RIP: 0033:0x7f3d73a921c6
+[  225.868682][ T8302] Code: c7 02 00 44 8b 4c 24 2c 4c 8b 44 24 20 41 89 c4 44 8b 54 24 28 48 8b 54 24 18 b8 2c 00 00 00 48 8b 74 24 10 8b 7c 24 08 0f 05 <48> 3d 00 f0 ff ff 77 3a 44 89 e7 48 89 44 24 08 e8 35 c7 02 00 48
+[  225.870912][ T8302] RSP: 002b:00007f3cb29fceb0 EFLAGS: 00000293 ORIG_RAX: 000000000000002c
+[  225.871881][ T8302] RAX: ffffffffffffffda RBX: 00007f3cb29fcf80 RCX: 00007f3d73a921c6
+[  225.872800][ T8302] RDX: 000000000000006c RSI: 00007f3cb29fcfd0 RDI: 0000000000000004
+[  225.873748][ T8302] RBP: 0000000000000001 R08: 00007f3cb29fcf0c R09: 000000000000000c
+[  225.874700][ T8302] R10: 0000000000000000 R11: 0000000000000293 R12: 0000000000000000
+[  225.875630][ T8302] R13: 00007f3cb29fcfd0 R14: 0000000000000004 R15: 0000000000000000
+[  225.876590][ T8302]  </TASK>
+[  225.889484][ T8302] 
+[  225.889848][ T8302] Allocated by task 8302:
+[  225.890404][ T8302]  kasan_set_track+0x4f/0x70
+[  225.907973][ T8302]  __kasan_slab_alloc+0x50/0x60
+[  225.908610][ T8302]  slab_post_alloc_hook+0x64/0x380
+[  225.910770][ T8302]  kmem_cache_alloc_node+0x152/0x310
+[  225.911430][ T8302]  kmalloc_reserve+0x73/0x170
+[  225.913785][ T8302]  __alloc_skb+0x192/0x2e0
+[  225.914373][ T8302]  hwsim_cloned_frame_received_nl+0x114/0x890
+[  225.925535][ T8302]  genl_rcv_msg+0xb6f/0xbc0
+[  225.926139][ T8302]  netlink_rcv_skb+0x184/0x2b0
+[  225.926903][ T8302]  genl_rcv+0x28/0x40
+[  225.927385][ T8302]  netlink_unicast+0x605/0x6c0
+[  225.928364][ T8302]  netlink_sendmsg+0x826/0x990
+[  225.928953][ T8302]  __sys_sendto+0x3d9/0x500
+[  225.929738][ T8302]  __x64_sys_sendto+0x78/0x90
+[  225.930313][ T8302]  do_syscall_64+0x41/0x90
+[  225.931038][ T8302]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  225.931721][ T8302] 
+[  225.932001][ T8302] The buggy address belongs to the object at ffff8880b2148600
+[  225.932001][ T8302]  which belongs to the cache skbuff_small_head of size 640
+[  225.942267][ T8302] The buggy address is located 0 bytes inside of
+[  225.942267][ T8302]  640-byte region [ffff8880b2148600, ffff8880b2148880)
+[  225.956181][ T8302] 
+[  225.956489][ T8302] The buggy address belongs to the physical page:
+[  225.957462][ T8302] page:ffffea0002c85200 refcount:1 mapcount:0 mapping:0000000000000000 index:0x0 pfn:0xb2148
+[  225.966449][ T8302] head:ffffea0002c85200 order:1 entire_mapcount:0 nr_pages_mapped:0 pincount:0
+[  225.975574][ T8302] flags: 0xfff00000010200(slab|head|node=0|zone=1|lastcpupid=0x7ff)
+[  225.976511][ T8302] page_type: 0xffffffff()
+[  225.977246][ T8302] raw: 00fff00000010200 ffff88801427f780 dead000000000122 0000000000000000
+[  225.978481][ T8302] raw: 0000000000000000 00000000800a000a 00000001ffffffff 0000000000000000
+[  225.979659][ T8302] page dumped because: kasan: bad access detected
+[  225.980413][ T8302] page_owner tracks the page as allocated
+[  225.995535][ T8302] page last allocated via order 1, migratetype Unmovable, gfp_mask 0x1d20c0(__GFP_IO|__GFP_FS|__GFP_NOWARN|__GFP_NORETRY|__GFP_COMP|__GFP_NOMEMALLOC|__GFP_HARDWALL), pid 8302, tgid 8301 (syz-executor.0), ts 225825425090, free_ts 0
+[  225.998300][ T8302]  post_alloc_hook+0x1e6/0x210
+[  225.998907][ T8302]  get_page_from_freelist+0x260a/0x2790
+[  225.999802][ T8302]  __alloc_pages+0x1f2/0x480
+[  226.000361][ T8302]  alloc_slab_page+0x6a/0x160
+[  226.001131][ T8302]  new_slab+0x84/0x2f0
+[  226.001653][ T8302]  ___slab_alloc+0xa85/0x10a0
+[  226.002451][ T8302]  kmem_cache_alloc_node+0x1ee/0x310
+[  226.003077][ T8302]  kmalloc_reserve+0x73/0x170
+[  226.011092][ T8302]  __alloc_skb+0x192/0x2e0
+[  226.011671][ T8302]  netlink_ack+0x2a9/0xac0
+[  226.012453][ T8302]  netlink_rcv_skb+0x1f1/0x2b0
+[  226.013049][ T8302]  genl_rcv+0x28/0x40
+[  226.014050][ T8302]  netlink_unicast+0x605/0x6c0
+[  226.014671][ T8302]  netlink_sendmsg+0x826/0x990
+[  226.015495][ T8302]  __sys_sendto+0x3d9/0x500
+[  226.016073][ T8302]  __x64_sys_sendto+0x78/0x90
+[  226.019994][ T8302] page_owner free stack trace missing
+[  226.025736][ T8302] 
+[  226.026064][ T8302] Memory state around the buggy address:
+[  226.026969][ T8302]  ffff8880b2148500: ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec
+[  226.034947][ T8302]  ffff8880b2148580: fc fc fc fc fc fc fc fc fc fc fc fc fc fc fc fc
+[  226.036175][ T8302] >ffff8880b2148600: ee ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec
+[  226.037126][ T8302]                    ^
+[  226.037889][ T8302]  ffff8880b2148680: ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec
+[  226.038838][ T8302]  ffff8880b2148700: ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec
+[  226.040011][ T8302] BUG: KASAN: unknown-crash in hwsim_cloned_frame_received_nl+0x165/0x890
+[  226.052657][ T8302] Write of size 8 at addr ffff8880b2148334 by task syz-executor.0/8302
+[  226.061989][ T8302] 
+[  226.062304][ T8302] CPU: 0 PID: 8302 Comm: syz-executor.0 Not tainted 6.4.1-00011-gc173c3c31378 #20
+[  226.063383][ T8302] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+[  226.064443][ T8302] Call Trace:
+[  226.064842][ T8302]  <TASK>
+[  226.065202][ T8302]  dump_stack_lvl+0x1ce/0x2c0
+[  226.065811][ T8302]  ? nf_tcp_handle_invalid+0x3d0/0x3d0
+[  226.066495][ T8302]  ? panic+0x620/0x620
+[  226.067005][ T8302]  print_report+0x163/0x540
+[  226.067557][ T8302]  ? kmem_cache_alloc_node+0x181/0x310
+[  226.068203][ T8302]  ? __virt_addr_valid+0x1cc/0x240
+[  226.068853][ T8302]  ? __phys_addr+0x99/0x110
+[  226.069437][ T8302]  kdo_kasan_report+0x7f/0x90
+[  226.070055][ T8302]  ? hwsim_cloned_frame_received_nl+0x165/0x890
+[  226.070802][ T8302]  ? hwsim_cloned_frame_received_nl+0x165/0x890
+[  226.071539][ T8302]  propagate_taint+0x1f6/0x210
+[  226.072110][ T8302]  ? hwsim_cloned_frame_received_nl+0x165/0x890
+[  226.072870][ T8302]  ? hwsim_cloned_frame_received_nl+0x165/0x890
+[  226.073650][ T8302]  __kdo_asan_memcpy+0x69/0xa0
+[  226.074254][ T8302]  hwsim_cloned_frame_received_nl+0x165/0x890
+[  226.074978][ T8302]  ? hwsim_register_received_nl+0x250/0x250
+[  226.075683][ T8302]  ? __nla_parse+0x40/0x50
+[  226.076234][ T8302]  ? genl_family_rcv_msg_attrs_parse+0x162/0x1b0
+[  226.076995][ T8302]  genl_rcv_msg+0xb6f/0xbc0
+[  226.077554][ T8302]  ? genl_bind+0x240/0x240
+[  226.078149][ T8302]  ? __local_bh_enable_ip+0x14c/0x1b0
+[  226.078800][ T8302]  ? lockdep_hardirqs_on+0xdd/0x180
+[  226.079423][ T8302]  ? local_bh_enable+0x5/0x20
+[  226.080002][ T8302]  ? __local_bh_enable_ip+0x14c/0x1b0
+[  226.080700][ T8302]  ? _local_bh_enable+0x70/0x70
+[  226.081305][ T8302]  ? dev_hard_start_xmit+0x5be/0x600
+[  226.081969][ T8302]  ? __lock_acquire+0x911/0x10d0
+[  226.082582][ T8302]  ? hwsim_register_received_nl+0x250/0x250
+[  226.083309][ T8302]  netlink_rcv_skb+0x184/0x2b0
+[  226.083897][ T8302]  ? genl_bind+0x240/0x240
+[  226.084448][ T8302]  ? netlink_ack+0xac0/0xac0
+[  226.085044][ T8302]  ? __lock_acquire+0x10d0/0x10d0
+[  226.085684][ T8302]  ? down_read+0x54/0x250
+[  226.086231][ T8302]  ? preempt_count_sub+0x13/0xc0
+[  226.086818][ T8302]  ? down_read+0x175/0x250
+[  226.087351][ T8302]  genl_rcv+0x28/0x40
+[  226.087833][ T8302]  netlink_unicast+0x605/0x6c0
+[  226.088424][ T8302]  ? copyout_mc+0x80/0x80
+[  226.088985][ T8302]  ? netlink_detachskb+0x90/0x90
+[  226.089609][ T8302]  ? __phys_addr_symbol+0x3b/0x50
+[  226.090232][ T8302]  ? __check_object_size+0x3f9/0x850
+[  226.090887][ T8302]  netlink_sendmsg+0x826/0x990
+[  226.091497][ T8302]  ? netlink_getsockopt+0x570/0x570
+[  226.092161][ T8302]  ? kdo_copy_from_user+0x6a/0xf0
+[  226.092765][ T8302]  ? bpf_lsm_socket_sendmsg+0x9/0x10
+[  226.093413][ T8302]  ? netlink_getsockopt+0x570/0x570
+[  226.094058][ T8302]  __sys_sendto+0x3d9/0x500
+[  226.094626][ T8302]  ? __ia32_sys_getpeername+0x50/0x50
+[  226.095313][ T8302]  ? print_irqtrace_events+0x110/0x110
+[  226.095985][ T8302]  ? syscall_enter_from_user_mode+0x32/0x230
+[  226.096716][ T8302]  __x64_sys_sendto+0x78/0x90
+[  226.097298][ T8302]  do_syscall_64+0x41/0x90
+[  226.097862][ T8302]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  226.098573][ T8302] RIP: 0033:0x7f3d73a921c6
+[  226.099100][ T8302] Code: c7 02 00 44 8b 4c 24 2c 4c 8b 44 24 20 41 89 c4 44 8b 54 24 28 48 8b 54 24 18 b8 2c 00 00 00 48 8b 74 24 10 8b 7c 24 08 0f 05 <48> 3d 00 f0 ff ff 77 3a 44 89 e7 48 89 44 24 08 e8 35 c7 02 00 48
+[  226.101321][ T8302] RSP: 002b:00007f3cb29fceb0 EFLAGS: 00000293 ORIG_RAX: 000000000000002c
+[  226.102315][ T8302] RAX: ffffffffffffffda RBX: 00007f3cb29fcf80 RCX: 00007f3d73a921c6
+[  226.103261][ T8302] RDX: 000000000000006c RSI: 00007f3cb29fcfd0 RDI: 0000000000000004
+[  226.104200][ T8302] RBP: 0000000000000001 R08: 00007f3cb29fcf0c R09: 000000000000000c
+[  226.105150][ T8302] R10: 0000000000000000 R11: 0000000000000293 R12: 0000000000000000
+[  226.106114][ T8302] R13: 00007f3cb29fcfd0 R14: 0000000000000004 R15: 0000000000000000
+[  226.107049][ T8302]  </TASK>
+[  226.151784][ T8302] 
+[  226.152138][ T8302] Allocated by task 8302:
+[  226.152686][ T8302]  kasan_set_track+0x4f/0x70
+[  226.156661][ T8302]  __kasan_slab_alloc+0x50/0x60
+[  226.157282][ T8302]  slab_post_alloc_hook+0x64/0x380
+[  226.158165][ T8302]  kmem_cache_alloc_node+0x152/0x310
+[  226.158846][ T8302]  kmalloc_reserve+0x73/0x170
+[  226.159680][ T8302]  __alloc_skb+0x192/0x2e0
+[  226.160272][ T8302]  netlink_sendmsg+0x5f1/0x990
+[  226.161089][ T8302]  __sys_sendto+0x3d9/0x500
+[  226.161679][ T8302]  __x64_sys_sendto+0x78/0x90
+[  226.162491][ T8302]  do_syscall_64+0x41/0x90
+[  226.163063][ T8302]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  226.171214][ T8302] 
+[  226.171563][ T8302] The buggy address belongs to the object at ffff8880b2148300
+[  226.171563][ T8302]  which belongs to the cache skbuff_small_head of size 640
+[  226.176199][ T8302] The buggy address is located 52 bytes inside of
+[  226.176199][ T8302]  640-byte region [ffff8880b2148300, ffff8880b2148580)
+[  226.178051][ T8302] 
+[  226.178350][ T8302] The buggy address belongs to the physical page:
+[  226.179362][ T8302] page:ffffea0002c85200 refcount:1 mapcount:0 mapping:0000000000000000 index:0x0 pfn:0xb2148
+[  226.180800][ T8302] head:ffffea0002c85200 order:1 entire_mapcount:0 nr_pages_mapped:0 pincount:0
+[  226.182130][ T8302] flags: 0xfff00000010200(slab|head|node=0|zone=1|lastcpupid=0x7ff)
+[  226.183066][ T8302] page_type: 0xffffffff()
+[  226.189283][ T8302] raw: 00fff00000010200 ffff88801427f780 dead000000000122 0000000000000000
+[  226.190574][ T8302] raw: 0000000000000000 00000000000a000a 00000001ffffffff 0000000000000000
+[  226.191799][ T8302] page dumped because: kasan: bad access detected
+[  226.192544][ T8302] page_owner tracks the page as allocated
+[  226.197645][ T8302] page last allocated via order 1, migratetype Unmovable, gfp_mask 0x1d20c0(__GFP_IO|__GFP_FS|__GFP_NOWARN|__GFP_NORETRY|__GFP_COMP|__GFP_NOMEMALLOC|__GFP_HARDWALL), pid 8302, tgid 8301 (syz-executor.0), ts 225825425090, free_ts 0
+[  226.207226][ T8302]  post_alloc_hook+0x1e6/0x210
+[  226.207800][ T8302]  get_page_from_freelist+0x260a/0x2790
+[  226.208676][ T8302]  __alloc_pages+0x1f2/0x480
+[  226.209274][ T8302]  alloc_slab_page+0x6a/0x160
+[  226.212611][ T8302]  new_slab+0x84/0x2f0
+[  226.218141][ T8302]  ___slab_alloc+0xa85/0x10a0
+[  226.218815][ T8302]  kmem_cache_alloc_node+0x1ee/0x310
+[  226.221472][ T8302]  kmalloc_reserve+0x73/0x170
+[  226.222139][ T8302]  __alloc_skb+0x192/0x2e0
+[  226.230642][ T8302]  netlink_ack+0x2a9/0xac0
+[  226.231254][ T8302]  netlink_rcv_skb+0x1f1/0x2b0
+[  226.232117][ T8302]  genl_rcv+0x28/0x40
+[  226.232640][ T8302]  netlink_unicast+0x605/0x6c0
+[  226.239328][ T8302]  netlink_sendmsg+0x826/0x990
+[  226.239969][ T8302]  __sys_sendto+0x3d9/0x500
+[  226.242381][ T8302]  __x64_sys_sendto+0x78/0x90
+[  226.242995][ T8302] page_owner free stack trace missing
+[  226.249970][ T8302] 
+[  226.250327][ T8302] Memory state around the buggy address:
+[  226.252946][ T8302]  ffff8880b2148200: fb fb fb fb fb fb fb fb fb fb fb fb fb fb fb fb
+[  226.256850][ T8302]  ffff8880b2148280: fc fc fc fc fc fc fc fc fc fc fc fc fc fc fc fc
+[  226.262268][ T8302] >ffff8880b2148300: ee ee ee ee ee ee ee ee ee ee ee ee ee ee ec ec
+[  226.268335][ T8302]                                      ^
+[  226.269019][ T8302]  ffff8880b2148380: ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec
+[  226.274887][ T8302]  ffff8880b2148400: ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec
+[  226.276088][ T8302] Kernel panic - not syncing: KDO: memcpy hit (id: hwsim_cloned_frame_received_nl+0x165/0x890, callid: 11832S)
+[  226.277444][ T8302] CPU: 0 PID: 8302 Comm: syz-executor.0 Not tainted 6.4.1-00011-gc173c3c31378 #20
+[  226.278521][ T8302] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+[  226.279573][ T8302] Call Trace:
+[  226.279975][ T8302]  <TASK>
+[  226.280337][ T8302]  dump_stack_lvl+0x1ce/0x2c0
+[  226.280909][ T8302]  ? nf_tcp_handle_invalid+0x3d0/0x3d0
+[  226.281578][ T8302]  ? panic+0x620/0x620
+[  226.282096][ T8302]  ? vscnprintf+0x5d/0x80
+[  226.282625][ T8302]  panic+0x2ba/0x620
+[  226.283116][ T8302]  ? hwsim_cloned_frame_received_nl+0x165/0x890
+[  226.283886][ T8302]  ? __wake_up_klogd+0xb7/0xf0
+[  226.284469][ T8302]  ? preempt_count_add+0xa0/0xf0
+[  226.285103][ T8302]  ? kdo_sanitizer_cov_write+0x100/0x100
+[  226.285838][ T8302]  ? kmem_cache_alloc_node+0x181/0x310
+[  226.286521][ T8302]  ? __phys_addr+0x99/0x110
+[  226.287086][ T8302]  ? kdo_kasan_report+0x7f/0x90
+[  226.287678][ T8302]  ? hwsim_cloned_frame_received_nl+0x165/0x890
+[  226.288453][ T8302]  ? hwsim_cloned_frame_received_nl+0x165/0x890
+[  226.289236][ T8302]  propagate_taint+0x20a/0x210
+[  226.289830][ T8302]  ? hwsim_cloned_frame_received_nl+0x165/0x890
+[  226.290579][ T8302]  ? hwsim_cloned_frame_received_nl+0x165/0x890
+[  226.291335][ T8302]  __kdo_asan_memcpy+0x69/0xa0
+[  226.291918][ T8302]  hwsim_cloned_frame_received_nl+0x165/0x890
+[  226.292664][ T8302]  ? hwsim_register_received_nl+0x250/0x250
+[  226.293370][ T8302]  ? __nla_parse+0x40/0x50
+[  226.293927][ T8302]  ? genl_family_rcv_msg_attrs_parse+0x162/0x1b0
+[  226.294719][ T8302]  genl_rcv_msg+0xb6f/0xbc0
+[  226.295310][ T8302]  ? genl_bind+0x240/0x240
+[  226.295861][ T8302]  ? __local_bh_enable_ip+0x14c/0x1b0
+[  226.296504][ T8302]  ? lockdep_hardirqs_on+0xdd/0x180
+[  226.297138][ T8302]  ? local_bh_enable+0x5/0x20
+[  226.297716][ T8302]  ? __local_bh_enable_ip+0x14c/0x1b0
+[  226.298370][ T8302]  ? _local_bh_enable+0x70/0x70
+[  226.298978][ T8302]  ? dev_hard_start_xmit+0x5be/0x600
+[  226.299643][ T8302]  ? __lock_acquire+0x911/0x10d0
+[  226.300251][ T8302]  ? hwsim_register_received_nl+0x250/0x250
+[  226.300970][ T8302]  netlink_rcv_skb+0x184/0x2b0
+[  226.301547][ T8302]  ? genl_bind+0x240/0x240
+[  226.302100][ T8302]  ? netlink_ack+0xac0/0xac0
+[  226.302701][ T8302]  ? __lock_acquire+0x10d0/0x10d0
+[  226.303314][ T8302]  ? down_read+0x54/0x250
+[  226.303845][ T8302]  ? preempt_count_sub+0x13/0xc0
+[  226.304441][ T8302]  ? down_read+0x175/0x250
+[  226.304982][ T8302]  genl_rcv+0x28/0x40
+[  226.305494][ T8302]  netlink_unicast+0x605/0x6c0
+[  226.306099][ T8302]  ? copyout_mc+0x80/0x80
+[  226.306649][ T8302]  ? netlink_detachskb+0x90/0x90
+[  226.307264][ T8302]  ? __phys_addr_symbol+0x3b/0x50
+[  226.307887][ T8302]  ? __check_object_size+0x3f9/0x850
+[  226.308538][ T8302]  netlink_sendmsg+0x826/0x990
+[  226.309150][ T8302]  ? netlink_getsockopt+0x570/0x570
+[  226.309806][ T8302]  ? kdo_copy_from_user+0x6a/0xf0
+[  226.310428][ T8302]  ? bpf_lsm_socket_sendmsg+0x9/0x10
+[  226.311078][ T8302]  ? netlink_getsockopt+0x570/0x570
+[  226.311722][ T8302]  __sys_sendto+0x3d9/0x500
+[  226.312295][ T8302]  ? __ia32_sys_getpeername+0x50/0x50
+[  226.312984][ T8302]  ? print_irqtrace_events+0x110/0x110
+[  226.313675][ T8302]  ? syscall_enter_from_user_mode+0x32/0x230
+[  226.314405][ T8302]  __x64_sys_sendto+0x78/0x90
+[  226.315003][ T8302]  do_syscall_64+0x41/0x90
+[  226.315566][ T8302]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  226.316284][ T8302] RIP: 0033:0x7f3d73a921c6
+[  226.316843][ T8302] Code: c7 02 00 44 8b 4c 24 2c 4c 8b 44 24 20 41 89 c4 44 8b 54 24 28 48 8b 54 24 18 b8 2c 00 00 00 48 8b 74 24 10 8b 7c 24 08 0f 05 <48> 3d 00 f0 ff ff 77 3a 44 89 e7 48 89 44 24 08 e8 35 c7 02 00 48
+[  226.319037][ T8302] RSP: 002b:00007f3cb29fceb0 EFLAGS: 00000293 ORIG_RAX: 000000000000002c
+[  226.320017][ T8302] RAX: ffffffffffffffda RBX: 00007f3cb29fcf80 RCX: 00007f3d73a921c6
+[  226.320940][ T8302] RDX: 000000000000006c RSI: 00007f3cb29fcfd0 RDI: 0000000000000004
+[  226.321867][ T8302] RBP: 0000000000000001 R08: 00007f3cb29fcf0c R09: 000000000000000c
+[  226.322792][ T8302] R10: 0000000000000000 R11: 0000000000000293 R12: 0000000000000000
+[  226.323716][ T8302] R13: 00007f3cb29fcfd0 R14: 0000000000000004 R15: 0000000000000000
+[  226.324652][ T8302]  </TASK>
+[  226.325108][ T8302] Kernel Offset: disabled
+[  226.325655][ T8302] Rebooting in 86400 seconds..
+
+VM DIAGNOSIS:
+21:08:59  Registers:
+info registers vcpu 0
+RAX=0000000000000033 RBX=0000000000000000 RCX=ffffffff8392d9be RDX=00000000000003f8
+RSI=dffffc0000000000 RDI=ffffffff8e7ea860 RBP=00000000000003f8 RSP=ffffc900053ced58
+R8 =ffffffff8e7ea867 R9 =ffffffff814f0843 R10=fffff52000a79d8c R11=dffffc0000000001
+R12=ffffffff8e50267a R13=000000000000000a R14=0000000000000033 R15=ffffffff8e7ea820
+RIP=ffffffff8392d9c8 RFL=00000002 [-------] CPL=0 II=0 A20=1 SMM=0 HLT=0
+ES =0000 0000000000000000 ffffffff 00c00000
+CS =0010 0000000000000000 ffffffff 00a09b00 DPL=0 CS64 [-RA]
+SS =0018 0000000000000000 ffffffff 00c09300 DPL=0 DS   [-WA]
+DS =0000 0000000000000000 ffffffff 00c00000
+FS =0000 00007f3cb29fe640 ffffffff 00c00000
+GS =0000 ffff8880ba000000 ffffffff 00c00000
+LDT=0000 0000000000000000 ffffffff 00c00000
+TR =0040 fffffe0000003000 00004087 00008b00 DPL=0 TSS64-busy
+GDT=     fffffe0000001000 0000007f
+IDT=     fffffe0000000000 00000fff
+CR0=80050033 CR2=00007f3d73afd618 CR3=0000000013704000 CR4=00350ef0
+DR0=0000000000000000 DR1=0000000000000000 DR2=0000000000000000 DR3=0000000000000000 
+DR6=00000000fffe0ff0 DR7=0000000000000400
+EFER=0000000000000d01
+FCW=037f FSW=0000 [ST=0] FTW=00 MXCSR=00001f80
+FPR0=0000000000000000 0000 FPR1=0000000000000000 0000
+FPR2=0000000000000000 0000 FPR3=0000000000000000 0000
+FPR4=0000000000000000 0000 FPR5=0000000000000000 0000
+FPR6=0000000000000000 0000 FPR7=0000000000000000 0000
+YMM00=0000000000000000 0000000000000000 00000000000f4240 0000000000000000
+YMM01=0000000000000000 0000000000000000 0000000000000000 00000000000f4240
+YMM02=0000000000000000 0000000000000000 00007f3d746fb1a0 00007f3d746fb1a0
+YMM03=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffffffff
+YMM04=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffffffff
+YMM05=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffffff00
+YMM06=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffffffff
+YMM07=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffffff00
+YMM08=0000000000000000 0000000000000000 2570756c6c25706f 6f6c2f7665642f00
+YMM09=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM10=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM11=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM12=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM13=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM14=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM15=0000000000000000 0000000000000000 0000000000000000 0000000000000000

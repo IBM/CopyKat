@@ -1,0 +1,1121 @@
+Warning: Permanently added '[localhost]:45421' (ED25519) to the list of known hosts.
+2024/05/22 22:26:27 fuzzer started
+2024/05/22 22:26:28 dialing manager at localhost:34093
+syzkaller login: [  171.036234][ T8029] cgroup: Unknown subsys name 'net'
+[  171.180195][ T8029] cgroup: Unknown subsys name 'rlimit'
+2024/05/22 22:26:29 syscalls: 3922
+2024/05/22 22:26:29 code coverage: enabled
+2024/05/22 22:26:29 comparison tracing: enabled
+2024/05/22 22:26:29 extra coverage: enabled
+2024/05/22 22:26:29 delay kcov mmap: enabled
+2024/05/22 22:26:29 setuid sandbox: enabled
+2024/05/22 22:26:29 namespace sandbox: enabled
+2024/05/22 22:26:29 Android sandbox: /sys/fs/selinux/policy does not exist
+2024/05/22 22:26:29 fault injection: enabled
+2024/05/22 22:26:29 leak checking: CONFIG_DEBUG_KMEMLEAK is not enabled
+2024/05/22 22:26:29 net packet injection: enabled
+2024/05/22 22:26:29 net device setup: enabled
+2024/05/22 22:26:29 concurrency sanitizer: /sys/kernel/debug/kcsan does not exist
+2024/05/22 22:26:29 devlink PCI setup: PCI device 0000:00:10.0 is not available
+2024/05/22 22:26:29 NIC VF setup: PCI device 0000:00:11.0 is not available
+2024/05/22 22:26:29 USB emulation: enabled
+2024/05/22 22:26:29 hci packet injection: enabled
+2024/05/22 22:26:29 wifi device emulation: enabled
+2024/05/22 22:26:29 802.15.4 emulation: enabled
+2024/05/22 22:26:29 fetching corpus: 0, signal 0/2000 (executing program)
+2024/05/22 22:26:29 fetching corpus: 50, signal 23595/27105 (executing program)
+2024/05/22 22:26:30 fetching corpus: 100, signal 28706/33807 (executing program)
+2024/05/22 22:26:30 fetching corpus: 150, signal 34609/41204 (executing program)
+2024/05/22 22:26:30 fetching corpus: 200, signal 39451/47484 (executing program)
+2024/05/22 22:26:30 fetching corpus: 250, signal 44410/53761 (executing program)
+2024/05/22 22:26:31 fetching corpus: 300, signal 49008/59536 (executing program)
+2024/05/22 22:26:31 fetching corpus: 350, signal 53124/64819 (executing program)
+2024/05/22 22:26:31 fetching corpus: 400, signal 56958/69744 (executing program)
+2024/05/22 22:26:31 fetching corpus: 450, signal 61981/75619 (executing program)
+2024/05/22 22:26:31 fetching corpus: 500, signal 70546/84585 (executing program)
+2024/05/22 22:26:32 fetching corpus: 550, signal 73406/88402 (executing program)
+2024/05/22 22:26:32 fetching corpus: 600, signal 76067/91914 (executing program)
+2024/05/22 22:26:32 fetching corpus: 650, signal 79542/96116 (executing program)
+2024/05/22 22:26:32 fetching corpus: 700, signal 83696/100827 (executing program)
+2024/05/22 22:26:32 fetching corpus: 750, signal 86817/104641 (executing program)
+2024/05/22 22:26:32 fetching corpus: 800, signal 88913/107475 (executing program)
+2024/05/22 22:26:32 fetching corpus: 850, signal 91711/110852 (executing program)
+2024/05/22 22:26:33 fetching corpus: 900, signal 94807/114409 (executing program)
+2024/05/22 22:26:33 fetching corpus: 950, signal 96649/116856 (executing program)
+2024/05/22 22:26:33 fetching corpus: 1000, signal 98557/119380 (executing program)
+2024/05/22 22:26:33 fetching corpus: 1050, signal 100784/122123 (executing program)
+2024/05/22 22:26:33 fetching corpus: 1100, signal 103028/124771 (executing program)
+2024/05/22 22:26:34 fetching corpus: 1150, signal 105151/127314 (executing program)
+2024/05/22 22:26:34 fetching corpus: 1200, signal 107655/130098 (executing program)
+2024/05/22 22:26:34 fetching corpus: 1250, signal 109889/132646 (executing program)
+2024/05/22 22:26:34 fetching corpus: 1300, signal 111703/134901 (executing program)
+2024/05/22 22:26:34 fetching corpus: 1350, signal 113139/136792 (executing program)
+2024/05/22 22:26:34 fetching corpus: 1400, signal 115652/139399 (executing program)
+2024/05/22 22:26:35 fetching corpus: 1450, signal 117496/141483 (executing program)
+2024/05/22 22:26:35 fetching corpus: 1500, signal 118933/143255 (executing program)
+2024/05/22 22:26:35 fetching corpus: 1550, signal 120602/145143 (executing program)
+2024/05/22 22:26:35 fetching corpus: 1600, signal 122284/147024 (executing program)
+2024/05/22 22:26:35 fetching corpus: 1650, signal 123422/148547 (executing program)
+2024/05/22 22:26:35 fetching corpus: 1700, signal 124840/150203 (executing program)
+2024/05/22 22:26:35 fetching corpus: 1750, signal 125952/151622 (executing program)
+2024/05/22 22:26:36 fetching corpus: 1800, signal 127970/153582 (executing program)
+2024/05/22 22:26:36 fetching corpus: 1850, signal 128985/154851 (executing program)
+2024/05/22 22:26:36 fetching corpus: 1900, signal 130469/156444 (executing program)
+2024/05/22 22:26:36 fetching corpus: 1950, signal 131777/157889 (executing program)
+2024/05/22 22:26:36 fetching corpus: 2000, signal 132902/159195 (executing program)
+2024/05/22 22:26:36 fetching corpus: 2050, signal 133843/160419 (executing program)
+2024/05/22 22:26:36 fetching corpus: 2100, signal 134792/161587 (executing program)
+2024/05/22 22:26:37 fetching corpus: 2150, signal 136098/162898 (executing program)
+2024/05/22 22:26:37 fetching corpus: 2200, signal 137393/164225 (executing program)
+2024/05/22 22:26:37 fetching corpus: 2250, signal 138539/165440 (executing program)
+2024/05/22 22:26:37 fetching corpus: 2300, signal 139399/166468 (executing program)
+2024/05/22 22:26:37 fetching corpus: 2350, signal 140395/167555 (executing program)
+2024/05/22 22:26:37 fetching corpus: 2400, signal 141900/168855 (executing program)
+2024/05/22 22:26:37 fetching corpus: 2450, signal 142674/169781 (executing program)
+2024/05/22 22:26:37 fetching corpus: 2500, signal 144066/171010 (executing program)
+2024/05/22 22:26:38 fetching corpus: 2550, signal 145249/172077 (executing program)
+2024/05/22 22:26:38 fetching corpus: 2600, signal 146820/173341 (executing program)
+2024/05/22 22:26:38 fetching corpus: 2650, signal 149042/174860 (executing program)
+2024/05/22 22:26:38 fetching corpus: 2700, signal 149834/175717 (executing program)
+2024/05/22 22:26:38 fetching corpus: 2750, signal 151024/176702 (executing program)
+2024/05/22 22:26:38 fetching corpus: 2800, signal 151919/177514 (executing program)
+2024/05/22 22:26:38 fetching corpus: 2850, signal 153150/178451 (executing program)
+2024/05/22 22:26:39 fetching corpus: 2900, signal 153708/179095 (executing program)
+2024/05/22 22:26:39 fetching corpus: 2950, signal 155332/180164 (executing program)
+2024/05/22 22:26:39 fetching corpus: 2999, signal 156203/180889 (executing program)
+2024/05/22 22:26:39 fetching corpus: 3049, signal 157323/181710 (executing program)
+2024/05/22 22:26:39 fetching corpus: 3088, signal 158099/182415 (executing program)
+2024/05/22 22:26:39 fetching corpus: 3088, signal 158099/182792 (executing program)
+2024/05/22 22:26:39 fetching corpus: 3088, signal 158099/183186 (executing program)
+2024/05/22 22:26:39 fetching corpus: 3088, signal 158099/183583 (executing program)
+2024/05/22 22:26:39 fetching corpus: 3088, signal 158110/183977 (executing program)
+2024/05/22 22:26:39 fetching corpus: 3088, signal 158110/184385 (executing program)
+2024/05/22 22:26:39 fetching corpus: 3088, signal 158110/184789 (executing program)
+2024/05/22 22:26:39 fetching corpus: 3088, signal 158110/185178 (executing program)
+2024/05/22 22:26:39 fetching corpus: 3088, signal 158110/185588 (executing program)
+2024/05/22 22:26:39 fetching corpus: 3088, signal 158110/185980 (executing program)
+2024/05/22 22:26:39 fetching corpus: 3088, signal 158110/186380 (executing program)
+2024/05/22 22:26:39 fetching corpus: 3088, signal 158110/186757 (executing program)
+2024/05/22 22:26:39 fetching corpus: 3088, signal 158110/187137 (executing program)
+2024/05/22 22:26:39 fetching corpus: 3088, signal 158110/187520 (executing program)
+2024/05/22 22:26:39 fetching corpus: 3088, signal 158110/187904 (executing program)
+2024/05/22 22:26:39 fetching corpus: 3088, signal 158110/188284 (executing program)
+2024/05/22 22:26:39 fetching corpus: 3088, signal 158110/188682 (executing program)
+2024/05/22 22:26:39 fetching corpus: 3088, signal 158110/189098 (executing program)
+2024/05/22 22:26:39 fetching corpus: 3088, signal 158110/189506 (executing program)
+2024/05/22 22:26:39 fetching corpus: 3088, signal 158110/189909 (executing program)
+2024/05/22 22:26:39 fetching corpus: 3088, signal 158110/190273 (executing program)
+2024/05/22 22:26:40 fetching corpus: 3088, signal 158110/190683 (executing program)
+2024/05/22 22:26:40 fetching corpus: 3088, signal 158110/191105 (executing program)
+2024/05/22 22:26:40 fetching corpus: 3088, signal 158110/191522 (executing program)
+2024/05/22 22:26:40 fetching corpus: 3088, signal 158110/191908 (executing program)
+2024/05/22 22:26:40 fetching corpus: 3088, signal 158110/192299 (executing program)
+2024/05/22 22:26:40 fetching corpus: 3088, signal 158110/192707 (executing program)
+2024/05/22 22:26:40 fetching corpus: 3088, signal 158110/193115 (executing program)
+2024/05/22 22:26:40 fetching corpus: 3088, signal 158110/193518 (executing program)
+2024/05/22 22:26:40 fetching corpus: 3088, signal 158110/193909 (executing program)
+2024/05/22 22:26:40 fetching corpus: 3088, signal 158110/194310 (executing program)
+2024/05/22 22:26:40 fetching corpus: 3088, signal 158110/194684 (executing program)
+2024/05/22 22:26:40 fetching corpus: 3088, signal 158110/195064 (executing program)
+2024/05/22 22:26:40 fetching corpus: 3088, signal 158110/195482 (executing program)
+2024/05/22 22:26:40 fetching corpus: 3088, signal 158110/195864 (executing program)
+2024/05/22 22:26:40 fetching corpus: 3088, signal 158110/196265 (executing program)
+2024/05/22 22:26:40 fetching corpus: 3088, signal 158110/196277 (executing program)
+2024/05/22 22:26:40 fetching corpus: 3088, signal 158110/196277 (executing program)
+2024/05/22 22:26:45 starting 1 fuzzer processes
+[  187.387560][ T8017] memfd_create() without MFD_EXEC nor MFD_NOEXEC_SEAL, pid=8017 'syz-fuzzer'
+22:26:45 executing program 0:
+unshare(0x2a020480)
+socketpair$unix(0x1, 0x5, 0x0, &(0x7f0000000100)={<r0=>0xffffffffffffffff})
+setsockopt$sock_attach_bpf(r0, 0x1, 0x2e, &(0x7f00000000c0), 0x4)
+
+[  205.485937][ T1219] ieee802154 phy0 wpan0: encryption failed: -22
+[  205.486819][ T1219] ieee802154 phy1 wpan1: encryption failed: -22
+[  207.137127][ T8043] Bluetooth: hci0: unexpected cc 0x0c03 length: 249 > 1
+[  207.145506][ T8043] Bluetooth: hci0: unexpected cc 0x1003 length: 249 > 9
+[  207.147466][ T8043] Bluetooth: hci0: unexpected cc 0x1001 length: 249 > 9
+[  207.150661][ T8043] Bluetooth: hci0: unexpected cc 0x0c23 length: 249 > 4
+[  207.153024][ T8043] Bluetooth: hci0: unexpected cc 0x0c25 length: 249 > 3
+[  207.184025][ T8043] Bluetooth: hci0: unexpected cc 0x0c38 length: 249 > 2
+[  208.214883][ T8040] chnl_net:caif_netlink_parms(): no params data found
+[  208.396859][ T8040] bridge0: port 1(bridge_slave_0) entered blocking state
+[  208.400862][ T8040] bridge0: port 1(bridge_slave_0) entered disabled state
+[  208.401787][ T8040] bridge_slave_0: entered allmulticast mode
+[  208.408900][ T8040] bridge_slave_0: entered promiscuous mode
+[  208.416465][ T8040] bridge0: port 2(bridge_slave_1) entered blocking state
+[  208.417688][ T8040] bridge0: port 2(bridge_slave_1) entered disabled state
+[  208.418578][ T8040] bridge_slave_1: entered allmulticast mode
+[  208.421010][ T8040] bridge_slave_1: entered promiscuous mode
+[  208.492605][ T8040] bond0: (slave bond_slave_0): Enslaving as an active interface with an up link
+[  208.498927][ T8040] bond0: (slave bond_slave_1): Enslaving as an active interface with an up link
+[  208.607489][ T8040] team0: Port device team_slave_0 added
+[  208.618152][ T8040] team0: Port device team_slave_1 added
+[  208.677225][ T8040] batman_adv: batadv0: Adding interface: batadv_slave_0
+[  208.678047][ T8040] batman_adv: batadv0: The MTU of interface batadv_slave_0 is too small (1500) to handle the transport of batman-adv packets. Packets going over this interface will be fragmented on layer2 which could impact the performance. Setting the MTU to 1560 would solve the problem.
+[  208.680845][ T8040] batman_adv: batadv0: Not using interface batadv_slave_0 (retrying later): interface not active
+[  208.694175][ T8040] batman_adv: batadv0: Adding interface: batadv_slave_1
+[  208.694993][ T8040] batman_adv: batadv0: The MTU of interface batadv_slave_1 is too small (1500) to handle the transport of batman-adv packets. Packets going over this interface will be fragmented on layer2 which could impact the performance. Setting the MTU to 1560 would solve the problem.
+[  208.697779][ T8040] batman_adv: batadv0: Not using interface batadv_slave_1 (retrying later): interface not active
+[  208.788824][ T8040] hsr_slave_0: entered promiscuous mode
+[  208.795413][ T8040] hsr_slave_1: entered promiscuous mode
+[  209.212166][ T8040] netdevsim netdevsim0 netdevsim0: renamed from eth0
+[  209.234309][ T8040] netdevsim netdevsim0 netdevsim1: renamed from eth1
+[  209.241709][ T8040] netdevsim netdevsim0 netdevsim2: renamed from eth2
+[  209.248206][ T8043] Bluetooth: hci0: command 0x0409 tx timeout
+[  209.269948][ T8040] netdevsim netdevsim0 netdevsim3: renamed from eth3
+[  209.439726][ T8040] 8021q: adding VLAN 0 to HW filter on device bond0
+[  209.458998][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): veth1: link becomes ready
+[  209.461957][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): veth0: link becomes ready
+[  209.478838][ T8040] 8021q: adding VLAN 0 to HW filter on device team0
+[  209.492100][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_to_bridge: link becomes ready
+[  209.495484][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): bridge_slave_0: link becomes ready
+[  209.498776][    T9] bridge0: port 1(bridge_slave_0) entered blocking state
+[  209.499853][    T9] bridge0: port 1(bridge_slave_0) entered forwarding state
+[  209.502329][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): bridge0: link becomes ready
+[  209.516551][ T4446] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_to_bridge: link becomes ready
+[  209.518323][ T4446] IPv6: ADDRCONF(NETDEV_CHANGE): bridge_slave_1: link becomes ready
+[  209.520122][ T4446] bridge0: port 2(bridge_slave_1) entered blocking state
+[  209.520921][ T4446] bridge0: port 2(bridge_slave_1) entered forwarding state
+[  209.540280][  T884] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_to_bond: link becomes ready
+[  209.555916][  T884] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_to_bond: link becomes ready
+[  209.568269][ T4446] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_to_team: link becomes ready
+[  209.570793][ T4446] IPv6: ADDRCONF(NETDEV_CHANGE): team_slave_0: link becomes ready
+[  209.577687][ T4446] IPv6: ADDRCONF(NETDEV_CHANGE): team0: link becomes ready
+[  209.589880][ T4446] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_to_team: link becomes ready
+[  209.591963][ T4446] IPv6: ADDRCONF(NETDEV_CHANGE): team_slave_1: link becomes ready
+[  209.605545][ T4446] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_to_hsr: link becomes ready
+[  209.607392][ T4446] IPv6: ADDRCONF(NETDEV_CHANGE): hsr_slave_0: link becomes ready
+[  209.620805][ T4446] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_to_hsr: link becomes ready
+[  209.622639][ T4446] IPv6: ADDRCONF(NETDEV_CHANGE): hsr_slave_1: link becomes ready
+[  209.637900][ T8040] IPv6: ADDRCONF(NETDEV_CHANGE): hsr0: link becomes ready
+[  209.920683][ T4446] IPv6: ADDRCONF(NETDEV_CHANGE): vxcan1: link becomes ready
+[  209.921664][ T4446] IPv6: ADDRCONF(NETDEV_CHANGE): vxcan0: link becomes ready
+[  209.940796][ T8040] 8021q: adding VLAN 0 to HW filter on device batadv0
+[  209.972653][ T4446] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_virt_wifi: link becomes ready
+[  209.976649][ T4446] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_virt_wifi: link becomes ready
+[  210.010540][ T4446] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_vlan: link becomes ready
+[  210.012459][ T4446] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_vlan: link becomes ready
+[  210.017675][ T4446] IPv6: ADDRCONF(NETDEV_CHANGE): vlan0: link becomes ready
+[  210.020731][ T4446] IPv6: ADDRCONF(NETDEV_CHANGE): vlan1: link becomes ready
+[  210.031007][ T8040] veth0_vlan: entered promiscuous mode
+[  210.048603][ T8040] veth1_vlan: entered promiscuous mode
+[  210.097765][ T4446] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_macvtap: link becomes ready
+[  210.099784][ T4446] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_macvtap: link becomes ready
+[  210.110571][ T8040] veth0_macvtap: entered promiscuous mode
+[  210.121083][ T8040] veth1_macvtap: entered promiscuous mode
+[  210.147994][ T8040] batman_adv: batadv0: Interface activated: batadv_slave_0
+[  210.149121][ T4446] IPv6: ADDRCONF(NETDEV_CHANGE): macvtap0: link becomes ready
+[  210.151051][ T4446] IPv6: ADDRCONF(NETDEV_CHANGE): macsec0: link becomes ready
+[  210.155933][ T4446] IPv6: ADDRCONF(NETDEV_CHANGE): batadv_slave_0: link becomes ready
+[  210.160295][ T4446] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_to_batadv: link becomes ready
+[  210.172767][ T8040] batman_adv: batadv0: Interface activated: batadv_slave_1
+[  210.175513][ T4446] IPv6: ADDRCONF(NETDEV_CHANGE): batadv_slave_1: link becomes ready
+[  210.177433][ T4446] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_to_batadv: link becomes ready
+[  210.198003][ T8040] netdevsim netdevsim0 netdevsim0: set [1, 0] type 2 family 0 port 6081 - 0
+[  210.199172][ T8040] netdevsim netdevsim0 netdevsim1: set [1, 0] type 2 family 0 port 6081 - 0
+[  210.200166][ T8040] netdevsim netdevsim0 netdevsim2: set [1, 0] type 2 family 0 port 6081 - 0
+[  210.201127][ T8040] netdevsim netdevsim0 netdevsim3: set [1, 0] type 2 family 0 port 6081 - 0
+[  210.333188][ T8040] ieee80211 phy3: Selected rate control algorithm 'minstrel_ht'
+[  210.466260][ T2744] wlan0: Created IBSS using preconfigured BSSID 50:50:50:50:50:50
+[  210.467291][ T2744] wlan0: Creating new IBSS network, BSSID 50:50:50:50:50:50
+[  210.470618][ T8263] IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+[  210.499573][ T8040] ieee80211 phy4: Selected rate control algorithm 'minstrel_ht'
+[  210.601564][   T35] wlan1: Created IBSS using preconfigured BSSID 50:50:50:50:50:50
+[  210.602573][   T35] wlan1: Creating new IBSS network, BSSID 50:50:50:50:50:50
+[  210.626366][ T4416] IPv6: ADDRCONF(NETDEV_CHANGE): wlan1: link becomes ready
+[  211.325312][ T8043] Bluetooth: hci0: command 0x041b tx timeout
+22:27:10 executing program 0:
+unshare(0x2a020480)
+socketpair$unix(0x1, 0x5, 0x0, &(0x7f0000000100)={<r0=>0xffffffffffffffff})
+setsockopt$sock_attach_bpf(r0, 0x1, 0x2e, &(0x7f00000000c0), 0x4)
+
+2024/05/22 22:27:10 cfuCover: ipc.CustomCov{Id:0xc001, Val:0xf82, Ip:0x860059e9}
+2024/05/22 22:27:10 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x210d, Ip:0x860059fb}
+2024/05/22 22:27:10 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+[  213.405348][ T4405] Bluetooth: hci0: command 0x040f tx timeout
+22:27:12 executing program 0:
+unshare(0x2a020480)
+socketpair$unix(0x1, 0x5, 0x0, &(0x7f0000000100)={<r0=>0xffffffffffffffff})
+setsockopt$sock_attach_bpf(r0, 0x1, 0x2e, &(0x7f00000000c0), 0x4)
+
+[  215.487808][ T8043] Bluetooth: hci0: command 0x0419 tx timeout
+22:27:14 executing program 0:
+unshare(0x2a020480)
+socketpair$unix(0x1, 0x5, 0x0, &(0x7f0000000100)={<r0=>0xffffffffffffffff})
+setsockopt$sock_attach_bpf(r0, 0x1, 0x2e, &(0x7f00000000c0), 0x4)
+
+22:27:15 executing program 0:
+unshare(0x2a020480)
+socketpair$unix(0x1, 0x5, 0x0, &(0x7f0000000100)={<r0=>0xffffffffffffffff})
+setsockopt$sock_attach_bpf(r0, 0x1, 0x2e, &(0x7f00000000c0), 0x4)
+
+22:27:17 executing program 0:
+unshare(0x2a020480)
+socketpair$unix(0x1, 0x5, 0x0, &(0x7f0000000100)={<r0=>0xffffffffffffffff})
+setsockopt$sock_attach_bpf(r0, 0x1, 0x2e, &(0x7f00000000c0), 0x4)
+
+22:27:18 executing program 0:
+unshare(0x2a020480)
+socketpair$unix(0x1, 0x5, 0x0, &(0x7f0000000100)={<r0=>0xffffffffffffffff})
+setsockopt$sock_attach_bpf(r0, 0x1, 0x2e, &(0x7f00000000c0), 0x4)
+
+22:27:19 executing program 0:
+bpf$PROG_LOAD_XDP(0x5, &(0x7f00000002c0)={0x6, 0x3, &(0x7f00000001c0)=@framed={{0x18, 0x0, 0x3}}, &(0x7f0000000100)='GPL\x00', 0x2, 0x21, &(0x7f0000000240)=""/33}, 0x90)
+
+22:27:21 executing program 0:
+bpf$PROG_LOAD_XDP(0x5, &(0x7f00000002c0)={0x6, 0x3, &(0x7f00000001c0)=@framed={{0x18, 0x0, 0x3}}, &(0x7f0000000100)='GPL\x00', 0x2, 0x21, &(0x7f0000000240)=""/33}, 0x90)
+
+2024/05/22 22:27:21 cfuCover: ipc.CustomCov{Id:0xc001, Val:0xe72, Ip:0x8177d341}
+2024/05/22 22:27:21 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x1380, Ip:0x8177d3c8}
+2024/05/22 22:27:21 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2b8d, Ip:0x8170f374}
+2024/05/22 22:27:21 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x313d, Ip:0x8170cde2}
+2024/05/22 22:27:21 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 22:27:21 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x350d, Ip:0x8170cdf5}
+2024/05/22 22:27:21 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x4e19, Ip:0x8177d351}
+22:27:22 executing program 0:
+bpf$PROG_LOAD_XDP(0x5, &(0x7f00000002c0)={0x6, 0x3, &(0x7f00000001c0)=@framed={{0x18, 0x0, 0x3}}, &(0x7f0000000100)='GPL\x00', 0x2, 0x21, &(0x7f0000000240)=""/33}, 0x90)
+
+22:27:24 executing program 0:
+bpf$PROG_LOAD_XDP(0x5, &(0x7f00000002c0)={0x6, 0x3, &(0x7f00000001c0)=@framed={{0x18, 0x0, 0x3}}, &(0x7f0000000100)='GPL\x00', 0x2, 0x21, &(0x7f0000000240)=""/33}, 0x90)
+
+22:27:25 executing program 0:
+r0 = syz_open_dev$loop(&(0x7f0000000000), 0x0, 0x0)
+ioctl$BLKGETSIZE(r0, 0x1260, &(0x7f0000000040))
+
+22:27:27 executing program 0:
+r0 = syz_open_dev$loop(&(0x7f0000000000), 0x0, 0x0)
+ioctl$BLKGETSIZE(r0, 0x1260, &(0x7f0000000040))
+
+2024/05/22 22:27:27 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+22:27:28 executing program 0:
+r0 = syz_open_dev$loop(&(0x7f0000000000), 0x0, 0x0)
+ioctl$BLKGETSIZE(r0, 0x1260, &(0x7f0000000040))
+
+22:27:29 executing program 0:
+r0 = syz_open_dev$loop(&(0x7f0000000000), 0x0, 0x0)
+ioctl$BLKGETSIZE(r0, 0x1260, &(0x7f0000000040))
+
+22:27:31 executing program 0:
+ioperm(0x0, 0x7, 0x7d)
+r0 = fsopen(&(0x7f0000000040)='sockfs\x00', 0x0)
+fsconfig$FSCONFIG_SET_PATH(r0, 0x3, 0x0, 0xffffffffffffffff, 0xffffffffffffffff)
+
+22:27:32 executing program 0:
+ioperm(0x0, 0x7, 0x7d)
+r0 = fsopen(&(0x7f0000000040)='sockfs\x00', 0x0)
+fsconfig$FSCONFIG_SET_PATH(r0, 0x3, 0x0, 0xffffffffffffffff, 0xffffffffffffffff)
+
+2024/05/22 22:27:32 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2b09, Ip:0x8191ced7}
+2024/05/22 22:27:32 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 22:27:32 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x363c, Ip:0x8191cec7}
+22:27:34 executing program 0:
+ioperm(0x0, 0x7, 0x7d)
+r0 = fsopen(&(0x7f0000000040)='sockfs\x00', 0x0)
+fsconfig$FSCONFIG_SET_PATH(r0, 0x3, 0x0, 0xffffffffffffffff, 0xffffffffffffffff)
+
+22:27:36 executing program 0:
+ioperm(0x0, 0x7, 0x7d)
+r0 = fsopen(&(0x7f0000000040)='sockfs\x00', 0x0)
+fsconfig$FSCONFIG_SET_PATH(r0, 0x3, 0x0, 0xffffffffffffffff, 0xffffffffffffffff)
+
+22:27:37 executing program 0:
+ioperm(0x0, 0x7, 0x7d)
+r0 = fsopen(&(0x7f0000000040)='sockfs\x00', 0x0)
+fsconfig$FSCONFIG_SET_PATH(r0, 0x3, 0x0, 0xffffffffffffffff, 0xffffffffffffffff)
+
+22:27:39 executing program 0:
+ioperm(0x0, 0x7, 0x7d)
+r0 = fsopen(&(0x7f0000000040)='sockfs\x00', 0x0)
+fsconfig$FSCONFIG_SET_PATH(r0, 0x3, 0x0, 0xffffffffffffffff, 0xffffffffffffffff)
+
+22:27:40 executing program 0:
+ioperm(0x0, 0x7, 0x7d)
+r0 = fsopen(&(0x7f0000000040)='sockfs\x00', 0x0)
+fsconfig$FSCONFIG_SET_PATH(r0, 0x3, 0x0, 0xffffffffffffffff, 0xffffffffffffffff)
+
+22:27:42 executing program 0:
+r0 = syz_usb_connect(0x2, 0x24, &(0x7f0000000040)={{0x12, 0x1, 0x0, 0x59, 0x77, 0xc, 0x40, 0x9c0, 0x203, 0xd332, 0x0, 0x0, 0x0, 0x1, [{{0x9, 0x2, 0x12, 0x1, 0x0, 0x0, 0x0, 0x0, [{{0x9, 0x4, 0x0, 0x0, 0x0, 0xfa, 0x10, 0xc9}}]}}]}}, 0x0)
+syz_usb_control_io(r0, 0x0, &(0x7f0000000640)={0x84, &(0x7f0000000240)={0x0, 0x0, 0x1, "f8"}, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0})
+
+[  245.033390][ T8263] usb 1-1: new full-speed USB device number 2 using dummy_hcd
+[  245.393468][ T8263] usb 1-1: New USB device found, idVendor=09c0, idProduct=0203, bcdDevice=d3.32
+[  245.394745][ T8263] usb 1-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+[  245.420118][ T8263] usb 1-1: config 0 descriptor??
+[  245.459993][ T8263] dvb-usb: found a 'Genpix SkyWalker-1 DVB-S receiver' in warm state.
+[  245.893648][ T8263] gp8psk: usb in 137 operation failed.
+[  245.894611][ T8263] dvb-usb: This USB2.0 device cannot be run on a USB1.1 port. (it lacks a hardware PID filter)
+[  245.895924][ T8263] dvb-usb: Genpix SkyWalker-1 DVB-S receiver error while loading driver (-19)
+[  245.917358][ T8263] usb 1-1: USB disconnect, device number 2
+2024/05/22 22:27:45 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x194b, Ip:0x84f06e27}
+22:27:45 executing program 0:
+r0 = syz_usb_connect(0x2, 0x24, &(0x7f0000000040)={{0x12, 0x1, 0x0, 0x59, 0x77, 0xc, 0x40, 0x9c0, 0x203, 0xd332, 0x0, 0x0, 0x0, 0x1, [{{0x9, 0x2, 0x12, 0x1, 0x0, 0x0, 0x0, 0x0, [{{0x9, 0x4, 0x0, 0x0, 0x0, 0xfa, 0x10, 0xc9}}]}}]}}, 0x0)
+syz_usb_control_io(r0, 0x0, &(0x7f0000000640)={0x84, &(0x7f0000000240)={0x0, 0x0, 0x1, "f8"}, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0})
+
+2024/05/22 22:27:45 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2151, Ip:0x8158bef7}
+2024/05/22 22:27:45 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2b09, Ip:0x8191ced7}
+2024/05/22 22:27:45 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2bd9, Ip:0x84f0a69b}
+2024/05/22 22:27:45 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2c55, Ip:0x84f06d9a}
+2024/05/22 22:27:45 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 22:27:45 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x363c, Ip:0x8191cec7}
+2024/05/22 22:27:45 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x5308, Ip:0x84f06d88}
+2024/05/22 22:27:45 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+2024/05/22 22:27:45 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x598d, Ip:0x8158bee5}
+2024/05/22 22:27:45 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x194b, Ip:0x84f06e27}
+2024/05/22 22:27:45 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2151, Ip:0x8158bef7}
+2024/05/22 22:27:45 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2b09, Ip:0x8191ced7}
+2024/05/22 22:27:45 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2bd9, Ip:0x84f0a69b}
+2024/05/22 22:27:45 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 22:27:45 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x363c, Ip:0x8191cec7}
+2024/05/22 22:27:45 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x5308, Ip:0x84f06e15}
+2024/05/22 22:27:45 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x598d, Ip:0x8158bee5}
+[  248.184642][ T8263] usb 1-1: new full-speed USB device number 3 using dummy_hcd
+[  248.543521][ T8263] usb 1-1: New USB device found, idVendor=09c0, idProduct=0203, bcdDevice=d3.32
+[  248.544563][ T8263] usb 1-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+[  248.562249][ T8263] usb 1-1: config 0 descriptor??
+[  248.608900][ T8263] dvb-usb: found a 'Genpix SkyWalker-1 DVB-S receiver' in warm state.
+[  249.044643][ T8263] gp8psk: usb in 137 operation failed.
+[  249.045293][ T8263] dvb-usb: This USB2.0 device cannot be run on a USB1.1 port. (it lacks a hardware PID filter)
+[  249.046418][ T8263] dvb-usb: Genpix SkyWalker-1 DVB-S receiver error while loading driver (-19)
+[  249.057558][ T8263] usb 1-1: USB disconnect, device number 3
+22:27:48 executing program 0:
+r0 = syz_usb_connect(0x2, 0x24, &(0x7f0000000040)={{0x12, 0x1, 0x0, 0x59, 0x77, 0xc, 0x40, 0x9c0, 0x203, 0xd332, 0x0, 0x0, 0x0, 0x1, [{{0x9, 0x2, 0x12, 0x1, 0x0, 0x0, 0x0, 0x0, [{{0x9, 0x4, 0x0, 0x0, 0x0, 0xfa, 0x10, 0xc9}}]}}]}}, 0x0)
+syz_usb_control_io(r0, 0x0, &(0x7f0000000640)={0x84, &(0x7f0000000240)={0x0, 0x0, 0x1, "f8"}, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0})
+
+[  251.313446][ T4416] usb 1-1: new full-speed USB device number 4 using dummy_hcd
+[  251.673458][ T4416] usb 1-1: New USB device found, idVendor=09c0, idProduct=0203, bcdDevice=d3.32
+[  251.674504][ T4416] usb 1-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+[  251.687033][ T4416] usb 1-1: config 0 descriptor??
+[  251.730830][ T4416] dvb-usb: found a 'Genpix SkyWalker-1 DVB-S receiver' in warm state.
+[  252.174795][ T4416] gp8psk: usb in 137 operation failed.
+[  252.175463][ T4416] dvb-usb: This USB2.0 device cannot be run on a USB1.1 port. (it lacks a hardware PID filter)
+[  252.176582][ T4416] dvb-usb: Genpix SkyWalker-1 DVB-S receiver error while loading driver (-19)
+[  252.189738][ T4416] usb 1-1: USB disconnect, device number 4
+22:27:51 executing program 0:
+r0 = syz_usb_connect(0x2, 0x24, &(0x7f0000000040)={{0x12, 0x1, 0x0, 0x59, 0x77, 0xc, 0x40, 0x9c0, 0x203, 0xd332, 0x0, 0x0, 0x0, 0x1, [{{0x9, 0x2, 0x12, 0x1, 0x0, 0x0, 0x0, 0x0, [{{0x9, 0x4, 0x0, 0x0, 0x0, 0xfa, 0x10, 0xc9}}]}}]}}, 0x0)
+syz_usb_control_io(r0, 0x0, &(0x7f0000000640)={0x84, &(0x7f0000000240)={0x0, 0x0, 0x1, "f8"}, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0})
+
+[  254.623468][ T8263] usb 1-1: new full-speed USB device number 5 using dummy_hcd
+[  254.984686][ T8263] usb 1-1: New USB device found, idVendor=09c0, idProduct=0203, bcdDevice=d3.32
+[  254.985712][ T8263] usb 1-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+[  254.997275][ T8263] usb 1-1: config 0 descriptor??
+[  255.041016][ T8263] dvb-usb: found a 'Genpix SkyWalker-1 DVB-S receiver' in warm state.
+[  255.487467][ T8263] gp8psk: usb in 137 operation failed.
+[  255.488128][ T8263] dvb-usb: This USB2.0 device cannot be run on a USB1.1 port. (it lacks a hardware PID filter)
+[  255.489280][ T8263] dvb-usb: Genpix SkyWalker-1 DVB-S receiver error while loading driver (-19)
+[  255.505143][ T8263] usb 1-1: USB disconnect, device number 5
+22:27:55 executing program 0:
+r0 = syz_usb_connect(0x2, 0x24, &(0x7f0000000040)={{0x12, 0x1, 0x0, 0x59, 0x77, 0xc, 0x40, 0x9c0, 0x203, 0xd332, 0x0, 0x0, 0x0, 0x1, [{{0x9, 0x2, 0x12, 0x1, 0x0, 0x0, 0x0, 0x0, [{{0x9, 0x4, 0x0, 0x0, 0x0, 0xfa, 0x10, 0xc9}}]}}]}}, 0x0)
+syz_usb_control_io(r0, 0x0, &(0x7f0000000640)={0x84, &(0x7f0000000240)={0x0, 0x0, 0x1, "f8"}, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0})
+
+[  257.983485][    T7] usb 1-1: new full-speed USB device number 6 using dummy_hcd
+[  258.343509][    T7] usb 1-1: New USB device found, idVendor=09c0, idProduct=0203, bcdDevice=d3.32
+[  258.345692][    T7] usb 1-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+[  258.362785][    T7] usb 1-1: config 0 descriptor??
+[  258.412630][    T7] dvb-usb: found a 'Genpix SkyWalker-1 DVB-S receiver' in warm state.
+[  258.854652][    T7] gp8psk: usb in 137 operation failed.
+[  258.855347][    T7] dvb-usb: This USB2.0 device cannot be run on a USB1.1 port. (it lacks a hardware PID filter)
+[  258.856505][    T7] dvb-usb: Genpix SkyWalker-1 DVB-S receiver error while loading driver (-19)
+[  258.869013][    T7] usb 1-1: USB disconnect, device number 6
+22:27:58 executing program 0:
+r0 = syz_usb_connect(0x2, 0x24, &(0x7f0000000040)={{0x12, 0x1, 0x0, 0x59, 0x77, 0xc, 0x40, 0x9c0, 0x203, 0xd332, 0x0, 0x0, 0x0, 0x1, [{{0x9, 0x2, 0x12, 0x1, 0x0, 0x0, 0x0, 0x0, [{{0x9, 0x4, 0x0, 0x0, 0x0, 0xfa, 0x10, 0xc9}}]}}]}}, 0x0)
+syz_usb_control_io(r0, 0x0, &(0x7f0000000640)={0x84, &(0x7f0000000240)={0x0, 0x0, 0x1, "f8"}, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0})
+
+[  261.213502][ T8263] usb 1-1: new full-speed USB device number 7 using dummy_hcd
+[  261.573558][ T8263] usb 1-1: New USB device found, idVendor=09c0, idProduct=0203, bcdDevice=d3.32
+[  261.575228][ T8263] usb 1-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+[  261.608997][ T8263] usb 1-1: config 0 descriptor??
+[  261.659500][ T8263] dvb-usb: found a 'Genpix SkyWalker-1 DVB-S receiver' in warm state.
+[  262.083792][ T8263] gp8psk: usb in 137 operation failed.
+[  262.085146][ T8263] dvb-usb: This USB2.0 device cannot be run on a USB1.1 port. (it lacks a hardware PID filter)
+[  262.087454][ T8263] dvb-usb: Genpix SkyWalker-1 DVB-S receiver error while loading driver (-19)
+[  262.122542][ T8263] usb 1-1: USB disconnect, device number 7
+22:28:01 executing program 0:
+r0 = syz_usb_connect(0x2, 0x24, &(0x7f0000000040)={{0x12, 0x1, 0x0, 0x59, 0x77, 0xc, 0x40, 0x9c0, 0x203, 0xd332, 0x0, 0x0, 0x0, 0x1, [{{0x9, 0x2, 0x12, 0x1, 0x0, 0x0, 0x0, 0x0, [{{0x9, 0x4, 0x0, 0x0, 0x0, 0xfa, 0x10, 0xc9}}]}}]}}, 0x0)
+syz_usb_control_io(r0, 0x0, &(0x7f0000000640)={0x84, &(0x7f0000000240)={0x0, 0x0, 0x1, "f8"}, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0})
+
+[  264.563396][ T4416] usb 1-1: new full-speed USB device number 8 using dummy_hcd
+[  264.923745][ T4416] usb 1-1: New USB device found, idVendor=09c0, idProduct=0203, bcdDevice=d3.32
+[  264.925929][ T4416] usb 1-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+[  264.962110][ T4416] usb 1-1: config 0 descriptor??
+[  265.009458][ T4416] dvb-usb: found a 'Genpix SkyWalker-1 DVB-S receiver' in warm state.
+[  265.443549][ T4416] gp8psk: usb in 137 operation failed.
+[  265.444404][ T4416] dvb-usb: This USB2.0 device cannot be run on a USB1.1 port. (it lacks a hardware PID filter)
+[  265.445786][ T4416] dvb-usb: Genpix SkyWalker-1 DVB-S receiver error while loading driver (-19)
+[  265.463574][ T4416] usb 1-1: USB disconnect, device number 8
+[  266.925463][ T1219] ieee802154 phy0 wpan0: encryption failed: -22
+[  266.926247][ T1219] ieee802154 phy1 wpan1: encryption failed: -22
+22:28:05 executing program 0:
+r0 = socket$l2tp6(0xa, 0x2, 0x73)
+sendmmsg$inet6(r0, &(0x7f00000008c0)=[{{&(0x7f0000000080)={0xa, 0x0, 0x0, @remote}, 0x1c, 0x0, 0x0, &(0x7f0000000140)=[@hoplimit={{0x14, 0x29, 0x34, 0x401}}], 0x18}}], 0x1, 0x0)
+
+22:28:06 executing program 0:
+r0 = socket$l2tp6(0xa, 0x2, 0x73)
+sendmmsg$inet6(r0, &(0x7f00000008c0)=[{{&(0x7f0000000080)={0xa, 0x0, 0x0, @remote}, 0x1c, 0x0, 0x0, &(0x7f0000000140)=[@hoplimit={{0x14, 0x29, 0x34, 0x401}}], 0x18}}], 0x1, 0x0)
+
+2024/05/22 22:28:06 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x23cd, Ip:0x85ffa80f}
+2024/05/22 22:28:06 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x30be, Ip:0x85ffa1f0}
+2024/05/22 22:28:06 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 22:28:06 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3858, Ip:0x85ff2f25}
+2024/05/22 22:28:06 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x4de3, Ip:0x85ffa202}
+22:28:08 executing program 0:
+r0 = socket$l2tp6(0xa, 0x2, 0x73)
+sendmmsg$inet6(r0, &(0x7f00000008c0)=[{{&(0x7f0000000080)={0xa, 0x0, 0x0, @remote}, 0x1c, 0x0, 0x0, &(0x7f0000000140)=[@hoplimit={{0x14, 0x29, 0x34, 0x401}}], 0x18}}], 0x1, 0x0)
+
+22:28:09 executing program 0:
+r0 = socket$l2tp6(0xa, 0x2, 0x73)
+sendmmsg$inet6(r0, &(0x7f00000008c0)=[{{&(0x7f0000000080)={0xa, 0x0, 0x0, @remote}, 0x1c, 0x0, 0x0, &(0x7f0000000140)=[@hoplimit={{0x14, 0x29, 0x34, 0x401}}], 0x18}}], 0x1, 0x0)
+
+22:28:11 executing program 0:
+openat$uhid(0xffffffffffffff9c, &(0x7f0000000000), 0x0, 0x0)
+r0 = syz_open_procfs(0x0, &(0x7f00000000c0)='fd/3\x00')
+r1 = socket$xdp(0x2c, 0x3, 0x0)
+mount$9p_fd(0x0, &(0x7f0000000000)='.\x00', &(0x7f0000000080), 0x0, &(0x7f0000000100)={'trans=fd,', {'rfdno', 0x3d, r0}, 0x2c, {'wfdno', 0x3d, r1}})
+
+2024/05/22 22:28:14 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+22:28:14 executing program 0:
+openat$uhid(0xffffffffffffff9c, &(0x7f0000000000), 0x0, 0x0)
+r0 = syz_open_procfs(0x0, &(0x7f00000000c0)='fd/3\x00')
+r1 = socket$xdp(0x2c, 0x3, 0x0)
+mount$9p_fd(0x0, &(0x7f0000000000)='.\x00', &(0x7f0000000080), 0x0, &(0x7f0000000100)={'trans=fd,', {'rfdno', 0x3d, r0}, 0x2c, {'wfdno', 0x3d, r1}})
+
+2024/05/22 22:28:14 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+2024/05/22 22:28:14 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x1bb7, Ip:0x81bb4bc6}
+2024/05/22 22:28:14 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x1bf4, Ip:0x81bb4bd8}
+2024/05/22 22:28:14 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2b09, Ip:0x8191ced7}
+2024/05/22 22:28:14 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 22:28:14 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x363c, Ip:0x8191cec7}
+2024/05/22 22:28:14 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+22:28:16 executing program 0:
+openat$uhid(0xffffffffffffff9c, &(0x7f0000000000), 0x0, 0x0)
+r0 = syz_open_procfs(0x0, &(0x7f00000000c0)='fd/3\x00')
+r1 = socket$xdp(0x2c, 0x3, 0x0)
+mount$9p_fd(0x0, &(0x7f0000000000)='.\x00', &(0x7f0000000080), 0x0, &(0x7f0000000100)={'trans=fd,', {'rfdno', 0x3d, r0}, 0x2c, {'wfdno', 0x3d, r1}})
+
+22:28:18 executing program 0:
+openat$uhid(0xffffffffffffff9c, &(0x7f0000000000), 0x0, 0x0)
+r0 = syz_open_procfs(0x0, &(0x7f00000000c0)='fd/3\x00')
+r1 = socket$xdp(0x2c, 0x3, 0x0)
+mount$9p_fd(0x0, &(0x7f0000000000)='.\x00', &(0x7f0000000080), 0x0, &(0x7f0000000100)={'trans=fd,', {'rfdno', 0x3d, r0}, 0x2c, {'wfdno', 0x3d, r1}})
+
+22:28:21 executing program 0:
+r0 = fsopen(&(0x7f0000000000)='gadgetfs\x00', 0x0)
+fsconfig$FSCONFIG_CMD_CREATE(r0, 0x6, 0x0, 0x0, 0x0)
+fsmount(r0, 0x0, 0x0)
+fsconfig$FSCONFIG_CMD_RECONFIGURE(r0, 0x7, 0x0, 0x0, 0x0)
+
+22:28:22 executing program 0:
+r0 = fsopen(&(0x7f0000000000)='gadgetfs\x00', 0x0)
+fsconfig$FSCONFIG_CMD_CREATE(r0, 0x6, 0x0, 0x0, 0x0)
+fsmount(r0, 0x0, 0x0)
+fsconfig$FSCONFIG_CMD_RECONFIGURE(r0, 0x7, 0x0, 0x0, 0x0)
+
+2024/05/22 22:28:22 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2b09, Ip:0x8191ced7}
+2024/05/22 22:28:22 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 22:28:22 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x363c, Ip:0x8191cec7}
+22:28:24 executing program 0:
+r0 = fsopen(&(0x7f0000000000)='gadgetfs\x00', 0x0)
+fsconfig$FSCONFIG_CMD_CREATE(r0, 0x6, 0x0, 0x0, 0x0)
+fsmount(r0, 0x0, 0x0)
+fsconfig$FSCONFIG_CMD_RECONFIGURE(r0, 0x7, 0x0, 0x0, 0x0)
+
+22:28:25 executing program 0:
+r0 = fsopen(&(0x7f0000000000)='gadgetfs\x00', 0x0)
+fsconfig$FSCONFIG_CMD_CREATE(r0, 0x6, 0x0, 0x0, 0x0)
+fsmount(r0, 0x0, 0x0)
+fsconfig$FSCONFIG_CMD_RECONFIGURE(r0, 0x7, 0x0, 0x0, 0x0)
+
+22:28:27 executing program 0:
+r0 = fsopen(&(0x7f0000000000)='gadgetfs\x00', 0x0)
+fsconfig$FSCONFIG_CMD_CREATE(r0, 0x6, 0x0, 0x0, 0x0)
+fsmount(r0, 0x0, 0x0)
+fsconfig$FSCONFIG_CMD_RECONFIGURE(r0, 0x7, 0x0, 0x0, 0x0)
+
+22:28:28 executing program 0:
+r0 = fsopen(&(0x7f0000000000)='gadgetfs\x00', 0x0)
+fsconfig$FSCONFIG_CMD_CREATE(r0, 0x6, 0x0, 0x0, 0x0)
+fsmount(r0, 0x0, 0x0)
+fsconfig$FSCONFIG_CMD_RECONFIGURE(r0, 0x7, 0x0, 0x0, 0x0)
+
+22:28:30 executing program 0:
+r0 = fsopen(&(0x7f0000000000)='gadgetfs\x00', 0x0)
+fsconfig$FSCONFIG_CMD_CREATE(r0, 0x6, 0x0, 0x0, 0x0)
+fsmount(r0, 0x0, 0x0)
+fsconfig$FSCONFIG_CMD_RECONFIGURE(r0, 0x7, 0x0, 0x0, 0x0)
+
+22:28:32 executing program 0:
+r0 = fsopen(&(0x7f0000000000)='gadgetfs\x00', 0x0)
+fsconfig$FSCONFIG_CMD_CREATE(r0, 0x6, 0x0, 0x0, 0x0)
+fsmount(r0, 0x0, 0x0)
+fsconfig$FSCONFIG_CMD_RECONFIGURE(r0, 0x7, 0x0, 0x0, 0x0)
+
+22:28:33 executing program 0:
+r0 = fsopen(&(0x7f0000000000)='gadgetfs\x00', 0x0)
+fsconfig$FSCONFIG_CMD_CREATE(r0, 0x6, 0x0, 0x0, 0x0)
+fsmount(r0, 0x0, 0x0)
+fsconfig$FSCONFIG_CMD_RECONFIGURE(r0, 0x7, 0x0, 0x0, 0x0)
+
+22:28:34 executing program 0:
+r0 = fsopen(&(0x7f0000000000)='gadgetfs\x00', 0x0)
+fsconfig$FSCONFIG_CMD_CREATE(r0, 0x6, 0x0, 0x0, 0x0)
+fsmount(r0, 0x0, 0x0)
+fsconfig$FSCONFIG_CMD_RECONFIGURE(r0, 0x7, 0x0, 0x0, 0x0)
+
+22:28:36 executing program 0:
+openat$zero(0xffffffffffffff9c, 0x0, 0x0, 0x0)
+pipe(&(0x7f0000000040)={0xffffffffffffffff, <r0=>0xffffffffffffffff})
+r1 = fcntl$dupfd(r0, 0x3, 0xffffffffffffffff)
+write(r1, &(0x7f0000000100), 0xfffffe5d)
+
+2024/05/22 22:28:38 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+2024/05/22 22:28:38 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3e9b, Ip:0x833c12dd}
+22:28:38 executing program 0:
+openat$zero(0xffffffffffffff9c, 0x0, 0x0, 0x0)
+pipe(&(0x7f0000000040)={0xffffffffffffffff, <r0=>0xffffffffffffffff})
+r1 = fcntl$dupfd(r0, 0x3, 0xffffffffffffffff)
+write(r1, &(0x7f0000000100), 0xfffffe5d)
+
+22:28:41 executing program 0:
+openat$zero(0xffffffffffffff9c, 0x0, 0x0, 0x0)
+pipe(&(0x7f0000000040)={0xffffffffffffffff, <r0=>0xffffffffffffffff})
+r1 = fcntl$dupfd(r0, 0x3, 0xffffffffffffffff)
+write(r1, &(0x7f0000000100), 0xfffffe5d)
+
+22:28:43 executing program 0:
+openat$zero(0xffffffffffffff9c, 0x0, 0x0, 0x0)
+pipe(&(0x7f0000000040)={0xffffffffffffffff, <r0=>0xffffffffffffffff})
+r1 = fcntl$dupfd(r0, 0x3, 0xffffffffffffffff)
+write(r1, &(0x7f0000000100), 0xfffffe5d)
+
+22:28:45 executing program 0:
+close_range(0xffffffffffffffff, 0xffffffffffffffff, 0x2)
+r0 = openat$dsp(0xffffffffffffff9c, &(0x7f0000000080), 0x0, 0x0)
+ioctl$SNDCTL_DSP_SYNC(r0, 0xc0045007, 0x0)
+
+22:28:47 executing program 0:
+close_range(0xffffffffffffffff, 0xffffffffffffffff, 0x2)
+r0 = openat$dsp(0xffffffffffffff9c, &(0x7f0000000080), 0x0, 0x0)
+ioctl$SNDCTL_DSP_SYNC(r0, 0xc0045007, 0x0)
+
+2024/05/22 22:28:47 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+22:28:48 executing program 0:
+close_range(0xffffffffffffffff, 0xffffffffffffffff, 0x2)
+r0 = openat$dsp(0xffffffffffffff9c, &(0x7f0000000080), 0x0, 0x0)
+ioctl$SNDCTL_DSP_SYNC(r0, 0xc0045007, 0x0)
+
+22:28:50 executing program 0:
+close_range(0xffffffffffffffff, 0xffffffffffffffff, 0x2)
+r0 = openat$dsp(0xffffffffffffff9c, &(0x7f0000000080), 0x0, 0x0)
+ioctl$SNDCTL_DSP_SYNC(r0, 0xc0045007, 0x0)
+
+22:28:51 executing program 0:
+shmat(0x0, &(0x7f0000ffc000/0x1000)=nil, 0x0)
+
+22:28:53 executing program 0:
+r0 = openat$ttynull(0xffffffffffffff9c, &(0x7f0000000800), 0x0, 0x0)
+ioctl$TIOCNXCL(r0, 0x540d)
+
+22:28:54 executing program 0:
+r0 = openat$ttynull(0xffffffffffffff9c, &(0x7f0000000800), 0x0, 0x0)
+ioctl$TIOCNXCL(r0, 0x540d)
+
+2024/05/22 22:28:54 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+22:28:56 executing program 0:
+r0 = openat$ttynull(0xffffffffffffff9c, &(0x7f0000000800), 0x0, 0x0)
+ioctl$TIOCNXCL(r0, 0x540d)
+
+22:28:57 executing program 0:
+r0 = openat$ttynull(0xffffffffffffff9c, &(0x7f0000000800), 0x0, 0x0)
+ioctl$TIOCNXCL(r0, 0x540d)
+
+22:28:58 executing program 0:
+r0 = bpf$PROG_LOAD(0x5, &(0x7f0000000440)={0x3, 0x6, &(0x7f0000000000)=ANY=[@ANYBLOB="050000000000000071115000000000008510000002000000850000000000000095000000000000009500a50500000000"], &(0x7f0000000080)='GPL\x00', 0x5, 0x29e, &(0x7f000000cf3d)=""/195, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x6}, 0x70)
+bpf$PROG_LOAD(0x5, &(0x7f00000000c0)={0x0, 0xc, &(0x7f0000000600)=ANY=[@ANYBLOB="1800000000000000000000000000000018110000", @ANYBLOB="f331b3986fa50e15ed246f6787382134a7c05d39b4c72de96b020d07b071dca44c26b6d40dd2e45aa840e19dba77092a8964", @ANYBLOB="00060000000000007b8af8ff00000000bfa200000000000007020000f8ffffffb703000400000000000085000000e8010900009500000000040000000000000000"], 0x0, 0x0, 0x0, 0x0, 0x0, 0x25, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+r1 = bpf$MAP_CREATE(0x0, &(0x7f00000000c0)=@base={0x1b, 0x0, 0x0, 0x8000}, 0x48)
+bpf$PROG_LOAD(0x5, &(0x7f00000000c0)={0x0, 0xc, &(0x7f0000000440)=ANY=[@ANYBLOB="763c000000000000000000000000000018110000", @ANYRES32=r1, @ANYBLOB="0000000000000000b7080000000000007b8af8ff00000000bfa200000000000007020000f8ffffffb703000008000000b7040000020000088500000082"], 0x0, 0x7, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+r2 = bpf$PROG_LOAD(0x5, &(0x7f00000000c0)={0x11, 0xc, &(0x7f0000000440)=ANY=[], &(0x7f0000000240)='GPL\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f0000001300)={&(0x7f0000000c00)='net_dev_start_xmit\x00', r2}, 0x10)
+r3 = bpf$PROG_LOAD(0x5, 0x0, 0x0)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f0000001300)={0x0, r3}, 0x10)
+r4 = bpf$PROG_LOAD(0x5, &(0x7f0000000200)={0xc, 0xe, &(0x7f00000017c0)=ANY=[@ANYBLOB="b702000009000000bfa30000000000000703000000feffff7a0af0fff8ffffff79a4f0ff00000000b7060000ffffffff2e6405000000000065060400010000000404000001007d60b7030000000000006a0a00fe00000000850000000d000000b70000000000000095000000000000002c3f2cc2b7956244cef7baf48e6d2885a09a87507ebfc75b5b0f4e4309ebcdac5f7a860c008cbdd3b4c3b7f28754860c9c781f6410457253e89ad528d985636a86ec0f68f59cd1159a2c2e85d726859a919cc9548a349980d1ccdce27f94bc074c27f81078545c146a0857153b7b8f00034debae58a4ab415b0d7ff0575cc272cd3d7e8d974927676468ff2d86e0ffac94792ed9cf6b40b3cf252a47c05ae8a70d57cc3e067d1867b54d24e20000000000000020009ebf84d3b042d6e432cd080e3b57239f0127473e6ba922aff649609d40b47ec331ccba3cf96f9483ff19a6471bf5abc742d9cbcfb964b11b31034694a6aad86cf08a6c7b2235dc99de9aa3e6b77c7a2877261ed32da90864987f30926c9013eec3b86836ae50447aa5a79f40c235000000453302712c3d8fc4e2b61adb0695e800000000d4f4e91f0000002c33df424d1bafe5725c8a404724f8a4f1cda7997b65954f74097579b91da309b887af2485c2d9ab09b506000000000000000bf7b2ff4602aec1eea200000064881c5630521a08e051374cf05c921a06fb7818000000009dc8d95e0e5b365d10e1004dae58b3b5b89709b0ff47b200000000004000cbef88811dc8c1b27ac7d9a6bb70f60eb9c01dd2fc79b85e4d961498f3a80131d21d856177a2189f45d011ef1da5c6d57bb8fd387ccea9c3899a914e47e82f040000009d81003f927355408f87264797d3fa970949793b94329d580500d1f91c0d22587e05a61e3d8576ca168e88d7a9af95b04a37c27bfffab9abbb31fa8c0080258cfa6d3f166e695f3c56490aeef464d9965d70a50f1282619344f223548e75fa39643adac1322c87ca253ff2fb1882760d6feab16bacdf83c11816dbe959ebc5ec479c8319f73e2249eab0486b110702a481d3b51976a52303056e800b4ae5acc2df636a65eb1d672bf2000000cda8462cc9b16624998be65683321e970000000009b8e20762c1bf4a3eb6769f2b23e842bacd9c685edea0ffa3e975424f8ede49e61a4de808a38ba3512d64dc71867df4eee3f1ff791cf7c9862f98b45852e4b2f78721b978a2df2f2a29a387c6f0576b36038f819286eca99a6a434811cf2a117d775fe986a49fb82cf5f15972d5ab18f1045384501adabb20f7b0e15ff47f1744e2341b59034959a1289ba6e243668e6735305707e3de7652bfc5b60c76deff43a1d6fd6a4180ab723735abbeffe7f2ec3a0bb86f9eddfc0f3d1d503d7a54b49e1ae6c5aa620d27e91aa0aa0ed6fcacfc91fbb4c256409e54daefbb107c381fa729ff5f3907d93430da178d685d7730f5e129438a5214f722096d29863301b0b811f69145d3fbd78a9059e454474f92e65828b018174a9f4738b8c71fbdeac26ab95e02f9a847182766964976b1fccdb9f35721e43e33883cf16ed1343fb7429eb395123b0a4262b7023c22039b9002589a378ed4c6267965af78b861bd025312538cec97966b8973d4e299d9802264d06e40ae118e1d242d1128dcedeb44030df12ef68f78215d65f96eb55db8cbcb060008000d988374f85451a694ffe38a1d03916ff1eec72b31c98d42e1a1bda1290de1a499a5a385b31112a48ba3e6d6849914c1788a7aca37177cc341fff44fec5c5e0abae01c439a1b0311e074e81ae9993b5b3459553e4ece78d4c1501c70f5d81e0725d5b273755c0000000000000000aa4234ff82182952a76233d18e7d49638aeb04e7a9e9e7eafb7c255372795d2d192a0a33cab0f5bf2e93e0544fcdf2df2bc6ce96e5a11993d54f97a23754ac828674dbb93c0ad345715be4a13678b01edf76d8a923655800a2c88cce004505ab45d8f5f88aa887bbce5c18970428516f6099bdbb2cd7a2356397f1a0a23e662e2a6c4834400cbaa41c3c574e6e6aefb7a68da5ec1ae49f968bbe0e0bf9878516f553639f5b4828e92019b61f5874be1c7cdd9482df50bc24a8a1fa10d291390eb84e26a2e8dbeaa45604b05a116c1210a7540bf81005044273f5a8ffc538db289350eb248e483bd8920efcf30a798c2b636243e0a37262ca47dfeefa753ba528f7ba77e825051ce69b4475d7d714ba0c636e6ae9f710411d30ef424aeaabe057c7df6ff8f767bcd9012e1047c686f5ccb76ab3a5df53cbc22ba7ea8f6a8e220bb4d83de1e4dc19d6c1be841503850803bc2c2d5e0e34270a7f1cca0c6c53a8e5f891f7a793a70da62d6d88fbb90d220acc687931b42d6be83ab870da3c0a567f5e65ec0457f4ad2a4ec0b671b36388afd5520a8483a4b11f7d02a41b315f0f9e59f47668d68a74838d6976e12fd45200014041dffacbf60892ec8bd7560686f137a806d3dfaba900b47cac62f828342fff009adb5b2251461a1b9d6ba625b8fe04e69a1a4be2696f0000000086e172932e03000000000000005942e1b9d6dc28ab8e19e1111dd893e801015642faf21eef40d6e7de3ef62c4bc5ff17e7aeb2841098f845d1cc9ec4eee79c298fb0ba939b13707044e2e9cc0d350438c1c8c6bb9a38c6ac5ca0d9cf1f3d6915f25cb26edfc28b3079b97df32601240e454db103fb0c4a14c16837394d2b3673a3f160d3a7b83ecd0509ce9eba0c7bf7843799b1b56a234f9eaab8a3f14f1472bb6aaeb8ac9ee4054605558ab31f339f6a4caf2ee2fd01f34dca3300000000000000000000000000000000f59f8e6e00000000c44130098d833a24000000000095e6f945ba9a941cef5e70b8c152321e24b5b29bcf374dcf5a29a35d76e6e2bf8df95462690a4fc9ec8129e92b6ebb4b40a992a75d3c5954d0bfc87db24d856359079b29b3c374d081c300b2cfaa596d24e800ef8e2201f2fb7a9946f89f9f31f7cbd603fd7f8898c70b5c65f2e28f22e1a79a6af3a54861b07f124642e98389557affbdede09b5566a4a1ee73b20846810030a754acddcdafe3ceeeebc0b5f2fedfe7d198e3067f3dbac9441a9ab8409cbbb7e15b9ae3944097de34de2001c8533a3766e6e4c4c4702ccb932a27a3962814cd6aa8fc684beeaa3932efae3a9052be8eec1e95f6ad8d41dd34829503ba4b66e27154cb6e34aa13450522df1723130b6fb9bec59ae347c93f00e40e293c98d849a33f773c743728992f40faccd5c23130a1c6bfd6fc661bca1598137ddd1090ded672f5a48a40cab3f640c8241a364cbde0f188eec7da7bccafbd5bf28a46f0eecc6b550471b0b0770c6a5a411c0e0b19e15a461e7c6833ba936e214b013f2819ec6572a43b5cd32b11d7e4f8dcf8f7820a17b7b2ee6178a03351dd25091e46bfd82a3979b9cad109fd6217cd52aa81bdabd50826a674bd16b8f7e6aed12a305366599f5f029a7b24558c02750500002f1c19d16a6f391906000000cc0bbbfb8c698ecc137d96711100e0108d3bd2afed0b279ebf0527552a9331e646c424b14ffbb815622bfd2f635855bed1b164d0a56bd104be069854111c5b26ec3c652b5f0a6b9676dae987ec23456ba05a4dfb15321ef6b76e7e547a688c67ab531cfc784c9f940d9fb0464a6cce635e14b80dc5c1c64e75e6bd5355d84f8df272f18f58c570e7afd83ee77f157c146aa747b728969aeb4aba1d8f9de14275bf4a53e95235ae13768ab3fb8ab6ea50e884c2ea98e6400bf0c5ae2887cd1da0e57ccfdf5eca2b455247efcc13102846c0a85f20c80007c0ce6efce627b95b8ad3003385de97101678fb2163ecea6e70a77a6fbc089e31a5ccece932229b8f79faa6863d6857c3d9a9710f9f8ad16eeb8342278f311cbc226498028234d21466892983378fe64acbb44f694cd78e43c74aa75505cb1c91b189f8f89f233a05f5cd4e173a373178557843dd705268f74a9e5429945503195aefd6706b584d8408c9652b3fe68500747f7ee8375fa559c3ad195d3795df1a8364cd13acc3256ee4634c73eeb6954d0fcf09ab84df0b8900e0c6fea2ccb600ae7a4b128cae19df160e7c207b89132d1d5bdc9ffc79f0549b82df521817651d5fead5128205b92ccdccc69407ab556217af277af911dbd456dfc43dd061b6c91485dcc208cf0b3d0bf851de413f5de5ec015e296914afab6411109355e027ce04990d9aae251b9deb11b7db45b9f15b7b55d8fdbedd9e6cf891205694f02be8b9ea8ecd41308a0e1b93ae3435bfa88b440b1f701b4d0fc49c82193f27f8023b630ea97edbf3bf421a0a1a2b4ac7bb30bcd1cdd172c0df37408fd6827bb03e8742fc1c7a2befd1299928c5f79e846a8dc7ca648d960a759e6711b69776896a9656d59af6d44bc5348229fa84ae78af8421a22c4b4c17a3d24a4a0104000000000000d77cc4eef51c2b417c8c7458ddd7dd9d1a863bf0a9e1a30a19020490038017a5c7e474c83302a2c2b5c976dacf3dda7191c757f208000000000000005f7ed983f65723fbb36b9b51abb0dbcd33570000000000000000251aa4f139d0485ffcf89f01639fd1579a3802f720a0215c720a97071f5065a23642a58275dbca444b00e2e5835185d5d5b2796eb0fe32cf3b0633f58ecc7648c3c6efe82f93a3008052416512eea30ea9472e0b456a652883c0907323cf03be193ad0438cdef7a98a1671a1918df310dc4bfd61c3db4819ab1c57b348a8ff1ed36364a20fe846f11d045de81f069bac8425b31c5d08b433562ffb318c1285011f9b78b2401989384311101e452f54661ecdb2514a6ae50dbdd422de0f0f8c670000000000390be79688f80c4c314cb1b14afcaa5d23f9032e0ec51f45f447d6a7c798fcf7e60e2180e289410801e4f03a0e140f388f25b92da1025d8409e171a2336ed71cca86eb4658fe06df286e0e20276b0618eeffd05774f15686cd9d3182ca2fec863875f305fed6baf48a594db12582a38cfdffffffffffffff0cf8d920517835fe7d09cfcb624f6931f1cc6f6b71f58de9ddc38e0c43992f6bc57a718d0cfd197b5324b4e05ef1caa96db3ae1f2f2e5791faba2ebbe1a6faf21f2748fb1fb6743c3ca8af4e6b02518c9b7fdc1b5721eb1c3ed98db25536f74ac7861afc94544e52dcb5c60460a05802e3b437ac977bfa26b887a2443e8d559c58187f004eb82b07937df6e96f77ed551926bec4e0188fae10a35d1c5f1768ac6be829be1827f9df303160df18597efba46f1babc3d74adc31ca71bdab9079e4288881b434484eadde9da6b81802842abd462d546c59d87acc014f81d3414759bda12d2a2c6bc1bfa807bd3101eb227184a61107b6d0618e2a3b842671e084ac3f0ff94dc48b51601247318ab4d1c5106458000000000008000000000000cfee0107e6c2fe8639d926829fdbbd86bf591a8c3c235d8939af9d923f648165881a6c29997234406200b3b1c321cc158dbe17123eace3000000000000000000000000000000000000796de6ae4ae40bdf9a6e8c5dc29562262af9cd54e8e3ecc7e3c8cba0ecc791683496c4e5c1a5729714d9f9031f49b400cd2667b4ea6df54809615a4f973f93e6ccec72f16ff998e29ed99df733680a9d5cea57f99cc139b6ea9014f3000000000000000000000000000000000000feeab45a4046a622b0dceb413e4e39b7317e92cbed46b41ab5115bfb542c933783d750852dfdc6656aaf15e10615a88821f2f1bc53969b52d6852755e7681ad5beda80b38ccd34116b99f50b4fdd967b3f20f260455412b675639a26c76840cce40e323bde9d673fceda0ad6981565c8a183d928903b4f4472dde41b6dcd75314c31e704dfcb222c8359fe88944f852242270c932abfaeece0843d708f5cd25b2a63ae1e79723c1c3c013836b47da0a35d0f34c0705caae54024cf8ade6396ff44482284f415e5769d9ae8688a8d5516690aae9ce1c785262734723519b042a161e6efabf263a46ba92254a51ff6502470f3038cf6d8d991931cfd82ea97e1b596133e7754908d912d1054d174f5a731c019f152a5ca2e48599b6d563bfcd8c0950f4292769217a6e309452b14e64ae64ad58ced33582a1b3d2e0c300059fb1ee78cdddb827293de267d64bf47c3c8c419683c948e46de8cea0b232da00ff39ebef3b73b3d6fbeecd3f9ff06b7e08ed8ce2b9b9cf2e08975f5959fa7028f68c525ab173c0c553d21bd1e9176abdf799e7a08d2f3c14e1ca99d525bc3af0ca0f48f145c65b10dfc67803aab67f6b631d3d7e237fec4bc6eacc364b7cdd925973705d40c5a614e354d9b92357845d15ea41ad3e3a98396131f835e17f0cbfbdc59453991e689f9ce19bd4a3b4121e5a8b5dbb519b5556cb70603ceac0b7ca02cb05a01afa3164ca428add947673cdba49a0e6e8aeeddf52c0f0ef224c69a3c96c2fddf56d74c4ae7"], &(0x7f0000000340)='syzkaller\x00'}, 0x48)
+bpf$BPF_PROG_TEST_RUN(0xa, &(0x7f00000000c0)={r4, 0x20e, 0xe40, 0xfd000004, &(0x7f00000004c0)="b9180bb76003070c009e40f086dd1fff290000003b0020010010ac14142ee0080001c699da153f0ae0e6e380f60115f683317585d7472ce0ab4439f0f570ff155bc5f73ba3f8bb99a6e8ded1ce485cf058105cd981b42493481cd659416a2e10c9119664f36eb00b333c20c9ec0c222d644bdcb178c1cc53d6960fbb842d6a33dfcde3a1e1848135214baf139753866cadcbe3ce52505e992818cc452bee339d9ab076f484020eaa348a21d7911e4c44905256ec2cc54cca47a198b00c10aff62a4bed43a2ebcad92743fb22c593f28fd4bb7c703cde9cae0569d4c8d9a823f2c12863f7a6c0cf88ed22aae4f6f084508833b61429a25773eedf63dd9f33d430f2a0a30a7761db16fe0f743b95ded898c28aac1256ce2751b3d738899b8b19d9052b7f13ff94", 0x0, 0x31, 0x6000000000000000, 0xfffffffffffffe7e, 0x1d4}, 0x28)
+socket$nl_xfrm(0x10, 0x3, 0x6)
+r5 = socket$inet6(0xa, 0x1, 0x0)
+setsockopt$inet6_IPV6_FLOWLABEL_MGR(r5, 0x29, 0x20, &(0x7f00000000c0)={@mcast1, 0x800, 0x0, 0x103, 0x1}, 0x20)
+setsockopt$inet6_int(r5, 0x29, 0x1000000000021, &(0x7f0000000180)=0x1, 0x4)
+bind$inet6(r5, &(0x7f0000000040)={0xa, 0x0, 0x0, @ipv4={'\x00', '\xff\xff', @broadcast}}, 0x1c)
+ioctl$BTRFS_IOC_RESIZE(0xffffffffffffffff, 0x50009403, &(0x7f00000006c0)=ANY=[@ANYRES32=r4, @ANYBLOB='\x00\x00\x00\x00', @ANYRESDEC=0x0, @ANYBLOB="452b319c0a85fed674e6c8358680286dd0553c"])
+connect$inet6(r5, &(0x7f0000000000)={0xa, 0x0, 0x180000, @empty}, 0x1c)
+socket$inet6_tcp(0xa, 0x1, 0x0)
+ioctl$AUTOFS_IOC_PROTOSUBVER(r0, 0x80049367, &(0x7f0000000500))
+keyctl$instantiate(0xc, 0x0, &(0x7f0000000100)=ANY=[@ANYBLOB='new default user:syz 000040'], 0x2a, 0x0)
+r6 = add_key(&(0x7f0000000140)='encrypted\x00', &(0x7f0000000180), &(0x7f0000000100), 0xca, 0xfffffffffffffffe)
+add_key$user(&(0x7f00000003c0), &(0x7f0000000440), &(0x7f00000000c0), 0x5ba8, 0xfffffffffffffffd)
+keyctl$read(0xb, r6, &(0x7f0000000240)=""/112, 0x349b7f55)
+
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2b8d, Ip:0x8170f374}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x313d, Ip:0x8170cde2}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x350d, Ip:0x8170cdf5}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2b8d, Ip:0x8170f374}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x313d, Ip:0x8170cde2}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x350d, Ip:0x8170cdf5}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x313d, Ip:0x8170cde2}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x350d, Ip:0x8170cdf5}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2b8d, Ip:0x8170f374}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x313d, Ip:0x8170cde2}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x350d, Ip:0x8170cdf5}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2b8d, Ip:0x8170f374}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x313d, Ip:0x8170cde2}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x350d, Ip:0x8170cdf5}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x313d, Ip:0x8170cde2}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x350d, Ip:0x8170cdf5}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2b8d, Ip:0x8170f374}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x313d, Ip:0x8170cde2}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x350d, Ip:0x8170cdf5}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x313d, Ip:0x8170cde2}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x350d, Ip:0x8170cdf5}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2b8d, Ip:0x8170f374}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x313d, Ip:0x8170cde2}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x350d, Ip:0x8170cdf5}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0xf15, Ip:0x862e01c0}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x313d, Ip:0x8170cde2}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x350d, Ip:0x8170cdf5}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x4f50, Ip:0x862e01d0}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x1b36, Ip:0x868bd965}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2840, Ip:0x8691b85e}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x5377, Ip:0x8691b84c}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55dc, Ip:0x868bd977}
+22:29:00 executing program 0:
+accept() (enabled_site: 11982, site_type: 1)
+r0 = bpf$PROG_LOAD(0x5, &(0x7f0000000440)={0x3, 0x6, &(0x7f0000000000)=ANY=[@ANYBLOB="050000000000000071115000000000008510000002000000850000000000000095000000000000009500a50500000000"], &(0x7f0000000080)='GPL\x00', 0x5, 0x29e, &(0x7f000000cf3d)=""/195, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x6}, 0x70)
+bpf$PROG_LOAD(0x5, &(0x7f00000000c0)={0x0, 0xc, &(0x7f0000000600)=ANY=[@ANYBLOB="1800000000000000000000000000000018110000", @ANYBLOB="f331b3986fa50e15ed246f6787382134a7c05d39b4c72de96b020d07b071dca44c26b6d40dd2e45aa840e19dba77092a8964", @ANYBLOB="00060000000000007b8af8ff00000000bfa200000000000007020000f8ffffffb703000400000000000085000000e8010900009500000000040000000000000000"], 0x0, 0x0, 0x0, 0x0, 0x0, 0x25, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+r1 = bpf$MAP_CREATE(0x0, &(0x7f00000000c0)=@base={0x1b, 0x0, 0x0, 0x8000}, 0x48)
+bpf$PROG_LOAD(0x5, &(0x7f00000000c0)={0x0, 0xc, &(0x7f0000000440)=ANY=[@ANYBLOB="763c000000000000000000000000000018110000", @ANYRES32=r1, @ANYBLOB="0000000000000000b7080000000000007b8af8ff00000000bfa200000000000007020000f8ffffffb703000008000000b7040000020000088500000082"], 0x0, 0x7, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+r2 = bpf$PROG_LOAD(0x5, &(0x7f00000000c0)={0x11, 0xc, &(0x7f0000000440)=ANY=[], &(0x7f0000000240)='GPL\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f0000001300)={&(0x7f0000000c00)='net_dev_start_xmit\x00', r2}, 0x10)
+r3 = bpf$PROG_LOAD(0x5, 0x0, 0x0)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f0000001300)={0x0, r3}, 0x10)
+r4 = bpf$PROG_LOAD(0x5, &(0x7f0000000200)={0xc, 0xe, &(0x7f00000017c0)=ANY=[@ANYBLOB="b702000009000000bfa30000000000000703000000feffff7a0af0fff8ffffff79a4f0ff00000000b7060000ffffffff2e6405000000000065060400010000000404000001007d60b7030000000000006a0a00fe00000000850000000d000000b70000000000000095000000000000002c3f2cc2b7956244cef7baf48e6d2885a09a87507ebfc75b5b0f4e4309ebcdac5f7a860c008cbdd3b4c3b7f28754860c9c781f6410457253e89ad528d985636a86ec0f68f59cd1159a2c2e85d726859a919cc9548a349980d1ccdce27f94bc074c27f81078545c146a0857153b7b8f00034debae58a4ab415b0d7ff0575cc272cd3d7e8d974927676468ff2d86e0ffac94792ed9cf6b40b3cf252a47c05ae8a70d57cc3e067d1867b54d24e20000000000000020009ebf84d3b042d6e432cd080e3b57239f0127473e6ba922aff649609d40b47ec331ccba3cf96f9483ff19a6471bf5abc742d9cbcfb964b11b31034694a6aad86cf08a6c7b2235dc99de9aa3e6b77c7a2877261ed32da90864987f30926c9013eec3b86836ae50447aa5a79f40c235000000453302712c3d8fc4e2b61adb0695e800000000d4f4e91f0000002c33df424d1bafe5725c8a404724f8a4f1cda7997b65954f74097579b91da309b887af2485c2d9ab09b506000000000000000bf7b2ff4602aec1eea200000064881c5630521a08e051374cf05c921a06fb7818000000009dc8d95e0e5b365d10e1004dae58b3b5b89709b0ff47b200000000004000cbef88811dc8c1b27ac7d9a6bb70f60eb9c01dd2fc79b85e4d961498f3a80131d21d856177a2189f45d011ef1da5c6d57bb8fd387ccea9c3899a914e47e82f040000009d81003f927355408f87264797d3fa970949793b94329d580500d1f91c0d22587e05a61e3d8576ca168e88d7a9af95b04a37c27bfffab9abbb31fa8c0080258cfa6d3f166e695f3c56490aeef464d9965d70a50f1282619344f223548e75fa39643adac1322c87ca253ff2fb1882760d6feab16bacdf83c11816dbe959ebc5ec479c8319f73e2249eab0486b110702a481d3b51976a52303056e800b4ae5acc2df636a65eb1d672bf2000000cda8462cc9b16624998be65683321e970000000009b8e20762c1bf4a3eb6769f2b23e842bacd9c685edea0ffa3e975424f8ede49e61a4de808a38ba3512d64dc71867df4eee3f1ff791cf7c9862f98b45852e4b2f78721b978a2df2f2a29a387c6f0576b36038f819286eca99a6a434811cf2a117d775fe986a49fb82cf5f15972d5ab18f1045384501adabb20f7b0e15ff47f1744e2341b59034959a1289ba6e243668e6735305707e3de7652bfc5b60c76deff43a1d6fd6a4180ab723735abbeffe7f2ec3a0bb86f9eddfc0f3d1d503d7a54b49e1ae6c5aa620d27e91aa0aa0ed6fcacfc91fbb4c256409e54daefbb107c381fa729ff5f3907d93430da178d685d7730f5e129438a5214f722096d29863301b0b811f69145d3fbd78a9059e454474f92e65828b018174a9f4738b8c71fbdeac26ab95e02f9a847182766964976b1fccdb9f35721e43e33883cf16ed1343fb7429eb395123b0a4262b7023c22039b9002589a378ed4c6267965af78b861bd025312538cec97966b8973d4e299d9802264d06e40ae118e1d242d1128dcedeb44030df12ef68f78215d65f96eb55db8cbcb060008000d988374f85451a694ffe38a1d03916ff1eec72b31c98d42e1a1bda1290de1a499a5a385b31112a48ba3e6d6849914c1788a7aca37177cc341fff44fec5c5e0abae01c439a1b0311e074e81ae9993b5b3459553e4ece78d4c1501c70f5d81e0725d5b273755c0000000000000000aa4234ff82182952a76233d18e7d49638aeb04e7a9e9e7eafb7c255372795d2d192a0a33cab0f5bf2e93e0544fcdf2df2bc6ce96e5a11993d54f97a23754ac828674dbb93c0ad345715be4a13678b01edf76d8a923655800a2c88cce004505ab45d8f5f88aa887bbce5c18970428516f6099bdbb2cd7a2356397f1a0a23e662e2a6c4834400cbaa41c3c574e6e6aefb7a68da5ec1ae49f968bbe0e0bf9878516f553639f5b4828e92019b61f5874be1c7cdd9482df50bc24a8a1fa10d291390eb84e26a2e8dbeaa45604b05a116c1210a7540bf81005044273f5a8ffc538db289350eb248e483bd8920efcf30a798c2b636243e0a37262ca47dfeefa753ba528f7ba77e825051ce69b4475d7d714ba0c636e6ae9f710411d30ef424aeaabe057c7df6ff8f767bcd9012e1047c686f5ccb76ab3a5df53cbc22ba7ea8f6a8e220bb4d83de1e4dc19d6c1be841503850803bc2c2d5e0e34270a7f1cca0c6c53a8e5f891f7a793a70da62d6d88fbb90d220acc687931b42d6be83ab870da3c0a567f5e65ec0457f4ad2a4ec0b671b36388afd5520a8483a4b11f7d02a41b315f0f9e59f47668d68a74838d6976e12fd45200014041dffacbf60892ec8bd7560686f137a806d3dfaba900b47cac62f828342fff009adb5b2251461a1b9d6ba625b8fe04e69a1a4be2696f0000000086e172932e03000000000000005942e1b9d6dc28ab8e19e1111dd893e801015642faf21eef40d6e7de3ef62c4bc5ff17e7aeb2841098f845d1cc9ec4eee79c298fb0ba939b13707044e2e9cc0d350438c1c8c6bb9a38c6ac5ca0d9cf1f3d6915f25cb26edfc28b3079b97df32601240e454db103fb0c4a14c16837394d2b3673a3f160d3a7b83ecd0509ce9eba0c7bf7843799b1b56a234f9eaab8a3f14f1472bb6aaeb8ac9ee4054605558ab31f339f6a4caf2ee2fd01f34dca3300000000000000000000000000000000f59f8e6e00000000c44130098d833a24000000000095e6f945ba9a941cef5e70b8c152321e24b5b29bcf374dcf5a29a35d76e6e2bf8df95462690a4fc9ec8129e92b6ebb4b40a992a75d3c5954d0bfc87db24d856359079b29b3c374d081c300b2cfaa596d24e800ef8e2201f2fb7a9946f89f9f31f7cbd603fd7f8898c70b5c65f2e28f22e1a79a6af3a54861b07f124642e98389557affbdede09b5566a4a1ee73b20846810030a754acddcdafe3ceeeebc0b5f2fedfe7d198e3067f3dbac9441a9ab8409cbbb7e15b9ae3944097de34de2001c8533a3766e6e4c4c4702ccb932a27a3962814cd6aa8fc684beeaa3932efae3a9052be8eec1e95f6ad8d41dd34829503ba4b66e27154cb6e34aa13450522df1723130b6fb9bec59ae347c93f00e40e293c98d849a33f773c743728992f40faccd5c23130a1c6bfd6fc661bca1598137ddd1090ded672f5a48a40cab3f640c8241a364cbde0f188eec7da7bccafbd5bf28a46f0eecc6b550471b0b0770c6a5a411c0e0b19e15a461e7c6833ba936e214b013f2819ec6572a43b5cd32b11d7e4f8dcf8f7820a17b7b2ee6178a03351dd25091e46bfd82a3979b9cad109fd6217cd52aa81bdabd50826a674bd16b8f7e6aed12a305366599f5f029a7b24558c02750500002f1c19d16a6f391906000000cc0bbbfb8c698ecc137d96711100e0108d3bd2afed0b279ebf0527552a9331e646c424b14ffbb815622bfd2f635855bed1b164d0a56bd104be069854111c5b26ec3c652b5f0a6b9676dae987ec23456ba05a4dfb15321ef6b76e7e547a688c67ab531cfc784c9f940d9fb0464a6cce635e14b80dc5c1c64e75e6bd5355d84f8df272f18f58c570e7afd83ee77f157c146aa747b728969aeb4aba1d8f9de14275bf4a53e95235ae13768ab3fb8ab6ea50e884c2ea98e6400bf0c5ae2887cd1da0e57ccfdf5eca2b455247efcc13102846c0a85f20c80007c0ce6efce627b95b8ad3003385de97101678fb2163ecea6e70a77a6fbc089e31a5ccece932229b8f79faa6863d6857c3d9a9710f9f8ad16eeb8342278f311cbc226498028234d21466892983378fe64acbb44f694cd78e43c74aa75505cb1c91b189f8f89f233a05f5cd4e173a373178557843dd705268f74a9e5429945503195aefd6706b584d8408c9652b3fe68500747f7ee8375fa559c3ad195d3795df1a8364cd13acc3256ee4634c73eeb6954d0fcf09ab84df0b8900e0c6fea2ccb600ae7a4b128cae19df160e7c207b89132d1d5bdc9ffc79f0549b82df521817651d5fead5128205b92ccdccc69407ab556217af277af911dbd456dfc43dd061b6c91485dcc208cf0b3d0bf851de413f5de5ec015e296914afab6411109355e027ce04990d9aae251b9deb11b7db45b9f15b7b55d8fdbedd9e6cf891205694f02be8b9ea8ecd41308a0e1b93ae3435bfa88b440b1f701b4d0fc49c82193f27f8023b630ea97edbf3bf421a0a1a2b4ac7bb30bcd1cdd172c0df37408fd6827bb03e8742fc1c7a2befd1299928c5f79e846a8dc7ca648d960a759e6711b69776896a9656d59af6d44bc5348229fa84ae78af8421a22c4b4c17a3d24a4a0104000000000000d77cc4eef51c2b417c8c7458ddd7dd9d1a863bf0a9e1a30a19020490038017a5c7e474c83302a2c2b5c976dacf3dda7191c757f208000000000000005f7ed983f65723fbb36b9b51abb0dbcd33570000000000000000251aa4f139d0485ffcf89f01639fd1579a3802f720a0215c720a97071f5065a23642a58275dbca444b00e2e5835185d5d5b2796eb0fe32cf3b0633f58ecc7648c3c6efe82f93a3008052416512eea30ea9472e0b456a652883c0907323cf03be193ad0438cdef7a98a1671a1918df310dc4bfd61c3db4819ab1c57b348a8ff1ed36364a20fe846f11d045de81f069bac8425b31c5d08b433562ffb318c1285011f9b78b2401989384311101e452f54661ecdb2514a6ae50dbdd422de0f0f8c670000000000390be79688f80c4c314cb1b14afcaa5d23f9032e0ec51f45f447d6a7c798fcf7e60e2180e289410801e4f03a0e140f388f25b92da1025d8409e171a2336ed71cca86eb4658fe06df286e0e20276b0618eeffd05774f15686cd9d3182ca2fec863875f305fed6baf48a594db12582a38cfdffffffffffffff0cf8d920517835fe7d09cfcb624f6931f1cc6f6b71f58de9ddc38e0c43992f6bc57a718d0cfd197b5324b4e05ef1caa96db3ae1f2f2e5791faba2ebbe1a6faf21f2748fb1fb6743c3ca8af4e6b02518c9b7fdc1b5721eb1c3ed98db25536f74ac7861afc94544e52dcb5c60460a05802e3b437ac977bfa26b887a2443e8d559c58187f004eb82b07937df6e96f77ed551926bec4e0188fae10a35d1c5f1768ac6be829be1827f9df303160df18597efba46f1babc3d74adc31ca71bdab9079e4288881b434484eadde9da6b81802842abd462d546c59d87acc014f81d3414759bda12d2a2c6bc1bfa807bd3101eb227184a61107b6d0618e2a3b842671e084ac3f0ff94dc48b51601247318ab4d1c5106458000000000008000000000000cfee0107e6c2fe8639d926829fdbbd86bf591a8c3c235d8939af9d923f648165881a6c29997234406200b3b1c321cc158dbe17123eace3000000000000000000000000000000000000796de6ae4ae40bdf9a6e8c5dc29562262af9cd54e8e3ecc7e3c8cba0ecc791683496c4e5c1a5729714d9f9031f49b400cd2667b4ea6df54809615a4f973f93e6ccec72f16ff998e29ed99df733680a9d5cea57f99cc139b6ea9014f3000000000000000000000000000000000000feeab45a4046a622b0dceb413e4e39b7317e92cbed46b41ab5115bfb542c933783d750852dfdc6656aaf15e10615a88821f2f1bc53969b52d6852755e7681ad5beda80b38ccd34116b99f50b4fdd967b3f20f260455412b675639a26c76840cce40e323bde9d673fceda0ad6981565c8a183d928903b4f4472dde41b6dcd75314c31e704dfcb222c8359fe88944f852242270c932abfaeece0843d708f5cd25b2a63ae1e79723c1c3c013836b47da0a35d0f34c0705caae54024cf8ade6396ff44482284f415e5769d9ae8688a8d5516690aae9ce1c785262734723519b042a161e6efabf263a46ba92254a51ff6502470f3038cf6d8d991931cfd82ea97e1b596133e7754908d912d1054d174f5a731c019f152a5ca2e48599b6d563bfcd8c0950f4292769217a6e309452b14e64ae64ad58ced33582a1b3d2e0c300059fb1ee78cdddb827293de267d64bf47c3c8c419683c948e46de8cea0b232da00ff39ebef3b73b3d6fbeecd3f9ff06b7e08ed8ce2b9b9cf2e08975f5959fa7028f68c525ab173c0c553d21bd1e9176abdf799e7a08d2f3c14e1ca99d525bc3af0ca0f48f145c65b10dfc67803aab67f6b631d3d7e237fec4bc6eacc364b7cdd925973705d40c5a614e354d9b92357845d15ea41ad3e3a98396131f835e17f0cbfbdc59453991e689f9ce19bd4a3b4121e5a8b5dbb519b5556cb70603ceac0b7ca02cb05a01afa3164ca428add947673cdba49a0e6e8aeeddf52c0f0ef224c69a3c96c2fddf56d74c4ae7"], &(0x7f0000000340)='syzkaller\x00'}, 0x48)
+bpf$BPF_PROG_TEST_RUN(0xa, &(0x7f00000000c0)={r4, 0x20e, 0xe40, 0xfd000004, &(0x7f00000004c0)="b9180bb76003070c009e40f086dd1fff290000003b0020010010ac14142ee0080001c699da153f0ae0e6e380f60115f683317585d7472ce0ab4439f0f570ff155bc5f73ba3f8bb99a6e8ded1ce485cf058105cd981b42493481cd659416a2e10c9119664f36eb00b333c20c9ec0c222d644bdcb178c1cc53d6960fbb842d6a33dfcde3a1e1848135214baf139753866cadcbe3ce52505e992818cc452bee339d9ab076f484020eaa348a21d7911e4c44905256ec2cc54cca47a198b00c10aff62a4bed43a2ebcad92743fb22c593f28fd4bb7c703cde9cae0569d4c8d9a823f2c12863f7a6c0cf88ed22aae4f6f084508833b61429a25773eedf63dd9f33d430f2a0a30a7761db16fe0f743b95ded898c28aac1256ce2751b3d738899b8b19d9052b7f13ff94", 0x0, 0x31, 0x6000000000000000, 0xfffffffffffffe7e, 0x1d4}, 0x28)
+socket$nl_xfrm(0x10, 0x3, 0x6)
+r5 = socket$inet6(0xa, 0x1, 0x0)
+setsockopt$inet6_IPV6_FLOWLABEL_MGR(r5, 0x29, 0x20, &(0x7f00000000c0)={@mcast1, 0x800, 0x0, 0x103, 0x1}, 0x20)
+setsockopt$inet6_int(r5, 0x29, 0x1000000000021, &(0x7f0000000180)=0x1, 0x4)
+bind$inet6(r5, &(0x7f0000000040)={0xa, 0x0, 0x0, @ipv4={'\x00', '\xff\xff', @broadcast}}, 0x1c)
+ioctl$BTRFS_IOC_RESIZE(0xffffffffffffffff, 0x50009403, &(0x7f00000006c0)=ANY=[@ANYRES32=r4, @ANYBLOB='\x00\x00\x00\x00', @ANYRESDEC=0x0, @ANYBLOB="452b319c0a85fed674e6c8358680286dd0553c"])
+connect$inet6(r5, &(0x7f0000000000)={0xa, 0x0, 0x180000, @empty}, 0x1c)
+socket$inet6_tcp(0xa, 0x1, 0x0)
+ioctl$AUTOFS_IOC_PROTOSUBVER(r0, 0x80049367, &(0x7f0000000500))
+keyctl$instantiate(0xc, 0x0, &(0x7f0000000100)=ANY=[@ANYBLOB='new default user:syz 000040'], 0x2a, 0x0)
+r6 = add_key(&(0x7f0000000140)='encrypted\x00', &(0x7f0000000180), &(0x7f0000000100), 0xca, 0xfffffffffffffffe)
+add_key$user(&(0x7f00000003c0), &(0x7f0000000440), &(0x7f00000000c0), 0x5ba8, 0xfffffffffffffffd)
+keyctl$read(0xb, r6, &(0x7f0000000240)=""/112, 0x349b7f55)
+
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x1b36, Ip:0x868bd965}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55dc, Ip:0x868bd977}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x30be, Ip:0x85ff2f15}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3858, Ip:0x85ff2f25}
+2024/05/22 22:29:00 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0xfc7, Ip:0x8684d496}
+2024/05/22 22:29:00 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x4823, Ip:0x8684d46e}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x30be, Ip:0x85ff2f15}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3858, Ip:0x85ff2f25}
+2024/05/22 22:29:00 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x493b, Ip:0x869044dc}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2ea, Ip:0x830c9564}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2b09, Ip:0x8191ced7}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x363c, Ip:0x8191cec7}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x4f64, Ip:0x830c96f6}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x57c7, Ip:0x830c9706}
+2024/05/22 22:29:00 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x19bd, Ip:0x830de99f}
+2024/05/22 22:29:00 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x2ece, Ip:0x830de9c5}
+2024/05/22 22:29:00 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x577f, Ip:0x830de96f}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2ea, Ip:0x830c9564}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2b09, Ip:0x8191ced7}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x363c, Ip:0x8191cec7}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x4f64, Ip:0x830c96f6}
+2024/05/22 22:29:00 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x57c7, Ip:0x830c9706}
+2024/05/22 22:29:00 KDO: #0: memintrinsic id=11982
+[  323.224202][ T8544] BUG: KASAN: unknown-crash in __ekey_init+0x285/0x2a0
+[  323.225516][ T8544] Write of size 8 at addr ffff88814b8e3681 by task syz-executor.0/8544
+[  323.226428][ T8544] 
+[  323.226957][ T8544] CPU: 0 PID: 8544 Comm: syz-executor.0 Not tainted 6.4.1-00011-gc173c3c31378 #20
+[  323.228009][ T8544] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+[  323.228972][ T8544] Call Trace:
+[  323.229338][ T8544]  <TASK>
+[  323.229669][ T8544]  dump_stack_lvl+0x1ce/0x2c0
+[  323.230195][ T8544]  ? nf_tcp_handle_invalid+0x3d0/0x3d0
+[  323.230808][ T8544]  ? preempt_count_add+0xa0/0xf0
+[  323.231386][ T8544]  ? panic+0x620/0x620
+[  323.231875][ T8544]  print_report+0x163/0x540
+[  323.232410][ T8544]  ? __virt_addr_valid+0x1cc/0x240
+[  323.232985][ T8544]  ? __phys_addr+0x99/0x110
+[  323.233502][ T8544]  kdo_kasan_report+0x7f/0x90
+[  323.234035][ T8544]  ? __ekey_init+0x285/0x2a0
+[  323.234564][ T8544]  ? __ekey_init+0x285/0x2a0
+[  323.235081][ T8544]  propagate_taint+0x1e1/0x210
+[  323.235612][ T8544]  ? __ekey_init+0x285/0x2a0
+[  323.236131][ T8544]  ? __ekey_init+0x285/0x2a0
+[  323.236646][ T8544]  __kdo_asan_memcpy+0x69/0xa0
+[  323.237179][ T8544]  __ekey_init+0x285/0x2a0
+[  323.237698][ T8544]  encrypted_instantiate+0x47b/0x14b0
+[  323.238312][ T8544]  ? trusted_rcu_free+0x20/0x20
+[  323.238887][ T8544]  ? read_lock_is_recursive+0x20/0x20
+[  323.239519][ T8544]  ? __might_resched+0x1c7/0x460
+[  323.240079][ T8544]  ? __mutex_trylock_common+0x145/0x200
+[  323.240698][ T8544]  ? mark_lock+0xb2/0x280
+[  323.241183][ T8544]  ? trace_raw_output_contention_end+0x90/0x90
+[  323.241858][ T8544]  ? __lock_acquire+0xd9a/0x10d0
+[  323.242413][ T8544]  ? rcu_is_watching+0x39/0x70
+[  323.242961][ T8544]  ? trace_contention_end+0x3c/0xd0
+[  323.243528][ T8544]  ? preempt_count_sub+0x13/0xc0
+[  323.244086][ T8544]  ? __mutex_lock_common+0x333/0x1830
+[  323.244683][ T8544]  ? __key_instantiate_and_link+0x94/0x450
+[  323.245318][ T8544]  ? lock_release+0x4c6/0x630
+[  323.245845][ T8544]  ? mutex_lock_io_nested+0x60/0x60
+[  323.246437][ T8544]  ? __lock_acquire+0x10d0/0x10d0
+[  323.247004][ T8544]  ? do_raw_spin_lock+0x13b/0x200
+[  323.247571][ T8544]  __key_instantiate_and_link+0xf8/0x450
+[  323.248204][ T8544]  ? preempt_count_sub+0x13/0xc0
+[  323.248792][ T8544]  ? key_instantiate_and_link+0x450/0x450
+[  323.249471][ T8544]  __key_create_or_update+0x921/0xa60
+[  323.250074][ T8544]  ? key_create_or_update+0x60/0x60
+[  323.250653][ T8544]  ? lookup_user_key+0xe28/0x1250
+[  323.251252][ T8544]  key_create_or_update+0x42/0x60
+[  323.251839][ T8544]  __se_sys_add_key+0x31b/0x3e0
+[  323.252414][ T8544]  ? __x64_sys_add_key+0x70/0x70
+[  323.252975][ T8544]  ? syscall_enter_from_user_mode+0x32/0x230
+[  323.253638][ T8544]  ? lockdep_hardirqs_on+0xdd/0x180
+[  323.254214][ T8544]  ? syscall_enter_from_user_mode+0x32/0x230
+[  323.254880][ T8544]  do_syscall_64+0x41/0x90
+[  323.255404][ T8544]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  323.256095][ T8544] RIP: 0033:0x7f8f4b88fddd
+[  323.256611][ T8544] Code: c3 e8 97 2b 00 00 0f 1f 80 00 00 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 b0 ff ff ff f7 d8 64 89 01 48
+[  323.258688][ T8544] RSP: 002b:00007f8e8a7fe028 EFLAGS: 00000246 ORIG_RAX: 00000000000000f8
+[  323.259631][ T8544] RAX: ffffffffffffffda RBX: 00007f8f4b9cbf80 RCX: 00007f8f4b88fddd
+[  323.260487][ T8544] RDX: 0000000020000100 RSI: 0000000020000180 RDI: 0000000020000140
+[  323.261353][ T8544] RBP: 00007f8f4b901e18 R08: fffffffffffffffe R09: 0000000000000000
+[  323.262207][ T8544] R10: 00000000000000ca R11: 0000000000000246 R12: 0000000000000000
+[  323.263064][ T8544] R13: 000000000000000b R14: 00007f8f4b9cbf80 R15: 00007f8e8a7de000
+[  323.263942][ T8544]  </TASK>
+[  323.420832][ T8544] 
+[  323.421165][ T8544] Allocated by task 8544:
+[  323.421646][ T8544]  kasan_set_track+0x4f/0x70
+[  323.422916][ T8544]  __kasan_kmalloc+0x7d/0x90
+[  323.427028][ T8544]  __kmalloc+0xb9/0x230
+[  323.427519][ T8544]  encrypted_key_alloc+0x32d/0x430
+[  323.433130][ T8544]  encrypted_instantiate+0x302/0x14b0
+[  323.437735][ T8544]  __key_instantiate_and_link+0xf8/0x450
+[  323.438396][ T8544]  __key_create_or_update+0x921/0xa60
+[  323.439253][ T8544]  key_create_or_update+0x42/0x60
+[  323.439879][ T8544]  __se_sys_add_key+0x31b/0x3e0
+[  323.440655][ T8544]  do_syscall_64+0x41/0x90
+[  323.441208][ T8544]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  323.447324][ T8544] 
+[  323.447635][ T8544] Last potentially related work creation:
+[  323.448277][ T8544]  kasan_save_stack+0x3f/0x60
+[  323.450215][ T8544]  kasan_record_aux_stack_noalloc+0x87/0x90
+[  323.451889][ T8544]  kvfree_call_rcu+0x105/0x7d0
+[  323.452641][ T8544]  ops_init+0x247/0x460
+[  323.458659][ T8544]  register_pernet_operations+0x25c/0x540
+[  323.459396][ T8544]  register_pernet_subsys+0x28/0x40
+[  323.460356][ T8544]  tcf_register_action+0x55/0x510
+[  323.460927][ T8544]  simp_init_module+0x1d/0x50
+[  323.461826][ T8544]  do_one_initcall+0x211/0x700
+[  323.462371][ T8544]  do_initcall_level+0x100/0x1a0
+[  323.468271][ T8544]  do_initcalls+0x3f/0x80
+[  323.468792][ T8544]  kernel_init_freeable+0x39a/0x490
+[  323.469748][ T8544]  kernel_init+0x1d/0x2a0
+[  323.470236][ T8544]  ret_from_fork+0x1f/0x30
+[  323.471116][ T8544] 
+[  323.471406][ T8544] The buggy address belongs to the object at ffff88814b8e3600
+[  323.471406][ T8544]  which belongs to the cache kmalloc-256 of size 256
+[  323.478851][ T8544] The buggy address is located 129 bytes inside of
+[  323.478851][ T8544]  256-byte region [ffff88814b8e3600, ffff88814b8e3700)
+[  323.480662][ T8544] 
+[  323.480944][ T8544] The buggy address belongs to the physical page:
+[  323.482012][ T8544] page:ffffea00052e38c0 refcount:1 mapcount:0 mapping:0000000000000000 index:0x0 pfn:0x14b8e3
+[  323.486130][ T8544] flags: 0x57ff00000000200(slab|node=1|zone=2|lastcpupid=0x7ff)
+[  323.486961][ T8544] page_type: 0xffffffff()
+[  323.487832][ T8544] raw: 057ff00000000200 ffff88800ec41b40 ffffea0001f2ea40 dead000000000008
+[  323.489114][ T8544] raw: 0000000000000000 0000000080080008 00000001ffffffff 0000000000000000
+[  323.490670][ T8544] page dumped because: kasan: bad access detected
+[  323.491387][ T8544] page_owner tracks the page as allocated
+[  323.492630][ T8544] page last allocated via order 0, migratetype Unmovable, gfp_mask 0x12cc0(GFP_KERNEL|__GFP_NOWARN|__GFP_NORETRY), pid 1, tgid 1 (swapper/0), ts 23969459555, free_ts 0
+[  323.503488][ T8544]  post_alloc_hook+0x1e6/0x210
+[  323.504080][ T8544]  get_page_from_freelist+0x260a/0x2790
+[  323.505088][ T8544]  __alloc_pages+0x1f2/0x480
+[  323.505606][ T8544]  alloc_page_interleave+0x20/0x180
+[  323.508820][ T8544]  alloc_slab_page+0x6a/0x160
+[  323.509374][ T8544]  new_slab+0x84/0x2f0
+[  323.510218][ T8544]  ___slab_alloc+0xa85/0x10a0
+[  323.510748][ T8544]  __kmem_cache_alloc_node+0x1a8/0x240
+[  323.518487][ T8544]  kmalloc_trace+0x2a/0xe0
+[  323.519063][ T8544]  ipt_init_net+0x48/0x160
+[  323.519951][ T8544]  ops_init+0x2b4/0x460
+[  323.520434][ T8544]  register_pernet_operations+0x25c/0x540
+[  323.521441][ T8544]  register_pernet_subsys+0x28/0x40
+[  323.522032][ T8544]  tcf_register_action+0x55/0x510
+[  323.527108][ T8544]  ipt_init_module+0x45/0x90
+[  323.527657][ T8544]  do_one_initcall+0x211/0x700
+[  323.528584][ T8544] page_owner free stack trace missing
+[  323.530532][ T8544] 
+[  323.530822][ T8544] Memory state around the buggy address:
+[  323.531811][ T8544]  ffff88814b8e3580: fc fc fc fc fc fc fc fc fc fc fc fc fc fc fc fc
+[  323.533036][ T8544]  ffff88814b8e3600: ec ec ec ec ec ec ec ec ec ec ec ec ec ec ee ee
+[  323.543127][ T8544] >ffff88814b8e3680: ee ec ec ec ec ec ec ec ec ec ec ec ec 02 fc fc
+[  323.545859][ T8544]                    ^
+[  323.546330][ T8544]  ffff88814b8e3700: fc fc fc fc fc fc fc fc fc fc fc fc fc fc fc fc
+[  323.547555][ T8544]  ffff88814b8e3780: fc fc fc fc fc fc fc fc fc fc fc fc fc fc fc fc
+[  323.548788][ T8544] BUG: KASAN: unknown-crash in __ekey_init+0x285/0x2a0
+[  323.549557][ T8544] Write of size 8 at addr ffff88814b8e3a15 by task syz-executor.0/8544
+[  323.556131][ T8544] 
+[  323.556439][ T8544] CPU: 0 PID: 8544 Comm: syz-executor.0 Not tainted 6.4.1-00011-gc173c3c31378 #20
+[  323.557428][ T8544] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+[  323.558399][ T8544] Call Trace:
+[  323.558822][ T8544]  <TASK>
+[  323.559205][ T8544]  dump_stack_lvl+0x1ce/0x2c0
+[  323.559763][ T8544]  ? nf_tcp_handle_invalid+0x3d0/0x3d0
+[  323.560390][ T8544]  ? panic+0x620/0x620
+[  323.560874][ T8544]  ? dump_page+0x784/0xcf0
+[  323.561398][ T8544]  print_report+0x163/0x540
+[  323.561933][ T8544]  ? __virt_addr_valid+0x1cc/0x240
+[  323.562523][ T8544]  ? __phys_addr+0x99/0x110
+[  323.563059][ T8544]  kdo_kasan_report+0x7f/0x90
+[  323.563608][ T8544]  ? __ekey_init+0x285/0x2a0
+[  323.564136][ T8544]  ? __ekey_init+0x285/0x2a0
+[  323.564633][ T8544]  propagate_taint+0x1f6/0x210
+[  323.565145][ T8544]  ? __ekey_init+0x285/0x2a0
+[  323.565645][ T8544]  ? __ekey_init+0x285/0x2a0
+[  323.566151][ T8544]  __kdo_asan_memcpy+0x69/0xa0
+[  323.566670][ T8544]  __ekey_init+0x285/0x2a0
+[  323.567168][ T8544]  encrypted_instantiate+0x47b/0x14b0
+[  323.567755][ T8544]  ? trusted_rcu_free+0x20/0x20
+[  323.568297][ T8544]  ? read_lock_is_recursive+0x20/0x20
+[  323.568872][ T8544]  ? __might_resched+0x1c7/0x460
+[  323.569409][ T8544]  ? __mutex_trylock_common+0x145/0x200
+[  323.569994][ T8544]  ? mark_lock+0xb2/0x280
+[  323.570469][ T8544]  ? trace_raw_output_contention_end+0x90/0x90
+[  323.571119][ T8544]  ? __lock_acquire+0xd9a/0x10d0
+[  323.571659][ T8544]  ? rcu_is_watching+0x39/0x70
+[  323.572196][ T8544]  ? trace_contention_end+0x3c/0xd0
+[  323.572750][ T8544]  ? preempt_count_sub+0x13/0xc0
+[  323.573284][ T8544]  ? __mutex_lock_common+0x333/0x1830
+[  323.573867][ T8544]  ? __key_instantiate_and_link+0x94/0x450
+[  323.574482][ T8544]  ? lock_release+0x4c6/0x630
+[  323.574996][ T8544]  ? mutex_lock_io_nested+0x60/0x60
+[  323.575558][ T8544]  ? __lock_acquire+0x10d0/0x10d0
+[  323.576104][ T8544]  ? do_raw_spin_lock+0x13b/0x200
+[  323.576657][ T8544]  __key_instantiate_and_link+0xf8/0x450
+[  323.577251][ T8544]  ? preempt_count_sub+0x13/0xc0
+[  323.577792][ T8544]  ? key_instantiate_and_link+0x450/0x450
+[  323.578411][ T8544]  __key_create_or_update+0x921/0xa60
+[  323.579024][ T8544]  ? key_create_or_update+0x60/0x60
+[  323.579605][ T8544]  ? lookup_user_key+0xe28/0x1250
+[  323.580180][ T8544]  key_create_or_update+0x42/0x60
+[  323.580721][ T8544]  __se_sys_add_key+0x31b/0x3e0
+[  323.581248][ T8544]  ? __x64_sys_add_key+0x70/0x70
+[  323.581780][ T8544]  ? syscall_enter_from_user_mode+0x32/0x230
+[  323.582417][ T8544]  ? lockdep_hardirqs_on+0xdd/0x180
+[  323.582970][ T8544]  ? syscall_enter_from_user_mode+0x32/0x230
+[  323.583603][ T8544]  do_syscall_64+0x41/0x90
+[  323.584097][ T8544]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  323.584722][ T8544] RIP: 0033:0x7f8f4b88fddd
+[  323.585200][ T8544] Code: c3 e8 97 2b 00 00 0f 1f 80 00 00 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 b0 ff ff ff f7 d8 64 89 01 48
+[  323.587155][ T8544] RSP: 002b:00007f8e8a7fe028 EFLAGS: 00000246 ORIG_RAX: 00000000000000f8
+[  323.588062][ T8544] RAX: ffffffffffffffda RBX: 00007f8f4b9cbf80 RCX: 00007f8f4b88fddd
+[  323.588928][ T8544] RDX: 0000000020000100 RSI: 0000000020000180 RDI: 0000000020000140
+[  323.589808][ T8544] RBP: 00007f8f4b901e18 R08: fffffffffffffffe R09: 0000000000000000
+[  323.590684][ T8544] R10: 00000000000000ca R11: 0000000000000246 R12: 0000000000000000
+[  323.591558][ T8544] R13: 000000000000000b R14: 00007f8f4b9cbf80 R15: 00007f8e8a7de000
+[  323.592458][ T8544]  </TASK>
+[  323.605344][ T8544] 
+[  323.605643][ T8544] Allocated by task 8544:
+[  323.606149][ T8544]  kasan_set_track+0x4f/0x70
+[  323.607080][ T8544]  __kasan_kmalloc+0x7d/0x90
+[  323.607630][ T8544]  __kmalloc+0xb9/0x230
+[  323.608511][ T8544]  encrypted_instantiate+0x20d/0x14b0
+[  323.609133][ T8544]  __key_instantiate_and_link+0xf8/0x450
+[  323.610109][ T8544]  __key_create_or_update+0x921/0xa60
+[  323.610714][ T8544]  key_create_or_update+0x42/0x60
+[  323.611595][ T8544]  __se_sys_add_key+0x31b/0x3e0
+[  323.612129][ T8544]  do_syscall_64+0x41/0x90
+[  323.624292][ T8544]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  323.624978][ T8544] 
+[  323.625599][ T8544] Last potentially related work creation:
+[  323.626303][ T8544]  kasan_save_stack+0x3f/0x60
+[  323.627178][ T8544]  kasan_record_aux_stack_noalloc+0x87/0x90
+[  323.627896][ T8544]  kvfree_call_rcu+0x105/0x7d0
+[  323.628801][ T8544]  ops_init+0x247/0x460
+[  323.629305][ T8544]  register_pernet_operations+0x25c/0x540
+[  323.630304][ T8544]  register_pernet_subsys+0x28/0x40
+[  323.630920][ T8544]  tcf_register_action+0x55/0x510
+[  323.646343][ T8544]  do_one_initcall+0x211/0x700
+[  323.646905][ T8544]  do_initcall_level+0x100/0x1a0
+[  323.649299][ T8544]  do_initcalls+0x3f/0x80
+[  323.649809][ T8544]  kernel_init_freeable+0x39a/0x490
+[  323.650765][ T8544]  kernel_init+0x1d/0x2a0
+[  323.651263][ T8544]  ret_from_fork+0x1f/0x30
+[  323.652089][ T8544] 
+[  323.652379][ T8544] The buggy address belongs to the object at ffff88814b8e3a00
+[  323.652379][ T8544]  which belongs to the cache kmalloc-256 of size 256
+[  323.664574][ T8544] The buggy address is located 21 bytes inside of
+[  323.664574][ T8544]  256-byte region [ffff88814b8e3a00, ffff88814b8e3b00)
+[  323.666408][ T8544] 
+[  323.666698][ T8544] The buggy address belongs to the physical page:
+[  323.667764][ T8544] page:ffffea00052e38c0 refcount:1 mapcount:0 mapping:0000000000000000 index:0x0 pfn:0x14b8e3
+[  323.669249][ T8544] flags: 0x57ff00000000200(slab|node=1|zone=2|lastcpupid=0x7ff)
+[  323.670461][ T8544] page_type: 0xffffffff()
+[  323.670968][ T8544] raw: 057ff00000000200 ffff88800ec41b40 ffffea0001f2ea40 dead000000000008
+[  323.683872][ T8544] raw: 0000000000000000 0000000080080008 00000001ffffffff 0000000000000000
+[  323.685201][ T8544] page dumped because: kasan: bad access detected
+[  323.685920][ T8544] page_owner tracks the page as allocated
+[  323.686901][ T8544] page last allocated via order 0, migratetype Unmovable, gfp_mask 0x12cc0(GFP_KERNEL|__GFP_NOWARN|__GFP_NORETRY), pid 1, tgid 1 (swapper/0), ts 23969459555, free_ts 0
+[  323.689104][ T8544]  post_alloc_hook+0x1e6/0x210
+[  323.689667][ T8544]  get_page_from_freelist+0x260a/0x2790
+[  323.690644][ T8544]  __alloc_pages+0x1f2/0x480
+[  323.691184][ T8544]  alloc_page_interleave+0x20/0x180
+[  323.692133][ T8544]  alloc_slab_page+0x6a/0x160
+[  323.692677][ T8544]  new_slab+0x84/0x2f0
+[  323.703765][ T8544]  ___slab_alloc+0xa85/0x10a0
+[  323.704367][ T8544]  __kmem_cache_alloc_node+0x1a8/0x240
+[  323.705342][ T8544]  kmalloc_trace+0x2a/0xe0
+[  323.705866][ T8544]  ipt_init_net+0x48/0x160
+[  323.706734][ T8544]  ops_init+0x2b4/0x460
+[  323.707238][ T8544]  register_pernet_operations+0x25c/0x540
+[  323.708242][ T8544]  register_pernet_subsys+0x28/0x40
+[  323.708851][ T8544]  tcf_register_action+0x55/0x510
+[  323.709779][ T8544]  ipt_init_module+0x45/0x90
+[  323.710333][ T8544]  do_one_initcall+0x211/0x700
+[  323.711242][ T8544] page_owner free stack trace missing
+[  323.718891][ T8544] 
+[  323.719248][ T8544] Memory state around the buggy address:
+[  323.722845][ T8544]  ffff88814b8e3900: fc fc fc fc fc fc fc fc fc fc fc fc fc fc fc fc
+[  323.725239][ T8544]  ffff88814b8e3980: fc fc fc fc fc fc fc fc fc fc fc fc fc fc fc fc
+[  323.729204][ T8544] >ffff88814b8e3a00: ea ea ea ea ea ea ea ea ea ea ea ea ea ea ea ea
+[  323.730481][ T8544]                          ^
+[  323.731046][ T8544]  ffff88814b8e3a80: ea ea ea ea ea ea ea ea ea 03 fc fc fc fc fc fc
+[  323.741766][ T8544]  ffff88814b8e3b00: fc fc fc fc fc fc fc fc fc fc fc fc fc fc fc fc
+[  323.742970][ T8544] Kernel panic - not syncing: KDO: memcpy hit (id: __ekey_init+0x285/0x2a0, callid: 11982S)
+[  323.744025][ T8544] CPU: 0 PID: 8544 Comm: syz-executor.0 Not tainted 6.4.1-00011-gc173c3c31378 #20
+[  323.744980][ T8544] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+[  323.745922][ T8544] Call Trace:
+[  323.746278][ T8544]  <TASK>
+[  323.746600][ T8544]  dump_stack_lvl+0x1ce/0x2c0
+[  323.747114][ T8544]  ? nf_tcp_handle_invalid+0x3d0/0x3d0
+[  323.747697][ T8544]  ? panic+0x620/0x620
+[  323.748151][ T8544]  ? vscnprintf+0x5d/0x80
+[  323.748621][ T8544]  panic+0x2ba/0x620
+[  323.749044][ T8544]  ? print_report+0x4fb/0x540
+[  323.749556][ T8544]  ? __ekey_init+0x285/0x2a0
+[  323.750054][ T8544]  ? __wake_up_klogd+0xb7/0xf0
+[  323.750568][ T8544]  ? preempt_count_add+0xa0/0xf0
+[  323.751103][ T8544]  ? kdo_sanitizer_cov_write+0x100/0x100
+[  323.751698][ T8544]  ? __phys_addr+0x99/0x110
+[  323.752200][ T8544]  ? kdo_kasan_report+0x7f/0x90
+[  323.752723][ T8544]  ? __ekey_init+0x285/0x2a0
+[  323.753220][ T8544]  ? __ekey_init+0x285/0x2a0
+[  323.753720][ T8544]  propagate_taint+0x20a/0x210
+[  323.754228][ T8544]  ? __ekey_init+0x285/0x2a0
+[  323.754729][ T8544]  ? __ekey_init+0x285/0x2a0
+[  323.755229][ T8544]  __kdo_asan_memcpy+0x69/0xa0
+[  323.755741][ T8544]  __ekey_init+0x285/0x2a0
+[  323.756250][ T8544]  encrypted_instantiate+0x47b/0x14b0
+[  323.756837][ T8544]  ? trusted_rcu_free+0x20/0x20
+[  323.757360][ T8544]  ? read_lock_is_recursive+0x20/0x20
+[  323.757932][ T8544]  ? __might_resched+0x1c7/0x460
+[  323.758469][ T8544]  ? __mutex_trylock_common+0x145/0x200
+[  323.759104][ T8544]  ? mark_lock+0xb2/0x280
+[  323.759575][ T8544]  ? trace_raw_output_contention_end+0x90/0x90
+[  323.760231][ T8544]  ? __lock_acquire+0xd9a/0x10d0
+[  323.760764][ T8544]  ? rcu_is_watching+0x39/0x70
+[  323.761280][ T8544]  ? trace_contention_end+0x3c/0xd0
+[  323.761832][ T8544]  ? preempt_count_sub+0x13/0xc0
+[  323.762369][ T8544]  ? __mutex_lock_common+0x333/0x1830
+[  323.762954][ T8544]  ? __key_instantiate_and_link+0x94/0x450
+[  323.763601][ T8544]  ? lock_release+0x4c6/0x630
+[  323.764139][ T8544]  ? mutex_lock_io_nested+0x60/0x60
+[  323.764719][ T8544]  ? __lock_acquire+0x10d0/0x10d0
+[  323.765322][ T8544]  ? do_raw_spin_lock+0x13b/0x200
+[  323.765893][ T8544]  __key_instantiate_and_link+0xf8/0x450
+[  323.766510][ T8544]  ? preempt_count_sub+0x13/0xc0
+[  323.767066][ T8544]  ? key_instantiate_and_link+0x450/0x450
+[  323.767704][ T8544]  __key_create_or_update+0x921/0xa60
+[  323.768361][ T8544]  ? key_create_or_update+0x60/0x60
+[  323.768925][ T8544]  ? lookup_user_key+0xe28/0x1250
+[  323.769510][ T8544]  key_create_or_update+0x42/0x60
+[  323.770064][ T8544]  __se_sys_add_key+0x31b/0x3e0
+[  323.770604][ T8544]  ? __x64_sys_add_key+0x70/0x70
+[  323.771152][ T8544]  ? syscall_enter_from_user_mode+0x32/0x230
+[  323.771801][ T8544]  ? lockdep_hardirqs_on+0xdd/0x180
+[  323.772433][ T8544]  ? syscall_enter_from_user_mode+0x32/0x230
+[  323.773206][ T8544]  do_syscall_64+0x41/0x90
+[  323.773766][ T8544]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  323.774450][ T8544] RIP: 0033:0x7f8f4b88fddd
+[  323.774980][ T8544] Code: c3 e8 97 2b 00 00 0f 1f 80 00 00 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 b0 ff ff ff f7 d8 64 89 01 48
+[  323.777092][ T8544] RSP: 002b:00007f8e8a7fe028 EFLAGS: 00000246 ORIG_RAX: 00000000000000f8
+[  323.778006][ T8544] RAX: ffffffffffffffda RBX: 00007f8f4b9cbf80 RCX: 00007f8f4b88fddd
+[  323.778887][ T8544] RDX: 0000000020000100 RSI: 0000000020000180 RDI: 0000000020000140
+[  323.779768][ T8544] RBP: 00007f8f4b901e18 R08: fffffffffffffffe R09: 0000000000000000
+[  323.780681][ T8544] R10: 00000000000000ca R11: 0000000000000246 R12: 0000000000000000
+[  323.781534][ T8544] R13: 000000000000000b R14: 00007f8f4b9cbf80 R15: 00007f8e8a7de000
+[  323.782409][ T8544]  </TASK>
+[  323.782896][ T8544] Kernel Offset: disabled
+[  323.783422][ T8544] Rebooting in 86400 seconds..
+
+VM DIAGNOSIS:
+22:29:01  Registers:
+info registers vcpu 0
+RAX=0000000000000000 RBX=0000000000000246 RCX=ffffc9002ccaa000 RDX=0000000004000000
+RSI=0000000000012368 RDI=0000000001b93000 RBP=0000000000000000 RSP=ffffc9000579fe90
+R8 =0000000000000002 R9 =ffffffff814f0843 R10=fffff52000af3fb0 R11=dffffc0000000001
+R12=ffff888010380000 R13=00000000ffffffea R14=ffff88801d474c00 R15=ffff88801d474c08
+RIP=ffffffff81660da5 RFL=00010003 [------C] CPL=0 II=0 A20=1 SMM=0 HLT=0
+ES =0000 0000000000000000 ffffffff 00c00100
+CS =0010 0000000000000000 ffffffff 00a09b00 DPL=0 CS64 [-RA]
+SS =0018 0000000000000000 ffffffff 00c09300 DPL=0 DS   [-WA]
+DS =0000 0000000000000000 ffffffff 00c00100
+FS =0000 00007f8e8a7dd640 ffffffff 00c00100
+GS =0000 ffff8880ba000000 ffffffff 00c00100
+LDT=0000 0000000000000000 ffffffff 00c00000
+TR =0040 fffffe0000003000 00004087 00008b00 DPL=0 TSS64-busy
+GDT=     fffffe0000001000 0000007f
+IDT=     fffffe0000000000 00000fff
+CR0=80050033 CR2=00007f8e8a7dd658 CR3=00000000737ee000 CR4=00350ef0
+DR0=0000000000000000 DR1=0000000000000000 DR2=0000000000000000 DR3=0000000000000000 
+DR6=00000000fffe0ff0 DR7=0000000000000400
+EFER=0000000000000d01
+FCW=037f FSW=0000 [ST=0] FTW=00 MXCSR=00001f80
+FPR0=0000000000000000 0000 FPR1=0000000000000000 0000
+FPR2=0000000000000000 0000 FPR3=0000000000000000 0000
+FPR4=0000000000000000 0000 FPR5=0000000000000000 0000
+FPR6=0000000000000000 0000 FPR7=0000000000000000 0000
+YMM00=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM01=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM02=0000000000000000 0000000000000000 0000000000000001 000000000980b88e
+YMM03=0000000000000000 0000000000000000 00007f8f4b9cbf80 00007f8f4b400000
+YMM04=0000000000000000 0000000000000000 00007f8f4b9cbf80 0000000000000000
+YMM05=0000000000000000 0000000000000000 00007f8f4b9cbf80 0000001b32323964
+YMM06=0000000000000000 0000000000000000 0000001b32323960 0000001b3232395c
+YMM07=0000000000000000 0000000000000000 00007f8f4b8374e8 00007ffebcff6c00
+YMM08=0000000000000000 0000000000000000 657a697320786568 7274732064616200
+YMM09=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM10=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM11=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM12=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM13=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM14=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM15=0000000000000000 0000000000000000 0000000000000000 0000000000000000

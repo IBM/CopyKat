@@ -1,0 +1,1094 @@
+Warning: Permanently added '[localhost]:26492' (ED25519) to the list of known hosts.
+2024/05/23 00:40:41 fuzzer started
+2024/05/23 00:40:43 dialing manager at localhost:34093
+syzkaller login: [  173.961091][ T8017] cgroup: Unknown subsys name 'net'
+[  174.114943][ T8017] cgroup: Unknown subsys name 'rlimit'
+2024/05/23 00:40:43 syscalls: 3922
+2024/05/23 00:40:43 code coverage: enabled
+2024/05/23 00:40:43 comparison tracing: enabled
+2024/05/23 00:40:43 extra coverage: enabled
+2024/05/23 00:40:43 delay kcov mmap: enabled
+2024/05/23 00:40:43 setuid sandbox: enabled
+2024/05/23 00:40:43 namespace sandbox: enabled
+2024/05/23 00:40:43 Android sandbox: /sys/fs/selinux/policy does not exist
+2024/05/23 00:40:43 fault injection: enabled
+2024/05/23 00:40:43 leak checking: CONFIG_DEBUG_KMEMLEAK is not enabled
+2024/05/23 00:40:43 net packet injection: enabled
+2024/05/23 00:40:43 net device setup: enabled
+2024/05/23 00:40:43 concurrency sanitizer: /sys/kernel/debug/kcsan does not exist
+2024/05/23 00:40:43 devlink PCI setup: PCI device 0000:00:10.0 is not available
+2024/05/23 00:40:43 NIC VF setup: PCI device 0000:00:11.0 is not available
+2024/05/23 00:40:43 USB emulation: enabled
+2024/05/23 00:40:43 hci packet injection: enabled
+2024/05/23 00:40:43 wifi device emulation: enabled
+2024/05/23 00:40:43 802.15.4 emulation: enabled
+2024/05/23 00:40:43 fetching corpus: 0, signal 0/2000 (executing program)
+2024/05/23 00:40:43 fetching corpus: 50, signal 13371/17123 (executing program)
+2024/05/23 00:40:44 fetching corpus: 100, signal 24887/30207 (executing program)
+2024/05/23 00:40:44 fetching corpus: 150, signal 33953/40781 (executing program)
+2024/05/23 00:40:44 fetching corpus: 200, signal 41710/49898 (executing program)
+2024/05/23 00:40:44 fetching corpus: 250, signal 46839/56418 (executing program)
+2024/05/23 00:40:44 fetching corpus: 300, signal 50347/61312 (executing program)
+2024/05/23 00:40:45 fetching corpus: 350, signal 55138/67364 (executing program)
+2024/05/23 00:40:45 fetching corpus: 400, signal 59249/72686 (executing program)
+2024/05/23 00:40:45 fetching corpus: 450, signal 63250/77860 (executing program)
+2024/05/23 00:40:45 fetching corpus: 500, signal 66052/81856 (executing program)
+2024/05/23 00:40:45 fetching corpus: 550, signal 68408/85380 (executing program)
+2024/05/23 00:40:46 fetching corpus: 600, signal 72157/90127 (executing program)
+2024/05/23 00:40:46 fetching corpus: 650, signal 74954/93945 (executing program)
+2024/05/23 00:40:46 fetching corpus: 700, signal 79344/99157 (executing program)
+2024/05/23 00:40:46 fetching corpus: 750, signal 82812/103539 (executing program)
+2024/05/23 00:40:46 fetching corpus: 800, signal 85471/107095 (executing program)
+2024/05/23 00:40:46 fetching corpus: 850, signal 87347/109922 (executing program)
+2024/05/23 00:40:46 fetching corpus: 900, signal 89625/113073 (executing program)
+2024/05/23 00:40:46 fetching corpus: 950, signal 92038/116269 (executing program)
+2024/05/23 00:40:47 fetching corpus: 1000, signal 96648/121323 (executing program)
+2024/05/23 00:40:47 fetching corpus: 1050, signal 98880/124343 (executing program)
+2024/05/23 00:40:47 fetching corpus: 1100, signal 100649/126926 (executing program)
+2024/05/23 00:40:47 fetching corpus: 1150, signal 102394/129465 (executing program)
+2024/05/23 00:40:47 fetching corpus: 1200, signal 104761/132486 (executing program)
+2024/05/23 00:40:47 fetching corpus: 1250, signal 106102/134625 (executing program)
+2024/05/23 00:40:48 fetching corpus: 1300, signal 107958/137151 (executing program)
+2024/05/23 00:40:48 fetching corpus: 1350, signal 110496/140180 (executing program)
+2024/05/23 00:40:48 fetching corpus: 1400, signal 112154/142469 (executing program)
+2024/05/23 00:40:48 fetching corpus: 1450, signal 114629/145342 (executing program)
+2024/05/23 00:40:48 fetching corpus: 1500, signal 116701/147879 (executing program)
+2024/05/23 00:40:48 fetching corpus: 1550, signal 118031/149854 (executing program)
+2024/05/23 00:40:48 fetching corpus: 1600, signal 119592/151935 (executing program)
+2024/05/23 00:40:49 fetching corpus: 1650, signal 120607/153685 (executing program)
+2024/05/23 00:40:49 fetching corpus: 1700, signal 121773/155504 (executing program)
+2024/05/23 00:40:49 fetching corpus: 1750, signal 123001/157292 (executing program)
+2024/05/23 00:40:49 fetching corpus: 1800, signal 124284/159126 (executing program)
+2024/05/23 00:40:49 fetching corpus: 1850, signal 125694/161096 (executing program)
+2024/05/23 00:40:49 fetching corpus: 1900, signal 127364/163166 (executing program)
+2024/05/23 00:40:50 fetching corpus: 1950, signal 129124/165296 (executing program)
+2024/05/23 00:40:50 fetching corpus: 2000, signal 130656/167184 (executing program)
+2024/05/23 00:40:50 fetching corpus: 2049, signal 132502/169324 (executing program)
+2024/05/23 00:40:50 fetching corpus: 2099, signal 133603/170917 (executing program)
+2024/05/23 00:40:50 fetching corpus: 2149, signal 135655/173066 (executing program)
+2024/05/23 00:40:50 fetching corpus: 2199, signal 136401/174423 (executing program)
+2024/05/23 00:40:51 fetching corpus: 2249, signal 138237/176389 (executing program)
+2024/05/23 00:40:51 fetching corpus: 2299, signal 139637/178090 (executing program)
+2024/05/23 00:40:51 fetching corpus: 2349, signal 141227/179872 (executing program)
+2024/05/23 00:40:51 fetching corpus: 2399, signal 142296/181272 (executing program)
+2024/05/23 00:40:51 fetching corpus: 2449, signal 143310/182581 (executing program)
+2024/05/23 00:40:51 fetching corpus: 2499, signal 144129/183776 (executing program)
+2024/05/23 00:40:51 fetching corpus: 2549, signal 145822/185538 (executing program)
+2024/05/23 00:40:51 fetching corpus: 2599, signal 147461/187159 (executing program)
+2024/05/23 00:40:52 fetching corpus: 2649, signal 148456/188424 (executing program)
+2024/05/23 00:40:52 fetching corpus: 2699, signal 149259/189606 (executing program)
+2024/05/23 00:40:52 fetching corpus: 2749, signal 150595/191022 (executing program)
+2024/05/23 00:40:52 fetching corpus: 2799, signal 151623/192295 (executing program)
+2024/05/23 00:40:52 fetching corpus: 2849, signal 152664/193540 (executing program)
+2024/05/23 00:40:52 fetching corpus: 2899, signal 153498/194654 (executing program)
+2024/05/23 00:40:52 fetching corpus: 2949, signal 154582/195883 (executing program)
+2024/05/23 00:40:53 fetching corpus: 2999, signal 155566/197024 (executing program)
+2024/05/23 00:40:53 fetching corpus: 3049, signal 156740/198302 (executing program)
+2024/05/23 00:40:53 fetching corpus: 3099, signal 157833/199470 (executing program)
+2024/05/23 00:40:53 fetching corpus: 3149, signal 158961/200625 (executing program)
+2024/05/23 00:40:53 fetching corpus: 3199, signal 159909/201672 (executing program)
+2024/05/23 00:40:53 fetching corpus: 3249, signal 160699/202620 (executing program)
+2024/05/23 00:40:53 fetching corpus: 3299, signal 161504/203622 (executing program)
+2024/05/23 00:40:54 fetching corpus: 3349, signal 162349/204601 (executing program)
+2024/05/23 00:40:54 fetching corpus: 3399, signal 163065/205516 (executing program)
+2024/05/23 00:40:54 fetching corpus: 3449, signal 164175/206596 (executing program)
+2024/05/23 00:40:54 fetching corpus: 3499, signal 165009/207556 (executing program)
+2024/05/23 00:40:54 fetching corpus: 3549, signal 165710/208479 (executing program)
+2024/05/23 00:40:54 fetching corpus: 3599, signal 167097/209636 (executing program)
+2024/05/23 00:40:55 fetching corpus: 3649, signal 168283/210619 (executing program)
+2024/05/23 00:40:55 fetching corpus: 3699, signal 169536/211621 (executing program)
+2024/05/23 00:40:55 fetching corpus: 3749, signal 170432/212500 (executing program)
+2024/05/23 00:40:55 fetching corpus: 3799, signal 171202/213334 (executing program)
+2024/05/23 00:40:55 fetching corpus: 3849, signal 172191/214226 (executing program)
+2024/05/23 00:40:55 fetching corpus: 3899, signal 173075/215052 (executing program)
+2024/05/23 00:40:55 fetching corpus: 3949, signal 174063/215937 (executing program)
+2024/05/23 00:40:56 fetching corpus: 3999, signal 174871/216718 (executing program)
+2024/05/23 00:40:56 fetching corpus: 4049, signal 175475/217404 (executing program)
+2024/05/23 00:40:56 fetching corpus: 4099, signal 176059/218104 (executing program)
+2024/05/23 00:40:56 fetching corpus: 4149, signal 176707/218813 (executing program)
+2024/05/23 00:40:56 fetching corpus: 4199, signal 177147/219438 (executing program)
+2024/05/23 00:40:56 fetching corpus: 4249, signal 177700/220071 (executing program)
+2024/05/23 00:40:56 fetching corpus: 4299, signal 178375/220772 (executing program)
+2024/05/23 00:40:56 fetching corpus: 4349, signal 179249/221456 (executing program)
+2024/05/23 00:40:57 fetching corpus: 4399, signal 179916/222073 (executing program)
+2024/05/23 00:40:57 fetching corpus: 4449, signal 181022/222822 (executing program)
+2024/05/23 00:40:57 fetching corpus: 4499, signal 181689/223450 (executing program)
+2024/05/23 00:40:57 fetching corpus: 4549, signal 182113/224023 (executing program)
+2024/05/23 00:40:57 fetching corpus: 4599, signal 182663/224591 (executing program)
+2024/05/23 00:40:57 fetching corpus: 4649, signal 183411/225208 (executing program)
+2024/05/23 00:40:58 fetching corpus: 4699, signal 183999/225767 (executing program)
+2024/05/23 00:40:58 fetching corpus: 4749, signal 184586/226313 (executing program)
+2024/05/23 00:40:58 fetching corpus: 4799, signal 185840/226993 (executing program)
+2024/05/23 00:40:58 fetching corpus: 4849, signal 186503/227527 (executing program)
+2024/05/23 00:40:58 fetching corpus: 4899, signal 187357/228101 (executing program)
+2024/05/23 00:40:58 fetching corpus: 4949, signal 187862/228615 (executing program)
+2024/05/23 00:40:59 fetching corpus: 4999, signal 188664/229154 (executing program)
+2024/05/23 00:40:59 fetching corpus: 5049, signal 189237/229590 (executing program)
+2024/05/23 00:40:59 fetching corpus: 5099, signal 189934/230039 (executing program)
+2024/05/23 00:40:59 fetching corpus: 5149, signal 190528/230498 (executing program)
+2024/05/23 00:40:59 fetching corpus: 5199, signal 191125/230938 (executing program)
+2024/05/23 00:41:00 fetching corpus: 5249, signal 192043/231393 (executing program)
+2024/05/23 00:41:00 fetching corpus: 5299, signal 192508/231815 (executing program)
+2024/05/23 00:41:00 fetching corpus: 5307, signal 192644/232155 (executing program)
+2024/05/23 00:41:00 fetching corpus: 5307, signal 192644/232509 (executing program)
+2024/05/23 00:41:00 fetching corpus: 5307, signal 192644/232890 (executing program)
+2024/05/23 00:41:00 fetching corpus: 5307, signal 192644/233290 (executing program)
+2024/05/23 00:41:00 fetching corpus: 5307, signal 192644/233656 (executing program)
+2024/05/23 00:41:00 fetching corpus: 5307, signal 192644/234023 (executing program)
+2024/05/23 00:41:00 fetching corpus: 5307, signal 192644/234403 (executing program)
+2024/05/23 00:41:00 fetching corpus: 5307, signal 192644/234785 (executing program)
+2024/05/23 00:41:00 fetching corpus: 5307, signal 192644/235135 (executing program)
+2024/05/23 00:41:00 fetching corpus: 5307, signal 192644/235509 (executing program)
+2024/05/23 00:41:00 fetching corpus: 5307, signal 192644/235784 (executing program)
+2024/05/23 00:41:00 fetching corpus: 5307, signal 192644/235784 (executing program)
+2024/05/23 00:41:07 starting 1 fuzzer processes
+[  198.307733][ T8001] memfd_create() without MFD_EXEC nor MFD_NOEXEC_SEAL, pid=8001 'syz-fuzzer'
+00:41:07 executing program 0:
+r0 = socket$nl_route(0x10, 0x3, 0x0)
+sendmsg$nl_route(r0, &(0x7f0000000380)={0x0, 0x0, &(0x7f0000000500)={&(0x7f00000003c0)=@newlink={0x44, 0x10, 0x437, 0x0, 0x0, {}, [@IFLA_LINKINFO={0x24, 0x12, 0x0, 0x1, @ip6erspan={{0xe}, {0x10, 0x2, 0x0, 0x1, [@IFLA_GRE_ENCAP_TYPE={0x6, 0xe, 0x2}, @IFLA_GRE_COLLECT_METADATA={0x4}]}}}]}, 0x44}}, 0x0)
+
+[  205.766250][ T1219] ieee802154 phy0 wpan0: encryption failed: -22
+[  205.767293][ T1219] ieee802154 phy1 wpan1: encryption failed: -22
+[  217.706559][ T8031] Bluetooth: hci0: unexpected cc 0x0c03 length: 249 > 1
+[  217.709350][ T8031] Bluetooth: hci0: unexpected cc 0x1003 length: 249 > 9
+[  217.711160][ T8031] Bluetooth: hci0: unexpected cc 0x1001 length: 249 > 9
+[  217.718016][ T8031] Bluetooth: hci0: unexpected cc 0x0c23 length: 249 > 4
+[  217.720329][ T8031] Bluetooth: hci0: unexpected cc 0x0c25 length: 249 > 3
+[  217.721916][ T8031] Bluetooth: hci0: unexpected cc 0x0c38 length: 249 > 2
+[  218.737841][ T8028] chnl_net:caif_netlink_parms(): no params data found
+[  219.021701][ T8028] bridge0: port 1(bridge_slave_0) entered blocking state
+[  219.035373][ T8028] bridge0: port 1(bridge_slave_0) entered disabled state
+[  219.036444][ T8028] bridge_slave_0: entered allmulticast mode
+[  219.039947][ T8028] bridge_slave_0: entered promiscuous mode
+[  219.062726][ T8028] bridge0: port 2(bridge_slave_1) entered blocking state
+[  219.064973][ T8028] bridge0: port 2(bridge_slave_1) entered disabled state
+[  219.065884][ T8028] bridge_slave_1: entered allmulticast mode
+[  219.068329][ T8028] bridge_slave_1: entered promiscuous mode
+[  219.134613][ T8028] bond0: (slave bond_slave_0): Enslaving as an active interface with an up link
+[  219.139933][ T8028] bond0: (slave bond_slave_1): Enslaving as an active interface with an up link
+[  219.200430][ T8028] team0: Port device team_slave_0 added
+[  219.208717][ T8028] team0: Port device team_slave_1 added
+[  219.265566][ T8028] batman_adv: batadv0: Adding interface: batadv_slave_0
+[  219.266330][ T8028] batman_adv: batadv0: The MTU of interface batadv_slave_0 is too small (1500) to handle the transport of batman-adv packets. Packets going over this interface will be fragmented on layer2 which could impact the performance. Setting the MTU to 1560 would solve the problem.
+[  219.268976][ T8028] batman_adv: batadv0: Not using interface batadv_slave_0 (retrying later): interface not active
+[  219.278725][ T8028] batman_adv: batadv0: Adding interface: batadv_slave_1
+[  219.279488][ T8028] batman_adv: batadv0: The MTU of interface batadv_slave_1 is too small (1500) to handle the transport of batman-adv packets. Packets going over this interface will be fragmented on layer2 which could impact the performance. Setting the MTU to 1560 would solve the problem.
+[  219.282162][ T8028] batman_adv: batadv0: Not using interface batadv_slave_1 (retrying later): interface not active
+[  219.406589][ T8028] hsr_slave_0: entered promiscuous mode
+[  219.410885][ T8028] hsr_slave_1: entered promiscuous mode
+[  219.767033][ T4407] Bluetooth: hci0: command 0x0409 tx timeout
+[  219.819596][ T8028] netdevsim netdevsim0 netdevsim0: renamed from eth0
+[  219.839059][ T8028] netdevsim netdevsim0 netdevsim1: renamed from eth1
+[  219.852670][ T8028] netdevsim netdevsim0 netdevsim2: renamed from eth2
+[  219.861539][ T8028] netdevsim netdevsim0 netdevsim3: renamed from eth3
+[  220.035974][ T8028] 8021q: adding VLAN 0 to HW filter on device bond0
+[  220.054914][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): veth1: link becomes ready
+[  220.057144][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): veth0: link becomes ready
+[  220.069715][ T8028] 8021q: adding VLAN 0 to HW filter on device team0
+[  220.079988][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_to_bridge: link becomes ready
+[  220.081880][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): bridge_slave_0: link becomes ready
+[  220.085884][    T9] bridge0: port 1(bridge_slave_0) entered blocking state
+[  220.086864][    T9] bridge0: port 1(bridge_slave_0) entered forwarding state
+[  220.089797][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): bridge0: link becomes ready
+[  220.107334][ T4418] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_to_bridge: link becomes ready
+[  220.109366][ T4418] IPv6: ADDRCONF(NETDEV_CHANGE): bridge_slave_1: link becomes ready
+[  220.112012][ T4418] bridge0: port 2(bridge_slave_1) entered blocking state
+[  220.112875][ T4418] bridge0: port 2(bridge_slave_1) entered forwarding state
+[  220.129983][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_to_bond: link becomes ready
+[  220.151781][ T4458] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_to_bond: link becomes ready
+[  220.165913][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_to_team: link becomes ready
+[  220.168636][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): team_slave_0: link becomes ready
+[  220.171713][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): team0: link becomes ready
+[  220.189240][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_to_team: link becomes ready
+[  220.191599][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): team_slave_1: link becomes ready
+[  220.206494][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_to_hsr: link becomes ready
+[  220.209637][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): hsr_slave_0: link becomes ready
+[  220.224938][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_to_hsr: link becomes ready
+[  220.226816][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): hsr_slave_1: link becomes ready
+[  220.240489][ T8028] IPv6: ADDRCONF(NETDEV_CHANGE): hsr0: link becomes ready
+[  220.618962][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): vxcan1: link becomes ready
+[  220.620007][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): vxcan0: link becomes ready
+[  220.638578][ T8028] 8021q: adding VLAN 0 to HW filter on device batadv0
+[  220.672195][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_virt_wifi: link becomes ready
+[  220.675897][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_virt_wifi: link becomes ready
+[  220.708478][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_vlan: link becomes ready
+[  220.710407][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_vlan: link becomes ready
+[  220.715118][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): vlan0: link becomes ready
+[  220.719156][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): vlan1: link becomes ready
+[  220.728416][ T8028] veth0_vlan: entered promiscuous mode
+[  220.747158][ T8028] veth1_vlan: entered promiscuous mode
+[  220.788775][ T4458] IPv6: ADDRCONF(NETDEV_CHANGE): macvlan0: link becomes ready
+[  220.790592][ T4458] IPv6: ADDRCONF(NETDEV_CHANGE): macvlan1: link becomes ready
+[  220.795626][ T4458] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_macvtap: link becomes ready
+[  220.799647][ T4458] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_macvtap: link becomes ready
+[  220.812808][ T8028] veth0_macvtap: entered promiscuous mode
+[  220.825535][ T8028] veth1_macvtap: entered promiscuous mode
+[  220.857138][ T8028] batman_adv: batadv0: Interface activated: batadv_slave_0
+[  220.858256][ T4458] IPv6: ADDRCONF(NETDEV_CHANGE): macvtap0: link becomes ready
+[  220.860073][ T4458] IPv6: ADDRCONF(NETDEV_CHANGE): macsec0: link becomes ready
+[  220.861897][ T4458] IPv6: ADDRCONF(NETDEV_CHANGE): batadv_slave_0: link becomes ready
+[  220.868372][ T4458] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_to_batadv: link becomes ready
+[  220.880971][ T8028] batman_adv: batadv0: Interface activated: batadv_slave_1
+[  220.881944][ T4458] IPv6: ADDRCONF(NETDEV_CHANGE): batadv_slave_1: link becomes ready
+[  220.884955][ T4458] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_to_batadv: link becomes ready
+[  220.900814][ T8028] netdevsim netdevsim0 netdevsim0: set [1, 0] type 2 family 0 port 6081 - 0
+[  220.901928][ T8028] netdevsim netdevsim0 netdevsim1: set [1, 0] type 2 family 0 port 6081 - 0
+[  220.918881][ T8028] netdevsim netdevsim0 netdevsim2: set [1, 0] type 2 family 0 port 6081 - 0
+[  220.919851][ T8028] netdevsim netdevsim0 netdevsim3: set [1, 0] type 2 family 0 port 6081 - 0
+[  221.042594][ T8028] ieee80211 phy3: Selected rate control algorithm 'minstrel_ht'
+[  221.160044][   T10] wlan0: Created IBSS using preconfigured BSSID 50:50:50:50:50:50
+[  221.161113][   T10] wlan0: Creating new IBSS network, BSSID 50:50:50:50:50:50
+[  221.168969][    T7] IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+[  221.201576][ T8028] ieee80211 phy4: Selected rate control algorithm 'minstrel_ht'
+[  221.292076][ T1056] wlan1: Created IBSS using preconfigured BSSID 50:50:50:50:50:50
+[  221.295708][ T1056] wlan1: Creating new IBSS network, BSSID 50:50:50:50:50:50
+[  221.298910][ T4458] IPv6: ADDRCONF(NETDEV_CHANGE): wlan1: link becomes ready
+[  221.849735][ T4407] Bluetooth: hci0: command 0x041b tx timeout
+2024/05/23 00:41:32 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x30be, Ip:0x85ffa1f0}
+2024/05/23 00:41:32 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/23 00:41:32 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3e9b, Ip:0x833c12dd}
+2024/05/23 00:41:32 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x4de3, Ip:0x85ffa202}
+2024/05/23 00:41:32 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x13f6, Ip:0x862cc7c9}
+00:41:32 executing program 0:
+r0 = socket$nl_route(0x10, 0x3, 0x0)
+sendmsg$nl_route(r0, &(0x7f0000000380)={0x0, 0x0, &(0x7f0000000500)={&(0x7f00000003c0)=@newlink={0x44, 0x10, 0x437, 0x0, 0x0, {}, [@IFLA_LINKINFO={0x24, 0x12, 0x0, 0x1, @ip6erspan={{0xe}, {0x10, 0x2, 0x0, 0x1, [@IFLA_GRE_ENCAP_TYPE={0x6, 0xe, 0x2}, @IFLA_GRE_COLLECT_METADATA={0x4}]}}}]}, 0x44}}, 0x0)
+
+[  223.925353][ T8031] Bluetooth: hci0: command 0x040f tx timeout
+00:41:33 executing program 0:
+r0 = socket$nl_route(0x10, 0x3, 0x0)
+sendmsg$nl_route(r0, &(0x7f0000000380)={0x0, 0x0, &(0x7f0000000500)={&(0x7f00000003c0)=@newlink={0x44, 0x10, 0x437, 0x0, 0x0, {}, [@IFLA_LINKINFO={0x24, 0x12, 0x0, 0x1, @ip6erspan={{0xe}, {0x10, 0x2, 0x0, 0x1, [@IFLA_GRE_ENCAP_TYPE={0x6, 0xe, 0x2}, @IFLA_GRE_COLLECT_METADATA={0x4}]}}}]}, 0x44}}, 0x0)
+
+[  226.005091][ T4407] Bluetooth: hci0: command 0x0419 tx timeout
+00:41:35 executing program 0:
+r0 = socket$nl_route(0x10, 0x3, 0x0)
+sendmsg$nl_route(r0, &(0x7f0000000380)={0x0, 0x0, &(0x7f0000000500)={&(0x7f00000003c0)=@newlink={0x44, 0x10, 0x437, 0x0, 0x0, {}, [@IFLA_LINKINFO={0x24, 0x12, 0x0, 0x1, @ip6erspan={{0xe}, {0x10, 0x2, 0x0, 0x1, [@IFLA_GRE_ENCAP_TYPE={0x6, 0xe, 0x2}, @IFLA_GRE_COLLECT_METADATA={0x4}]}}}]}, 0x44}}, 0x0)
+
+00:41:37 executing program 0:
+openat$sequencer(0xffffffffffffff9c, &(0x7f0000000000), 0x0, 0x0)
+r0 = syz_open_procfs(0x0, &(0x7f00000001c0)='fd/3\x00')
+ppoll(&(0x7f0000000080)=[{r0}], 0x1, &(0x7f00000000c0)={0x0, 0x3938700}, 0x0, 0x0)
+
+2024/05/23 00:41:38 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+2024/05/23 00:41:38 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+00:41:38 executing program 0:
+openat$sequencer(0xffffffffffffff9c, &(0x7f0000000000), 0x0, 0x0)
+r0 = syz_open_procfs(0x0, &(0x7f00000001c0)='fd/3\x00')
+ppoll(&(0x7f0000000080)=[{r0}], 0x1, &(0x7f00000000c0)={0x0, 0x3938700}, 0x0, 0x0)
+
+2024/05/23 00:41:38 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2151, Ip:0x8158bef7}
+2024/05/23 00:41:38 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/23 00:41:38 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3a2a, Ip:0x81b89b55}
+2024/05/23 00:41:38 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x4f99, Ip:0x81b89b45}
+2024/05/23 00:41:38 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x598d, Ip:0x8158bee5}
+00:41:40 executing program 0:
+openat$sequencer(0xffffffffffffff9c, &(0x7f0000000000), 0x0, 0x0)
+r0 = syz_open_procfs(0x0, &(0x7f00000001c0)='fd/3\x00')
+ppoll(&(0x7f0000000080)=[{r0}], 0x1, &(0x7f00000000c0)={0x0, 0x3938700}, 0x0, 0x0)
+
+00:41:41 executing program 0:
+openat$sequencer(0xffffffffffffff9c, &(0x7f0000000000), 0x0, 0x0)
+r0 = syz_open_procfs(0x0, &(0x7f00000001c0)='fd/3\x00')
+ppoll(&(0x7f0000000080)=[{r0}], 0x1, &(0x7f00000000c0)={0x0, 0x3938700}, 0x0, 0x0)
+
+00:41:43 executing program 0:
+openat$sequencer(0xffffffffffffff9c, &(0x7f0000000000), 0x0, 0x0)
+r0 = syz_open_procfs(0x0, &(0x7f00000001c0)='fd/3\x00')
+ppoll(&(0x7f0000000080)=[{r0}], 0x1, &(0x7f00000000c0)={0x0, 0x3938700}, 0x0, 0x0)
+
+00:41:45 executing program 0:
+openat$sequencer(0xffffffffffffff9c, &(0x7f0000000000), 0x0, 0x0)
+r0 = syz_open_procfs(0x0, &(0x7f00000001c0)='fd/3\x00')
+ppoll(&(0x7f0000000080)=[{r0}], 0x1, &(0x7f00000000c0)={0x0, 0x3938700}, 0x0, 0x0)
+
+00:41:46 executing program 0:
+openat$sequencer(0xffffffffffffff9c, &(0x7f0000000000), 0x0, 0x0)
+r0 = syz_open_procfs(0x0, &(0x7f00000001c0)='fd/3\x00')
+ppoll(&(0x7f0000000080)=[{r0}], 0x1, &(0x7f00000000c0)={0x0, 0x3938700}, 0x0, 0x0)
+
+00:41:48 executing program 0:
+syz_mount_image$hfsplus(&(0x7f00000000c0), &(0x7f0000000540)='./file1\x00', 0x4, &(0x7f0000000200)={[{@uid}, {@nodecompose}, {@umask={'umask', 0x3d, 0x1}}, {@barrier}, {@force}, {@force}, {@gid}, {@umask={'umask', 0x3d, 0x3}}, {@nobarrier}, {}, {@nls={'nls', 0x3d, 'koi8-r'}}, {@type={'type', 0x3d, "433426cf"}}]}, 0xfc, 0x6e0, &(0x7f0000000580)="$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")
+syz_mount_image$hfsplus(&(0x7f00000000c0), &(0x7f0000000980)='\x13\x13w\xc5\xfc5\xd4\x14T\xd5\xd4\x1d)\xad\x1a`)Y\x81F\xe6\xbe\x16nA\xad\r\xbd@T\x03<\x9f3\xbb\xda\x82$\xa2\xf3\xd7r\xe7cnH\xb3<\xbfp\x83r\xe8\xf1\xb9\x93>\xc5\x12wC\xbe\"\x06 \x9e\xf0-\xf9\xcb\xf2\xf6\xe8\x80\xd38/\x00', 0x3a060, &(0x7f0000000bc0)=ANY=[@ANYRES16=0x0], 0x3, 0x6a4, &(0x7f0000000100)="$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")
+r0 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f00000001c0)='memory.swap.current\x00', 0x275a, 0x0)
+write$binfmt_script(r0, &(0x7f0000000500), 0xfea7)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x1, 0x10012, r0, 0x0)
+openat(0xffffffffffffff9c, &(0x7f0000000040)='.\x00', 0x0, 0x0)
+
+[  239.671909][ T8299] loop0: detected capacity change from 0 to 1024
+2024/05/23 00:41:50 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x1bb7, Ip:0x81bb4bc6}
+2024/05/23 00:41:50 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x1bf4, Ip:0x81bb4bd8}
+00:41:50 executing program 0:
+syz_mount_image$hfsplus(&(0x7f00000000c0), &(0x7f0000000540)='./file1\x00', 0x4, &(0x7f0000000200)={[{@uid}, {@nodecompose}, {@umask={'umask', 0x3d, 0x1}}, {@barrier}, {@force}, {@force}, {@gid}, {@umask={'umask', 0x3d, 0x3}}, {@nobarrier}, {}, {@nls={'nls', 0x3d, 'koi8-r'}}, {@type={'type', 0x3d, "433426cf"}}]}, 0xfc, 0x6e0, &(0x7f0000000580)="$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")
+syz_mount_image$hfsplus(&(0x7f00000000c0), &(0x7f0000000980)='\x13\x13w\xc5\xfc5\xd4\x14T\xd5\xd4\x1d)\xad\x1a`)Y\x81F\xe6\xbe\x16nA\xad\r\xbd@T\x03<\x9f3\xbb\xda\x82$\xa2\xf3\xd7r\xe7cnH\xb3<\xbfp\x83r\xe8\xf1\xb9\x93>\xc5\x12wC\xbe\"\x06 \x9e\xf0-\xf9\xcb\xf2\xf6\xe8\x80\xd38/\x00', 0x3a060, &(0x7f0000000bc0)=ANY=[@ANYRES16=0x0], 0x3, 0x6a4, &(0x7f0000000100)="$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")
+r0 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f00000001c0)='memory.swap.current\x00', 0x275a, 0x0)
+write$binfmt_script(r0, &(0x7f0000000500), 0xfea7)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x1, 0x10012, r0, 0x0)
+openat(0xffffffffffffff9c, &(0x7f0000000040)='.\x00', 0x0, 0x0)
+
+2024/05/23 00:41:50 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2b09, Ip:0x8191ced7}
+2024/05/23 00:41:50 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x363c, Ip:0x8191cec7}
+2024/05/23 00:41:50 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x1c13, Ip:0x81b665d9}
+2024/05/23 00:41:50 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x21fe, Ip:0x820068b5}
+2024/05/23 00:41:50 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x459b, Ip:0x81ff9258}
+2024/05/23 00:41:50 cfuCover: ipc.CustomCov{Id:0xc001, Val:0xc46, Ip:0x81b34cde}
+2024/05/23 00:41:50 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x1762, Ip:0x81b34cee}
+2024/05/23 00:41:50 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2151, Ip:0x8158bef7}
+2024/05/23 00:41:50 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/23 00:41:50 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3e9b, Ip:0x833c5e4c}
+2024/05/23 00:41:50 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+2024/05/23 00:41:50 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x598d, Ip:0x8158bee5}
+2024/05/23 00:41:50 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+2024/05/23 00:41:50 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x21fe, Ip:0x820068b5}
+2024/05/23 00:41:50 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3e9b, Ip:0x833c5e4c}
+2024/05/23 00:41:50 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+[  241.522124][ T8305] loop0: detected capacity change from 0 to 1024
+00:41:51 executing program 0:
+syz_mount_image$hfsplus(&(0x7f00000000c0), &(0x7f0000000540)='./file1\x00', 0x4, &(0x7f0000000200)={[{@uid}, {@nodecompose}, {@umask={'umask', 0x3d, 0x1}}, {@barrier}, {@force}, {@force}, {@gid}, {@umask={'umask', 0x3d, 0x3}}, {@nobarrier}, {}, {@nls={'nls', 0x3d, 'koi8-r'}}, {@type={'type', 0x3d, "433426cf"}}]}, 0xfc, 0x6e0, &(0x7f0000000580)="$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")
+syz_mount_image$hfsplus(&(0x7f00000000c0), &(0x7f0000000980)='\x13\x13w\xc5\xfc5\xd4\x14T\xd5\xd4\x1d)\xad\x1a`)Y\x81F\xe6\xbe\x16nA\xad\r\xbd@T\x03<\x9f3\xbb\xda\x82$\xa2\xf3\xd7r\xe7cnH\xb3<\xbfp\x83r\xe8\xf1\xb9\x93>\xc5\x12wC\xbe\"\x06 \x9e\xf0-\xf9\xcb\xf2\xf6\xe8\x80\xd38/\x00', 0x3a060, &(0x7f0000000bc0)=ANY=[@ANYRES16=0x0], 0x3, 0x6a4, &(0x7f0000000100)="$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")
+r0 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f00000001c0)='memory.swap.current\x00', 0x275a, 0x0)
+write$binfmt_script(r0, &(0x7f0000000500), 0xfea7)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x1, 0x10012, r0, 0x0)
+openat(0xffffffffffffff9c, &(0x7f0000000040)='.\x00', 0x0, 0x0)
+
+[  243.248727][ T8310] loop0: detected capacity change from 0 to 1024
+00:41:53 executing program 0:
+syz_mount_image$hfsplus(&(0x7f00000000c0), &(0x7f0000000540)='./file1\x00', 0x4, &(0x7f0000000200)={[{@uid}, {@nodecompose}, {@umask={'umask', 0x3d, 0x1}}, {@barrier}, {@force}, {@force}, {@gid}, {@umask={'umask', 0x3d, 0x3}}, {@nobarrier}, {}, {@nls={'nls', 0x3d, 'koi8-r'}}, {@type={'type', 0x3d, "433426cf"}}]}, 0xfc, 0x6e0, &(0x7f0000000580)="$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")
+syz_mount_image$hfsplus(&(0x7f00000000c0), &(0x7f0000000980)='\x13\x13w\xc5\xfc5\xd4\x14T\xd5\xd4\x1d)\xad\x1a`)Y\x81F\xe6\xbe\x16nA\xad\r\xbd@T\x03<\x9f3\xbb\xda\x82$\xa2\xf3\xd7r\xe7cnH\xb3<\xbfp\x83r\xe8\xf1\xb9\x93>\xc5\x12wC\xbe\"\x06 \x9e\xf0-\xf9\xcb\xf2\xf6\xe8\x80\xd38/\x00', 0x3a060, &(0x7f0000000bc0)=ANY=[@ANYRES16=0x0], 0x3, 0x6a4, &(0x7f0000000100)="$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")
+r0 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f00000001c0)='memory.swap.current\x00', 0x275a, 0x0)
+write$binfmt_script(r0, &(0x7f0000000500), 0xfea7)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x1, 0x10012, r0, 0x0)
+openat(0xffffffffffffff9c, &(0x7f0000000040)='.\x00', 0x0, 0x0)
+
+[  244.980633][ T8315] loop0: detected capacity change from 0 to 1024
+00:41:55 executing program 0:
+syz_mount_image$hfsplus(&(0x7f00000000c0), &(0x7f0000000540)='./file1\x00', 0x4, &(0x7f0000000200)={[{@uid}, {@nodecompose}, {@umask={'umask', 0x3d, 0x1}}, {@barrier}, {@force}, {@force}, {@gid}, {@umask={'umask', 0x3d, 0x3}}, {@nobarrier}, {}, {@nls={'nls', 0x3d, 'koi8-r'}}, {@type={'type', 0x3d, "433426cf"}}]}, 0xfc, 0x6e0, &(0x7f0000000580)="$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")
+syz_mount_image$hfsplus(&(0x7f00000000c0), &(0x7f0000000980)='\x13\x13w\xc5\xfc5\xd4\x14T\xd5\xd4\x1d)\xad\x1a`)Y\x81F\xe6\xbe\x16nA\xad\r\xbd@T\x03<\x9f3\xbb\xda\x82$\xa2\xf3\xd7r\xe7cnH\xb3<\xbfp\x83r\xe8\xf1\xb9\x93>\xc5\x12wC\xbe\"\x06 \x9e\xf0-\xf9\xcb\xf2\xf6\xe8\x80\xd38/\x00', 0x3a060, &(0x7f0000000bc0)=ANY=[@ANYRES16=0x0], 0x3, 0x6a4, &(0x7f0000000100)="$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")
+r0 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f00000001c0)='memory.swap.current\x00', 0x275a, 0x0)
+write$binfmt_script(r0, &(0x7f0000000500), 0xfea7)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x1, 0x10012, r0, 0x0)
+openat(0xffffffffffffff9c, &(0x7f0000000040)='.\x00', 0x0, 0x0)
+
+[  246.810040][ T8320] loop0: detected capacity change from 0 to 1024
+00:41:57 executing program 0:
+syz_mount_image$hfsplus(&(0x7f00000000c0), &(0x7f0000000540)='./file1\x00', 0x4, &(0x7f0000000200)={[{@uid}, {@nodecompose}, {@umask={'umask', 0x3d, 0x1}}, {@barrier}, {@force}, {@force}, {@gid}, {@umask={'umask', 0x3d, 0x3}}, {@nobarrier}, {}, {@nls={'nls', 0x3d, 'koi8-r'}}, {@type={'type', 0x3d, "433426cf"}}]}, 0xfc, 0x6e0, &(0x7f0000000580)="$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")
+syz_mount_image$hfsplus(&(0x7f00000000c0), &(0x7f0000000980)='\x13\x13w\xc5\xfc5\xd4\x14T\xd5\xd4\x1d)\xad\x1a`)Y\x81F\xe6\xbe\x16nA\xad\r\xbd@T\x03<\x9f3\xbb\xda\x82$\xa2\xf3\xd7r\xe7cnH\xb3<\xbfp\x83r\xe8\xf1\xb9\x93>\xc5\x12wC\xbe\"\x06 \x9e\xf0-\xf9\xcb\xf2\xf6\xe8\x80\xd38/\x00', 0x3a060, &(0x7f0000000bc0)=ANY=[@ANYRES16=0x0], 0x3, 0x6a4, &(0x7f0000000100)="$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")
+r0 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f00000001c0)='memory.swap.current\x00', 0x275a, 0x0)
+write$binfmt_script(r0, &(0x7f0000000500), 0xfea7)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x1, 0x10012, r0, 0x0)
+openat(0xffffffffffffff9c, &(0x7f0000000040)='.\x00', 0x0, 0x0)
+
+[  248.719061][ T8325] loop0: detected capacity change from 0 to 1024
+00:41:59 executing program 0:
+syz_mount_image$hfsplus(&(0x7f00000000c0), &(0x7f0000000540)='./file1\x00', 0x4, &(0x7f0000000200)={[{@uid}, {@nodecompose}, {@umask={'umask', 0x3d, 0x1}}, {@barrier}, {@force}, {@force}, {@gid}, {@umask={'umask', 0x3d, 0x3}}, {@nobarrier}, {}, {@nls={'nls', 0x3d, 'koi8-r'}}, {@type={'type', 0x3d, "433426cf"}}]}, 0xfc, 0x6e0, &(0x7f0000000580)="$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")
+syz_mount_image$hfsplus(&(0x7f00000000c0), &(0x7f0000000980)='\x13\x13w\xc5\xfc5\xd4\x14T\xd5\xd4\x1d)\xad\x1a`)Y\x81F\xe6\xbe\x16nA\xad\r\xbd@T\x03<\x9f3\xbb\xda\x82$\xa2\xf3\xd7r\xe7cnH\xb3<\xbfp\x83r\xe8\xf1\xb9\x93>\xc5\x12wC\xbe\"\x06 \x9e\xf0-\xf9\xcb\xf2\xf6\xe8\x80\xd38/\x00', 0x3a060, &(0x7f0000000bc0)=ANY=[@ANYRES16=0x0], 0x3, 0x6a4, &(0x7f0000000100)="$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")
+r0 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f00000001c0)='memory.swap.current\x00', 0x275a, 0x0)
+write$binfmt_script(r0, &(0x7f0000000500), 0xfea7)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x1, 0x10012, r0, 0x0)
+openat(0xffffffffffffff9c, &(0x7f0000000040)='.\x00', 0x0, 0x0)
+
+[  250.451745][ T8330] loop0: detected capacity change from 0 to 1024
+00:42:00 executing program 0:
+syz_mount_image$hfsplus(&(0x7f00000000c0), &(0x7f0000000540)='./file1\x00', 0x4, &(0x7f0000000200)={[{@uid}, {@nodecompose}, {@umask={'umask', 0x3d, 0x1}}, {@barrier}, {@force}, {@force}, {@gid}, {@umask={'umask', 0x3d, 0x3}}, {@nobarrier}, {}, {@nls={'nls', 0x3d, 'koi8-r'}}, {@type={'type', 0x3d, "433426cf"}}]}, 0xfc, 0x6e0, &(0x7f0000000580)="$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")
+syz_mount_image$hfsplus(&(0x7f00000000c0), &(0x7f0000000980)='\x13\x13w\xc5\xfc5\xd4\x14T\xd5\xd4\x1d)\xad\x1a`)Y\x81F\xe6\xbe\x16nA\xad\r\xbd@T\x03<\x9f3\xbb\xda\x82$\xa2\xf3\xd7r\xe7cnH\xb3<\xbfp\x83r\xe8\xf1\xb9\x93>\xc5\x12wC\xbe\"\x06 \x9e\xf0-\xf9\xcb\xf2\xf6\xe8\x80\xd38/\x00', 0x3a060, &(0x7f0000000bc0)=ANY=[@ANYRES16=0x0], 0x3, 0x6a4, &(0x7f0000000100)="$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")
+r0 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f00000001c0)='memory.swap.current\x00', 0x275a, 0x0)
+write$binfmt_script(r0, &(0x7f0000000500), 0xfea7)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x1, 0x10012, r0, 0x0)
+openat(0xffffffffffffff9c, &(0x7f0000000040)='.\x00', 0x0, 0x0)
+
+[  252.212852][ T8335] loop0: detected capacity change from 0 to 1024
+00:42:02 executing program 0:
+syz_mount_image$hfsplus(&(0x7f00000000c0), &(0x7f0000000540)='./file1\x00', 0x4, &(0x7f0000000200)={[{@uid}, {@nodecompose}, {@umask={'umask', 0x3d, 0x1}}, {@barrier}, {@force}, {@force}, {@gid}, {@umask={'umask', 0x3d, 0x3}}, {@nobarrier}, {}, {@nls={'nls', 0x3d, 'koi8-r'}}, {@type={'type', 0x3d, "433426cf"}}]}, 0xfc, 0x6e0, &(0x7f0000000580)="$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")
+syz_mount_image$hfsplus(&(0x7f00000000c0), &(0x7f0000000980)='\x13\x13w\xc5\xfc5\xd4\x14T\xd5\xd4\x1d)\xad\x1a`)Y\x81F\xe6\xbe\x16nA\xad\r\xbd@T\x03<\x9f3\xbb\xda\x82$\xa2\xf3\xd7r\xe7cnH\xb3<\xbfp\x83r\xe8\xf1\xb9\x93>\xc5\x12wC\xbe\"\x06 \x9e\xf0-\xf9\xcb\xf2\xf6\xe8\x80\xd38/\x00', 0x3a060, &(0x7f0000000bc0)=ANY=[@ANYRES16=0x0], 0x3, 0x6a4, &(0x7f0000000100)="$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")
+r0 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f00000001c0)='memory.swap.current\x00', 0x275a, 0x0)
+write$binfmt_script(r0, &(0x7f0000000500), 0xfea7)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x1, 0x10012, r0, 0x0)
+openat(0xffffffffffffff9c, &(0x7f0000000040)='.\x00', 0x0, 0x0)
+
+[  253.947820][ T8340] loop0: detected capacity change from 0 to 1024
+00:42:04 executing program 0:
+syz_mount_image$hfsplus(&(0x7f00000000c0), &(0x7f0000000540)='./file1\x00', 0x4, &(0x7f0000000200)={[{@uid}, {@nodecompose}, {@umask={'umask', 0x3d, 0x1}}, {@barrier}, {@force}, {@force}, {@gid}, {@umask={'umask', 0x3d, 0x3}}, {@nobarrier}, {}, {@nls={'nls', 0x3d, 'koi8-r'}}, {@type={'type', 0x3d, "433426cf"}}]}, 0xfc, 0x6e0, &(0x7f0000000580)="$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")
+syz_mount_image$hfsplus(&(0x7f00000000c0), &(0x7f0000000980)='\x13\x13w\xc5\xfc5\xd4\x14T\xd5\xd4\x1d)\xad\x1a`)Y\x81F\xe6\xbe\x16nA\xad\r\xbd@T\x03<\x9f3\xbb\xda\x82$\xa2\xf3\xd7r\xe7cnH\xb3<\xbfp\x83r\xe8\xf1\xb9\x93>\xc5\x12wC\xbe\"\x06 \x9e\xf0-\xf9\xcb\xf2\xf6\xe8\x80\xd38/\x00', 0x3a060, &(0x7f0000000bc0)=ANY=[@ANYRES16=0x0], 0x3, 0x6a4, &(0x7f0000000100)="$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")
+r0 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f00000001c0)='memory.swap.current\x00', 0x275a, 0x0)
+write$binfmt_script(r0, &(0x7f0000000500), 0xfea7)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x1, 0x10012, r0, 0x0)
+openat(0xffffffffffffff9c, &(0x7f0000000040)='.\x00', 0x0, 0x0)
+
+[  255.692685][ T8345] loop0: detected capacity change from 0 to 1024
+00:42:06 executing program 0:
+r0 = syz_init_net_socket$rose(0xb, 0x5, 0x0)
+bind$rose(r0, 0x0, 0x0)
+
+00:42:07 executing program 0:
+r0 = syz_init_net_socket$rose(0xb, 0x5, 0x0)
+bind$rose(r0, 0x0, 0x0)
+
+2024/05/23 00:42:07 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+00:42:09 executing program 0:
+r0 = syz_init_net_socket$rose(0xb, 0x5, 0x0)
+bind$rose(r0, 0x0, 0x0)
+
+00:42:10 executing program 0:
+r0 = syz_init_net_socket$rose(0xb, 0x5, 0x0)
+bind$rose(r0, 0x0, 0x0)
+
+00:42:12 executing program 0:
+r0 = syz_init_net_socket$rose(0xb, 0x5, 0x0)
+bind$rose(r0, 0x0, 0x0)
+
+00:42:13 executing program 0:
+r0 = syz_init_net_socket$rose(0xb, 0x5, 0x0)
+bind$rose(r0, 0x0, 0x0)
+
+00:42:15 executing program 0:
+r0 = syz_init_net_socket$rose(0xb, 0x5, 0x0)
+bind$rose(r0, 0x0, 0x0)
+
+[  267.205332][ T1219] ieee802154 phy0 wpan0: encryption failed: -22
+[  267.206152][ T1219] ieee802154 phy1 wpan1: encryption failed: -22
+00:42:17 executing program 0:
+syz_mount_image$ext4(&(0x7f00000004c0)='ext4\x00', &(0x7f00000000c0)='./bus\x00', 0x0, &(0x7f0000000240), 0x21, 0x4a6, &(0x7f0000000a40)="$eJzs3cFPG9kZAPBvBgiEkEDaHNqqbdI0bVpFscFJUJRTemlVRZGqRj31kFBwEMLGCJs00BzI/1CpkXpq/4QeKvVQKae97233tpfsYaXsbrSrsNIevJqxIYRgYDcES/j3k55m3jzj7z2sec98gF8APetcRKxFxLGIuBcRo+3rSbvEzVbJHvfyxaPp9RePppNoNu98luTt2bXY8jWZE+3nHIqIP/4u4i/Jm3HrK6vzU5VKealdLzaqi8X6yurluerUbHm2vFAqTU5Mjl+/cq10YGM9W/3P89/O3frT///3k2fvr/36b1m3RtptW8dxkFpDH9iMk+mPiFvvIlgX9LXHc6zbHeE7SSPiexFxPr//R6MvfzUBgKOs2RyN5ujWOgBw1KV5DixJC+1cwEikaaHQyuGdieG0Uqs3Lt2vLS/MtHJlYzGQ3p+rlMfbucKxGEiy+kR+/qpe2la/EhGnI+Lvg8fzemG6Vpnp5hsfAOhhJ7at/18OttZ/AOCIG+p2BwCAQ2f9B4DeY/0HgN5j/QeA3mP9B4DeY/0HgN5j/QeAnvKH27ez0lxvf/71zIOV5fnag8sz5fp8obo8XZiuLS0WZmu12fwze6p7PV+lVlucuBrLD4uNcr1RrK+s3q3Wlhcad/PP9b5bHjiUUQEAuzl99umHSUSs3Tiel9iyl4O1Go62tNsdALqmr9sdALrGbl/Qu/yMD+ywRe9rOv6J0JOD7wtwOC7+UP4fepX8P/Qu+X/oXfL/0LuazcSe/wDQY+T4Ab//BwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgG9vJC9JWmjvBT4SaVooRJyMiLEYSO7PVcrjEXEqIj4YHBjM6hPd7jQA8JbST5L2/l8XRy+MbG89lnw1mB8j4q//vPOPh1ONxtJEdv3zzeuNJ+3rpW70HwDYy8Y6vbGOb3j54tH0RjnM/jz/TWtz0Szueru0WvqjPz8OxUBEDH+RtOst2fuVvgOIv/Y4In6w0/iTPDcy1t75dHv8LPbJQ42fvhY/zdtax+x78f0D6Av0mqfZ/HNzp/svjXP5cef7fyifod7exvy3/sb8l27Of30d5r9z+41x9b3fd2x7HPGj/p3iJ5vxkw7xL+wz/kc//un5Tm3Nf0VcjJ3jb41VbFQXi/WV1ctz1anZ8mx5oVSanJgcv37lWqmY56iLG5nqN31649Kp3cY/3CH+0B7j/8U+x//vr+/9+We7xP/Vz3d+/c/sEj9bE3+5z/hTw//tuH13Fn+mw/j3ev0v7TP+s49XZ/b5UADgENRXVuenKpXykhMnTpxsnnR7ZgLetVc3fbd7AgAAAAAAAAAAAAAAdHIY/07U7TECAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwdH0TAAD//yyP2UE=")
+creat(0x0, 0x0)
+r0 = openat$random(0xffffffffffffff9c, &(0x7f00000000c0), 0x0, 0x0)
+r1 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000080)='cpu.stat\x00', 0x275a, 0x0)
+write$UHID_CREATE2(r1, &(0x7f0000000040)=ANY=[@ANYRES64], 0x118)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x5, 0x12, r1, 0x0)
+ioctl$RNDADDENTROPY(r0, 0x40045201, &(0x7f0000000000)=ANY=[])
+
+[  268.560232][ T8372] loop0: detected capacity change from 0 to 512
+[  268.598970][ T8372] EXT4-fs (loop0): mounted filesystem 00000000-0000-0000-0000-000000000000 r/w without journal. Quota mode: writeback.
+[  268.600742][ T8372] ext4 filesystem being mounted at /syzkaller-testdir1326646824/syzkaller.M3eG3a/28/bus supports timestamps until 2038-01-19 (0x7fffffff)
+2024/05/23 00:42:18 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x1bb7, Ip:0x81bb4bc6}
+00:42:18 executing program 0:
+syz_mount_image$ext4(&(0x7f00000004c0)='ext4\x00', &(0x7f00000000c0)='./bus\x00', 0x0, &(0x7f0000000240), 0x21, 0x4a6, &(0x7f0000000a40)="$eJzs3cFPG9kZAPBvBgiEkEDaHNqqbdI0bVpFscFJUJRTemlVRZGqRj31kFBwEMLGCJs00BzI/1CpkXpq/4QeKvVQKae97233tpfsYaXsbrSrsNIevJqxIYRgYDcES/j3k55m3jzj7z2sec98gF8APetcRKxFxLGIuBcRo+3rSbvEzVbJHvfyxaPp9RePppNoNu98luTt2bXY8jWZE+3nHIqIP/4u4i/Jm3HrK6vzU5VKealdLzaqi8X6yurluerUbHm2vFAqTU5Mjl+/cq10YGM9W/3P89/O3frT///3k2fvr/36b1m3RtptW8dxkFpDH9iMk+mPiFvvIlgX9LXHc6zbHeE7SSPiexFxPr//R6MvfzUBgKOs2RyN5ujWOgBw1KV5DixJC+1cwEikaaHQyuGdieG0Uqs3Lt2vLS/MtHJlYzGQ3p+rlMfbucKxGEiy+kR+/qpe2la/EhGnI+Lvg8fzemG6Vpnp5hsfAOhhJ7at/18OttZ/AOCIG+p2BwCAQ2f9B4DeY/0HgN5j/QeA3mP9B4DeY/0HgN5j/QeAnvKH27ez0lxvf/71zIOV5fnag8sz5fp8obo8XZiuLS0WZmu12fwze6p7PV+lVlucuBrLD4uNcr1RrK+s3q3Wlhcad/PP9b5bHjiUUQEAuzl99umHSUSs3Tiel9iyl4O1Go62tNsdALqmr9sdALrGbl/Qu/yMD+ywRe9rOv6J0JOD7wtwOC7+UP4fepX8P/Qu+X/oXfL/0LuazcSe/wDQY+T4Ab//BwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgG9vJC9JWmjvBT4SaVooRJyMiLEYSO7PVcrjEXEqIj4YHBjM6hPd7jQA8JbST5L2/l8XRy+MbG89lnw1mB8j4q//vPOPh1ONxtJEdv3zzeuNJ+3rpW70HwDYy8Y6vbGOb3j54tH0RjnM/jz/TWtz0Szueru0WvqjPz8OxUBEDH+RtOst2fuVvgOIv/Y4In6w0/iTPDcy1t75dHv8LPbJQ42fvhY/zdtax+x78f0D6Av0mqfZ/HNzp/svjXP5cef7fyifod7exvy3/sb8l27Of30d5r9z+41x9b3fd2x7HPGj/p3iJ5vxkw7xL+wz/kc//un5Tm3Nf0VcjJ3jb41VbFQXi/WV1ctz1anZ8mx5oVSanJgcv37lWqmY56iLG5nqN31649Kp3cY/3CH+0B7j/8U+x//vr+/9+We7xP/Vz3d+/c/sEj9bE3+5z/hTw//tuH13Fn+mw/j3ev0v7TP+s49XZ/b5UADgENRXVuenKpXykhMnTpxsnnR7ZgLetVc3fbd7AgAAAAAAAAAAAAAAdHIY/07U7TECAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwdH0TAAD//yyP2UE=")
+creat(0x0, 0x0)
+r0 = openat$random(0xffffffffffffff9c, &(0x7f00000000c0), 0x0, 0x0)
+r1 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000080)='cpu.stat\x00', 0x275a, 0x0)
+write$UHID_CREATE2(r1, &(0x7f0000000040)=ANY=[@ANYRES64], 0x118)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x5, 0x12, r1, 0x0)
+ioctl$RNDADDENTROPY(r0, 0x40045201, &(0x7f0000000000)=ANY=[])
+
+2024/05/23 00:42:18 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x1bf4, Ip:0x81bb4bd8}
+2024/05/23 00:42:18 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2b09, Ip:0x8191ced7}
+2024/05/23 00:42:18 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x363c, Ip:0x8191cec7}
+2024/05/23 00:42:18 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x1c13, Ip:0x81b665d9}
+2024/05/23 00:42:18 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x2252, Ip:0x81f1fe1e}
+2024/05/23 00:42:18 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+2024/05/23 00:42:18 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+2024/05/23 00:42:18 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+2024/05/23 00:42:18 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x5547, Ip:0x81ebd996}
+2024/05/23 00:42:18 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3e9b, Ip:0x833c5e4c}
+2024/05/23 00:42:18 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x5280, Ip:0x8394dd1c}
+[  269.601434][ T8028] EXT4-fs (loop0): unmounting filesystem 00000000-0000-0000-0000-000000000000.
+[  270.376317][ T8380] loop0: detected capacity change from 0 to 512
+[  270.408099][ T8380] EXT4-fs (loop0): mounted filesystem 00000000-0000-0000-0000-000000000000 r/w without journal. Quota mode: writeback.
+[  270.409944][ T8380] ext4 filesystem being mounted at /syzkaller-testdir1326646824/syzkaller.M3eG3a/29/bus supports timestamps until 2038-01-19 (0x7fffffff)
+00:42:20 executing program 0:
+syz_mount_image$ext4(&(0x7f00000004c0)='ext4\x00', &(0x7f00000000c0)='./bus\x00', 0x0, &(0x7f0000000240), 0x21, 0x4a6, &(0x7f0000000a40)="$eJzs3cFPG9kZAPBvBgiEkEDaHNqqbdI0bVpFscFJUJRTemlVRZGqRj31kFBwEMLGCJs00BzI/1CpkXpq/4QeKvVQKae97233tpfsYaXsbrSrsNIevJqxIYRgYDcES/j3k55m3jzj7z2sec98gF8APetcRKxFxLGIuBcRo+3rSbvEzVbJHvfyxaPp9RePppNoNu98luTt2bXY8jWZE+3nHIqIP/4u4i/Jm3HrK6vzU5VKealdLzaqi8X6yurluerUbHm2vFAqTU5Mjl+/cq10YGM9W/3P89/O3frT///3k2fvr/36b1m3RtptW8dxkFpDH9iMk+mPiFvvIlgX9LXHc6zbHeE7SSPiexFxPr//R6MvfzUBgKOs2RyN5ujWOgBw1KV5DixJC+1cwEikaaHQyuGdieG0Uqs3Lt2vLS/MtHJlYzGQ3p+rlMfbucKxGEiy+kR+/qpe2la/EhGnI+Lvg8fzemG6Vpnp5hsfAOhhJ7at/18OttZ/AOCIG+p2BwCAQ2f9B4DeY/0HgN5j/QeA3mP9B4DeY/0HgN5j/QeAnvKH27ez0lxvf/71zIOV5fnag8sz5fp8obo8XZiuLS0WZmu12fwze6p7PV+lVlucuBrLD4uNcr1RrK+s3q3Wlhcad/PP9b5bHjiUUQEAuzl99umHSUSs3Tiel9iyl4O1Go62tNsdALqmr9sdALrGbl/Qu/yMD+ywRe9rOv6J0JOD7wtwOC7+UP4fepX8P/Qu+X/oXfL/0LuazcSe/wDQY+T4Ab//BwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgG9vJC9JWmjvBT4SaVooRJyMiLEYSO7PVcrjEXEqIj4YHBjM6hPd7jQA8JbST5L2/l8XRy+MbG89lnw1mB8j4q//vPOPh1ONxtJEdv3zzeuNJ+3rpW70HwDYy8Y6vbGOb3j54tH0RjnM/jz/TWtz0Szueru0WvqjPz8OxUBEDH+RtOst2fuVvgOIv/Y4In6w0/iTPDcy1t75dHv8LPbJQ42fvhY/zdtax+x78f0D6Av0mqfZ/HNzp/svjXP5cef7fyifod7exvy3/sb8l27Of30d5r9z+41x9b3fd2x7HPGj/p3iJ5vxkw7xL+wz/kc//un5Tm3Nf0VcjJ3jb41VbFQXi/WV1ctz1anZ8mx5oVSanJgcv37lWqmY56iLG5nqN31649Kp3cY/3CH+0B7j/8U+x//vr+/9+We7xP/Vz3d+/c/sEj9bE3+5z/hTw//tuH13Fn+mw/j3ev0v7TP+s49XZ/b5UADgENRXVuenKpXykhMnTpxsnnR7ZgLetVc3fbd7AgAAAAAAAAAAAAAAdHIY/07U7TECAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwdH0TAAD//yyP2UE=")
+creat(0x0, 0x0)
+r0 = openat$random(0xffffffffffffff9c, &(0x7f00000000c0), 0x0, 0x0)
+r1 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000080)='cpu.stat\x00', 0x275a, 0x0)
+write$UHID_CREATE2(r1, &(0x7f0000000040)=ANY=[@ANYRES64], 0x118)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x5, 0x12, r1, 0x0)
+ioctl$RNDADDENTROPY(r0, 0x40045201, &(0x7f0000000000)=ANY=[])
+
+[  271.378887][ T8028] EXT4-fs (loop0): unmounting filesystem 00000000-0000-0000-0000-000000000000.
+[  272.154286][ T8387] loop0: detected capacity change from 0 to 512
+[  272.180677][ T8387] EXT4-fs (loop0): mounted filesystem 00000000-0000-0000-0000-000000000000 r/w without journal. Quota mode: writeback.
+[  272.182460][ T8387] ext4 filesystem being mounted at /syzkaller-testdir1326646824/syzkaller.M3eG3a/30/bus supports timestamps until 2038-01-19 (0x7fffffff)
+00:42:23 executing program 0:
+syz_mount_image$ext4(&(0x7f00000004c0)='ext4\x00', &(0x7f00000000c0)='./bus\x00', 0x0, &(0x7f0000000240), 0x21, 0x4a6, &(0x7f0000000a40)="$eJzs3cFPG9kZAPBvBgiEkEDaHNqqbdI0bVpFscFJUJRTemlVRZGqRj31kFBwEMLGCJs00BzI/1CpkXpq/4QeKvVQKae97233tpfsYaXsbrSrsNIevJqxIYRgYDcES/j3k55m3jzj7z2sec98gF8APetcRKxFxLGIuBcRo+3rSbvEzVbJHvfyxaPp9RePppNoNu98luTt2bXY8jWZE+3nHIqIP/4u4i/Jm3HrK6vzU5VKealdLzaqi8X6yurluerUbHm2vFAqTU5Mjl+/cq10YGM9W/3P89/O3frT///3k2fvr/36b1m3RtptW8dxkFpDH9iMk+mPiFvvIlgX9LXHc6zbHeE7SSPiexFxPr//R6MvfzUBgKOs2RyN5ujWOgBw1KV5DixJC+1cwEikaaHQyuGdieG0Uqs3Lt2vLS/MtHJlYzGQ3p+rlMfbucKxGEiy+kR+/qpe2la/EhGnI+Lvg8fzemG6Vpnp5hsfAOhhJ7at/18OttZ/AOCIG+p2BwCAQ2f9B4DeY/0HgN5j/QeA3mP9B4DeY/0HgN5j/QeAnvKH27ez0lxvf/71zIOV5fnag8sz5fp8obo8XZiuLS0WZmu12fwze6p7PV+lVlucuBrLD4uNcr1RrK+s3q3Wlhcad/PP9b5bHjiUUQEAuzl99umHSUSs3Tiel9iyl4O1Go62tNsdALqmr9sdALrGbl/Qu/yMD+ywRe9rOv6J0JOD7wtwOC7+UP4fepX8P/Qu+X/oXfL/0LuazcSe/wDQY+T4Ab//BwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgG9vJC9JWmjvBT4SaVooRJyMiLEYSO7PVcrjEXEqIj4YHBjM6hPd7jQA8JbST5L2/l8XRy+MbG89lnw1mB8j4q//vPOPh1ONxtJEdv3zzeuNJ+3rpW70HwDYy8Y6vbGOb3j54tH0RjnM/jz/TWtz0Szueru0WvqjPz8OxUBEDH+RtOst2fuVvgOIv/Y4In6w0/iTPDcy1t75dHv8LPbJQ42fvhY/zdtax+x78f0D6Av0mqfZ/HNzp/svjXP5cef7fyifod7exvy3/sb8l27Of30d5r9z+41x9b3fd2x7HPGj/p3iJ5vxkw7xL+wz/kc//un5Tm3Nf0VcjJ3jb41VbFQXi/WV1ctz1anZ8mx5oVSanJgcv37lWqmY56iLG5nqN31649Kp3cY/3CH+0B7j/8U+x//vr+/9+We7xP/Vz3d+/c/sEj9bE3+5z/hTw//tuH13Fn+mw/j3ev0v7TP+s49XZ/b5UADgENRXVuenKpXykhMnTpxsnnR7ZgLetVc3fbd7AgAAAAAAAAAAAAAAdHIY/07U7TECAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwdH0TAAD//yyP2UE=")
+creat(0x0, 0x0)
+r0 = openat$random(0xffffffffffffff9c, &(0x7f00000000c0), 0x0, 0x0)
+r1 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000080)='cpu.stat\x00', 0x275a, 0x0)
+write$UHID_CREATE2(r1, &(0x7f0000000040)=ANY=[@ANYRES64], 0x118)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x5, 0x12, r1, 0x0)
+ioctl$RNDADDENTROPY(r0, 0x40045201, &(0x7f0000000000)=ANY=[])
+
+[  273.664668][ T8028] EXT4-fs (loop0): unmounting filesystem 00000000-0000-0000-0000-000000000000.
+[  274.429052][ T8395] loop0: detected capacity change from 0 to 512
+[  274.459911][ T8395] EXT4-fs (loop0): mounted filesystem 00000000-0000-0000-0000-000000000000 r/w without journal. Quota mode: writeback.
+[  274.461731][ T8395] ext4 filesystem being mounted at /syzkaller-testdir1326646824/syzkaller.M3eG3a/31/bus supports timestamps until 2038-01-19 (0x7fffffff)
+[  275.398268][ T8028] EXT4-fs (loop0): unmounting filesystem 00000000-0000-0000-0000-000000000000.
+00:42:24 executing program 0:
+syz_mount_image$ext4(&(0x7f00000004c0)='ext4\x00', &(0x7f00000000c0)='./bus\x00', 0x0, &(0x7f0000000240), 0x21, 0x4a6, &(0x7f0000000a40)="$eJzs3cFPG9kZAPBvBgiEkEDaHNqqbdI0bVpFscFJUJRTemlVRZGqRj31kFBwEMLGCJs00BzI/1CpkXpq/4QeKvVQKae97233tpfsYaXsbrSrsNIevJqxIYRgYDcES/j3k55m3jzj7z2sec98gF8APetcRKxFxLGIuBcRo+3rSbvEzVbJHvfyxaPp9RePppNoNu98luTt2bXY8jWZE+3nHIqIP/4u4i/Jm3HrK6vzU5VKealdLzaqi8X6yurluerUbHm2vFAqTU5Mjl+/cq10YGM9W/3P89/O3frT///3k2fvr/36b1m3RtptW8dxkFpDH9iMk+mPiFvvIlgX9LXHc6zbHeE7SSPiexFxPr//R6MvfzUBgKOs2RyN5ujWOgBw1KV5DixJC+1cwEikaaHQyuGdieG0Uqs3Lt2vLS/MtHJlYzGQ3p+rlMfbucKxGEiy+kR+/qpe2la/EhGnI+Lvg8fzemG6Vpnp5hsfAOhhJ7at/18OttZ/AOCIG+p2BwCAQ2f9B4DeY/0HgN5j/QeA3mP9B4DeY/0HgN5j/QeAnvKH27ez0lxvf/71zIOV5fnag8sz5fp8obo8XZiuLS0WZmu12fwze6p7PV+lVlucuBrLD4uNcr1RrK+s3q3Wlhcad/PP9b5bHjiUUQEAuzl99umHSUSs3Tiel9iyl4O1Go62tNsdALqmr9sdALrGbl/Qu/yMD+ywRe9rOv6J0JOD7wtwOC7+UP4fepX8P/Qu+X/oXfL/0LuazcSe/wDQY+T4Ab//BwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgG9vJC9JWmjvBT4SaVooRJyMiLEYSO7PVcrjEXEqIj4YHBjM6hPd7jQA8JbST5L2/l8XRy+MbG89lnw1mB8j4q//vPOPh1ONxtJEdv3zzeuNJ+3rpW70HwDYy8Y6vbGOb3j54tH0RjnM/jz/TWtz0Szueru0WvqjPz8OxUBEDH+RtOst2fuVvgOIv/Y4In6w0/iTPDcy1t75dHv8LPbJQ42fvhY/zdtax+x78f0D6Av0mqfZ/HNzp/svjXP5cef7fyifod7exvy3/sb8l27Of30d5r9z+41x9b3fd2x7HPGj/p3iJ5vxkw7xL+wz/kc//un5Tm3Nf0VcjJ3jb41VbFQXi/WV1ctz1anZ8mx5oVSanJgcv37lWqmY56iLG5nqN31649Kp3cY/3CH+0B7j/8U+x//vr+/9+We7xP/Vz3d+/c/sEj9bE3+5z/hTw//tuH13Fn+mw/j3ev0v7TP+s49XZ/b5UADgENRXVuenKpXykhMnTpxsnnR7ZgLetVc3fbd7AgAAAAAAAAAAAAAAdHIY/07U7TECAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwdH0TAAD//yyP2UE=")
+creat(0x0, 0x0)
+r0 = openat$random(0xffffffffffffff9c, &(0x7f00000000c0), 0x0, 0x0)
+r1 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000080)='cpu.stat\x00', 0x275a, 0x0)
+write$UHID_CREATE2(r1, &(0x7f0000000040)=ANY=[@ANYRES64], 0x118)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x5, 0x12, r1, 0x0)
+ioctl$RNDADDENTROPY(r0, 0x40045201, &(0x7f0000000000)=ANY=[])
+
+[  276.284878][ T8404] loop0: detected capacity change from 0 to 512
+[  276.308944][ T8404] EXT4-fs (loop0): mounted filesystem 00000000-0000-0000-0000-000000000000 r/w without journal. Quota mode: writeback.
+[  276.310733][ T8404] ext4 filesystem being mounted at /syzkaller-testdir1326646824/syzkaller.M3eG3a/32/bus supports timestamps until 2038-01-19 (0x7fffffff)
+00:42:26 executing program 0:
+syz_mount_image$ext4(&(0x7f00000004c0)='ext4\x00', &(0x7f00000000c0)='./bus\x00', 0x0, &(0x7f0000000240), 0x21, 0x4a6, &(0x7f0000000a40)="$eJzs3cFPG9kZAPBvBgiEkEDaHNqqbdI0bVpFscFJUJRTemlVRZGqRj31kFBwEMLGCJs00BzI/1CpkXpq/4QeKvVQKae97233tpfsYaXsbrSrsNIevJqxIYRgYDcES/j3k55m3jzj7z2sec98gF8APetcRKxFxLGIuBcRo+3rSbvEzVbJHvfyxaPp9RePppNoNu98luTt2bXY8jWZE+3nHIqIP/4u4i/Jm3HrK6vzU5VKealdLzaqi8X6yurluerUbHm2vFAqTU5Mjl+/cq10YGM9W/3P89/O3frT///3k2fvr/36b1m3RtptW8dxkFpDH9iMk+mPiFvvIlgX9LXHc6zbHeE7SSPiexFxPr//R6MvfzUBgKOs2RyN5ujWOgBw1KV5DixJC+1cwEikaaHQyuGdieG0Uqs3Lt2vLS/MtHJlYzGQ3p+rlMfbucKxGEiy+kR+/qpe2la/EhGnI+Lvg8fzemG6Vpnp5hsfAOhhJ7at/18OttZ/AOCIG+p2BwCAQ2f9B4DeY/0HgN5j/QeA3mP9B4DeY/0HgN5j/QeAnvKH27ez0lxvf/71zIOV5fnag8sz5fp8obo8XZiuLS0WZmu12fwze6p7PV+lVlucuBrLD4uNcr1RrK+s3q3Wlhcad/PP9b5bHjiUUQEAuzl99umHSUSs3Tiel9iyl4O1Go62tNsdALqmr9sdALrGbl/Qu/yMD+ywRe9rOv6J0JOD7wtwOC7+UP4fepX8P/Qu+X/oXfL/0LuazcSe/wDQY+T4Ab//BwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgG9vJC9JWmjvBT4SaVooRJyMiLEYSO7PVcrjEXEqIj4YHBjM6hPd7jQA8JbST5L2/l8XRy+MbG89lnw1mB8j4q//vPOPh1ONxtJEdv3zzeuNJ+3rpW70HwDYy8Y6vbGOb3j54tH0RjnM/jz/TWtz0Szueru0WvqjPz8OxUBEDH+RtOst2fuVvgOIv/Y4In6w0/iTPDcy1t75dHv8LPbJQ42fvhY/zdtax+x78f0D6Av0mqfZ/HNzp/svjXP5cef7fyifod7exvy3/sb8l27Of30d5r9z+41x9b3fd2x7HPGj/p3iJ5vxkw7xL+wz/kc//un5Tm3Nf0VcjJ3jb41VbFQXi/WV1ctz1anZ8mx5oVSanJgcv37lWqmY56iLG5nqN31649Kp3cY/3CH+0B7j/8U+x//vr+/9+We7xP/Vz3d+/c/sEj9bE3+5z/hTw//tuH13Fn+mw/j3ev0v7TP+s49XZ/b5UADgENRXVuenKpXykhMnTpxsnnR7ZgLetVc3fbd7AgAAAAAAAAAAAAAAdHIY/07U7TECAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwdH0TAAD//yyP2UE=")
+creat(0x0, 0x0)
+r0 = openat$random(0xffffffffffffff9c, &(0x7f00000000c0), 0x0, 0x0)
+r1 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000080)='cpu.stat\x00', 0x275a, 0x0)
+write$UHID_CREATE2(r1, &(0x7f0000000040)=ANY=[@ANYRES64], 0x118)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x5, 0x12, r1, 0x0)
+ioctl$RNDADDENTROPY(r0, 0x40045201, &(0x7f0000000000)=ANY=[])
+
+[  277.244845][ T8028] EXT4-fs (loop0): unmounting filesystem 00000000-0000-0000-0000-000000000000.
+[  277.988332][ T8411] loop0: detected capacity change from 0 to 512
+[  278.020103][ T8411] EXT4-fs (loop0): mounted filesystem 00000000-0000-0000-0000-000000000000 r/w without journal. Quota mode: writeback.
+[  278.021840][ T8411] ext4 filesystem being mounted at /syzkaller-testdir1326646824/syzkaller.M3eG3a/33/bus supports timestamps until 2038-01-19 (0x7fffffff)
+00:42:28 executing program 0:
+syz_mount_image$ext4(&(0x7f00000004c0)='ext4\x00', &(0x7f00000000c0)='./bus\x00', 0x0, &(0x7f0000000240), 0x21, 0x4a6, &(0x7f0000000a40)="$eJzs3cFPG9kZAPBvBgiEkEDaHNqqbdI0bVpFscFJUJRTemlVRZGqRj31kFBwEMLGCJs00BzI/1CpkXpq/4QeKvVQKae97233tpfsYaXsbrSrsNIevJqxIYRgYDcES/j3k55m3jzj7z2sec98gF8APetcRKxFxLGIuBcRo+3rSbvEzVbJHvfyxaPp9RePppNoNu98luTt2bXY8jWZE+3nHIqIP/4u4i/Jm3HrK6vzU5VKealdLzaqi8X6yurluerUbHm2vFAqTU5Mjl+/cq10YGM9W/3P89/O3frT///3k2fvr/36b1m3RtptW8dxkFpDH9iMk+mPiFvvIlgX9LXHc6zbHeE7SSPiexFxPr//R6MvfzUBgKOs2RyN5ujWOgBw1KV5DixJC+1cwEikaaHQyuGdieG0Uqs3Lt2vLS/MtHJlYzGQ3p+rlMfbucKxGEiy+kR+/qpe2la/EhGnI+Lvg8fzemG6Vpnp5hsfAOhhJ7at/18OttZ/AOCIG+p2BwCAQ2f9B4DeY/0HgN5j/QeA3mP9B4DeY/0HgN5j/QeAnvKH27ez0lxvf/71zIOV5fnag8sz5fp8obo8XZiuLS0WZmu12fwze6p7PV+lVlucuBrLD4uNcr1RrK+s3q3Wlhcad/PP9b5bHjiUUQEAuzl99umHSUSs3Tiel9iyl4O1Go62tNsdALqmr9sdALrGbl/Qu/yMD+ywRe9rOv6J0JOD7wtwOC7+UP4fepX8P/Qu+X/oXfL/0LuazcSe/wDQY+T4Ab//BwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgG9vJC9JWmjvBT4SaVooRJyMiLEYSO7PVcrjEXEqIj4YHBjM6hPd7jQA8JbST5L2/l8XRy+MbG89lnw1mB8j4q//vPOPh1ONxtJEdv3zzeuNJ+3rpW70HwDYy8Y6vbGOb3j54tH0RjnM/jz/TWtz0Szueru0WvqjPz8OxUBEDH+RtOst2fuVvgOIv/Y4In6w0/iTPDcy1t75dHv8LPbJQ42fvhY/zdtax+x78f0D6Av0mqfZ/HNzp/svjXP5cef7fyifod7exvy3/sb8l27Of30d5r9z+41x9b3fd2x7HPGj/p3iJ5vxkw7xL+wz/kc//un5Tm3Nf0VcjJ3jb41VbFQXi/WV1ctz1anZ8mx5oVSanJgcv37lWqmY56iLG5nqN31649Kp3cY/3CH+0B7j/8U+x//vr+/9+We7xP/Vz3d+/c/sEj9bE3+5z/hTw//tuH13Fn+mw/j3ev0v7TP+s49XZ/b5UADgENRXVuenKpXykhMnTpxsnnR7ZgLetVc3fbd7AgAAAAAAAAAAAAAAdHIY/07U7TECAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwdH0TAAD//yyP2UE=")
+creat(0x0, 0x0)
+r0 = openat$random(0xffffffffffffff9c, &(0x7f00000000c0), 0x0, 0x0)
+r1 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000080)='cpu.stat\x00', 0x275a, 0x0)
+write$UHID_CREATE2(r1, &(0x7f0000000040)=ANY=[@ANYRES64], 0x118)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x5, 0x12, r1, 0x0)
+ioctl$RNDADDENTROPY(r0, 0x40045201, &(0x7f0000000000)=ANY=[])
+
+[  278.938908][ T8028] EXT4-fs (loop0): unmounting filesystem 00000000-0000-0000-0000-000000000000.
+[  279.681128][ T8418] loop0: detected capacity change from 0 to 512
+[  279.708124][ T8418] EXT4-fs (loop0): mounted filesystem 00000000-0000-0000-0000-000000000000 r/w without journal. Quota mode: writeback.
+[  279.709874][ T8418] ext4 filesystem being mounted at /syzkaller-testdir1326646824/syzkaller.M3eG3a/34/bus supports timestamps until 2038-01-19 (0x7fffffff)
+[  280.660203][ T8028] EXT4-fs (loop0): unmounting filesystem 00000000-0000-0000-0000-000000000000.
+00:42:30 executing program 0:
+syz_mount_image$ext4(&(0x7f00000004c0)='ext4\x00', &(0x7f00000000c0)='./bus\x00', 0x0, &(0x7f0000000240), 0x21, 0x4a6, &(0x7f0000000a40)="$eJzs3cFPG9kZAPBvBgiEkEDaHNqqbdI0bVpFscFJUJRTemlVRZGqRj31kFBwEMLGCJs00BzI/1CpkXpq/4QeKvVQKae97233tpfsYaXsbrSrsNIevJqxIYRgYDcES/j3k55m3jzj7z2sec98gF8APetcRKxFxLGIuBcRo+3rSbvEzVbJHvfyxaPp9RePppNoNu98luTt2bXY8jWZE+3nHIqIP/4u4i/Jm3HrK6vzU5VKealdLzaqi8X6yurluerUbHm2vFAqTU5Mjl+/cq10YGM9W/3P89/O3frT///3k2fvr/36b1m3RtptW8dxkFpDH9iMk+mPiFvvIlgX9LXHc6zbHeE7SSPiexFxPr//R6MvfzUBgKOs2RyN5ujWOgBw1KV5DixJC+1cwEikaaHQyuGdieG0Uqs3Lt2vLS/MtHJlYzGQ3p+rlMfbucKxGEiy+kR+/qpe2la/EhGnI+Lvg8fzemG6Vpnp5hsfAOhhJ7at/18OttZ/AOCIG+p2BwCAQ2f9B4DeY/0HgN5j/QeA3mP9B4DeY/0HgN5j/QeAnvKH27ez0lxvf/71zIOV5fnag8sz5fp8obo8XZiuLS0WZmu12fwze6p7PV+lVlucuBrLD4uNcr1RrK+s3q3Wlhcad/PP9b5bHjiUUQEAuzl99umHSUSs3Tiel9iyl4O1Go62tNsdALqmr9sdALrGbl/Qu/yMD+ywRe9rOv6J0JOD7wtwOC7+UP4fepX8P/Qu+X/oXfL/0LuazcSe/wDQY+T4Ab//BwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgG9vJC9JWmjvBT4SaVooRJyMiLEYSO7PVcrjEXEqIj4YHBjM6hPd7jQA8JbST5L2/l8XRy+MbG89lnw1mB8j4q//vPOPh1ONxtJEdv3zzeuNJ+3rpW70HwDYy8Y6vbGOb3j54tH0RjnM/jz/TWtz0Szueru0WvqjPz8OxUBEDH+RtOst2fuVvgOIv/Y4In6w0/iTPDcy1t75dHv8LPbJQ42fvhY/zdtax+x78f0D6Av0mqfZ/HNzp/svjXP5cef7fyifod7exvy3/sb8l27Of30d5r9z+41x9b3fd2x7HPGj/p3iJ5vxkw7xL+wz/kc//un5Tm3Nf0VcjJ3jb41VbFQXi/WV1ctz1anZ8mx5oVSanJgcv37lWqmY56iLG5nqN31649Kp3cY/3CH+0B7j/8U+x//vr+/9+We7xP/Vz3d+/c/sEj9bE3+5z/hTw//tuH13Fn+mw/j3ev0v7TP+s49XZ/b5UADgENRXVuenKpXykhMnTpxsnnR7ZgLetVc3fbd7AgAAAAAAAAAAAAAAdHIY/07U7TECAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwdH0TAAD//yyP2UE=")
+creat(0x0, 0x0)
+r0 = openat$random(0xffffffffffffff9c, &(0x7f00000000c0), 0x0, 0x0)
+r1 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000080)='cpu.stat\x00', 0x275a, 0x0)
+write$UHID_CREATE2(r1, &(0x7f0000000040)=ANY=[@ANYRES64], 0x118)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x5, 0x12, r1, 0x0)
+ioctl$RNDADDENTROPY(r0, 0x40045201, &(0x7f0000000000)=ANY=[])
+
+[  281.530859][ T8426] loop0: detected capacity change from 0 to 512
+[  281.557104][ T8426] EXT4-fs (loop0): mounted filesystem 00000000-0000-0000-0000-000000000000 r/w without journal. Quota mode: writeback.
+[  281.558928][ T8426] ext4 filesystem being mounted at /syzkaller-testdir1326646824/syzkaller.M3eG3a/35/bus supports timestamps until 2038-01-19 (0x7fffffff)
+00:42:31 executing program 0:
+syz_mount_image$ext4(&(0x7f00000004c0)='ext4\x00', &(0x7f00000000c0)='./bus\x00', 0x0, &(0x7f0000000240), 0x21, 0x4a6, &(0x7f0000000a40)="$eJzs3cFPG9kZAPBvBgiEkEDaHNqqbdI0bVpFscFJUJRTemlVRZGqRj31kFBwEMLGCJs00BzI/1CpkXpq/4QeKvVQKae97233tpfsYaXsbrSrsNIevJqxIYRgYDcES/j3k55m3jzj7z2sec98gF8APetcRKxFxLGIuBcRo+3rSbvEzVbJHvfyxaPp9RePppNoNu98luTt2bXY8jWZE+3nHIqIP/4u4i/Jm3HrK6vzU5VKealdLzaqi8X6yurluerUbHm2vFAqTU5Mjl+/cq10YGM9W/3P89/O3frT///3k2fvr/36b1m3RtptW8dxkFpDH9iMk+mPiFvvIlgX9LXHc6zbHeE7SSPiexFxPr//R6MvfzUBgKOs2RyN5ujWOgBw1KV5DixJC+1cwEikaaHQyuGdieG0Uqs3Lt2vLS/MtHJlYzGQ3p+rlMfbucKxGEiy+kR+/qpe2la/EhGnI+Lvg8fzemG6Vpnp5hsfAOhhJ7at/18OttZ/AOCIG+p2BwCAQ2f9B4DeY/0HgN5j/QeA3mP9B4DeY/0HgN5j/QeAnvKH27ez0lxvf/71zIOV5fnag8sz5fp8obo8XZiuLS0WZmu12fwze6p7PV+lVlucuBrLD4uNcr1RrK+s3q3Wlhcad/PP9b5bHjiUUQEAuzl99umHSUSs3Tiel9iyl4O1Go62tNsdALqmr9sdALrGbl/Qu/yMD+ywRe9rOv6J0JOD7wtwOC7+UP4fepX8P/Qu+X/oXfL/0LuazcSe/wDQY+T4Ab//BwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgG9vJC9JWmjvBT4SaVooRJyMiLEYSO7PVcrjEXEqIj4YHBjM6hPd7jQA8JbST5L2/l8XRy+MbG89lnw1mB8j4q//vPOPh1ONxtJEdv3zzeuNJ+3rpW70HwDYy8Y6vbGOb3j54tH0RjnM/jz/TWtz0Szueru0WvqjPz8OxUBEDH+RtOst2fuVvgOIv/Y4In6w0/iTPDcy1t75dHv8LPbJQ42fvhY/zdtax+x78f0D6Av0mqfZ/HNzp/svjXP5cef7fyifod7exvy3/sb8l27Of30d5r9z+41x9b3fd2x7HPGj/p3iJ5vxkw7xL+wz/kc//un5Tm3Nf0VcjJ3jb41VbFQXi/WV1ctz1anZ8mx5oVSanJgcv37lWqmY56iLG5nqN31649Kp3cY/3CH+0B7j/8U+x//vr+/9+We7xP/Vz3d+/c/sEj9bE3+5z/hTw//tuH13Fn+mw/j3ev0v7TP+s49XZ/b5UADgENRXVuenKpXykhMnTpxsnnR7ZgLetVc3fbd7AgAAAAAAAAAAAAAAdHIY/07U7TECAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwdH0TAAD//yyP2UE=")
+creat(0x0, 0x0)
+r0 = openat$random(0xffffffffffffff9c, &(0x7f00000000c0), 0x0, 0x0)
+r1 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000080)='cpu.stat\x00', 0x275a, 0x0)
+write$UHID_CREATE2(r1, &(0x7f0000000040)=ANY=[@ANYRES64], 0x118)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x5, 0x12, r1, 0x0)
+ioctl$RNDADDENTROPY(r0, 0x40045201, &(0x7f0000000000)=ANY=[])
+
+[  282.481579][ T8028] EXT4-fs (loop0): unmounting filesystem 00000000-0000-0000-0000-000000000000.
+[  283.225296][ T8433] loop0: detected capacity change from 0 to 512
+[  283.251294][ T8433] EXT4-fs (loop0): mounted filesystem 00000000-0000-0000-0000-000000000000 r/w without journal. Quota mode: writeback.
+[  283.253196][ T8433] ext4 filesystem being mounted at /syzkaller-testdir1326646824/syzkaller.M3eG3a/36/bus supports timestamps until 2038-01-19 (0x7fffffff)
+00:42:33 executing program 0:
+syz_mount_image$ext4(&(0x7f00000004c0)='ext4\x00', &(0x7f00000000c0)='./bus\x00', 0x0, &(0x7f0000000240), 0x21, 0x4a6, &(0x7f0000000a40)="$eJzs3cFPG9kZAPBvBgiEkEDaHNqqbdI0bVpFscFJUJRTemlVRZGqRj31kFBwEMLGCJs00BzI/1CpkXpq/4QeKvVQKae97233tpfsYaXsbrSrsNIevJqxIYRgYDcES/j3k55m3jzj7z2sec98gF8APetcRKxFxLGIuBcRo+3rSbvEzVbJHvfyxaPp9RePppNoNu98luTt2bXY8jWZE+3nHIqIP/4u4i/Jm3HrK6vzU5VKealdLzaqi8X6yurluerUbHm2vFAqTU5Mjl+/cq10YGM9W/3P89/O3frT///3k2fvr/36b1m3RtptW8dxkFpDH9iMk+mPiFvvIlgX9LXHc6zbHeE7SSPiexFxPr//R6MvfzUBgKOs2RyN5ujWOgBw1KV5DixJC+1cwEikaaHQyuGdieG0Uqs3Lt2vLS/MtHJlYzGQ3p+rlMfbucKxGEiy+kR+/qpe2la/EhGnI+Lvg8fzemG6Vpnp5hsfAOhhJ7at/18OttZ/AOCIG+p2BwCAQ2f9B4DeY/0HgN5j/QeA3mP9B4DeY/0HgN5j/QeAnvKH27ez0lxvf/71zIOV5fnag8sz5fp8obo8XZiuLS0WZmu12fwze6p7PV+lVlucuBrLD4uNcr1RrK+s3q3Wlhcad/PP9b5bHjiUUQEAuzl99umHSUSs3Tiel9iyl4O1Go62tNsdALqmr9sdALrGbl/Qu/yMD+ywRe9rOv6J0JOD7wtwOC7+UP4fepX8P/Qu+X/oXfL/0LuazcSe/wDQY+T4Ab//BwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgG9vJC9JWmjvBT4SaVooRJyMiLEYSO7PVcrjEXEqIj4YHBjM6hPd7jQA8JbST5L2/l8XRy+MbG89lnw1mB8j4q//vPOPh1ONxtJEdv3zzeuNJ+3rpW70HwDYy8Y6vbGOb3j54tH0RjnM/jz/TWtz0Szueru0WvqjPz8OxUBEDH+RtOst2fuVvgOIv/Y4In6w0/iTPDcy1t75dHv8LPbJQ42fvhY/zdtax+x78f0D6Av0mqfZ/HNzp/svjXP5cef7fyifod7exvy3/sb8l27Of30d5r9z+41x9b3fd2x7HPGj/p3iJ5vxkw7xL+wz/kc//un5Tm3Nf0VcjJ3jb41VbFQXi/WV1ctz1anZ8mx5oVSanJgcv37lWqmY56iLG5nqN31649Kp3cY/3CH+0B7j/8U+x//vr+/9+We7xP/Vz3d+/c/sEj9bE3+5z/hTw//tuH13Fn+mw/j3ev0v7TP+s49XZ/b5UADgENRXVuenKpXykhMnTpxsnnR7ZgLetVc3fbd7AgAAAAAAAAAAAAAAdHIY/07U7TECAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwdH0TAAD//yyP2UE=")
+creat(0x0, 0x0)
+r0 = openat$random(0xffffffffffffff9c, &(0x7f00000000c0), 0x0, 0x0)
+r1 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000080)='cpu.stat\x00', 0x275a, 0x0)
+write$UHID_CREATE2(r1, &(0x7f0000000040)=ANY=[@ANYRES64], 0x118)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x5, 0x12, r1, 0x0)
+ioctl$RNDADDENTROPY(r0, 0x40045201, &(0x7f0000000000)=ANY=[])
+
+[  284.170753][ T8028] EXT4-fs (loop0): unmounting filesystem 00000000-0000-0000-0000-000000000000.
+[  284.973449][ T8441] loop0: detected capacity change from 0 to 512
+[  285.001887][ T8441] EXT4-fs (loop0): mounted filesystem 00000000-0000-0000-0000-000000000000 r/w without journal. Quota mode: writeback.
+[  285.005066][ T8441] ext4 filesystem being mounted at /syzkaller-testdir1326646824/syzkaller.M3eG3a/37/bus supports timestamps until 2038-01-19 (0x7fffffff)
+[  285.956831][ T8028] EXT4-fs (loop0): unmounting filesystem 00000000-0000-0000-0000-000000000000.
+00:42:35 executing program 0:
+syz_mount_image$ext4(&(0x7f00000004c0)='ext4\x00', &(0x7f00000000c0)='./bus\x00', 0x0, &(0x7f0000000240), 0x21, 0x4a6, &(0x7f0000000a40)="$eJzs3cFPG9kZAPBvBgiEkEDaHNqqbdI0bVpFscFJUJRTemlVRZGqRj31kFBwEMLGCJs00BzI/1CpkXpq/4QeKvVQKae97233tpfsYaXsbrSrsNIevJqxIYRgYDcES/j3k55m3jzj7z2sec98gF8APetcRKxFxLGIuBcRo+3rSbvEzVbJHvfyxaPp9RePppNoNu98luTt2bXY8jWZE+3nHIqIP/4u4i/Jm3HrK6vzU5VKealdLzaqi8X6yurluerUbHm2vFAqTU5Mjl+/cq10YGM9W/3P89/O3frT///3k2fvr/36b1m3RtptW8dxkFpDH9iMk+mPiFvvIlgX9LXHc6zbHeE7SSPiexFxPr//R6MvfzUBgKOs2RyN5ujWOgBw1KV5DixJC+1cwEikaaHQyuGdieG0Uqs3Lt2vLS/MtHJlYzGQ3p+rlMfbucKxGEiy+kR+/qpe2la/EhGnI+Lvg8fzemG6Vpnp5hsfAOhhJ7at/18OttZ/AOCIG+p2BwCAQ2f9B4DeY/0HgN5j/QeA3mP9B4DeY/0HgN5j/QeAnvKH27ez0lxvf/71zIOV5fnag8sz5fp8obo8XZiuLS0WZmu12fwze6p7PV+lVlucuBrLD4uNcr1RrK+s3q3Wlhcad/PP9b5bHjiUUQEAuzl99umHSUSs3Tiel9iyl4O1Go62tNsdALqmr9sdALrGbl/Qu/yMD+ywRe9rOv6J0JOD7wtwOC7+UP4fepX8P/Qu+X/oXfL/0LuazcSe/wDQY+T4Ab//BwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgG9vJC9JWmjvBT4SaVooRJyMiLEYSO7PVcrjEXEqIj4YHBjM6hPd7jQA8JbST5L2/l8XRy+MbG89lnw1mB8j4q//vPOPh1ONxtJEdv3zzeuNJ+3rpW70HwDYy8Y6vbGOb3j54tH0RjnM/jz/TWtz0Szueru0WvqjPz8OxUBEDH+RtOst2fuVvgOIv/Y4In6w0/iTPDcy1t75dHv8LPbJQ42fvhY/zdtax+x78f0D6Av0mqfZ/HNzp/svjXP5cef7fyifod7exvy3/sb8l27Of30d5r9z+41x9b3fd2x7HPGj/p3iJ5vxkw7xL+wz/kc//un5Tm3Nf0VcjJ3jb41VbFQXi/WV1ctz1anZ8mx5oVSanJgcv37lWqmY56iLG5nqN31649Kp3cY/3CH+0B7j/8U+x//vr+/9+We7xP/Vz3d+/c/sEj9bE3+5z/hTw//tuH13Fn+mw/j3ev0v7TP+s49XZ/b5UADgENRXVuenKpXykhMnTpxsnnR7ZgLetVc3fbd7AgAAAAAAAAAAAAAAdHIY/07U7TECAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwdH0TAAD//yyP2UE=")
+creat(0x0, 0x0)
+r0 = openat$random(0xffffffffffffff9c, &(0x7f00000000c0), 0x0, 0x0)
+r1 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000080)='cpu.stat\x00', 0x275a, 0x0)
+write$UHID_CREATE2(r1, &(0x7f0000000040)=ANY=[@ANYRES64], 0x118)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x5, 0x12, r1, 0x0)
+ioctl$RNDADDENTROPY(r0, 0x40045201, &(0x7f0000000000)=ANY=[])
+
+[  286.774402][ T8449] loop0: detected capacity change from 0 to 512
+[  286.798941][ T8449] EXT4-fs (loop0): mounted filesystem 00000000-0000-0000-0000-000000000000 r/w without journal. Quota mode: writeback.
+[  286.800753][ T8449] ext4 filesystem being mounted at /syzkaller-testdir1326646824/syzkaller.M3eG3a/38/bus supports timestamps until 2038-01-19 (0x7fffffff)
+00:42:37 executing program 0:
+syz_mount_image$ext4(&(0x7f00000004c0)='ext4\x00', &(0x7f00000000c0)='./bus\x00', 0x0, &(0x7f0000000240), 0x21, 0x4a6, &(0x7f0000000a40)="$eJzs3cFPG9kZAPBvBgiEkEDaHNqqbdI0bVpFscFJUJRTemlVRZGqRj31kFBwEMLGCJs00BzI/1CpkXpq/4QeKvVQKae97233tpfsYaXsbrSrsNIevJqxIYRgYDcES/j3k55m3jzj7z2sec98gF8APetcRKxFxLGIuBcRo+3rSbvEzVbJHvfyxaPp9RePppNoNu98luTt2bXY8jWZE+3nHIqIP/4u4i/Jm3HrK6vzU5VKealdLzaqi8X6yurluerUbHm2vFAqTU5Mjl+/cq10YGM9W/3P89/O3frT///3k2fvr/36b1m3RtptW8dxkFpDH9iMk+mPiFvvIlgX9LXHc6zbHeE7SSPiexFxPr//R6MvfzUBgKOs2RyN5ujWOgBw1KV5DixJC+1cwEikaaHQyuGdieG0Uqs3Lt2vLS/MtHJlYzGQ3p+rlMfbucKxGEiy+kR+/qpe2la/EhGnI+Lvg8fzemG6Vpnp5hsfAOhhJ7at/18OttZ/AOCIG+p2BwCAQ2f9B4DeY/0HgN5j/QeA3mP9B4DeY/0HgN5j/QeAnvKH27ez0lxvf/71zIOV5fnag8sz5fp8obo8XZiuLS0WZmu12fwze6p7PV+lVlucuBrLD4uNcr1RrK+s3q3Wlhcad/PP9b5bHjiUUQEAuzl99umHSUSs3Tiel9iyl4O1Go62tNsdALqmr9sdALrGbl/Qu/yMD+ywRe9rOv6J0JOD7wtwOC7+UP4fepX8P/Qu+X/oXfL/0LuazcSe/wDQY+T4Ab//BwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgG9vJC9JWmjvBT4SaVooRJyMiLEYSO7PVcrjEXEqIj4YHBjM6hPd7jQA8JbST5L2/l8XRy+MbG89lnw1mB8j4q//vPOPh1ONxtJEdv3zzeuNJ+3rpW70HwDYy8Y6vbGOb3j54tH0RjnM/jz/TWtz0Szueru0WvqjPz8OxUBEDH+RtOst2fuVvgOIv/Y4In6w0/iTPDcy1t75dHv8LPbJQ42fvhY/zdtax+x78f0D6Av0mqfZ/HNzp/svjXP5cef7fyifod7exvy3/sb8l27Of30d5r9z+41x9b3fd2x7HPGj/p3iJ5vxkw7xL+wz/kc//un5Tm3Nf0VcjJ3jb41VbFQXi/WV1ctz1anZ8mx5oVSanJgcv37lWqmY56iLG5nqN31649Kp3cY/3CH+0B7j/8U+x//vr+/9+We7xP/Vz3d+/c/sEj9bE3+5z/hTw//tuH13Fn+mw/j3ev0v7TP+s49XZ/b5UADgENRXVuenKpXykhMnTpxsnnR7ZgLetVc3fbd7AgAAAAAAAAAAAAAAdHIY/07U7TECAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwdH0TAAD//yyP2UE=")
+creat(0x0, 0x0)
+r0 = openat$random(0xffffffffffffff9c, &(0x7f00000000c0), 0x0, 0x0)
+r1 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000080)='cpu.stat\x00', 0x275a, 0x0)
+write$UHID_CREATE2(r1, &(0x7f0000000040)=ANY=[@ANYRES64], 0x118)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x5, 0x12, r1, 0x0)
+ioctl$RNDADDENTROPY(r0, 0x40045201, &(0x7f0000000000)=ANY=[])
+
+[  287.737574][ T8028] EXT4-fs (loop0): unmounting filesystem 00000000-0000-0000-0000-000000000000.
+[  288.482128][ T8456] loop0: detected capacity change from 0 to 512
+[  288.509464][ T8456] EXT4-fs (loop0): mounted filesystem 00000000-0000-0000-0000-000000000000 r/w without journal. Quota mode: writeback.
+[  288.511287][ T8456] ext4 filesystem being mounted at /syzkaller-testdir1326646824/syzkaller.M3eG3a/39/bus supports timestamps until 2038-01-19 (0x7fffffff)
+00:42:38 executing program 0:
+syz_mount_image$ext4(&(0x7f00000004c0)='ext4\x00', &(0x7f00000000c0)='./bus\x00', 0x0, &(0x7f0000000240), 0x21, 0x4a6, &(0x7f0000000a40)="$eJzs3cFPG9kZAPBvBgiEkEDaHNqqbdI0bVpFscFJUJRTemlVRZGqRj31kFBwEMLGCJs00BzI/1CpkXpq/4QeKvVQKae97233tpfsYaXsbrSrsNIevJqxIYRgYDcES/j3k55m3jzj7z2sec98gF8APetcRKxFxLGIuBcRo+3rSbvEzVbJHvfyxaPp9RePppNoNu98luTt2bXY8jWZE+3nHIqIP/4u4i/Jm3HrK6vzU5VKealdLzaqi8X6yurluerUbHm2vFAqTU5Mjl+/cq10YGM9W/3P89/O3frT///3k2fvr/36b1m3RtptW8dxkFpDH9iMk+mPiFvvIlgX9LXHc6zbHeE7SSPiexFxPr//R6MvfzUBgKOs2RyN5ujWOgBw1KV5DixJC+1cwEikaaHQyuGdieG0Uqs3Lt2vLS/MtHJlYzGQ3p+rlMfbucKxGEiy+kR+/qpe2la/EhGnI+Lvg8fzemG6Vpnp5hsfAOhhJ7at/18OttZ/AOCIG+p2BwCAQ2f9B4DeY/0HgN5j/QeA3mP9B4DeY/0HgN5j/QeAnvKH27ez0lxvf/71zIOV5fnag8sz5fp8obo8XZiuLS0WZmu12fwze6p7PV+lVlucuBrLD4uNcr1RrK+s3q3Wlhcad/PP9b5bHjiUUQEAuzl99umHSUSs3Tiel9iyl4O1Go62tNsdALqmr9sdALrGbl/Qu/yMD+ywRe9rOv6J0JOD7wtwOC7+UP4fepX8P/Qu+X/oXfL/0LuazcSe/wDQY+T4Ab//BwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgG9vJC9JWmjvBT4SaVooRJyMiLEYSO7PVcrjEXEqIj4YHBjM6hPd7jQA8JbST5L2/l8XRy+MbG89lnw1mB8j4q//vPOPh1ONxtJEdv3zzeuNJ+3rpW70HwDYy8Y6vbGOb3j54tH0RjnM/jz/TWtz0Szueru0WvqjPz8OxUBEDH+RtOst2fuVvgOIv/Y4In6w0/iTPDcy1t75dHv8LPbJQ42fvhY/zdtax+x78f0D6Av0mqfZ/HNzp/svjXP5cef7fyifod7exvy3/sb8l27Of30d5r9z+41x9b3fd2x7HPGj/p3iJ5vxkw7xL+wz/kc//un5Tm3Nf0VcjJ3jb41VbFQXi/WV1ctz1anZ8mx5oVSanJgcv37lWqmY56iLG5nqN31649Kp3cY/3CH+0B7j/8U+x//vr+/9+We7xP/Vz3d+/c/sEj9bE3+5z/hTw//tuH13Fn+mw/j3ev0v7TP+s49XZ/b5UADgENRXVuenKpXykhMnTpxsnnR7ZgLetVc3fbd7AgAAAAAAAAAAAAAAdHIY/07U7TECAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwdH0TAAD//yyP2UE=")
+creat(0x0, 0x0)
+r0 = openat$random(0xffffffffffffff9c, &(0x7f00000000c0), 0x0, 0x0)
+r1 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000080)='cpu.stat\x00', 0x275a, 0x0)
+write$UHID_CREATE2(r1, &(0x7f0000000040)=ANY=[@ANYRES64], 0x118)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x5, 0x12, r1, 0x0)
+ioctl$RNDADDENTROPY(r0, 0x40045201, &(0x7f0000000000)=ANY=[])
+
+[  289.448355][ T8028] EXT4-fs (loop0): unmounting filesystem 00000000-0000-0000-0000-000000000000.
+[  290.169079][ T8463] loop0: detected capacity change from 0 to 512
+[  290.199555][ T8463] EXT4-fs (loop0): mounted filesystem 00000000-0000-0000-0000-000000000000 r/w without journal. Quota mode: writeback.
+[  290.201366][ T8463] ext4 filesystem being mounted at /syzkaller-testdir1326646824/syzkaller.M3eG3a/40/bus supports timestamps until 2038-01-19 (0x7fffffff)
+[  291.118563][ T8028] EXT4-fs (loop0): unmounting filesystem 00000000-0000-0000-0000-000000000000.
+00:42:40 executing program 0:
+r0 = socket$inet_udp(0x2, 0x2, 0x0)
+setsockopt$SO_TIMESTAMPING(r0, 0x1, 0x25, &(0x7f0000000080)=0x474c, 0x4)
+bind$inet(r0, &(0x7f00000001c0)={0x2, 0x0, @local}, 0x10)
+connect$inet(r0, &(0x7f0000000480)={0x2, 0x0, @multicast2}, 0x10)
+sendmmsg(r0, &(0x7f0000007fc0), 0x800001d, 0x0)
+setsockopt$inet_int(r0, 0x0, 0xc, &(0x7f0000000180)=0x40000000, 0x4)
+recvmmsg(r0, &(0x7f0000003e40)=[{{0x0, 0x0, 0x0, 0x0, &(0x7f00000030c0)=""/19, 0x13}}], 0x1, 0x45833af92e4b39ff, 0x0)
+
+2024/05/23 00:42:42 cfuCover: ipc.CustomCov{Id:0xc001, Val:0xf82, Ip:0x860059e9}
+00:42:42 executing program 0:
+r0 = socket$inet_udp(0x2, 0x2, 0x0)
+setsockopt$SO_TIMESTAMPING(r0, 0x1, 0x25, &(0x7f0000000080)=0x474c, 0x4)
+bind$inet(r0, &(0x7f00000001c0)={0x2, 0x0, @local}, 0x10)
+connect$inet(r0, &(0x7f0000000480)={0x2, 0x0, @multicast2}, 0x10)
+sendmmsg(r0, &(0x7f0000007fc0), 0x800001d, 0x0)
+setsockopt$inet_int(r0, 0x0, 0xc, &(0x7f0000000180)=0x40000000, 0x4)
+recvmmsg(r0, &(0x7f0000003e40)=[{{0x0, 0x0, 0x0, 0x0, &(0x7f00000030c0)=""/19, 0x13}}], 0x1, 0x45833af92e4b39ff, 0x0)
+
+2024/05/23 00:42:42 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x210d, Ip:0x860059fb}
+2024/05/23 00:42:42 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/23 00:42:42 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x30be, Ip:0x85ff2f15}
+2024/05/23 00:42:42 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/23 00:42:42 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3858, Ip:0x85ff2f25}
+2024/05/23 00:42:42 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x30be, Ip:0x85ff2f15}
+2024/05/23 00:42:42 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/23 00:42:42 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3858, Ip:0x85ff2f25}
+2024/05/23 00:42:42 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x30be, Ip:0x85ffa1f0}
+2024/05/23 00:42:42 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/23 00:42:42 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x4de3, Ip:0x85ffa202}
+2024/05/23 00:42:42 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x2719, Ip:0x86187276}
+2024/05/23 00:42:42 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x7ed, Ip:0x865f1bbd}
+2024/05/23 00:42:42 cfuCover: ipc.CustomCov{Id:0xc001, Val:0xae5, Ip:0x865f1bcf}
+2024/05/23 00:42:42 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/23 00:42:42 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x30be, Ip:0x85ffa1f0}
+2024/05/23 00:42:42 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/23 00:42:42 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x4de3, Ip:0x85ffa202}
+00:42:44 executing program 0:
+r0 = socket$inet_udp(0x2, 0x2, 0x0)
+setsockopt$SO_TIMESTAMPING(r0, 0x1, 0x25, &(0x7f0000000080)=0x474c, 0x4)
+bind$inet(r0, &(0x7f00000001c0)={0x2, 0x0, @local}, 0x10)
+connect$inet(r0, &(0x7f0000000480)={0x2, 0x0, @multicast2}, 0x10)
+sendmmsg(r0, &(0x7f0000007fc0), 0x800001d, 0x0)
+setsockopt$inet_int(r0, 0x0, 0xc, &(0x7f0000000180)=0x40000000, 0x4)
+recvmmsg(r0, &(0x7f0000003e40)=[{{0x0, 0x0, 0x0, 0x0, &(0x7f00000030c0)=""/19, 0x13}}], 0x1, 0x45833af92e4b39ff, 0x0)
+
+00:42:46 executing program 0:
+r0 = socket$inet_udp(0x2, 0x2, 0x0)
+setsockopt$SO_TIMESTAMPING(r0, 0x1, 0x25, &(0x7f0000000080)=0x474c, 0x4)
+bind$inet(r0, &(0x7f00000001c0)={0x2, 0x0, @local}, 0x10)
+connect$inet(r0, &(0x7f0000000480)={0x2, 0x0, @multicast2}, 0x10)
+sendmmsg(r0, &(0x7f0000007fc0), 0x800001d, 0x0)
+setsockopt$inet_int(r0, 0x0, 0xc, &(0x7f0000000180)=0x40000000, 0x4)
+recvmmsg(r0, &(0x7f0000003e40)=[{{0x0, 0x0, 0x0, 0x0, &(0x7f00000030c0)=""/19, 0x13}}], 0x1, 0x45833af92e4b39ff, 0x0)
+
+00:42:48 executing program 0:
+r0 = socket$inet_udp(0x2, 0x2, 0x0)
+setsockopt$SO_TIMESTAMPING(r0, 0x1, 0x25, &(0x7f0000000080)=0x474c, 0x4)
+bind$inet(r0, &(0x7f00000001c0)={0x2, 0x0, @local}, 0x10)
+connect$inet(r0, &(0x7f0000000480)={0x2, 0x0, @multicast2}, 0x10)
+sendmmsg(r0, &(0x7f0000007fc0), 0x800001d, 0x0)
+setsockopt$inet_int(r0, 0x0, 0xc, &(0x7f0000000180)=0x40000000, 0x4)
+recvmmsg(r0, &(0x7f0000003e40)=[{{0x0, 0x0, 0x0, 0x0, &(0x7f00000030c0)=""/19, 0x13}}], 0x1, 0x45833af92e4b39ff, 0x0)
+
+00:42:50 executing program 0:
+r0 = socket$inet_udp(0x2, 0x2, 0x0)
+setsockopt$SO_TIMESTAMPING(r0, 0x1, 0x25, &(0x7f0000000080)=0x474c, 0x4)
+bind$inet(r0, &(0x7f00000001c0)={0x2, 0x0, @local}, 0x10)
+connect$inet(r0, &(0x7f0000000480)={0x2, 0x0, @multicast2}, 0x10)
+sendmmsg(r0, &(0x7f0000007fc0), 0x800001d, 0x0)
+setsockopt$inet_int(r0, 0x0, 0xc, &(0x7f0000000180)=0x40000000, 0x4)
+recvmmsg(r0, &(0x7f0000003e40)=[{{0x0, 0x0, 0x0, 0x0, &(0x7f00000030c0)=""/19, 0x13}}], 0x1, 0x45833af92e4b39ff, 0x0)
+
+00:42:51 executing program 0:
+r0 = socket$inet_udp(0x2, 0x2, 0x0)
+setsockopt$SO_TIMESTAMPING(r0, 0x1, 0x25, &(0x7f0000000080)=0x474c, 0x4)
+bind$inet(r0, &(0x7f00000001c0)={0x2, 0x0, @local}, 0x10)
+connect$inet(r0, &(0x7f0000000480)={0x2, 0x0, @multicast2}, 0x10)
+sendmmsg(r0, &(0x7f0000007fc0), 0x800001d, 0x0)
+setsockopt$inet_int(r0, 0x0, 0xc, &(0x7f0000000180)=0x40000000, 0x4)
+recvmmsg(r0, &(0x7f0000003e40)=[{{0x0, 0x0, 0x0, 0x0, &(0x7f00000030c0)=""/19, 0x13}}], 0x1, 0x45833af92e4b39ff, 0x0)
+
+00:42:53 executing program 0:
+r0 = socket$inet_udp(0x2, 0x2, 0x0)
+setsockopt$SO_TIMESTAMPING(r0, 0x1, 0x25, &(0x7f0000000080)=0x474c, 0x4)
+bind$inet(r0, &(0x7f00000001c0)={0x2, 0x0, @local}, 0x10)
+connect$inet(r0, &(0x7f0000000480)={0x2, 0x0, @multicast2}, 0x10)
+sendmmsg(r0, &(0x7f0000007fc0), 0x800001d, 0x0)
+setsockopt$inet_int(r0, 0x0, 0xc, &(0x7f0000000180)=0x40000000, 0x4)
+recvmmsg(r0, &(0x7f0000003e40)=[{{0x0, 0x0, 0x0, 0x0, &(0x7f00000030c0)=""/19, 0x13}}], 0x1, 0x45833af92e4b39ff, 0x0)
+
+00:42:55 executing program 0:
+r0 = socket$inet_udp(0x2, 0x2, 0x0)
+setsockopt$SO_TIMESTAMPING(r0, 0x1, 0x25, &(0x7f0000000080)=0x474c, 0x4)
+bind$inet(r0, &(0x7f00000001c0)={0x2, 0x0, @local}, 0x10)
+connect$inet(r0, &(0x7f0000000480)={0x2, 0x0, @multicast2}, 0x10)
+sendmmsg(r0, &(0x7f0000007fc0), 0x800001d, 0x0)
+setsockopt$inet_int(r0, 0x0, 0xc, &(0x7f0000000180)=0x40000000, 0x4)
+recvmmsg(r0, &(0x7f0000003e40)=[{{0x0, 0x0, 0x0, 0x0, &(0x7f00000030c0)=""/19, 0x13}}], 0x1, 0x45833af92e4b39ff, 0x0)
+
+00:42:57 executing program 0:
+r0 = socket$inet_udp(0x2, 0x2, 0x0)
+setsockopt$SO_TIMESTAMPING(r0, 0x1, 0x25, &(0x7f0000000080)=0x474c, 0x4)
+bind$inet(r0, &(0x7f00000001c0)={0x2, 0x0, @local}, 0x10)
+connect$inet(r0, &(0x7f0000000480)={0x2, 0x0, @multicast2}, 0x10)
+sendmmsg(r0, &(0x7f0000007fc0), 0x800001d, 0x0)
+setsockopt$inet_int(r0, 0x0, 0xc, &(0x7f0000000180)=0x40000000, 0x4)
+recvmmsg(r0, &(0x7f0000003e40)=[{{0x0, 0x0, 0x0, 0x0, &(0x7f00000030c0)=""/19, 0x13}}], 0x1, 0x45833af92e4b39ff, 0x0)
+
+00:42:59 executing program 0:
+r0 = socket$inet6(0xa, 0x6, 0x0)
+bind$inet6(r0, &(0x7f0000000040)={0xa, 0x4e20}, 0x1c)
+listen(r0, 0x80080400)
+r1 = socket$inet_dccp(0x2, 0x6, 0x0)
+connect$inet(r1, &(0x7f0000e5c000)={0x2, 0x4e20, @remote}, 0x10)
+getsockopt$inet_int(r1, 0x10d, 0x9a, &(0x7f0000000000), &(0x7f0000000080)=0x4)
+
+00:43:01 executing program 0:
+r0 = socket$inet6(0xa, 0x6, 0x0)
+bind$inet6(r0, &(0x7f0000000040)={0xa, 0x4e20}, 0x1c)
+listen(r0, 0x80080400)
+r1 = socket$inet_dccp(0x2, 0x6, 0x0)
+connect$inet(r1, &(0x7f0000e5c000)={0x2, 0x4e20, @remote}, 0x10)
+getsockopt$inet_int(r1, 0x10d, 0x9a, &(0x7f0000000000), &(0x7f0000000080)=0x4)
+
+2024/05/23 00:43:01 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x30be, Ip:0x85ff2f15}
+2024/05/23 00:43:01 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/23 00:43:01 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3858, Ip:0x85ff2f25}
+2024/05/23 00:43:01 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0xfc7, Ip:0x8684d496}
+2024/05/23 00:43:01 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x4823, Ip:0x8684d46e}
+2024/05/23 00:43:01 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x30be, Ip:0x85ff2f15}
+2024/05/23 00:43:01 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/23 00:43:01 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3858, Ip:0x85ff2f25}
+2024/05/23 00:43:01 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2b1d, Ip:0x86e2bbc0}
+00:43:02 executing program 0:
+r0 = socket$inet6(0xa, 0x6, 0x0)
+bind$inet6(r0, &(0x7f0000000040)={0xa, 0x4e20}, 0x1c)
+listen(r0, 0x80080400)
+r1 = socket$inet_dccp(0x2, 0x6, 0x0)
+connect$inet(r1, &(0x7f0000e5c000)={0x2, 0x4e20, @remote}, 0x10)
+getsockopt$inet_int(r1, 0x10d, 0x9a, &(0x7f0000000000), &(0x7f0000000080)=0x4)
+
+00:43:04 executing program 0:
+r0 = socket$inet6(0xa, 0x6, 0x0)
+bind$inet6(r0, &(0x7f0000000040)={0xa, 0x4e20}, 0x1c)
+listen(r0, 0x80080400)
+r1 = socket$inet_dccp(0x2, 0x6, 0x0)
+connect$inet(r1, &(0x7f0000e5c000)={0x2, 0x4e20, @remote}, 0x10)
+getsockopt$inet_int(r1, 0x10d, 0x9a, &(0x7f0000000000), &(0x7f0000000080)=0x4)
+
+00:43:05 executing program 0:
+r0 = socket$inet6(0xa, 0x6, 0x0)
+bind$inet6(r0, &(0x7f0000000040)={0xa, 0x4e20}, 0x1c)
+listen(r0, 0x80080400)
+r1 = socket$inet_dccp(0x2, 0x6, 0x0)
+connect$inet(r1, &(0x7f0000e5c000)={0x2, 0x4e20, @remote}, 0x10)
+getsockopt$inet_int(r1, 0x10d, 0x9a, &(0x7f0000000000), &(0x7f0000000080)=0x4)
+
+00:43:07 executing program 0:
+r0 = socket$inet6(0xa, 0x6, 0x0)
+bind$inet6(r0, &(0x7f0000000040)={0xa, 0x4e20}, 0x1c)
+listen(r0, 0x80080400)
+r1 = socket$inet_dccp(0x2, 0x6, 0x0)
+connect$inet(r1, &(0x7f0000e5c000)={0x2, 0x4e20, @remote}, 0x10)
+getsockopt$inet_int(r1, 0x10d, 0x9a, &(0x7f0000000000), &(0x7f0000000080)=0x4)
+
+00:43:08 executing program 0:
+r0 = socket$inet6(0xa, 0x6, 0x0)
+bind$inet6(r0, &(0x7f0000000040)={0xa, 0x4e20}, 0x1c)
+listen(r0, 0x80080400)
+r1 = socket$inet_dccp(0x2, 0x6, 0x0)
+connect$inet(r1, &(0x7f0000e5c000)={0x2, 0x4e20, @remote}, 0x10)
+getsockopt$inet_int(r1, 0x10d, 0x9a, &(0x7f0000000000), &(0x7f0000000080)=0x4)
+
+00:43:10 executing program 0:
+r0 = openat$uinput(0xffffffffffffff9c, &(0x7f0000000b00), 0x0, 0x0)
+ioctl$UI_ABS_SETUP(r0, 0x401c5504, &(0x7f0000000000)={0x0, {0x0, 0x80000000}})
+ioctl$UI_ABS_SETUP(r0, 0x401c5504, &(0x7f0000000040)={0x0, {0x0, 0xffffffff, 0x2}})
+
+2024/05/23 00:43:11 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+00:43:11 executing program 0:
+accept() (enabled_site: 20107, site_type: 1)
+r0 = openat$uinput(0xffffffffffffff9c, &(0x7f0000000b00), 0x0, 0x0)
+ioctl$UI_ABS_SETUP(r0, 0x401c5504, &(0x7f0000000000)={0x0, {0x0, 0x80000000}})
+ioctl$UI_ABS_SETUP(r0, 0x401c5504, &(0x7f0000000040)={0x0, {0x0, 0xffffffff, 0x2}})
+
+2024/05/23 00:43:11 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x78f, Ip:0x84ff8f9f}
+2024/05/23 00:43:11 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/23 00:43:11 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3adf, Ip:0x84ff8faf}
+2024/05/23 00:43:11 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x4e8b, Ip:0x84ff918c}
+2024/05/23 00:43:11 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x78f, Ip:0x84ff8f9f}
+2024/05/23 00:43:11 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/23 00:43:11 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3adf, Ip:0x84ff8faf}
+2024/05/23 00:43:11 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x4e8b, Ip:0x84ff918c}
+2024/05/23 00:43:11 KDO: #0: memintrinsic id=20107
+[  323.240407][ T8535] BUG: KASAN: unknown-crash in uinput_abs_setup+0x30c/0x390
+[  323.241879][ T8535] Write of size 8 at addr ffff888146397000 by task syz-executor.0/8535
+[  323.242790][ T8535] 
+[  323.249411][ T8535] CPU: 0 PID: 8535 Comm: syz-executor.0 Not tainted 6.4.1-00011-gc173c3c31378 #20
+[  323.250420][ T8535] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+[  323.251408][ T8535] Call Trace:
+[  323.251773][ T8535]  <TASK>
+[  323.252102][ T8535]  dump_stack_lvl+0x1ce/0x2c0
+[  323.252643][ T8535]  ? nf_tcp_handle_invalid+0x3d0/0x3d0
+[  323.253247][ T8535]  ? preempt_count_add+0xa0/0xf0
+[  323.253802][ T8535]  ? panic+0x620/0x620
+[  323.254259][ T8535]  ? entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  323.254937][ T8535]  print_report+0x163/0x540
+[  323.255448][ T8535]  ? __virt_addr_valid+0x1cc/0x240
+[  323.256045][ T8535]  ? __phys_addr+0x99/0x110
+[  323.256573][ T8535]  kdo_kasan_report+0x7f/0x90
+[  323.257122][ T8535]  ? uinput_abs_setup+0x30c/0x390
+[  323.257681][ T8535]  ? uinput_abs_setup+0x30c/0x390
+[  323.258235][ T8535]  propagate_taint+0x1e1/0x210
+[  323.258758][ T8535]  ? uinput_abs_setup+0x30c/0x390
+[  323.259311][ T8535]  ? uinput_abs_setup+0x30c/0x390
+[  323.259866][ T8535]  __kdo_asan_memcpy+0x69/0xa0
+[  323.260402][ T8535]  uinput_abs_setup+0x30c/0x390
+[  323.260944][ T8535]  ? uinput_str_to_user+0xe0/0xe0
+[  323.261508][ T8535]  uinput_ioctl_handler+0xa5d/0x10a0
+[  323.262093][ T8535]  ? uinput_release+0x40/0x40
+[  323.262622][ T8535]  ? __fget_files+0x2f0/0x340
+[  323.263149][ T8535]  ? bpf_lsm_file_ioctl+0x9/0x10
+[  323.263691][ T8535]  ? uinput_poll+0xc0/0xc0
+[  323.264186][ T8535]  __se_sys_ioctl+0xc9/0x140
+[  323.264707][ T8535]  do_syscall_64+0x41/0x90
+[  323.265206][ T8535]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  323.265853][ T8535] RIP: 0033:0x7fc82248fddd
+[  323.266386][ T8535] Code: c3 e8 97 2b 00 00 0f 1f 80 00 00 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 b0 ff ff ff f7 d8 64 89 01 48
+[  323.268432][ T8535] RSP: 002b:00007fc82329d028 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[  323.269343][ T8535] RAX: ffffffffffffffda RBX: 00007fc8225cbf80 RCX: 00007fc82248fddd
+[  323.270228][ T8535] RDX: 0000000020000000 RSI: 00000000401c5504 RDI: 0000000000000003
+[  323.271096][ T8535] RBP: 00007fc822501e18 R08: 0000000000000000 R09: 0000000000000000
+[  323.271959][ T8535] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000000
+[  323.272811][ T8535] R13: 000000000000000b R14: 00007fc8225cbf80 R15: 00007fc82327d000
+[  323.273698][ T8535]  </TASK>
+[  323.308935][ T8535] 
+[  323.309469][ T8535] Allocated by task 8535:
+[  323.310020][ T8535]  kasan_set_track+0x4f/0x70
+[  323.310839][ T8535]  __kasan_kmalloc+0x7d/0x90
+[  323.311368][ T8535]  input_alloc_absinfo+0x53/0xd0
+[  323.320560][ T8535]  uinput_abs_setup+0x278/0x390
+[  323.321133][ T8535]  uinput_ioctl_handler+0xa5d/0x10a0
+[  323.321957][ T8535]  __se_sys_ioctl+0xc9/0x140
+[  323.322487][ T8535]  do_syscall_64+0x41/0x90
+[  323.328493][ T8535]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  323.329176][ T8535] 
+[  323.329449][ T8535] The buggy address belongs to the object at ffff888146397000
+[  323.329449][ T8535]  which belongs to the cache kmalloc-2k of size 2048
+[  323.337319][ T8535] The buggy address is located 0 bytes inside of
+[  323.337319][ T8535]  2048-byte region [ffff888146397000, ffff888146397800)
+[  323.338972][ T8535] 
+[  323.339287][ T8535] The buggy address belongs to the physical page:
+[  323.340224][ T8535] page:ffffea000518e400 refcount:1 mapcount:0 mapping:0000000000000000 index:0x0 pfn:0x146390
+[  323.341547][ T8535] head:ffffea000518e400 order:3 entire_mapcount:0 nr_pages_mapped:0 pincount:0
+[  323.342521][ T8535] anon flags: 0x57ff00000010200(slab|head|node=1|zone=2|lastcpupid=0x7ff)
+[  323.349403][ T8535] page_type: 0xffffffff()
+[  323.349922][ T8535] raw: 057ff00000010200 ffff88800ec42000 0000000000000000 0000000000000001
+[  323.351096][ T8535] raw: 0000000000000000 0000000000080008 00000001ffffffff 0000000000000000
+[  323.352045][ T8535] page dumped because: kasan: bad access detected
+[  323.357925][ T8535] page_owner tracks the page as allocated
+[  323.358735][ T8535] page last allocated via order 3, migratetype Unmovable, gfp_mask 0xd20c0(__GFP_IO|__GFP_FS|__GFP_NOWARN|__GFP_NORETRY|__GFP_COMP|__GFP_NOMEMALLOC), pid 8028, tgid 8028 (syz-executor.0), ts 218281302271, free_ts 72868565028
+[  323.361459][ T8535]  post_alloc_hook+0x1e6/0x210
+[  323.362070][ T8535]  get_page_from_freelist+0x260a/0x2790
+[  323.368494][ T8535]  __alloc_pages+0x1f2/0x480
+[  323.369082][ T8535]  alloc_slab_page+0x6a/0x160
+[  323.372306][ T8535]  new_slab+0x84/0x2f0
+[  323.372821][ T8535]  ___slab_alloc+0xa85/0x10a0
+[  323.375546][ T8535]  __kmem_cache_alloc_node+0x1a8/0x240
+[  323.376194][ T8535]  kmalloc_trace+0x2a/0xe0
+[  323.381340][ T8535]  rtnl_newlink+0xd6/0x1890
+[  323.381963][ T8535]  rtnetlink_rcv_msg+0x6ea/0xc70
+[  323.383311][ T8535]  netlink_rcv_skb+0x184/0x2b0
+[  323.384206][ T8535]  netlink_unicast+0x605/0x6c0
+[  323.384760][ T8535]  netlink_sendmsg+0x826/0x990
+[  323.388996][ T8535]  __sys_sendto+0x3d9/0x500
+[  323.389539][ T8535]  __x64_sys_sendto+0x78/0x90
+[  323.390434][ T8535]  do_syscall_64+0x41/0x90
+[  323.390958][ T8535] page last free stack trace:
+[  323.391825][ T8535]  free_unref_page_prepare+0x75a/0x820
+[  323.392464][ T8535]  free_unref_page+0x37/0x300
+[  323.398386][ T8535]  __unfreeze_partials+0x1b1/0x1f0
+[  323.398985][ T8535]  put_cpu_partial+0x116/0x180
+[  323.399872][ T8535]  qlist_free_all+0x22/0x60
+[  323.400417][ T8535]  kasan_quarantine_reduce+0x14b/0x160
+[  323.404305][ T8535]  __kasan_slab_alloc+0x23/0x60
+[  323.404934][ T8535]  slab_post_alloc_hook+0x64/0x380
+[  323.405892][ T8535]  kmem_cache_alloc+0x111/0x2a0
+[  323.406451][ T8535]  getname_flags+0x85/0x3d0
+[  323.411011][ T8535]  do_sys_openat2+0xc7/0x390
+[  323.411565][ T8535]  __x64_sys_openat+0x1f7/0x250
+[  323.412458][ T8535]  do_syscall_64+0x41/0x90
+[  323.418791][ T8535]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  323.420840][ T8535] 
+[  323.421151][ T8535] Memory state around the buggy address:
+[  323.422118][ T8535]  ffff888146396f00: fc fc fc fc fc fc fc fc fc fc fc fc fc fc fc fc
+[  323.426686][ T8535]  ffff888146396f80: fc fc fc fc fc fc fc fc fc fc fc fc fc fc fc fc
+[  323.427937][ T8535] >ffff888146397000: ee ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec
+[  323.429170][ T8535]                    ^
+[  323.429661][ T8535]  ffff888146397080: ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec
+[  323.430869][ T8535]  ffff888146397100: ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec
+[  323.432130][ T8535] BUG: KASAN: unknown-crash in uinput_abs_setup+0x30c/0x390
+[  323.439154][ T8535] Write of size 8 at addr ffffc90005adfd04 by task syz-executor.0/8535
+[  323.440419][ T8535] 
+[  323.440704][ T8535] CPU: 0 PID: 8535 Comm: syz-executor.0 Not tainted 6.4.1-00011-gc173c3c31378 #20
+[  323.441725][ T8535] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+[  323.442727][ T8535] Call Trace:
+[  323.443096][ T8535]  <TASK>
+[  323.443428][ T8535]  dump_stack_lvl+0x1ce/0x2c0
+[  323.443961][ T8535]  ? nf_tcp_handle_invalid+0x3d0/0x3d0
+[  323.444569][ T8535]  ? preempt_count_add+0xa0/0xf0
+[  323.445122][ T8535]  ? panic+0x620/0x620
+[  323.445597][ T8535]  print_report+0x163/0x540
+[  323.446114][ T8535]  ? __virt_addr_valid+0xa6/0x240
+[  323.446688][ T8535]  kdo_kasan_report+0x7f/0x90
+[  323.447223][ T8535]  ? uinput_abs_setup+0x30c/0x390
+[  323.447787][ T8535]  ? uinput_abs_setup+0x30c/0x390
+[  323.448343][ T8535]  propagate_taint+0x1f6/0x210
+[  323.448885][ T8535]  ? uinput_abs_setup+0x30c/0x390
+[  323.449442][ T8535]  ? uinput_abs_setup+0x30c/0x390
+[  323.450000][ T8535]  __kdo_asan_memcpy+0x69/0xa0
+[  323.450532][ T8535]  uinput_abs_setup+0x30c/0x390
+[  323.451075][ T8535]  ? uinput_str_to_user+0xe0/0xe0
+[  323.451644][ T8535]  uinput_ioctl_handler+0xa5d/0x10a0
+[  323.452231][ T8535]  ? uinput_release+0x40/0x40
+[  323.452780][ T8535]  ? __fget_files+0x2f0/0x340
+[  323.453313][ T8535]  ? bpf_lsm_file_ioctl+0x9/0x10
+[  323.453868][ T8535]  ? uinput_poll+0xc0/0xc0
+[  323.454378][ T8535]  __se_sys_ioctl+0xc9/0x140
+[  323.454914][ T8535]  do_syscall_64+0x41/0x90
+[  323.455456][ T8535]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  323.456140][ T8535] RIP: 0033:0x7fc82248fddd
+[  323.456701][ T8535] Code: c3 e8 97 2b 00 00 0f 1f 80 00 00 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 b0 ff ff ff f7 d8 64 89 01 48
+[  323.458781][ T8535] RSP: 002b:00007fc82329d028 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[  323.459719][ T8535] RAX: ffffffffffffffda RBX: 00007fc8225cbf80 RCX: 00007fc82248fddd
+[  323.460608][ T8535] RDX: 0000000020000000 RSI: 00000000401c5504 RDI: 0000000000000003
+[  323.461489][ T8535] RBP: 00007fc822501e18 R08: 0000000000000000 R09: 0000000000000000
+[  323.462373][ T8535] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000000
+[  323.463250][ T8535] R13: 000000000000000b R14: 00007fc8225cbf80 R15: 00007fc82327d000
+[  323.464109][ T8535]  </TASK>
+[  323.470916][ T8535] 
+[  323.471217][ T8535] The buggy address belongs to stack of task syz-executor.0/8535
+[  323.484977][ T8535]  and is located at offset 36 in frame:
+[  323.485617][ T8535]  uinput_abs_setup+0x0/0x390
+[  323.486493][ T8535] 
+[  323.486785][ T8535] This frame has 1 object:
+[  323.487283][ T8535]  [32, 60) 'setup'
+[  323.487297][ T8535] 
+[  323.488446][ T8535] The buggy address belongs to the virtual mapping at
+[  323.488446][ T8535]  [ffffc90005ad8000, ffffc90005ae1000) created by:
+[  323.488446][ T8535]  copy_process+0x4c3/0x2e60
+[  323.490663][ T8535] 
+[  323.490952][ T8535] The buggy address belongs to the physical page:
+[  323.491971][ T8535] page:ffffea000545b680 refcount:1 mapcount:0 mapping:0000000000000000 index:0x0 pfn:0x1516da
+[  323.493476][ T8535] memcg:ffff88814ff8cb82
+[  323.493945][ T8535] flags: 0x57ff00000000000(node=1|zone=2|lastcpupid=0x7ff)
+[  323.497609][ T8535] page_type: 0xffffffff()
+[  323.498141][ T8535] raw: 057ff00000000000 0000000000000000 dead000000000122 0000000000000000
+[  323.505219][ T8535] raw: 0000000000000000 0000000000000000 00000001ffffffff ffff88814ff8cb82
+[  323.506481][ T8535] page dumped because: kasan: bad access detected
+[  323.507188][ T8535] page_owner tracks the page as allocated
+[  323.508131][ T8535] page last allocated via order 0, migratetype Unmovable, gfp_mask 0x102dc2(GFP_HIGHUSER|__GFP_NOWARN|__GFP_ZERO), pid 8506, tgid 8506 (syz-executor.0), ts 308851789755, free_ts 0
+[  323.526841][ T8535]  post_alloc_hook+0x1e6/0x210
+[  323.527409][ T8535]  get_page_from_freelist+0x260a/0x2790
+[  323.528368][ T8535]  __alloc_pages+0x1f2/0x480
+[  323.528899][ T8535]  __vmalloc_node_range+0x864/0x1050
+[  323.529814][ T8535]  dup_task_struct+0x343/0x5b0
+[  323.530362][ T8535]  copy_process+0x4c3/0x2e60
+[  323.531209][ T8535]  kernel_clone+0x1c9/0x760
+[  323.531727][ T8535]  __se_sys_clone3+0x2c1/0x2e0
+[  323.532581][ T8535]  do_syscall_64+0x41/0x90
+[  323.533331][ T8535]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  323.534305][ T8535] page_owner free stack trace missing
+[  323.535116][ T8535] 
+[  323.535716][ T8535] Memory state around the buggy address:
+[  323.536333][ T8535]  ffffc90005adfc00: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[  323.537554][ T8535]  ffffc90005adfc80: 00 00 00 00 00 00 00 00 00 00 00 00 f1 f1 f1 f1
+[  323.542579][ T8535] >ffffc90005adfd00: e9 e9 e9 04 f3 f3 f3 f3 00 00 00 00 00 00 00 00
+[  323.545732][ T8535]                    ^
+[  323.546204][ T8535]  ffffc90005adfd80: 00 00 00 00 00 00 00 00 f1 f1 f1 f1 00 00 00 00
+[  323.549949][ T8535]  ffffc90005adfe00: 00 00 00 00 00 00 00 00 00 f2 f2 f2 f2 f2 00 04
+[  323.551179][ T8535] Kernel panic - not syncing: KDO: memcpy hit (id: uinput_abs_setup+0x30c/0x390, callid: 20107S)
+[  323.552296][ T8535] CPU: 0 PID: 8535 Comm: syz-executor.0 Not tainted 6.4.1-00011-gc173c3c31378 #20
+[  323.553276][ T8535] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+[  323.554242][ T8535] Call Trace:
+[  323.554607][ T8535]  <TASK>
+[  323.554936][ T8535]  dump_stack_lvl+0x1ce/0x2c0
+[  323.555525][ T8535]  ? nf_tcp_handle_invalid+0x3d0/0x3d0
+[  323.556231][ T8535]  ? panic+0x620/0x620
+[  323.556732][ T8535]  ? vscnprintf+0x5d/0x80
+[  323.557245][ T8535]  panic+0x2ba/0x620
+[  323.557700][ T8535]  ? uinput_abs_setup+0x30c/0x390
+[  323.558296][ T8535]  ? __wake_up_klogd+0xb7/0xf0
+[  323.558871][ T8535]  ? preempt_count_add+0xa0/0xf0
+[  323.559465][ T8535]  ? kdo_sanitizer_cov_write+0x100/0x100
+[  323.560129][ T8535]  ? kdo_kasan_report+0x7f/0x90
+[  323.560722][ T8535]  ? uinput_abs_setup+0x30c/0x390
+[  323.561318][ T8535]  ? uinput_abs_setup+0x30c/0x390
+[  323.561920][ T8535]  propagate_taint+0x20a/0x210
+[  323.562489][ T8535]  ? uinput_abs_setup+0x30c/0x390
+[  323.563092][ T8535]  ? uinput_abs_setup+0x30c/0x390
+[  323.563690][ T8535]  __kdo_asan_memcpy+0x69/0xa0
+[  323.564266][ T8535]  uinput_abs_setup+0x30c/0x390
+[  323.564858][ T8535]  ? uinput_str_to_user+0xe0/0xe0
+[  323.565469][ T8535]  uinput_ioctl_handler+0xa5d/0x10a0
+[  323.566094][ T8535]  ? uinput_release+0x40/0x40
+[  323.566667][ T8535]  ? __fget_files+0x2f0/0x340
+[  323.567242][ T8535]  ? bpf_lsm_file_ioctl+0x9/0x10
+[  323.567826][ T8535]  ? uinput_poll+0xc0/0xc0
+[  323.568374][ T8535]  __se_sys_ioctl+0xc9/0x140
+[  323.568944][ T8535]  do_syscall_64+0x41/0x90
+[  323.569487][ T8535]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  323.570173][ T8535] RIP: 0033:0x7fc82248fddd
+[  323.570706][ T8535] Code: c3 e8 97 2b 00 00 0f 1f 80 00 00 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 b0 ff ff ff f7 d8 64 89 01 48
+[  323.572822][ T8535] RSP: 002b:00007fc82329d028 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[  323.573768][ T8535] RAX: ffffffffffffffda RBX: 00007fc8225cbf80 RCX: 00007fc82248fddd
+[  323.574652][ T8535] RDX: 0000000020000000 RSI: 00000000401c5504 RDI: 0000000000000003
+[  323.575538][ T8535] RBP: 00007fc822501e18 R08: 0000000000000000 R09: 0000000000000000
+[  323.576433][ T8535] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000000
+[  323.577322][ T8535] R13: 000000000000000b R14: 00007fc8225cbf80 R15: 00007fc82327d000
+[  323.578221][ T8535]  </TASK>
+[  323.578760][ T8535] Kernel Offset: disabled
+[  323.579277][ T8535] Rebooting in 86400 seconds..
+
+VM DIAGNOSIS:
+00:43:12  Registers:
+info registers vcpu 0
+RAX=0000000000000001 RBX=00000000000000eb RCX=ffffffff81920ad4 RDX=0000000000000001
+RSI=0000000000000008 RDI=ffff88813ffff828 RBP=000000000001ffff RSP=ffffc90003b57768
+R8 =dffffc0000000000 R9 =fffff940003a4cf9 R10=0000000000000000 R11=dffffc0000000001
+R12=ffff88813fffa000 R13=1ffff11027ffff05 R14=000000000000000d R15=ffff88813fffa000
+RIP=ffffffff81a8995b RFL=00000806 [-O---P-] CPL=0 II=0 A20=1 SMM=0 HLT=0
+ES =0000 0000000000000000 ffffffff 00c00000
+CS =0010 0000000000000000 ffffffff 00a09b00 DPL=0 CS64 [-RA]
+SS =0000 0000000000000000 ffffffff 00c00000
+DS =0000 0000000000000000 ffffffff 00c00000
+FS =0000 00007fe33d5ad900 ffffffff 00c00000
+GS =0000 ffff8880ba000000 ffffffff 00c00000
+LDT=0000 0000000000000000 ffffffff 00c00000
+TR =0040 fffffe0000003000 00004087 00008b00 DPL=0 TSS64-busy
+GDT=     fffffe0000001000 0000007f
+IDT=     fffffe0000000000 00000fff
+CR0=80050033 CR2=00007fe33c36fe30 CR3=000000001d214000 CR4=00350ef0
+DR0=0000000000000000 DR1=0000000000000000 DR2=0000000000000000 DR3=0000000000000000 
+DR6=00000000fffe0ff0 DR7=0000000000000400
+EFER=0000000000000d01
+FCW=037f FSW=0000 [ST=0] FTW=00 MXCSR=00001f80
+FPR0=0000000000000000 0000 FPR1=0000000000000000 0000
+FPR2=0000000000000000 0000 FPR3=0000000000000000 0000
+FPR4=0000000000000000 0000 FPR5=0000000000000000 0000
+FPR6=0000000000000000 0000 FPR7=0000000000000000 0000
+YMM00=0000000000000000 0000000000000000 5837fe9dc1c91f32 00000000002c54c8
+YMM01=0000000000000000 0000000000000000 8120f43e3374b6a2 e24ef3a787e8d23f
+YMM02=0000000000000000 0000000000000000 5ffe1d603bc65ad3 00000000002c5908
+YMM03=0000000000000000 0000000000000000 375afdebbf381c81 00000000002dfd40
+YMM04=0000000000000000 0000000000000000 1452a59c56028fb3 000000000041dee0
+YMM05=0000000000000000 0000000000000000 d3fdd5f48436fbd7 00000000002c59b0
+YMM06=0000000000000000 0000000000000000 579b0c6ed4e4ecbc 00000000002c5868
+YMM07=0000000000000000 0000000000000000 a1fcdcf819d7e1e5 00000000002c55d8
+YMM08=0000000000000000 0000000000000000 44495f474f4c5359 530069253d595449
+YMM09=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM10=0000000000000000 0000000000000000 050f231100226b07 0707070707070707
+YMM11=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM12=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM13=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM14=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM15=0000000000000000 0000000000000000 0000000000000000 0000000000000000

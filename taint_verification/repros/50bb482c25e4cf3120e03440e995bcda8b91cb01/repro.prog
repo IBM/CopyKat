@@ -1,0 +1,13 @@
+# {Threaded:false Repeat:false RepeatTimes:0 Procs:1 Slowdown:1 Sandbox: SandboxArg:0 Leak:false NetInjection:false NetDevices:false NetReset:false Cgroups:false BinfmtMisc:false CloseFDs:false KCSAN:false DevlinkPCI:false NicVF:false USB:false VhciInjection:false Wifi:false IEEE802154:false Sysctl:false UseTmpDir:false HandleSegv:false Repro:false Trace:false LegacyOptions:{Collide:false Fault:false FaultCall:0 FaultNth:0}}
+accept(0xffffffffffffffff, 0x0, &(0x7f0000000000)) (enabled_site: 1102, site_type: 1)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f0000000200)={&(0x7f0000000340)='kfree\x00'}, 0x10)
+r0 = fsopen(&(0x7f0000000340)='autofs\x00', 0x0)
+fsconfig$FSCONFIG_SET_STRING(r0, 0x1, &(0x7f0000001600)='\xcfD\xbc\xbf\x95@\xd6j\'$\x1d\x14\xb7!\x8b\xff\xdc\x83\xc5$\xb3\xecr\xe4G:\x93\xdfj\x96\x7f\x03\xe5\x94\x04[\x02\xa9[>\xf9\x9c\x83@\x1e\x99\xcah\x85\xb8\xbeSAk\xf4\xb6 \xdf\xa0P\x18\x19\xae\x8c\x9a\x19mm\r<|\xe8\x9e\xa0x\x84p2\xf9\xe2\xed\xb0\f\x7f;\xf6J18G\x84c\x88\x9d{\xf4~\xdby\xe1\xdf\x1a\xae\xd6ez\xe5\xa8\xe1\'', &(0x7f0000000080)='MS{O', 0x0)
+fsconfig$FSCONFIG_SET_STRING(r0, 0x1, &(0x7f0000000240)=',-\x10*\x00', &(0x7f0000000440)=' \x00\x00\x00\x00\x00\x00\x00\x00', 0x0)
+fsconfig$FSCONFIG_SET_FD(r0, 0x5, &(0x7f00000005c0)='dE\x00', 0x0, r0)
+fsconfig$FSCONFIG_SET_STRING(r0, 0x1, &(0x7f0000000280)='\xd0\x9e^\xa0\xee\xc8\x17T\xb1GI\x90\xe2Q1\xb0\x8f\xe1\xa8\x95\xa0\xcd\fL\xf1<e\a\xa5\x8f\xab\x1a\xdaY\xfb\x03dhS\x97nZ\xf8\xc6\x1f\xd3K\xfa\xc8\x8d#\xce)\x9bg-D#g\x16\xf4\xd9\x00\x00\x00\x00\x00eA\x9f\xc3\x11\x18\xe6\xc5\x95\x9e!^\x97\b\x14\xc5\xad\t\f\xdeg\x8d\x16wW\xf6\xacE\xa3\xc8\xe7\xec\xd6\xbd\x1c+\n\xc7Q( \xba\xff\x17N\x1fB\x91\x15\x83\xec(B4/#W\xc5\x05\x9d\xd6\x02\x8cU!a\xdc|6\xdc\xee$\xb5\x1deC\xfb\xa2\xaa\xe0#\xcb\xde;sA\xad\xa6\xb6P\xa3\xf7\xc3\x93\xd4\xb6\x95\x02\xd8*\xa8\xd2\x94\xa3\x89\xa9\xa0\xc5\xc9=\xa5^', &(0x7f00000000c0)='dE\x00', 0x0)
+fsconfig$FSCONFIG_SET_BINARY(r0, 0x2, &(0x7f0000000580)='#]\x00', &(0x7f0000001700)="c5", 0x1)
+fsconfig$FSCONFIG_SET_BINARY(r0, 0x2, &(0x7f0000000040), &(0x7f0000000140)="8d", 0x1)
+r1 = creat(&(0x7f00000001c0)='./file0\x00', 0x0)
+fsconfig$FSCONFIG_SET_PATH(r0, 0x3, &(0x7f0000000040)='romfs\x00', &(0x7f0000000100)='./file0\x00', r1)
+close(r0)

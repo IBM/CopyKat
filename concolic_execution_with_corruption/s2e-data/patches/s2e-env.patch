@@ -1,0 +1,211 @@
+diff --git a/s2e_env/commands/new_project.py b/s2e_env/commands/new_project.py
+index c51003b..41fd827 100644
+--- a/s2e_env/commands/new_project.py
++++ b/s2e_env/commands/new_project.py
+@@ -320,6 +320,9 @@ class Command(EnvCommand):
+                             help='If a project with the given name already '
+                                  'exists, replace it')
+ 
++        parser.add_argument("--debootstrap", action='store_true', required=False, default=False,
++                            help='Enables the use for the all-in-one generic debootstrap image')
++
+     def handle(self, *args, **options):
+         if not validate_arguments(options):
+             return
+diff --git a/s2e_env/commands/project_creation/abstract_project.py b/s2e_env/commands/project_creation/abstract_project.py
+index 9d6fd58..79e4f2c 100644
+--- a/s2e_env/commands/project_creation/abstract_project.py
++++ b/s2e_env/commands/project_creation/abstract_project.py
+@@ -210,7 +210,7 @@ class AbstractProject(EnvCommand):
+     # Image helper methods
+     #
+ 
+-    def _select_image(self, target, image=None, download_image=True):
++    def _select_image(self, target, image=None, download_image=True, debootstrap=False):
+         """
+         Select an image to use for this project.
+ 
+@@ -234,17 +234,20 @@ class AbstractProject(EnvCommand):
+             # Don't do any validation on app images yet.
+             return self._get_or_download_image(img_templates, image, download_image)
+ 
+-        if image not in img_templates:
+-            raise CommandError(f'Unknown guest image {image}. Run s2e image_build for a list of supported images.')
++        if not debootstrap:
++            if image not in img_templates:
++                raise CommandError(f'Unknown guest image {image}. Run s2e image_build for a list of supported images.')
+ 
+         supported_images = self.get_usable_images(target, img_templates)
+         if not supported_images:
+             raise CommandError('No suitable image available for this target.')
+ 
+-        if image not in supported_images:
+-            raise CommandError(f'Chosen image {image} is not compatbile with the target.')
++        if not debootstrap:
++            if image not in supported_images:
++                raise CommandError(f'Chosen image {image} is not compatible with the target.')
+ 
+-        check_host_incompatibility(img_templates, base_image_name)
++
++        check_host_incompatibility(img_templates, base_image_name, debootstrap)
+         return self._get_or_download_image(img_templates, image, download_image)
+ 
+     def _guess_image(self, target, img_templates):
+diff --git a/s2e_env/commands/project_creation/base_project.py b/s2e_env/commands/project_creation/base_project.py
+index 452cb30..e6fe7fa 100644
+--- a/s2e_env/commands/project_creation/base_project.py
++++ b/s2e_env/commands/project_creation/base_project.py
+@@ -98,7 +98,7 @@ class BaseProject(AbstractProject):
+             img_desc = self._image_override
+         else:
+             img_desc = self._select_image(target, options.get('image'),
+-                                        options.get('download_image', False))
++                                        options.get('download_image', False), options.get("debootstrap"))
+ 
+             # Check architecture consistency (if the target has been specified)
+             if target.path and not is_valid_arch(target.arch, img_desc['os']):
+@@ -178,7 +178,9 @@ class BaseProject(AbstractProject):
+             'enable_tickler': options.get('enable_tickler', False),
+ 
+             'single_path': options.get('single_path', False),
+-            'custom_lua_string': options.get('custom_lua_string', '')
++            'custom_lua_string': options.get('custom_lua_string', ''),
++
++            'debootstrap': options.get('debootstrap', False)
+         }
+ 
+         # Do some basic analysis on the target (if it exists)
+@@ -350,6 +352,7 @@ class BaseProject(AbstractProject):
+         context = config.copy()
+         context['target_bootstrap_template'] = self._bootstrap_template
+         context['image_arch'] = config['image']['os']['arch']
++        context['debootstrap'] = config['debootstrap']
+ 
+         template = 'bootstrap.sh'
+         output_path = os.path.join(project_dir, template)
+diff --git a/s2e_env/templates/bootstrap.linux.sh b/s2e_env/templates/bootstrap.linux.sh
+index ed814f7..eb18290 100644
+--- a/s2e_env/templates/bootstrap.linux.sh
++++ b/s2e_env/templates/bootstrap.linux.sh
+@@ -23,14 +23,22 @@ function execute_target {
+     # using the ``S2E_SYM_ARGS`` environment variable as required
+     S2E_SYM_ARGS="{{ sym_args | join(' ') }}" LD_PRELOAD="${S2E_SO}" "${TARGET}" "$@" > /dev/null 2> /dev/null
+     {% else %}
+-    "${TARGET}" $* > /dev/null 2> /dev/null
++    sudo "${TARGET}" $* > /dev/null 2> /dev/null
+     {% endif %}
+ }
+ 
+ # Nothing more to initialize on Linux
+ function target_init {
+     # Start the LinuxMonitor kernel module
++    {% if debootstrap == true %}
++    ${S2ECMD} get s2e-kprobe.ko
++    sudo insmod s2e-kprobe.ko
++    #sudo insmod /root/s2e-kprobe/s2e-`uname -r`/s2e-kprobe.ko > /dev/ttyS0
++    #sudo insmod /root/s2e-kprobe/s2e-6.4.1/s2e-kprobe.ko > /dev/ttyS0
++
++    {% else %}
+     sudo modprobe s2e
++    {% endif %}
+ }
+ 
+ # Returns Linux-specific tools
+diff --git a/s2e_env/templates/bootstrap.sh b/s2e_env/templates/bootstrap.sh
+index 2c242c4..0bb51f4 100644
+--- a/s2e_env/templates/bootstrap.sh
++++ b/s2e_env/templates/bootstrap.sh
+@@ -222,13 +222,27 @@ function execute {
+ 
+ 
+ update_common_tools
+-update_target_tools
++#update_target_tools
+ 
+ {% if project_type != 'windows' %}
+ 
+ # Don't print crashes in the syslog. This prevents unnecessary forking in the
+ # kernel
+-sudo sysctl -w debug.exception-trace=0
++sudo -i <<END
++
++sysctl -w debug.exception-trace=0
++sysctl -w kernel.panic_on_io_nmi=0
++sysctl -w kernel.panic_on_oops=0
++sysctl -w kernel.panic_on_rcu_stall=0
++sysctl -w kernel.panic_on_unrecovered_nmi=0
++sysctl -w kernel.panic_on_warn=0
++sysctl -w vm.panic_on_oom=0
++
++# Need to disable swap, otherwise there will be forced concretization if the
++# system swaps out symbolic data to disk.
++swapoff -a
++mount -t tmpfs -osize=10m tmpfs /tmp
++END
+ 
+ # Prevent core dumps from being created. This prevents unnecessary forking in
+ # the kernel
+@@ -236,13 +250,6 @@ ulimit -c 0
+ 
+ # Ensure that /tmp is mounted in memory (if you built the image using s2e-env
+ # then this should already be the case. But better to be safe than sorry!)
+-if ! mount | grep "/tmp type tmpfs"; then
+-    sudo mount -t tmpfs -osize=10m tmpfs /tmp
+-fi
+-
+-# Need to disable swap, otherwise there will be forced concretization if the
+-# system swaps out symbolic data to disk.
+-sudo swapoff -a
+ 
+ {% endif %}
+ 
+diff --git a/s2e_env/templates/launch-s2e.sh b/s2e_env/templates/launch-s2e.sh
+index 01a28d0..d9af676 100644
+--- a/s2e_env/templates/launch-s2e.sh
++++ b/s2e_env/templates/launch-s2e.sh
+@@ -25,8 +25,8 @@ fi
+ 
+ {% if rel_image_path %}
+ 
+-IMAGE_PATH="$ENV_DIR/{{ rel_image_path }}"
+-IMAGE_JSON="$(dirname $IMAGE_PATH)/image.json"
++IMAGE_PATH="$ENV_DIR/images/buildroot-6.4.1/rootfs.ext4"
++IMAGE_JSON="$ENV_DIR/images/buildroot-6.4.1/image.json"
+ 
+ if [ ! -f "$IMAGE_PATH" -o ! -f "$IMAGE_JSON" ]; then
+     echo "$IMAGE_PATH and/or $IMAGE_JSON do not exist. Please check that your images are built properly."
+@@ -63,7 +63,7 @@ if [ $S2E_MAX_PROCESSES -gt 1 ]; then
+     export GRAPHICS=-nographic
+ fi
+ 
+-QEMU_ARGS="-k en-us -monitor null -enable-kvm -serial file:serial.txt $GRAPHICS -m $QEMU_MEMORY $QEMU_EXTRA_FLAGS"
++QEMU_ARGS="-k en-us -monitor null -enable-kvm -serial file:s2e-last/serial.txt $GRAPHICS -m $QEMU_MEMORY $QEMU_EXTRA_FLAGS"
+ 
+ if [ "x$QEMU_DRIVE" != "x" ]; then
+     QEMU_ARGS="$QEMU_ARGS $QEMU_DRIVE"
+diff --git a/s2e_env/utils/images.py b/s2e_env/utils/images.py
+index 2d99447..4bc126a 100644
+--- a/s2e_env/utils/images.py
++++ b/s2e_env/utils/images.py
+@@ -271,7 +271,7 @@ def select_best_image(base_templates, image_names):
+     return image_names[0]
+ 
+ 
+-def check_host_incompatibility(base_templates, image_name):
++def check_host_incompatibility(base_templates, image_name, debootstrap=False):
+     """
+     Warn users when the selected image may not work properly with binaries
+     built on the host.
+@@ -280,7 +280,11 @@ def check_host_incompatibility(base_templates, image_name):
+     id_name, version, _ = distro.linux_distribution(full_distribution_name=False)
+     id_name = id_name.lower()
+ 
+-    tpl = base_templates[image_name]
++    if not debootstrap:
++        tpl = base_templates[image_name]
++    else:
++        tpl = base_templates['debootstrap']
++
+     guest_name = tpl.get('os').get('name')
+     guest_version = tpl.get('os').get('version')
+     if guest_name == id_name and guest_version.startswith(version):

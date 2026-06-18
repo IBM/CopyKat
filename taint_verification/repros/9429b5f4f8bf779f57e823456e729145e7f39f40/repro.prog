@@ -1,0 +1,4 @@
+# {Threaded:false Repeat:false RepeatTimes:0 Procs:1 Slowdown:1 Sandbox: SandboxArg:0 Leak:false NetInjection:false NetDevices:false NetReset:false Cgroups:false BinfmtMisc:false CloseFDs:false KCSAN:false DevlinkPCI:false NicVF:false USB:false VhciInjection:false Wifi:false IEEE802154:false Sysctl:false UseTmpDir:false HandleSegv:false Repro:false Trace:false LegacyOptions:{Collide:false Fault:false FaultCall:0 FaultNth:0}}
+accept(0xffffffffffffffff, 0x0, &(0x7f0000000000)) (enabled_site: 10166, site_type: 1)
+r0 = socket$nl_xfrm(0x10, 0x3, 0x6)
+sendmsg$nl_xfrm(r0, &(0x7f0000000100)={0x0, 0x0, &(0x7f0000000140)={&(0x7f00000002c0)=@allocspi={0x120, 0x16, 0x1, 0x0, 0x0, {{{@in=@loopback, @in=@initdev={0xac, 0x1e, 0x0, 0x0}}, {@in=@local, 0x0, 0x32}, @in6=@ipv4={'\x00', '\xff\xff', @multicast2}}, 0x0, 0x8b}, [@coaddr={0x14, 0xe, @in6=@local}, @srcaddr={0x14, 0xd, @in=@multicast2}]}, 0x120}}, 0x0)

@@ -1,0 +1,13 @@
+# {Threaded:false Repeat:false RepeatTimes:0 Procs:1 Slowdown:1 Sandbox: SandboxArg:0 Leak:false NetInjection:false NetDevices:false NetReset:false Cgroups:false BinfmtMisc:false CloseFDs:false KCSAN:false DevlinkPCI:false NicVF:false USB:false VhciInjection:false Wifi:false IEEE802154:false Sysctl:false UseTmpDir:false HandleSegv:false Repro:false Trace:false LegacyOptions:{Collide:false Fault:false FaultCall:0 FaultNth:0}}
+accept(0xffffffffffffffff, 0x0, &(0x7f0000000000)) (enabled_site: 5443, site_type: 1)
+r0 = socket$vsock_stream(0x28, 0x1, 0x0)
+setsockopt$SO_VM_SOCKETS_BUFFER_MIN_SIZE(r0, 0x28, 0x1, &(0x7f0000000380)=0xffffffff00000041, 0x8)
+bind$vsock_stream(r0, &(0x7f0000000440), 0x10)
+listen(r0, 0x0)
+r1 = socket$vsock_stream(0x28, 0x1, 0x0)
+connect$vsock_stream(r1, &(0x7f0000000000)={0x28, 0x0, 0x0, @local}, 0x10)
+writev(r1, &(0x7f00000002c0)=[{&(0x7f0000000080)='?', 0x20000081}], 0x1)
+getpeername(r1, 0x0, &(0x7f00000001c0))
+r2 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f00000000c0)='rdma.current\x00', 0x275a, 0x0)
+write$binfmt_script(r2, &(0x7f0000000780), 0xb)
+mmap(&(0x7f0000000000/0xb36000)=nil, 0xb36000, 0x2, 0x28011, r2, 0x0)

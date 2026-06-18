@@ -1,0 +1,5 @@
+# {Threaded:false Repeat:false RepeatTimes:0 Procs:1 Slowdown:1 Sandbox: SandboxArg:0 Leak:false NetInjection:false NetDevices:false NetReset:false Cgroups:false BinfmtMisc:false CloseFDs:false KCSAN:false DevlinkPCI:false NicVF:false USB:false VhciInjection:false Wifi:false IEEE802154:false Sysctl:false UseTmpDir:false HandleSegv:false Repro:false Trace:false LegacyOptions:{Collide:false Fault:false FaultCall:0 FaultNth:0}}
+accept(0xffffffffffffffff, 0x0, &(0x7f0000000000)) (enabled_site: 1283, site_type: 1)
+r0 = socket(0x2000000015, 0x80005, 0x0)
+bind$inet6(r0, &(0x7f0000000180)={0xa, 0x0, 0x0, @loopback}, 0x1c)
+getsockname$packet(r0, 0x0, &(0x7f00000003c0))

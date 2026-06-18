@@ -1,0 +1,8 @@
+# {Threaded:false Repeat:false RepeatTimes:0 Procs:1 Slowdown:1 Sandbox: SandboxArg:0 Leak:false NetInjection:false NetDevices:false NetReset:false Cgroups:false BinfmtMisc:false CloseFDs:false KCSAN:false DevlinkPCI:false NicVF:false USB:false VhciInjection:false Wifi:false IEEE802154:false Sysctl:false UseTmpDir:false HandleSegv:false Repro:false Trace:false LegacyOptions:{Collide:false Fault:false FaultCall:0 FaultNth:0}}
+accept(0xffffffffffffffff, 0x0, &(0x7f0000000000)) (enabled_site: 1018, site_type: 1)
+r0 = bpf$BPF_PROG_RAW_TRACEPOINT_LOAD(0x5, &(0x7f00000013c0)={0x18, 0x3, &(0x7f0000000080)=@framed, &(0x7f0000000000)='syzkaller\x00'}, 0x90)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f0000000440)={&(0x7f0000000400)='sched_switch\x00', r0}, 0x10)
+r1 = socket$inet6_udp(0xa, 0x2, 0x0)
+ioctl$sock_ipv6_tunnel_SIOCADDTUNNEL(r1, 0x89f1, &(0x7f00000003c0)={'ip6tnl0\x00', &(0x7f0000000340)={'syztnl2\x00', 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, @remote, @rand_addr=' \x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02'}})
+r2 = socket$inet6_udplite(0xa, 0x2, 0x88)
+ioctl$sock_ipv6_tunnel_SIOCCHGTUNNEL(r2, 0x89f3, &(0x7f0000000280)={'syztnl2\x00', &(0x7f0000000040)={'syztnl0\x00', 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, @loopback, @mcast2={0xff, 0x5}}})

@@ -1,0 +1,1180 @@
+Warning: Permanently added '[localhost]:64784' (ED25519) to the list of known hosts.
+2024/05/22 18:52:06 fuzzer started
+2024/05/22 18:52:07 dialing manager at localhost:34093
+syzkaller login: [  176.884394][ T8051] cgroup: Unknown subsys name 'net'
+[  177.058819][ T8051] cgroup: Unknown subsys name 'rlimit'
+2024/05/22 18:52:08 syscalls: 3922
+2024/05/22 18:52:08 code coverage: enabled
+2024/05/22 18:52:08 comparison tracing: enabled
+2024/05/22 18:52:08 extra coverage: enabled
+2024/05/22 18:52:08 delay kcov mmap: enabled
+2024/05/22 18:52:08 setuid sandbox: enabled
+2024/05/22 18:52:08 namespace sandbox: enabled
+2024/05/22 18:52:08 Android sandbox: /sys/fs/selinux/policy does not exist
+2024/05/22 18:52:08 fault injection: enabled
+2024/05/22 18:52:08 leak checking: CONFIG_DEBUG_KMEMLEAK is not enabled
+2024/05/22 18:52:08 net packet injection: enabled
+2024/05/22 18:52:08 net device setup: enabled
+2024/05/22 18:52:08 concurrency sanitizer: /sys/kernel/debug/kcsan does not exist
+2024/05/22 18:52:08 devlink PCI setup: PCI device 0000:00:10.0 is not available
+2024/05/22 18:52:08 NIC VF setup: PCI device 0000:00:11.0 is not available
+2024/05/22 18:52:08 USB emulation: enabled
+2024/05/22 18:52:08 hci packet injection: enabled
+2024/05/22 18:52:08 wifi device emulation: enabled
+2024/05/22 18:52:08 802.15.4 emulation: enabled
+2024/05/22 18:52:08 fetching corpus: 0, signal 0/2000 (executing program)
+2024/05/22 18:52:08 fetching corpus: 50, signal 18509/20954 (executing program)
+2024/05/22 18:52:09 fetching corpus: 100, signal 31633/33761 (executing program)
+2024/05/22 18:52:09 fetching corpus: 129, signal 34423/36828 (executing program)
+2024/05/22 18:52:09 fetching corpus: 129, signal 34423/37426 (executing program)
+2024/05/22 18:52:09 fetching corpus: 129, signal 34423/38058 (executing program)
+2024/05/22 18:52:09 fetching corpus: 129, signal 34423/38673 (executing program)
+2024/05/22 18:52:09 fetching corpus: 129, signal 34423/39258 (executing program)
+2024/05/22 18:52:09 fetching corpus: 129, signal 34423/39874 (executing program)
+2024/05/22 18:52:09 fetching corpus: 129, signal 34423/40481 (executing program)
+2024/05/22 18:52:09 fetching corpus: 129, signal 34423/41126 (executing program)
+2024/05/22 18:52:09 fetching corpus: 129, signal 34423/41762 (executing program)
+2024/05/22 18:52:09 fetching corpus: 129, signal 34423/42397 (executing program)
+2024/05/22 18:52:09 fetching corpus: 129, signal 34423/43062 (executing program)
+2024/05/22 18:52:09 fetching corpus: 129, signal 34423/43668 (executing program)
+2024/05/22 18:52:09 fetching corpus: 129, signal 34423/44307 (executing program)
+2024/05/22 18:52:09 fetching corpus: 129, signal 34423/44903 (executing program)
+2024/05/22 18:52:09 fetching corpus: 129, signal 34423/45464 (executing program)
+2024/05/22 18:52:09 fetching corpus: 129, signal 34423/46074 (executing program)
+2024/05/22 18:52:09 fetching corpus: 129, signal 34423/46703 (executing program)
+2024/05/22 18:52:09 fetching corpus: 129, signal 34423/47333 (executing program)
+2024/05/22 18:52:09 fetching corpus: 129, signal 34423/47945 (executing program)
+2024/05/22 18:52:09 fetching corpus: 129, signal 34423/48572 (executing program)
+2024/05/22 18:52:09 fetching corpus: 129, signal 34423/49212 (executing program)
+2024/05/22 18:52:09 fetching corpus: 129, signal 34423/49693 (executing program)
+2024/05/22 18:52:09 fetching corpus: 129, signal 34423/49693 (executing program)
+2024/05/22 18:52:15 starting 1 fuzzer processes
+[  184.432975][ T8034] memfd_create() without MFD_EXEC nor MFD_NOEXEC_SEAL, pid=8034 'syz-fuzzer'
+18:52:15 executing program 0:
+prctl$PR_SET_SECCOMP(0x16, 0x2, &(0x7f0000000000)={0x1, &(0x7f00000000c0)=[{0x200000000006, 0x0, 0x0, 0x7ffc1ffb}]})
+r0 = bpf$BPF_PROG_RAW_TRACEPOINT_LOAD(0x5, &(0x7f0000000180)={0x18, 0x5, &(0x7f0000000280)=ANY=[@ANYBLOB], &(0x7f0000000040)='syzkaller\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x2}, 0x90)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f0000000880)={&(0x7f0000000a80)='kfree\x00', r0}, 0x10)
+bpf$MAP_CREATE(0x4, &(0x7f0000000180), 0x48)
+
+[  204.226043][ T8065] Bluetooth: hci0: unexpected cc 0x0c03 length: 249 > 1
+[  204.228905][ T8065] Bluetooth: hci0: unexpected cc 0x1003 length: 249 > 9
+[  204.231014][ T8065] Bluetooth: hci0: unexpected cc 0x1001 length: 249 > 9
+[  204.244975][ T8065] Bluetooth: hci0: unexpected cc 0x0c23 length: 249 > 4
+[  204.247626][ T8065] Bluetooth: hci0: unexpected cc 0x0c25 length: 249 > 3
+[  204.249352][ T8065] Bluetooth: hci0: unexpected cc 0x0c38 length: 249 > 2
+[  205.314736][ T1219] ieee802154 phy0 wpan0: encryption failed: -22
+[  205.315649][ T1219] ieee802154 phy1 wpan1: encryption failed: -22
+[  205.525474][ T8062] chnl_net:caif_netlink_parms(): no params data found
+[  205.749877][ T8062] bridge0: port 1(bridge_slave_0) entered blocking state
+[  205.753936][ T8062] bridge0: port 1(bridge_slave_0) entered disabled state
+[  205.754937][ T8062] bridge_slave_0: entered allmulticast mode
+[  205.757966][ T8062] bridge_slave_0: entered promiscuous mode
+[  205.769571][ T8062] bridge0: port 2(bridge_slave_1) entered blocking state
+[  205.770867][ T8062] bridge0: port 2(bridge_slave_1) entered disabled state
+[  205.771833][ T8062] bridge_slave_1: entered allmulticast mode
+[  205.777538][ T8062] bridge_slave_1: entered promiscuous mode
+[  205.845872][ T8062] bond0: (slave bond_slave_0): Enslaving as an active interface with an up link
+[  205.857863][ T8062] bond0: (slave bond_slave_1): Enslaving as an active interface with an up link
+[  205.926142][ T8062] team0: Port device team_slave_0 added
+[  205.931577][ T8062] team0: Port device team_slave_1 added
+[  206.010721][ T8062] batman_adv: batadv0: Adding interface: batadv_slave_0
+[  206.011547][ T8062] batman_adv: batadv0: The MTU of interface batadv_slave_0 is too small (1500) to handle the transport of batman-adv packets. Packets going over this interface will be fragmented on layer2 which could impact the performance. Setting the MTU to 1560 would solve the problem.
+[  206.018078][ T8062] batman_adv: batadv0: Not using interface batadv_slave_0 (retrying later): interface not active
+[  206.027652][ T8062] batman_adv: batadv0: Adding interface: batadv_slave_1
+[  206.028487][ T8062] batman_adv: batadv0: The MTU of interface batadv_slave_1 is too small (1500) to handle the transport of batman-adv packets. Packets going over this interface will be fragmented on layer2 which could impact the performance. Setting the MTU to 1560 would solve the problem.
+[  206.035017][ T8062] batman_adv: batadv0: Not using interface batadv_slave_1 (retrying later): interface not active
+[  206.140466][ T8062] hsr_slave_0: entered promiscuous mode
+[  206.148125][ T8062] hsr_slave_1: entered promiscuous mode
+[  206.273209][ T4405] Bluetooth: hci0: command 0x0409 tx timeout
+[  206.578240][ T8062] netdevsim netdevsim0 netdevsim0: renamed from eth0
+[  206.597561][ T8062] netdevsim netdevsim0 netdevsim1: renamed from eth1
+[  206.614517][ T8062] netdevsim netdevsim0 netdevsim2: renamed from eth2
+[  206.629633][ T8062] netdevsim netdevsim0 netdevsim3: renamed from eth3
+[  206.806942][ T8062] 8021q: adding VLAN 0 to HW filter on device bond0
+[  206.826667][    T7] IPv6: ADDRCONF(NETDEV_CHANGE): veth1: link becomes ready
+[  206.829399][    T7] IPv6: ADDRCONF(NETDEV_CHANGE): veth0: link becomes ready
+[  206.845457][ T8062] 8021q: adding VLAN 0 to HW filter on device team0
+[  206.855399][    T7] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_to_bridge: link becomes ready
+[  206.857242][    T7] IPv6: ADDRCONF(NETDEV_CHANGE): bridge_slave_0: link becomes ready
+[  206.860318][    T7] bridge0: port 1(bridge_slave_0) entered blocking state
+[  206.861630][    T7] bridge0: port 1(bridge_slave_0) entered forwarding state
+[  206.871767][    T7] IPv6: ADDRCONF(NETDEV_CHANGE): bridge0: link becomes ready
+[  206.886455][    T7] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_to_bridge: link becomes ready
+[  206.888387][    T7] IPv6: ADDRCONF(NETDEV_CHANGE): bridge_slave_1: link becomes ready
+[  206.891020][    T7] bridge0: port 2(bridge_slave_1) entered blocking state
+[  206.892031][    T7] bridge0: port 2(bridge_slave_1) entered forwarding state
+[  206.911522][ T7950] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_to_bond: link becomes ready
+[  206.928125][ T4416] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_to_bond: link becomes ready
+[  206.940351][ T4416] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_to_team: link becomes ready
+[  206.947155][ T4416] IPv6: ADDRCONF(NETDEV_CHANGE): team_slave_0: link becomes ready
+[  206.957078][ T4416] IPv6: ADDRCONF(NETDEV_CHANGE): team0: link becomes ready
+[  206.974843][ T4416] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_to_team: link becomes ready
+[  206.977299][ T4416] IPv6: ADDRCONF(NETDEV_CHANGE): team_slave_1: link becomes ready
+[  206.994081][ T4416] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_to_hsr: link becomes ready
+[  206.996289][ T4416] IPv6: ADDRCONF(NETDEV_CHANGE): hsr_slave_0: link becomes ready
+[  207.011155][ T4416] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_to_hsr: link becomes ready
+[  207.013888][ T4416] IPv6: ADDRCONF(NETDEV_CHANGE): hsr_slave_1: link becomes ready
+[  207.027516][ T8062] IPv6: ADDRCONF(NETDEV_CHANGE): hsr0: link becomes ready
+[  207.338115][ T4416] IPv6: ADDRCONF(NETDEV_CHANGE): vxcan1: link becomes ready
+[  207.339633][ T4416] IPv6: ADDRCONF(NETDEV_CHANGE): vxcan0: link becomes ready
+[  207.365546][ T8062] 8021q: adding VLAN 0 to HW filter on device batadv0
+[  207.397943][ T4416] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_virt_wifi: link becomes ready
+[  207.400610][ T4416] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_virt_wifi: link becomes ready
+[  207.447942][ T4416] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_vlan: link becomes ready
+[  207.450345][ T4416] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_vlan: link becomes ready
+[  207.457535][ T4416] IPv6: ADDRCONF(NETDEV_CHANGE): vlan0: link becomes ready
+[  207.459874][ T4416] IPv6: ADDRCONF(NETDEV_CHANGE): vlan1: link becomes ready
+[  207.469678][ T8062] veth0_vlan: entered promiscuous mode
+[  207.496231][ T8062] veth1_vlan: entered promiscuous mode
+[  207.537794][ T4416] IPv6: ADDRCONF(NETDEV_CHANGE): macvlan0: link becomes ready
+[  207.539629][ T4416] IPv6: ADDRCONF(NETDEV_CHANGE): macvlan1: link becomes ready
+[  207.546116][ T4416] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_macvtap: link becomes ready
+[  207.548188][ T4416] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_macvtap: link becomes ready
+[  207.570413][ T8062] veth0_macvtap: entered promiscuous mode
+[  207.580719][ T8062] veth1_macvtap: entered promiscuous mode
+[  207.615196][ T8062] batman_adv: batadv0: Interface activated: batadv_slave_0
+[  207.616421][ T4416] IPv6: ADDRCONF(NETDEV_CHANGE): macvtap0: link becomes ready
+[  207.618266][ T4416] IPv6: ADDRCONF(NETDEV_CHANGE): macsec0: link becomes ready
+[  207.621727][ T4416] IPv6: ADDRCONF(NETDEV_CHANGE): batadv_slave_0: link becomes ready
+[  207.627934][ T4416] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_to_batadv: link becomes ready
+[  207.643441][ T8062] batman_adv: batadv0: Interface activated: batadv_slave_1
+[  207.644457][ T4416] IPv6: ADDRCONF(NETDEV_CHANGE): batadv_slave_1: link becomes ready
+[  207.647511][ T4416] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_to_batadv: link becomes ready
+[  207.661299][ T8062] netdevsim netdevsim0 netdevsim0: set [1, 0] type 2 family 0 port 6081 - 0
+[  207.670147][ T8062] netdevsim netdevsim0 netdevsim1: set [1, 0] type 2 family 0 port 6081 - 0
+[  207.671142][ T8062] netdevsim netdevsim0 netdevsim2: set [1, 0] type 2 family 0 port 6081 - 0
+[  207.687107][ T8062] netdevsim netdevsim0 netdevsim3: set [1, 0] type 2 family 0 port 6081 - 0
+[  207.830723][ T8062] ieee80211 phy3: Selected rate control algorithm 'minstrel_ht'
+[  207.947555][   T10] wlan0: Created IBSS using preconfigured BSSID 50:50:50:50:50:50
+[  207.948633][   T10] wlan0: Creating new IBSS network, BSSID 50:50:50:50:50:50
+[  207.952509][ T4446] IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+[  207.988388][ T8062] ieee80211 phy4: Selected rate control algorithm 'minstrel_ht'
+[  208.091281][   T49] wlan1: Created IBSS using preconfigured BSSID 50:50:50:50:50:50
+[  208.093942][   T49] wlan1: Creating new IBSS network, BSSID 50:50:50:50:50:50
+[  208.097165][ T8285] IPv6: ADDRCONF(NETDEV_CHANGE): wlan1: link becomes ready
+[  208.357069][ T8065] Bluetooth: hci0: command 0x041b tx timeout
+[  208.981028][   T21] audit: type=1326 audit(1716403960.253:2): auid=0 uid=0 gid=0 ses=4 subj=unconfined pid=8297 comm="syz-executor.0" exe="/syz-executor.0" sig=0 arch=c000003e syscall=202 compat=0 ip=0x7f522f08fddd code=0x7ffc0000
+[  208.990404][   T21] audit: type=1326 audit(1716403960.263:3): auid=0 uid=0 gid=0 ses=4 subj=unconfined pid=8297 comm="syz-executor.0" exe="/syz-executor.0" sig=0 arch=c000003e syscall=257 compat=0 ip=0x7f522f08eac4 code=0x7ffc0000
+[  209.007775][   T21] audit: type=1326 audit(1716403960.283:4): auid=0 uid=0 gid=0 ses=4 subj=unconfined pid=8297 comm="syz-executor.0" exe="/syz-executor.0" sig=0 arch=c000003e syscall=1 compat=0 ip=0x7f522f08ec0f code=0x7ffc0000
+[  209.010069][   T21] audit: type=1326 audit(1716403960.283:5): auid=0 uid=0 gid=0 ses=4 subj=unconfined pid=8297 comm="syz-executor.0" exe="/syz-executor.0" sig=0 arch=c000003e syscall=3 compat=0 ip=0x7f522f08f69b code=0x7ffc0000
+[  209.024527][   T21] audit: type=1326 audit(1716403960.293:6): auid=0 uid=0 gid=0 ses=4 subj=unconfined pid=8297 comm="syz-executor.0" exe="/syz-executor.0" sig=0 arch=c000003e syscall=321 compat=0 ip=0x7f522f08fddd code=0x7ffc0000
+[  209.030223][   T21] audit: type=1326 audit(1716403960.303:7): auid=0 uid=0 gid=0 ses=4 subj=unconfined pid=8297 comm="syz-executor.0" exe="/syz-executor.0" sig=0 arch=c000003e syscall=202 compat=0 ip=0x7f522f08fddd code=0x7ffc0000
+[  209.038762][   T21] audit: type=1326 audit(1716403960.313:8): auid=0 uid=0 gid=0 ses=4 subj=unconfined pid=8297 comm="syz-executor.0" exe="/syz-executor.0" sig=0 arch=c000003e syscall=257 compat=0 ip=0x7f522f08eac4 code=0x7ffc0000
+[  209.047536][   T21] audit: type=1326 audit(1716403960.313:9): auid=0 uid=0 gid=0 ses=4 subj=unconfined pid=8297 comm="syz-executor.0" exe="/syz-executor.0" sig=0 arch=c000003e syscall=1 compat=0 ip=0x7f522f08ec0f code=0x7ffc0000
+[  209.053903][   T21] audit: type=1326 audit(1716403960.313:10): auid=0 uid=0 gid=0 ses=4 subj=unconfined pid=8297 comm="syz-executor.0" exe="/syz-executor.0" sig=0 arch=c000003e syscall=3 compat=0 ip=0x7f522f08f69b code=0x7ffc0000
+[  209.060450][   T21] audit: type=1326 audit(1716403960.313:11): auid=0 uid=0 gid=0 ses=4 subj=unconfined pid=8297 comm="syz-executor.0" exe="/syz-executor.0" sig=0 arch=c000003e syscall=321 compat=0 ip=0x7f522f08fddd code=0x7ffc0000
+2024/05/22 18:52:41 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x1bc, Ip:0x81665919}
+2024/05/22 18:52:41 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x18fc, Ip:0x860c4ef9}
+2024/05/22 18:52:41 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x1fa5, Ip:0x8166592b}
+2024/05/22 18:52:41 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2c23, Ip:0x860c4ee9}
+2024/05/22 18:52:41 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 18:52:41 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2b8d, Ip:0x8170f374}
+2024/05/22 18:52:41 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x313d, Ip:0x8170cde2}
+18:52:41 executing program 0:
+prctl$PR_SET_SECCOMP(0x16, 0x2, &(0x7f0000000000)={0x1, &(0x7f00000000c0)=[{0x200000000006, 0x0, 0x0, 0x7ffc1ffb}]})
+r0 = bpf$BPF_PROG_RAW_TRACEPOINT_LOAD(0x5, &(0x7f0000000180)={0x18, 0x5, &(0x7f0000000280)=ANY=[@ANYBLOB], &(0x7f0000000040)='syzkaller\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x2}, 0x90)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f0000000880)={&(0x7f0000000a80)='kfree\x00', r0}, 0x10)
+bpf$MAP_CREATE(0x4, &(0x7f0000000180), 0x48)
+
+2024/05/22 18:52:41 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 18:52:41 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x350d, Ip:0x8170cdf5}
+2024/05/22 18:52:41 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x313d, Ip:0x8170cde2}
+2024/05/22 18:52:41 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 18:52:41 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x350d, Ip:0x8170cdf5}
+2024/05/22 18:52:41 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x313d, Ip:0x8170cde2}
+2024/05/22 18:52:41 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 18:52:41 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x350d, Ip:0x8170cdf5}
+[  210.442159][ T4405] Bluetooth: hci0: command 0x040f tx timeout
+18:52:43 executing program 0:
+prctl$PR_SET_SECCOMP(0x16, 0x2, &(0x7f0000000000)={0x1, &(0x7f00000000c0)=[{0x200000000006, 0x0, 0x0, 0x7ffc1ffb}]})
+r0 = bpf$BPF_PROG_RAW_TRACEPOINT_LOAD(0x5, &(0x7f0000000180)={0x18, 0x5, &(0x7f0000000280)=ANY=[@ANYBLOB], &(0x7f0000000040)='syzkaller\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x2}, 0x90)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f0000000880)={&(0x7f0000000a80)='kfree\x00', r0}, 0x10)
+bpf$MAP_CREATE(0x4, &(0x7f0000000180), 0x48)
+
+[  212.514004][ T8065] Bluetooth: hci0: command 0x0419 tx timeout
+18:52:44 executing program 0:
+prctl$PR_SET_SECCOMP(0x16, 0x2, &(0x7f0000000000)={0x1, &(0x7f00000000c0)=[{0x200000000006, 0x0, 0x0, 0x7ffc1ffb}]})
+r0 = bpf$BPF_PROG_RAW_TRACEPOINT_LOAD(0x5, &(0x7f0000000180)={0x18, 0x5, &(0x7f0000000280)=ANY=[@ANYBLOB], &(0x7f0000000040)='syzkaller\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x2}, 0x90)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f0000000880)={&(0x7f0000000a80)='kfree\x00', r0}, 0x10)
+bpf$MAP_CREATE(0x4, &(0x7f0000000180), 0x48)
+
+[  214.328285][   T21] kauditd_printk_skb: 38 callbacks suppressed
+[  214.328297][   T21] audit: type=1326 audit(1716403965.603:50): auid=0 uid=0 gid=0 ses=4 subj=unconfined pid=8306 comm="syz-executor.0" exe="/syz-executor.0" sig=0 arch=c000003e syscall=202 compat=0 ip=0x7f522f08fddd code=0x7ffc0000
+[  214.336362][   T21] audit: type=1326 audit(1716403965.613:51): auid=0 uid=0 gid=0 ses=4 subj=unconfined pid=8306 comm="syz-executor.0" exe="/syz-executor.0" sig=0 arch=c000003e syscall=257 compat=0 ip=0x7f522f08eac4 code=0x7ffc0000
+[  214.345549][   T21] audit: type=1326 audit(1716403965.613:52): auid=0 uid=0 gid=0 ses=4 subj=unconfined pid=8306 comm="syz-executor.0" exe="/syz-executor.0" sig=0 arch=c000003e syscall=1 compat=0 ip=0x7f522f08ec0f code=0x7ffc0000
+[  214.350926][   T21] audit: type=1326 audit(1716403965.613:53): auid=0 uid=0 gid=0 ses=4 subj=unconfined pid=8306 comm="syz-executor.0" exe="/syz-executor.0" sig=0 arch=c000003e syscall=3 compat=0 ip=0x7f522f08f69b code=0x7ffc0000
+[  214.366909][   T21] audit: type=1326 audit(1716403965.613:54): auid=0 uid=0 gid=0 ses=4 subj=unconfined pid=8306 comm="syz-executor.0" exe="/syz-executor.0" sig=0 arch=c000003e syscall=321 compat=0 ip=0x7f522f08fddd code=0x7ffc0000
+[  214.376299][   T21] audit: type=1326 audit(1716403965.623:55): auid=0 uid=0 gid=0 ses=4 subj=unconfined pid=8306 comm="syz-executor.0" exe="/syz-executor.0" sig=0 arch=c000003e syscall=202 compat=0 ip=0x7f522f08fddd code=0x7ffc0000
+[  214.385542][   T21] audit: type=1326 audit(1716403965.623:56): auid=0 uid=0 gid=0 ses=4 subj=unconfined pid=8306 comm="syz-executor.0" exe="/syz-executor.0" sig=0 arch=c000003e syscall=257 compat=0 ip=0x7f522f08eac4 code=0x7ffc0000
+[  214.393510][   T21] audit: type=1326 audit(1716403965.623:57): auid=0 uid=0 gid=0 ses=4 subj=unconfined pid=8306 comm="syz-executor.0" exe="/syz-executor.0" sig=0 arch=c000003e syscall=1 compat=0 ip=0x7f522f08ec0f code=0x7ffc0000
+[  214.398796][   T21] audit: type=1326 audit(1716403965.623:58): auid=0 uid=0 gid=0 ses=4 subj=unconfined pid=8306 comm="syz-executor.0" exe="/syz-executor.0" sig=0 arch=c000003e syscall=3 compat=0 ip=0x7f522f08f69b code=0x7ffc0000
+[  214.407984][   T21] audit: type=1326 audit(1716403965.623:59): auid=0 uid=0 gid=0 ses=4 subj=unconfined pid=8306 comm="syz-executor.0" exe="/syz-executor.0" sig=0 arch=c000003e syscall=321 compat=0 ip=0x7f522f08fddd code=0x7ffc0000
+18:52:46 executing program 0:
+prctl$PR_SET_SECCOMP(0x16, 0x2, &(0x7f0000000000)={0x1, &(0x7f00000000c0)=[{0x200000000006, 0x0, 0x0, 0x7ffc1ffb}]})
+r0 = bpf$BPF_PROG_RAW_TRACEPOINT_LOAD(0x5, &(0x7f0000000180)={0x18, 0x5, &(0x7f0000000280)=ANY=[@ANYBLOB], &(0x7f0000000040)='syzkaller\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x2}, 0x90)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f0000000880)={&(0x7f0000000a80)='kfree\x00', r0}, 0x10)
+bpf$MAP_CREATE(0x4, &(0x7f0000000180), 0x48)
+
+18:52:47 executing program 0:
+prctl$PR_SET_SECCOMP(0x16, 0x2, &(0x7f0000000000)={0x1, &(0x7f00000000c0)=[{0x200000000006, 0x0, 0x0, 0x7ffc1ffb}]})
+r0 = bpf$BPF_PROG_RAW_TRACEPOINT_LOAD(0x5, &(0x7f0000000180)={0x18, 0x5, &(0x7f0000000280)=ANY=[@ANYBLOB], &(0x7f0000000040)='syzkaller\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x2}, 0x90)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f0000000880)={&(0x7f0000000a80)='kfree\x00', r0}, 0x10)
+bpf$MAP_CREATE(0x4, &(0x7f0000000180), 0x48)
+
+18:52:49 executing program 0:
+prctl$PR_SET_SECCOMP(0x16, 0x2, &(0x7f0000000000)={0x1, &(0x7f00000000c0)=[{0x200000000006, 0x0, 0x0, 0x7ffc1ffb}]})
+r0 = bpf$BPF_PROG_RAW_TRACEPOINT_LOAD(0x5, &(0x7f0000000180)={0x18, 0x5, &(0x7f0000000280)=ANY=[@ANYBLOB], &(0x7f0000000040)='syzkaller\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x2}, 0x90)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f0000000880)={&(0x7f0000000a80)='kfree\x00', r0}, 0x10)
+bpf$MAP_CREATE(0x4, &(0x7f0000000180), 0x48)
+
+18:52:51 executing program 0:
+r0 = socket$packet(0x11, 0x3, 0x300)
+recvmmsg(r0, &(0x7f0000000300), 0x64, 0x0, 0x0)
+setsockopt$packet_int(r0, 0x107, 0x8, &(0x7f0000000400)=0x43fb, 0x4)
+r1 = socket$inet(0x2, 0x4000000000000001, 0x0)
+setsockopt$inet_tcp_int(r1, 0x6, 0x80000000000002, &(0x7f0000000000)=0x200, 0x4)
+bind$inet(r1, &(0x7f0000000380)={0x2, 0x200000000004e23, @local}, 0x10)
+sendto$inet(r1, 0x0, 0x0, 0x2404c7fc, &(0x7f00000008c0)={0x2, 0x4e23, @local}, 0x10)
+ioctl$sock_SIOCGIFINDEX(0xffffffffffffffff, 0x8933, &(0x7f0000000a00)={'veth1_to_team\x00'})
+ioctl$FS_IOC_GETFSMAP(0xffffffffffffffff, 0xc0c0583b, 0x0)
+getpeername$unix(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_add_memb(0xffffffffffffffff, 0x107, 0x1, 0x0, 0x0)
+bind$unix(0xffffffffffffffff, 0x0, 0x0)
+syz_genetlink_get_family_id$netlbl_calipso(0x0, 0xffffffffffffffff)
+ioctl$sock_inet_SIOCSARP(0xffffffffffffffff, 0x8955, 0x0)
+accept$packet(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_int(0xffffffffffffffff, 0x107, 0x0, 0x0, 0x0)
+write$binfmt_elf64(r1, &(0x7f0000000300)=ANY=[@ANYRESDEC, @ANYRES32], 0x100000530)
+
+2024/05/22 18:52:53 cfuCover: ipc.CustomCov{Id:0xc001, Val:0xba6, Ip:0x85ff73fe}
+2024/05/22 18:52:53 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x30be, Ip:0x85ffa1f0}
+2024/05/22 18:52:53 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 18:52:53 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x4de3, Ip:0x85ffa202}
+2024/05/22 18:52:53 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 18:52:53 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x4a2d, Ip:0x869d2c26}
+2024/05/22 18:52:53 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x5629, Ip:0x869d2c16}
+2024/05/22 18:52:53 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x203e, Ip:0x86618929}
+2024/05/22 18:52:53 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3209, Ip:0x86618917}
+2024/05/22 18:52:53 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 18:52:53 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x30be, Ip:0x85ff2f15}
+2024/05/22 18:52:53 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 18:52:53 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3858, Ip:0x85ff2f25}
+2024/05/22 18:52:53 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x30be, Ip:0x85ff2f15}
+2024/05/22 18:52:53 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 18:52:53 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3858, Ip:0x85ff2f25}
+2024/05/22 18:52:53 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x53e9, Ip:0x81235ebf}
+2024/05/22 18:52:53 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3e9b, Ip:0x833c12dd}
+18:52:53 executing program 0:
+r0 = socket$packet(0x11, 0x3, 0x300)
+recvmmsg(r0, &(0x7f0000000300), 0x64, 0x0, 0x0)
+setsockopt$packet_int(r0, 0x107, 0x8, &(0x7f0000000400)=0x43fb, 0x4)
+r1 = socket$inet(0x2, 0x4000000000000001, 0x0)
+setsockopt$inet_tcp_int(r1, 0x6, 0x80000000000002, &(0x7f0000000000)=0x200, 0x4)
+bind$inet(r1, &(0x7f0000000380)={0x2, 0x200000000004e23, @local}, 0x10)
+sendto$inet(r1, 0x0, 0x0, 0x2404c7fc, &(0x7f00000008c0)={0x2, 0x4e23, @local}, 0x10)
+ioctl$sock_SIOCGIFINDEX(0xffffffffffffffff, 0x8933, &(0x7f0000000a00)={'veth1_to_team\x00'})
+ioctl$FS_IOC_GETFSMAP(0xffffffffffffffff, 0xc0c0583b, 0x0)
+getpeername$unix(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_add_memb(0xffffffffffffffff, 0x107, 0x1, 0x0, 0x0)
+bind$unix(0xffffffffffffffff, 0x0, 0x0)
+syz_genetlink_get_family_id$netlbl_calipso(0x0, 0xffffffffffffffff)
+ioctl$sock_inet_SIOCSARP(0xffffffffffffffff, 0x8955, 0x0)
+accept$packet(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_int(0xffffffffffffffff, 0x107, 0x0, 0x0, 0x0)
+write$binfmt_elf64(r1, &(0x7f0000000300)=ANY=[@ANYRESDEC, @ANYRES32], 0x100000530)
+
+18:52:55 executing program 0:
+r0 = socket$packet(0x11, 0x3, 0x300)
+recvmmsg(r0, &(0x7f0000000300), 0x64, 0x0, 0x0)
+setsockopt$packet_int(r0, 0x107, 0x8, &(0x7f0000000400)=0x43fb, 0x4)
+r1 = socket$inet(0x2, 0x4000000000000001, 0x0)
+setsockopt$inet_tcp_int(r1, 0x6, 0x80000000000002, &(0x7f0000000000)=0x200, 0x4)
+bind$inet(r1, &(0x7f0000000380)={0x2, 0x200000000004e23, @local}, 0x10)
+sendto$inet(r1, 0x0, 0x0, 0x2404c7fc, &(0x7f00000008c0)={0x2, 0x4e23, @local}, 0x10)
+ioctl$sock_SIOCGIFINDEX(0xffffffffffffffff, 0x8933, &(0x7f0000000a00)={'veth1_to_team\x00'})
+ioctl$FS_IOC_GETFSMAP(0xffffffffffffffff, 0xc0c0583b, 0x0)
+getpeername$unix(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_add_memb(0xffffffffffffffff, 0x107, 0x1, 0x0, 0x0)
+bind$unix(0xffffffffffffffff, 0x0, 0x0)
+syz_genetlink_get_family_id$netlbl_calipso(0x0, 0xffffffffffffffff)
+ioctl$sock_inet_SIOCSARP(0xffffffffffffffff, 0x8955, 0x0)
+accept$packet(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_int(0xffffffffffffffff, 0x107, 0x0, 0x0, 0x0)
+write$binfmt_elf64(r1, &(0x7f0000000300)=ANY=[@ANYRESDEC, @ANYRES32], 0x100000530)
+
+18:52:58 executing program 0:
+r0 = socket$packet(0x11, 0x3, 0x300)
+recvmmsg(r0, &(0x7f0000000300), 0x64, 0x0, 0x0)
+setsockopt$packet_int(r0, 0x107, 0x8, &(0x7f0000000400)=0x43fb, 0x4)
+r1 = socket$inet(0x2, 0x4000000000000001, 0x0)
+setsockopt$inet_tcp_int(r1, 0x6, 0x80000000000002, &(0x7f0000000000)=0x200, 0x4)
+bind$inet(r1, &(0x7f0000000380)={0x2, 0x200000000004e23, @local}, 0x10)
+sendto$inet(r1, 0x0, 0x0, 0x2404c7fc, &(0x7f00000008c0)={0x2, 0x4e23, @local}, 0x10)
+ioctl$sock_SIOCGIFINDEX(0xffffffffffffffff, 0x8933, &(0x7f0000000a00)={'veth1_to_team\x00'})
+ioctl$FS_IOC_GETFSMAP(0xffffffffffffffff, 0xc0c0583b, 0x0)
+getpeername$unix(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_add_memb(0xffffffffffffffff, 0x107, 0x1, 0x0, 0x0)
+bind$unix(0xffffffffffffffff, 0x0, 0x0)
+syz_genetlink_get_family_id$netlbl_calipso(0x0, 0xffffffffffffffff)
+ioctl$sock_inet_SIOCSARP(0xffffffffffffffff, 0x8955, 0x0)
+accept$packet(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_int(0xffffffffffffffff, 0x107, 0x0, 0x0, 0x0)
+write$binfmt_elf64(r1, &(0x7f0000000300)=ANY=[@ANYRESDEC, @ANYRES32], 0x100000530)
+
+18:53:00 executing program 0:
+r0 = socket$packet(0x11, 0x3, 0x300)
+recvmmsg(r0, &(0x7f0000000300), 0x64, 0x0, 0x0)
+setsockopt$packet_int(r0, 0x107, 0x8, &(0x7f0000000400)=0x43fb, 0x4)
+r1 = socket$inet(0x2, 0x4000000000000001, 0x0)
+setsockopt$inet_tcp_int(r1, 0x6, 0x80000000000002, &(0x7f0000000000)=0x200, 0x4)
+bind$inet(r1, &(0x7f0000000380)={0x2, 0x200000000004e23, @local}, 0x10)
+sendto$inet(r1, 0x0, 0x0, 0x2404c7fc, &(0x7f00000008c0)={0x2, 0x4e23, @local}, 0x10)
+ioctl$sock_SIOCGIFINDEX(0xffffffffffffffff, 0x8933, &(0x7f0000000a00)={'veth1_to_team\x00'})
+ioctl$FS_IOC_GETFSMAP(0xffffffffffffffff, 0xc0c0583b, 0x0)
+getpeername$unix(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_add_memb(0xffffffffffffffff, 0x107, 0x1, 0x0, 0x0)
+bind$unix(0xffffffffffffffff, 0x0, 0x0)
+syz_genetlink_get_family_id$netlbl_calipso(0x0, 0xffffffffffffffff)
+ioctl$sock_inet_SIOCSARP(0xffffffffffffffff, 0x8955, 0x0)
+accept$packet(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_int(0xffffffffffffffff, 0x107, 0x0, 0x0, 0x0)
+write$binfmt_elf64(r1, &(0x7f0000000300)=ANY=[@ANYRESDEC, @ANYRES32], 0x100000530)
+
+18:53:03 executing program 0:
+r0 = socket$packet(0x11, 0x3, 0x300)
+recvmmsg(r0, &(0x7f0000000300), 0x64, 0x0, 0x0)
+setsockopt$packet_int(r0, 0x107, 0x8, &(0x7f0000000400)=0x43fb, 0x4)
+r1 = socket$inet(0x2, 0x4000000000000001, 0x0)
+setsockopt$inet_tcp_int(r1, 0x6, 0x80000000000002, &(0x7f0000000000)=0x200, 0x4)
+bind$inet(r1, &(0x7f0000000380)={0x2, 0x200000000004e23, @local}, 0x10)
+sendto$inet(r1, 0x0, 0x0, 0x2404c7fc, &(0x7f00000008c0)={0x2, 0x4e23, @local}, 0x10)
+ioctl$sock_SIOCGIFINDEX(0xffffffffffffffff, 0x8933, &(0x7f0000000a00)={'veth1_to_team\x00'})
+ioctl$FS_IOC_GETFSMAP(0xffffffffffffffff, 0xc0c0583b, 0x0)
+getpeername$unix(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_add_memb(0xffffffffffffffff, 0x107, 0x1, 0x0, 0x0)
+bind$unix(0xffffffffffffffff, 0x0, 0x0)
+syz_genetlink_get_family_id$netlbl_calipso(0x0, 0xffffffffffffffff)
+ioctl$sock_inet_SIOCSARP(0xffffffffffffffff, 0x8955, 0x0)
+accept$packet(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_int(0xffffffffffffffff, 0x107, 0x0, 0x0, 0x0)
+write$binfmt_elf64(r1, &(0x7f0000000300)=ANY=[@ANYRESDEC, @ANYRES32], 0x100000530)
+
+18:53:05 executing program 0:
+r0 = socket$packet(0x11, 0x3, 0x300)
+recvmmsg(r0, &(0x7f0000000300), 0x64, 0x0, 0x0)
+setsockopt$packet_int(r0, 0x107, 0x8, &(0x7f0000000400)=0x43fb, 0x4)
+r1 = socket$inet(0x2, 0x4000000000000001, 0x0)
+setsockopt$inet_tcp_int(r1, 0x6, 0x80000000000002, &(0x7f0000000000)=0x200, 0x4)
+bind$inet(r1, &(0x7f0000000380)={0x2, 0x200000000004e23, @local}, 0x10)
+sendto$inet(r1, 0x0, 0x0, 0x2404c7fc, &(0x7f00000008c0)={0x2, 0x4e23, @local}, 0x10)
+ioctl$sock_SIOCGIFINDEX(0xffffffffffffffff, 0x8933, &(0x7f0000000a00)={'veth1_to_team\x00'})
+ioctl$FS_IOC_GETFSMAP(0xffffffffffffffff, 0xc0c0583b, 0x0)
+getpeername$unix(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_add_memb(0xffffffffffffffff, 0x107, 0x1, 0x0, 0x0)
+bind$unix(0xffffffffffffffff, 0x0, 0x0)
+syz_genetlink_get_family_id$netlbl_calipso(0x0, 0xffffffffffffffff)
+ioctl$sock_inet_SIOCSARP(0xffffffffffffffff, 0x8955, 0x0)
+accept$packet(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_int(0xffffffffffffffff, 0x107, 0x0, 0x0, 0x0)
+write$binfmt_elf64(r1, &(0x7f0000000300)=ANY=[@ANYRESDEC, @ANYRES32], 0x100000530)
+
+18:53:08 executing program 0:
+r0 = socket$packet(0x11, 0x3, 0x300)
+recvmmsg(r0, &(0x7f0000000300), 0x64, 0x0, 0x0)
+setsockopt$packet_int(r0, 0x107, 0x8, &(0x7f0000000400)=0x43fb, 0x4)
+r1 = socket$inet(0x2, 0x4000000000000001, 0x0)
+setsockopt$inet_tcp_int(r1, 0x6, 0x80000000000002, &(0x7f0000000000)=0x200, 0x4)
+bind$inet(r1, &(0x7f0000000380)={0x2, 0x200000000004e23, @local}, 0x10)
+sendto$inet(r1, 0x0, 0x0, 0x2404c7fc, &(0x7f00000008c0)={0x2, 0x4e23, @local}, 0x10)
+ioctl$sock_SIOCGIFINDEX(0xffffffffffffffff, 0x8933, &(0x7f0000000a00)={'veth1_to_team\x00'})
+ioctl$FS_IOC_GETFSMAP(0xffffffffffffffff, 0xc0c0583b, 0x0)
+getpeername$unix(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_add_memb(0xffffffffffffffff, 0x107, 0x1, 0x0, 0x0)
+bind$unix(0xffffffffffffffff, 0x0, 0x0)
+syz_genetlink_get_family_id$netlbl_calipso(0x0, 0xffffffffffffffff)
+ioctl$sock_inet_SIOCSARP(0xffffffffffffffff, 0x8955, 0x0)
+accept$packet(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_int(0xffffffffffffffff, 0x107, 0x0, 0x0, 0x0)
+write$binfmt_elf64(r1, &(0x7f0000000300)=ANY=[@ANYRESDEC, @ANYRES32], 0x100000530)
+
+18:53:10 executing program 0:
+r0 = socket$packet(0x11, 0x3, 0x300)
+recvmmsg(r0, &(0x7f0000000300), 0x64, 0x0, 0x0)
+setsockopt$packet_int(r0, 0x107, 0x8, &(0x7f0000000400)=0x43fb, 0x4)
+r1 = socket$inet(0x2, 0x4000000000000001, 0x0)
+setsockopt$inet_tcp_int(r1, 0x6, 0x80000000000002, &(0x7f0000000000)=0x200, 0x4)
+bind$inet(r1, &(0x7f0000000380)={0x2, 0x200000000004e23, @local}, 0x10)
+sendto$inet(r1, 0x0, 0x0, 0x2404c7fc, &(0x7f00000008c0)={0x2, 0x4e23, @local}, 0x10)
+ioctl$sock_SIOCGIFINDEX(0xffffffffffffffff, 0x8933, &(0x7f0000000a00)={'veth1_to_team\x00'})
+ioctl$FS_IOC_GETFSMAP(0xffffffffffffffff, 0xc0c0583b, 0x0)
+getpeername$unix(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_add_memb(0xffffffffffffffff, 0x107, 0x1, 0x0, 0x0)
+bind$unix(0xffffffffffffffff, 0x0, 0x0)
+syz_genetlink_get_family_id$netlbl_calipso(0x0, 0xffffffffffffffff)
+ioctl$sock_inet_SIOCSARP(0xffffffffffffffff, 0x8955, 0x0)
+accept$packet(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_int(0xffffffffffffffff, 0x107, 0x0, 0x0, 0x0)
+write$binfmt_elf64(r1, &(0x7f0000000300)=ANY=[@ANYRESDEC, @ANYRES32], 0x100000530)
+
+18:53:12 executing program 0:
+r0 = socket$packet(0x11, 0x3, 0x300)
+recvmmsg(r0, &(0x7f0000000300), 0x64, 0x0, 0x0)
+setsockopt$packet_int(r0, 0x107, 0x8, &(0x7f0000000400)=0x43fb, 0x4)
+r1 = socket$inet(0x2, 0x4000000000000001, 0x0)
+setsockopt$inet_tcp_int(r1, 0x6, 0x80000000000002, &(0x7f0000000000)=0x200, 0x4)
+bind$inet(r1, &(0x7f0000000380)={0x2, 0x200000000004e23, @local}, 0x10)
+sendto$inet(r1, 0x0, 0x0, 0x2404c7fc, &(0x7f00000008c0)={0x2, 0x4e23, @local}, 0x10)
+ioctl$sock_SIOCGIFINDEX(0xffffffffffffffff, 0x8933, &(0x7f0000000a00)={'veth1_to_team\x00'})
+ioctl$FS_IOC_GETFSMAP(0xffffffffffffffff, 0xc0c0583b, 0x0)
+getpeername$unix(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_add_memb(0xffffffffffffffff, 0x107, 0x1, 0x0, 0x0)
+bind$unix(0xffffffffffffffff, 0x0, 0x0)
+syz_genetlink_get_family_id$netlbl_calipso(0x0, 0xffffffffffffffff)
+ioctl$sock_inet_SIOCSARP(0xffffffffffffffff, 0x8955, 0x0)
+accept$packet(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_int(0xffffffffffffffff, 0x107, 0x0, 0x0, 0x0)
+write$binfmt_elf64(r1, &(0x7f0000000300)=ANY=[@ANYRESDEC, @ANYRES32], 0x100000530)
+
+18:53:15 executing program 0:
+r0 = socket$packet(0x11, 0x3, 0x300)
+recvmmsg(r0, &(0x7f0000000300), 0x64, 0x0, 0x0)
+setsockopt$packet_int(r0, 0x107, 0x8, &(0x7f0000000400)=0x43fb, 0x4)
+r1 = socket$inet(0x2, 0x4000000000000001, 0x0)
+setsockopt$inet_tcp_int(r1, 0x6, 0x80000000000002, &(0x7f0000000000)=0x200, 0x4)
+bind$inet(r1, &(0x7f0000000380)={0x2, 0x200000000004e23, @local}, 0x10)
+sendto$inet(r1, 0x0, 0x0, 0x2404c7fc, &(0x7f00000008c0)={0x2, 0x4e23, @local}, 0x10)
+ioctl$sock_SIOCGIFINDEX(0xffffffffffffffff, 0x8933, &(0x7f0000000a00)={'veth1_to_team\x00'})
+ioctl$FS_IOC_GETFSMAP(0xffffffffffffffff, 0xc0c0583b, 0x0)
+getpeername$unix(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_add_memb(0xffffffffffffffff, 0x107, 0x1, 0x0, 0x0)
+bind$unix(0xffffffffffffffff, 0x0, 0x0)
+syz_genetlink_get_family_id$netlbl_calipso(0x0, 0xffffffffffffffff)
+ioctl$sock_inet_SIOCSARP(0xffffffffffffffff, 0x8955, 0x0)
+accept$packet(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_int(0xffffffffffffffff, 0x107, 0x0, 0x0, 0x0)
+write$binfmt_elf64(r1, &(0x7f0000000300)=ANY=[@ANYRESDEC, @ANYRES32], 0x100000530)
+
+18:53:17 executing program 0:
+r0 = socket$packet(0x11, 0x3, 0x300)
+recvmmsg(r0, &(0x7f0000000300), 0x64, 0x0, 0x0)
+setsockopt$packet_int(r0, 0x107, 0x8, &(0x7f0000000400)=0x43fb, 0x4)
+r1 = socket$inet(0x2, 0x4000000000000001, 0x0)
+setsockopt$inet_tcp_int(r1, 0x6, 0x80000000000002, &(0x7f0000000000)=0x200, 0x4)
+bind$inet(r1, &(0x7f0000000380)={0x2, 0x200000000004e23, @local}, 0x10)
+sendto$inet(r1, 0x0, 0x0, 0x2404c7fc, &(0x7f00000008c0)={0x2, 0x4e23, @local}, 0x10)
+ioctl$sock_SIOCGIFINDEX(0xffffffffffffffff, 0x8933, &(0x7f0000000a00)={'veth1_to_team\x00'})
+ioctl$FS_IOC_GETFSMAP(0xffffffffffffffff, 0xc0c0583b, 0x0)
+getpeername$unix(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_add_memb(0xffffffffffffffff, 0x107, 0x1, 0x0, 0x0)
+bind$unix(0xffffffffffffffff, 0x0, 0x0)
+syz_genetlink_get_family_id$netlbl_calipso(0x0, 0xffffffffffffffff)
+ioctl$sock_inet_SIOCSARP(0xffffffffffffffff, 0x8955, 0x0)
+accept$packet(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_int(0xffffffffffffffff, 0x107, 0x0, 0x0, 0x0)
+write$binfmt_elf64(r1, &(0x7f0000000300)=ANY=[@ANYRESDEC, @ANYRES32], 0x100000530)
+
+18:53:19 executing program 0:
+r0 = socket$packet(0x11, 0x3, 0x300)
+recvmmsg(r0, &(0x7f0000000300), 0x64, 0x0, 0x0)
+setsockopt$packet_int(r0, 0x107, 0x8, &(0x7f0000000400)=0x43fb, 0x4)
+r1 = socket$inet(0x2, 0x4000000000000001, 0x0)
+setsockopt$inet_tcp_int(r1, 0x6, 0x80000000000002, &(0x7f0000000000)=0x200, 0x4)
+bind$inet(r1, &(0x7f0000000380)={0x2, 0x200000000004e23, @local}, 0x10)
+sendto$inet(r1, 0x0, 0x0, 0x2404c7fc, &(0x7f00000008c0)={0x2, 0x4e23, @local}, 0x10)
+ioctl$sock_SIOCGIFINDEX(0xffffffffffffffff, 0x8933, &(0x7f0000000a00)={'veth1_to_team\x00'})
+ioctl$FS_IOC_GETFSMAP(0xffffffffffffffff, 0xc0c0583b, 0x0)
+getpeername$unix(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_add_memb(0xffffffffffffffff, 0x107, 0x1, 0x0, 0x0)
+bind$unix(0xffffffffffffffff, 0x0, 0x0)
+syz_genetlink_get_family_id$netlbl_calipso(0x0, 0xffffffffffffffff)
+ioctl$sock_inet_SIOCSARP(0xffffffffffffffff, 0x8955, 0x0)
+accept$packet(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_int(0xffffffffffffffff, 0x107, 0x0, 0x0, 0x0)
+write$binfmt_elf64(r1, &(0x7f0000000300)=ANY=[@ANYRESDEC, @ANYRES32], 0x100000530)
+
+18:53:22 executing program 0:
+r0 = socket$packet(0x11, 0x3, 0x300)
+recvmmsg(r0, &(0x7f0000000300), 0x64, 0x0, 0x0)
+setsockopt$packet_int(r0, 0x107, 0x8, &(0x7f0000000400)=0x43fb, 0x4)
+r1 = socket$inet(0x2, 0x4000000000000001, 0x0)
+setsockopt$inet_tcp_int(r1, 0x6, 0x80000000000002, &(0x7f0000000000)=0x200, 0x4)
+bind$inet(r1, &(0x7f0000000380)={0x2, 0x200000000004e23, @local}, 0x10)
+sendto$inet(r1, 0x0, 0x0, 0x2404c7fc, &(0x7f00000008c0)={0x2, 0x4e23, @local}, 0x10)
+ioctl$sock_SIOCGIFINDEX(0xffffffffffffffff, 0x8933, &(0x7f0000000a00)={'veth1_to_team\x00'})
+ioctl$FS_IOC_GETFSMAP(0xffffffffffffffff, 0xc0c0583b, 0x0)
+getpeername$unix(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_add_memb(0xffffffffffffffff, 0x107, 0x1, 0x0, 0x0)
+bind$unix(0xffffffffffffffff, 0x0, 0x0)
+syz_genetlink_get_family_id$netlbl_calipso(0x0, 0xffffffffffffffff)
+ioctl$sock_inet_SIOCSARP(0xffffffffffffffff, 0x8955, 0x0)
+accept$packet(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_int(0xffffffffffffffff, 0x107, 0x0, 0x0, 0x0)
+write$binfmt_elf64(r1, &(0x7f0000000300)=ANY=[@ANYRESDEC, @ANYRES32], 0x100000530)
+
+18:53:24 executing program 0:
+r0 = socket$packet(0x11, 0x3, 0x300)
+recvmmsg(r0, &(0x7f0000000300), 0x64, 0x0, 0x0)
+setsockopt$packet_int(r0, 0x107, 0x8, &(0x7f0000000400)=0x43fb, 0x4)
+r1 = socket$inet(0x2, 0x4000000000000001, 0x0)
+setsockopt$inet_tcp_int(r1, 0x6, 0x80000000000002, &(0x7f0000000000)=0x200, 0x4)
+bind$inet(r1, &(0x7f0000000380)={0x2, 0x200000000004e23, @local}, 0x10)
+sendto$inet(r1, 0x0, 0x0, 0x2404c7fc, &(0x7f00000008c0)={0x2, 0x4e23, @local}, 0x10)
+ioctl$sock_SIOCGIFINDEX(0xffffffffffffffff, 0x8933, &(0x7f0000000a00)={'veth1_to_team\x00'})
+ioctl$FS_IOC_GETFSMAP(0xffffffffffffffff, 0xc0c0583b, 0x0)
+getpeername$unix(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_add_memb(0xffffffffffffffff, 0x107, 0x1, 0x0, 0x0)
+bind$unix(0xffffffffffffffff, 0x0, 0x0)
+syz_genetlink_get_family_id$netlbl_calipso(0x0, 0xffffffffffffffff)
+ioctl$sock_inet_SIOCSARP(0xffffffffffffffff, 0x8955, 0x0)
+accept$packet(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_int(0xffffffffffffffff, 0x107, 0x0, 0x0, 0x0)
+write$binfmt_elf64(r1, &(0x7f0000000300)=ANY=[@ANYRESDEC, @ANYRES32], 0x100000530)
+
+18:53:26 executing program 0:
+r0 = socket$packet(0x11, 0x3, 0x300)
+recvmmsg(r0, &(0x7f0000000300), 0x64, 0x0, 0x0)
+setsockopt$packet_int(r0, 0x107, 0x8, &(0x7f0000000400)=0x43fb, 0x4)
+r1 = socket$inet(0x2, 0x4000000000000001, 0x0)
+setsockopt$inet_tcp_int(r1, 0x6, 0x80000000000002, &(0x7f0000000000)=0x200, 0x4)
+bind$inet(r1, &(0x7f0000000380)={0x2, 0x200000000004e23, @local}, 0x10)
+sendto$inet(r1, 0x0, 0x0, 0x2404c7fc, &(0x7f00000008c0)={0x2, 0x4e23, @local}, 0x10)
+ioctl$sock_SIOCGIFINDEX(0xffffffffffffffff, 0x8933, &(0x7f0000000a00)={'veth1_to_team\x00'})
+ioctl$FS_IOC_GETFSMAP(0xffffffffffffffff, 0xc0c0583b, 0x0)
+getpeername$unix(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_add_memb(0xffffffffffffffff, 0x107, 0x1, 0x0, 0x0)
+bind$unix(0xffffffffffffffff, 0x0, 0x0)
+syz_genetlink_get_family_id$netlbl_calipso(0x0, 0xffffffffffffffff)
+ioctl$sock_inet_SIOCSARP(0xffffffffffffffff, 0x8955, 0x0)
+accept$packet(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_int(0xffffffffffffffff, 0x107, 0x0, 0x0, 0x0)
+write$binfmt_elf64(r1, &(0x7f0000000300)=ANY=[@ANYRESDEC, @ANYRES32], 0x100000530)
+
+18:53:29 executing program 0:
+r0 = socket$packet(0x11, 0x3, 0x300)
+recvmmsg(r0, &(0x7f0000000300), 0x64, 0x0, 0x0)
+setsockopt$packet_int(r0, 0x107, 0x8, &(0x7f0000000400)=0x43fb, 0x4)
+r1 = socket$inet(0x2, 0x4000000000000001, 0x0)
+setsockopt$inet_tcp_int(r1, 0x6, 0x80000000000002, &(0x7f0000000000)=0x200, 0x4)
+bind$inet(r1, &(0x7f0000000380)={0x2, 0x200000000004e23, @local}, 0x10)
+sendto$inet(r1, 0x0, 0x0, 0x2404c7fc, &(0x7f00000008c0)={0x2, 0x4e23, @local}, 0x10)
+ioctl$sock_SIOCGIFINDEX(0xffffffffffffffff, 0x8933, &(0x7f0000000a00)={'veth1_to_team\x00'})
+ioctl$FS_IOC_GETFSMAP(0xffffffffffffffff, 0xc0c0583b, 0x0)
+getpeername$unix(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_add_memb(0xffffffffffffffff, 0x107, 0x1, 0x0, 0x0)
+bind$unix(0xffffffffffffffff, 0x0, 0x0)
+syz_genetlink_get_family_id$netlbl_calipso(0x0, 0xffffffffffffffff)
+ioctl$sock_inet_SIOCSARP(0xffffffffffffffff, 0x8955, 0x0)
+accept$packet(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_int(0xffffffffffffffff, 0x107, 0x0, 0x0, 0x0)
+write$binfmt_elf64(r1, &(0x7f0000000300)=ANY=[@ANYRESDEC, @ANYRES32], 0x100000530)
+
+18:53:31 executing program 0:
+r0 = socket$packet(0x11, 0x3, 0x300)
+recvmmsg(r0, &(0x7f0000000300), 0x64, 0x0, 0x0)
+setsockopt$packet_int(r0, 0x107, 0x8, &(0x7f0000000400)=0x43fb, 0x4)
+r1 = socket$inet(0x2, 0x4000000000000001, 0x0)
+setsockopt$inet_tcp_int(r1, 0x6, 0x80000000000002, &(0x7f0000000000)=0x200, 0x4)
+bind$inet(r1, &(0x7f0000000380)={0x2, 0x200000000004e23, @local}, 0x10)
+sendto$inet(r1, 0x0, 0x0, 0x2404c7fc, &(0x7f00000008c0)={0x2, 0x4e23, @local}, 0x10)
+ioctl$sock_SIOCGIFINDEX(0xffffffffffffffff, 0x8933, &(0x7f0000000a00)={'veth1_to_team\x00'})
+ioctl$FS_IOC_GETFSMAP(0xffffffffffffffff, 0xc0c0583b, 0x0)
+getpeername$unix(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_add_memb(0xffffffffffffffff, 0x107, 0x1, 0x0, 0x0)
+bind$unix(0xffffffffffffffff, 0x0, 0x0)
+syz_genetlink_get_family_id$netlbl_calipso(0x0, 0xffffffffffffffff)
+ioctl$sock_inet_SIOCSARP(0xffffffffffffffff, 0x8955, 0x0)
+accept$packet(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_int(0xffffffffffffffff, 0x107, 0x0, 0x0, 0x0)
+write$binfmt_elf64(r1, &(0x7f0000000300)=ANY=[@ANYRESDEC, @ANYRES32], 0x100000530)
+
+18:53:33 executing program 0:
+r0 = socket$packet(0x11, 0x3, 0x300)
+recvmmsg(r0, &(0x7f0000000300), 0x64, 0x0, 0x0)
+setsockopt$packet_int(r0, 0x107, 0x8, &(0x7f0000000400)=0x43fb, 0x4)
+r1 = socket$inet(0x2, 0x4000000000000001, 0x0)
+setsockopt$inet_tcp_int(r1, 0x6, 0x80000000000002, &(0x7f0000000000)=0x200, 0x4)
+bind$inet(r1, &(0x7f0000000380)={0x2, 0x200000000004e23, @local}, 0x10)
+sendto$inet(r1, 0x0, 0x0, 0x2404c7fc, &(0x7f00000008c0)={0x2, 0x4e23, @local}, 0x10)
+ioctl$sock_SIOCGIFINDEX(0xffffffffffffffff, 0x8933, &(0x7f0000000a00)={'veth1_to_team\x00'})
+ioctl$FS_IOC_GETFSMAP(0xffffffffffffffff, 0xc0c0583b, 0x0)
+getpeername$unix(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_add_memb(0xffffffffffffffff, 0x107, 0x1, 0x0, 0x0)
+bind$unix(0xffffffffffffffff, 0x0, 0x0)
+syz_genetlink_get_family_id$netlbl_calipso(0x0, 0xffffffffffffffff)
+ioctl$sock_inet_SIOCSARP(0xffffffffffffffff, 0x8955, 0x0)
+accept$packet(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_int(0xffffffffffffffff, 0x107, 0x0, 0x0, 0x0)
+write$binfmt_elf64(r1, &(0x7f0000000300)=ANY=[@ANYRESDEC, @ANYRES32], 0x100000530)
+
+18:53:36 executing program 0:
+r0 = socket$packet(0x11, 0x3, 0x300)
+recvmmsg(r0, &(0x7f0000000300), 0x64, 0x0, 0x0)
+setsockopt$packet_int(r0, 0x107, 0x8, &(0x7f0000000400)=0x43fb, 0x4)
+r1 = socket$inet(0x2, 0x4000000000000001, 0x0)
+setsockopt$inet_tcp_int(r1, 0x6, 0x80000000000002, &(0x7f0000000000)=0x200, 0x4)
+bind$inet(r1, &(0x7f0000000380)={0x2, 0x200000000004e23, @local}, 0x10)
+sendto$inet(r1, 0x0, 0x0, 0x2404c7fc, &(0x7f00000008c0)={0x2, 0x4e23, @local}, 0x10)
+ioctl$sock_SIOCGIFINDEX(0xffffffffffffffff, 0x8933, &(0x7f0000000a00)={'veth1_to_team\x00'})
+ioctl$FS_IOC_GETFSMAP(0xffffffffffffffff, 0xc0c0583b, 0x0)
+getpeername$unix(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_add_memb(0xffffffffffffffff, 0x107, 0x1, 0x0, 0x0)
+bind$unix(0xffffffffffffffff, 0x0, 0x0)
+syz_genetlink_get_family_id$netlbl_calipso(0x0, 0xffffffffffffffff)
+ioctl$sock_inet_SIOCSARP(0xffffffffffffffff, 0x8955, 0x0)
+accept$packet(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_int(0xffffffffffffffff, 0x107, 0x0, 0x0, 0x0)
+write$binfmt_elf64(r1, &(0x7f0000000300)=ANY=[@ANYRESDEC, @ANYRES32], 0x100000530)
+
+[  266.755393][ T1219] ieee802154 phy0 wpan0: encryption failed: -22
+[  266.756212][ T1219] ieee802154 phy1 wpan1: encryption failed: -22
+18:53:38 executing program 0:
+r0 = socket$packet(0x11, 0x3, 0x300)
+recvmmsg(r0, &(0x7f0000000300), 0x64, 0x0, 0x0)
+setsockopt$packet_int(r0, 0x107, 0x8, &(0x7f0000000400)=0x43fb, 0x4)
+r1 = socket$inet(0x2, 0x4000000000000001, 0x0)
+setsockopt$inet_tcp_int(r1, 0x6, 0x80000000000002, &(0x7f0000000000)=0x200, 0x4)
+bind$inet(r1, &(0x7f0000000380)={0x2, 0x200000000004e23, @local}, 0x10)
+sendto$inet(r1, 0x0, 0x0, 0x2404c7fc, &(0x7f00000008c0)={0x2, 0x4e23, @local}, 0x10)
+ioctl$sock_SIOCGIFINDEX(0xffffffffffffffff, 0x8933, &(0x7f0000000a00)={'veth1_to_team\x00'})
+ioctl$FS_IOC_GETFSMAP(0xffffffffffffffff, 0xc0c0583b, 0x0)
+getpeername$unix(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_add_memb(0xffffffffffffffff, 0x107, 0x1, 0x0, 0x0)
+bind$unix(0xffffffffffffffff, 0x0, 0x0)
+syz_genetlink_get_family_id$netlbl_calipso(0x0, 0xffffffffffffffff)
+ioctl$sock_inet_SIOCSARP(0xffffffffffffffff, 0x8955, 0x0)
+accept$packet(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_int(0xffffffffffffffff, 0x107, 0x0, 0x0, 0x0)
+write$binfmt_elf64(r1, &(0x7f0000000300)=ANY=[@ANYRESDEC, @ANYRES32], 0x100000530)
+
+18:53:41 executing program 0:
+r0 = socket$packet(0x11, 0x3, 0x300)
+recvmmsg(r0, &(0x7f0000000300), 0x64, 0x0, 0x0)
+setsockopt$packet_int(r0, 0x107, 0x8, &(0x7f0000000400)=0x43fb, 0x4)
+r1 = socket$inet(0x2, 0x4000000000000001, 0x0)
+setsockopt$inet_tcp_int(r1, 0x6, 0x80000000000002, &(0x7f0000000000)=0x200, 0x4)
+bind$inet(r1, &(0x7f0000000380)={0x2, 0x200000000004e23, @local}, 0x10)
+sendto$inet(r1, 0x0, 0x0, 0x2404c7fc, &(0x7f00000008c0)={0x2, 0x4e23, @local}, 0x10)
+ioctl$sock_SIOCGIFINDEX(0xffffffffffffffff, 0x8933, &(0x7f0000000a00)={'veth1_to_team\x00'})
+ioctl$FS_IOC_GETFSMAP(0xffffffffffffffff, 0xc0c0583b, 0x0)
+getpeername$unix(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_add_memb(0xffffffffffffffff, 0x107, 0x1, 0x0, 0x0)
+bind$unix(0xffffffffffffffff, 0x0, 0x0)
+syz_genetlink_get_family_id$netlbl_calipso(0x0, 0xffffffffffffffff)
+ioctl$sock_inet_SIOCSARP(0xffffffffffffffff, 0x8955, 0x0)
+accept$packet(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_int(0xffffffffffffffff, 0x107, 0x0, 0x0, 0x0)
+write$binfmt_elf64(r1, &(0x7f0000000300)=ANY=[@ANYRESDEC, @ANYRES32], 0x100000530)
+
+18:53:43 executing program 0:
+r0 = socket$packet(0x11, 0x3, 0x300)
+recvmmsg(r0, &(0x7f0000000300), 0x64, 0x0, 0x0)
+setsockopt$packet_int(r0, 0x107, 0x8, &(0x7f0000000400)=0x43fb, 0x4)
+r1 = socket$inet(0x2, 0x4000000000000001, 0x0)
+setsockopt$inet_tcp_int(r1, 0x6, 0x80000000000002, &(0x7f0000000000)=0x200, 0x4)
+bind$inet(r1, &(0x7f0000000380)={0x2, 0x200000000004e23, @local}, 0x10)
+sendto$inet(r1, 0x0, 0x0, 0x2404c7fc, &(0x7f00000008c0)={0x2, 0x4e23, @local}, 0x10)
+ioctl$sock_SIOCGIFINDEX(0xffffffffffffffff, 0x8933, &(0x7f0000000a00)={'veth1_to_team\x00'})
+ioctl$FS_IOC_GETFSMAP(0xffffffffffffffff, 0xc0c0583b, 0x0)
+getpeername$unix(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_add_memb(0xffffffffffffffff, 0x107, 0x1, 0x0, 0x0)
+bind$unix(0xffffffffffffffff, 0x0, 0x0)
+syz_genetlink_get_family_id$netlbl_calipso(0x0, 0xffffffffffffffff)
+ioctl$sock_inet_SIOCSARP(0xffffffffffffffff, 0x8955, 0x0)
+accept$packet(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_int(0xffffffffffffffff, 0x107, 0x0, 0x0, 0x0)
+write$binfmt_elf64(r1, &(0x7f0000000300)=ANY=[@ANYRESDEC, @ANYRES32], 0x100000530)
+
+18:53:46 executing program 0:
+r0 = socket$packet(0x11, 0x3, 0x300)
+recvmmsg(r0, &(0x7f0000000300), 0x64, 0x0, 0x0)
+setsockopt$packet_int(r0, 0x107, 0x8, &(0x7f0000000400)=0x43fb, 0x4)
+r1 = socket$inet(0x2, 0x4000000000000001, 0x0)
+setsockopt$inet_tcp_int(r1, 0x6, 0x80000000000002, &(0x7f0000000000)=0x200, 0x4)
+bind$inet(r1, &(0x7f0000000380)={0x2, 0x200000000004e23, @local}, 0x10)
+sendto$inet(r1, 0x0, 0x0, 0x2404c7fc, &(0x7f00000008c0)={0x2, 0x4e23, @local}, 0x10)
+ioctl$sock_SIOCGIFINDEX(0xffffffffffffffff, 0x8933, &(0x7f0000000a00)={'veth1_to_team\x00'})
+ioctl$FS_IOC_GETFSMAP(0xffffffffffffffff, 0xc0c0583b, 0x0)
+getpeername$unix(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_add_memb(0xffffffffffffffff, 0x107, 0x1, 0x0, 0x0)
+bind$unix(0xffffffffffffffff, 0x0, 0x0)
+syz_genetlink_get_family_id$netlbl_calipso(0x0, 0xffffffffffffffff)
+ioctl$sock_inet_SIOCSARP(0xffffffffffffffff, 0x8955, 0x0)
+accept$packet(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_int(0xffffffffffffffff, 0x107, 0x0, 0x0, 0x0)
+write$binfmt_elf64(r1, &(0x7f0000000300)=ANY=[@ANYRESDEC, @ANYRES32], 0x100000530)
+
+18:53:48 executing program 0:
+r0 = socket$packet(0x11, 0x3, 0x300)
+recvmmsg(r0, &(0x7f0000000300), 0x64, 0x0, 0x0)
+setsockopt$packet_int(r0, 0x107, 0x8, &(0x7f0000000400)=0x43fb, 0x4)
+r1 = socket$inet(0x2, 0x4000000000000001, 0x0)
+setsockopt$inet_tcp_int(r1, 0x6, 0x80000000000002, &(0x7f0000000000)=0x200, 0x4)
+bind$inet(r1, &(0x7f0000000380)={0x2, 0x200000000004e23, @local}, 0x10)
+sendto$inet(r1, 0x0, 0x0, 0x2404c7fc, &(0x7f00000008c0)={0x2, 0x4e23, @local}, 0x10)
+ioctl$sock_SIOCGIFINDEX(0xffffffffffffffff, 0x8933, &(0x7f0000000a00)={'veth1_to_team\x00'})
+ioctl$FS_IOC_GETFSMAP(0xffffffffffffffff, 0xc0c0583b, 0x0)
+getpeername$unix(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_add_memb(0xffffffffffffffff, 0x107, 0x1, 0x0, 0x0)
+bind$unix(0xffffffffffffffff, 0x0, 0x0)
+syz_genetlink_get_family_id$netlbl_calipso(0x0, 0xffffffffffffffff)
+ioctl$sock_inet_SIOCSARP(0xffffffffffffffff, 0x8955, 0x0)
+accept$packet(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_int(0xffffffffffffffff, 0x107, 0x0, 0x0, 0x0)
+write$binfmt_elf64(r1, &(0x7f0000000300)=ANY=[@ANYRESDEC, @ANYRES32], 0x100000530)
+
+18:53:50 executing program 0:
+r0 = socket$packet(0x11, 0x3, 0x300)
+recvmmsg(r0, &(0x7f0000000300), 0x64, 0x0, 0x0)
+setsockopt$packet_int(r0, 0x107, 0x8, &(0x7f0000000400)=0x43fb, 0x4)
+r1 = socket$inet(0x2, 0x4000000000000001, 0x0)
+setsockopt$inet_tcp_int(r1, 0x6, 0x80000000000002, &(0x7f0000000000)=0x200, 0x4)
+bind$inet(r1, &(0x7f0000000380)={0x2, 0x200000000004e23, @local}, 0x10)
+sendto$inet(r1, 0x0, 0x0, 0x2404c7fc, &(0x7f00000008c0)={0x2, 0x4e23, @local}, 0x10)
+ioctl$sock_SIOCGIFINDEX(0xffffffffffffffff, 0x8933, &(0x7f0000000a00)={'veth1_to_team\x00'})
+ioctl$FS_IOC_GETFSMAP(0xffffffffffffffff, 0xc0c0583b, 0x0)
+getpeername$unix(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_add_memb(0xffffffffffffffff, 0x107, 0x1, 0x0, 0x0)
+bind$unix(0xffffffffffffffff, 0x0, 0x0)
+syz_genetlink_get_family_id$netlbl_calipso(0x0, 0xffffffffffffffff)
+ioctl$sock_inet_SIOCSARP(0xffffffffffffffff, 0x8955, 0x0)
+accept$packet(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_int(0xffffffffffffffff, 0x107, 0x0, 0x0, 0x0)
+write$binfmt_elf64(r1, &(0x7f0000000300)=ANY=[@ANYRESDEC, @ANYRES32], 0x100000530)
+
+18:53:53 executing program 0:
+r0 = socket$packet(0x11, 0x3, 0x300)
+recvmmsg(r0, &(0x7f0000000300), 0x64, 0x0, 0x0)
+setsockopt$packet_int(r0, 0x107, 0x8, &(0x7f0000000400)=0x43fb, 0x4)
+r1 = socket$inet(0x2, 0x4000000000000001, 0x0)
+setsockopt$inet_tcp_int(r1, 0x6, 0x80000000000002, &(0x7f0000000000)=0x200, 0x4)
+bind$inet(r1, &(0x7f0000000380)={0x2, 0x200000000004e23, @local}, 0x10)
+sendto$inet(r1, 0x0, 0x0, 0x2404c7fc, &(0x7f00000008c0)={0x2, 0x4e23, @local}, 0x10)
+ioctl$sock_SIOCGIFINDEX(0xffffffffffffffff, 0x8933, &(0x7f0000000a00)={'veth1_to_team\x00'})
+ioctl$FS_IOC_GETFSMAP(0xffffffffffffffff, 0xc0c0583b, 0x0)
+getpeername$unix(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_add_memb(0xffffffffffffffff, 0x107, 0x1, 0x0, 0x0)
+bind$unix(0xffffffffffffffff, 0x0, 0x0)
+syz_genetlink_get_family_id$netlbl_calipso(0x0, 0xffffffffffffffff)
+ioctl$sock_inet_SIOCSARP(0xffffffffffffffff, 0x8955, 0x0)
+accept$packet(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_int(0xffffffffffffffff, 0x107, 0x0, 0x0, 0x0)
+write$binfmt_elf64(r1, &(0x7f0000000300)=ANY=[@ANYRESDEC, @ANYRES32], 0x100000530)
+
+18:53:55 executing program 0:
+r0 = socket$packet(0x11, 0x3, 0x300)
+recvmmsg(r0, &(0x7f0000000300), 0x64, 0x0, 0x0)
+setsockopt$packet_int(r0, 0x107, 0x8, &(0x7f0000000400)=0x43fb, 0x4)
+r1 = socket$inet(0x2, 0x4000000000000001, 0x0)
+setsockopt$inet_tcp_int(r1, 0x6, 0x80000000000002, &(0x7f0000000000)=0x200, 0x4)
+bind$inet(r1, &(0x7f0000000380)={0x2, 0x200000000004e23, @local}, 0x10)
+sendto$inet(r1, 0x0, 0x0, 0x2404c7fc, &(0x7f00000008c0)={0x2, 0x4e23, @local}, 0x10)
+ioctl$sock_SIOCGIFINDEX(0xffffffffffffffff, 0x8933, &(0x7f0000000a00)={'veth1_to_team\x00'})
+ioctl$FS_IOC_GETFSMAP(0xffffffffffffffff, 0xc0c0583b, 0x0)
+getpeername$unix(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_add_memb(0xffffffffffffffff, 0x107, 0x1, 0x0, 0x0)
+bind$unix(0xffffffffffffffff, 0x0, 0x0)
+syz_genetlink_get_family_id$netlbl_calipso(0x0, 0xffffffffffffffff)
+ioctl$sock_inet_SIOCSARP(0xffffffffffffffff, 0x8955, 0x0)
+accept$packet(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_int(0xffffffffffffffff, 0x107, 0x0, 0x0, 0x0)
+write$binfmt_elf64(r1, &(0x7f0000000300)=ANY=[@ANYRESDEC, @ANYRES32], 0x100000530)
+
+18:53:58 executing program 0:
+r0 = socket$packet(0x11, 0x3, 0x300)
+recvmmsg(r0, &(0x7f0000000300), 0x64, 0x0, 0x0)
+setsockopt$packet_int(r0, 0x107, 0x8, &(0x7f0000000400)=0x43fb, 0x4)
+r1 = socket$inet(0x2, 0x4000000000000001, 0x0)
+setsockopt$inet_tcp_int(r1, 0x6, 0x80000000000002, &(0x7f0000000000)=0x200, 0x4)
+bind$inet(r1, &(0x7f0000000380)={0x2, 0x200000000004e23, @local}, 0x10)
+sendto$inet(r1, 0x0, 0x0, 0x2404c7fc, &(0x7f00000008c0)={0x2, 0x4e23, @local}, 0x10)
+ioctl$sock_SIOCGIFINDEX(0xffffffffffffffff, 0x8933, &(0x7f0000000a00)={'veth1_to_team\x00'})
+ioctl$FS_IOC_GETFSMAP(0xffffffffffffffff, 0xc0c0583b, 0x0)
+getpeername$unix(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_add_memb(0xffffffffffffffff, 0x107, 0x1, 0x0, 0x0)
+bind$unix(0xffffffffffffffff, 0x0, 0x0)
+syz_genetlink_get_family_id$netlbl_calipso(0x0, 0xffffffffffffffff)
+ioctl$sock_inet_SIOCSARP(0xffffffffffffffff, 0x8955, 0x0)
+accept$packet(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_int(0xffffffffffffffff, 0x107, 0x0, 0x0, 0x0)
+write$binfmt_elf64(r1, &(0x7f0000000300)=ANY=[@ANYRESDEC, @ANYRES32], 0x100000530)
+
+18:54:00 executing program 0:
+r0 = socket$packet(0x11, 0x3, 0x300)
+recvmmsg(r0, &(0x7f0000000300), 0x64, 0x0, 0x0)
+setsockopt$packet_int(r0, 0x107, 0x8, &(0x7f0000000400)=0x43fb, 0x4)
+r1 = socket$inet(0x2, 0x4000000000000001, 0x0)
+setsockopt$inet_tcp_int(r1, 0x6, 0x80000000000002, &(0x7f0000000000)=0x200, 0x4)
+bind$inet(r1, &(0x7f0000000380)={0x2, 0x200000000004e23, @local}, 0x10)
+sendto$inet(r1, 0x0, 0x0, 0x2404c7fc, &(0x7f00000008c0)={0x2, 0x4e23, @local}, 0x10)
+ioctl$sock_SIOCGIFINDEX(0xffffffffffffffff, 0x8933, &(0x7f0000000a00)={'veth1_to_team\x00'})
+ioctl$FS_IOC_GETFSMAP(0xffffffffffffffff, 0xc0c0583b, 0x0)
+getpeername$unix(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_add_memb(0xffffffffffffffff, 0x107, 0x1, 0x0, 0x0)
+bind$unix(0xffffffffffffffff, 0x0, 0x0)
+syz_genetlink_get_family_id$netlbl_calipso(0x0, 0xffffffffffffffff)
+ioctl$sock_inet_SIOCSARP(0xffffffffffffffff, 0x8955, 0x0)
+accept$packet(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_int(0xffffffffffffffff, 0x107, 0x0, 0x0, 0x0)
+write$binfmt_elf64(r1, &(0x7f0000000300)=ANY=[@ANYRESDEC, @ANYRES32], 0x100000530)
+
+18:54:02 executing program 0:
+r0 = socket$packet(0x11, 0x3, 0x300)
+recvmmsg(r0, &(0x7f0000000300), 0x64, 0x0, 0x0)
+setsockopt$packet_int(r0, 0x107, 0x8, &(0x7f0000000400)=0x43fb, 0x4)
+r1 = socket$inet(0x2, 0x4000000000000001, 0x0)
+setsockopt$inet_tcp_int(r1, 0x6, 0x80000000000002, &(0x7f0000000000)=0x200, 0x4)
+bind$inet(r1, &(0x7f0000000380)={0x2, 0x200000000004e23, @local}, 0x10)
+sendto$inet(r1, 0x0, 0x0, 0x2404c7fc, &(0x7f00000008c0)={0x2, 0x4e23, @local}, 0x10)
+ioctl$sock_SIOCGIFINDEX(0xffffffffffffffff, 0x8933, &(0x7f0000000a00)={'veth1_to_team\x00'})
+ioctl$FS_IOC_GETFSMAP(0xffffffffffffffff, 0xc0c0583b, 0x0)
+getpeername$unix(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_add_memb(0xffffffffffffffff, 0x107, 0x1, 0x0, 0x0)
+bind$unix(0xffffffffffffffff, 0x0, 0x0)
+syz_genetlink_get_family_id$netlbl_calipso(0x0, 0xffffffffffffffff)
+ioctl$sock_inet_SIOCSARP(0xffffffffffffffff, 0x8955, 0x0)
+accept$packet(0xffffffffffffffff, 0x0, 0x0)
+setsockopt$packet_int(0xffffffffffffffff, 0x107, 0x0, 0x0, 0x0)
+write$binfmt_elf64(r1, &(0x7f0000000300)=ANY=[@ANYRESDEC, @ANYRES32], 0x100000530)
+
+18:54:05 executing program 0:
+syz_mount_image$squashfs(&(0x7f0000000040), &(0x7f00000001c0)='./file2\x00', 0x200003, &(0x7f00000002c0)=ANY=[], 0x21, 0x1b7, &(0x7f0000001f00)="$eJzsVb/uEkEQ/va4391PC7U2JhYSxUI4DjU2JlSGB7A1SuBEwuGfOxKFUFzHe9jwGhY+gokmJDZYqIkFxtZgZnf2WJQCjARM9kuWb/7szM4Ol9kn6YsUAH4uxi3UIeHhHGZCwAVwWSjbPV/xV09xmfXPruLrbH/NvGSkw1GvGcdRskdhs89RhWCXjLT/d9e7xYPzu+bRwgfKt33UbN+d2iiIv2jUqAfnAKUetfCwoPr4bxL+OPR1Evcourq9IP50rdQTAN/kl/5+MW6R8IinFNnaagnH2EP/5ltjz0VXLlHAMt9Dw4+UawAqg/7zSjoc3ej2m52oEz0Nw9rt4GYQ3Aorj7txFKhfYRyhRxRx/a4PmqlnDD8V/ZEH7FkY+KKO1aWxX5ixNIeXPKRLV7AGx4jVLPAmj+UwUAvu4ypOAbzMhGEtyiwu5JUaECiwUuVyIfKzTqWj3HoWtycQEDpsCjfPUZ3jRCreqkblqd3JtGnCXGRuME+Z58z6zdJvkSszfGKtlFGJr5qDgb/qSJVePbIlocfeJLyQmQ2jU79765e75MPCwsLCwsLC4j/DrwAAAP//hVRVxw==")
+
+[  294.421398][ T8443] loop0: detected capacity change from 0 to 8
+[  294.446359][ T8443] SQUASHFS error: zstd decompression error: 10
+[  294.447711][ T8443] SQUASHFS error: zstd decompression failed, data probably corrupt
+[  294.449353][ T8443] SQUASHFS error: Failed to read block 0x4ea: -5
+[  294.450532][ T8443] SQUASHFS error: Unable to read metadata cache entry [4e8]
+[  294.451871][ T8443] SQUASHFS error: Unable to read inode 0x11f
+2024/05/22 18:54:06 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x1bb7, Ip:0x81bb4bc6}
+18:54:06 executing program 0:
+accept() (enabled_site: 2130, site_type: 1)
+syz_mount_image$squashfs(&(0x7f0000000040), &(0x7f00000001c0)='./file2\x00', 0x200003, &(0x7f00000002c0)=ANY=[], 0x21, 0x1b7, &(0x7f0000001f00)="$eJzsVb/uEkEQ/va4391PC7U2JhYSxUI4DjU2JlSGB7A1SuBEwuGfOxKFUFzHe9jwGhY+gokmJDZYqIkFxtZgZnf2WJQCjARM9kuWb/7szM4Ol9kn6YsUAH4uxi3UIeHhHGZCwAVwWSjbPV/xV09xmfXPruLrbH/NvGSkw1GvGcdRskdhs89RhWCXjLT/d9e7xYPzu+bRwgfKt33UbN+d2iiIv2jUqAfnAKUetfCwoPr4bxL+OPR1Evcourq9IP50rdQTAN/kl/5+MW6R8IinFNnaagnH2EP/5ltjz0VXLlHAMt9Dw4+UawAqg/7zSjoc3ej2m52oEz0Nw9rt4GYQ3Aorj7txFKhfYRyhRxRx/a4PmqlnDD8V/ZEH7FkY+KKO1aWxX5ixNIeXPKRLV7AGx4jVLPAmj+UwUAvu4ypOAbzMhGEtyiwu5JUaECiwUuVyIfKzTqWj3HoWtycQEDpsCjfPUZ3jRCreqkblqd3JtGnCXGRuME+Z58z6zdJvkSszfGKtlFGJr5qDgb/qSJVePbIlocfeJLyQmQ2jU79765e75MPCwsLCwsLC4j/DrwAAAP//hVRVxw==")
+
+2024/05/22 18:54:06 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x1bf4, Ip:0x81bb4bd8}
+2024/05/22 18:54:06 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2b09, Ip:0x8191ced7}
+2024/05/22 18:54:06 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x363c, Ip:0x8191cec7}
+2024/05/22 18:54:06 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x852, Ip:0x81f7cf25}
+2024/05/22 18:54:06 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x1c13, Ip:0x81b665d9}
+2024/05/22 18:54:06 KDO: #0: memintrinsic id=2130
+[  296.017604][ T8448] loop0: detected capacity change from 0 to 8
+[  296.020908][ T8448] BUG: KASAN: unknown-crash in copy_bio_to_actor+0x1a5/0x380
+[  296.026311][ T8448] Write of size 8 at addr ffff888027da9a00 by task syz-executor.0/8448
+[  296.027229][ T8448] 
+[  296.027742][ T8448] CPU: 0 PID: 8448 Comm: syz-executor.0 Not tainted 6.4.1-00011-gc173c3c31378 #20
+[  296.028769][ T8448] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+[  296.029752][ T8448] Call Trace:
+[  296.030135][ T8448]  <TASK>
+[  296.030480][ T8448]  dump_stack_lvl+0x1ce/0x2c0
+[  296.031031][ T8448]  ? nf_tcp_handle_invalid+0x3d0/0x3d0
+[  296.031641][ T8448]  ? preempt_count_add+0xa0/0xf0
+[  296.032204][ T8448]  ? panic+0x620/0x620
+[  296.032678][ T8448]  ? lockdep_hardirqs_on_prepare+0x2dc/0x410
+[  296.033355][ T8448]  print_report+0x163/0x540
+[  296.033879][ T8448]  ? __virt_addr_valid+0x1cc/0x240
+[  296.034458][ T8448]  ? __phys_addr+0x99/0x110
+[  296.034985][ T8448]  kdo_kasan_report+0x7f/0x90
+[  296.035524][ T8448]  ? copy_bio_to_actor+0x1a5/0x380
+[  296.036108][ T8448]  ? copy_bio_to_actor+0x1a5/0x380
+[  296.036682][ T8448]  propagate_taint+0x1e1/0x210
+[  296.037229][ T8448]  ? copy_bio_to_actor+0x1a5/0x380
+[  296.037810][ T8448]  ? copy_bio_to_actor+0x1a5/0x380
+[  296.038388][ T8448]  __kdo_asan_memcpy+0x69/0xa0
+[  296.038936][ T8448]  copy_bio_to_actor+0x1a5/0x380
+[  296.039507][ T8448]  squashfs_read_data+0x2e7/0x800
+[  296.040091][ T8448]  ? cramfs_uncompress_exit+0x50/0x50
+[  296.040710][ T8448]  squashfs_read_table+0x347/0x3a0
+[  296.041302][ T8448]  squashfs_fill_super+0x184/0x1450
+[  296.041891][ T8448]  ? set_blocksize+0x19e/0x290
+[  296.042445][ T8448]  get_tree_bdev+0x307/0x470
+[  296.042966][ T8448]  ? squashfs_reconfigure+0xc0/0xc0
+[  296.043555][ T8448]  vfs_get_tree+0x57/0x1d0
+[  296.044062][ T8448]  do_new_mount+0x284/0x750
+[  296.044575][ T8448]  ? security_capable+0x5e/0x80
+[  296.045153][ T8448]  ? do_move_mount_old+0x140/0x140
+[  296.045725][ T8448]  ? path_mount+0x481/0xb90
+[  296.046249][ T8448]  __se_sys_mount+0x347/0x3c0
+[  296.046787][ T8448]  ? __x64_sys_mount+0x70/0x70
+[  296.047331][ T8448]  ? syscall_enter_from_user_mode+0x32/0x230
+[  296.047996][ T8448]  ? lockdep_hardirqs_on+0xdd/0x180
+[  296.048580][ T8448]  ? syscall_enter_from_user_mode+0x32/0x230
+[  296.049257][ T8448]  do_syscall_64+0x41/0x90
+[  296.049770][ T8448]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  296.050426][ T8448] RIP: 0033:0x7f522f091bae
+[  296.050930][ T8448] Code: 48 c7 c0 ff ff ff ff eb aa e8 be 0d 00 00 66 2e 0f 1f 84 00 00 00 00 00 0f 1f 40 00 f3 0f 1e fa 49 89 ca b8 a5 00 00 00 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 b0 ff ff ff f7 d8 64 89 01 48
+[  296.052971][ T8448] RSP: 002b:00007f522fe49e38 EFLAGS: 00000202 ORIG_RAX: 00000000000000a5
+[  296.053887][ T8448] RAX: ffffffffffffffda RBX: 00000000000001b7 RCX: 00007f522f091bae
+[  296.054750][ T8448] RDX: 0000000020000040 RSI: 00000000200001c0 RDI: 00007f522fe49e90
+[  296.055607][ T8448] RBP: 00007f522fe49ed0 R08: 00007f522fe49ed0 R09: 0000000000200003
+[  296.056467][ T8448] R10: 0000000000200003 R11: 0000000000000202 R12: 0000000020000040
+[  296.057331][ T8448] R13: 00000000200001c0 R14: 00007f522fe49e90 R15: 00000000200002c0
+[  296.058205][ T8448]  </TASK>
+[  296.073353][ T8448] 
+[  296.073701][ T8448] Allocated by task 8448:
+[  296.074179][ T8448]  kasan_set_track+0x4f/0x70
+[  296.074916][ T8448]  __kasan_kmalloc+0x7d/0x90
+[  296.075477][ T8448]  __kmalloc+0xb9/0x230
+[  296.076159][ T8448]  squashfs_read_table+0x30/0x3a0
+[  296.076725][ T8448]  squashfs_fill_super+0x184/0x1450
+[  296.077517][ T8448]  get_tree_bdev+0x307/0x470
+[  296.078097][ T8448]  vfs_get_tree+0x57/0x1d0
+[  296.079040][ T8448]  do_new_mount+0x284/0x750
+[  296.079814][ T8448]  __se_sys_mount+0x347/0x3c0
+[  296.092880][ T8448]  do_syscall_64+0x41/0x90
+[  296.093631][ T8448]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  296.094831][ T8448] 
+[  296.095254][ T8448] Last potentially related work creation:
+[  296.096379][ T8448]  kasan_save_stack+0x3f/0x60
+[  296.097150][ T8448]  kasan_record_aux_stack_noalloc+0x87/0x90
+[  296.098332][ T8448]  kvfree_call_rcu+0x105/0x7d0
+[  296.099113][ T8448]  cfg80211_update_known_bss+0x124/0x620
+[  296.100246][ T8448]  cfg80211_bss_update+0x117/0x18b0
+[  296.101090][ T8448]  cfg80211_inform_bss_frame_data+0xa00/0x1640
+[  296.119647][ T8448]  ieee80211_bss_info_update+0x649/0xa80
+[  296.120572][ T8448]  ieee80211_ibss_rx_queued_mgmt+0x167d/0x1c20
+[  296.121819][ T8448]  ieee80211_iface_work+0x610/0x8e0
+[  296.124325][ T8448]  process_one_work+0x685/0xca0
+[  296.125115][ T8448]  worker_thread+0x64c/0xaf0
+[  296.126099][ T8448]  kthread+0x27c/0x2c0
+[  296.126789][ T8448]  ret_from_fork+0x1f/0x30
+[  296.127757][ T8448] 
+[  296.128181][ T8448] The buggy address belongs to the object at ffff888027da9a00
+[  296.128181][ T8448]  which belongs to the cache kmalloc-96 of size 96
+[  296.143491][ T8448] The buggy address is located 0 bytes inside of
+[  296.143491][ T8448]  96-byte region [ffff888027da9a00, ffff888027da9a60)
+[  296.145467][ T8448] 
+[  296.145765][ T8448] The buggy address belongs to the physical page:
+[  296.146689][ T8448] page:ffffea00009f6a40 refcount:1 mapcount:0 mapping:0000000000000000 index:0x0 pfn:0x27da9
+[  296.148029][ T8448] ksm flags: 0xfff00000000200(slab|node=0|zone=1|lastcpupid=0x7ff)
+[  296.148931][ T8448] page_type: 0xffffffff()
+[  296.149644][ T8448] raw: 00fff00000000200 ffff88800ec41780 ffffea000080f740 dead000000000003
+[  296.150817][ T8448] raw: 0000000000000000 0000000000200020 00000001ffffffff 0000000000000000
+[  296.151744][ T8448] page dumped because: kasan: bad access detected
+[  296.164192][ T8448] page_owner tracks the page as allocated
+[  296.165047][ T8448] page last allocated via order 0, migratetype Unmovable, gfp_mask 0x12cc0(GFP_KERNEL|__GFP_NOWARN|__GFP_NORETRY), pid 6100, tgid 6100 (systemd-udevd), ts 82575763452, free_ts 82568972008
+[  296.167732][ T8448]  post_alloc_hook+0x1e6/0x210
+[  296.168459][ T8448]  get_page_from_freelist+0x260a/0x2790
+[  296.169557][ T8448]  __alloc_pages+0x1f2/0x480
+[  296.170260][ T8448]  alloc_slab_page+0x59/0x160
+[  296.171181][ T8448]  new_slab+0x84/0x2f0
+[  296.171801][ T8448]  ___slab_alloc+0xa85/0x10a0
+[  296.181522][ T8448]  __kmem_cache_alloc_node+0x1a8/0x240
+[  296.183830][ T8448]  __kmalloc_node+0xa7/0x230
+[  296.184548][ T8448]  memcg_alloc_slab_cgroups+0x5c/0xf0
+[  296.185678][ T8448]  slab_post_alloc_hook+0xdf/0x380
+[  296.186457][ T8448]  kmem_cache_alloc_node+0x152/0x310
+[  296.187462][ T8448]  __alloc_skb+0x15c/0x2e0
+[  296.188157][ T8448]  alloc_skb_with_frags+0x80/0x510
+[  296.192841][ T8448]  sock_alloc_send_pskb+0x64e/0x750
+[  296.193700][ T8448]  unix_dgram_sendmsg+0x4c5/0x1420
+[  296.194749][ T8448]  sock_write_iter+0x2bd/0x390
+[  296.195476][ T8448] page last free stack trace:
+[  296.203671][ T8448]  free_unref_page_prepare+0x75a/0x820
+[  296.204531][ T8448]  free_unref_page+0x37/0x300
+[  296.205560][ T8448]  __mmdrop+0x8e/0x3d0
+[  296.206190][ T8448]  free_bprm+0xe0/0x210
+[  296.207025][ T8448]  kernel_execve+0x6ed/0x740
+[  296.207729][ T8448]  call_usermodehelper_exec_async+0x1bb/0x280
+[  296.212140][ T8448]  ret_from_fork+0x1f/0x30
+[  296.213933][ T8448] 
+[  296.214314][ T8448] Memory state around the buggy address:
+[  296.220074][ T8448]  ffff888027da9900: e8 e8 e8 e8 e8 e8 e8 e8 e8 fc fc fc fc fc fc fc
+[  296.221579][ T8448]  ffff888027da9980: e8 e8 e8 e8 e8 e8 e8 e8 e8 e8 e8 e8 fc fc fc fc
+[  296.227956][ T8448] >ffff888027da9a00: ee ec ec ec ec ec ec ec ec ec ec ec fc fc fc fc
+[  296.232582][ T8448]                    ^
+[  296.233261][ T8448]  ffff888027da9a80: fa fb fb fb fb fb fb fb fb fb fb fb fc fc fc fc
+[  296.234701][ T8448]  ffff888027da9b00: fa fb fb fb fb fb fb fb fb fb fb fb fc fc fc fc
+[  296.243481][ T8448] BUG: KASAN: unknown-crash in copy_bio_to_actor+0x1a5/0x380
+[  296.244840][ T8448] Write of size 8 at addr ffff888015768000 by task syz-executor.0/8448
+[  296.246319][ T8448] 
+[  296.246695][ T8448] CPU: 0 PID: 8448 Comm: syz-executor.0 Not tainted 6.4.1-00011-gc173c3c31378 #20
+[  296.248037][ T8448] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+[  296.249433][ T8448] Call Trace:
+[  296.249947][ T8448]  <TASK>
+[  296.250390][ T8448]  dump_stack_lvl+0x1ce/0x2c0
+[  296.251117][ T8448]  ? nf_tcp_handle_invalid+0x3d0/0x3d0
+[  296.251960][ T8448]  ? preempt_count_add+0xa0/0xf0
+[  296.252784][ T8448]  ? panic+0x620/0x620
+[  296.253487][ T8448]  print_report+0x163/0x540
+[  296.254197][ T8448]  ? __virt_addr_valid+0x1cc/0x240
+[  296.254970][ T8448]  ? __phys_addr+0x99/0x110
+[  296.255680][ T8448]  kdo_kasan_report+0x7f/0x90
+[  296.256406][ T8448]  ? copy_bio_to_actor+0x1a5/0x380
+[  296.257213][ T8448]  ? copy_bio_to_actor+0x1a5/0x380
+[  296.258017][ T8448]  propagate_taint+0x1f6/0x210
+[  296.258753][ T8448]  ? copy_bio_to_actor+0x1a5/0x380
+[  296.259555][ T8448]  ? copy_bio_to_actor+0x1a5/0x380
+[  296.260365][ T8448]  __kdo_asan_memcpy+0x69/0xa0
+[  296.261108][ T8448]  copy_bio_to_actor+0x1a5/0x380
+[  296.261903][ T8448]  squashfs_read_data+0x2e7/0x800
+[  296.262673][ T8448]  ? cramfs_uncompress_exit+0x50/0x50
+[  296.263512][ T8448]  squashfs_read_table+0x347/0x3a0
+[  296.264293][ T8448]  squashfs_fill_super+0x184/0x1450
+[  296.265094][ T8448]  ? set_blocksize+0x19e/0x290
+[  296.265847][ T8448]  get_tree_bdev+0x307/0x470
+[  296.266552][ T8448]  ? squashfs_reconfigure+0xc0/0xc0
+[  296.267347][ T8448]  vfs_get_tree+0x57/0x1d0
+[  296.268023][ T8448]  do_new_mount+0x284/0x750
+[  296.268699][ T8448]  ? security_capable+0x5e/0x80
+[  296.269477][ T8448]  ? do_move_mount_old+0x140/0x140
+[  296.270251][ T8448]  ? path_mount+0x481/0xb90
+[  296.270985][ T8448]  __se_sys_mount+0x347/0x3c0
+[  296.271729][ T8448]  ? __x64_sys_mount+0x70/0x70
+[  296.272477][ T8448]  ? syscall_enter_from_user_mode+0x32/0x230
+[  296.273459][ T8448]  ? lockdep_hardirqs_on+0xdd/0x180
+[  296.274286][ T8448]  ? syscall_enter_from_user_mode+0x32/0x230
+[  296.275285][ T8448]  do_syscall_64+0x41/0x90
+[  296.276028][ T8448]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  296.276971][ T8448] RIP: 0033:0x7f522f091bae
+[  296.277690][ T8448] Code: 48 c7 c0 ff ff ff ff eb aa e8 be 0d 00 00 66 2e 0f 1f 84 00 00 00 00 00 0f 1f 40 00 f3 0f 1e fa 49 89 ca b8 a5 00 00 00 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 b0 ff ff ff f7 d8 64 89 01 48
+[  296.280560][ T8448] RSP: 002b:00007f522fe49e38 EFLAGS: 00000202 ORIG_RAX: 00000000000000a5
+[  296.281915][ T8448] RAX: ffffffffffffffda RBX: 00000000000001b7 RCX: 00007f522f091bae
+[  296.283149][ T8448] RDX: 0000000020000040 RSI: 00000000200001c0 RDI: 00007f522fe49e90
+[  296.284249][ T8448] RBP: 00007f522fe49ed0 R08: 00007f522fe49ed0 R09: 0000000000200003
+[  296.285156][ T8448] R10: 0000000000200003 R11: 0000000000000202 R12: 0000000020000040
+[  296.286030][ T8448] R13: 00000000200001c0 R14: 00007f522fe49e90 R15: 00000000200002c0
+[  296.287215][ T8448]  </TASK>
+[  296.327603][ T8448] 
+[  296.327936][ T8448] The buggy address belongs to the physical page:
+[  296.328822][ T8448] page:ffffea000055da00 refcount:1 mapcount:0 mapping:0000000000000000 index:0x0 pfn:0x15768
+[  296.330136][ T8448] flags: 0xfff00000000000(node=0|zone=1|lastcpupid=0x7ff)
+[  296.330878][ T8448] page_type: 0xffffffff()
+[  296.331534][ T8448] raw: 00fff00000000000 0000000000000000 dead000000000122 0000000000000000
+[  296.337591][ T8448] raw: 0000000000000000 0000000000000000 00000001ffffffff 0000000000000000
+[  296.338485][ T8448] page dumped because: kasan: bad access detected
+[  296.339349][ T8448] page_owner tracks the page as allocated
+[  296.339949][ T8448] page last allocated via order 0, migratetype Unmovable, gfp_mask 0x100c00(GFP_NOIO|__GFP_HARDWALL), pid 8448, tgid 8447 (syz-executor.0), ts 296020593581, free_ts 295320344978
+[  296.350955][ T8448]  post_alloc_hook+0x1e6/0x210
+[  296.351479][ T8448]  get_page_from_freelist+0x260a/0x2790
+[  296.352469][ T8448]  __alloc_pages+0x1f2/0x480
+[  296.353000][ T8448]  squashfs_bio_read+0x1c5/0x390
+[  296.353749][ T8448]  squashfs_read_data+0x26b/0x800
+[  296.354291][ T8448]  squashfs_read_table+0x347/0x3a0
+[  296.357101][ T8448]  squashfs_fill_super+0x184/0x1450
+[  296.357728][ T8448]  get_tree_bdev+0x307/0x470
+[  296.361600][ T8448]  vfs_get_tree+0x57/0x1d0
+[  296.364887][ T8448]  do_new_mount+0x284/0x750
+[  296.365447][ T8448]  __se_sys_mount+0x347/0x3c0
+[  296.369363][ T8448]  do_syscall_64+0x41/0x90
+[  296.369859][ T8448]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  296.374034][ T8448] page last free stack trace:
+[  296.374573][ T8448]  free_unref_page_prepare+0x75a/0x820
+[  296.375366][ T8448]  free_unref_page_list+0x49c/0x640
+[  296.375931][ T8448]  release_pages+0x1fc4/0x22d0
+[  296.383739][ T8448]  tlb_flush_mmu+0xcf/0x170
+[  296.384246][ T8448]  tlb_finish_mmu+0x9f/0x140
+[  296.384939][ T8448]  exit_mmap+0x3b9/0x910
+[  296.385461][ T8448]  __mmput+0xf3/0x330
+[  296.385892][ T8448]  exit_mm+0x1f5/0x2d0
+[  296.388717][ T8448]  do_exit+0x4dc/0x1870
+[  296.389243][ T8448]  do_group_exit+0x15e/0x160
+[  296.394011][ T8448]  get_signal+0xfca/0x1040
+[  296.394524][ T8448]  arch_do_signal_or_restart+0x91/0x4d0
+[  296.395316][ T8448]  exit_to_user_mode_loop+0x6a/0x100
+[  296.395889][ T8448]  exit_to_user_mode_prepare+0xb1/0x140
+[  296.401274][ T8448]  syscall_exit_to_user_mode+0x64/0x280
+[  296.406186][ T8448]  do_syscall_64+0x4d/0x90
+[  296.408589][ T8448] 
+[  296.408884][ T8448] Memory state around the buggy address:
+[  296.409518][ T8448]  ffff888015767f00: fc fc fc fc fc fc fc fc fc fc fc fc fc fc fc fc
+[  296.414688][ T8448]  ffff888015767f80: fc fc fc fc fc fc fc fc fc fc fc fc fc fc fc fc
+[  296.415608][ T8448] >ffff888015768000: e9 e9 e9 e9 e9 e9 e9 e9 e9 e9 e9 e9 e9 e9 e9 e9
+[  296.420948][ T8448]                    ^
+[  296.421455][ T8448]  ffff888015768080: e9 e9 e9 e9 e9 e9 e9 e9 e9 e9 e9 e9 e9 e9 e9 e9
+[  296.427219][ T8448]  ffff888015768100: e9 e9 e9 e9 e9 e9 e9 e9 e9 e9 e9 e9 e9 e9 e9 e9
+[  296.428134][ T8448] Kernel panic - not syncing: KDO: memcpy hit (id: copy_bio_to_actor+0x1a5/0x380, callid: 2130S)
+[  296.429363][ T8448] CPU: 0 PID: 8448 Comm: syz-executor.0 Not tainted 6.4.1-00011-gc173c3c31378 #20
+[  296.430292][ T8448] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+[  296.431213][ T8448] Call Trace:
+[  296.431564][ T8448]  <TASK>
+[  296.431881][ T8448]  dump_stack_lvl+0x1ce/0x2c0
+[  296.432389][ T8448]  ? nf_tcp_handle_invalid+0x3d0/0x3d0
+[  296.432985][ T8448]  ? panic+0x620/0x620
+[  296.433452][ T8448]  ? vscnprintf+0x5d/0x80
+[  296.433915][ T8448]  panic+0x2ba/0x620
+[  296.434336][ T8448]  ? copy_bio_to_actor+0x1a5/0x380
+[  296.434872][ T8448]  ? __wake_up_klogd+0xb7/0xf0
+[  296.435379][ T8448]  ? preempt_count_add+0xa0/0xf0
+[  296.435907][ T8448]  ? kdo_sanitizer_cov_write+0x100/0x100
+[  296.436498][ T8448]  ? __phys_addr+0x99/0x110
+[  296.437010][ T8448]  ? kdo_kasan_report+0x7f/0x90
+[  296.437548][ T8448]  ? copy_bio_to_actor+0x1a5/0x380
+[  296.438084][ T8448]  ? copy_bio_to_actor+0x1a5/0x380
+[  296.438624][ T8448]  propagate_taint+0x20a/0x210
+[  296.439124][ T8448]  ? copy_bio_to_actor+0x1a5/0x380
+[  296.439664][ T8448]  ? copy_bio_to_actor+0x1a5/0x380
+[  296.440201][ T8448]  __kdo_asan_memcpy+0x69/0xa0
+[  296.440707][ T8448]  copy_bio_to_actor+0x1a5/0x380
+[  296.441285][ T8448]  squashfs_read_data+0x2e7/0x800
+[  296.441828][ T8448]  ? cramfs_uncompress_exit+0x50/0x50
+[  296.442403][ T8448]  squashfs_read_table+0x347/0x3a0
+[  296.442949][ T8448]  squashfs_fill_super+0x184/0x1450
+[  296.443496][ T8448]  ? set_blocksize+0x19e/0x290
+[  296.444011][ T8448]  get_tree_bdev+0x307/0x470
+[  296.444497][ T8448]  ? squashfs_reconfigure+0xc0/0xc0
+[  296.445073][ T8448]  vfs_get_tree+0x57/0x1d0
+[  296.445567][ T8448]  do_new_mount+0x284/0x750
+[  296.446044][ T8448]  ? security_capable+0x5e/0x80
+[  296.446567][ T8448]  ? do_move_mount_old+0x140/0x140
+[  296.447099][ T8448]  ? path_mount+0x481/0xb90
+[  296.447585][ T8448]  __se_sys_mount+0x347/0x3c0
+[  296.448086][ T8448]  ? __x64_sys_mount+0x70/0x70
+[  296.448593][ T8448]  ? syscall_enter_from_user_mode+0x32/0x230
+[  296.449241][ T8448]  ? lockdep_hardirqs_on+0xdd/0x180
+[  296.449808][ T8448]  ? syscall_enter_from_user_mode+0x32/0x230
+[  296.450459][ T8448]  do_syscall_64+0x41/0x90
+[  296.450953][ T8448]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  296.451588][ T8448] RIP: 0033:0x7f522f091bae
+[  296.452073][ T8448] Code: 48 c7 c0 ff ff ff ff eb aa e8 be 0d 00 00 66 2e 0f 1f 84 00 00 00 00 00 0f 1f 40 00 f3 0f 1e fa 49 89 ca b8 a5 00 00 00 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 b0 ff ff ff f7 d8 64 89 01 48
+[  296.454074][ T8448] RSP: 002b:00007f522fe49e38 EFLAGS: 00000202 ORIG_RAX: 00000000000000a5
+[  296.454961][ T8448] RAX: ffffffffffffffda RBX: 00000000000001b7 RCX: 00007f522f091bae
+[  296.455793][ T8448] RDX: 0000000020000040 RSI: 00000000200001c0 RDI: 00007f522fe49e90
+[  296.456618][ T8448] RBP: 00007f522fe49ed0 R08: 00007f522fe49ed0 R09: 0000000000200003
+[  296.457461][ T8448] R10: 0000000000200003 R11: 0000000000000202 R12: 0000000020000040
+[  296.458290][ T8448] R13: 00000000200001c0 R14: 00007f522fe49e90 R15: 00000000200002c0
+[  296.459146][ T8448]  </TASK>
+[  296.459632][ T8448] Kernel Offset: disabled
+[  296.460134][ T8448] Rebooting in 86400 seconds..
+
+VM DIAGNOSIS:
+18:54:07  Registers:
+info registers vcpu 0
+RAX=0000000000000001 RBX=0000000000000001 RCX=0000000080000002 RDX=0000000000000000
+RSI=ffff88806f687c50 RDI=ffffffff87aa8820 RBP=0000000000000004 RSP=ffffc9000bfff598
+R8 =ffffffff81f559ad R9 =ffffffff814f0843 R10=fffff520017ffec0 R11=dffffc0000000001
+R12=0000000000000286 R13=ffff88801c575940 R14=00000000ffffffff R15=ffff88806f687c50
+RIP=ffffffff87621980 RFL=00000046 [---Z-P-] CPL=0 II=0 A20=1 SMM=0 HLT=0
+ES =0000 0000000000000000 ffffffff 00c00000
+CS =0010 0000000000000000 ffffffff 00a09b00 DPL=0 CS64 [-RA]
+SS =0018 0000000000000000 ffffffff 00c09300 DPL=0 DS   [-WA]
+DS =0000 0000000000000000 ffffffff 00c00000
+FS =0000 00007fab4be9b700 ffffffff 00c00000
+GS =0000 ffff8880ba000000 ffffffff 00c00000
+LDT=0000 0000000000000000 ffffffff 00c00000
+TR =0040 fffffe0000003000 00004087 00008b00 DPL=0 TSS64-busy
+GDT=     fffffe0000001000 0000007f
+IDT=     fffffe0000000000 00000fff
+CR0=80050033 CR2=00007fd050e839c0 CR3=000000001275f000 CR4=00350ef0
+DR0=0000000000000000 DR1=0000000000000000 DR2=0000000000000000 DR3=0000000000000000 
+DR6=00000000fffe0ff0 DR7=0000000000000400
+EFER=0000000000000d01
+FCW=037f FSW=0000 [ST=0] FTW=00 MXCSR=00001f80
+FPR0=0000000000000000 0000 FPR1=0000000000000000 0000
+FPR2=0000000000000000 0000 FPR3=0000000000000000 0000
+FPR4=0000000000000000 0000 FPR5=0000000000000000 0000
+FPR6=0000000000000000 0000 FPR7=0000000000000000 0000
+YMM00=0000000000000000 0000000000000000 2037303a34353a38 312032322079614d
+YMM01=0000000000000000 0000000000000000 5d3830393032302e 36393220205b203a
+YMM02=0000000000000000 0000000000000000 63615f6f745f6f69 625f79706f63206e
+YMM03=0000000000000000 0000000000000000 3a4e4153414b203a 475542205d383434
+YMM04=0000000000000000 0000000000000000 2035343a32353a38 312032322079614d
+YMM05=0000000000000000 0000000000000000 5d3438393730342e 34313220205b203a
+YMM06=0000000000000000 0000000000000000 2874696475612036 3233313d65707974
+YMM07=0000000000000000 0000000000000000 303d64697520303d 64697561203a2939
+YMM08=0000000000000000 0000000000000000 2064646466383066 323235663778303d
+YMM09=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM10=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM11=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM12=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM13=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM14=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM15=0000000000000000 0000000000000000 0000000000000000 0000000000000000

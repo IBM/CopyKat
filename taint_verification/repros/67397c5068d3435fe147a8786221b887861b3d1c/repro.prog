@@ -1,0 +1,8 @@
+# {Threaded:false Repeat:false RepeatTimes:0 Procs:1 Slowdown:1 Sandbox:none SandboxArg:0 Leak:false NetInjection:false NetDevices:true NetReset:false Cgroups:false BinfmtMisc:false CloseFDs:false KCSAN:false DevlinkPCI:false NicVF:false USB:false VhciInjection:false Wifi:false IEEE802154:false Sysctl:false UseTmpDir:false HandleSegv:false Repro:false Trace:false LegacyOptions:{Collide:false Fault:false FaultCall:0 FaultNth:0}}
+accept(0xffffffffffffffff, 0x0, &(0x7f0000000000)) (enabled_site: 6015, site_type: 1)
+r0 = socket$can_raw(0x1d, 0x3, 0x1)
+ioctl$ifreq_SIOCGIFINDEX_vcan(r0, 0x8933, &(0x7f00000000c0)={'vxcan0\x00', <r1=>0x0})
+bind$can_raw(r0, &(0x7f0000000240)={0x1d, r1}, 0x10)
+r2 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000080)='memory.swap.events\x00', 0x275a, 0x0)
+write$binfmt_script(r2, &(0x7f0000000000)={'#! ', '', [{0x20, 'memory.swap.events\x00'}]}, 0x18)
+sendfile(r0, r2, &(0x7f0000000040), 0x10)

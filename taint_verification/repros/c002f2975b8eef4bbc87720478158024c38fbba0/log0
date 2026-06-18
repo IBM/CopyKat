@@ -1,0 +1,1128 @@
+Warning: Permanently added '[localhost]:39738' (ED25519) to the list of known hosts.
+2024/05/22 21:26:30 fuzzer started
+2024/05/22 21:26:32 dialing manager at localhost:34093
+syzkaller login: [  177.557327][ T8023] cgroup: Unknown subsys name 'net'
+[  177.722386][ T8023] cgroup: Unknown subsys name 'rlimit'
+2024/05/22 21:26:32 syscalls: 3922
+2024/05/22 21:26:32 code coverage: enabled
+2024/05/22 21:26:32 comparison tracing: enabled
+2024/05/22 21:26:32 extra coverage: enabled
+2024/05/22 21:26:32 delay kcov mmap: enabled
+2024/05/22 21:26:32 setuid sandbox: enabled
+2024/05/22 21:26:32 namespace sandbox: enabled
+2024/05/22 21:26:32 Android sandbox: /sys/fs/selinux/policy does not exist
+2024/05/22 21:26:32 fault injection: enabled
+2024/05/22 21:26:32 leak checking: CONFIG_DEBUG_KMEMLEAK is not enabled
+2024/05/22 21:26:32 net packet injection: enabled
+2024/05/22 21:26:32 net device setup: enabled
+2024/05/22 21:26:32 concurrency sanitizer: /sys/kernel/debug/kcsan does not exist
+2024/05/22 21:26:32 devlink PCI setup: PCI device 0000:00:10.0 is not available
+2024/05/22 21:26:32 NIC VF setup: PCI device 0000:00:11.0 is not available
+2024/05/22 21:26:32 USB emulation: enabled
+2024/05/22 21:26:32 hci packet injection: enabled
+2024/05/22 21:26:32 wifi device emulation: enabled
+2024/05/22 21:26:32 802.15.4 emulation: enabled
+2024/05/22 21:26:32 fetching corpus: 0, signal 0/2000 (executing program)
+2024/05/22 21:26:33 fetching corpus: 50, signal 25440/28842 (executing program)
+2024/05/22 21:26:33 fetching corpus: 100, signal 34609/39388 (executing program)
+2024/05/22 21:26:33 fetching corpus: 150, signal 41775/47837 (executing program)
+2024/05/22 21:26:33 fetching corpus: 200, signal 48335/55491 (executing program)
+2024/05/22 21:26:34 fetching corpus: 250, signal 53112/61328 (executing program)
+2024/05/22 21:26:34 fetching corpus: 300, signal 58288/67470 (executing program)
+2024/05/22 21:26:34 fetching corpus: 350, signal 62749/72849 (executing program)
+2024/05/22 21:26:34 fetching corpus: 400, signal 66120/77147 (executing program)
+2024/05/22 21:26:34 fetching corpus: 450, signal 68800/80728 (executing program)
+2024/05/22 21:26:35 fetching corpus: 500, signal 72216/84827 (executing program)
+2024/05/22 21:26:35 fetching corpus: 550, signal 75886/89144 (executing program)
+2024/05/22 21:26:35 fetching corpus: 600, signal 81497/94987 (executing program)
+2024/05/22 21:26:35 fetching corpus: 650, signal 84235/98321 (executing program)
+2024/05/22 21:26:35 fetching corpus: 700, signal 86110/100816 (executing program)
+2024/05/22 21:26:35 fetching corpus: 750, signal 88112/103465 (executing program)
+2024/05/22 21:26:35 fetching corpus: 800, signal 90168/106065 (executing program)
+2024/05/22 21:26:36 fetching corpus: 850, signal 92417/108746 (executing program)
+2024/05/22 21:26:36 fetching corpus: 900, signal 94976/111624 (executing program)
+2024/05/22 21:26:36 fetching corpus: 950, signal 96238/113528 (executing program)
+2024/05/22 21:26:36 fetching corpus: 1000, signal 99370/116786 (executing program)
+2024/05/22 21:26:36 fetching corpus: 1050, signal 101082/118874 (executing program)
+2024/05/22 21:26:37 fetching corpus: 1100, signal 102349/120562 (executing program)
+2024/05/22 21:26:37 fetching corpus: 1150, signal 104627/122963 (executing program)
+2024/05/22 21:26:37 fetching corpus: 1200, signal 106118/124756 (executing program)
+2024/05/22 21:26:37 fetching corpus: 1250, signal 108170/126908 (executing program)
+2024/05/22 21:26:37 fetching corpus: 1300, signal 109757/128747 (executing program)
+2024/05/22 21:26:38 fetching corpus: 1350, signal 111492/130568 (executing program)
+2024/05/22 21:26:38 fetching corpus: 1400, signal 113026/132219 (executing program)
+2024/05/22 21:26:38 fetching corpus: 1450, signal 114736/133953 (executing program)
+2024/05/22 21:26:38 fetching corpus: 1500, signal 116760/135892 (executing program)
+2024/05/22 21:26:38 fetching corpus: 1550, signal 118521/137603 (executing program)
+2024/05/22 21:26:38 fetching corpus: 1600, signal 120229/139219 (executing program)
+2024/05/22 21:26:39 fetching corpus: 1650, signal 121587/140607 (executing program)
+2024/05/22 21:26:39 fetching corpus: 1700, signal 122970/141937 (executing program)
+2024/05/22 21:26:39 fetching corpus: 1750, signal 124390/143298 (executing program)
+2024/05/22 21:26:39 fetching corpus: 1800, signal 127506/145575 (executing program)
+2024/05/22 21:26:39 fetching corpus: 1850, signal 128619/146644 (executing program)
+2024/05/22 21:26:39 fetching corpus: 1900, signal 129788/147728 (executing program)
+2024/05/22 21:26:39 fetching corpus: 1950, signal 131258/148962 (executing program)
+2024/05/22 21:26:40 fetching corpus: 2000, signal 132743/150184 (executing program)
+2024/05/22 21:26:40 fetching corpus: 2050, signal 133673/151110 (executing program)
+2024/05/22 21:26:40 fetching corpus: 2100, signal 134808/152052 (executing program)
+2024/05/22 21:26:40 fetching corpus: 2108, signal 135202/152649 (executing program)
+2024/05/22 21:26:40 fetching corpus: 2108, signal 135202/153054 (executing program)
+2024/05/22 21:26:40 fetching corpus: 2108, signal 135202/153440 (executing program)
+2024/05/22 21:26:40 fetching corpus: 2108, signal 135202/153828 (executing program)
+2024/05/22 21:26:40 fetching corpus: 2108, signal 135202/154203 (executing program)
+2024/05/22 21:26:40 fetching corpus: 2108, signal 135202/154576 (executing program)
+2024/05/22 21:26:40 fetching corpus: 2108, signal 135202/154927 (executing program)
+2024/05/22 21:26:40 fetching corpus: 2108, signal 135202/155334 (executing program)
+2024/05/22 21:26:40 fetching corpus: 2108, signal 135202/155720 (executing program)
+2024/05/22 21:26:40 fetching corpus: 2108, signal 135202/156097 (executing program)
+2024/05/22 21:26:40 fetching corpus: 2108, signal 135202/156502 (executing program)
+2024/05/22 21:26:40 fetching corpus: 2108, signal 135202/156886 (executing program)
+2024/05/22 21:26:40 fetching corpus: 2108, signal 135202/157268 (executing program)
+2024/05/22 21:26:40 fetching corpus: 2108, signal 135202/157653 (executing program)
+2024/05/22 21:26:40 fetching corpus: 2108, signal 135202/158038 (executing program)
+2024/05/22 21:26:40 fetching corpus: 2108, signal 135202/158421 (executing program)
+2024/05/22 21:26:40 fetching corpus: 2108, signal 135202/158773 (executing program)
+2024/05/22 21:26:40 fetching corpus: 2108, signal 135202/159190 (executing program)
+2024/05/22 21:26:40 fetching corpus: 2108, signal 135202/159585 (executing program)
+2024/05/22 21:26:40 fetching corpus: 2108, signal 135202/159984 (executing program)
+2024/05/22 21:26:40 fetching corpus: 2108, signal 135202/160395 (executing program)
+2024/05/22 21:26:40 fetching corpus: 2108, signal 135202/160804 (executing program)
+2024/05/22 21:26:40 fetching corpus: 2108, signal 135202/161194 (executing program)
+2024/05/22 21:26:40 fetching corpus: 2108, signal 135202/161584 (executing program)
+2024/05/22 21:26:40 fetching corpus: 2108, signal 135202/161980 (executing program)
+2024/05/22 21:26:40 fetching corpus: 2108, signal 135202/162370 (executing program)
+2024/05/22 21:26:40 fetching corpus: 2108, signal 135202/162768 (executing program)
+2024/05/22 21:26:40 fetching corpus: 2108, signal 135202/163181 (executing program)
+2024/05/22 21:26:40 fetching corpus: 2108, signal 135202/163575 (executing program)
+2024/05/22 21:26:40 fetching corpus: 2108, signal 135202/163958 (executing program)
+2024/05/22 21:26:40 fetching corpus: 2108, signal 135202/164335 (executing program)
+2024/05/22 21:26:40 fetching corpus: 2108, signal 135202/164723 (executing program)
+2024/05/22 21:26:40 fetching corpus: 2108, signal 135202/165142 (executing program)
+2024/05/22 21:26:40 fetching corpus: 2108, signal 135202/165573 (executing program)
+2024/05/22 21:26:40 fetching corpus: 2108, signal 135202/165943 (executing program)
+2024/05/22 21:26:40 fetching corpus: 2108, signal 135202/166321 (executing program)
+2024/05/22 21:26:40 fetching corpus: 2108, signal 135202/166699 (executing program)
+2024/05/22 21:26:40 fetching corpus: 2108, signal 135202/167096 (executing program)
+2024/05/22 21:26:40 fetching corpus: 2108, signal 135202/167516 (executing program)
+2024/05/22 21:26:40 fetching corpus: 2108, signal 135202/167886 (executing program)
+2024/05/22 21:26:40 fetching corpus: 2108, signal 135202/168311 (executing program)
+2024/05/22 21:26:40 fetching corpus: 2108, signal 135202/168343 (executing program)
+2024/05/22 21:26:40 fetching corpus: 2108, signal 135202/168343 (executing program)
+2024/05/22 21:26:47 starting 1 fuzzer processes
+[  193.049019][ T8008] memfd_create() without MFD_EXEC nor MFD_NOEXEC_SEAL, pid=8008 'syz-fuzzer'
+21:26:47 executing program 0:
+r0 = syz_open_dev$usbfs(&(0x7f0000000040), 0x77, 0x1)
+ioctl$USBDEVFS_CONTROL(r0, 0x8108551b, &(0x7f0000000080)={0x0, 0x0, 0x0, 0x5, 0x0, 0x40000000, 0x0})
+
+[  205.275388][ T1219] ieee802154 phy0 wpan0: encryption failed: -22
+[  205.276361][ T1219] ieee802154 phy1 wpan1: encryption failed: -22
+[  212.886264][ T8037] Bluetooth: hci0: unexpected cc 0x0c03 length: 249 > 1
+[  212.889148][ T8037] Bluetooth: hci0: unexpected cc 0x1003 length: 249 > 9
+[  212.891132][ T8037] Bluetooth: hci0: unexpected cc 0x1001 length: 249 > 9
+[  212.897281][ T8037] Bluetooth: hci0: unexpected cc 0x0c23 length: 249 > 4
+[  212.899632][ T8037] Bluetooth: hci0: unexpected cc 0x0c25 length: 249 > 3
+[  212.901201][ T8037] Bluetooth: hci0: unexpected cc 0x0c38 length: 249 > 2
+[  213.978166][ T8034] chnl_net:caif_netlink_parms(): no params data found
+[  214.205257][ T8034] bridge0: port 1(bridge_slave_0) entered blocking state
+[  214.207332][ T8034] bridge0: port 1(bridge_slave_0) entered disabled state
+[  214.208327][ T8034] bridge_slave_0: entered allmulticast mode
+[  214.210948][ T8034] bridge_slave_0: entered promiscuous mode
+[  214.222154][ T8034] bridge0: port 2(bridge_slave_1) entered blocking state
+[  214.223737][ T8034] bridge0: port 2(bridge_slave_1) entered disabled state
+[  214.224700][ T8034] bridge_slave_1: entered allmulticast mode
+[  214.227209][ T8034] bridge_slave_1: entered promiscuous mode
+[  214.289335][ T8034] bond0: (slave bond_slave_0): Enslaving as an active interface with an up link
+[  214.298547][ T8034] bond0: (slave bond_slave_1): Enslaving as an active interface with an up link
+[  214.358059][ T8034] team0: Port device team_slave_0 added
+[  214.366271][ T8034] team0: Port device team_slave_1 added
+[  214.425806][ T8034] batman_adv: batadv0: Adding interface: batadv_slave_0
+[  214.426683][ T8034] batman_adv: batadv0: The MTU of interface batadv_slave_0 is too small (1500) to handle the transport of batman-adv packets. Packets going over this interface will be fragmented on layer2 which could impact the performance. Setting the MTU to 1560 would solve the problem.
+[  214.429428][ T8034] batman_adv: batadv0: Not using interface batadv_slave_0 (retrying later): interface not active
+[  214.440147][ T8034] batman_adv: batadv0: Adding interface: batadv_slave_1
+[  214.440951][ T8034] batman_adv: batadv0: The MTU of interface batadv_slave_1 is too small (1500) to handle the transport of batman-adv packets. Packets going over this interface will be fragmented on layer2 which could impact the performance. Setting the MTU to 1560 would solve the problem.
+[  214.446063][ T8034] batman_adv: batadv0: Not using interface batadv_slave_1 (retrying later): interface not active
+[  214.536832][ T8034] hsr_slave_0: entered promiscuous mode
+[  214.541465][ T8034] hsr_slave_1: entered promiscuous mode
+[  214.947846][ T8034] netdevsim netdevsim0 netdevsim0: renamed from eth0
+[  214.954547][ T4406] Bluetooth: hci0: command 0x0409 tx timeout
+[  214.970786][ T8034] netdevsim netdevsim0 netdevsim1: renamed from eth1
+[  214.988189][ T8034] netdevsim netdevsim0 netdevsim2: renamed from eth2
+[  215.003679][ T8034] netdevsim netdevsim0 netdevsim3: renamed from eth3
+[  215.177285][ T8034] 8021q: adding VLAN 0 to HW filter on device bond0
+[  215.196910][  T732] IPv6: ADDRCONF(NETDEV_CHANGE): veth1: link becomes ready
+[  215.200023][  T732] IPv6: ADDRCONF(NETDEV_CHANGE): veth0: link becomes ready
+[  215.216682][ T8034] 8021q: adding VLAN 0 to HW filter on device team0
+[  215.227693][  T732] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_to_bridge: link becomes ready
+[  215.230269][  T732] IPv6: ADDRCONF(NETDEV_CHANGE): bridge_slave_0: link becomes ready
+[  215.236904][  T732] bridge0: port 1(bridge_slave_0) entered blocking state
+[  215.237966][  T732] bridge0: port 1(bridge_slave_0) entered forwarding state
+[  215.246263][  T732] IPv6: ADDRCONF(NETDEV_CHANGE): bridge0: link becomes ready
+[  215.258437][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_to_bridge: link becomes ready
+[  215.260864][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): bridge_slave_1: link becomes ready
+[  215.265890][    T9] bridge0: port 2(bridge_slave_1) entered blocking state
+[  215.267210][    T9] bridge0: port 2(bridge_slave_1) entered forwarding state
+[  215.301157][  T732] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_to_bond: link becomes ready
+[  215.304332][  T732] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_to_bond: link becomes ready
+[  215.318454][  T732] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_to_team: link becomes ready
+[  215.321478][  T732] IPv6: ADDRCONF(NETDEV_CHANGE): team_slave_0: link becomes ready
+[  215.328571][  T732] IPv6: ADDRCONF(NETDEV_CHANGE): team0: link becomes ready
+[  215.340730][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_to_team: link becomes ready
+[  215.343955][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): team_slave_1: link becomes ready
+[  215.359607][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_to_hsr: link becomes ready
+[  215.362231][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): hsr_slave_0: link becomes ready
+[  215.387433][ T8034] hsr0: Slave B (hsr_slave_1) is not up; please bring it up to get a fully working HSR network
+[  215.390080][ T8034] IPv6: ADDRCONF(NETDEV_CHANGE): hsr0: link becomes ready
+[  215.392878][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_to_hsr: link becomes ready
+[  215.397339][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): hsr_slave_1: link becomes ready
+[  215.731593][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): vxcan1: link becomes ready
+[  215.732815][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): vxcan0: link becomes ready
+[  215.757916][ T8034] 8021q: adding VLAN 0 to HW filter on device batadv0
+[  215.788790][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_virt_wifi: link becomes ready
+[  215.790756][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_virt_wifi: link becomes ready
+[  215.827964][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_vlan: link becomes ready
+[  215.830009][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_vlan: link becomes ready
+[  215.835215][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): vlan0: link becomes ready
+[  215.839595][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): vlan1: link becomes ready
+[  215.851427][ T8034] veth0_vlan: entered promiscuous mode
+[  215.868842][ T8034] veth1_vlan: entered promiscuous mode
+[  215.912014][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): macvlan0: link becomes ready
+[  215.916747][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): macvlan1: link becomes ready
+[  215.920002][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_macvtap: link becomes ready
+[  215.922522][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_macvtap: link becomes ready
+[  215.936568][ T8034] veth0_macvtap: entered promiscuous mode
+[  215.949676][ T8034] veth1_macvtap: entered promiscuous mode
+[  215.981802][ T8034] batman_adv: batadv0: Interface activated: batadv_slave_0
+[  215.983412][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): macvtap0: link becomes ready
+[  215.985834][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): macsec0: link becomes ready
+[  215.989894][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): batadv_slave_0: link becomes ready
+[  215.995621][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_to_batadv: link becomes ready
+[  216.008509][ T8034] batman_adv: batadv0: Interface activated: batadv_slave_1
+[  216.010194][  T732] IPv6: ADDRCONF(NETDEV_CHANGE): batadv_slave_1: link becomes ready
+[  216.012627][  T732] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_to_batadv: link becomes ready
+[  216.027857][ T8034] netdevsim netdevsim0 netdevsim0: set [1, 0] type 2 family 0 port 6081 - 0
+[  216.029497][ T8034] netdevsim netdevsim0 netdevsim1: set [1, 0] type 2 family 0 port 6081 - 0
+[  216.031045][ T8034] netdevsim netdevsim0 netdevsim2: set [1, 0] type 2 family 0 port 6081 - 0
+[  216.032564][ T8034] netdevsim netdevsim0 netdevsim3: set [1, 0] type 2 family 0 port 6081 - 0
+[  216.171977][ T8034] ieee80211 phy3: Selected rate control algorithm 'minstrel_ht'
+[  216.298426][ T2747] wlan0: Created IBSS using preconfigured BSSID 50:50:50:50:50:50
+[  216.299994][ T2747] wlan0: Creating new IBSS network, BSSID 50:50:50:50:50:50
+[  216.309127][ T8258] IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+[  216.337778][ T8034] ieee80211 phy4: Selected rate control algorithm 'minstrel_ht'
+[  216.436895][ T2747] wlan1: Created IBSS using preconfigured BSSID 50:50:50:50:50:50
+[  216.438014][ T2747] wlan1: Creating new IBSS network, BSSID 50:50:50:50:50:50
+[  216.441486][  T732] IPv6: ADDRCONF(NETDEV_CHANGE): wlan1: link becomes ready
+[  217.037026][ T8037] Bluetooth: hci0: command 0x041b tx timeout
+2024/05/22 21:27:13 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+2024/05/22 21:27:13 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x1630, Ip:0x84b0bcf9}
+2024/05/22 21:27:13 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x27a6, Ip:0x84b0bd0b}
+2024/05/22 21:27:13 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+21:27:13 executing program 0:
+r0 = syz_open_dev$usbfs(&(0x7f0000000040), 0x77, 0x1)
+ioctl$USBDEVFS_CONTROL(r0, 0x8108551b, &(0x7f0000000080)={0x0, 0x0, 0x0, 0x5, 0x0, 0x40000000, 0x0})
+
+[  219.114842][ T4406] Bluetooth: hci0: command 0x040f tx timeout
+21:27:14 executing program 0:
+r0 = syz_open_dev$usbfs(&(0x7f0000000040), 0x77, 0x1)
+ioctl$USBDEVFS_CONTROL(r0, 0x8108551b, &(0x7f0000000080)={0x0, 0x0, 0x0, 0x5, 0x0, 0x40000000, 0x0})
+
+[  221.195638][ T8037] Bluetooth: hci0: command 0x0419 tx timeout
+21:27:16 executing program 0:
+r0 = syz_open_dev$usbfs(&(0x7f0000000040), 0x77, 0x1)
+ioctl$USBDEVFS_CONTROL(r0, 0x8108551b, &(0x7f0000000080)={0x0, 0x0, 0x0, 0x5, 0x0, 0x40000000, 0x0})
+
+21:27:18 executing program 0:
+r0 = syz_open_dev$usbfs(&(0x7f0000000040), 0x77, 0x1)
+ioctl$USBDEVFS_CONTROL(r0, 0x8108551b, &(0x7f0000000080)={0x0, 0x0, 0x0, 0x5, 0x0, 0x40000000, 0x0})
+
+21:27:19 executing program 0:
+r0 = syz_open_dev$usbfs(&(0x7f0000000040), 0x77, 0x1)
+ioctl$USBDEVFS_CONTROL(r0, 0x8108551b, &(0x7f0000000080)={0x0, 0x0, 0x0, 0x5, 0x0, 0x40000000, 0x0})
+
+21:27:21 executing program 0:
+r0 = syz_open_dev$usbfs(&(0x7f0000000040), 0x77, 0x1)
+ioctl$USBDEVFS_CONTROL(r0, 0x8108551b, &(0x7f0000000080)={0x0, 0x0, 0x0, 0x5, 0x0, 0x40000000, 0x0})
+
+21:27:22 executing program 0:
+close_range(0xffffffffffffffff, 0xffffffffffffffff, 0x2)
+r0 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000040)='blkio.bfq.avg_queue_size\x00', 0x275a, 0x0)
+ioctl$FS_IOC_GET_ENCRYPTION_KEY_STATUS(r0, 0xc080661a, 0x0)
+
+2024/05/22 21:27:24 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+21:27:24 executing program 0:
+close_range(0xffffffffffffffff, 0xffffffffffffffff, 0x2)
+r0 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000040)='blkio.bfq.avg_queue_size\x00', 0x275a, 0x0)
+ioctl$FS_IOC_GET_ENCRYPTION_KEY_STATUS(r0, 0xc080661a, 0x0)
+
+2024/05/22 21:27:24 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x5547, Ip:0x81ebd996}
+21:27:25 executing program 0:
+close_range(0xffffffffffffffff, 0xffffffffffffffff, 0x2)
+r0 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000040)='blkio.bfq.avg_queue_size\x00', 0x275a, 0x0)
+ioctl$FS_IOC_GET_ENCRYPTION_KEY_STATUS(r0, 0xc080661a, 0x0)
+
+21:27:27 executing program 0:
+close_range(0xffffffffffffffff, 0xffffffffffffffff, 0x2)
+r0 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000040)='blkio.bfq.avg_queue_size\x00', 0x275a, 0x0)
+ioctl$FS_IOC_GET_ENCRYPTION_KEY_STATUS(r0, 0xc080661a, 0x0)
+
+21:27:29 executing program 0:
+r0 = openat$cgroup_ro(0xffffffffffffff9c, 0x0, 0x26e1, 0x0)
+bpf$ITER_CREATE(0x21, &(0x7f0000000000)={r0}, 0x8)
+ioctl$BLKZEROOUT(0xffffffffffffffff, 0x127f, &(0x7f0000000180)={0x5})
+mkdir(&(0x7f0000000400)='./file1\x00', 0x0)
+mkdir(&(0x7f0000000300)='./bus\x00', 0x0)
+r1 = socket$nl_generic(0x10, 0x3, 0x10)
+socket$nl_generic(0x10, 0x3, 0x10)
+r2 = syz_genetlink_get_family_id$tipc2(&(0x7f0000000100), 0xffffffffffffffff)
+socket$pppl2tp(0x18, 0x1, 0x1)
+ioctl$VIDIOC_G_PRIORITY(0xffffffffffffffff, 0x80045643, 0x0)
+sendmsg$TIPC_NL_KEY_SET(r1, &(0x7f0000000100)={0x0, 0x0, &(0x7f0000000080)={&(0x7f0000000240)={0x54, r2, 0x1, 0x0, 0x0, {}, [@TIPC_NLA_NODE={0x40, 0x6, 0x0, 0x1, [@TIPC_NLA_NODE_KEY={0x3c, 0x4, {'gcm(aes)\x00', 0x14, "e3de7d87737919f3bf4e1581cbe1995db14caae2"}}]}]}, 0x54}}, 0x0)
+chdir(&(0x7f0000000140)='./bus\x00')
+
+2024/05/22 21:27:30 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+2024/05/22 21:27:30 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x313d, Ip:0x8170cde2}
+2024/05/22 21:27:30 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 21:27:30 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x350d, Ip:0x8170cdf5}
+2024/05/22 21:27:30 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+2024/05/22 21:27:30 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x5547, Ip:0x81ebd996}
+2024/05/22 21:27:30 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+2024/05/22 21:27:30 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x5547, Ip:0x81ebd996}
+21:27:30 executing program 0:
+r0 = openat$cgroup_ro(0xffffffffffffff9c, 0x0, 0x26e1, 0x0)
+bpf$ITER_CREATE(0x21, &(0x7f0000000000)={r0}, 0x8)
+ioctl$BLKZEROOUT(0xffffffffffffffff, 0x127f, &(0x7f0000000180)={0x5})
+mkdir(&(0x7f0000000400)='./file1\x00', 0x0)
+mkdir(&(0x7f0000000300)='./bus\x00', 0x0)
+r1 = socket$nl_generic(0x10, 0x3, 0x10)
+socket$nl_generic(0x10, 0x3, 0x10)
+r2 = syz_genetlink_get_family_id$tipc2(&(0x7f0000000100), 0xffffffffffffffff)
+socket$pppl2tp(0x18, 0x1, 0x1)
+ioctl$VIDIOC_G_PRIORITY(0xffffffffffffffff, 0x80045643, 0x0)
+sendmsg$TIPC_NL_KEY_SET(r1, &(0x7f0000000100)={0x0, 0x0, &(0x7f0000000080)={&(0x7f0000000240)={0x54, r2, 0x1, 0x0, 0x0, {}, [@TIPC_NLA_NODE={0x40, 0x6, 0x0, 0x1, [@TIPC_NLA_NODE_KEY={0x3c, 0x4, {'gcm(aes)\x00', 0x14, "e3de7d87737919f3bf4e1581cbe1995db14caae2"}}]}]}, 0x54}}, 0x0)
+chdir(&(0x7f0000000140)='./bus\x00')
+
+2024/05/22 21:27:30 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x30be, Ip:0x85ff2f15}
+2024/05/22 21:27:30 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 21:27:30 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3858, Ip:0x85ff2f25}
+2024/05/22 21:27:30 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3e9b, Ip:0x833c12dd}
+2024/05/22 21:27:30 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x13f6, Ip:0x862cc7c9}
+2024/05/22 21:27:30 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x30be, Ip:0x85ffa1f0}
+2024/05/22 21:27:30 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 21:27:30 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3e9b, Ip:0x833c12dd}
+2024/05/22 21:27:30 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x4de3, Ip:0x85ffa202}
+2024/05/22 21:27:30 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0xa83, Ip:0x862ccaac}
+2024/05/22 21:27:30 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x13f6, Ip:0x862cc7c9}
+2024/05/22 21:27:30 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+21:27:32 executing program 0:
+r0 = openat$cgroup_ro(0xffffffffffffff9c, 0x0, 0x26e1, 0x0)
+bpf$ITER_CREATE(0x21, &(0x7f0000000000)={r0}, 0x8)
+ioctl$BLKZEROOUT(0xffffffffffffffff, 0x127f, &(0x7f0000000180)={0x5})
+mkdir(&(0x7f0000000400)='./file1\x00', 0x0)
+mkdir(&(0x7f0000000300)='./bus\x00', 0x0)
+r1 = socket$nl_generic(0x10, 0x3, 0x10)
+socket$nl_generic(0x10, 0x3, 0x10)
+r2 = syz_genetlink_get_family_id$tipc2(&(0x7f0000000100), 0xffffffffffffffff)
+socket$pppl2tp(0x18, 0x1, 0x1)
+ioctl$VIDIOC_G_PRIORITY(0xffffffffffffffff, 0x80045643, 0x0)
+sendmsg$TIPC_NL_KEY_SET(r1, &(0x7f0000000100)={0x0, 0x0, &(0x7f0000000080)={&(0x7f0000000240)={0x54, r2, 0x1, 0x0, 0x0, {}, [@TIPC_NLA_NODE={0x40, 0x6, 0x0, 0x1, [@TIPC_NLA_NODE_KEY={0x3c, 0x4, {'gcm(aes)\x00', 0x14, "e3de7d87737919f3bf4e1581cbe1995db14caae2"}}]}]}, 0x54}}, 0x0)
+chdir(&(0x7f0000000140)='./bus\x00')
+
+21:27:33 executing program 0:
+r0 = openat$cgroup_ro(0xffffffffffffff9c, 0x0, 0x26e1, 0x0)
+bpf$ITER_CREATE(0x21, &(0x7f0000000000)={r0}, 0x8)
+ioctl$BLKZEROOUT(0xffffffffffffffff, 0x127f, &(0x7f0000000180)={0x5})
+mkdir(&(0x7f0000000400)='./file1\x00', 0x0)
+mkdir(&(0x7f0000000300)='./bus\x00', 0x0)
+r1 = socket$nl_generic(0x10, 0x3, 0x10)
+socket$nl_generic(0x10, 0x3, 0x10)
+r2 = syz_genetlink_get_family_id$tipc2(&(0x7f0000000100), 0xffffffffffffffff)
+socket$pppl2tp(0x18, 0x1, 0x1)
+ioctl$VIDIOC_G_PRIORITY(0xffffffffffffffff, 0x80045643, 0x0)
+sendmsg$TIPC_NL_KEY_SET(r1, &(0x7f0000000100)={0x0, 0x0, &(0x7f0000000080)={&(0x7f0000000240)={0x54, r2, 0x1, 0x0, 0x0, {}, [@TIPC_NLA_NODE={0x40, 0x6, 0x0, 0x1, [@TIPC_NLA_NODE_KEY={0x3c, 0x4, {'gcm(aes)\x00', 0x14, "e3de7d87737919f3bf4e1581cbe1995db14caae2"}}]}]}, 0x54}}, 0x0)
+chdir(&(0x7f0000000140)='./bus\x00')
+
+21:27:35 executing program 0:
+r0 = openat$cgroup_ro(0xffffffffffffff9c, 0x0, 0x26e1, 0x0)
+bpf$ITER_CREATE(0x21, &(0x7f0000000000)={r0}, 0x8)
+ioctl$BLKZEROOUT(0xffffffffffffffff, 0x127f, &(0x7f0000000180)={0x5})
+mkdir(&(0x7f0000000400)='./file1\x00', 0x0)
+mkdir(&(0x7f0000000300)='./bus\x00', 0x0)
+r1 = socket$nl_generic(0x10, 0x3, 0x10)
+socket$nl_generic(0x10, 0x3, 0x10)
+r2 = syz_genetlink_get_family_id$tipc2(&(0x7f0000000100), 0xffffffffffffffff)
+socket$pppl2tp(0x18, 0x1, 0x1)
+ioctl$VIDIOC_G_PRIORITY(0xffffffffffffffff, 0x80045643, 0x0)
+sendmsg$TIPC_NL_KEY_SET(r1, &(0x7f0000000100)={0x0, 0x0, &(0x7f0000000080)={&(0x7f0000000240)={0x54, r2, 0x1, 0x0, 0x0, {}, [@TIPC_NLA_NODE={0x40, 0x6, 0x0, 0x1, [@TIPC_NLA_NODE_KEY={0x3c, 0x4, {'gcm(aes)\x00', 0x14, "e3de7d87737919f3bf4e1581cbe1995db14caae2"}}]}]}, 0x54}}, 0x0)
+chdir(&(0x7f0000000140)='./bus\x00')
+
+21:27:36 executing program 0:
+r0 = openat$cgroup_ro(0xffffffffffffff9c, 0x0, 0x26e1, 0x0)
+bpf$ITER_CREATE(0x21, &(0x7f0000000000)={r0}, 0x8)
+ioctl$BLKZEROOUT(0xffffffffffffffff, 0x127f, &(0x7f0000000180)={0x5})
+mkdir(&(0x7f0000000400)='./file1\x00', 0x0)
+mkdir(&(0x7f0000000300)='./bus\x00', 0x0)
+r1 = socket$nl_generic(0x10, 0x3, 0x10)
+socket$nl_generic(0x10, 0x3, 0x10)
+r2 = syz_genetlink_get_family_id$tipc2(&(0x7f0000000100), 0xffffffffffffffff)
+socket$pppl2tp(0x18, 0x1, 0x1)
+ioctl$VIDIOC_G_PRIORITY(0xffffffffffffffff, 0x80045643, 0x0)
+sendmsg$TIPC_NL_KEY_SET(r1, &(0x7f0000000100)={0x0, 0x0, &(0x7f0000000080)={&(0x7f0000000240)={0x54, r2, 0x1, 0x0, 0x0, {}, [@TIPC_NLA_NODE={0x40, 0x6, 0x0, 0x1, [@TIPC_NLA_NODE_KEY={0x3c, 0x4, {'gcm(aes)\x00', 0x14, "e3de7d87737919f3bf4e1581cbe1995db14caae2"}}]}]}, 0x54}}, 0x0)
+chdir(&(0x7f0000000140)='./bus\x00')
+
+21:27:38 executing program 0:
+r0 = openat$cgroup_ro(0xffffffffffffff9c, 0x0, 0x26e1, 0x0)
+bpf$ITER_CREATE(0x21, &(0x7f0000000000)={r0}, 0x8)
+ioctl$BLKZEROOUT(0xffffffffffffffff, 0x127f, &(0x7f0000000180)={0x5})
+mkdir(&(0x7f0000000400)='./file1\x00', 0x0)
+mkdir(&(0x7f0000000300)='./bus\x00', 0x0)
+r1 = socket$nl_generic(0x10, 0x3, 0x10)
+socket$nl_generic(0x10, 0x3, 0x10)
+r2 = syz_genetlink_get_family_id$tipc2(&(0x7f0000000100), 0xffffffffffffffff)
+socket$pppl2tp(0x18, 0x1, 0x1)
+ioctl$VIDIOC_G_PRIORITY(0xffffffffffffffff, 0x80045643, 0x0)
+sendmsg$TIPC_NL_KEY_SET(r1, &(0x7f0000000100)={0x0, 0x0, &(0x7f0000000080)={&(0x7f0000000240)={0x54, r2, 0x1, 0x0, 0x0, {}, [@TIPC_NLA_NODE={0x40, 0x6, 0x0, 0x1, [@TIPC_NLA_NODE_KEY={0x3c, 0x4, {'gcm(aes)\x00', 0x14, "e3de7d87737919f3bf4e1581cbe1995db14caae2"}}]}]}, 0x54}}, 0x0)
+chdir(&(0x7f0000000140)='./bus\x00')
+
+21:27:39 executing program 0:
+r0 = openat$cgroup_ro(0xffffffffffffff9c, 0x0, 0x26e1, 0x0)
+bpf$ITER_CREATE(0x21, &(0x7f0000000000)={r0}, 0x8)
+ioctl$BLKZEROOUT(0xffffffffffffffff, 0x127f, &(0x7f0000000180)={0x5})
+mkdir(&(0x7f0000000400)='./file1\x00', 0x0)
+mkdir(&(0x7f0000000300)='./bus\x00', 0x0)
+r1 = socket$nl_generic(0x10, 0x3, 0x10)
+socket$nl_generic(0x10, 0x3, 0x10)
+r2 = syz_genetlink_get_family_id$tipc2(&(0x7f0000000100), 0xffffffffffffffff)
+socket$pppl2tp(0x18, 0x1, 0x1)
+ioctl$VIDIOC_G_PRIORITY(0xffffffffffffffff, 0x80045643, 0x0)
+sendmsg$TIPC_NL_KEY_SET(r1, &(0x7f0000000100)={0x0, 0x0, &(0x7f0000000080)={&(0x7f0000000240)={0x54, r2, 0x1, 0x0, 0x0, {}, [@TIPC_NLA_NODE={0x40, 0x6, 0x0, 0x1, [@TIPC_NLA_NODE_KEY={0x3c, 0x4, {'gcm(aes)\x00', 0x14, "e3de7d87737919f3bf4e1581cbe1995db14caae2"}}]}]}, 0x54}}, 0x0)
+chdir(&(0x7f0000000140)='./bus\x00')
+
+21:27:41 executing program 0:
+r0 = openat$cgroup_ro(0xffffffffffffff9c, 0x0, 0x26e1, 0x0)
+bpf$ITER_CREATE(0x21, &(0x7f0000000000)={r0}, 0x8)
+ioctl$BLKZEROOUT(0xffffffffffffffff, 0x127f, &(0x7f0000000180)={0x5})
+mkdir(&(0x7f0000000400)='./file1\x00', 0x0)
+mkdir(&(0x7f0000000300)='./bus\x00', 0x0)
+r1 = socket$nl_generic(0x10, 0x3, 0x10)
+socket$nl_generic(0x10, 0x3, 0x10)
+r2 = syz_genetlink_get_family_id$tipc2(&(0x7f0000000100), 0xffffffffffffffff)
+socket$pppl2tp(0x18, 0x1, 0x1)
+ioctl$VIDIOC_G_PRIORITY(0xffffffffffffffff, 0x80045643, 0x0)
+sendmsg$TIPC_NL_KEY_SET(r1, &(0x7f0000000100)={0x0, 0x0, &(0x7f0000000080)={&(0x7f0000000240)={0x54, r2, 0x1, 0x0, 0x0, {}, [@TIPC_NLA_NODE={0x40, 0x6, 0x0, 0x1, [@TIPC_NLA_NODE_KEY={0x3c, 0x4, {'gcm(aes)\x00', 0x14, "e3de7d87737919f3bf4e1581cbe1995db14caae2"}}]}]}, 0x54}}, 0x0)
+chdir(&(0x7f0000000140)='./bus\x00')
+
+21:27:43 executing program 0:
+r0 = openat$cgroup_ro(0xffffffffffffff9c, 0x0, 0x26e1, 0x0)
+bpf$ITER_CREATE(0x21, &(0x7f0000000000)={r0}, 0x8)
+ioctl$BLKZEROOUT(0xffffffffffffffff, 0x127f, &(0x7f0000000180)={0x5})
+mkdir(&(0x7f0000000400)='./file1\x00', 0x0)
+mkdir(&(0x7f0000000300)='./bus\x00', 0x0)
+r1 = socket$nl_generic(0x10, 0x3, 0x10)
+socket$nl_generic(0x10, 0x3, 0x10)
+r2 = syz_genetlink_get_family_id$tipc2(&(0x7f0000000100), 0xffffffffffffffff)
+socket$pppl2tp(0x18, 0x1, 0x1)
+ioctl$VIDIOC_G_PRIORITY(0xffffffffffffffff, 0x80045643, 0x0)
+sendmsg$TIPC_NL_KEY_SET(r1, &(0x7f0000000100)={0x0, 0x0, &(0x7f0000000080)={&(0x7f0000000240)={0x54, r2, 0x1, 0x0, 0x0, {}, [@TIPC_NLA_NODE={0x40, 0x6, 0x0, 0x1, [@TIPC_NLA_NODE_KEY={0x3c, 0x4, {'gcm(aes)\x00', 0x14, "e3de7d87737919f3bf4e1581cbe1995db14caae2"}}]}]}, 0x54}}, 0x0)
+chdir(&(0x7f0000000140)='./bus\x00')
+
+21:27:44 executing program 0:
+r0 = openat$cgroup_ro(0xffffffffffffff9c, 0x0, 0x26e1, 0x0)
+bpf$ITER_CREATE(0x21, &(0x7f0000000000)={r0}, 0x8)
+ioctl$BLKZEROOUT(0xffffffffffffffff, 0x127f, &(0x7f0000000180)={0x5})
+mkdir(&(0x7f0000000400)='./file1\x00', 0x0)
+mkdir(&(0x7f0000000300)='./bus\x00', 0x0)
+r1 = socket$nl_generic(0x10, 0x3, 0x10)
+socket$nl_generic(0x10, 0x3, 0x10)
+r2 = syz_genetlink_get_family_id$tipc2(&(0x7f0000000100), 0xffffffffffffffff)
+socket$pppl2tp(0x18, 0x1, 0x1)
+ioctl$VIDIOC_G_PRIORITY(0xffffffffffffffff, 0x80045643, 0x0)
+sendmsg$TIPC_NL_KEY_SET(r1, &(0x7f0000000100)={0x0, 0x0, &(0x7f0000000080)={&(0x7f0000000240)={0x54, r2, 0x1, 0x0, 0x0, {}, [@TIPC_NLA_NODE={0x40, 0x6, 0x0, 0x1, [@TIPC_NLA_NODE_KEY={0x3c, 0x4, {'gcm(aes)\x00', 0x14, "e3de7d87737919f3bf4e1581cbe1995db14caae2"}}]}]}, 0x54}}, 0x0)
+chdir(&(0x7f0000000140)='./bus\x00')
+
+21:27:46 executing program 0:
+r0 = openat$cgroup_ro(0xffffffffffffff9c, 0x0, 0x26e1, 0x0)
+bpf$ITER_CREATE(0x21, &(0x7f0000000000)={r0}, 0x8)
+ioctl$BLKZEROOUT(0xffffffffffffffff, 0x127f, &(0x7f0000000180)={0x5})
+mkdir(&(0x7f0000000400)='./file1\x00', 0x0)
+mkdir(&(0x7f0000000300)='./bus\x00', 0x0)
+r1 = socket$nl_generic(0x10, 0x3, 0x10)
+socket$nl_generic(0x10, 0x3, 0x10)
+r2 = syz_genetlink_get_family_id$tipc2(&(0x7f0000000100), 0xffffffffffffffff)
+socket$pppl2tp(0x18, 0x1, 0x1)
+ioctl$VIDIOC_G_PRIORITY(0xffffffffffffffff, 0x80045643, 0x0)
+sendmsg$TIPC_NL_KEY_SET(r1, &(0x7f0000000100)={0x0, 0x0, &(0x7f0000000080)={&(0x7f0000000240)={0x54, r2, 0x1, 0x0, 0x0, {}, [@TIPC_NLA_NODE={0x40, 0x6, 0x0, 0x1, [@TIPC_NLA_NODE_KEY={0x3c, 0x4, {'gcm(aes)\x00', 0x14, "e3de7d87737919f3bf4e1581cbe1995db14caae2"}}]}]}, 0x54}}, 0x0)
+chdir(&(0x7f0000000140)='./bus\x00')
+
+21:27:47 executing program 0:
+r0 = openat$cgroup_ro(0xffffffffffffff9c, 0x0, 0x26e1, 0x0)
+bpf$ITER_CREATE(0x21, &(0x7f0000000000)={r0}, 0x8)
+ioctl$BLKZEROOUT(0xffffffffffffffff, 0x127f, &(0x7f0000000180)={0x5})
+mkdir(&(0x7f0000000400)='./file1\x00', 0x0)
+mkdir(&(0x7f0000000300)='./bus\x00', 0x0)
+r1 = socket$nl_generic(0x10, 0x3, 0x10)
+socket$nl_generic(0x10, 0x3, 0x10)
+r2 = syz_genetlink_get_family_id$tipc2(&(0x7f0000000100), 0xffffffffffffffff)
+socket$pppl2tp(0x18, 0x1, 0x1)
+ioctl$VIDIOC_G_PRIORITY(0xffffffffffffffff, 0x80045643, 0x0)
+sendmsg$TIPC_NL_KEY_SET(r1, &(0x7f0000000100)={0x0, 0x0, &(0x7f0000000080)={&(0x7f0000000240)={0x54, r2, 0x1, 0x0, 0x0, {}, [@TIPC_NLA_NODE={0x40, 0x6, 0x0, 0x1, [@TIPC_NLA_NODE_KEY={0x3c, 0x4, {'gcm(aes)\x00', 0x14, "e3de7d87737919f3bf4e1581cbe1995db14caae2"}}]}]}, 0x54}}, 0x0)
+chdir(&(0x7f0000000140)='./bus\x00')
+
+21:27:49 executing program 0:
+bpf$PROG_LOAD(0x5, 0x0, 0x0)
+r0 = bpf$PROG_LOAD(0x5, &(0x7f0000000200)={0xc, 0xe, &(0x7f0000000b40)=ANY=[@ANYBLOB="b702000009000000bfa30000000000000703000000feffff7a0af0fff8ffffff79a4f0ff00000000b7060000ffffffff2e6405000000000065060400010000000404000001007d60b7030000000000006a0a00fe00000000850000000d000000b70000000000000095000000000000002c3f2cc2b7956244cef7baf48e6d2885a09a87507ebfc75b5b0f4e4309ebcdac5f7a860c008cbdd3b4c3b7f28754860c9c781f6410457253e89ad528d985636a86ec0f68f59cd1159a2c2e85d726859a919cc9548a349980d1ccdce27f94bc074c27f81078545c146a0857153b7b8f00034debae58a4ab415b0d7ff0575cc272cd3d7e8d974927676468ff2d86e0ffac94792ed9cf6b40b3cf252a47c05ae8a70d57cc3e067d1867b54d24e20000000000000020009ebf84d3b042d6e432cd080e3b57239f0127473e6ba922aff649609d40b47ec331ccba3cf96f9483ff19a6471bf5abc742d9cbcfb964b11b31034694a6aad86cf08a6c7b2235dc99de9aa3e6b77c7a2877261ed32da90864987f30926c9013eec3b86836ae50447aa5a79f40c235000000453302712c3d8fc4e2b61adb0695e800000000d4f4e91f0000002c33df424d1bafe5725c8a404724f8a4f1cda7997b65954f74097560b91da309b887af2485c2d9ab09b523000000000000000bf7b2ff4602aec1eea200000064881c5630521a08e051374cf05c921a06fb7818000000009dc8d95e0e5b365d10e1004dae58b3b5b89709b0ff47b200000000004000cbef88811dc8c1b27ac7d9a6bb70f60eb9c01dd2fc79b85e4d961498f3a80131d21d856177a2189f45d011ef1da5c6d57bb8fd387ccea9c3899a914e47e82f040000009d81003f927355408f87264797d3fa970949793b94329d580500d1f91c0d22587e05a61e3d8576ca168e88d7a9af95b04a37c27bfffab9abbb31fa8c0080258cfa6d3f166e695f3c56490aeef464d9965d70a50f1282619344f223548e750339643adac1322c87ca253ff2fb1882760d6feab16bacdf83c11816dbe959ebc5ec479c8319f73e2249eab0486b110702a481d3b51976a52303056e800b4ae5acc2dfae60ab958e9f3ef9b4aaa4e8d6166f636a65eb1d672bf2000000cda8462cc9b16624998be65683321e970000000009b8e20762c1bf4a3eb6769f2b23e842bacd9c685edea0ffa3e975424f8ede49e61a4de808a38ba3512d64dc71867df4eee3f1ff791cf7c9862f98b45852e4b2f78721b978a2df2f2a29a387c6f0576b36038f819286eca99a6a434811cf2a117d775fe986a49fb82cf5f15972d5ab18f1045384501adabb20f7b0e15ff47f1744e2341b59034959a1289ba6e243668e6735305707e3de7652bfc5b60c76deff43a1d6fd6a4180ab723735abbeffe7f2ec3a0bb86f9eddfc0f3d1d503d7a54b49e1ae6c5aa620d27e91aa0aa0ed6fcacfc91fbb4c256409e54daefbb107c381fa729ff5f3907d93430da178d685d7730f5e129438a5214f722096d2986334c2576bef69145d3fbd78a9059e454474f92e65828b018174a9f4738b8c71fbdeac26ab95e02f9a847182766964976b1fccdb9f35721e43e33883cf16ed1343fb7429eb395123b0a4262b7023c22039b9002589a378ed4c6267965af78b861bd025312538cec97966b8973d4e299d9802264d06e40ae118e1d242d1128dcedeb44030df12ef68f78215d65f96eb55db8cbcb060008000d988374f85451a694ffe38a1d03916ff10dc82b31c98d42e1a1bda1290de1a499a5a385b31112a48ba3e6d6849914c1788a7aca37177cc341fff44fec5c5e0abae01c439a1b0311e074e81ae9993b5b3459553e4ece78d4c1501c70f5d81e0725d5b273755c0000000000000000aa4234ff82182952a76233d18e7d49638aeb04e7a9e9e7eafb7c255372795d2d192a0a33cab0f5bf2e93e0544fcdf2df2bc6ce96e5a11993d54f97a23754ac828674dbb93c0ad345715be4a13678b01edf76d8a923655800a2c88cce004505ab45d8f5f88aa887bbce5c18970428516f6099bdbb2cd7a2356397f1a0a23e662e2a6c4834400cbaa41c3c574e6e6aefb7a68da5ec1ae49f968bbe0e0bf9878516f553639f5b4828e92019b61f5874be1c7cdd9482df50bc24a8a1fa10d291390eb84e26a2e8dbeaa45604b05a116c1210a7540bf81005044273f5a8ffc538db289350eb248e483bd8920efcf30a798c2b636243e0a37262ca47dfeefa753ba528f7ba77e825051ce69b4475d7d714ba0c636e6ae9f710411d30ef424aeaabe057c7df6ff8f767bcd9012e1047c686f5ccb76ab3a5df53cbc22ba7ea8f6a8e220bb4d83de1e4dc19d6c1be841503850803bc2c2d5e0e34270a7f1cca0c6c53a8e5f891f7a793a70da62d6d88fbb90d220acc687931b42d6be83ab870da3c0a567f5e65ec0457f4ad2a4ec0b671b36388afd5520a8483a4b11f7d02a409315f0f9e59f47668d68a74838d6976e12fd45200014041dffacbf60892ec8bd7560686f137a806d3dfaba900b47cac62f828342fff009adb5b2251461a1b9d6ba625b8fe04e69a1a4be2696f0000000086e172932e03000000000000005942e1b9d6dc28ab8e19e1111dd893e801015642faf21eef40d6e7de3ef62c4bc5ff17e7aeb2841098f845d1cc9ec4eee79c298fb0ba939b13707044e2e9cc0d350438c1c8c6bb9a38c6ac5ca0d9cf1f3d6915f25cb26edfc28b3079b97df32601240e454db103fb0c4a143673a3f160d3a7b83ecd0509ce9eba0c7bf7843799b1b56a234f9eaab8a3f14f1472bb6aaeb8ac9ee4054605558ab31f339f6a4caf2ee2fd01f34dca3300000000000000000000000000000000f59f8e6e00000000c44130098d833a24000000000095e6f945ba9a941cef5e70b8c152321e24b5b29bcf374dcf5a29a35d76e6e2bf8df95462690a4fc9ec8129e92b6ebb4b40a992a75d3c595426ae40d0bfc87db24d856359079b29b3c374d081c300b2cfaa596d24e800ef8e2201f2fb7a9946f89f9f31f7cbd603fd7f8898c70b5c65f2e28f22e1a79a6af3a54861b07f124642e98389557affbdede09b5566a4a1ee73b20846810030a754acddcdafe3ceeeebc0b5f2fedfe7d198e3067f3dbac9441a9ab8409cbbb7e15b9ae3944097de34de2001c8533a3766e6e4c4c4702ccb932a27a3962814cd6aa8fc684beeaa3932efae3a9052be8eec1e95f6ad8d41dd34829503ba4b66e27154cb6e34aa13450522df1723130b6fe347c93f00e40e293c98d849a33f773c743728992f40faccd5c23130a1c6bfd6fc661bca1598137ddd1090ded672f5a48a40cab3f640c8241a364cbdd3f188eec7da7bccafbd5bf28a46f0eecc6b550471b0b0770c6a5a411c0e0b19e15a461e7c6833ba936e214b013f2819ec6572a43b5cd32b11d7e4f8dcf8f7820a17b7b2ee6178a03351dd25091e46bfd82a3979b9cad109fd6217cd52aa81bdabd50826a674bd16b8f7e6aed12a305366599f5f029a7b24558c027518c669760500002f1c19d16a6f391906000000cc0bbbfb8c698ecc137d96711100e0108d3bd2afed0b279ebf0527552a9331e646c424b14ffbb815622bfd2f635855bed1b164d0a56bd104be069854111c5b26ec3c652b5f0a6b9676dae987ec23456ba05a4dfb15321ef6b76e7e547a688c67ab531cfc784c9f940d9fb0464a6cce635e14b80dc5c1c64e75e6bd5355d84f8df272f18f58c570e7afd83ee77f157c146aa747b728969aeb4aba1d8f9de1b3fb8ab6ea50e884c2ea98e6400bf0c5ae2887cd1da0e57ccfdf5eca2b455247efcc13102846c0a85f20c80007c0ce6efce627b95b8ad3003385de97101678fb2163ecea6e70a77a6fbc089e31a5ccece932229b8f79faa6863d6857c3d9a9710f9f8ad16eeb8342278f311cbc226498028234d21466892983378fe64acbb44f694cd78e43c74aa75505cb1c91b189f8f89f233a05f5cd4e173a373178557843dd705268f74a9e5429945503195aefd6706b584d8408c9652b3fe68500747f7ee8375fa559c3ad195d3795df1a8364cd13acc3256ee4634c73eeb6954d0fcf09ab84df0b8900e0c6fea2ccb600ae7a4b128cae19df160e7c207b89132d1d5bdc9ffc79f0549b82df521817651d5fead5128205b92ccdccc69407ab556217af277af911dbd456dfc43dd061b6c91485dcc208cf0b3d0bf851de413f5de5ec015e296914afab6411109355e027ce04990d9aae251b9deb11b7db45b9f15b7b55d8fdbedd9e6cf891205694f02be8b9ea8ecd41308a0e1b93ae3435bfa88b440b1f701b4d0fc49c82193f27f8023b630ea97edbf3bf421a0a1a2b4ac7bb30bcd1cdd172c0df37408fd6827bb03e8742fc1c7a2befd1299928c5f79e846a8dc7ca648d960a759e6711b69776896a9656d59af6d44bc5348229fa84ae78af8421a22c4b4c17a3d24a4a0104000000000000d77cc4eef51c2b417c8c7458ddd7dd9d1a863bf0a9e1a30a19020490038017a5c7e474c83302a2c2b5c976dacf3dda7191c757f208000000000000005f7ed983f65723fbb36b9b51abb0dbcd335700000000000000000000000000000086666201251aa4f139d0485ffcf89f01639fd1579a3802f720a0215c720a97071f5065a23642a58275dbca444b00e2e5835185d5d5b2796eb0fe32cf3b0633f58ecc7648c3c6efe82f93a3008052416512eea30ea9472e0b456a652883c0907323cf03be193a05008cdef7a98a1671a1918df310dc4bfd61c3db4819ab1c57b348a8ff1ed36364a20fe846f1cd086058d139ce528425b31c5d08b433562ffb318c1285011f9b78b2401989384311101e452f54661ecdb2514a6ae50dbdd422de0f0f8c670000000000390be79688f80c47314cb1b14afcaa5d23f9032e0ec51f45f447d6a7c798fcf7e60e2180e289410801e4f03a0e140f388f25b92da1025d8409e171a2336ed71cca86eb4658fe06df286e0e20276b0618eeffd05774f15686cd9d3182ca2fec863875f305fed6baf48a594db12582a38cfdffffffffffffff0cf8d920517835fe7d09cfcb624f6931f1cc6f6b71f58de9ddc38e0c43992f6bc57a718d0cfd197b5324b4e05ef1caa96db3ae1f2f2e5791faba2ebbe1a6faf21f2748fb1fb6743c3ca8af4e6b02518c9b7fdc1b5721eb1c3ed98db25536f74ac7861afc94544e52dcb5c60460a05802e3b437ac977bfa26b887a2443e8d559c58187f004eb82b07937df6e96f77ed551926bec4e0188fae10a35d1c5f1768ac6be829bea46f1babc3d74adc31ca71bdab9079e4288881b434484eadde9da6b81802842abd462d546c59d87acc014f81d3414759bda12d2a2c6bc1bfa807bd3101eb227184a61107b6d0618e2a3b842671e084ac3f0ff94dc48b51601247318ab4d1c5106458000000000008000000000000cfee0107e6c2fe8639d926829fdbbd86bf591a8c3c235d8939af9d923f648165881a6c29997234406400b3b1c321cc158dbe17123eace30000000000009ea77cb4d3ca892600000000796de6ae4ae40bdf9a6e8c5dc29562262af9cd54e8e3ecc7e3c8cba0ecc791683496c4e5c1a5729714d9f9031f49b400cd2667b4ea6df54809615a4f973f93e6ccec72f16ff998e29ed99df733680a9d5cea57f99cc139b6ea9014f3000000000000000000000000000000000000feeab45a4046a622b0dceb413e4e39b7317e92cbed46b41ab5115bfb542c933783d750852dfdc6656aaf15e10615a88821f2f1bc53969b52d6852755e7681ad5beda80b38ccd34116b99f50b4fdd967b3f20f260455412b67563e40e323bde9d673fceda0ad6981565c8a183d928903b4f4472dde41b6dcd75314c31e704dfcb222c8359fe88944f852242270c932abfaeece0843d708f5cd25b2a63ae1e79723c1c3c013836b47da0a35d0f34c070000000000000422ae2c148d444dd437a7d2f5e575009bc2d17a199802409329dae8baa58d3de63ad45328a9d4dc1ace543dfe11913c6c6413f8f7a15657d012fea460bb4656a20df1ba26932b0ef49f8ea88d7b4c1289314ba789661640f1b5d7cbae103fa95b0035f1e8e866307d4796eab0992704f9e00be4b1af8dfa9e94ad74e607ea9d7d7a95ed5a15429426abbed8d2c657018305c6f9e5159a5453f958991a908ff4cb2e8cbccb1d3c8daf754e4b01b2edd023e5bfdf293bd28fc1f8885f6edd5a715df4d180247feb08e9e2e5126c48be6098e711f0d86de5d76fdccae34eef9197c32ab4e6fcb52eb9ce18fdb621a75913a97254d783778203ec0bd1a8859683e1d01da4e81fb73bb3b358340a0310bf5ae17b917208da607fd7b125cf99fd3e9056f5184df7570ede94b736ae354b5b8ae2cc473b455f2f86d47c69027676bf1141f316b0f278f1692406572ee82766f8e5ff1cfec2a7a6cab7d0f2582a877c9bd4ca81089373f738d02e6bb4d3df30ac0f041e51ad36e1ff140812baf54b80635cc80963c8f69fa4506f7a30c99d3e538cc0aeafcad86ead38ed949aa3c204aea50e5e0039f01b82595b7dc921a8acc1f76340f060cc9a3acad3451c17dc9b5ca5d10a0cb1708592d1900a046f33761d50895febd9fd58cb132989766cf7c252daac259576ec218e3857e6fa97fe445d1fab51d87302a4bb28a4cfe462ee4849cc6832650188ca187d85509d8beccf9d9cf752368985804195b9fd2faf1aff8248f3981bd55cbbf514cd8365fee72cc7af053e5388ceadadb967ef735181df6a90cab13f58f6d563c9ab4ad37297aecffd8446cb2b14ec36a99af8393e3760d5970ba1debdcbccd54012c559ee2797ff962328aa6a252c0756e396ce4d52937546675203bdf1d6b120acac576523f8b1daa922188bf61536312f90dba92fb380c3c6fb5f9883a2c4dd99a1bac9b7cb25ff2ef9bd58ff97ddfdd2d4bcc371ee82245b57cd91a7fa3479cd339f54a5c422b753cd42d441ea881d46e419312db1f0cccce"], &(0x7f0000000340)='syzkaller\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x8, 0x0, 0xff9d}, 0x48)
+bpf$BPF_PROG_TEST_RUN(0xa, &(0x7f00000000c0)={r0, 0x20e, 0xe40, 0xfd000004, &(0x7f00000004c0)="b9180bb76003070c009e40f086dd1fff31000000330020010010ac14142ee0080001c699da153f0ae0e6e380f60115f683317585d7472ce0ab4439f0f570ff155bc5f73ba3f8bb99a6e8ded1ce485cf058105cd981b42493481cd659416a2e10c9119664f36eb00b333c20c9ec0c222d644bdcb178c1cc53d6960fbb842d6a33dfcde3a1e1848135214baf139753866cadcbe3ce52505e992818cc452bee339d9ab076f484020eaa348a21d7911e4c44905256ec2cc54cca47a198b00c10aff62a4bed43a2ebcad92743fb22c593f28fd4bb7c703cde9cae0569d4c8d9a823f2c12863f7a6c0cf88ed22aae4f6f084508833b61429a25773eedf63dd9f33d430f2a0a30a7761db16fe0f743b95ded898c28aac1256ce2751b3d738899b8b19d9052b7f13ff94", 0x0, 0x31, 0x6000000000000000, 0xfffffffffffffe7e, 0x1d4}, 0x28)
+
+21:27:50 executing program 0:
+bpf$PROG_LOAD(0x5, 0x0, 0x0)
+r0 = bpf$PROG_LOAD(0x5, &(0x7f0000000200)={0xc, 0xe, &(0x7f0000000b40)=ANY=[@ANYBLOB="b702000009000000bfa30000000000000703000000feffff7a0af0fff8ffffff79a4f0ff00000000b7060000ffffffff2e6405000000000065060400010000000404000001007d60b7030000000000006a0a00fe00000000850000000d000000b70000000000000095000000000000002c3f2cc2b7956244cef7baf48e6d2885a09a87507ebfc75b5b0f4e4309ebcdac5f7a860c008cbdd3b4c3b7f28754860c9c781f6410457253e89ad528d985636a86ec0f68f59cd1159a2c2e85d726859a919cc9548a349980d1ccdce27f94bc074c27f81078545c146a0857153b7b8f00034debae58a4ab415b0d7ff0575cc272cd3d7e8d974927676468ff2d86e0ffac94792ed9cf6b40b3cf252a47c05ae8a70d57cc3e067d1867b54d24e20000000000000020009ebf84d3b042d6e432cd080e3b57239f0127473e6ba922aff649609d40b47ec331ccba3cf96f9483ff19a6471bf5abc742d9cbcfb964b11b31034694a6aad86cf08a6c7b2235dc99de9aa3e6b77c7a2877261ed32da90864987f30926c9013eec3b86836ae50447aa5a79f40c235000000453302712c3d8fc4e2b61adb0695e800000000d4f4e91f0000002c33df424d1bafe5725c8a404724f8a4f1cda7997b65954f74097560b91da309b887af2485c2d9ab09b523000000000000000bf7b2ff4602aec1eea200000064881c5630521a08e051374cf05c921a06fb7818000000009dc8d95e0e5b365d10e1004dae58b3b5b89709b0ff47b200000000004000cbef88811dc8c1b27ac7d9a6bb70f60eb9c01dd2fc79b85e4d961498f3a80131d21d856177a2189f45d011ef1da5c6d57bb8fd387ccea9c3899a914e47e82f040000009d81003f927355408f87264797d3fa970949793b94329d580500d1f91c0d22587e05a61e3d8576ca168e88d7a9af95b04a37c27bfffab9abbb31fa8c0080258cfa6d3f166e695f3c56490aeef464d9965d70a50f1282619344f223548e750339643adac1322c87ca253ff2fb1882760d6feab16bacdf83c11816dbe959ebc5ec479c8319f73e2249eab0486b110702a481d3b51976a52303056e800b4ae5acc2dfae60ab958e9f3ef9b4aaa4e8d6166f636a65eb1d672bf2000000cda8462cc9b16624998be65683321e970000000009b8e20762c1bf4a3eb6769f2b23e842bacd9c685edea0ffa3e975424f8ede49e61a4de808a38ba3512d64dc71867df4eee3f1ff791cf7c9862f98b45852e4b2f78721b978a2df2f2a29a387c6f0576b36038f819286eca99a6a434811cf2a117d775fe986a49fb82cf5f15972d5ab18f1045384501adabb20f7b0e15ff47f1744e2341b59034959a1289ba6e243668e6735305707e3de7652bfc5b60c76deff43a1d6fd6a4180ab723735abbeffe7f2ec3a0bb86f9eddfc0f3d1d503d7a54b49e1ae6c5aa620d27e91aa0aa0ed6fcacfc91fbb4c256409e54daefbb107c381fa729ff5f3907d93430da178d685d7730f5e129438a5214f722096d2986334c2576bef69145d3fbd78a9059e454474f92e65828b018174a9f4738b8c71fbdeac26ab95e02f9a847182766964976b1fccdb9f35721e43e33883cf16ed1343fb7429eb395123b0a4262b7023c22039b9002589a378ed4c6267965af78b861bd025312538cec97966b8973d4e299d9802264d06e40ae118e1d242d1128dcedeb44030df12ef68f78215d65f96eb55db8cbcb060008000d988374f85451a694ffe38a1d03916ff10dc82b31c98d42e1a1bda1290de1a499a5a385b31112a48ba3e6d6849914c1788a7aca37177cc341fff44fec5c5e0abae01c439a1b0311e074e81ae9993b5b3459553e4ece78d4c1501c70f5d81e0725d5b273755c0000000000000000aa4234ff82182952a76233d18e7d49638aeb04e7a9e9e7eafb7c255372795d2d192a0a33cab0f5bf2e93e0544fcdf2df2bc6ce96e5a11993d54f97a23754ac828674dbb93c0ad345715be4a13678b01edf76d8a923655800a2c88cce004505ab45d8f5f88aa887bbce5c18970428516f6099bdbb2cd7a2356397f1a0a23e662e2a6c4834400cbaa41c3c574e6e6aefb7a68da5ec1ae49f968bbe0e0bf9878516f553639f5b4828e92019b61f5874be1c7cdd9482df50bc24a8a1fa10d291390eb84e26a2e8dbeaa45604b05a116c1210a7540bf81005044273f5a8ffc538db289350eb248e483bd8920efcf30a798c2b636243e0a37262ca47dfeefa753ba528f7ba77e825051ce69b4475d7d714ba0c636e6ae9f710411d30ef424aeaabe057c7df6ff8f767bcd9012e1047c686f5ccb76ab3a5df53cbc22ba7ea8f6a8e220bb4d83de1e4dc19d6c1be841503850803bc2c2d5e0e34270a7f1cca0c6c53a8e5f891f7a793a70da62d6d88fbb90d220acc687931b42d6be83ab870da3c0a567f5e65ec0457f4ad2a4ec0b671b36388afd5520a8483a4b11f7d02a409315f0f9e59f47668d68a74838d6976e12fd45200014041dffacbf60892ec8bd7560686f137a806d3dfaba900b47cac62f828342fff009adb5b2251461a1b9d6ba625b8fe04e69a1a4be2696f0000000086e172932e03000000000000005942e1b9d6dc28ab8e19e1111dd893e801015642faf21eef40d6e7de3ef62c4bc5ff17e7aeb2841098f845d1cc9ec4eee79c298fb0ba939b13707044e2e9cc0d350438c1c8c6bb9a38c6ac5ca0d9cf1f3d6915f25cb26edfc28b3079b97df32601240e454db103fb0c4a143673a3f160d3a7b83ecd0509ce9eba0c7bf7843799b1b56a234f9eaab8a3f14f1472bb6aaeb8ac9ee4054605558ab31f339f6a4caf2ee2fd01f34dca3300000000000000000000000000000000f59f8e6e00000000c44130098d833a24000000000095e6f945ba9a941cef5e70b8c152321e24b5b29bcf374dcf5a29a35d76e6e2bf8df95462690a4fc9ec8129e92b6ebb4b40a992a75d3c595426ae40d0bfc87db24d856359079b29b3c374d081c300b2cfaa596d24e800ef8e2201f2fb7a9946f89f9f31f7cbd603fd7f8898c70b5c65f2e28f22e1a79a6af3a54861b07f124642e98389557affbdede09b5566a4a1ee73b20846810030a754acddcdafe3ceeeebc0b5f2fedfe7d198e3067f3dbac9441a9ab8409cbbb7e15b9ae3944097de34de2001c8533a3766e6e4c4c4702ccb932a27a3962814cd6aa8fc684beeaa3932efae3a9052be8eec1e95f6ad8d41dd34829503ba4b66e27154cb6e34aa13450522df1723130b6fe347c93f00e40e293c98d849a33f773c743728992f40faccd5c23130a1c6bfd6fc661bca1598137ddd1090ded672f5a48a40cab3f640c8241a364cbdd3f188eec7da7bccafbd5bf28a46f0eecc6b550471b0b0770c6a5a411c0e0b19e15a461e7c6833ba936e214b013f2819ec6572a43b5cd32b11d7e4f8dcf8f7820a17b7b2ee6178a03351dd25091e46bfd82a3979b9cad109fd6217cd52aa81bdabd50826a674bd16b8f7e6aed12a305366599f5f029a7b24558c027518c669760500002f1c19d16a6f391906000000cc0bbbfb8c698ecc137d96711100e0108d3bd2afed0b279ebf0527552a9331e646c424b14ffbb815622bfd2f635855bed1b164d0a56bd104be069854111c5b26ec3c652b5f0a6b9676dae987ec23456ba05a4dfb15321ef6b76e7e547a688c67ab531cfc784c9f940d9fb0464a6cce635e14b80dc5c1c64e75e6bd5355d84f8df272f18f58c570e7afd83ee77f157c146aa747b728969aeb4aba1d8f9de1b3fb8ab6ea50e884c2ea98e6400bf0c5ae2887cd1da0e57ccfdf5eca2b455247efcc13102846c0a85f20c80007c0ce6efce627b95b8ad3003385de97101678fb2163ecea6e70a77a6fbc089e31a5ccece932229b8f79faa6863d6857c3d9a9710f9f8ad16eeb8342278f311cbc226498028234d21466892983378fe64acbb44f694cd78e43c74aa75505cb1c91b189f8f89f233a05f5cd4e173a373178557843dd705268f74a9e5429945503195aefd6706b584d8408c9652b3fe68500747f7ee8375fa559c3ad195d3795df1a8364cd13acc3256ee4634c73eeb6954d0fcf09ab84df0b8900e0c6fea2ccb600ae7a4b128cae19df160e7c207b89132d1d5bdc9ffc79f0549b82df521817651d5fead5128205b92ccdccc69407ab556217af277af911dbd456dfc43dd061b6c91485dcc208cf0b3d0bf851de413f5de5ec015e296914afab6411109355e027ce04990d9aae251b9deb11b7db45b9f15b7b55d8fdbedd9e6cf891205694f02be8b9ea8ecd41308a0e1b93ae3435bfa88b440b1f701b4d0fc49c82193f27f8023b630ea97edbf3bf421a0a1a2b4ac7bb30bcd1cdd172c0df37408fd6827bb03e8742fc1c7a2befd1299928c5f79e846a8dc7ca648d960a759e6711b69776896a9656d59af6d44bc5348229fa84ae78af8421a22c4b4c17a3d24a4a0104000000000000d77cc4eef51c2b417c8c7458ddd7dd9d1a863bf0a9e1a30a19020490038017a5c7e474c83302a2c2b5c976dacf3dda7191c757f208000000000000005f7ed983f65723fbb36b9b51abb0dbcd335700000000000000000000000000000086666201251aa4f139d0485ffcf89f01639fd1579a3802f720a0215c720a97071f5065a23642a58275dbca444b00e2e5835185d5d5b2796eb0fe32cf3b0633f58ecc7648c3c6efe82f93a3008052416512eea30ea9472e0b456a652883c0907323cf03be193a05008cdef7a98a1671a1918df310dc4bfd61c3db4819ab1c57b348a8ff1ed36364a20fe846f1cd086058d139ce528425b31c5d08b433562ffb318c1285011f9b78b2401989384311101e452f54661ecdb2514a6ae50dbdd422de0f0f8c670000000000390be79688f80c47314cb1b14afcaa5d23f9032e0ec51f45f447d6a7c798fcf7e60e2180e289410801e4f03a0e140f388f25b92da1025d8409e171a2336ed71cca86eb4658fe06df286e0e20276b0618eeffd05774f15686cd9d3182ca2fec863875f305fed6baf48a594db12582a38cfdffffffffffffff0cf8d920517835fe7d09cfcb624f6931f1cc6f6b71f58de9ddc38e0c43992f6bc57a718d0cfd197b5324b4e05ef1caa96db3ae1f2f2e5791faba2ebbe1a6faf21f2748fb1fb6743c3ca8af4e6b02518c9b7fdc1b5721eb1c3ed98db25536f74ac7861afc94544e52dcb5c60460a05802e3b437ac977bfa26b887a2443e8d559c58187f004eb82b07937df6e96f77ed551926bec4e0188fae10a35d1c5f1768ac6be829bea46f1babc3d74adc31ca71bdab9079e4288881b434484eadde9da6b81802842abd462d546c59d87acc014f81d3414759bda12d2a2c6bc1bfa807bd3101eb227184a61107b6d0618e2a3b842671e084ac3f0ff94dc48b51601247318ab4d1c5106458000000000008000000000000cfee0107e6c2fe8639d926829fdbbd86bf591a8c3c235d8939af9d923f648165881a6c29997234406400b3b1c321cc158dbe17123eace30000000000009ea77cb4d3ca892600000000796de6ae4ae40bdf9a6e8c5dc29562262af9cd54e8e3ecc7e3c8cba0ecc791683496c4e5c1a5729714d9f9031f49b400cd2667b4ea6df54809615a4f973f93e6ccec72f16ff998e29ed99df733680a9d5cea57f99cc139b6ea9014f3000000000000000000000000000000000000feeab45a4046a622b0dceb413e4e39b7317e92cbed46b41ab5115bfb542c933783d750852dfdc6656aaf15e10615a88821f2f1bc53969b52d6852755e7681ad5beda80b38ccd34116b99f50b4fdd967b3f20f260455412b67563e40e323bde9d673fceda0ad6981565c8a183d928903b4f4472dde41b6dcd75314c31e704dfcb222c8359fe88944f852242270c932abfaeece0843d708f5cd25b2a63ae1e79723c1c3c013836b47da0a35d0f34c070000000000000422ae2c148d444dd437a7d2f5e575009bc2d17a199802409329dae8baa58d3de63ad45328a9d4dc1ace543dfe11913c6c6413f8f7a15657d012fea460bb4656a20df1ba26932b0ef49f8ea88d7b4c1289314ba789661640f1b5d7cbae103fa95b0035f1e8e866307d4796eab0992704f9e00be4b1af8dfa9e94ad74e607ea9d7d7a95ed5a15429426abbed8d2c657018305c6f9e5159a5453f958991a908ff4cb2e8cbccb1d3c8daf754e4b01b2edd023e5bfdf293bd28fc1f8885f6edd5a715df4d180247feb08e9e2e5126c48be6098e711f0d86de5d76fdccae34eef9197c32ab4e6fcb52eb9ce18fdb621a75913a97254d783778203ec0bd1a8859683e1d01da4e81fb73bb3b358340a0310bf5ae17b917208da607fd7b125cf99fd3e9056f5184df7570ede94b736ae354b5b8ae2cc473b455f2f86d47c69027676bf1141f316b0f278f1692406572ee82766f8e5ff1cfec2a7a6cab7d0f2582a877c9bd4ca81089373f738d02e6bb4d3df30ac0f041e51ad36e1ff140812baf54b80635cc80963c8f69fa4506f7a30c99d3e538cc0aeafcad86ead38ed949aa3c204aea50e5e0039f01b82595b7dc921a8acc1f76340f060cc9a3acad3451c17dc9b5ca5d10a0cb1708592d1900a046f33761d50895febd9fd58cb132989766cf7c252daac259576ec218e3857e6fa97fe445d1fab51d87302a4bb28a4cfe462ee4849cc6832650188ca187d85509d8beccf9d9cf752368985804195b9fd2faf1aff8248f3981bd55cbbf514cd8365fee72cc7af053e5388ceadadb967ef735181df6a90cab13f58f6d563c9ab4ad37297aecffd8446cb2b14ec36a99af8393e3760d5970ba1debdcbccd54012c559ee2797ff962328aa6a252c0756e396ce4d52937546675203bdf1d6b120acac576523f8b1daa922188bf61536312f90dba92fb380c3c6fb5f9883a2c4dd99a1bac9b7cb25ff2ef9bd58ff97ddfdd2d4bcc371ee82245b57cd91a7fa3479cd339f54a5c422b753cd42d441ea881d46e419312db1f0cccce"], &(0x7f0000000340)='syzkaller\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x8, 0x0, 0xff9d}, 0x48)
+bpf$BPF_PROG_TEST_RUN(0xa, &(0x7f00000000c0)={r0, 0x20e, 0xe40, 0xfd000004, &(0x7f00000004c0)="b9180bb76003070c009e40f086dd1fff31000000330020010010ac14142ee0080001c699da153f0ae0e6e380f60115f683317585d7472ce0ab4439f0f570ff155bc5f73ba3f8bb99a6e8ded1ce485cf058105cd981b42493481cd659416a2e10c9119664f36eb00b333c20c9ec0c222d644bdcb178c1cc53d6960fbb842d6a33dfcde3a1e1848135214baf139753866cadcbe3ce52505e992818cc452bee339d9ab076f484020eaa348a21d7911e4c44905256ec2cc54cca47a198b00c10aff62a4bed43a2ebcad92743fb22c593f28fd4bb7c703cde9cae0569d4c8d9a823f2c12863f7a6c0cf88ed22aae4f6f084508833b61429a25773eedf63dd9f33d430f2a0a30a7761db16fe0f743b95ded898c28aac1256ce2751b3d738899b8b19d9052b7f13ff94", 0x0, 0x31, 0x6000000000000000, 0xfffffffffffffe7e, 0x1d4}, 0x28)
+
+2024/05/22 21:27:50 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2b8d, Ip:0x8170f374}
+2024/05/22 21:27:50 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x313d, Ip:0x8170cde2}
+2024/05/22 21:27:50 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 21:27:50 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x350d, Ip:0x8170cdf5}
+2024/05/22 21:27:50 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2b8d, Ip:0x8170f374}
+2024/05/22 21:27:50 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x313d, Ip:0x8170cde2}
+2024/05/22 21:27:50 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 21:27:50 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x350d, Ip:0x8170cdf5}
+2024/05/22 21:27:50 cfuCover: ipc.CustomCov{Id:0xc001, Val:0xf15, Ip:0x862e01c0}
+2024/05/22 21:27:50 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x313d, Ip:0x8170cde2}
+2024/05/22 21:27:50 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 21:27:50 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x350d, Ip:0x8170cdf5}
+2024/05/22 21:27:50 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x4f50, Ip:0x862e01d0}
+21:27:52 executing program 0:
+bpf$PROG_LOAD(0x5, 0x0, 0x0)
+r0 = bpf$PROG_LOAD(0x5, &(0x7f0000000200)={0xc, 0xe, &(0x7f0000000b40)=ANY=[@ANYBLOB="b702000009000000bfa30000000000000703000000feffff7a0af0fff8ffffff79a4f0ff00000000b7060000ffffffff2e6405000000000065060400010000000404000001007d60b7030000000000006a0a00fe00000000850000000d000000b70000000000000095000000000000002c3f2cc2b7956244cef7baf48e6d2885a09a87507ebfc75b5b0f4e4309ebcdac5f7a860c008cbdd3b4c3b7f28754860c9c781f6410457253e89ad528d985636a86ec0f68f59cd1159a2c2e85d726859a919cc9548a349980d1ccdce27f94bc074c27f81078545c146a0857153b7b8f00034debae58a4ab415b0d7ff0575cc272cd3d7e8d974927676468ff2d86e0ffac94792ed9cf6b40b3cf252a47c05ae8a70d57cc3e067d1867b54d24e20000000000000020009ebf84d3b042d6e432cd080e3b57239f0127473e6ba922aff649609d40b47ec331ccba3cf96f9483ff19a6471bf5abc742d9cbcfb964b11b31034694a6aad86cf08a6c7b2235dc99de9aa3e6b77c7a2877261ed32da90864987f30926c9013eec3b86836ae50447aa5a79f40c235000000453302712c3d8fc4e2b61adb0695e800000000d4f4e91f0000002c33df424d1bafe5725c8a404724f8a4f1cda7997b65954f74097560b91da309b887af2485c2d9ab09b523000000000000000bf7b2ff4602aec1eea200000064881c5630521a08e051374cf05c921a06fb7818000000009dc8d95e0e5b365d10e1004dae58b3b5b89709b0ff47b200000000004000cbef88811dc8c1b27ac7d9a6bb70f60eb9c01dd2fc79b85e4d961498f3a80131d21d856177a2189f45d011ef1da5c6d57bb8fd387ccea9c3899a914e47e82f040000009d81003f927355408f87264797d3fa970949793b94329d580500d1f91c0d22587e05a61e3d8576ca168e88d7a9af95b04a37c27bfffab9abbb31fa8c0080258cfa6d3f166e695f3c56490aeef464d9965d70a50f1282619344f223548e750339643adac1322c87ca253ff2fb1882760d6feab16bacdf83c11816dbe959ebc5ec479c8319f73e2249eab0486b110702a481d3b51976a52303056e800b4ae5acc2dfae60ab958e9f3ef9b4aaa4e8d6166f636a65eb1d672bf2000000cda8462cc9b16624998be65683321e970000000009b8e20762c1bf4a3eb6769f2b23e842bacd9c685edea0ffa3e975424f8ede49e61a4de808a38ba3512d64dc71867df4eee3f1ff791cf7c9862f98b45852e4b2f78721b978a2df2f2a29a387c6f0576b36038f819286eca99a6a434811cf2a117d775fe986a49fb82cf5f15972d5ab18f1045384501adabb20f7b0e15ff47f1744e2341b59034959a1289ba6e243668e6735305707e3de7652bfc5b60c76deff43a1d6fd6a4180ab723735abbeffe7f2ec3a0bb86f9eddfc0f3d1d503d7a54b49e1ae6c5aa620d27e91aa0aa0ed6fcacfc91fbb4c256409e54daefbb107c381fa729ff5f3907d93430da178d685d7730f5e129438a5214f722096d2986334c2576bef69145d3fbd78a9059e454474f92e65828b018174a9f4738b8c71fbdeac26ab95e02f9a847182766964976b1fccdb9f35721e43e33883cf16ed1343fb7429eb395123b0a4262b7023c22039b9002589a378ed4c6267965af78b861bd025312538cec97966b8973d4e299d9802264d06e40ae118e1d242d1128dcedeb44030df12ef68f78215d65f96eb55db8cbcb060008000d988374f85451a694ffe38a1d03916ff10dc82b31c98d42e1a1bda1290de1a499a5a385b31112a48ba3e6d6849914c1788a7aca37177cc341fff44fec5c5e0abae01c439a1b0311e074e81ae9993b5b3459553e4ece78d4c1501c70f5d81e0725d5b273755c0000000000000000aa4234ff82182952a76233d18e7d49638aeb04e7a9e9e7eafb7c255372795d2d192a0a33cab0f5bf2e93e0544fcdf2df2bc6ce96e5a11993d54f97a23754ac828674dbb93c0ad345715be4a13678b01edf76d8a923655800a2c88cce004505ab45d8f5f88aa887bbce5c18970428516f6099bdbb2cd7a2356397f1a0a23e662e2a6c4834400cbaa41c3c574e6e6aefb7a68da5ec1ae49f968bbe0e0bf9878516f553639f5b4828e92019b61f5874be1c7cdd9482df50bc24a8a1fa10d291390eb84e26a2e8dbeaa45604b05a116c1210a7540bf81005044273f5a8ffc538db289350eb248e483bd8920efcf30a798c2b636243e0a37262ca47dfeefa753ba528f7ba77e825051ce69b4475d7d714ba0c636e6ae9f710411d30ef424aeaabe057c7df6ff8f767bcd9012e1047c686f5ccb76ab3a5df53cbc22ba7ea8f6a8e220bb4d83de1e4dc19d6c1be841503850803bc2c2d5e0e34270a7f1cca0c6c53a8e5f891f7a793a70da62d6d88fbb90d220acc687931b42d6be83ab870da3c0a567f5e65ec0457f4ad2a4ec0b671b36388afd5520a8483a4b11f7d02a409315f0f9e59f47668d68a74838d6976e12fd45200014041dffacbf60892ec8bd7560686f137a806d3dfaba900b47cac62f828342fff009adb5b2251461a1b9d6ba625b8fe04e69a1a4be2696f0000000086e172932e03000000000000005942e1b9d6dc28ab8e19e1111dd893e801015642faf21eef40d6e7de3ef62c4bc5ff17e7aeb2841098f845d1cc9ec4eee79c298fb0ba939b13707044e2e9cc0d350438c1c8c6bb9a38c6ac5ca0d9cf1f3d6915f25cb26edfc28b3079b97df32601240e454db103fb0c4a143673a3f160d3a7b83ecd0509ce9eba0c7bf7843799b1b56a234f9eaab8a3f14f1472bb6aaeb8ac9ee4054605558ab31f339f6a4caf2ee2fd01f34dca3300000000000000000000000000000000f59f8e6e00000000c44130098d833a24000000000095e6f945ba9a941cef5e70b8c152321e24b5b29bcf374dcf5a29a35d76e6e2bf8df95462690a4fc9ec8129e92b6ebb4b40a992a75d3c595426ae40d0bfc87db24d856359079b29b3c374d081c300b2cfaa596d24e800ef8e2201f2fb7a9946f89f9f31f7cbd603fd7f8898c70b5c65f2e28f22e1a79a6af3a54861b07f124642e98389557affbdede09b5566a4a1ee73b20846810030a754acddcdafe3ceeeebc0b5f2fedfe7d198e3067f3dbac9441a9ab8409cbbb7e15b9ae3944097de34de2001c8533a3766e6e4c4c4702ccb932a27a3962814cd6aa8fc684beeaa3932efae3a9052be8eec1e95f6ad8d41dd34829503ba4b66e27154cb6e34aa13450522df1723130b6fe347c93f00e40e293c98d849a33f773c743728992f40faccd5c23130a1c6bfd6fc661bca1598137ddd1090ded672f5a48a40cab3f640c8241a364cbdd3f188eec7da7bccafbd5bf28a46f0eecc6b550471b0b0770c6a5a411c0e0b19e15a461e7c6833ba936e214b013f2819ec6572a43b5cd32b11d7e4f8dcf8f7820a17b7b2ee6178a03351dd25091e46bfd82a3979b9cad109fd6217cd52aa81bdabd50826a674bd16b8f7e6aed12a305366599f5f029a7b24558c027518c669760500002f1c19d16a6f391906000000cc0bbbfb8c698ecc137d96711100e0108d3bd2afed0b279ebf0527552a9331e646c424b14ffbb815622bfd2f635855bed1b164d0a56bd104be069854111c5b26ec3c652b5f0a6b9676dae987ec23456ba05a4dfb15321ef6b76e7e547a688c67ab531cfc784c9f940d9fb0464a6cce635e14b80dc5c1c64e75e6bd5355d84f8df272f18f58c570e7afd83ee77f157c146aa747b728969aeb4aba1d8f9de1b3fb8ab6ea50e884c2ea98e6400bf0c5ae2887cd1da0e57ccfdf5eca2b455247efcc13102846c0a85f20c80007c0ce6efce627b95b8ad3003385de97101678fb2163ecea6e70a77a6fbc089e31a5ccece932229b8f79faa6863d6857c3d9a9710f9f8ad16eeb8342278f311cbc226498028234d21466892983378fe64acbb44f694cd78e43c74aa75505cb1c91b189f8f89f233a05f5cd4e173a373178557843dd705268f74a9e5429945503195aefd6706b584d8408c9652b3fe68500747f7ee8375fa559c3ad195d3795df1a8364cd13acc3256ee4634c73eeb6954d0fcf09ab84df0b8900e0c6fea2ccb600ae7a4b128cae19df160e7c207b89132d1d5bdc9ffc79f0549b82df521817651d5fead5128205b92ccdccc69407ab556217af277af911dbd456dfc43dd061b6c91485dcc208cf0b3d0bf851de413f5de5ec015e296914afab6411109355e027ce04990d9aae251b9deb11b7db45b9f15b7b55d8fdbedd9e6cf891205694f02be8b9ea8ecd41308a0e1b93ae3435bfa88b440b1f701b4d0fc49c82193f27f8023b630ea97edbf3bf421a0a1a2b4ac7bb30bcd1cdd172c0df37408fd6827bb03e8742fc1c7a2befd1299928c5f79e846a8dc7ca648d960a759e6711b69776896a9656d59af6d44bc5348229fa84ae78af8421a22c4b4c17a3d24a4a0104000000000000d77cc4eef51c2b417c8c7458ddd7dd9d1a863bf0a9e1a30a19020490038017a5c7e474c83302a2c2b5c976dacf3dda7191c757f208000000000000005f7ed983f65723fbb36b9b51abb0dbcd335700000000000000000000000000000086666201251aa4f139d0485ffcf89f01639fd1579a3802f720a0215c720a97071f5065a23642a58275dbca444b00e2e5835185d5d5b2796eb0fe32cf3b0633f58ecc7648c3c6efe82f93a3008052416512eea30ea9472e0b456a652883c0907323cf03be193a05008cdef7a98a1671a1918df310dc4bfd61c3db4819ab1c57b348a8ff1ed36364a20fe846f1cd086058d139ce528425b31c5d08b433562ffb318c1285011f9b78b2401989384311101e452f54661ecdb2514a6ae50dbdd422de0f0f8c670000000000390be79688f80c47314cb1b14afcaa5d23f9032e0ec51f45f447d6a7c798fcf7e60e2180e289410801e4f03a0e140f388f25b92da1025d8409e171a2336ed71cca86eb4658fe06df286e0e20276b0618eeffd05774f15686cd9d3182ca2fec863875f305fed6baf48a594db12582a38cfdffffffffffffff0cf8d920517835fe7d09cfcb624f6931f1cc6f6b71f58de9ddc38e0c43992f6bc57a718d0cfd197b5324b4e05ef1caa96db3ae1f2f2e5791faba2ebbe1a6faf21f2748fb1fb6743c3ca8af4e6b02518c9b7fdc1b5721eb1c3ed98db25536f74ac7861afc94544e52dcb5c60460a05802e3b437ac977bfa26b887a2443e8d559c58187f004eb82b07937df6e96f77ed551926bec4e0188fae10a35d1c5f1768ac6be829bea46f1babc3d74adc31ca71bdab9079e4288881b434484eadde9da6b81802842abd462d546c59d87acc014f81d3414759bda12d2a2c6bc1bfa807bd3101eb227184a61107b6d0618e2a3b842671e084ac3f0ff94dc48b51601247318ab4d1c5106458000000000008000000000000cfee0107e6c2fe8639d926829fdbbd86bf591a8c3c235d8939af9d923f648165881a6c29997234406400b3b1c321cc158dbe17123eace30000000000009ea77cb4d3ca892600000000796de6ae4ae40bdf9a6e8c5dc29562262af9cd54e8e3ecc7e3c8cba0ecc791683496c4e5c1a5729714d9f9031f49b400cd2667b4ea6df54809615a4f973f93e6ccec72f16ff998e29ed99df733680a9d5cea57f99cc139b6ea9014f3000000000000000000000000000000000000feeab45a4046a622b0dceb413e4e39b7317e92cbed46b41ab5115bfb542c933783d750852dfdc6656aaf15e10615a88821f2f1bc53969b52d6852755e7681ad5beda80b38ccd34116b99f50b4fdd967b3f20f260455412b67563e40e323bde9d673fceda0ad6981565c8a183d928903b4f4472dde41b6dcd75314c31e704dfcb222c8359fe88944f852242270c932abfaeece0843d708f5cd25b2a63ae1e79723c1c3c013836b47da0a35d0f34c070000000000000422ae2c148d444dd437a7d2f5e575009bc2d17a199802409329dae8baa58d3de63ad45328a9d4dc1ace543dfe11913c6c6413f8f7a15657d012fea460bb4656a20df1ba26932b0ef49f8ea88d7b4c1289314ba789661640f1b5d7cbae103fa95b0035f1e8e866307d4796eab0992704f9e00be4b1af8dfa9e94ad74e607ea9d7d7a95ed5a15429426abbed8d2c657018305c6f9e5159a5453f958991a908ff4cb2e8cbccb1d3c8daf754e4b01b2edd023e5bfdf293bd28fc1f8885f6edd5a715df4d180247feb08e9e2e5126c48be6098e711f0d86de5d76fdccae34eef9197c32ab4e6fcb52eb9ce18fdb621a75913a97254d783778203ec0bd1a8859683e1d01da4e81fb73bb3b358340a0310bf5ae17b917208da607fd7b125cf99fd3e9056f5184df7570ede94b736ae354b5b8ae2cc473b455f2f86d47c69027676bf1141f316b0f278f1692406572ee82766f8e5ff1cfec2a7a6cab7d0f2582a877c9bd4ca81089373f738d02e6bb4d3df30ac0f041e51ad36e1ff140812baf54b80635cc80963c8f69fa4506f7a30c99d3e538cc0aeafcad86ead38ed949aa3c204aea50e5e0039f01b82595b7dc921a8acc1f76340f060cc9a3acad3451c17dc9b5ca5d10a0cb1708592d1900a046f33761d50895febd9fd58cb132989766cf7c252daac259576ec218e3857e6fa97fe445d1fab51d87302a4bb28a4cfe462ee4849cc6832650188ca187d85509d8beccf9d9cf752368985804195b9fd2faf1aff8248f3981bd55cbbf514cd8365fee72cc7af053e5388ceadadb967ef735181df6a90cab13f58f6d563c9ab4ad37297aecffd8446cb2b14ec36a99af8393e3760d5970ba1debdcbccd54012c559ee2797ff962328aa6a252c0756e396ce4d52937546675203bdf1d6b120acac576523f8b1daa922188bf61536312f90dba92fb380c3c6fb5f9883a2c4dd99a1bac9b7cb25ff2ef9bd58ff97ddfdd2d4bcc371ee82245b57cd91a7fa3479cd339f54a5c422b753cd42d441ea881d46e419312db1f0cccce"], &(0x7f0000000340)='syzkaller\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x8, 0x0, 0xff9d}, 0x48)
+bpf$BPF_PROG_TEST_RUN(0xa, &(0x7f00000000c0)={r0, 0x20e, 0xe40, 0xfd000004, &(0x7f00000004c0)="b9180bb76003070c009e40f086dd1fff31000000330020010010ac14142ee0080001c699da153f0ae0e6e380f60115f683317585d7472ce0ab4439f0f570ff155bc5f73ba3f8bb99a6e8ded1ce485cf058105cd981b42493481cd659416a2e10c9119664f36eb00b333c20c9ec0c222d644bdcb178c1cc53d6960fbb842d6a33dfcde3a1e1848135214baf139753866cadcbe3ce52505e992818cc452bee339d9ab076f484020eaa348a21d7911e4c44905256ec2cc54cca47a198b00c10aff62a4bed43a2ebcad92743fb22c593f28fd4bb7c703cde9cae0569d4c8d9a823f2c12863f7a6c0cf88ed22aae4f6f084508833b61429a25773eedf63dd9f33d430f2a0a30a7761db16fe0f743b95ded898c28aac1256ce2751b3d738899b8b19d9052b7f13ff94", 0x0, 0x31, 0x6000000000000000, 0xfffffffffffffe7e, 0x1d4}, 0x28)
+
+21:27:53 executing program 0:
+bpf$PROG_LOAD(0x5, 0x0, 0x0)
+r0 = bpf$PROG_LOAD(0x5, &(0x7f0000000200)={0xc, 0xe, &(0x7f0000000b40)=ANY=[@ANYBLOB="b702000009000000bfa30000000000000703000000feffff7a0af0fff8ffffff79a4f0ff00000000b7060000ffffffff2e6405000000000065060400010000000404000001007d60b7030000000000006a0a00fe00000000850000000d000000b70000000000000095000000000000002c3f2cc2b7956244cef7baf48e6d2885a09a87507ebfc75b5b0f4e4309ebcdac5f7a860c008cbdd3b4c3b7f28754860c9c781f6410457253e89ad528d985636a86ec0f68f59cd1159a2c2e85d726859a919cc9548a349980d1ccdce27f94bc074c27f81078545c146a0857153b7b8f00034debae58a4ab415b0d7ff0575cc272cd3d7e8d974927676468ff2d86e0ffac94792ed9cf6b40b3cf252a47c05ae8a70d57cc3e067d1867b54d24e20000000000000020009ebf84d3b042d6e432cd080e3b57239f0127473e6ba922aff649609d40b47ec331ccba3cf96f9483ff19a6471bf5abc742d9cbcfb964b11b31034694a6aad86cf08a6c7b2235dc99de9aa3e6b77c7a2877261ed32da90864987f30926c9013eec3b86836ae50447aa5a79f40c235000000453302712c3d8fc4e2b61adb0695e800000000d4f4e91f0000002c33df424d1bafe5725c8a404724f8a4f1cda7997b65954f74097560b91da309b887af2485c2d9ab09b523000000000000000bf7b2ff4602aec1eea200000064881c5630521a08e051374cf05c921a06fb7818000000009dc8d95e0e5b365d10e1004dae58b3b5b89709b0ff47b200000000004000cbef88811dc8c1b27ac7d9a6bb70f60eb9c01dd2fc79b85e4d961498f3a80131d21d856177a2189f45d011ef1da5c6d57bb8fd387ccea9c3899a914e47e82f040000009d81003f927355408f87264797d3fa970949793b94329d580500d1f91c0d22587e05a61e3d8576ca168e88d7a9af95b04a37c27bfffab9abbb31fa8c0080258cfa6d3f166e695f3c56490aeef464d9965d70a50f1282619344f223548e750339643adac1322c87ca253ff2fb1882760d6feab16bacdf83c11816dbe959ebc5ec479c8319f73e2249eab0486b110702a481d3b51976a52303056e800b4ae5acc2dfae60ab958e9f3ef9b4aaa4e8d6166f636a65eb1d672bf2000000cda8462cc9b16624998be65683321e970000000009b8e20762c1bf4a3eb6769f2b23e842bacd9c685edea0ffa3e975424f8ede49e61a4de808a38ba3512d64dc71867df4eee3f1ff791cf7c9862f98b45852e4b2f78721b978a2df2f2a29a387c6f0576b36038f819286eca99a6a434811cf2a117d775fe986a49fb82cf5f15972d5ab18f1045384501adabb20f7b0e15ff47f1744e2341b59034959a1289ba6e243668e6735305707e3de7652bfc5b60c76deff43a1d6fd6a4180ab723735abbeffe7f2ec3a0bb86f9eddfc0f3d1d503d7a54b49e1ae6c5aa620d27e91aa0aa0ed6fcacfc91fbb4c256409e54daefbb107c381fa729ff5f3907d93430da178d685d7730f5e129438a5214f722096d2986334c2576bef69145d3fbd78a9059e454474f92e65828b018174a9f4738b8c71fbdeac26ab95e02f9a847182766964976b1fccdb9f35721e43e33883cf16ed1343fb7429eb395123b0a4262b7023c22039b9002589a378ed4c6267965af78b861bd025312538cec97966b8973d4e299d9802264d06e40ae118e1d242d1128dcedeb44030df12ef68f78215d65f96eb55db8cbcb060008000d988374f85451a694ffe38a1d03916ff10dc82b31c98d42e1a1bda1290de1a499a5a385b31112a48ba3e6d6849914c1788a7aca37177cc341fff44fec5c5e0abae01c439a1b0311e074e81ae9993b5b3459553e4ece78d4c1501c70f5d81e0725d5b273755c0000000000000000aa4234ff82182952a76233d18e7d49638aeb04e7a9e9e7eafb7c255372795d2d192a0a33cab0f5bf2e93e0544fcdf2df2bc6ce96e5a11993d54f97a23754ac828674dbb93c0ad345715be4a13678b01edf76d8a923655800a2c88cce004505ab45d8f5f88aa887bbce5c18970428516f6099bdbb2cd7a2356397f1a0a23e662e2a6c4834400cbaa41c3c574e6e6aefb7a68da5ec1ae49f968bbe0e0bf9878516f553639f5b4828e92019b61f5874be1c7cdd9482df50bc24a8a1fa10d291390eb84e26a2e8dbeaa45604b05a116c1210a7540bf81005044273f5a8ffc538db289350eb248e483bd8920efcf30a798c2b636243e0a37262ca47dfeefa753ba528f7ba77e825051ce69b4475d7d714ba0c636e6ae9f710411d30ef424aeaabe057c7df6ff8f767bcd9012e1047c686f5ccb76ab3a5df53cbc22ba7ea8f6a8e220bb4d83de1e4dc19d6c1be841503850803bc2c2d5e0e34270a7f1cca0c6c53a8e5f891f7a793a70da62d6d88fbb90d220acc687931b42d6be83ab870da3c0a567f5e65ec0457f4ad2a4ec0b671b36388afd5520a8483a4b11f7d02a409315f0f9e59f47668d68a74838d6976e12fd45200014041dffacbf60892ec8bd7560686f137a806d3dfaba900b47cac62f828342fff009adb5b2251461a1b9d6ba625b8fe04e69a1a4be2696f0000000086e172932e03000000000000005942e1b9d6dc28ab8e19e1111dd893e801015642faf21eef40d6e7de3ef62c4bc5ff17e7aeb2841098f845d1cc9ec4eee79c298fb0ba939b13707044e2e9cc0d350438c1c8c6bb9a38c6ac5ca0d9cf1f3d6915f25cb26edfc28b3079b97df32601240e454db103fb0c4a143673a3f160d3a7b83ecd0509ce9eba0c7bf7843799b1b56a234f9eaab8a3f14f1472bb6aaeb8ac9ee4054605558ab31f339f6a4caf2ee2fd01f34dca3300000000000000000000000000000000f59f8e6e00000000c44130098d833a24000000000095e6f945ba9a941cef5e70b8c152321e24b5b29bcf374dcf5a29a35d76e6e2bf8df95462690a4fc9ec8129e92b6ebb4b40a992a75d3c595426ae40d0bfc87db24d856359079b29b3c374d081c300b2cfaa596d24e800ef8e2201f2fb7a9946f89f9f31f7cbd603fd7f8898c70b5c65f2e28f22e1a79a6af3a54861b07f124642e98389557affbdede09b5566a4a1ee73b20846810030a754acddcdafe3ceeeebc0b5f2fedfe7d198e3067f3dbac9441a9ab8409cbbb7e15b9ae3944097de34de2001c8533a3766e6e4c4c4702ccb932a27a3962814cd6aa8fc684beeaa3932efae3a9052be8eec1e95f6ad8d41dd34829503ba4b66e27154cb6e34aa13450522df1723130b6fe347c93f00e40e293c98d849a33f773c743728992f40faccd5c23130a1c6bfd6fc661bca1598137ddd1090ded672f5a48a40cab3f640c8241a364cbdd3f188eec7da7bccafbd5bf28a46f0eecc6b550471b0b0770c6a5a411c0e0b19e15a461e7c6833ba936e214b013f2819ec6572a43b5cd32b11d7e4f8dcf8f7820a17b7b2ee6178a03351dd25091e46bfd82a3979b9cad109fd6217cd52aa81bdabd50826a674bd16b8f7e6aed12a305366599f5f029a7b24558c027518c669760500002f1c19d16a6f391906000000cc0bbbfb8c698ecc137d96711100e0108d3bd2afed0b279ebf0527552a9331e646c424b14ffbb815622bfd2f635855bed1b164d0a56bd104be069854111c5b26ec3c652b5f0a6b9676dae987ec23456ba05a4dfb15321ef6b76e7e547a688c67ab531cfc784c9f940d9fb0464a6cce635e14b80dc5c1c64e75e6bd5355d84f8df272f18f58c570e7afd83ee77f157c146aa747b728969aeb4aba1d8f9de1b3fb8ab6ea50e884c2ea98e6400bf0c5ae2887cd1da0e57ccfdf5eca2b455247efcc13102846c0a85f20c80007c0ce6efce627b95b8ad3003385de97101678fb2163ecea6e70a77a6fbc089e31a5ccece932229b8f79faa6863d6857c3d9a9710f9f8ad16eeb8342278f311cbc226498028234d21466892983378fe64acbb44f694cd78e43c74aa75505cb1c91b189f8f89f233a05f5cd4e173a373178557843dd705268f74a9e5429945503195aefd6706b584d8408c9652b3fe68500747f7ee8375fa559c3ad195d3795df1a8364cd13acc3256ee4634c73eeb6954d0fcf09ab84df0b8900e0c6fea2ccb600ae7a4b128cae19df160e7c207b89132d1d5bdc9ffc79f0549b82df521817651d5fead5128205b92ccdccc69407ab556217af277af911dbd456dfc43dd061b6c91485dcc208cf0b3d0bf851de413f5de5ec015e296914afab6411109355e027ce04990d9aae251b9deb11b7db45b9f15b7b55d8fdbedd9e6cf891205694f02be8b9ea8ecd41308a0e1b93ae3435bfa88b440b1f701b4d0fc49c82193f27f8023b630ea97edbf3bf421a0a1a2b4ac7bb30bcd1cdd172c0df37408fd6827bb03e8742fc1c7a2befd1299928c5f79e846a8dc7ca648d960a759e6711b69776896a9656d59af6d44bc5348229fa84ae78af8421a22c4b4c17a3d24a4a0104000000000000d77cc4eef51c2b417c8c7458ddd7dd9d1a863bf0a9e1a30a19020490038017a5c7e474c83302a2c2b5c976dacf3dda7191c757f208000000000000005f7ed983f65723fbb36b9b51abb0dbcd335700000000000000000000000000000086666201251aa4f139d0485ffcf89f01639fd1579a3802f720a0215c720a97071f5065a23642a58275dbca444b00e2e5835185d5d5b2796eb0fe32cf3b0633f58ecc7648c3c6efe82f93a3008052416512eea30ea9472e0b456a652883c0907323cf03be193a05008cdef7a98a1671a1918df310dc4bfd61c3db4819ab1c57b348a8ff1ed36364a20fe846f1cd086058d139ce528425b31c5d08b433562ffb318c1285011f9b78b2401989384311101e452f54661ecdb2514a6ae50dbdd422de0f0f8c670000000000390be79688f80c47314cb1b14afcaa5d23f9032e0ec51f45f447d6a7c798fcf7e60e2180e289410801e4f03a0e140f388f25b92da1025d8409e171a2336ed71cca86eb4658fe06df286e0e20276b0618eeffd05774f15686cd9d3182ca2fec863875f305fed6baf48a594db12582a38cfdffffffffffffff0cf8d920517835fe7d09cfcb624f6931f1cc6f6b71f58de9ddc38e0c43992f6bc57a718d0cfd197b5324b4e05ef1caa96db3ae1f2f2e5791faba2ebbe1a6faf21f2748fb1fb6743c3ca8af4e6b02518c9b7fdc1b5721eb1c3ed98db25536f74ac7861afc94544e52dcb5c60460a05802e3b437ac977bfa26b887a2443e8d559c58187f004eb82b07937df6e96f77ed551926bec4e0188fae10a35d1c5f1768ac6be829bea46f1babc3d74adc31ca71bdab9079e4288881b434484eadde9da6b81802842abd462d546c59d87acc014f81d3414759bda12d2a2c6bc1bfa807bd3101eb227184a61107b6d0618e2a3b842671e084ac3f0ff94dc48b51601247318ab4d1c5106458000000000008000000000000cfee0107e6c2fe8639d926829fdbbd86bf591a8c3c235d8939af9d923f648165881a6c29997234406400b3b1c321cc158dbe17123eace30000000000009ea77cb4d3ca892600000000796de6ae4ae40bdf9a6e8c5dc29562262af9cd54e8e3ecc7e3c8cba0ecc791683496c4e5c1a5729714d9f9031f49b400cd2667b4ea6df54809615a4f973f93e6ccec72f16ff998e29ed99df733680a9d5cea57f99cc139b6ea9014f3000000000000000000000000000000000000feeab45a4046a622b0dceb413e4e39b7317e92cbed46b41ab5115bfb542c933783d750852dfdc6656aaf15e10615a88821f2f1bc53969b52d6852755e7681ad5beda80b38ccd34116b99f50b4fdd967b3f20f260455412b67563e40e323bde9d673fceda0ad6981565c8a183d928903b4f4472dde41b6dcd75314c31e704dfcb222c8359fe88944f852242270c932abfaeece0843d708f5cd25b2a63ae1e79723c1c3c013836b47da0a35d0f34c070000000000000422ae2c148d444dd437a7d2f5e575009bc2d17a199802409329dae8baa58d3de63ad45328a9d4dc1ace543dfe11913c6c6413f8f7a15657d012fea460bb4656a20df1ba26932b0ef49f8ea88d7b4c1289314ba789661640f1b5d7cbae103fa95b0035f1e8e866307d4796eab0992704f9e00be4b1af8dfa9e94ad74e607ea9d7d7a95ed5a15429426abbed8d2c657018305c6f9e5159a5453f958991a908ff4cb2e8cbccb1d3c8daf754e4b01b2edd023e5bfdf293bd28fc1f8885f6edd5a715df4d180247feb08e9e2e5126c48be6098e711f0d86de5d76fdccae34eef9197c32ab4e6fcb52eb9ce18fdb621a75913a97254d783778203ec0bd1a8859683e1d01da4e81fb73bb3b358340a0310bf5ae17b917208da607fd7b125cf99fd3e9056f5184df7570ede94b736ae354b5b8ae2cc473b455f2f86d47c69027676bf1141f316b0f278f1692406572ee82766f8e5ff1cfec2a7a6cab7d0f2582a877c9bd4ca81089373f738d02e6bb4d3df30ac0f041e51ad36e1ff140812baf54b80635cc80963c8f69fa4506f7a30c99d3e538cc0aeafcad86ead38ed949aa3c204aea50e5e0039f01b82595b7dc921a8acc1f76340f060cc9a3acad3451c17dc9b5ca5d10a0cb1708592d1900a046f33761d50895febd9fd58cb132989766cf7c252daac259576ec218e3857e6fa97fe445d1fab51d87302a4bb28a4cfe462ee4849cc6832650188ca187d85509d8beccf9d9cf752368985804195b9fd2faf1aff8248f3981bd55cbbf514cd8365fee72cc7af053e5388ceadadb967ef735181df6a90cab13f58f6d563c9ab4ad37297aecffd8446cb2b14ec36a99af8393e3760d5970ba1debdcbccd54012c559ee2797ff962328aa6a252c0756e396ce4d52937546675203bdf1d6b120acac576523f8b1daa922188bf61536312f90dba92fb380c3c6fb5f9883a2c4dd99a1bac9b7cb25ff2ef9bd58ff97ddfdd2d4bcc371ee82245b57cd91a7fa3479cd339f54a5c422b753cd42d441ea881d46e419312db1f0cccce"], &(0x7f0000000340)='syzkaller\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x8, 0x0, 0xff9d}, 0x48)
+bpf$BPF_PROG_TEST_RUN(0xa, &(0x7f00000000c0)={r0, 0x20e, 0xe40, 0xfd000004, &(0x7f00000004c0)="b9180bb76003070c009e40f086dd1fff31000000330020010010ac14142ee0080001c699da153f0ae0e6e380f60115f683317585d7472ce0ab4439f0f570ff155bc5f73ba3f8bb99a6e8ded1ce485cf058105cd981b42493481cd659416a2e10c9119664f36eb00b333c20c9ec0c222d644bdcb178c1cc53d6960fbb842d6a33dfcde3a1e1848135214baf139753866cadcbe3ce52505e992818cc452bee339d9ab076f484020eaa348a21d7911e4c44905256ec2cc54cca47a198b00c10aff62a4bed43a2ebcad92743fb22c593f28fd4bb7c703cde9cae0569d4c8d9a823f2c12863f7a6c0cf88ed22aae4f6f084508833b61429a25773eedf63dd9f33d430f2a0a30a7761db16fe0f743b95ded898c28aac1256ce2751b3d738899b8b19d9052b7f13ff94", 0x0, 0x31, 0x6000000000000000, 0xfffffffffffffe7e, 0x1d4}, 0x28)
+
+21:27:55 executing program 0:
+bpf$PROG_LOAD(0x5, 0x0, 0x0)
+r0 = bpf$PROG_LOAD(0x5, &(0x7f0000000200)={0xc, 0xe, &(0x7f0000000b40)=ANY=[@ANYBLOB="b702000009000000bfa30000000000000703000000feffff7a0af0fff8ffffff79a4f0ff00000000b7060000ffffffff2e6405000000000065060400010000000404000001007d60b7030000000000006a0a00fe00000000850000000d000000b70000000000000095000000000000002c3f2cc2b7956244cef7baf48e6d2885a09a87507ebfc75b5b0f4e4309ebcdac5f7a860c008cbdd3b4c3b7f28754860c9c781f6410457253e89ad528d985636a86ec0f68f59cd1159a2c2e85d726859a919cc9548a349980d1ccdce27f94bc074c27f81078545c146a0857153b7b8f00034debae58a4ab415b0d7ff0575cc272cd3d7e8d974927676468ff2d86e0ffac94792ed9cf6b40b3cf252a47c05ae8a70d57cc3e067d1867b54d24e20000000000000020009ebf84d3b042d6e432cd080e3b57239f0127473e6ba922aff649609d40b47ec331ccba3cf96f9483ff19a6471bf5abc742d9cbcfb964b11b31034694a6aad86cf08a6c7b2235dc99de9aa3e6b77c7a2877261ed32da90864987f30926c9013eec3b86836ae50447aa5a79f40c235000000453302712c3d8fc4e2b61adb0695e800000000d4f4e91f0000002c33df424d1bafe5725c8a404724f8a4f1cda7997b65954f74097560b91da309b887af2485c2d9ab09b523000000000000000bf7b2ff4602aec1eea200000064881c5630521a08e051374cf05c921a06fb7818000000009dc8d95e0e5b365d10e1004dae58b3b5b89709b0ff47b200000000004000cbef88811dc8c1b27ac7d9a6bb70f60eb9c01dd2fc79b85e4d961498f3a80131d21d856177a2189f45d011ef1da5c6d57bb8fd387ccea9c3899a914e47e82f040000009d81003f927355408f87264797d3fa970949793b94329d580500d1f91c0d22587e05a61e3d8576ca168e88d7a9af95b04a37c27bfffab9abbb31fa8c0080258cfa6d3f166e695f3c56490aeef464d9965d70a50f1282619344f223548e750339643adac1322c87ca253ff2fb1882760d6feab16bacdf83c11816dbe959ebc5ec479c8319f73e2249eab0486b110702a481d3b51976a52303056e800b4ae5acc2dfae60ab958e9f3ef9b4aaa4e8d6166f636a65eb1d672bf2000000cda8462cc9b16624998be65683321e970000000009b8e20762c1bf4a3eb6769f2b23e842bacd9c685edea0ffa3e975424f8ede49e61a4de808a38ba3512d64dc71867df4eee3f1ff791cf7c9862f98b45852e4b2f78721b978a2df2f2a29a387c6f0576b36038f819286eca99a6a434811cf2a117d775fe986a49fb82cf5f15972d5ab18f1045384501adabb20f7b0e15ff47f1744e2341b59034959a1289ba6e243668e6735305707e3de7652bfc5b60c76deff43a1d6fd6a4180ab723735abbeffe7f2ec3a0bb86f9eddfc0f3d1d503d7a54b49e1ae6c5aa620d27e91aa0aa0ed6fcacfc91fbb4c256409e54daefbb107c381fa729ff5f3907d93430da178d685d7730f5e129438a5214f722096d2986334c2576bef69145d3fbd78a9059e454474f92e65828b018174a9f4738b8c71fbdeac26ab95e02f9a847182766964976b1fccdb9f35721e43e33883cf16ed1343fb7429eb395123b0a4262b7023c22039b9002589a378ed4c6267965af78b861bd025312538cec97966b8973d4e299d9802264d06e40ae118e1d242d1128dcedeb44030df12ef68f78215d65f96eb55db8cbcb060008000d988374f85451a694ffe38a1d03916ff10dc82b31c98d42e1a1bda1290de1a499a5a385b31112a48ba3e6d6849914c1788a7aca37177cc341fff44fec5c5e0abae01c439a1b0311e074e81ae9993b5b3459553e4ece78d4c1501c70f5d81e0725d5b273755c0000000000000000aa4234ff82182952a76233d18e7d49638aeb04e7a9e9e7eafb7c255372795d2d192a0a33cab0f5bf2e93e0544fcdf2df2bc6ce96e5a11993d54f97a23754ac828674dbb93c0ad345715be4a13678b01edf76d8a923655800a2c88cce004505ab45d8f5f88aa887bbce5c18970428516f6099bdbb2cd7a2356397f1a0a23e662e2a6c4834400cbaa41c3c574e6e6aefb7a68da5ec1ae49f968bbe0e0bf9878516f553639f5b4828e92019b61f5874be1c7cdd9482df50bc24a8a1fa10d291390eb84e26a2e8dbeaa45604b05a116c1210a7540bf81005044273f5a8ffc538db289350eb248e483bd8920efcf30a798c2b636243e0a37262ca47dfeefa753ba528f7ba77e825051ce69b4475d7d714ba0c636e6ae9f710411d30ef424aeaabe057c7df6ff8f767bcd9012e1047c686f5ccb76ab3a5df53cbc22ba7ea8f6a8e220bb4d83de1e4dc19d6c1be841503850803bc2c2d5e0e34270a7f1cca0c6c53a8e5f891f7a793a70da62d6d88fbb90d220acc687931b42d6be83ab870da3c0a567f5e65ec0457f4ad2a4ec0b671b36388afd5520a8483a4b11f7d02a409315f0f9e59f47668d68a74838d6976e12fd45200014041dffacbf60892ec8bd7560686f137a806d3dfaba900b47cac62f828342fff009adb5b2251461a1b9d6ba625b8fe04e69a1a4be2696f0000000086e172932e03000000000000005942e1b9d6dc28ab8e19e1111dd893e801015642faf21eef40d6e7de3ef62c4bc5ff17e7aeb2841098f845d1cc9ec4eee79c298fb0ba939b13707044e2e9cc0d350438c1c8c6bb9a38c6ac5ca0d9cf1f3d6915f25cb26edfc28b3079b97df32601240e454db103fb0c4a143673a3f160d3a7b83ecd0509ce9eba0c7bf7843799b1b56a234f9eaab8a3f14f1472bb6aaeb8ac9ee4054605558ab31f339f6a4caf2ee2fd01f34dca3300000000000000000000000000000000f59f8e6e00000000c44130098d833a24000000000095e6f945ba9a941cef5e70b8c152321e24b5b29bcf374dcf5a29a35d76e6e2bf8df95462690a4fc9ec8129e92b6ebb4b40a992a75d3c595426ae40d0bfc87db24d856359079b29b3c374d081c300b2cfaa596d24e800ef8e2201f2fb7a9946f89f9f31f7cbd603fd7f8898c70b5c65f2e28f22e1a79a6af3a54861b07f124642e98389557affbdede09b5566a4a1ee73b20846810030a754acddcdafe3ceeeebc0b5f2fedfe7d198e3067f3dbac9441a9ab8409cbbb7e15b9ae3944097de34de2001c8533a3766e6e4c4c4702ccb932a27a3962814cd6aa8fc684beeaa3932efae3a9052be8eec1e95f6ad8d41dd34829503ba4b66e27154cb6e34aa13450522df1723130b6fe347c93f00e40e293c98d849a33f773c743728992f40faccd5c23130a1c6bfd6fc661bca1598137ddd1090ded672f5a48a40cab3f640c8241a364cbdd3f188eec7da7bccafbd5bf28a46f0eecc6b550471b0b0770c6a5a411c0e0b19e15a461e7c6833ba936e214b013f2819ec6572a43b5cd32b11d7e4f8dcf8f7820a17b7b2ee6178a03351dd25091e46bfd82a3979b9cad109fd6217cd52aa81bdabd50826a674bd16b8f7e6aed12a305366599f5f029a7b24558c027518c669760500002f1c19d16a6f391906000000cc0bbbfb8c698ecc137d96711100e0108d3bd2afed0b279ebf0527552a9331e646c424b14ffbb815622bfd2f635855bed1b164d0a56bd104be069854111c5b26ec3c652b5f0a6b9676dae987ec23456ba05a4dfb15321ef6b76e7e547a688c67ab531cfc784c9f940d9fb0464a6cce635e14b80dc5c1c64e75e6bd5355d84f8df272f18f58c570e7afd83ee77f157c146aa747b728969aeb4aba1d8f9de1b3fb8ab6ea50e884c2ea98e6400bf0c5ae2887cd1da0e57ccfdf5eca2b455247efcc13102846c0a85f20c80007c0ce6efce627b95b8ad3003385de97101678fb2163ecea6e70a77a6fbc089e31a5ccece932229b8f79faa6863d6857c3d9a9710f9f8ad16eeb8342278f311cbc226498028234d21466892983378fe64acbb44f694cd78e43c74aa75505cb1c91b189f8f89f233a05f5cd4e173a373178557843dd705268f74a9e5429945503195aefd6706b584d8408c9652b3fe68500747f7ee8375fa559c3ad195d3795df1a8364cd13acc3256ee4634c73eeb6954d0fcf09ab84df0b8900e0c6fea2ccb600ae7a4b128cae19df160e7c207b89132d1d5bdc9ffc79f0549b82df521817651d5fead5128205b92ccdccc69407ab556217af277af911dbd456dfc43dd061b6c91485dcc208cf0b3d0bf851de413f5de5ec015e296914afab6411109355e027ce04990d9aae251b9deb11b7db45b9f15b7b55d8fdbedd9e6cf891205694f02be8b9ea8ecd41308a0e1b93ae3435bfa88b440b1f701b4d0fc49c82193f27f8023b630ea97edbf3bf421a0a1a2b4ac7bb30bcd1cdd172c0df37408fd6827bb03e8742fc1c7a2befd1299928c5f79e846a8dc7ca648d960a759e6711b69776896a9656d59af6d44bc5348229fa84ae78af8421a22c4b4c17a3d24a4a0104000000000000d77cc4eef51c2b417c8c7458ddd7dd9d1a863bf0a9e1a30a19020490038017a5c7e474c83302a2c2b5c976dacf3dda7191c757f208000000000000005f7ed983f65723fbb36b9b51abb0dbcd335700000000000000000000000000000086666201251aa4f139d0485ffcf89f01639fd1579a3802f720a0215c720a97071f5065a23642a58275dbca444b00e2e5835185d5d5b2796eb0fe32cf3b0633f58ecc7648c3c6efe82f93a3008052416512eea30ea9472e0b456a652883c0907323cf03be193a05008cdef7a98a1671a1918df310dc4bfd61c3db4819ab1c57b348a8ff1ed36364a20fe846f1cd086058d139ce528425b31c5d08b433562ffb318c1285011f9b78b2401989384311101e452f54661ecdb2514a6ae50dbdd422de0f0f8c670000000000390be79688f80c47314cb1b14afcaa5d23f9032e0ec51f45f447d6a7c798fcf7e60e2180e289410801e4f03a0e140f388f25b92da1025d8409e171a2336ed71cca86eb4658fe06df286e0e20276b0618eeffd05774f15686cd9d3182ca2fec863875f305fed6baf48a594db12582a38cfdffffffffffffff0cf8d920517835fe7d09cfcb624f6931f1cc6f6b71f58de9ddc38e0c43992f6bc57a718d0cfd197b5324b4e05ef1caa96db3ae1f2f2e5791faba2ebbe1a6faf21f2748fb1fb6743c3ca8af4e6b02518c9b7fdc1b5721eb1c3ed98db25536f74ac7861afc94544e52dcb5c60460a05802e3b437ac977bfa26b887a2443e8d559c58187f004eb82b07937df6e96f77ed551926bec4e0188fae10a35d1c5f1768ac6be829bea46f1babc3d74adc31ca71bdab9079e4288881b434484eadde9da6b81802842abd462d546c59d87acc014f81d3414759bda12d2a2c6bc1bfa807bd3101eb227184a61107b6d0618e2a3b842671e084ac3f0ff94dc48b51601247318ab4d1c5106458000000000008000000000000cfee0107e6c2fe8639d926829fdbbd86bf591a8c3c235d8939af9d923f648165881a6c29997234406400b3b1c321cc158dbe17123eace30000000000009ea77cb4d3ca892600000000796de6ae4ae40bdf9a6e8c5dc29562262af9cd54e8e3ecc7e3c8cba0ecc791683496c4e5c1a5729714d9f9031f49b400cd2667b4ea6df54809615a4f973f93e6ccec72f16ff998e29ed99df733680a9d5cea57f99cc139b6ea9014f3000000000000000000000000000000000000feeab45a4046a622b0dceb413e4e39b7317e92cbed46b41ab5115bfb542c933783d750852dfdc6656aaf15e10615a88821f2f1bc53969b52d6852755e7681ad5beda80b38ccd34116b99f50b4fdd967b3f20f260455412b67563e40e323bde9d673fceda0ad6981565c8a183d928903b4f4472dde41b6dcd75314c31e704dfcb222c8359fe88944f852242270c932abfaeece0843d708f5cd25b2a63ae1e79723c1c3c013836b47da0a35d0f34c070000000000000422ae2c148d444dd437a7d2f5e575009bc2d17a199802409329dae8baa58d3de63ad45328a9d4dc1ace543dfe11913c6c6413f8f7a15657d012fea460bb4656a20df1ba26932b0ef49f8ea88d7b4c1289314ba789661640f1b5d7cbae103fa95b0035f1e8e866307d4796eab0992704f9e00be4b1af8dfa9e94ad74e607ea9d7d7a95ed5a15429426abbed8d2c657018305c6f9e5159a5453f958991a908ff4cb2e8cbccb1d3c8daf754e4b01b2edd023e5bfdf293bd28fc1f8885f6edd5a715df4d180247feb08e9e2e5126c48be6098e711f0d86de5d76fdccae34eef9197c32ab4e6fcb52eb9ce18fdb621a75913a97254d783778203ec0bd1a8859683e1d01da4e81fb73bb3b358340a0310bf5ae17b917208da607fd7b125cf99fd3e9056f5184df7570ede94b736ae354b5b8ae2cc473b455f2f86d47c69027676bf1141f316b0f278f1692406572ee82766f8e5ff1cfec2a7a6cab7d0f2582a877c9bd4ca81089373f738d02e6bb4d3df30ac0f041e51ad36e1ff140812baf54b80635cc80963c8f69fa4506f7a30c99d3e538cc0aeafcad86ead38ed949aa3c204aea50e5e0039f01b82595b7dc921a8acc1f76340f060cc9a3acad3451c17dc9b5ca5d10a0cb1708592d1900a046f33761d50895febd9fd58cb132989766cf7c252daac259576ec218e3857e6fa97fe445d1fab51d87302a4bb28a4cfe462ee4849cc6832650188ca187d85509d8beccf9d9cf752368985804195b9fd2faf1aff8248f3981bd55cbbf514cd8365fee72cc7af053e5388ceadadb967ef735181df6a90cab13f58f6d563c9ab4ad37297aecffd8446cb2b14ec36a99af8393e3760d5970ba1debdcbccd54012c559ee2797ff962328aa6a252c0756e396ce4d52937546675203bdf1d6b120acac576523f8b1daa922188bf61536312f90dba92fb380c3c6fb5f9883a2c4dd99a1bac9b7cb25ff2ef9bd58ff97ddfdd2d4bcc371ee82245b57cd91a7fa3479cd339f54a5c422b753cd42d441ea881d46e419312db1f0cccce"], &(0x7f0000000340)='syzkaller\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x8, 0x0, 0xff9d}, 0x48)
+bpf$BPF_PROG_TEST_RUN(0xa, &(0x7f00000000c0)={r0, 0x20e, 0xe40, 0xfd000004, &(0x7f00000004c0)="b9180bb76003070c009e40f086dd1fff31000000330020010010ac14142ee0080001c699da153f0ae0e6e380f60115f683317585d7472ce0ab4439f0f570ff155bc5f73ba3f8bb99a6e8ded1ce485cf058105cd981b42493481cd659416a2e10c9119664f36eb00b333c20c9ec0c222d644bdcb178c1cc53d6960fbb842d6a33dfcde3a1e1848135214baf139753866cadcbe3ce52505e992818cc452bee339d9ab076f484020eaa348a21d7911e4c44905256ec2cc54cca47a198b00c10aff62a4bed43a2ebcad92743fb22c593f28fd4bb7c703cde9cae0569d4c8d9a823f2c12863f7a6c0cf88ed22aae4f6f084508833b61429a25773eedf63dd9f33d430f2a0a30a7761db16fe0f743b95ded898c28aac1256ce2751b3d738899b8b19d9052b7f13ff94", 0x0, 0x31, 0x6000000000000000, 0xfffffffffffffe7e, 0x1d4}, 0x28)
+
+21:27:56 executing program 0:
+bpf$PROG_LOAD(0x5, 0x0, 0x0)
+r0 = bpf$PROG_LOAD(0x5, &(0x7f0000000200)={0xc, 0xe, &(0x7f0000000b40)=ANY=[@ANYBLOB="b702000009000000bfa30000000000000703000000feffff7a0af0fff8ffffff79a4f0ff00000000b7060000ffffffff2e6405000000000065060400010000000404000001007d60b7030000000000006a0a00fe00000000850000000d000000b70000000000000095000000000000002c3f2cc2b7956244cef7baf48e6d2885a09a87507ebfc75b5b0f4e4309ebcdac5f7a860c008cbdd3b4c3b7f28754860c9c781f6410457253e89ad528d985636a86ec0f68f59cd1159a2c2e85d726859a919cc9548a349980d1ccdce27f94bc074c27f81078545c146a0857153b7b8f00034debae58a4ab415b0d7ff0575cc272cd3d7e8d974927676468ff2d86e0ffac94792ed9cf6b40b3cf252a47c05ae8a70d57cc3e067d1867b54d24e20000000000000020009ebf84d3b042d6e432cd080e3b57239f0127473e6ba922aff649609d40b47ec331ccba3cf96f9483ff19a6471bf5abc742d9cbcfb964b11b31034694a6aad86cf08a6c7b2235dc99de9aa3e6b77c7a2877261ed32da90864987f30926c9013eec3b86836ae50447aa5a79f40c235000000453302712c3d8fc4e2b61adb0695e800000000d4f4e91f0000002c33df424d1bafe5725c8a404724f8a4f1cda7997b65954f74097560b91da309b887af2485c2d9ab09b523000000000000000bf7b2ff4602aec1eea200000064881c5630521a08e051374cf05c921a06fb7818000000009dc8d95e0e5b365d10e1004dae58b3b5b89709b0ff47b200000000004000cbef88811dc8c1b27ac7d9a6bb70f60eb9c01dd2fc79b85e4d961498f3a80131d21d856177a2189f45d011ef1da5c6d57bb8fd387ccea9c3899a914e47e82f040000009d81003f927355408f87264797d3fa970949793b94329d580500d1f91c0d22587e05a61e3d8576ca168e88d7a9af95b04a37c27bfffab9abbb31fa8c0080258cfa6d3f166e695f3c56490aeef464d9965d70a50f1282619344f223548e750339643adac1322c87ca253ff2fb1882760d6feab16bacdf83c11816dbe959ebc5ec479c8319f73e2249eab0486b110702a481d3b51976a52303056e800b4ae5acc2dfae60ab958e9f3ef9b4aaa4e8d6166f636a65eb1d672bf2000000cda8462cc9b16624998be65683321e970000000009b8e20762c1bf4a3eb6769f2b23e842bacd9c685edea0ffa3e975424f8ede49e61a4de808a38ba3512d64dc71867df4eee3f1ff791cf7c9862f98b45852e4b2f78721b978a2df2f2a29a387c6f0576b36038f819286eca99a6a434811cf2a117d775fe986a49fb82cf5f15972d5ab18f1045384501adabb20f7b0e15ff47f1744e2341b59034959a1289ba6e243668e6735305707e3de7652bfc5b60c76deff43a1d6fd6a4180ab723735abbeffe7f2ec3a0bb86f9eddfc0f3d1d503d7a54b49e1ae6c5aa620d27e91aa0aa0ed6fcacfc91fbb4c256409e54daefbb107c381fa729ff5f3907d93430da178d685d7730f5e129438a5214f722096d2986334c2576bef69145d3fbd78a9059e454474f92e65828b018174a9f4738b8c71fbdeac26ab95e02f9a847182766964976b1fccdb9f35721e43e33883cf16ed1343fb7429eb395123b0a4262b7023c22039b9002589a378ed4c6267965af78b861bd025312538cec97966b8973d4e299d9802264d06e40ae118e1d242d1128dcedeb44030df12ef68f78215d65f96eb55db8cbcb060008000d988374f85451a694ffe38a1d03916ff10dc82b31c98d42e1a1bda1290de1a499a5a385b31112a48ba3e6d6849914c1788a7aca37177cc341fff44fec5c5e0abae01c439a1b0311e074e81ae9993b5b3459553e4ece78d4c1501c70f5d81e0725d5b273755c0000000000000000aa4234ff82182952a76233d18e7d49638aeb04e7a9e9e7eafb7c255372795d2d192a0a33cab0f5bf2e93e0544fcdf2df2bc6ce96e5a11993d54f97a23754ac828674dbb93c0ad345715be4a13678b01edf76d8a923655800a2c88cce004505ab45d8f5f88aa887bbce5c18970428516f6099bdbb2cd7a2356397f1a0a23e662e2a6c4834400cbaa41c3c574e6e6aefb7a68da5ec1ae49f968bbe0e0bf9878516f553639f5b4828e92019b61f5874be1c7cdd9482df50bc24a8a1fa10d291390eb84e26a2e8dbeaa45604b05a116c1210a7540bf81005044273f5a8ffc538db289350eb248e483bd8920efcf30a798c2b636243e0a37262ca47dfeefa753ba528f7ba77e825051ce69b4475d7d714ba0c636e6ae9f710411d30ef424aeaabe057c7df6ff8f767bcd9012e1047c686f5ccb76ab3a5df53cbc22ba7ea8f6a8e220bb4d83de1e4dc19d6c1be841503850803bc2c2d5e0e34270a7f1cca0c6c53a8e5f891f7a793a70da62d6d88fbb90d220acc687931b42d6be83ab870da3c0a567f5e65ec0457f4ad2a4ec0b671b36388afd5520a8483a4b11f7d02a409315f0f9e59f47668d68a74838d6976e12fd45200014041dffacbf60892ec8bd7560686f137a806d3dfaba900b47cac62f828342fff009adb5b2251461a1b9d6ba625b8fe04e69a1a4be2696f0000000086e172932e03000000000000005942e1b9d6dc28ab8e19e1111dd893e801015642faf21eef40d6e7de3ef62c4bc5ff17e7aeb2841098f845d1cc9ec4eee79c298fb0ba939b13707044e2e9cc0d350438c1c8c6bb9a38c6ac5ca0d9cf1f3d6915f25cb26edfc28b3079b97df32601240e454db103fb0c4a143673a3f160d3a7b83ecd0509ce9eba0c7bf7843799b1b56a234f9eaab8a3f14f1472bb6aaeb8ac9ee4054605558ab31f339f6a4caf2ee2fd01f34dca3300000000000000000000000000000000f59f8e6e00000000c44130098d833a24000000000095e6f945ba9a941cef5e70b8c152321e24b5b29bcf374dcf5a29a35d76e6e2bf8df95462690a4fc9ec8129e92b6ebb4b40a992a75d3c595426ae40d0bfc87db24d856359079b29b3c374d081c300b2cfaa596d24e800ef8e2201f2fb7a9946f89f9f31f7cbd603fd7f8898c70b5c65f2e28f22e1a79a6af3a54861b07f124642e98389557affbdede09b5566a4a1ee73b20846810030a754acddcdafe3ceeeebc0b5f2fedfe7d198e3067f3dbac9441a9ab8409cbbb7e15b9ae3944097de34de2001c8533a3766e6e4c4c4702ccb932a27a3962814cd6aa8fc684beeaa3932efae3a9052be8eec1e95f6ad8d41dd34829503ba4b66e27154cb6e34aa13450522df1723130b6fe347c93f00e40e293c98d849a33f773c743728992f40faccd5c23130a1c6bfd6fc661bca1598137ddd1090ded672f5a48a40cab3f640c8241a364cbdd3f188eec7da7bccafbd5bf28a46f0eecc6b550471b0b0770c6a5a411c0e0b19e15a461e7c6833ba936e214b013f2819ec6572a43b5cd32b11d7e4f8dcf8f7820a17b7b2ee6178a03351dd25091e46bfd82a3979b9cad109fd6217cd52aa81bdabd50826a674bd16b8f7e6aed12a305366599f5f029a7b24558c027518c669760500002f1c19d16a6f391906000000cc0bbbfb8c698ecc137d96711100e0108d3bd2afed0b279ebf0527552a9331e646c424b14ffbb815622bfd2f635855bed1b164d0a56bd104be069854111c5b26ec3c652b5f0a6b9676dae987ec23456ba05a4dfb15321ef6b76e7e547a688c67ab531cfc784c9f940d9fb0464a6cce635e14b80dc5c1c64e75e6bd5355d84f8df272f18f58c570e7afd83ee77f157c146aa747b728969aeb4aba1d8f9de1b3fb8ab6ea50e884c2ea98e6400bf0c5ae2887cd1da0e57ccfdf5eca2b455247efcc13102846c0a85f20c80007c0ce6efce627b95b8ad3003385de97101678fb2163ecea6e70a77a6fbc089e31a5ccece932229b8f79faa6863d6857c3d9a9710f9f8ad16eeb8342278f311cbc226498028234d21466892983378fe64acbb44f694cd78e43c74aa75505cb1c91b189f8f89f233a05f5cd4e173a373178557843dd705268f74a9e5429945503195aefd6706b584d8408c9652b3fe68500747f7ee8375fa559c3ad195d3795df1a8364cd13acc3256ee4634c73eeb6954d0fcf09ab84df0b8900e0c6fea2ccb600ae7a4b128cae19df160e7c207b89132d1d5bdc9ffc79f0549b82df521817651d5fead5128205b92ccdccc69407ab556217af277af911dbd456dfc43dd061b6c91485dcc208cf0b3d0bf851de413f5de5ec015e296914afab6411109355e027ce04990d9aae251b9deb11b7db45b9f15b7b55d8fdbedd9e6cf891205694f02be8b9ea8ecd41308a0e1b93ae3435bfa88b440b1f701b4d0fc49c82193f27f8023b630ea97edbf3bf421a0a1a2b4ac7bb30bcd1cdd172c0df37408fd6827bb03e8742fc1c7a2befd1299928c5f79e846a8dc7ca648d960a759e6711b69776896a9656d59af6d44bc5348229fa84ae78af8421a22c4b4c17a3d24a4a0104000000000000d77cc4eef51c2b417c8c7458ddd7dd9d1a863bf0a9e1a30a19020490038017a5c7e474c83302a2c2b5c976dacf3dda7191c757f208000000000000005f7ed983f65723fbb36b9b51abb0dbcd335700000000000000000000000000000086666201251aa4f139d0485ffcf89f01639fd1579a3802f720a0215c720a97071f5065a23642a58275dbca444b00e2e5835185d5d5b2796eb0fe32cf3b0633f58ecc7648c3c6efe82f93a3008052416512eea30ea9472e0b456a652883c0907323cf03be193a05008cdef7a98a1671a1918df310dc4bfd61c3db4819ab1c57b348a8ff1ed36364a20fe846f1cd086058d139ce528425b31c5d08b433562ffb318c1285011f9b78b2401989384311101e452f54661ecdb2514a6ae50dbdd422de0f0f8c670000000000390be79688f80c47314cb1b14afcaa5d23f9032e0ec51f45f447d6a7c798fcf7e60e2180e289410801e4f03a0e140f388f25b92da1025d8409e171a2336ed71cca86eb4658fe06df286e0e20276b0618eeffd05774f15686cd9d3182ca2fec863875f305fed6baf48a594db12582a38cfdffffffffffffff0cf8d920517835fe7d09cfcb624f6931f1cc6f6b71f58de9ddc38e0c43992f6bc57a718d0cfd197b5324b4e05ef1caa96db3ae1f2f2e5791faba2ebbe1a6faf21f2748fb1fb6743c3ca8af4e6b02518c9b7fdc1b5721eb1c3ed98db25536f74ac7861afc94544e52dcb5c60460a05802e3b437ac977bfa26b887a2443e8d559c58187f004eb82b07937df6e96f77ed551926bec4e0188fae10a35d1c5f1768ac6be829bea46f1babc3d74adc31ca71bdab9079e4288881b434484eadde9da6b81802842abd462d546c59d87acc014f81d3414759bda12d2a2c6bc1bfa807bd3101eb227184a61107b6d0618e2a3b842671e084ac3f0ff94dc48b51601247318ab4d1c5106458000000000008000000000000cfee0107e6c2fe8639d926829fdbbd86bf591a8c3c235d8939af9d923f648165881a6c29997234406400b3b1c321cc158dbe17123eace30000000000009ea77cb4d3ca892600000000796de6ae4ae40bdf9a6e8c5dc29562262af9cd54e8e3ecc7e3c8cba0ecc791683496c4e5c1a5729714d9f9031f49b400cd2667b4ea6df54809615a4f973f93e6ccec72f16ff998e29ed99df733680a9d5cea57f99cc139b6ea9014f3000000000000000000000000000000000000feeab45a4046a622b0dceb413e4e39b7317e92cbed46b41ab5115bfb542c933783d750852dfdc6656aaf15e10615a88821f2f1bc53969b52d6852755e7681ad5beda80b38ccd34116b99f50b4fdd967b3f20f260455412b67563e40e323bde9d673fceda0ad6981565c8a183d928903b4f4472dde41b6dcd75314c31e704dfcb222c8359fe88944f852242270c932abfaeece0843d708f5cd25b2a63ae1e79723c1c3c013836b47da0a35d0f34c070000000000000422ae2c148d444dd437a7d2f5e575009bc2d17a199802409329dae8baa58d3de63ad45328a9d4dc1ace543dfe11913c6c6413f8f7a15657d012fea460bb4656a20df1ba26932b0ef49f8ea88d7b4c1289314ba789661640f1b5d7cbae103fa95b0035f1e8e866307d4796eab0992704f9e00be4b1af8dfa9e94ad74e607ea9d7d7a95ed5a15429426abbed8d2c657018305c6f9e5159a5453f958991a908ff4cb2e8cbccb1d3c8daf754e4b01b2edd023e5bfdf293bd28fc1f8885f6edd5a715df4d180247feb08e9e2e5126c48be6098e711f0d86de5d76fdccae34eef9197c32ab4e6fcb52eb9ce18fdb621a75913a97254d783778203ec0bd1a8859683e1d01da4e81fb73bb3b358340a0310bf5ae17b917208da607fd7b125cf99fd3e9056f5184df7570ede94b736ae354b5b8ae2cc473b455f2f86d47c69027676bf1141f316b0f278f1692406572ee82766f8e5ff1cfec2a7a6cab7d0f2582a877c9bd4ca81089373f738d02e6bb4d3df30ac0f041e51ad36e1ff140812baf54b80635cc80963c8f69fa4506f7a30c99d3e538cc0aeafcad86ead38ed949aa3c204aea50e5e0039f01b82595b7dc921a8acc1f76340f060cc9a3acad3451c17dc9b5ca5d10a0cb1708592d1900a046f33761d50895febd9fd58cb132989766cf7c252daac259576ec218e3857e6fa97fe445d1fab51d87302a4bb28a4cfe462ee4849cc6832650188ca187d85509d8beccf9d9cf752368985804195b9fd2faf1aff8248f3981bd55cbbf514cd8365fee72cc7af053e5388ceadadb967ef735181df6a90cab13f58f6d563c9ab4ad37297aecffd8446cb2b14ec36a99af8393e3760d5970ba1debdcbccd54012c559ee2797ff962328aa6a252c0756e396ce4d52937546675203bdf1d6b120acac576523f8b1daa922188bf61536312f90dba92fb380c3c6fb5f9883a2c4dd99a1bac9b7cb25ff2ef9bd58ff97ddfdd2d4bcc371ee82245b57cd91a7fa3479cd339f54a5c422b753cd42d441ea881d46e419312db1f0cccce"], &(0x7f0000000340)='syzkaller\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x8, 0x0, 0xff9d}, 0x48)
+bpf$BPF_PROG_TEST_RUN(0xa, &(0x7f00000000c0)={r0, 0x20e, 0xe40, 0xfd000004, &(0x7f00000004c0)="b9180bb76003070c009e40f086dd1fff31000000330020010010ac14142ee0080001c699da153f0ae0e6e380f60115f683317585d7472ce0ab4439f0f570ff155bc5f73ba3f8bb99a6e8ded1ce485cf058105cd981b42493481cd659416a2e10c9119664f36eb00b333c20c9ec0c222d644bdcb178c1cc53d6960fbb842d6a33dfcde3a1e1848135214baf139753866cadcbe3ce52505e992818cc452bee339d9ab076f484020eaa348a21d7911e4c44905256ec2cc54cca47a198b00c10aff62a4bed43a2ebcad92743fb22c593f28fd4bb7c703cde9cae0569d4c8d9a823f2c12863f7a6c0cf88ed22aae4f6f084508833b61429a25773eedf63dd9f33d430f2a0a30a7761db16fe0f743b95ded898c28aac1256ce2751b3d738899b8b19d9052b7f13ff94", 0x0, 0x31, 0x6000000000000000, 0xfffffffffffffe7e, 0x1d4}, 0x28)
+
+21:27:58 executing program 0:
+bpf$PROG_LOAD(0x5, 0x0, 0x0)
+r0 = bpf$PROG_LOAD(0x5, &(0x7f0000000200)={0xc, 0xe, &(0x7f0000000b40)=ANY=[@ANYBLOB="b702000009000000bfa30000000000000703000000feffff7a0af0fff8ffffff79a4f0ff00000000b7060000ffffffff2e6405000000000065060400010000000404000001007d60b7030000000000006a0a00fe00000000850000000d000000b70000000000000095000000000000002c3f2cc2b7956244cef7baf48e6d2885a09a87507ebfc75b5b0f4e4309ebcdac5f7a860c008cbdd3b4c3b7f28754860c9c781f6410457253e89ad528d985636a86ec0f68f59cd1159a2c2e85d726859a919cc9548a349980d1ccdce27f94bc074c27f81078545c146a0857153b7b8f00034debae58a4ab415b0d7ff0575cc272cd3d7e8d974927676468ff2d86e0ffac94792ed9cf6b40b3cf252a47c05ae8a70d57cc3e067d1867b54d24e20000000000000020009ebf84d3b042d6e432cd080e3b57239f0127473e6ba922aff649609d40b47ec331ccba3cf96f9483ff19a6471bf5abc742d9cbcfb964b11b31034694a6aad86cf08a6c7b2235dc99de9aa3e6b77c7a2877261ed32da90864987f30926c9013eec3b86836ae50447aa5a79f40c235000000453302712c3d8fc4e2b61adb0695e800000000d4f4e91f0000002c33df424d1bafe5725c8a404724f8a4f1cda7997b65954f74097560b91da309b887af2485c2d9ab09b523000000000000000bf7b2ff4602aec1eea200000064881c5630521a08e051374cf05c921a06fb7818000000009dc8d95e0e5b365d10e1004dae58b3b5b89709b0ff47b200000000004000cbef88811dc8c1b27ac7d9a6bb70f60eb9c01dd2fc79b85e4d961498f3a80131d21d856177a2189f45d011ef1da5c6d57bb8fd387ccea9c3899a914e47e82f040000009d81003f927355408f87264797d3fa970949793b94329d580500d1f91c0d22587e05a61e3d8576ca168e88d7a9af95b04a37c27bfffab9abbb31fa8c0080258cfa6d3f166e695f3c56490aeef464d9965d70a50f1282619344f223548e750339643adac1322c87ca253ff2fb1882760d6feab16bacdf83c11816dbe959ebc5ec479c8319f73e2249eab0486b110702a481d3b51976a52303056e800b4ae5acc2dfae60ab958e9f3ef9b4aaa4e8d6166f636a65eb1d672bf2000000cda8462cc9b16624998be65683321e970000000009b8e20762c1bf4a3eb6769f2b23e842bacd9c685edea0ffa3e975424f8ede49e61a4de808a38ba3512d64dc71867df4eee3f1ff791cf7c9862f98b45852e4b2f78721b978a2df2f2a29a387c6f0576b36038f819286eca99a6a434811cf2a117d775fe986a49fb82cf5f15972d5ab18f1045384501adabb20f7b0e15ff47f1744e2341b59034959a1289ba6e243668e6735305707e3de7652bfc5b60c76deff43a1d6fd6a4180ab723735abbeffe7f2ec3a0bb86f9eddfc0f3d1d503d7a54b49e1ae6c5aa620d27e91aa0aa0ed6fcacfc91fbb4c256409e54daefbb107c381fa729ff5f3907d93430da178d685d7730f5e129438a5214f722096d2986334c2576bef69145d3fbd78a9059e454474f92e65828b018174a9f4738b8c71fbdeac26ab95e02f9a847182766964976b1fccdb9f35721e43e33883cf16ed1343fb7429eb395123b0a4262b7023c22039b9002589a378ed4c6267965af78b861bd025312538cec97966b8973d4e299d9802264d06e40ae118e1d242d1128dcedeb44030df12ef68f78215d65f96eb55db8cbcb060008000d988374f85451a694ffe38a1d03916ff10dc82b31c98d42e1a1bda1290de1a499a5a385b31112a48ba3e6d6849914c1788a7aca37177cc341fff44fec5c5e0abae01c439a1b0311e074e81ae9993b5b3459553e4ece78d4c1501c70f5d81e0725d5b273755c0000000000000000aa4234ff82182952a76233d18e7d49638aeb04e7a9e9e7eafb7c255372795d2d192a0a33cab0f5bf2e93e0544fcdf2df2bc6ce96e5a11993d54f97a23754ac828674dbb93c0ad345715be4a13678b01edf76d8a923655800a2c88cce004505ab45d8f5f88aa887bbce5c18970428516f6099bdbb2cd7a2356397f1a0a23e662e2a6c4834400cbaa41c3c574e6e6aefb7a68da5ec1ae49f968bbe0e0bf9878516f553639f5b4828e92019b61f5874be1c7cdd9482df50bc24a8a1fa10d291390eb84e26a2e8dbeaa45604b05a116c1210a7540bf81005044273f5a8ffc538db289350eb248e483bd8920efcf30a798c2b636243e0a37262ca47dfeefa753ba528f7ba77e825051ce69b4475d7d714ba0c636e6ae9f710411d30ef424aeaabe057c7df6ff8f767bcd9012e1047c686f5ccb76ab3a5df53cbc22ba7ea8f6a8e220bb4d83de1e4dc19d6c1be841503850803bc2c2d5e0e34270a7f1cca0c6c53a8e5f891f7a793a70da62d6d88fbb90d220acc687931b42d6be83ab870da3c0a567f5e65ec0457f4ad2a4ec0b671b36388afd5520a8483a4b11f7d02a409315f0f9e59f47668d68a74838d6976e12fd45200014041dffacbf60892ec8bd7560686f137a806d3dfaba900b47cac62f828342fff009adb5b2251461a1b9d6ba625b8fe04e69a1a4be2696f0000000086e172932e03000000000000005942e1b9d6dc28ab8e19e1111dd893e801015642faf21eef40d6e7de3ef62c4bc5ff17e7aeb2841098f845d1cc9ec4eee79c298fb0ba939b13707044e2e9cc0d350438c1c8c6bb9a38c6ac5ca0d9cf1f3d6915f25cb26edfc28b3079b97df32601240e454db103fb0c4a143673a3f160d3a7b83ecd0509ce9eba0c7bf7843799b1b56a234f9eaab8a3f14f1472bb6aaeb8ac9ee4054605558ab31f339f6a4caf2ee2fd01f34dca3300000000000000000000000000000000f59f8e6e00000000c44130098d833a24000000000095e6f945ba9a941cef5e70b8c152321e24b5b29bcf374dcf5a29a35d76e6e2bf8df95462690a4fc9ec8129e92b6ebb4b40a992a75d3c595426ae40d0bfc87db24d856359079b29b3c374d081c300b2cfaa596d24e800ef8e2201f2fb7a9946f89f9f31f7cbd603fd7f8898c70b5c65f2e28f22e1a79a6af3a54861b07f124642e98389557affbdede09b5566a4a1ee73b20846810030a754acddcdafe3ceeeebc0b5f2fedfe7d198e3067f3dbac9441a9ab8409cbbb7e15b9ae3944097de34de2001c8533a3766e6e4c4c4702ccb932a27a3962814cd6aa8fc684beeaa3932efae3a9052be8eec1e95f6ad8d41dd34829503ba4b66e27154cb6e34aa13450522df1723130b6fe347c93f00e40e293c98d849a33f773c743728992f40faccd5c23130a1c6bfd6fc661bca1598137ddd1090ded672f5a48a40cab3f640c8241a364cbdd3f188eec7da7bccafbd5bf28a46f0eecc6b550471b0b0770c6a5a411c0e0b19e15a461e7c6833ba936e214b013f2819ec6572a43b5cd32b11d7e4f8dcf8f7820a17b7b2ee6178a03351dd25091e46bfd82a3979b9cad109fd6217cd52aa81bdabd50826a674bd16b8f7e6aed12a305366599f5f029a7b24558c027518c669760500002f1c19d16a6f391906000000cc0bbbfb8c698ecc137d96711100e0108d3bd2afed0b279ebf0527552a9331e646c424b14ffbb815622bfd2f635855bed1b164d0a56bd104be069854111c5b26ec3c652b5f0a6b9676dae987ec23456ba05a4dfb15321ef6b76e7e547a688c67ab531cfc784c9f940d9fb0464a6cce635e14b80dc5c1c64e75e6bd5355d84f8df272f18f58c570e7afd83ee77f157c146aa747b728969aeb4aba1d8f9de1b3fb8ab6ea50e884c2ea98e6400bf0c5ae2887cd1da0e57ccfdf5eca2b455247efcc13102846c0a85f20c80007c0ce6efce627b95b8ad3003385de97101678fb2163ecea6e70a77a6fbc089e31a5ccece932229b8f79faa6863d6857c3d9a9710f9f8ad16eeb8342278f311cbc226498028234d21466892983378fe64acbb44f694cd78e43c74aa75505cb1c91b189f8f89f233a05f5cd4e173a373178557843dd705268f74a9e5429945503195aefd6706b584d8408c9652b3fe68500747f7ee8375fa559c3ad195d3795df1a8364cd13acc3256ee4634c73eeb6954d0fcf09ab84df0b8900e0c6fea2ccb600ae7a4b128cae19df160e7c207b89132d1d5bdc9ffc79f0549b82df521817651d5fead5128205b92ccdccc69407ab556217af277af911dbd456dfc43dd061b6c91485dcc208cf0b3d0bf851de413f5de5ec015e296914afab6411109355e027ce04990d9aae251b9deb11b7db45b9f15b7b55d8fdbedd9e6cf891205694f02be8b9ea8ecd41308a0e1b93ae3435bfa88b440b1f701b4d0fc49c82193f27f8023b630ea97edbf3bf421a0a1a2b4ac7bb30bcd1cdd172c0df37408fd6827bb03e8742fc1c7a2befd1299928c5f79e846a8dc7ca648d960a759e6711b69776896a9656d59af6d44bc5348229fa84ae78af8421a22c4b4c17a3d24a4a0104000000000000d77cc4eef51c2b417c8c7458ddd7dd9d1a863bf0a9e1a30a19020490038017a5c7e474c83302a2c2b5c976dacf3dda7191c757f208000000000000005f7ed983f65723fbb36b9b51abb0dbcd335700000000000000000000000000000086666201251aa4f139d0485ffcf89f01639fd1579a3802f720a0215c720a97071f5065a23642a58275dbca444b00e2e5835185d5d5b2796eb0fe32cf3b0633f58ecc7648c3c6efe82f93a3008052416512eea30ea9472e0b456a652883c0907323cf03be193a05008cdef7a98a1671a1918df310dc4bfd61c3db4819ab1c57b348a8ff1ed36364a20fe846f1cd086058d139ce528425b31c5d08b433562ffb318c1285011f9b78b2401989384311101e452f54661ecdb2514a6ae50dbdd422de0f0f8c670000000000390be79688f80c47314cb1b14afcaa5d23f9032e0ec51f45f447d6a7c798fcf7e60e2180e289410801e4f03a0e140f388f25b92da1025d8409e171a2336ed71cca86eb4658fe06df286e0e20276b0618eeffd05774f15686cd9d3182ca2fec863875f305fed6baf48a594db12582a38cfdffffffffffffff0cf8d920517835fe7d09cfcb624f6931f1cc6f6b71f58de9ddc38e0c43992f6bc57a718d0cfd197b5324b4e05ef1caa96db3ae1f2f2e5791faba2ebbe1a6faf21f2748fb1fb6743c3ca8af4e6b02518c9b7fdc1b5721eb1c3ed98db25536f74ac7861afc94544e52dcb5c60460a05802e3b437ac977bfa26b887a2443e8d559c58187f004eb82b07937df6e96f77ed551926bec4e0188fae10a35d1c5f1768ac6be829bea46f1babc3d74adc31ca71bdab9079e4288881b434484eadde9da6b81802842abd462d546c59d87acc014f81d3414759bda12d2a2c6bc1bfa807bd3101eb227184a61107b6d0618e2a3b842671e084ac3f0ff94dc48b51601247318ab4d1c5106458000000000008000000000000cfee0107e6c2fe8639d926829fdbbd86bf591a8c3c235d8939af9d923f648165881a6c29997234406400b3b1c321cc158dbe17123eace30000000000009ea77cb4d3ca892600000000796de6ae4ae40bdf9a6e8c5dc29562262af9cd54e8e3ecc7e3c8cba0ecc791683496c4e5c1a5729714d9f9031f49b400cd2667b4ea6df54809615a4f973f93e6ccec72f16ff998e29ed99df733680a9d5cea57f99cc139b6ea9014f3000000000000000000000000000000000000feeab45a4046a622b0dceb413e4e39b7317e92cbed46b41ab5115bfb542c933783d750852dfdc6656aaf15e10615a88821f2f1bc53969b52d6852755e7681ad5beda80b38ccd34116b99f50b4fdd967b3f20f260455412b67563e40e323bde9d673fceda0ad6981565c8a183d928903b4f4472dde41b6dcd75314c31e704dfcb222c8359fe88944f852242270c932abfaeece0843d708f5cd25b2a63ae1e79723c1c3c013836b47da0a35d0f34c070000000000000422ae2c148d444dd437a7d2f5e575009bc2d17a199802409329dae8baa58d3de63ad45328a9d4dc1ace543dfe11913c6c6413f8f7a15657d012fea460bb4656a20df1ba26932b0ef49f8ea88d7b4c1289314ba789661640f1b5d7cbae103fa95b0035f1e8e866307d4796eab0992704f9e00be4b1af8dfa9e94ad74e607ea9d7d7a95ed5a15429426abbed8d2c657018305c6f9e5159a5453f958991a908ff4cb2e8cbccb1d3c8daf754e4b01b2edd023e5bfdf293bd28fc1f8885f6edd5a715df4d180247feb08e9e2e5126c48be6098e711f0d86de5d76fdccae34eef9197c32ab4e6fcb52eb9ce18fdb621a75913a97254d783778203ec0bd1a8859683e1d01da4e81fb73bb3b358340a0310bf5ae17b917208da607fd7b125cf99fd3e9056f5184df7570ede94b736ae354b5b8ae2cc473b455f2f86d47c69027676bf1141f316b0f278f1692406572ee82766f8e5ff1cfec2a7a6cab7d0f2582a877c9bd4ca81089373f738d02e6bb4d3df30ac0f041e51ad36e1ff140812baf54b80635cc80963c8f69fa4506f7a30c99d3e538cc0aeafcad86ead38ed949aa3c204aea50e5e0039f01b82595b7dc921a8acc1f76340f060cc9a3acad3451c17dc9b5ca5d10a0cb1708592d1900a046f33761d50895febd9fd58cb132989766cf7c252daac259576ec218e3857e6fa97fe445d1fab51d87302a4bb28a4cfe462ee4849cc6832650188ca187d85509d8beccf9d9cf752368985804195b9fd2faf1aff8248f3981bd55cbbf514cd8365fee72cc7af053e5388ceadadb967ef735181df6a90cab13f58f6d563c9ab4ad37297aecffd8446cb2b14ec36a99af8393e3760d5970ba1debdcbccd54012c559ee2797ff962328aa6a252c0756e396ce4d52937546675203bdf1d6b120acac576523f8b1daa922188bf61536312f90dba92fb380c3c6fb5f9883a2c4dd99a1bac9b7cb25ff2ef9bd58ff97ddfdd2d4bcc371ee82245b57cd91a7fa3479cd339f54a5c422b753cd42d441ea881d46e419312db1f0cccce"], &(0x7f0000000340)='syzkaller\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x8, 0x0, 0xff9d}, 0x48)
+bpf$BPF_PROG_TEST_RUN(0xa, &(0x7f00000000c0)={r0, 0x20e, 0xe40, 0xfd000004, &(0x7f00000004c0)="b9180bb76003070c009e40f086dd1fff31000000330020010010ac14142ee0080001c699da153f0ae0e6e380f60115f683317585d7472ce0ab4439f0f570ff155bc5f73ba3f8bb99a6e8ded1ce485cf058105cd981b42493481cd659416a2e10c9119664f36eb00b333c20c9ec0c222d644bdcb178c1cc53d6960fbb842d6a33dfcde3a1e1848135214baf139753866cadcbe3ce52505e992818cc452bee339d9ab076f484020eaa348a21d7911e4c44905256ec2cc54cca47a198b00c10aff62a4bed43a2ebcad92743fb22c593f28fd4bb7c703cde9cae0569d4c8d9a823f2c12863f7a6c0cf88ed22aae4f6f084508833b61429a25773eedf63dd9f33d430f2a0a30a7761db16fe0f743b95ded898c28aac1256ce2751b3d738899b8b19d9052b7f13ff94", 0x0, 0x31, 0x6000000000000000, 0xfffffffffffffe7e, 0x1d4}, 0x28)
+
+21:28:00 executing program 0:
+syz_open_dev$vim2m(&(0x7f0000000080), 0x9, 0x2)
+r0 = syz_open_procfs(0x0, &(0x7f00000002c0)='fd/3\x00')
+r1 = syz_open_procfs(0x0, &(0x7f00000000c0)='fd/3\x00')
+mount$9p_fd(0x0, &(0x7f0000000300)='.\x00', &(0x7f0000000080), 0x0, &(0x7f0000000100)={'trans=fd,', {'rfdno', 0x3d, r0}, 0x2c, {'wfdno', 0x3d, r1}})
+
+[  266.140265][    T7] kernel read not supported for file /video9 (pid: 7 comm: kworker/0:0)
+[  266.715996][ T1219] ieee802154 phy0 wpan0: encryption failed: -22
+[  266.716803][ T1219] ieee802154 phy1 wpan1: encryption failed: -22
+21:28:01 executing program 0:
+syz_open_dev$vim2m(&(0x7f0000000080), 0x9, 0x2)
+r0 = syz_open_procfs(0x0, &(0x7f00000002c0)='fd/3\x00')
+r1 = syz_open_procfs(0x0, &(0x7f00000000c0)='fd/3\x00')
+mount$9p_fd(0x0, &(0x7f0000000300)='.\x00', &(0x7f0000000080), 0x0, &(0x7f0000000100)={'trans=fd,', {'rfdno', 0x3d, r0}, 0x2c, {'wfdno', 0x3d, r1}})
+
+2024/05/22 21:28:01 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+2024/05/22 21:28:01 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+2024/05/22 21:28:01 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+2024/05/22 21:28:01 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x1bb7, Ip:0x81bb4bc6}
+2024/05/22 21:28:01 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x1bf4, Ip:0x81bb4bd8}
+2024/05/22 21:28:01 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2b09, Ip:0x8191ced7}
+2024/05/22 21:28:01 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 21:28:01 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x363c, Ip:0x8191cec7}
+2024/05/22 21:28:01 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+[  267.788902][ T4452] kernel read not supported for file /video9 (pid: 4452 comm: kworker/0:4)
+21:28:03 executing program 0:
+syz_open_dev$vim2m(&(0x7f0000000080), 0x9, 0x2)
+r0 = syz_open_procfs(0x0, &(0x7f00000002c0)='fd/3\x00')
+r1 = syz_open_procfs(0x0, &(0x7f00000000c0)='fd/3\x00')
+mount$9p_fd(0x0, &(0x7f0000000300)='.\x00', &(0x7f0000000080), 0x0, &(0x7f0000000100)={'trans=fd,', {'rfdno', 0x3d, r0}, 0x2c, {'wfdno', 0x3d, r1}})
+
+[  269.315522][    T7] kernel read not supported for file /video9 (pid: 7 comm: kworker/0:0)
+21:28:05 executing program 0:
+syz_open_dev$vim2m(&(0x7f0000000080), 0x9, 0x2)
+r0 = syz_open_procfs(0x0, &(0x7f00000002c0)='fd/3\x00')
+r1 = syz_open_procfs(0x0, &(0x7f00000000c0)='fd/3\x00')
+mount$9p_fd(0x0, &(0x7f0000000300)='.\x00', &(0x7f0000000080), 0x0, &(0x7f0000000100)={'trans=fd,', {'rfdno', 0x3d, r0}, 0x2c, {'wfdno', 0x3d, r1}})
+
+[  270.814469][    T7] kernel read not supported for file /video9 (pid: 7 comm: kworker/0:0)
+21:28:06 executing program 0:
+r0 = socket$kcm(0x10, 0x2, 0x0)
+sendmsg$inet(r0, &(0x7f0000000080)={0x0, 0x74, &(0x7f0000000100)=[{&(0x7f00000001c0)="5c00000012006bab9a3fe3d86e17aa0a046b876c1d0048007ea60864160af36504001a0038001d001931a0e69ee517d34460bc06000000a705251e6182949a3651f60a84c9f4d4938037e70e4509c5bb", 0x33fe0}], 0x1, 0x0, 0x0, 0x1f00c00e}, 0x0)
+recvmsg$kcm(r0, &(0x7f0000001ec0)={0x0, 0x0, 0x0}, 0x0)
+recvmsg$kcm(r0, &(0x7f00000002c0)={0x0, 0x0, &(0x7f00000005c0)=[{&(0x7f0000001f00)=""/4100, 0x1004}, {&(0x7f00000003c0)=""/162, 0xa2}, {&(0x7f0000000180)=""/54, 0x36}, {&(0x7f0000000040)=""/20, 0x14}], 0x4}, 0x0)
+recvmsg$kcm(r0, &(0x7f0000003640)={0x0, 0x0, 0x0}, 0x0)
+
+[  272.912153][ T8380] netlink: 'syz-executor.0': attribute type 29 has an invalid length.
+[  272.913978][ T8380] netlink: 'syz-executor.0': attribute type 29 has an invalid length.
+[  272.916617][ T8380] netlink: 'syz-executor.0': attribute type 29 has an invalid length.
+[  272.919177][ T8380] netlink: 'syz-executor.0': attribute type 29 has an invalid length.
+[  272.921529][ T8380] netlink: 'syz-executor.0': attribute type 29 has an invalid length.
+21:28:08 executing program 0:
+r0 = socket$kcm(0x10, 0x2, 0x0)
+sendmsg$inet(r0, &(0x7f0000000080)={0x0, 0x74, &(0x7f0000000100)=[{&(0x7f00000001c0)="5c00000012006bab9a3fe3d86e17aa0a046b876c1d0048007ea60864160af36504001a0038001d001931a0e69ee517d34460bc06000000a705251e6182949a3651f60a84c9f4d4938037e70e4509c5bb", 0x33fe0}], 0x1, 0x0, 0x0, 0x1f00c00e}, 0x0)
+recvmsg$kcm(r0, &(0x7f0000001ec0)={0x0, 0x0, 0x0}, 0x0)
+recvmsg$kcm(r0, &(0x7f00000002c0)={0x0, 0x0, &(0x7f00000005c0)=[{&(0x7f0000001f00)=""/4100, 0x1004}, {&(0x7f00000003c0)=""/162, 0xa2}, {&(0x7f0000000180)=""/54, 0x36}, {&(0x7f0000000040)=""/20, 0x14}], 0x4}, 0x0)
+recvmsg$kcm(r0, &(0x7f0000003640)={0x0, 0x0, 0x0}, 0x0)
+
+2024/05/22 21:28:08 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x30be, Ip:0x85ffa1f0}
+2024/05/22 21:28:08 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 21:28:08 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3e9b, Ip:0x833c12dd}
+2024/05/22 21:28:08 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x4de3, Ip:0x85ffa202}
+2024/05/22 21:28:08 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x3d8, Ip:0x862cd825}
+2024/05/22 21:28:08 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x59bd, Ip:0x835b1664}
+2024/05/22 21:28:08 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x30be, Ip:0x85ffa1f0}
+2024/05/22 21:28:08 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 21:28:08 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x4de3, Ip:0x85ffa202}
+2024/05/22 21:28:08 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x59bd, Ip:0x835b1664}
+2024/05/22 21:28:08 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x30be, Ip:0x85ffa1f0}
+2024/05/22 21:28:08 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 21:28:08 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x4de3, Ip:0x85ffa202}
+2024/05/22 21:28:08 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x30be, Ip:0x85ffa1f0}
+2024/05/22 21:28:08 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 21:28:08 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x4de3, Ip:0x85ffa202}
+2024/05/22 21:28:08 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x59bd, Ip:0x835b1664}
+[  274.494784][ T8383] netlink: 'syz-executor.0': attribute type 29 has an invalid length.
+[  274.496364][ T8383] netlink: 'syz-executor.0': attribute type 29 has an invalid length.
+[  274.499744][ T8383] netlink: 'syz-executor.0': attribute type 29 has an invalid length.
+[  274.502406][ T8383] netlink: 'syz-executor.0': attribute type 29 has an invalid length.
+[  274.509914][ T8383] netlink: 'syz-executor.0': attribute type 29 has an invalid length.
+21:28:10 executing program 0:
+r0 = socket$kcm(0x10, 0x2, 0x0)
+sendmsg$inet(r0, &(0x7f0000000080)={0x0, 0x74, &(0x7f0000000100)=[{&(0x7f00000001c0)="5c00000012006bab9a3fe3d86e17aa0a046b876c1d0048007ea60864160af36504001a0038001d001931a0e69ee517d34460bc06000000a705251e6182949a3651f60a84c9f4d4938037e70e4509c5bb", 0x33fe0}], 0x1, 0x0, 0x0, 0x1f00c00e}, 0x0)
+recvmsg$kcm(r0, &(0x7f0000001ec0)={0x0, 0x0, 0x0}, 0x0)
+recvmsg$kcm(r0, &(0x7f00000002c0)={0x0, 0x0, &(0x7f00000005c0)=[{&(0x7f0000001f00)=""/4100, 0x1004}, {&(0x7f00000003c0)=""/162, 0xa2}, {&(0x7f0000000180)=""/54, 0x36}, {&(0x7f0000000040)=""/20, 0x14}], 0x4}, 0x0)
+recvmsg$kcm(r0, &(0x7f0000003640)={0x0, 0x0, 0x0}, 0x0)
+
+21:28:12 executing program 0:
+r0 = socket$kcm(0x10, 0x2, 0x0)
+sendmsg$inet(r0, &(0x7f0000000080)={0x0, 0x74, &(0x7f0000000100)=[{&(0x7f00000001c0)="5c00000012006bab9a3fe3d86e17aa0a046b876c1d0048007ea60864160af36504001a0038001d001931a0e69ee517d34460bc06000000a705251e6182949a3651f60a84c9f4d4938037e70e4509c5bb", 0x33fe0}], 0x1, 0x0, 0x0, 0x1f00c00e}, 0x0)
+recvmsg$kcm(r0, &(0x7f0000001ec0)={0x0, 0x0, 0x0}, 0x0)
+recvmsg$kcm(r0, &(0x7f00000002c0)={0x0, 0x0, &(0x7f00000005c0)=[{&(0x7f0000001f00)=""/4100, 0x1004}, {&(0x7f00000003c0)=""/162, 0xa2}, {&(0x7f0000000180)=""/54, 0x36}, {&(0x7f0000000040)=""/20, 0x14}], 0x4}, 0x0)
+recvmsg$kcm(r0, &(0x7f0000003640)={0x0, 0x0, 0x0}, 0x0)
+
+21:28:13 executing program 0:
+r0 = socket$kcm(0x10, 0x2, 0x0)
+sendmsg$inet(r0, &(0x7f0000000080)={0x0, 0x74, &(0x7f0000000100)=[{&(0x7f00000001c0)="5c00000012006bab9a3fe3d86e17aa0a046b876c1d0048007ea60864160af36504001a0038001d001931a0e69ee517d34460bc06000000a705251e6182949a3651f60a84c9f4d4938037e70e4509c5bb", 0x33fe0}], 0x1, 0x0, 0x0, 0x1f00c00e}, 0x0)
+recvmsg$kcm(r0, &(0x7f0000001ec0)={0x0, 0x0, 0x0}, 0x0)
+recvmsg$kcm(r0, &(0x7f00000002c0)={0x0, 0x0, &(0x7f00000005c0)=[{&(0x7f0000001f00)=""/4100, 0x1004}, {&(0x7f00000003c0)=""/162, 0xa2}, {&(0x7f0000000180)=""/54, 0x36}, {&(0x7f0000000040)=""/20, 0x14}], 0x4}, 0x0)
+recvmsg$kcm(r0, &(0x7f0000003640)={0x0, 0x0, 0x0}, 0x0)
+
+[  279.489287][ T8392] validate_nla: 10 callbacks suppressed
+[  279.489302][ T8392] netlink: 'syz-executor.0': attribute type 29 has an invalid length.
+[  279.491566][ T8392] netlink: 'syz-executor.0': attribute type 29 has an invalid length.
+[  279.498682][ T8392] netlink: 'syz-executor.0': attribute type 29 has an invalid length.
+[  279.501432][ T8392] netlink: 'syz-executor.0': attribute type 29 has an invalid length.
+[  279.508471][ T8392] netlink: 'syz-executor.0': attribute type 29 has an invalid length.
+21:28:15 executing program 0:
+r0 = socket$kcm(0x10, 0x2, 0x0)
+sendmsg$inet(r0, &(0x7f0000000080)={0x0, 0x74, &(0x7f0000000100)=[{&(0x7f00000001c0)="5c00000012006bab9a3fe3d86e17aa0a046b876c1d0048007ea60864160af36504001a0038001d001931a0e69ee517d34460bc06000000a705251e6182949a3651f60a84c9f4d4938037e70e4509c5bb", 0x33fe0}], 0x1, 0x0, 0x0, 0x1f00c00e}, 0x0)
+recvmsg$kcm(r0, &(0x7f0000001ec0)={0x0, 0x0, 0x0}, 0x0)
+recvmsg$kcm(r0, &(0x7f00000002c0)={0x0, 0x0, &(0x7f00000005c0)=[{&(0x7f0000001f00)=""/4100, 0x1004}, {&(0x7f00000003c0)=""/162, 0xa2}, {&(0x7f0000000180)=""/54, 0x36}, {&(0x7f0000000040)=""/20, 0x14}], 0x4}, 0x0)
+recvmsg$kcm(r0, &(0x7f0000003640)={0x0, 0x0, 0x0}, 0x0)
+
+[  281.057047][ T8395] netlink: 'syz-executor.0': attribute type 29 has an invalid length.
+[  281.058666][ T8395] netlink: 'syz-executor.0': attribute type 29 has an invalid length.
+[  281.062201][ T8395] netlink: 'syz-executor.0': attribute type 29 has an invalid length.
+[  281.068610][ T8395] netlink: 'syz-executor.0': attribute type 29 has an invalid length.
+[  281.071248][ T8395] netlink: 'syz-executor.0': attribute type 29 has an invalid length.
+21:28:16 executing program 0:
+r0 = socket$kcm(0x10, 0x2, 0x0)
+sendmsg$inet(r0, &(0x7f0000000080)={0x0, 0x74, &(0x7f0000000100)=[{&(0x7f00000001c0)="5c00000012006bab9a3fe3d86e17aa0a046b876c1d0048007ea60864160af36504001a0038001d001931a0e69ee517d34460bc06000000a705251e6182949a3651f60a84c9f4d4938037e70e4509c5bb", 0x33fe0}], 0x1, 0x0, 0x0, 0x1f00c00e}, 0x0)
+recvmsg$kcm(r0, &(0x7f0000001ec0)={0x0, 0x0, 0x0}, 0x0)
+recvmsg$kcm(r0, &(0x7f00000002c0)={0x0, 0x0, &(0x7f00000005c0)=[{&(0x7f0000001f00)=""/4100, 0x1004}, {&(0x7f00000003c0)=""/162, 0xa2}, {&(0x7f0000000180)=""/54, 0x36}, {&(0x7f0000000040)=""/20, 0x14}], 0x4}, 0x0)
+recvmsg$kcm(r0, &(0x7f0000003640)={0x0, 0x0, 0x0}, 0x0)
+
+21:28:18 executing program 0:
+r0 = socket$kcm(0x10, 0x2, 0x0)
+sendmsg$inet(r0, &(0x7f0000000080)={0x0, 0x74, &(0x7f0000000100)=[{&(0x7f00000001c0)="5c00000012006bab9a3fe3d86e17aa0a046b876c1d0048007ea60864160af36504001a0038001d001931a0e69ee517d34460bc06000000a705251e6182949a3651f60a84c9f4d4938037e70e4509c5bb", 0x33fe0}], 0x1, 0x0, 0x0, 0x1f00c00e}, 0x0)
+recvmsg$kcm(r0, &(0x7f0000001ec0)={0x0, 0x0, 0x0}, 0x0)
+recvmsg$kcm(r0, &(0x7f00000002c0)={0x0, 0x0, &(0x7f00000005c0)=[{&(0x7f0000001f00)=""/4100, 0x1004}, {&(0x7f00000003c0)=""/162, 0xa2}, {&(0x7f0000000180)=""/54, 0x36}, {&(0x7f0000000040)=""/20, 0x14}], 0x4}, 0x0)
+recvmsg$kcm(r0, &(0x7f0000003640)={0x0, 0x0, 0x0}, 0x0)
+
+21:28:19 executing program 0:
+r0 = socket$kcm(0x10, 0x2, 0x0)
+sendmsg$inet(r0, &(0x7f0000000080)={0x0, 0x74, &(0x7f0000000100)=[{&(0x7f00000001c0)="5c00000012006bab9a3fe3d86e17aa0a046b876c1d0048007ea60864160af36504001a0038001d001931a0e69ee517d34460bc06000000a705251e6182949a3651f60a84c9f4d4938037e70e4509c5bb", 0x33fe0}], 0x1, 0x0, 0x0, 0x1f00c00e}, 0x0)
+recvmsg$kcm(r0, &(0x7f0000001ec0)={0x0, 0x0, 0x0}, 0x0)
+recvmsg$kcm(r0, &(0x7f00000002c0)={0x0, 0x0, &(0x7f00000005c0)=[{&(0x7f0000001f00)=""/4100, 0x1004}, {&(0x7f00000003c0)=""/162, 0xa2}, {&(0x7f0000000180)=""/54, 0x36}, {&(0x7f0000000040)=""/20, 0x14}], 0x4}, 0x0)
+recvmsg$kcm(r0, &(0x7f0000003640)={0x0, 0x0, 0x0}, 0x0)
+
+[  285.658825][ T8404] validate_nla: 10 callbacks suppressed
+[  285.658839][ T8404] netlink: 'syz-executor.0': attribute type 29 has an invalid length.
+[  285.661078][ T8404] netlink: 'syz-executor.0': attribute type 29 has an invalid length.
+[  285.668876][ T8404] netlink: 'syz-executor.0': attribute type 29 has an invalid length.
+[  285.671518][ T8404] netlink: 'syz-executor.0': attribute type 29 has an invalid length.
+[  285.676917][ T8404] netlink: 'syz-executor.0': attribute type 29 has an invalid length.
+21:28:21 executing program 0:
+r0 = socket$kcm(0x10, 0x2, 0x0)
+sendmsg$inet(r0, &(0x7f0000000080)={0x0, 0x74, &(0x7f0000000100)=[{&(0x7f00000001c0)="5c00000012006bab9a3fe3d86e17aa0a046b876c1d0048007ea60864160af36504001a0038001d001931a0e69ee517d34460bc06000000a705251e6182949a3651f60a84c9f4d4938037e70e4509c5bb", 0x33fe0}], 0x1, 0x0, 0x0, 0x1f00c00e}, 0x0)
+recvmsg$kcm(r0, &(0x7f0000001ec0)={0x0, 0x0, 0x0}, 0x0)
+recvmsg$kcm(r0, &(0x7f00000002c0)={0x0, 0x0, &(0x7f00000005c0)=[{&(0x7f0000001f00)=""/4100, 0x1004}, {&(0x7f00000003c0)=""/162, 0xa2}, {&(0x7f0000000180)=""/54, 0x36}, {&(0x7f0000000040)=""/20, 0x14}], 0x4}, 0x0)
+recvmsg$kcm(r0, &(0x7f0000003640)={0x0, 0x0, 0x0}, 0x0)
+
+[  287.224729][ T8407] netlink: 'syz-executor.0': attribute type 29 has an invalid length.
+[  287.226273][ T8407] netlink: 'syz-executor.0': attribute type 29 has an invalid length.
+[  287.229463][ T8407] netlink: 'syz-executor.0': attribute type 29 has an invalid length.
+[  287.231900][ T8407] netlink: 'syz-executor.0': attribute type 29 has an invalid length.
+[  287.237535][ T8407] netlink: 'syz-executor.0': attribute type 29 has an invalid length.
+21:28:22 executing program 0:
+r0 = socket$kcm(0x10, 0x2, 0x0)
+sendmsg$inet(r0, &(0x7f0000000080)={0x0, 0x74, &(0x7f0000000100)=[{&(0x7f00000001c0)="5c00000012006bab9a3fe3d86e17aa0a046b876c1d0048007ea60864160af36504001a0038001d001931a0e69ee517d34460bc06000000a705251e6182949a3651f60a84c9f4d4938037e70e4509c5bb", 0x33fe0}], 0x1, 0x0, 0x0, 0x1f00c00e}, 0x0)
+recvmsg$kcm(r0, &(0x7f0000001ec0)={0x0, 0x0, 0x0}, 0x0)
+recvmsg$kcm(r0, &(0x7f00000002c0)={0x0, 0x0, &(0x7f00000005c0)=[{&(0x7f0000001f00)=""/4100, 0x1004}, {&(0x7f00000003c0)=""/162, 0xa2}, {&(0x7f0000000180)=""/54, 0x36}, {&(0x7f0000000040)=""/20, 0x14}], 0x4}, 0x0)
+recvmsg$kcm(r0, &(0x7f0000003640)={0x0, 0x0, 0x0}, 0x0)
+
+21:28:24 executing program 0:
+r0 = socket$kcm(0x10, 0x2, 0x0)
+sendmsg$inet(r0, &(0x7f0000000080)={0x0, 0x74, &(0x7f0000000100)=[{&(0x7f00000001c0)="5c00000012006bab9a3fe3d86e17aa0a046b876c1d0048007ea60864160af36504001a0038001d001931a0e69ee517d34460bc06000000a705251e6182949a3651f60a84c9f4d4938037e70e4509c5bb", 0x33fe0}], 0x1, 0x0, 0x0, 0x1f00c00e}, 0x0)
+recvmsg$kcm(r0, &(0x7f0000001ec0)={0x0, 0x0, 0x0}, 0x0)
+recvmsg$kcm(r0, &(0x7f00000002c0)={0x0, 0x0, &(0x7f00000005c0)=[{&(0x7f0000001f00)=""/4100, 0x1004}, {&(0x7f00000003c0)=""/162, 0xa2}, {&(0x7f0000000180)=""/54, 0x36}, {&(0x7f0000000040)=""/20, 0x14}], 0x4}, 0x0)
+recvmsg$kcm(r0, &(0x7f0000003640)={0x0, 0x0, 0x0}, 0x0)
+
+21:28:25 executing program 0:
+r0 = socket$kcm(0x10, 0x2, 0x0)
+sendmsg$inet(r0, &(0x7f0000000080)={0x0, 0x74, &(0x7f0000000100)=[{&(0x7f00000001c0)="5c00000012006bab9a3fe3d86e17aa0a046b876c1d0048007ea60864160af36504001a0038001d001931a0e69ee517d34460bc06000000a705251e6182949a3651f60a84c9f4d4938037e70e4509c5bb", 0x33fe0}], 0x1, 0x0, 0x0, 0x1f00c00e}, 0x0)
+recvmsg$kcm(r0, &(0x7f0000001ec0)={0x0, 0x0, 0x0}, 0x0)
+recvmsg$kcm(r0, &(0x7f00000002c0)={0x0, 0x0, &(0x7f00000005c0)=[{&(0x7f0000001f00)=""/4100, 0x1004}, {&(0x7f00000003c0)=""/162, 0xa2}, {&(0x7f0000000180)=""/54, 0x36}, {&(0x7f0000000040)=""/20, 0x14}], 0x4}, 0x0)
+recvmsg$kcm(r0, &(0x7f0000003640)={0x0, 0x0, 0x0}, 0x0)
+
+[  291.709047][ T8416] validate_nla: 10 callbacks suppressed
+[  291.709060][ T8416] netlink: 'syz-executor.0': attribute type 29 has an invalid length.
+[  291.711332][ T8416] netlink: 'syz-executor.0': attribute type 29 has an invalid length.
+[  291.718141][ T8416] netlink: 'syz-executor.0': attribute type 29 has an invalid length.
+[  291.720736][ T8416] netlink: 'syz-executor.0': attribute type 29 has an invalid length.
+[  291.726991][ T8416] netlink: 'syz-executor.0': attribute type 29 has an invalid length.
+21:28:27 executing program 0:
+r0 = socket$packet(0x11, 0x3, 0x300)
+ioctl$sock_SIOCGIFINDEX(r0, 0x8933, &(0x7f00000001c0)={'gretap0\x00', <r1=>0x0})
+setsockopt$packet_int(r0, 0x107, 0xf, &(0x7f0000000000)=0xf3f, 0x4)
+sendto$packet(r0, &(0x7f00000000c0)="3f030e00e6e8120006001e0089e9aaa911d7c2290f0086dd1327c9167c643c4a1b7880610cc96655b1b141ab059b24d0fbc50df71548a3f6c5609063382a0c1511fdf9435e3ffe46", 0xe90c, 0x0, &(0x7f0000000540)={0xc9, 0x0, r1, 0x1, 0x0, 0x6, @multicast}, 0x14)
+
+21:28:28 executing program 0:
+r0 = socket$packet(0x11, 0x3, 0x300)
+ioctl$sock_SIOCGIFINDEX(r0, 0x8933, &(0x7f00000001c0)={'gretap0\x00', <r1=>0x0})
+setsockopt$packet_int(r0, 0x107, 0xf, &(0x7f0000000000)=0xf3f, 0x4)
+sendto$packet(r0, &(0x7f00000000c0)="3f030e00e6e8120006001e0089e9aaa911d7c2290f0086dd1327c9167c643c4a1b7880610cc96655b1b141ab059b24d0fbc50df71548a3f6c5609063382a0c1511fdf9435e3ffe46", 0xe90c, 0x0, &(0x7f0000000540)={0xc9, 0x0, r1, 0x1, 0x0, 0x6, @multicast}, 0x14)
+
+2024/05/22 21:28:28 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2297, Ip:0x85ffe255}
+2024/05/22 21:28:28 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x30be, Ip:0x85ffe243}
+2024/05/22 21:28:28 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 21:28:28 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 21:28:28 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x4a2d, Ip:0x869c65c8}
+2024/05/22 21:28:28 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x5629, Ip:0x869c65b6}
+2024/05/22 21:28:28 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x30be, Ip:0x85ff2f15}
+2024/05/22 21:28:28 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 21:28:28 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3858, Ip:0x85ff2f25}
+2024/05/22 21:28:28 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3e9b, Ip:0x833c12dd}
+21:28:30 executing program 0:
+r0 = socket$packet(0x11, 0x3, 0x300)
+ioctl$sock_SIOCGIFINDEX(r0, 0x8933, &(0x7f00000001c0)={'gretap0\x00', <r1=>0x0})
+setsockopt$packet_int(r0, 0x107, 0xf, &(0x7f0000000000)=0xf3f, 0x4)
+sendto$packet(r0, &(0x7f00000000c0)="3f030e00e6e8120006001e0089e9aaa911d7c2290f0086dd1327c9167c643c4a1b7880610cc96655b1b141ab059b24d0fbc50df71548a3f6c5609063382a0c1511fdf9435e3ffe46", 0xe90c, 0x0, &(0x7f0000000540)={0xc9, 0x0, r1, 0x1, 0x0, 0x6, @multicast}, 0x14)
+
+21:28:31 executing program 0:
+r0 = socket$packet(0x11, 0x3, 0x300)
+ioctl$sock_SIOCGIFINDEX(r0, 0x8933, &(0x7f00000001c0)={'gretap0\x00', <r1=>0x0})
+setsockopt$packet_int(r0, 0x107, 0xf, &(0x7f0000000000)=0xf3f, 0x4)
+sendto$packet(r0, &(0x7f00000000c0)="3f030e00e6e8120006001e0089e9aaa911d7c2290f0086dd1327c9167c643c4a1b7880610cc96655b1b141ab059b24d0fbc50df71548a3f6c5609063382a0c1511fdf9435e3ffe46", 0xe90c, 0x0, &(0x7f0000000540)={0xc9, 0x0, r1, 0x1, 0x0, 0x6, @multicast}, 0x14)
+
+21:28:33 executing program 0:
+r0 = syz_open_dev$vim2m(&(0x7f00000003c0), 0x7, 0x2)
+ioctl$vim2m_VIDIOC_S_FMT(r0, 0xc0d05605, &(0x7f0000000b40)={0x1, @pix_mp={0x0, 0x0, 0x33524742}})
+
+21:28:34 executing program 0:
+r0 = syz_open_dev$vim2m(&(0x7f00000003c0), 0x7, 0x2)
+ioctl$vim2m_VIDIOC_S_FMT(r0, 0xc0d05605, &(0x7f0000000b40)={0x1, @pix_mp={0x0, 0x0, 0x33524742}})
+
+2024/05/22 21:28:34 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+2024/05/22 21:28:34 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x1fb0, Ip:0x850deb40}
+2024/05/22 21:28:34 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 21:28:34 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x459d, Ip:0x850deb6c}
+21:28:36 executing program 0:
+r0 = syz_open_dev$vim2m(&(0x7f00000003c0), 0x7, 0x2)
+ioctl$vim2m_VIDIOC_S_FMT(r0, 0xc0d05605, &(0x7f0000000b40)={0x1, @pix_mp={0x0, 0x0, 0x33524742}})
+
+21:28:37 executing program 0:
+r0 = syz_open_dev$vim2m(&(0x7f00000003c0), 0x7, 0x2)
+ioctl$vim2m_VIDIOC_S_FMT(r0, 0xc0d05605, &(0x7f0000000b40)={0x1, @pix_mp={0x0, 0x0, 0x33524742}})
+
+21:28:39 executing program 0:
+r0 = syz_open_dev$video4linux(&(0x7f0000000040), 0x3, 0x0)
+ioctl$VIDIOC_SUBDEV_S_FMT(r0, 0xc0585605, &(0x7f0000002180)={0x0, 0x0, {0x0, 0x0, 0x300a, 0x9}})
+
+21:28:40 executing program 0:
+accept() (enabled_site: 17563, site_type: 1)
+r0 = syz_open_dev$video4linux(&(0x7f0000000040), 0x3, 0x0)
+ioctl$VIDIOC_SUBDEV_S_FMT(r0, 0xc0585605, &(0x7f0000002180)={0x0, 0x0, {0x0, 0x0, 0x300a, 0x9}})
+
+2024/05/22 21:28:40 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+2024/05/22 21:28:40 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x1fb0, Ip:0x850deb40}
+2024/05/22 21:28:40 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 21:28:40 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x459d, Ip:0x850deb6c}
+2024/05/22 21:28:40 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x449b, Ip:0x8549aa21}
+2024/05/22 21:28:40 KDO: #0: memintrinsic id=17563
+[  306.597244][ T8446] BUG: KASAN: unknown-crash in vimc_debayer_set_fmt+0x611/0x7e0
+[  306.598656][ T8446] Write of size 8 at addr ffff88801c2c6800 by task syz-executor.0/8446
+[  306.599836][ T8446] 
+[  306.600183][ T8446] CPU: 0 PID: 8446 Comm: syz-executor.0 Not tainted 6.4.1-00011-gc173c3c31378 #20
+[  306.601757][ T8446] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+[  306.603831][ T8446] Call Trace:
+[  306.604244][ T8446]  <TASK>
+[  306.604613][ T8446]  dump_stack_lvl+0x1ce/0x2c0
+[  306.605212][ T8446]  ? nf_tcp_handle_invalid+0x3d0/0x3d0
+[  306.605862][ T8446]  ? preempt_count_add+0xa0/0xf0
+[  306.606468][ T8446]  ? panic+0x620/0x620
+[  306.606986][ T8446]  ? lock_acquire+0x21e/0x4a0
+[  306.607552][ T8446]  print_report+0x163/0x540
+[  306.608099][ T8446]  ? __mutex_trylock_common+0x145/0x200
+[  306.608748][ T8446]  ? __virt_addr_valid+0x1cc/0x240
+[  306.609361][ T8446]  ? __phys_addr+0x99/0x110
+[  306.609913][ T8446]  kdo_kasan_report+0x7f/0x90
+[  306.610473][ T8446]  ? vimc_debayer_set_fmt+0x611/0x7e0
+[  306.611116][ T8446]  ? vimc_debayer_set_fmt+0x611/0x7e0
+[  306.611761][ T8446]  propagate_taint+0x1e1/0x210
+[  306.612331][ T8446]  ? vimc_debayer_set_fmt+0x611/0x7e0
+[  306.612979][ T8446]  ? vimc_debayer_set_fmt+0x611/0x7e0
+[  306.613614][ T8446]  __kdo_asan_memcpy+0x69/0xa0
+[  306.614181][ T8446]  ? vimc_debayer_set_fmt+0x5fa/0x7e0
+[  306.614819][ T8446]  vimc_debayer_set_fmt+0x611/0x7e0
+[  306.615452][ T8446]  call_set_fmt_state+0x402/0x440
+[  306.616056][ T8446]  subdev_do_ioctl_lock+0x1d83/0x2540
+[  306.616717][ T8446]  ? lock_release+0x4c6/0x630
+[  306.617281][ T8446]  ? call_get_mbus_config+0xf0/0xf0
+[  306.617900][ T8446]  ? __might_fault+0x9c/0xe0
+[  306.618453][ T8446]  ? tomoyo_path_number_perm+0x574/0x610
+[  306.619115][ T8446]  ? __lock_acquire+0x10d0/0x10d0
+[  306.619724][ T8446]  ? should_fail_ex+0x32/0x2d0
+[  306.620311][ T8446]  ? should_fail_usercopy+0x9/0x20
+[  306.620953][ T8446]  ? kdo_copy_from_user+0x6a/0xf0
+[  306.621562][ T8446]  video_usercopy+0x717/0xc70
+[  306.622195][ T8446]  ? call_get_mbus_config+0xf0/0xf0
+[  306.622856][ T8446]  ? v4l_printk_ioctl+0x140/0x140
+[  306.623477][ T8446]  ? __fget_files+0x2f0/0x340
+[  306.624045][ T8446]  v4l2_ioctl+0x10b/0x140
+[  306.624582][ T8446]  ? v4l2_poll+0x1c0/0x1c0
+[  306.625124][ T8446]  __se_sys_ioctl+0xc9/0x140
+[  306.625690][ T8446]  do_syscall_64+0x41/0x90
+[  306.626226][ T8446]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  306.626952][ T8446] RIP: 0033:0x7f038a88fddd
+[  306.627512][ T8446] Code: c3 e8 97 2b 00 00 0f 1f 80 00 00 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 b0 ff ff ff f7 d8 64 89 01 48
+[  306.629707][ T8446] RSP: 002b:00007f038b561028 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[  306.630678][ T8446] RAX: ffffffffffffffda RBX: 00007f038a9cbf80 RCX: 00007f038a88fddd
+[  306.631588][ T8446] RDX: 0000000020002180 RSI: 00000000c0585605 RDI: 0000000000000003
+[  306.632526][ T8446] RBP: 00007f038a901e18 R08: 0000000000000000 R09: 0000000000000000
+[  306.633439][ T8446] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000000
+[  306.634343][ T8446] R13: 000000000000000b R14: 00007f038a9cbf80 R15: 00007f038b541000
+[  306.635262][ T8446]  </TASK>
+[  306.647160][ T8446] 
+[  306.647477][ T8446] Allocated by task 8446:
+[  306.658560][ T8446]  kasan_set_track+0x4f/0x70
+[  306.659141][ T8446]  __kasan_kmalloc+0x7d/0x90
+[  306.660039][ T8446]  __kmalloc_node+0xb8/0x230
+[  306.660605][ T8446]  kvmalloc_node+0x72/0x160
+[  306.661486][ T8446]  __v4l2_subdev_state_alloc+0xf9/0x260
+[  306.662151][ T8446]  subdev_open+0x78/0x320
+[  306.674745][ T8446]  v4l2_open+0x172/0x240
+[  306.675278][ T8446]  chrdev_open+0x446/0x4e0
+[  306.676170][ T8446]  do_dentry_open+0x652/0xa70
+[  306.676748][ T8446]  path_openat+0x19ce/0x1f00
+[  306.677654][ T8446]  do_filp_open+0x1f4/0x370
+[  306.678206][ T8446]  do_sys_openat2+0x10f/0x390
+[  306.679100][ T8446]  __x64_sys_openat+0x1f7/0x250
+[  306.679694][ T8446]  do_syscall_64+0x41/0x90
+[  306.680576][ T8446]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  306.681290][ T8446] 
+[  306.681915][ T8446] Last potentially related work creation:
+[  306.682572][ T8446]  kasan_save_stack+0x3f/0x60
+[  306.695224][ T8446]  kasan_record_aux_stack_noalloc+0x87/0x90
+[  306.695950][ T8446]  insert_work+0x2f/0x290
+[  306.696822][ T8446]  __queue_work+0x8c1/0xb40
+[  306.698535][ T8446]  queue_work_on+0x144/0x230
+[  306.699102][ T8446]  call_usermodehelper_exec+0x1e1/0x390
+[  306.700118][ T8446]  kobject_uevent_env+0x5ee/0x780
+[  306.700750][ T8446]  kobject_synth_uevent+0x485/0x890
+[  306.701732][ T8446]  store_uevent+0x25/0x40
+[  306.702285][ T8446]  module_attr_store+0x44/0x60
+[  306.703997][ T8446]  kernfs_fop_write_iter+0x295/0x380
+[  306.704650][ T8446]  vfs_write+0x5cf/0x870
+[  306.705511][ T8446]  ksys_write+0x169/0x260
+[  306.706044][ T8446]  do_syscall_64+0x41/0x90
+[  306.714734][ T8446]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  306.715446][ T8446] 
+[  306.716072][ T8446] Second to last potentially related work creation:
+[  306.716832][ T8446]  kasan_save_stack+0x3f/0x60
+[  306.717747][ T8446]  kasan_record_aux_stack_noalloc+0x87/0x90
+[  306.718444][ T8446]  insert_work+0x2f/0x290
+[  306.719303][ T8446]  __queue_work+0x8c1/0xb40
+[  306.719860][ T8446]  queue_work_on+0x144/0x230
+[  306.723557][ T8446]  call_usermodehelper_exec+0x1e1/0x390
+[  306.724244][ T8446]  kobject_uevent_env+0x5ee/0x780
+[  306.725193][ T8446]  kobject_synth_uevent+0x485/0x890
+[  306.725811][ T8446]  uevent_store+0x35/0x50
+[  306.735271][ T8446]  kernfs_fop_write_iter+0x295/0x380
+[  306.735919][ T8446]  vfs_write+0x5cf/0x870
+[  306.736795][ T8446]  ksys_write+0x169/0x260
+[  306.737330][ T8446]  do_syscall_64+0x41/0x90
+[  306.738208][ T8446]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  306.738909][ T8446] 
+[  306.739530][ T8446] The buggy address belongs to the object at ffff88801c2c6800
+[  306.739530][ T8446]  which belongs to the cache kmalloc-192 of size 192
+[  306.754622][ T8446] The buggy address is located 0 bytes inside of
+[  306.754622][ T8446]  192-byte region [ffff88801c2c6800, ffff88801c2c68c0)
+[  306.756482][ T8446] 
+[  306.756795][ T8446] The buggy address belongs to the physical page:
+[  306.757866][ T8446] page:ffffea000070b180 refcount:1 mapcount:0 mapping:0000000000000000 index:0x0 pfn:0x1c2c6
+[  306.759348][ T8446] flags: 0xfff00000000200(slab|node=0|zone=1|lastcpupid=0x7ff)
+[  306.760570][ T8446] page_type: 0xffffffff()
+[  306.761095][ T8446] raw: 00fff00000000200 ffff88800ec41a00 ffffea00009d62c0 dead000000000002
+[  306.762403][ T8446] raw: 0000000000000000 0000000000100010 00000001ffffffff 0000000000000000
+[  306.763874][ T8446] page dumped because: kasan: bad access detected
+[  306.764647][ T8446] page_owner tracks the page as allocated
+[  306.776821][ T8446] page last allocated via order 0, migratetype Unmovable, gfp_mask 0x12cc0(GFP_KERNEL|__GFP_NOWARN|__GFP_NORETRY), pid 1, tgid 1 (swapper/0), ts 28152366566, free_ts 28147393857
+[  306.779306][ T8446]  post_alloc_hook+0x1e6/0x210
+[  306.779919][ T8446]  get_page_from_freelist+0x260a/0x2790
+[  306.780919][ T8446]  __alloc_pages+0x1f2/0x480
+[  306.781469][ T8446]  alloc_page_interleave+0x20/0x180
+[  306.782410][ T8446]  alloc_slab_page+0x6a/0x160
+[  306.784006][ T8446]  new_slab+0x84/0x2f0
+[  306.784526][ T8446]  ___slab_alloc+0xa85/0x10a0
+[  306.795272][ T8446]  __kmem_cache_alloc_node+0x1a8/0x240
+[  306.795950][ T8446]  kmalloc_trace+0x2a/0xe0
+[  306.796850][ T8446]  call_usermodehelper_setup+0x76/0x290
+[  306.797512][ T8446]  kobject_uevent_env+0x5d1/0x780
+[  306.798451][ T8446]  kernel_add_sysfs_param+0xc5/0xf0
+[  306.799078][ T8446]  param_sysfs_builtin+0x157/0x1c0
+[  306.800978][ T8446]  param_sysfs_builtin_init+0x2d/0x30
+[  306.801632][ T8446]  do_one_initcall+0x211/0x700
+[  306.802546][ T8446]  do_initcall_level+0x100/0x1a0
+[  306.803193][ T8446] page last free stack trace:
+[  306.807768][ T8446]  free_unref_page_prepare+0x75a/0x820
+[  306.808463][ T8446]  free_unref_page_list+0x49c/0x640
+[  306.809418][ T8446]  release_pages+0x1fc4/0x22d0
+[  306.810001][ T8446]  tlb_flush_mmu+0xcf/0x170
+[  306.815218][ T8446]  tlb_finish_mmu+0x9f/0x140
+[  306.815802][ T8446]  exit_mmap+0x3b9/0x910
+[  306.816688][ T8446]  __mmput+0xf3/0x330
+[  306.817190][ T8446]  free_bprm+0xe0/0x210
+[  306.823316][ T8446]  kernel_execve+0x6ed/0x740
+[  306.823906][ T8446]  call_usermodehelper_exec_async+0x1bb/0x280
+[  306.824996][ T8446]  ret_from_fork+0x1f/0x30
+[  306.827083][ T8446] 
+[  306.827395][ T8446] Memory state around the buggy address:
+[  306.835995][ T8446]  ffff88801c2c6700: e8 e8 e8 e8 e8 e8 e8 e8 e8 e8 e8 e8 e8 e8 e8 e8
+[  306.837286][ T8446]  ffff88801c2c6780: e8 e8 e8 e8 e8 fc fc fc fc fc fc fc fc fc fc fc
+[  306.838551][ T8446] >ffff88801c2c6800: ee ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec
+[  306.839819][ T8446]                    ^
+[  306.840315][ T8446]  ffff88801c2c6880: ec ec ec ec fc fc fc fc fc fc fc fc fc fc fc fc
+[  306.845056][ T8446]  ffff88801c2c6900: e8 e8 e8 e8 e8 e8 e8 e8 e8 e8 e8 e8 e8 e8 e8 e8
+[  306.846325][ T8446] BUG: KASAN: unknown-crash in vimc_debayer_set_fmt+0x611/0x7e0
+[  306.854667][ T8446] Write of size 8 at addr ffffc9000578fdc8 by task syz-executor.0/8446
+[  306.855955][ T8446] 
+[  306.856254][ T8446] CPU: 0 PID: 8446 Comm: syz-executor.0 Not tainted 6.4.1-00011-gc173c3c31378 #20
+[  306.857322][ T8446] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+[  306.858346][ T8446] Call Trace:
+[  306.858738][ T8446]  <TASK>
+[  306.859093][ T8446]  dump_stack_lvl+0x1ce/0x2c0
+[  306.859716][ T8446]  ? nf_tcp_handle_invalid+0x3d0/0x3d0
+[  306.860424][ T8446]  ? preempt_count_add+0xa0/0xf0
+[  306.861064][ T8446]  ? panic+0x620/0x620
+[  306.861598][ T8446]  print_report+0x163/0x540
+[  306.862177][ T8446]  ? __mutex_trylock_common+0x145/0x200
+[  306.862848][ T8446]  ? __virt_addr_valid+0xa6/0x240
+[  306.863471][ T8446]  kdo_kasan_report+0x7f/0x90
+[  306.864048][ T8446]  ? vimc_debayer_set_fmt+0x611/0x7e0
+[  306.864718][ T8446]  ? vimc_debayer_set_fmt+0x611/0x7e0
+[  306.865368][ T8446]  propagate_taint+0x1f6/0x210
+[  306.865961][ T8446]  ? vimc_debayer_set_fmt+0x611/0x7e0
+[  306.866640][ T8446]  ? vimc_debayer_set_fmt+0x611/0x7e0
+[  306.867308][ T8446]  __kdo_asan_memcpy+0x69/0xa0
+[  306.867898][ T8446]  ? vimc_debayer_set_fmt+0x5fa/0x7e0
+[  306.868577][ T8446]  vimc_debayer_set_fmt+0x611/0x7e0
+[  306.869229][ T8446]  call_set_fmt_state+0x402/0x440
+[  306.869867][ T8446]  subdev_do_ioctl_lock+0x1d83/0x2540
+[  306.870539][ T8446]  ? lock_release+0x4c6/0x630
+[  306.871127][ T8446]  ? call_get_mbus_config+0xf0/0xf0
+[  306.871776][ T8446]  ? __might_fault+0x9c/0xe0
+[  306.872387][ T8446]  ? tomoyo_path_number_perm+0x574/0x610
+[  306.873098][ T8446]  ? __lock_acquire+0x10d0/0x10d0
+[  306.873736][ T8446]  ? should_fail_ex+0x32/0x2d0
+[  306.874364][ T8446]  ? should_fail_usercopy+0x9/0x20
+[  306.875068][ T8446]  ? kdo_copy_from_user+0x6a/0xf0
+[  306.875692][ T8446]  video_usercopy+0x717/0xc70
+[  306.876294][ T8446]  ? call_get_mbus_config+0xf0/0xf0
+[  306.876965][ T8446]  ? v4l_printk_ioctl+0x140/0x140
+[  306.877622][ T8446]  ? __fget_files+0x2f0/0x340
+[  306.878222][ T8446]  v4l2_ioctl+0x10b/0x140
+[  306.878764][ T8446]  ? v4l2_poll+0x1c0/0x1c0
+[  306.879366][ T8446]  __se_sys_ioctl+0xc9/0x140
+[  306.879957][ T8446]  do_syscall_64+0x41/0x90
+[  306.880531][ T8446]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  306.881234][ T8446] RIP: 0033:0x7f038a88fddd
+[  306.881752][ T8446] Code: c3 e8 97 2b 00 00 0f 1f 80 00 00 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 b0 ff ff ff f7 d8 64 89 01 48
+[  306.883980][ T8446] RSP: 002b:00007f038b561028 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[  306.885018][ T8446] RAX: ffffffffffffffda RBX: 00007f038a9cbf80 RCX: 00007f038a88fddd
+[  306.885968][ T8446] RDX: 0000000020002180 RSI: 00000000c0585605 RDI: 0000000000000003
+[  306.886959][ T8446] RBP: 00007f038a901e18 R08: 0000000000000000 R09: 0000000000000000
+[  306.887850][ T8446] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000000
+[  306.888900][ T8446] R13: 000000000000000b R14: 00007f038a9cbf80 R15: 00007f038b541000
+[  306.889932][ T8446]  </TASK>
+[  306.922773][ T8446] 
+[  306.926121][ T8446] The buggy address belongs to stack of task syz-executor.0/8446
+[  306.927464][ T8446]  and is located at offset 40 in frame:
+[  306.928134][ T8446]  video_usercopy+0x0/0xc70
+[  306.929115][ T8446] 
+[  306.929465][ T8446] This frame has 1 object:
+[  306.930426][ T8446]  [32, 160) 'sbuf'
+[  306.930444][ T8446] 
+[  306.931617][ T8446] The buggy address belongs to the virtual mapping at
+[  306.931617][ T8446]  [ffffc90005788000, ffffc90005791000) created by:
+[  306.931617][ T8446]  copy_process+0x4c3/0x2e60
+[  306.941462][ T8446] 
+[  306.941784][ T8446] The buggy address belongs to the physical page:
+[  306.942895][ T8446] page:ffffea0001f1d4c0 refcount:1 mapcount:0 mapping:0000000000000000 index:0x0 pfn:0x7c753
+[  306.947400][ T8446] memcg:ffff88801c60a702
+[  306.947905][ T8446] flags: 0xfff00000000000(node=0|zone=1|lastcpupid=0x7ff)
+[  306.953460][ T8446] page_type: 0xffffffff()
+[  306.954000][ T8446] raw: 00fff00000000000 0000000000000000 dead000000000122 0000000000000000
+[  306.955316][ T8446] raw: 0000000000000000 0000000000000000 00000001ffffffff ffff88801c60a702
+[  306.956711][ T8446] page dumped because: kasan: bad access detected
+[  306.957482][ T8446] page_owner tracks the page as allocated
+[  306.965023][ T8446] page last allocated via order 0, migratetype Unmovable, gfp_mask 0x102dc2(GFP_HIGHUSER|__GFP_NOWARN|__GFP_ZERO), pid 2, tgid 2 (kthreadd), ts 269313871162, free_ts 269287443649
+[  306.967355][ T8446]  post_alloc_hook+0x1e6/0x210
+[  306.967941][ T8446]  get_page_from_freelist+0x260a/0x2790
+[  306.972238][ T8446]  __alloc_pages+0x1f2/0x480
+[  306.972884][ T8446]  __vmalloc_node_range+0x864/0x1050
+[  306.974052][ T8446]  dup_task_struct+0x343/0x5b0
+[  306.974686][ T8446]  copy_process+0x4c3/0x2e60
+[  306.978872][ T8446]  kernel_clone+0x1c9/0x760
+[  306.979458][ T8446]  kernel_thread+0x1c0/0x210
+[  306.980393][ T8446]  kthreadd+0x4ec/0x5c0
+[  306.980920][ T8446]  ret_from_fork+0x1f/0x30
+[  306.982158][ T8446] page last free stack trace:
+[  306.982730][ T8446]  free_unref_page_prepare+0x75a/0x820
+[  306.989503][ T8446]  free_unref_page+0x37/0x300
+[  306.990114][ T8446]  qlist_free_all+0x22/0x60
+[  306.991028][ T8446]  kasan_quarantine_reduce+0x14b/0x160
+[  306.991692][ T8446]  __kasan_slab_alloc+0x23/0x60
+[  306.996209][ T8446]  slab_post_alloc_hook+0x64/0x380
+[  306.996877][ T8446]  kmem_cache_alloc+0x111/0x2a0
+[  306.997815][ T8446]  anon_vma_fork+0xb2/0x450
+[  306.998389][ T8446]  copy_mm+0xa7f/0x16a0
+[  306.999254][ T8446]  copy_process+0x165a/0x2e60
+[  306.999846][ T8446]  kernel_clone+0x1c9/0x760
+[  307.000730][ T8446]  __x64_sys_clone+0x28e/0x2e0
+[  307.001320][ T8446]  do_syscall_64+0x41/0x90
+[  307.002196][ T8446]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  307.011467][ T8446] 
+[  307.011785][ T8446] Memory state around the buggy address:
+[  307.012789][ T8446]  ffffc9000578fc80: f2 f2 f2 f2 00 f3 f3 f3 00 00 00 00 00 00 00 00
+[  307.016286][ T8446]  ffffc9000578fd00: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[  307.017614][ T8446] >ffffc9000578fd80: 00 00 00 00 f1 f1 f1 f1 e9 e9 e9 e9 e9 e9 e9 e9
+[  307.018900][ T8446]                                               ^
+[  307.019685][ T8446]  ffffc9000578fe00: e9 e9 e9 00 00 00 00 00 f3 f3 f3 f3 00 00 00 00
+[  307.020973][ T8446]  ffffc9000578fe80: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[  307.022279][ T8446] Kernel panic - not syncing: KDO: memcpy hit (id: vimc_debayer_set_fmt+0x611/0x7e0, callid: 17563S)
+[  307.023518][ T8446] CPU: 0 PID: 8446 Comm: syz-executor.0 Not tainted 6.4.1-00011-gc173c3c31378 #20
+[  307.024585][ T8446] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+[  307.025625][ T8446] Call Trace:
+[  307.026024][ T8446]  <TASK>
+[  307.026385][ T8446]  dump_stack_lvl+0x1ce/0x2c0
+[  307.026953][ T8446]  ? nf_tcp_handle_invalid+0x3d0/0x3d0
+[  307.027600][ T8446]  ? panic+0x620/0x620
+[  307.028107][ T8446]  ? vscnprintf+0x5d/0x80
+[  307.028691][ T8446]  panic+0x2ba/0x620
+[  307.029199][ T8446]  ? vimc_debayer_set_fmt+0x611/0x7e0
+[  307.029834][ T8446]  ? __wake_up_klogd+0xb7/0xf0
+[  307.030400][ T8446]  ? preempt_count_add+0xa0/0xf0
+[  307.030989][ T8446]  ? kdo_sanitizer_cov_write+0x100/0x100
+[  307.031644][ T8446]  ? __mutex_trylock_common+0x145/0x200
+[  307.032312][ T8446]  ? kdo_kasan_report+0x7f/0x90
+[  307.032896][ T8446]  ? vimc_debayer_set_fmt+0x611/0x7e0
+[  307.033524][ T8446]  ? vimc_debayer_set_fmt+0x611/0x7e0
+[  307.034165][ T8446]  propagate_taint+0x20a/0x210
+[  307.034727][ T8446]  ? vimc_debayer_set_fmt+0x611/0x7e0
+[  307.035369][ T8446]  ? vimc_debayer_set_fmt+0x611/0x7e0
+[  307.036008][ T8446]  __kdo_asan_memcpy+0x69/0xa0
+[  307.036584][ T8446]  ? vimc_debayer_set_fmt+0x5fa/0x7e0
+[  307.037223][ T8446]  vimc_debayer_set_fmt+0x611/0x7e0
+[  307.037855][ T8446]  call_set_fmt_state+0x402/0x440
+[  307.038462][ T8446]  subdev_do_ioctl_lock+0x1d83/0x2540
+[  307.039113][ T8446]  ? lock_release+0x4c6/0x630
+[  307.039674][ T8446]  ? call_get_mbus_config+0xf0/0xf0
+[  307.040293][ T8446]  ? __might_fault+0x9c/0xe0
+[  307.040866][ T8446]  ? tomoyo_path_number_perm+0x574/0x610
+[  307.041535][ T8446]  ? __lock_acquire+0x10d0/0x10d0
+[  307.042142][ T8446]  ? should_fail_ex+0x32/0x2d0
+[  307.042750][ T8446]  ? should_fail_usercopy+0x9/0x20
+[  307.043372][ T8446]  ? kdo_copy_from_user+0x6a/0xf0
+[  307.043968][ T8446]  video_usercopy+0x717/0xc70
+[  307.044555][ T8446]  ? call_get_mbus_config+0xf0/0xf0
+[  307.045174][ T8446]  ? v4l_printk_ioctl+0x140/0x140
+[  307.045788][ T8446]  ? __fget_files+0x2f0/0x340
+[  307.046361][ T8446]  v4l2_ioctl+0x10b/0x140
+[  307.046881][ T8446]  ? v4l2_poll+0x1c0/0x1c0
+[  307.047421][ T8446]  __se_sys_ioctl+0xc9/0x140
+[  307.047975][ T8446]  do_syscall_64+0x41/0x90
+[  307.048525][ T8446]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  307.049226][ T8446] RIP: 0033:0x7f038a88fddd
+[  307.049755][ T8446] Code: c3 e8 97 2b 00 00 0f 1f 80 00 00 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 b0 ff ff ff f7 d8 64 89 01 48
+[  307.051929][ T8446] RSP: 002b:00007f038b561028 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[  307.052952][ T8446] RAX: ffffffffffffffda RBX: 00007f038a9cbf80 RCX: 00007f038a88fddd
+[  307.053860][ T8446] RDX: 0000000020002180 RSI: 00000000c0585605 RDI: 0000000000000003
+[  307.054766][ T8446] RBP: 00007f038a901e18 R08: 0000000000000000 R09: 0000000000000000
+[  307.055671][ T8446] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000000
+[  307.056587][ T8446] R13: 000000000000000b R14: 00007f038a9cbf80 R15: 00007f038b541000
+[  307.057522][ T8446]  </TASK>
+[  307.058056][ T8446] Kernel Offset: disabled
+[  307.058606][ T8446] Rebooting in 86400 seconds..
+
+VM DIAGNOSIS:
+21:28:41  Registers:
+info registers vcpu 0
+RAX=0000000000000036 RBX=0000000000000000 RCX=ffffffff8392d9be RDX=00000000000003f8
+RSI=dffffc0000000000 RDI=ffffffff8e7ea860 RBP=00000000000003f8 RSP=ffffc9000578f258
+R8 =ffffffff8e7ea867 R9 =ffffffff814f0843 R10=fffff52000af1e2c R11=dffffc0000000001
+R12=ffffffff8e50266b R13=000000000000000b R14=0000000000000036 R15=ffffffff8e7ea820
+RIP=ffffffff8392d9c8 RFL=00000002 [-------] CPL=0 II=0 A20=1 SMM=0 HLT=0
+ES =0000 0000000000000000 ffffffff 00c00000
+CS =0010 0000000000000000 ffffffff 00a09b00 DPL=0 CS64 [-RA]
+SS =0018 0000000000000000 ffffffff 00c09300 DPL=0 DS   [-WA]
+DS =0000 0000000000000000 ffffffff 00c00000
+FS =0000 00007f038b561640 ffffffff 00c00000
+GS =0000 ffff8880ba000000 ffffffff 00c00000
+LDT=0000 0000000000000000 ffffffff 00c00000
+TR =0040 fffffe0000003000 00004087 00008b00 DPL=0 TSS64-busy
+GDT=     fffffe0000001000 0000007f
+IDT=     fffffe0000000000 00000fff
+CR0=80050033 CR2=0000000020002180 CR3=0000000024fc4000 CR4=00350ef0
+DR0=0000000000000000 DR1=0000000000000000 DR2=0000000000000000 DR3=0000000000000000 
+DR6=00000000fffe0ff0 DR7=0000000000000400
+EFER=0000000000000d01
+FCW=037f FSW=0000 [ST=0] FTW=00 MXCSR=00001f80
+FPR0=0000000000000000 0000 FPR1=0000000000000000 0000
+FPR2=0000000000000000 0000 FPR3=0000000000000000 0000
+FPR4=0000000000000000 0000 FPR5=0000000000000000 0000
+FPR6=0000000000000000 0000 FPR7=0000000000000000 0000
+YMM00=0000000000000000 0000000000000000 00000000000f4240 0000000000000000
+YMM01=0000000000000000 0000000000000000 0000000000000000 00000000000f4240
+YMM02=0000000000000000 0000000000000000 00007f038b4fb1a0 00007f038b4fb1a0
+YMM03=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffffffff
+YMM04=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffffffff
+YMM05=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffffff00
+YMM06=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffffffff
+YMM07=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffffff00
+YMM08=0000000000000000 0000000000000000 2570756c6c25706f 6f6c2f7665642f00
+YMM09=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM10=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM11=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM12=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM13=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM14=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM15=0000000000000000 0000000000000000 0000000000000000 0000000000000000

@@ -1,0 +1,822 @@
+Warning: Permanently added '[localhost]:1783' (ED25519) to the list of known hosts.
+2024/05/23 04:12:38 fuzzer started
+2024/05/23 04:12:39 dialing manager at localhost:34093
+syzkaller login: [  177.556295][ T8032] cgroup: Unknown subsys name 'net'
+[  177.784016][ T8032] cgroup: Unknown subsys name 'rlimit'
+2024/05/23 04:12:40 syscalls: 3922
+2024/05/23 04:12:40 code coverage: enabled
+2024/05/23 04:12:40 comparison tracing: enabled
+2024/05/23 04:12:40 extra coverage: enabled
+2024/05/23 04:12:40 delay kcov mmap: enabled
+2024/05/23 04:12:40 setuid sandbox: enabled
+2024/05/23 04:12:40 namespace sandbox: enabled
+2024/05/23 04:12:40 Android sandbox: /sys/fs/selinux/policy does not exist
+2024/05/23 04:12:40 fault injection: enabled
+2024/05/23 04:12:40 leak checking: CONFIG_DEBUG_KMEMLEAK is not enabled
+2024/05/23 04:12:40 net packet injection: enabled
+2024/05/23 04:12:40 net device setup: enabled
+2024/05/23 04:12:40 concurrency sanitizer: /sys/kernel/debug/kcsan does not exist
+2024/05/23 04:12:40 devlink PCI setup: PCI device 0000:00:10.0 is not available
+2024/05/23 04:12:40 NIC VF setup: PCI device 0000:00:11.0 is not available
+2024/05/23 04:12:40 USB emulation: enabled
+2024/05/23 04:12:40 hci packet injection: enabled
+2024/05/23 04:12:40 wifi device emulation: enabled
+2024/05/23 04:12:40 802.15.4 emulation: enabled
+2024/05/23 04:12:40 fetching corpus: 0, signal 0/2000 (executing program)
+2024/05/23 04:12:40 fetching corpus: 50, signal 23082/26751 (executing program)
+2024/05/23 04:12:41 fetching corpus: 100, signal 33233/38537 (executing program)
+2024/05/23 04:12:41 fetching corpus: 150, signal 39178/46105 (executing program)
+2024/05/23 04:12:41 fetching corpus: 200, signal 47946/56288 (executing program)
+2024/05/23 04:12:41 fetching corpus: 250, signal 52983/62755 (executing program)
+2024/05/23 04:12:41 fetching corpus: 300, signal 58346/69506 (executing program)
+2024/05/23 04:12:42 fetching corpus: 350, signal 61429/74025 (executing program)
+2024/05/23 04:12:42 fetching corpus: 400, signal 65371/79355 (executing program)
+2024/05/23 04:12:42 fetching corpus: 450, signal 71323/86393 (executing program)
+2024/05/23 04:12:42 fetching corpus: 500, signal 73896/90291 (executing program)
+2024/05/23 04:12:42 fetching corpus: 550, signal 78077/95617 (executing program)
+2024/05/23 04:12:42 fetching corpus: 600, signal 82055/100678 (executing program)
+2024/05/23 04:12:43 fetching corpus: 650, signal 86651/106330 (executing program)
+2024/05/23 04:12:43 fetching corpus: 700, signal 89950/110692 (executing program)
+2024/05/23 04:12:43 fetching corpus: 750, signal 92400/114258 (executing program)
+2024/05/23 04:12:43 fetching corpus: 800, signal 94958/117850 (executing program)
+2024/05/23 04:12:43 fetching corpus: 850, signal 96581/120640 (executing program)
+2024/05/23 04:12:43 fetching corpus: 900, signal 99162/124239 (executing program)
+2024/05/23 04:12:44 fetching corpus: 950, signal 100784/126958 (executing program)
+2024/05/23 04:12:44 fetching corpus: 1000, signal 102826/129946 (executing program)
+2024/05/23 04:12:44 fetching corpus: 1050, signal 106779/134583 (executing program)
+2024/05/23 04:12:44 fetching corpus: 1100, signal 108149/137034 (executing program)
+2024/05/23 04:12:44 fetching corpus: 1150, signal 109561/139459 (executing program)
+2024/05/23 04:12:44 fetching corpus: 1200, signal 111983/142740 (executing program)
+2024/05/23 04:12:45 fetching corpus: 1250, signal 115287/146709 (executing program)
+2024/05/23 04:12:45 fetching corpus: 1300, signal 117165/149456 (executing program)
+2024/05/23 04:12:45 fetching corpus: 1350, signal 118525/151750 (executing program)
+2024/05/23 04:12:45 fetching corpus: 1400, signal 120373/154433 (executing program)
+2024/05/23 04:12:45 fetching corpus: 1450, signal 122299/157165 (executing program)
+2024/05/23 04:12:46 fetching corpus: 1500, signal 123967/159608 (executing program)
+2024/05/23 04:12:46 fetching corpus: 1550, signal 126017/162336 (executing program)
+2024/05/23 04:12:46 fetching corpus: 1600, signal 128488/165346 (executing program)
+2024/05/23 04:12:46 fetching corpus: 1650, signal 130301/167940 (executing program)
+2024/05/23 04:12:46 fetching corpus: 1700, signal 131453/169886 (executing program)
+2024/05/23 04:12:46 fetching corpus: 1750, signal 133071/172215 (executing program)
+2024/05/23 04:12:46 fetching corpus: 1800, signal 134320/174219 (executing program)
+2024/05/23 04:12:47 fetching corpus: 1850, signal 135953/176515 (executing program)
+2024/05/23 04:12:47 fetching corpus: 1900, signal 137560/178754 (executing program)
+2024/05/23 04:12:47 fetching corpus: 1950, signal 138786/180714 (executing program)
+2024/05/23 04:12:47 fetching corpus: 2000, signal 140387/182888 (executing program)
+2024/05/23 04:12:47 fetching corpus: 2050, signal 141454/184714 (executing program)
+2024/05/23 04:12:47 fetching corpus: 2100, signal 142471/186515 (executing program)
+2024/05/23 04:12:47 fetching corpus: 2150, signal 143586/188282 (executing program)
+2024/05/23 04:12:48 fetching corpus: 2200, signal 144980/190218 (executing program)
+2024/05/23 04:12:48 fetching corpus: 2250, signal 146203/192024 (executing program)
+2024/05/23 04:12:48 fetching corpus: 2300, signal 148751/194729 (executing program)
+2024/05/23 04:12:48 fetching corpus: 2350, signal 149675/196307 (executing program)
+2024/05/23 04:12:48 fetching corpus: 2400, signal 150426/197775 (executing program)
+2024/05/23 04:12:48 fetching corpus: 2450, signal 151686/199547 (executing program)
+2024/05/23 04:12:48 fetching corpus: 2500, signal 152767/201231 (executing program)
+2024/05/23 04:12:49 fetching corpus: 2550, signal 153842/202878 (executing program)
+2024/05/23 04:12:49 fetching corpus: 2600, signal 155336/204771 (executing program)
+2024/05/23 04:12:49 fetching corpus: 2650, signal 156541/206451 (executing program)
+2024/05/23 04:12:49 fetching corpus: 2700, signal 157344/207924 (executing program)
+2024/05/23 04:12:49 fetching corpus: 2750, signal 158551/209585 (executing program)
+2024/05/23 04:12:49 fetching corpus: 2800, signal 159708/211206 (executing program)
+2024/05/23 04:12:49 fetching corpus: 2850, signal 160726/212719 (executing program)
+2024/05/23 04:12:50 fetching corpus: 2900, signal 161753/214255 (executing program)
+2024/05/23 04:12:50 fetching corpus: 2950, signal 162888/215795 (executing program)
+2024/05/23 04:12:50 fetching corpus: 3000, signal 164171/217388 (executing program)
+2024/05/23 04:12:50 fetching corpus: 3050, signal 165997/219328 (executing program)
+2024/05/23 04:12:50 fetching corpus: 3100, signal 166837/220714 (executing program)
+2024/05/23 04:12:51 fetching corpus: 3150, signal 167890/222151 (executing program)
+2024/05/23 04:12:51 fetching corpus: 3200, signal 169003/223593 (executing program)
+2024/05/23 04:12:51 fetching corpus: 3250, signal 169840/224860 (executing program)
+2024/05/23 04:12:51 fetching corpus: 3300, signal 170676/226149 (executing program)
+2024/05/23 04:12:51 fetching corpus: 3350, signal 171449/227405 (executing program)
+2024/05/23 04:12:51 fetching corpus: 3400, signal 172056/228575 (executing program)
+2024/05/23 04:12:51 fetching corpus: 3450, signal 173069/229933 (executing program)
+2024/05/23 04:12:51 fetching corpus: 3500, signal 173899/231196 (executing program)
+2024/05/23 04:12:52 fetching corpus: 3550, signal 174707/232409 (executing program)
+2024/05/23 04:12:52 fetching corpus: 3600, signal 175530/233621 (executing program)
+2024/05/23 04:12:52 fetching corpus: 3650, signal 176375/234838 (executing program)
+2024/05/23 04:12:52 fetching corpus: 3700, signal 177244/236007 (executing program)
+2024/05/23 04:12:52 fetching corpus: 3750, signal 178106/237165 (executing program)
+2024/05/23 04:12:52 fetching corpus: 3800, signal 178835/238313 (executing program)
+2024/05/23 04:12:52 fetching corpus: 3850, signal 179787/239533 (executing program)
+2024/05/23 04:12:53 fetching corpus: 3900, signal 180653/240683 (executing program)
+2024/05/23 04:12:53 fetching corpus: 3950, signal 181480/241849 (executing program)
+2024/05/23 04:12:53 fetching corpus: 4000, signal 181941/242820 (executing program)
+2024/05/23 04:12:53 fetching corpus: 4050, signal 182803/243929 (executing program)
+2024/05/23 04:12:53 fetching corpus: 4099, signal 183759/245119 (executing program)
+2024/05/23 04:12:53 fetching corpus: 4149, signal 184800/246300 (executing program)
+2024/05/23 04:12:54 fetching corpus: 4199, signal 185733/247432 (executing program)
+2024/05/23 04:12:54 fetching corpus: 4248, signal 186420/248427 (executing program)
+2024/05/23 04:12:54 fetching corpus: 4298, signal 187076/249390 (executing program)
+2024/05/23 04:12:54 fetching corpus: 4347, signal 187670/250332 (executing program)
+2024/05/23 04:12:54 fetching corpus: 4397, signal 188352/251294 (executing program)
+2024/05/23 04:12:54 fetching corpus: 4447, signal 189198/252332 (executing program)
+2024/05/23 04:12:54 fetching corpus: 4497, signal 189693/253227 (executing program)
+2024/05/23 04:12:54 fetching corpus: 4547, signal 190434/254192 (executing program)
+2024/05/23 04:12:55 fetching corpus: 4597, signal 191371/255239 (executing program)
+2024/05/23 04:12:55 fetching corpus: 4647, signal 191961/256097 (executing program)
+2024/05/23 04:12:55 fetching corpus: 4697, signal 192579/256959 (executing program)
+2024/05/23 04:12:55 fetching corpus: 4747, signal 193616/257986 (executing program)
+2024/05/23 04:12:55 fetching corpus: 4797, signal 194801/259058 (executing program)
+2024/05/23 04:12:55 fetching corpus: 4847, signal 195315/259893 (executing program)
+2024/05/23 04:12:55 fetching corpus: 4897, signal 196224/260827 (executing program)
+2024/05/23 04:12:56 fetching corpus: 4947, signal 196911/261697 (executing program)
+2024/05/23 04:12:56 fetching corpus: 4997, signal 197510/262537 (executing program)
+2024/05/23 04:12:56 fetching corpus: 5047, signal 198681/263515 (executing program)
+2024/05/23 04:12:56 fetching corpus: 5097, signal 199589/264416 (executing program)
+2024/05/23 04:12:56 fetching corpus: 5147, signal 200393/265326 (executing program)
+2024/05/23 04:12:56 fetching corpus: 5197, signal 200936/266052 (executing program)
+2024/05/23 04:12:56 fetching corpus: 5247, signal 201591/266826 (executing program)
+2024/05/23 04:12:56 fetching corpus: 5297, signal 202091/267553 (executing program)
+2024/05/23 04:12:57 fetching corpus: 5347, signal 202617/268268 (executing program)
+2024/05/23 04:12:57 fetching corpus: 5397, signal 203240/269037 (executing program)
+2024/05/23 04:12:57 fetching corpus: 5447, signal 203779/269827 (executing program)
+2024/05/23 04:12:57 fetching corpus: 5497, signal 204496/270591 (executing program)
+2024/05/23 04:12:57 fetching corpus: 5547, signal 205195/271357 (executing program)
+2024/05/23 04:12:57 fetching corpus: 5597, signal 205758/272081 (executing program)
+2024/05/23 04:12:57 fetching corpus: 5647, signal 206352/272817 (executing program)
+2024/05/23 04:12:57 fetching corpus: 5697, signal 207402/273604 (executing program)
+2024/05/23 04:12:57 fetching corpus: 5747, signal 207959/274288 (executing program)
+2024/05/23 04:12:58 fetching corpus: 5797, signal 208531/274939 (executing program)
+2024/05/23 04:12:58 fetching corpus: 5847, signal 208928/275625 (executing program)
+2024/05/23 04:12:58 fetching corpus: 5897, signal 209608/276337 (executing program)
+2024/05/23 04:12:58 fetching corpus: 5947, signal 210270/276996 (executing program)
+2024/05/23 04:12:58 fetching corpus: 5997, signal 211278/277688 (executing program)
+2024/05/23 04:12:59 fetching corpus: 6047, signal 211880/278310 (executing program)
+2024/05/23 04:12:59 fetching corpus: 6097, signal 212480/278965 (executing program)
+2024/05/23 04:12:59 fetching corpus: 6147, signal 213279/279631 (executing program)
+2024/05/23 04:12:59 fetching corpus: 6197, signal 213737/280232 (executing program)
+2024/05/23 04:12:59 fetching corpus: 6247, signal 214418/280836 (executing program)
+2024/05/23 04:12:59 fetching corpus: 6297, signal 215232/281470 (executing program)
+2024/05/23 04:12:59 fetching corpus: 6347, signal 215939/282066 (executing program)
+2024/05/23 04:13:00 fetching corpus: 6397, signal 216758/282679 (executing program)
+2024/05/23 04:13:00 fetching corpus: 6447, signal 217390/283301 (executing program)
+2024/05/23 04:13:00 fetching corpus: 6497, signal 218043/283865 (executing program)
+2024/05/23 04:13:00 fetching corpus: 6547, signal 218836/284436 (executing program)
+2024/05/23 04:13:00 fetching corpus: 6597, signal 219322/284959 (executing program)
+2024/05/23 04:13:00 fetching corpus: 6647, signal 219871/285495 (executing program)
+2024/05/23 04:13:01 fetching corpus: 6697, signal 220513/286009 (executing program)
+2024/05/23 04:13:01 fetching corpus: 6747, signal 221017/286525 (executing program)
+2024/05/23 04:13:01 fetching corpus: 6797, signal 221612/287029 (executing program)
+2024/05/23 04:13:01 fetching corpus: 6847, signal 222041/287516 (executing program)
+2024/05/23 04:13:01 fetching corpus: 6897, signal 222955/288035 (executing program)
+2024/05/23 04:13:01 fetching corpus: 6947, signal 223381/288534 (executing program)
+2024/05/23 04:13:02 fetching corpus: 6997, signal 223990/289017 (executing program)
+2024/05/23 04:13:02 fetching corpus: 7047, signal 224405/289469 (executing program)
+2024/05/23 04:13:02 fetching corpus: 7097, signal 224789/289945 (executing program)
+2024/05/23 04:13:02 fetching corpus: 7147, signal 225399/290406 (executing program)
+2024/05/23 04:13:02 fetching corpus: 7197, signal 225911/290891 (executing program)
+2024/05/23 04:13:02 fetching corpus: 7247, signal 226755/291047 (executing program)
+2024/05/23 04:13:02 fetching corpus: 7297, signal 227182/291049 (executing program)
+2024/05/23 04:13:03 fetching corpus: 7347, signal 227695/291049 (executing program)
+2024/05/23 04:13:03 fetching corpus: 7397, signal 228375/291051 (executing program)
+2024/05/23 04:13:03 fetching corpus: 7447, signal 228878/291051 (executing program)
+2024/05/23 04:13:03 fetching corpus: 7497, signal 229434/291051 (executing program)
+2024/05/23 04:13:03 fetching corpus: 7547, signal 230134/291068 (executing program)
+2024/05/23 04:13:03 fetching corpus: 7597, signal 230717/291071 (executing program)
+2024/05/23 04:13:03 fetching corpus: 7646, signal 231177/291071 (executing program)
+2024/05/23 04:13:04 fetching corpus: 7696, signal 231708/291071 (executing program)
+2024/05/23 04:13:04 fetching corpus: 7746, signal 232084/291073 (executing program)
+2024/05/23 04:13:04 fetching corpus: 7796, signal 232499/291075 (executing program)
+2024/05/23 04:13:04 fetching corpus: 7846, signal 233098/291075 (executing program)
+2024/05/23 04:13:04 fetching corpus: 7895, signal 233591/291075 (executing program)
+2024/05/23 04:13:04 fetching corpus: 7945, signal 234238/291075 (executing program)
+2024/05/23 04:13:05 fetching corpus: 7995, signal 234872/291082 (executing program)
+2024/05/23 04:13:05 fetching corpus: 8045, signal 235209/291082 (executing program)
+2024/05/23 04:13:05 fetching corpus: 8095, signal 235599/291082 (executing program)
+2024/05/23 04:13:05 fetching corpus: 8145, signal 236053/291082 (executing program)
+2024/05/23 04:13:05 fetching corpus: 8195, signal 236783/291082 (executing program)
+2024/05/23 04:13:05 fetching corpus: 8245, signal 237686/291082 (executing program)
+2024/05/23 04:13:06 fetching corpus: 8295, signal 238257/291082 (executing program)
+2024/05/23 04:13:06 fetching corpus: 8345, signal 238816/291089 (executing program)
+2024/05/23 04:13:06 fetching corpus: 8394, signal 239142/291091 (executing program)
+2024/05/23 04:13:06 fetching corpus: 8444, signal 239489/291092 (executing program)
+2024/05/23 04:13:06 fetching corpus: 8494, signal 240101/291092 (executing program)
+2024/05/23 04:13:06 fetching corpus: 8544, signal 240532/291103 (executing program)
+2024/05/23 04:13:06 fetching corpus: 8594, signal 240862/291103 (executing program)
+2024/05/23 04:13:06 fetching corpus: 8644, signal 241429/291104 (executing program)
+2024/05/23 04:13:07 fetching corpus: 8694, signal 241892/291156 (executing program)
+2024/05/23 04:13:07 fetching corpus: 8744, signal 242608/291170 (executing program)
+2024/05/23 04:13:07 fetching corpus: 8794, signal 243254/291178 (executing program)
+2024/05/23 04:13:07 fetching corpus: 8844, signal 243699/291178 (executing program)
+2024/05/23 04:13:07 fetching corpus: 8894, signal 244157/291178 (executing program)
+2024/05/23 04:13:07 fetching corpus: 8944, signal 244749/291178 (executing program)
+[  205.314176][ T1219] ieee802154 phy0 wpan0: encryption failed: -22
+[  205.315165][ T1219] ieee802154 phy1 wpan1: encryption failed: -22
+2024/05/23 04:13:07 fetching corpus: 8994, signal 245140/291191 (executing program)
+2024/05/23 04:13:07 fetching corpus: 9044, signal 245806/291191 (executing program)
+2024/05/23 04:13:07 fetching corpus: 9094, signal 246253/291191 (executing program)
+2024/05/23 04:13:08 fetching corpus: 9144, signal 246948/291215 (executing program)
+2024/05/23 04:13:08 fetching corpus: 9194, signal 247426/291215 (executing program)
+2024/05/23 04:13:08 fetching corpus: 9244, signal 247919/291217 (executing program)
+2024/05/23 04:13:08 fetching corpus: 9294, signal 248489/291217 (executing program)
+2024/05/23 04:13:08 fetching corpus: 9344, signal 248983/291217 (executing program)
+2024/05/23 04:13:08 fetching corpus: 9394, signal 249658/291217 (executing program)
+2024/05/23 04:13:08 fetching corpus: 9444, signal 250094/291219 (executing program)
+2024/05/23 04:13:09 fetching corpus: 9494, signal 250535/291219 (executing program)
+2024/05/23 04:13:09 fetching corpus: 9526, signal 250989/291226 (executing program)
+2024/05/23 04:13:09 fetching corpus: 9526, signal 250989/291226 (executing program)
+2024/05/23 04:13:14 starting 1 fuzzer processes
+[  212.657520][ T8014] memfd_create() without MFD_EXEC nor MFD_NOEXEC_SEAL, pid=8014 'syz-fuzzer'
+04:13:14 executing program 0:
+r0 = bpf$PROG_LOAD(0x5, &(0x7f0000000180)={0x4, 0x5, &(0x7f0000000000)=@framed={{0x18, 0x2}, [@call={0x85, 0x0, 0x0, 0x4f}, @call={0x85, 0x0, 0x0, 0x7d}]}, &(0x7f00000000c0)='syzkaller\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+bpf$BPF_PROG_TEST_RUN(0xa, &(0x7f0000000040)={r0, 0x0, 0xe, 0x0, &(0x7f0000000280)="e0400000000d85ff9782762f88ca", 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x50)
+
+[  230.413637][ T8046] Bluetooth: hci0: unexpected cc 0x0c03 length: 249 > 1
+[  230.416365][ T8046] Bluetooth: hci0: unexpected cc 0x1003 length: 249 > 9
+[  230.418234][ T8046] Bluetooth: hci0: unexpected cc 0x1001 length: 249 > 9
+[  230.421353][ T8046] Bluetooth: hci0: unexpected cc 0x0c23 length: 249 > 4
+[  230.433826][ T8046] Bluetooth: hci0: unexpected cc 0x0c25 length: 249 > 3
+[  230.435597][ T8046] Bluetooth: hci0: unexpected cc 0x0c38 length: 249 > 2
+[  231.427625][ T8043] chnl_net:caif_netlink_parms(): no params data found
+[  231.615218][ T8043] bridge0: port 1(bridge_slave_0) entered blocking state
+[  231.616962][ T8043] bridge0: port 1(bridge_slave_0) entered disabled state
+[  231.617881][ T8043] bridge_slave_0: entered allmulticast mode
+[  231.620315][ T8043] bridge_slave_0: entered promiscuous mode
+[  231.633913][ T8043] bridge0: port 2(bridge_slave_1) entered blocking state
+[  231.635103][ T8043] bridge0: port 2(bridge_slave_1) entered disabled state
+[  231.635999][ T8043] bridge_slave_1: entered allmulticast mode
+[  231.638481][ T8043] bridge_slave_1: entered promiscuous mode
+[  231.698000][ T8043] bond0: (slave bond_slave_0): Enslaving as an active interface with an up link
+[  231.707778][ T8043] bond0: (slave bond_slave_1): Enslaving as an active interface with an up link
+[  231.767696][ T8043] team0: Port device team_slave_0 added
+[  231.775157][ T8043] team0: Port device team_slave_1 added
+[  231.828910][ T8043] batman_adv: batadv0: Adding interface: batadv_slave_0
+[  231.829718][ T8043] batman_adv: batadv0: The MTU of interface batadv_slave_0 is too small (1500) to handle the transport of batman-adv packets. Packets going over this interface will be fragmented on layer2 which could impact the performance. Setting the MTU to 1560 would solve the problem.
+[  231.835426][ T8043] batman_adv: batadv0: Not using interface batadv_slave_0 (retrying later): interface not active
+[  231.840193][ T8043] batman_adv: batadv0: Adding interface: batadv_slave_1
+[  231.840977][ T8043] batman_adv: batadv0: The MTU of interface batadv_slave_1 is too small (1500) to handle the transport of batman-adv packets. Packets going over this interface will be fragmented on layer2 which could impact the performance. Setting the MTU to 1560 would solve the problem.
+[  231.849690][ T8043] batman_adv: batadv0: Not using interface batadv_slave_1 (retrying later): interface not active
+[  231.935895][ T8043] hsr_slave_0: entered promiscuous mode
+[  231.937800][ T8043] hsr_slave_1: entered promiscuous mode
+[  232.348432][ T8043] netdevsim netdevsim0 netdevsim0: renamed from eth0
+[  232.369842][ T8043] netdevsim netdevsim0 netdevsim1: renamed from eth1
+[  232.383946][ T8043] netdevsim netdevsim0 netdevsim2: renamed from eth2
+[  232.391766][ T8043] netdevsim netdevsim0 netdevsim3: renamed from eth3
+[  232.515703][ T4406] Bluetooth: hci0: command 0x0409 tx timeout
+[  232.557319][ T8043] 8021q: adding VLAN 0 to HW filter on device bond0
+[  232.576701][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): veth1: link becomes ready
+[  232.579222][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): veth0: link becomes ready
+[  232.604037][ T8043] 8021q: adding VLAN 0 to HW filter on device team0
+[  232.616258][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_to_bridge: link becomes ready
+[  232.618252][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): bridge_slave_0: link becomes ready
+[  232.621352][ T4417] bridge0: port 1(bridge_slave_0) entered blocking state
+[  232.622463][ T4417] bridge0: port 1(bridge_slave_0) entered forwarding state
+[  232.629376][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): bridge0: link becomes ready
+[  232.643586][    T7] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_to_bridge: link becomes ready
+[  232.645290][    T7] IPv6: ADDRCONF(NETDEV_CHANGE): bridge_slave_1: link becomes ready
+[  232.646643][    T7] bridge0: port 2(bridge_slave_1) entered blocking state
+[  232.647414][    T7] bridge0: port 2(bridge_slave_1) entered forwarding state
+[  232.669272][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_to_bond: link becomes ready
+[  232.684831][    T7] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_to_bond: link becomes ready
+[  232.695669][    T7] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_to_team: link becomes ready
+[  232.697900][    T7] IPv6: ADDRCONF(NETDEV_CHANGE): team_slave_0: link becomes ready
+[  232.700945][    T7] IPv6: ADDRCONF(NETDEV_CHANGE): team0: link becomes ready
+[  232.724355][    T7] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_to_team: link becomes ready
+[  232.726711][    T7] IPv6: ADDRCONF(NETDEV_CHANGE): team_slave_1: link becomes ready
+[  232.736765][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_to_hsr: link becomes ready
+[  232.738706][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): hsr_slave_0: link becomes ready
+[  232.751529][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_to_hsr: link becomes ready
+[  232.753849][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): hsr_slave_1: link becomes ready
+[  232.767928][ T8043] IPv6: ADDRCONF(NETDEV_CHANGE): hsr0: link becomes ready
+[  233.067888][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): vxcan1: link becomes ready
+[  233.068951][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): vxcan0: link becomes ready
+[  233.089454][ T8043] 8021q: adding VLAN 0 to HW filter on device batadv0
+[  233.125345][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_virt_wifi: link becomes ready
+[  233.127797][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_virt_wifi: link becomes ready
+[  233.166243][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_vlan: link becomes ready
+[  233.168361][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_vlan: link becomes ready
+[  233.174504][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): vlan0: link becomes ready
+[  233.176394][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): vlan1: link becomes ready
+[  233.181513][ T8043] veth0_vlan: entered promiscuous mode
+[  233.199440][ T8043] veth1_vlan: entered promiscuous mode
+[  233.206640][    T7] IPv6: ADDRCONF(NETDEV_CHANGE): macvlan0: link becomes ready
+[  233.257104][    T7] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_macvtap: link becomes ready
+[  233.259095][    T7] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_macvtap: link becomes ready
+[  233.270641][ T8043] veth0_macvtap: entered promiscuous mode
+[  233.280260][ T8043] veth1_macvtap: entered promiscuous mode
+[  233.306763][ T8043] batman_adv: batadv0: Interface activated: batadv_slave_0
+[  233.307860][    T7] IPv6: ADDRCONF(NETDEV_CHANGE): macvtap0: link becomes ready
+[  233.309626][    T7] IPv6: ADDRCONF(NETDEV_CHANGE): macsec0: link becomes ready
+[  233.311355][    T7] IPv6: ADDRCONF(NETDEV_CHANGE): batadv_slave_0: link becomes ready
+[  233.317930][    T7] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_to_batadv: link becomes ready
+[  233.330745][ T8043] batman_adv: batadv0: Interface activated: batadv_slave_1
+[  233.331826][    T7] IPv6: ADDRCONF(NETDEV_CHANGE): batadv_slave_1: link becomes ready
+[  233.334003][    T7] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_to_batadv: link becomes ready
+[  233.349627][ T8043] netdevsim netdevsim0 netdevsim0: set [1, 0] type 2 family 0 port 6081 - 0
+[  233.350789][ T8043] netdevsim netdevsim0 netdevsim1: set [1, 0] type 2 family 0 port 6081 - 0
+[  233.365459][ T8043] netdevsim netdevsim0 netdevsim2: set [1, 0] type 2 family 0 port 6081 - 0
+[  233.366912][ T8043] netdevsim netdevsim0 netdevsim3: set [1, 0] type 2 family 0 port 6081 - 0
+[  233.494218][ T8043] ieee80211 phy3: Selected rate control algorithm 'minstrel_ht'
+[  233.616659][ T1005] wlan0: Created IBSS using preconfigured BSSID 50:50:50:50:50:50
+[  233.618150][ T1005] wlan0: Creating new IBSS network, BSSID 50:50:50:50:50:50
+[  233.621984][ T5157] IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+[  233.678032][ T8043] ieee80211 phy4: Selected rate control algorithm 'minstrel_ht'
+[  233.777522][ T1005] wlan1: Created IBSS using preconfigured BSSID 50:50:50:50:50:50
+[  233.778993][ T1005] wlan1: Creating new IBSS network, BSSID 50:50:50:50:50:50
+[  233.789926][ T5157] IPv6: ADDRCONF(NETDEV_CHANGE): wlan1: link becomes ready
+[  234.602160][ T4406] Bluetooth: hci0: command 0x041b tx timeout
+2024/05/23 04:13:38 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2b8d, Ip:0x8170f374}
+2024/05/23 04:13:38 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x313d, Ip:0x8170cde2}
+2024/05/23 04:13:38 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/23 04:13:38 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x350d, Ip:0x8170cdf5}
+2024/05/23 04:13:38 cfuCover: ipc.CustomCov{Id:0xc001, Val:0xf15, Ip:0x862e01c0}
+04:13:38 executing program 0:
+r0 = bpf$PROG_LOAD(0x5, &(0x7f0000000180)={0x4, 0x5, &(0x7f0000000000)=@framed={{0x18, 0x2}, [@call={0x85, 0x0, 0x0, 0x4f}, @call={0x85, 0x0, 0x0, 0x7d}]}, &(0x7f00000000c0)='syzkaller\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+bpf$BPF_PROG_TEST_RUN(0xa, &(0x7f0000000040)={r0, 0x0, 0xe, 0x0, &(0x7f0000000280)="e0400000000d85ff9782762f88ca", 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x50)
+
+2024/05/23 04:13:38 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x313d, Ip:0x8170cde2}
+2024/05/23 04:13:38 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/23 04:13:38 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x350d, Ip:0x8170cdf5}
+2024/05/23 04:13:38 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x4f50, Ip:0x862e01d0}
+[  236.674215][ T4406] Bluetooth: hci0: command 0x040f tx timeout
+04:13:40 executing program 0:
+r0 = bpf$PROG_LOAD(0x5, &(0x7f0000000180)={0x4, 0x5, &(0x7f0000000000)=@framed={{0x18, 0x2}, [@call={0x85, 0x0, 0x0, 0x4f}, @call={0x85, 0x0, 0x0, 0x7d}]}, &(0x7f00000000c0)='syzkaller\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+bpf$BPF_PROG_TEST_RUN(0xa, &(0x7f0000000040)={r0, 0x0, 0xe, 0x0, &(0x7f0000000280)="e0400000000d85ff9782762f88ca", 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x50)
+
+[  238.753973][ T4406] Bluetooth: hci0: command 0x0419 tx timeout
+04:13:41 executing program 0:
+r0 = bpf$PROG_LOAD(0x5, &(0x7f0000000180)={0x4, 0x5, &(0x7f0000000000)=@framed={{0x18, 0x2}, [@call={0x85, 0x0, 0x0, 0x4f}, @call={0x85, 0x0, 0x0, 0x7d}]}, &(0x7f00000000c0)='syzkaller\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+bpf$BPF_PROG_TEST_RUN(0xa, &(0x7f0000000040)={r0, 0x0, 0xe, 0x0, &(0x7f0000000280)="e0400000000d85ff9782762f88ca", 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x50)
+
+04:13:43 executing program 0:
+r0 = bpf$PROG_LOAD(0x5, &(0x7f0000000180)={0x4, 0x5, &(0x7f0000000000)=@framed={{0x18, 0x2}, [@call={0x85, 0x0, 0x0, 0x4f}, @call={0x85, 0x0, 0x0, 0x7d}]}, &(0x7f00000000c0)='syzkaller\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+bpf$BPF_PROG_TEST_RUN(0xa, &(0x7f0000000040)={r0, 0x0, 0xe, 0x0, &(0x7f0000000280)="e0400000000d85ff9782762f88ca", 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x50)
+
+04:13:44 executing program 0:
+r0 = bpf$PROG_LOAD(0x5, &(0x7f0000000180)={0x4, 0x5, &(0x7f0000000000)=@framed={{0x18, 0x2}, [@call={0x85, 0x0, 0x0, 0x4f}, @call={0x85, 0x0, 0x0, 0x7d}]}, &(0x7f00000000c0)='syzkaller\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+bpf$BPF_PROG_TEST_RUN(0xa, &(0x7f0000000040)={r0, 0x0, 0xe, 0x0, &(0x7f0000000280)="e0400000000d85ff9782762f88ca", 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x50)
+
+04:13:46 executing program 0:
+r0 = bpf$PROG_LOAD(0x5, &(0x7f0000000180)={0x4, 0x5, &(0x7f0000000000)=@framed={{0x18, 0x2}, [@call={0x85, 0x0, 0x0, 0x4f}, @call={0x85, 0x0, 0x0, 0x7d}]}, &(0x7f00000000c0)='syzkaller\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+bpf$BPF_PROG_TEST_RUN(0xa, &(0x7f0000000040)={r0, 0x0, 0xe, 0x0, &(0x7f0000000280)="e0400000000d85ff9782762f88ca", 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x50)
+
+04:13:47 executing program 0:
+bpf$ENABLE_STATS(0x20, 0x0, 0x0)
+r0 = socket$nl_xfrm(0x10, 0x3, 0x6)
+sendmsg$nl_xfrm(r0, &(0x7f0000000cc0)={0x0, 0x0, &(0x7f0000000000)={&(0x7f0000000040)=@updpolicy={0x13c, 0x19, 0x9, 0x0, 0x0, {{@in=@empty, @in6=@ipv4={'\x00', '\xff\xff', @dev}, 0x0, 0x0, 0x0, 0x0, 0xa, 0x0, 0x0, 0x0, 0x0, 0xee00}}, [@tmpl={0x84, 0x5, [{{@in=@local, 0x0, 0x6c}, 0x0, @in=@remote, 0x0, 0x1}, {{@in=@dev, 0x0, 0x3c}, 0x0, @in6=@private2}]}]}, 0x13c}}, 0x0)
+sendmsg$nl_route(0xffffffffffffffff, 0x0, 0x0)
+ioctl$EXT4_IOC_ALLOC_DA_BLKS(r0, 0x660c)
+r1 = bpf$PROG_LOAD(0x5, &(0x7f00000000c0)={0x11, 0xc, &(0x7f0000000180)=ANY=[@ANYBLOB="180000000000000000000000000000001801000020786c2500000000002020207b1ae8ff00000000bfa100000000000007010000f8ffffffb702000008000000b7030000000000008500000010000000850000002300000095"], &(0x7f0000000200)='GPL\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f0000000bc0)={&(0x7f0000000000)='jbd2_handle_stats\x00', r1}, 0x10)
+openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000240)='cpu.stat\x00', 0x275a, 0x0)
+
+2024/05/23 04:13:49 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x313d, Ip:0x8170cde2}
+2024/05/23 04:13:49 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/23 04:13:49 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x350d, Ip:0x8170cdf5}
+2024/05/23 04:13:49 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x30be, Ip:0x85ffa1f0}
+2024/05/23 04:13:49 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/23 04:13:49 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3e9b, Ip:0x833c12dd}
+04:13:49 executing program 0:
+accept() (enabled_site: 19747, site_type: 1)
+bpf$ENABLE_STATS(0x20, 0x0, 0x0)
+r0 = socket$nl_xfrm(0x10, 0x3, 0x6)
+sendmsg$nl_xfrm(r0, &(0x7f0000000cc0)={0x0, 0x0, &(0x7f0000000000)={&(0x7f0000000040)=@updpolicy={0x13c, 0x19, 0x9, 0x0, 0x0, {{@in=@empty, @in6=@ipv4={'\x00', '\xff\xff', @dev}, 0x0, 0x0, 0x0, 0x0, 0xa, 0x0, 0x0, 0x0, 0x0, 0xee00}}, [@tmpl={0x84, 0x5, [{{@in=@local, 0x0, 0x6c}, 0x0, @in=@remote, 0x0, 0x1}, {{@in=@dev, 0x0, 0x3c}, 0x0, @in6=@private2}]}]}, 0x13c}}, 0x0)
+sendmsg$nl_route(0xffffffffffffffff, 0x0, 0x0)
+ioctl$EXT4_IOC_ALLOC_DA_BLKS(r0, 0x660c)
+r1 = bpf$PROG_LOAD(0x5, &(0x7f00000000c0)={0x11, 0xc, &(0x7f0000000180)=ANY=[@ANYBLOB="180000000000000000000000000000001801000020786c2500000000002020207b1ae8ff00000000bfa100000000000007010000f8ffffffb702000008000000b7030000000000008500000010000000850000002300000095"], &(0x7f0000000200)='GPL\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f0000000bc0)={&(0x7f0000000000)='jbd2_handle_stats\x00', r1}, 0x10)
+openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000240)='cpu.stat\x00', 0x275a, 0x0)
+
+2024/05/23 04:13:49 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x4de3, Ip:0x85ffa202}
+2024/05/23 04:13:49 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x1c8b, Ip:0x869e054c}
+2024/05/23 04:13:49 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x1d22, Ip:0x8682ab0e}
+2024/05/23 04:13:49 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x290b, Ip:0x8681c3b7}
+2024/05/23 04:13:49 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x2bc6, Ip:0x8682adde}
+2024/05/23 04:13:49 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x2c74, Ip:0x869e121c}
+2024/05/23 04:13:49 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x2e50, Ip:0x869e10c0}
+2024/05/23 04:13:49 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x37bb, Ip:0x8682adfa}
+2024/05/23 04:13:49 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x451f, Ip:0x8682ab28}
+2024/05/23 04:13:49 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x4a38, Ip:0x8682c3c5}
+2024/05/23 04:13:49 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x4b95, Ip:0x869e0789}
+2024/05/23 04:13:49 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x4d23, Ip:0x8681c39c}
+2024/05/23 04:13:49 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x59bd, Ip:0x835b1664}
+2024/05/23 04:13:49 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2b8d, Ip:0x8170f374}
+2024/05/23 04:13:49 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x313d, Ip:0x8170cde2}
+2024/05/23 04:13:49 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/23 04:13:49 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x350d, Ip:0x8170cdf5}
+2024/05/23 04:13:49 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x12a3, Ip:0x81718809}
+2024/05/23 04:13:49 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x313d, Ip:0x8170cde2}
+2024/05/23 04:13:49 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/23 04:13:49 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x350d, Ip:0x8170cdf5}
+2024/05/23 04:13:49 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+2024/05/23 04:13:49 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x5547, Ip:0x81ebd996}
+2024/05/23 04:13:49 KDO: #0: memintrinsic id=19747
+[  247.987130][ T8302] BUG: KASAN: unknown-crash in xfrm_send_policy_notify+0xb3c/0x14f0
+[  247.988531][ T8302] Write of size 8 at addr ffff888025f6d810 by task syz-executor.0/8302
+[  247.989454][ T8302] 
+[  247.989954][ T8302] CPU: 0 PID: 8302 Comm: syz-executor.0 Not tainted 6.4.1-00011-gc173c3c31378 #20
+[  247.991771][ T8302] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+[  247.992796][ T8302] Call Trace:
+[  247.993213][ T8302]  <TASK>
+[  247.993584][ T8302]  dump_stack_lvl+0x1ce/0x2c0
+[  247.994152][ T8302]  ? nf_tcp_handle_invalid+0x3d0/0x3d0
+[  247.994789][ T8302]  ? preempt_count_add+0xa0/0xf0
+[  247.995378][ T8302]  ? panic+0x620/0x620
+[  247.995886][ T8302]  print_report+0x163/0x540
+[  247.996434][ T8302]  ? __virt_addr_valid+0x1cc/0x240
+[  247.997054][ T8302]  ? __phys_addr+0x99/0x110
+[  247.997603][ T8302]  kdo_kasan_report+0x7f/0x90
+[  247.998166][ T8302]  ? xfrm_send_policy_notify+0xb3c/0x14f0
+[  247.998816][ T8302]  ? xfrm_send_policy_notify+0xb3c/0x14f0
+[  247.999463][ T8302]  propagate_taint+0x1e1/0x210
+[  248.000005][ T8302]  ? xfrm_send_policy_notify+0xb3c/0x14f0
+[  248.000671][ T8302]  ? xfrm_send_policy_notify+0xb3c/0x14f0
+[  248.001355][ T8302]  __kdo_asan_memcpy+0x69/0xa0
+[  248.001927][ T8302]  xfrm_send_policy_notify+0xb3c/0x14f0
+[  248.002590][ T8302]  ? xfrm_send_mapping+0x370/0x370
+[  248.003198][ T8302]  ? rcu_force_quiescent_state+0x1e0/0x1e0
+[  248.003891][ T8302]  ? xfrm_send_mapping+0x370/0x370
+[  248.004500][ T8302]  km_policy_notify+0xe1/0x190
+[  248.005080][ T8302]  xfrm_add_policy+0x3fa/0x620
+[  248.005647][ T8302]  ? end_current_label_crit_section+0x130/0x130
+[  248.006355][ T8302]  ? xfrm_dump_sa_done+0x70/0x70
+[  248.006943][ T8302]  ? apparmor_capable+0xfb/0x160
+[  248.007533][ T8302]  ? __nla_parse+0x40/0x50
+[  248.008072][ T8302]  ? xfrm_dump_sa_done+0x70/0x70
+[  248.008659][ T8302]  xfrm_user_rcv_msg+0x5ad/0x770
+[  248.009231][ T8302]  ? xfrm_netlink_rcv+0x60/0x60
+[  248.009836][ T8302]  ? __mutex_trylock_common+0x145/0x200
+[  248.010482][ T8302]  ? trace_raw_output_contention_end+0x90/0x90
+[  248.011206][ T8302]  netlink_rcv_skb+0x184/0x2b0
+[  248.011777][ T8302]  ? xfrm_netlink_rcv+0x60/0x60
+[  248.012352][ T8302]  ? netlink_ack+0xac0/0xac0
+[  248.012920][ T8302]  ? __lock_acquire+0x10d0/0x10d0
+[  248.013536][ T8302]  xfrm_netlink_rcv+0x49/0x60
+[  248.014094][ T8302]  netlink_unicast+0x605/0x6c0
+[  248.014671][ T8302]  ? copyout_mc+0x80/0x80
+[  248.015196][ T8302]  ? netlink_detachskb+0x90/0x90
+[  248.015784][ T8302]  ? __phys_addr_symbol+0x3b/0x50
+[  248.016360][ T8302]  ? __check_object_size+0x3f9/0x850
+[  248.017000][ T8302]  netlink_sendmsg+0x826/0x990
+[  248.017588][ T8302]  ? netlink_getsockopt+0x570/0x570
+[  248.018212][ T8302]  ? bpf_lsm_socket_sendmsg+0x9/0x10
+[  248.018831][ T8302]  ? netlink_getsockopt+0x570/0x570
+[  248.019449][ T8302]  ____sys_sendmsg+0x47d/0x650
+[  248.020032][ T8302]  ? __sys_sendmsg_sock+0x30/0x30
+[  248.020648][ T8302]  __sys_sendmsg+0x28f/0x360
+[  248.021183][ T8302]  ? __might_fault+0x9c/0xe0
+[  248.021740][ T8302]  ? ____sys_sendmsg+0x650/0x650
+[  248.022364][ T8302]  ? lockdep_hardirqs_on_prepare+0x2dc/0x410
+[  248.023073][ T8302]  ? syscall_enter_from_user_mode+0x32/0x230
+[  248.023763][ T8302]  ? lockdep_hardirqs_on+0xdd/0x180
+[  248.024375][ T8302]  ? syscall_enter_from_user_mode+0x32/0x230
+[  248.025075][ T8302]  do_syscall_64+0x41/0x90
+[  248.025615][ T8302]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  248.026347][ T8302] RIP: 0033:0x7f1fcbc8fddd
+[  248.026880][ T8302] Code: c3 e8 97 2b 00 00 0f 1f 80 00 00 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 b0 ff ff ff f7 d8 64 89 01 48
+[  248.028935][ T8302] RSP: 002b:00007f1fcc955028 EFLAGS: 00000246 ORIG_RAX: 000000000000002e
+[  248.029891][ T8302] RAX: ffffffffffffffda RBX: 00007f1fcbdcbf80 RCX: 00007f1fcbc8fddd
+[  248.030772][ T8302] RDX: 0000000000000000 RSI: 0000000020000cc0 RDI: 0000000000000004
+[  248.031649][ T8302] RBP: 00007f1fcbd01e18 R08: 0000000000000000 R09: 0000000000000000
+[  248.032529][ T8302] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000000
+[  248.033426][ T8302] R13: 000000000000000b R14: 00007f1fcbdcbf80 R15: 00007f1fcc935000
+[  248.034324][ T8302]  </TASK>
+[  248.045743][ T8302] 
+[  248.046082][ T8302] Allocated by task 8302:
+[  248.046573][ T8302]  kasan_set_track+0x4f/0x70
+[  248.056026][ T8302]  __kasan_kmalloc+0x7d/0x90
+[  248.056605][ T8302]  __kmalloc_node_track_caller+0xb6/0x230
+[  248.061974][ T8302]  kmalloc_reserve+0xc7/0x170
+[  248.062557][ T8302]  __alloc_skb+0x192/0x2e0
+[  248.064496][ T8302]  xfrm_send_policy_notify+0x224/0x14f0
+[  248.065167][ T8302]  km_policy_notify+0xe1/0x190
+[  248.074599][ T8302]  xfrm_add_policy+0x3fa/0x620
+[  248.075182][ T8302]  xfrm_user_rcv_msg+0x5ad/0x770
+[  248.078010][ T8302]  netlink_rcv_skb+0x184/0x2b0
+[  248.095227][ T8302]  xfrm_netlink_rcv+0x49/0x60
+[  248.095796][ T8302]  netlink_unicast+0x605/0x6c0
+[  248.098041][ T8302]  netlink_sendmsg+0x826/0x990
+[  248.098646][ T8302]  ____sys_sendmsg+0x47d/0x650
+[  248.102047][ T8302]  __sys_sendmsg+0x28f/0x360
+[  248.102619][ T8302]  do_syscall_64+0x41/0x90
+[  248.104172][ T8302]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  248.105401][ T8302] 
+[  248.105697][ T8302] The buggy address belongs to the object at ffff888025f6d800
+[  248.105697][ T8302]  which belongs to the cache kmalloc-1k of size 1024
+[  248.115167][ T8302] The buggy address is located 16 bytes inside of
+[  248.115167][ T8302]  1024-byte region [ffff888025f6d800, ffff888025f6dc00)
+[  248.117007][ T8302] 
+[  248.117301][ T8302] The buggy address belongs to the physical page:
+[  248.118386][ T8302] page:ffffea000097db00 refcount:1 mapcount:0 mapping:0000000000000000 index:0x0 pfn:0x25f6c
+[  248.133483][ T8302] head:ffffea000097db00 order:2 entire_mapcount:0 nr_pages_mapped:0 pincount:0
+[  248.134854][ T8302] anon flags: 0xfff00000010200(slab|head|node=0|zone=1|lastcpupid=0x7ff)
+[  248.136139][ T8302] page_type: 0xffffffff()
+[  248.136678][ T8302] raw: 00fff00000010200 ffff88800ec41dc0 0000000000000000 dead000000000001
+[  248.138002][ T8302] raw: 0000000000000000 0000000000080008 00000001ffffffff 0000000000000000
+[  248.139291][ T8302] page dumped because: kasan: bad access detected
+[  248.140019][ T8302] page_owner tracks the page as allocated
+[  248.141241][ T8302] page last allocated via order 2, migratetype Unmovable, gfp_mask 0xd2040(__GFP_IO|__GFP_NOWARN|__GFP_NORETRY|__GFP_COMP|__GFP_NOMEMALLOC), pid 7971, tgid 7971 (sshd), ts 160659478848, free_ts 160579841934
+[  248.145596][ T8302]  post_alloc_hook+0x1e6/0x210
+[  248.146255][ T8302]  get_page_from_freelist+0x260a/0x2790
+[  248.153763][ T8302]  __alloc_pages+0x1f2/0x480
+[  248.154305][ T8302]  alloc_slab_page+0x6a/0x160
+[  248.155246][ T8302]  new_slab+0x84/0x2f0
+[  248.155826][ T8302]  ___slab_alloc+0xa85/0x10a0
+[  248.156872][ T8302]  __kmem_cache_alloc_node+0x1a8/0x240
+[  248.157524][ T8302]  __kmalloc+0xa8/0x230
+[  248.162130][ T8302]  tomoyo_init_log+0x12c9/0x14c0
+[  248.162861][ T8302]  tomoyo_supervisor+0x382/0xe00
+[  248.163919][ T8302]  tomoyo_env_perm+0x150/0x1c0
+[  248.164511][ T8302]  tomoyo_find_next_domain+0xe3f/0x1250
+[  248.165487][ T8302]  tomoyo_bprm_check_security+0xa0/0xf0
+[  248.166263][ T8302]  security_bprm_check+0x36/0x60
+[  248.173450][ T8302]  bprm_execve+0x850/0x10d0
+[  248.174019][ T8302]  do_execveat_common+0x3ee/0x450
+[  248.174982][ T8302] page last free stack trace:
+[  248.175511][ T8302]  free_unref_page_prepare+0x75a/0x820
+[  248.176516][ T8302]  free_unref_page+0x37/0x300
+[  248.177073][ T8302]  __stack_depot_save+0x4ef/0x650
+[  248.182089][ T8302]  kasan_set_track+0x61/0x70
+[  248.182638][ T8302]  kasan_save_free_info+0x2b/0x40
+[  248.183600][ T8302]  ____kasan_slab_free+0xb0/0x100
+[  248.184178][ T8302]  kmem_cache_free+0x217/0x490
+[  248.189846][ T8302]  pskb_expand_head+0x361/0xa80
+[  248.190456][ T8302]  __skb_pad+0x20a/0x2f0
+[  248.191316][ T8302]  e1000_xmit_frame+0x2636/0x2a60
+[  248.205386][ T8302]  dev_hard_start_xmit+0x1b3/0x600
+[  248.206018][ T8302]  sch_direct_xmit+0x236/0x410
+[  248.213769][ T8302]  __dev_queue_xmit+0x137c/0x25b0
+[  248.214386][ T8302]  ip_finish_output2+0x8cd/0xb70
+[  248.222392][ T8302]  __ip_queue_xmit+0xe77/0xfa0
+[  248.222976][ T8302]  __tcp_transmit_skb+0x15cc/0x1c20
+[  248.223937][ T8302] 
+[  248.224228][ T8302] Memory state around the buggy address:
+[  248.225517][ T8302]  ffff888025f6d700: fc fc fc fc fc fc fc fc fc fc fc fc fc fc fc fc
+[  248.226812][ T8302]  ffff888025f6d780: fc fc fc fc fc fc fc fc fc fc fc fc fc fc fc fc
+[  248.228086][ T8302] >ffff888025f6d800: ec ec ee ec ec ec ec ec ec ec ec ec ec ec ec ec
+[  248.229373][ T8302]                          ^
+[  248.229931][ T8302]  ffff888025f6d880: ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec
+[  248.236897][ T8302]  ffff888025f6d900: ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec
+[  248.238200][ T8302] BUG: KASAN: unknown-crash in xfrm_send_policy_notify+0xb3c/0x14f0
+[  248.239481][ T8302] Write of size 8 at addr ffff888070bba0d8 by task syz-executor.0/8302
+[  248.243905][ T8302] 
+[  248.244221][ T8302] CPU: 0 PID: 8302 Comm: syz-executor.0 Not tainted 6.4.1-00011-gc173c3c31378 #20
+[  248.245249][ T8302] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+[  248.246256][ T8302] Call Trace:
+[  248.246641][ T8302]  <TASK>
+[  248.246989][ T8302]  dump_stack_lvl+0x1ce/0x2c0
+[  248.247546][ T8302]  ? nf_tcp_handle_invalid+0x3d0/0x3d0
+[  248.248178][ T8302]  ? panic+0x620/0x620
+[  248.248673][ T8302]  print_report+0x163/0x540
+[  248.249214][ T8302]  ? __virt_addr_valid+0x1cc/0x240
+[  248.249808][ T8302]  ? __phys_addr+0x99/0x110
+[  248.250345][ T8302]  kdo_kasan_report+0x7f/0x90
+[  248.250896][ T8302]  ? xfrm_send_policy_notify+0xb3c/0x14f0
+[  248.251558][ T8302]  ? xfrm_send_policy_notify+0xb3c/0x14f0
+[  248.252214][ T8302]  propagate_taint+0x1f6/0x210
+[  248.252767][ T8302]  ? xfrm_send_policy_notify+0xb3c/0x14f0
+[  248.253437][ T8302]  ? xfrm_send_policy_notify+0xb3c/0x14f0
+[  248.254097][ T8302]  __kdo_asan_memcpy+0x69/0xa0
+[  248.254654][ T8302]  xfrm_send_policy_notify+0xb3c/0x14f0
+[  248.255308][ T8302]  ? xfrm_send_mapping+0x370/0x370
+[  248.255905][ T8302]  ? rcu_force_quiescent_state+0x1e0/0x1e0
+[  248.256639][ T8302]  ? xfrm_send_mapping+0x370/0x370
+[  248.257255][ T8302]  km_policy_notify+0xe1/0x190
+[  248.257807][ T8302]  xfrm_add_policy+0x3fa/0x620
+[  248.258350][ T8302]  ? end_current_label_crit_section+0x130/0x130
+[  248.259060][ T8302]  ? xfrm_dump_sa_done+0x70/0x70
+[  248.259624][ T8302]  ? apparmor_capable+0xfb/0x160
+[  248.260193][ T8302]  ? __nla_parse+0x40/0x50
+[  248.260709][ T8302]  ? xfrm_dump_sa_done+0x70/0x70
+[  248.261279][ T8302]  xfrm_user_rcv_msg+0x5ad/0x770
+[  248.261846][ T8302]  ? xfrm_netlink_rcv+0x60/0x60
+[  248.262424][ T8302]  ? __mutex_trylock_common+0x145/0x200
+[  248.263051][ T8302]  ? trace_raw_output_contention_end+0x90/0x90
+[  248.263754][ T8302]  netlink_rcv_skb+0x184/0x2b0
+[  248.264302][ T8302]  ? xfrm_netlink_rcv+0x60/0x60
+[  248.264856][ T8302]  ? netlink_ack+0xac0/0xac0
+[  248.265405][ T8302]  ? __lock_acquire+0x10d0/0x10d0
+[  248.265995][ T8302]  xfrm_netlink_rcv+0x49/0x60
+[  248.266531][ T8302]  netlink_unicast+0x605/0x6c0
+[  248.267081][ T8302]  ? copyout_mc+0x80/0x80
+[  248.267584][ T8302]  ? netlink_detachskb+0x90/0x90
+[  248.268209][ T8302]  ? __phys_addr_symbol+0x3b/0x50
+[  248.268788][ T8302]  ? __check_object_size+0x3f9/0x850
+[  248.269407][ T8302]  netlink_sendmsg+0x826/0x990
+[  248.269980][ T8302]  ? netlink_getsockopt+0x570/0x570
+[  248.270579][ T8302]  ? bpf_lsm_socket_sendmsg+0x9/0x10
+[  248.271180][ T8302]  ? netlink_getsockopt+0x570/0x570
+[  248.271794][ T8302]  ____sys_sendmsg+0x47d/0x650
+[  248.272370][ T8302]  ? __sys_sendmsg_sock+0x30/0x30
+[  248.272975][ T8302]  __sys_sendmsg+0x28f/0x360
+[  248.273519][ T8302]  ? __might_fault+0x9c/0xe0
+[  248.274124][ T8302]  ? ____sys_sendmsg+0x650/0x650
+[  248.274766][ T8302]  ? lockdep_hardirqs_on_prepare+0x2dc/0x410
+[  248.275453][ T8302]  ? syscall_enter_from_user_mode+0x32/0x230
+[  248.276129][ T8302]  ? lockdep_hardirqs_on+0xdd/0x180
+[  248.276719][ T8302]  ? syscall_enter_from_user_mode+0x32/0x230
+[  248.277651][ T8302]  do_syscall_64+0x41/0x90
+[  248.278242][ T8302]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  248.278927][ T8302] RIP: 0033:0x7f1fcbc8fddd
+[  248.279523][ T8302] Code: c3 e8 97 2b 00 00 0f 1f 80 00 00 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 b0 ff ff ff f7 d8 64 89 01 48
+[  248.281983][ T8302] RSP: 002b:00007f1fcc955028 EFLAGS: 00000246 ORIG_RAX: 000000000000002e
+[  248.283048][ T8302] RAX: ffffffffffffffda RBX: 00007f1fcbdcbf80 RCX: 00007f1fcbc8fddd
+[  248.283999][ T8302] RDX: 0000000000000000 RSI: 0000000020000cc0 RDI: 0000000000000004
+[  248.285141][ T8302] RBP: 00007f1fcbd01e18 R08: 0000000000000000 R09: 0000000000000000
+[  248.286040][ T8302] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000000
+[  248.286954][ T8302] R13: 000000000000000b R14: 00007f1fcbdcbf80 R15: 00007f1fcc935000
+[  248.288083][ T8302]  </TASK>
+[  248.350051][ T8302] 
+[  248.350400][ T8302] Allocated by task 8302:
+[  248.351302][ T8302]  kasan_set_track+0x4f/0x70
+[  248.352543][ T8302]  __kasan_kmalloc+0x7d/0x90
+[  248.353096][ T8302]  xfrm_policy_alloc+0x62/0x260
+[  248.354050][ T8302]  xfrm_policy_construct+0x2f/0x830
+[  248.354641][ T8302]  xfrm_add_policy+0x1c9/0x620
+[  248.355565][ T8302]  xfrm_user_rcv_msg+0x5ad/0x770
+[  248.356129][ T8302]  netlink_rcv_skb+0x184/0x2b0
+[  248.363473][ T8302]  xfrm_netlink_rcv+0x49/0x60
+[  248.364026][ T8302]  netlink_unicast+0x605/0x6c0
+[  248.364957][ T8302]  netlink_sendmsg+0x826/0x990
+[  248.365581][ T8302]  ____sys_sendmsg+0x47d/0x650
+[  248.366535][ T8302]  __sys_sendmsg+0x28f/0x360
+[  248.367071][ T8302]  do_syscall_64+0x41/0x90
+[  248.367967][ T8302]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  248.368635][ T8302] 
+[  248.372511][ T8302] Last potentially related work creation:
+[  248.373173][ T8302]  kasan_save_stack+0x3f/0x60
+[  248.374102][ T8302]  kasan_record_aux_stack_noalloc+0x87/0x90
+[  248.374771][ T8302]  call_rcu+0x169/0x780
+[  248.383449][ T8302]  netlink_release+0x1080/0x1210
+[  248.384066][ T8302]  sock_close+0x80/0x1b0
+[  248.384928][ T8302]  __fput+0x2cc/0x5a0
+[  248.385429][ T8302]  task_work_run+0x1a3/0x250
+[  248.386329][ T8302]  exit_to_user_mode_loop+0xd9/0x100
+[  248.386966][ T8302]  exit_to_user_mode_prepare+0xb1/0x140
+[  248.387946][ T8302]  syscall_exit_to_user_mode+0x64/0x280
+[  248.388580][ T8302]  do_syscall_64+0x4d/0x90
+[  248.392112][ T8302]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  248.392782][ T8302] 
+[  248.393407][ T8302] The buggy address belongs to the object at ffff888070bba000
+[  248.393407][ T8302]  which belongs to the cache kmalloc-2k of size 2048
+[  248.403355][ T8302] The buggy address is located 216 bytes inside of
+[  248.403355][ T8302]  2048-byte region [ffff888070bba000, ffff888070bba800)
+[  248.405157][ T8302] 
+[  248.405494][ T8302] The buggy address belongs to the physical page:
+[  248.406537][ T8302] page:ffffea0001c2ee00 refcount:1 mapcount:0 mapping:0000000000000000 index:0x0 pfn:0x70bb8
+[  248.407932][ T8302] head:ffffea0001c2ee00 order:3 entire_mapcount:0 nr_pages_mapped:0 pincount:0
+[  248.409289][ T8302] anon flags: 0xfff00000010200(slab|head|node=0|zone=1|lastcpupid=0x7ff)
+[  248.415104][ T8302] page_type: 0xffffffff()
+[  248.415669][ T8302] raw: 00fff00000010200 ffff88800ec42000 0000000000000000 0000000000000001
+[  248.416997][ T8302] raw: 0000000000000000 0000000000080008 00000001ffffffff 0000000000000000
+[  248.418317][ T8302] page dumped because: kasan: bad access detected
+[  248.419047][ T8302] page_owner tracks the page as allocated
+[  248.420037][ T8302] page last allocated via order 3, migratetype Unmovable, gfp_mask 0xd20c0(__GFP_IO|__GFP_FS|__GFP_NOWARN|__GFP_NORETRY|__GFP_COMP|__GFP_NOMEMALLOC), pid 7961, tgid 7961 (sshd), ts 160640908756, free_ts 160639815489
+[  248.430190][ T8302]  post_alloc_hook+0x1e6/0x210
+[  248.430791][ T8302]  get_page_from_freelist+0x260a/0x2790
+[  248.434714][ T8302]  __alloc_pages+0x1f2/0x480
+[  248.435286][ T8302]  alloc_slab_page+0x6a/0x160
+[  248.436194][ T8302]  new_slab+0x84/0x2f0
+[  248.436696][ T8302]  ___slab_alloc+0xa85/0x10a0
+[  248.443538][ T8302]  __kmem_cache_alloc_node+0x1a8/0x240
+[  248.444209][ T8302]  __kmalloc+0xa8/0x230
+[  248.445080][ T8302]  sk_prot_alloc+0xab/0x190
+[  248.445632][ T8302]  sk_alloc+0x35/0x270
+[  248.446495][ T8302]  __netlink_create+0x68/0x230
+[  248.447085][ T8302]  netlink_create+0x330/0x450
+[  248.452313][ T8302]  __sock_create+0x3f2/0x760
+[  248.452853][ T8302]  __sys_socket+0x119/0x2f0
+[  248.453820][ T8302]  __x64_sys_socket+0x3f/0x50
+[  248.454366][ T8302]  do_syscall_64+0x41/0x90
+[  248.455240][ T8302] page last free stack trace:
+[  248.455763][ T8302]  free_unref_page_prepare+0x75a/0x820
+[  248.459832][ T8302]  free_unref_page+0x37/0x300
+[  248.460378][ T8302]  __unfreeze_partials+0x1b1/0x1f0
+[  248.461323][ T8302]  put_cpu_partial+0x116/0x180
+[  248.469250][ T8302]  qlist_free_all+0x22/0x60
+[  248.469796][ T8302]  kasan_quarantine_reduce+0x14b/0x160
+[  248.470804][ T8302]  __kasan_slab_alloc+0x23/0x60
+[  248.471365][ T8302]  slab_post_alloc_hook+0x64/0x380
+[  248.472340][ T8302]  kmem_cache_alloc+0x111/0x2a0
+[  248.472885][ T8302]  getname_flags+0x85/0x3d0
+[  248.473786][ T8302]  do_sys_openat2+0xc7/0x390
+[  248.474314][ T8302]  __x64_sys_openat+0x1f7/0x250
+[  248.477517][ T8302]  do_syscall_64+0x41/0x90
+[  248.478036][ T8302]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  248.479066][ T8302] 
+[  248.479356][ T8302] Memory state around the buggy address:
+[  248.489471][ T8302]  ffff888070bb9f80: fc fc fc fc fc fc fc fc fc fc fc fc fc fc fc fc
+[  248.490726][ T8302]  ffff888070bba000: ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec
+[  248.492067][ T8302] >ffff888070bba080: ec ec ec ec ec ec ec ec ec ec ec ee ee ee ee ee
+[  248.493303][ T8302]                                                     ^
+[  248.494076][ T8302]  ffff888070bba100: ee ee ee ee ee ee ee ee ee ee ec ec ec ec ec ec
+[  248.495306][ T8302]  ffff888070bba180: ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec
+[  248.496541][ T8302] Kernel panic - not syncing: KDO: memcpy hit (id: xfrm_send_policy_notify+0xb3c/0x14f0, callid: 19747S)
+[  248.497745][ T8302] CPU: 0 PID: 8302 Comm: syz-executor.0 Not tainted 6.4.1-00011-gc173c3c31378 #20
+[  248.498720][ T8302] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+[  248.499686][ T8302] Call Trace:
+[  248.500052][ T8302]  <TASK>
+[  248.500411][ T8302]  dump_stack_lvl+0x1ce/0x2c0
+[  248.500940][ T8302]  ? nf_tcp_handle_invalid+0x3d0/0x3d0
+[  248.501571][ T8302]  ? panic+0x620/0x620
+[  248.502059][ T8302]  ? vscnprintf+0x5d/0x80
+[  248.502571][ T8302]  panic+0x2ba/0x620
+[  248.503034][ T8302]  ? xfrm_send_policy_notify+0xb3c/0x14f0
+[  248.503680][ T8302]  ? __wake_up_klogd+0xb7/0xf0
+[  248.504209][ T8302]  ? preempt_count_add+0xa0/0xf0
+[  248.504781][ T8302]  ? kdo_sanitizer_cov_write+0x100/0x100
+[  248.505434][ T8302]  ? __phys_addr+0x99/0x110
+[  248.505970][ T8302]  ? kdo_kasan_report+0x7f/0x90
+[  248.506534][ T8302]  ? xfrm_send_policy_notify+0xb3c/0x14f0
+[  248.507184][ T8302]  ? xfrm_send_policy_notify+0xb3c/0x14f0
+[  248.507814][ T8302]  propagate_taint+0x20a/0x210
+[  248.508340][ T8302]  ? xfrm_send_policy_notify+0xb3c/0x14f0
+[  248.508973][ T8302]  ? xfrm_send_policy_notify+0xb3c/0x14f0
+[  248.509619][ T8302]  __kdo_asan_memcpy+0x69/0xa0
+[  248.510174][ T8302]  xfrm_send_policy_notify+0xb3c/0x14f0
+[  248.510814][ T8302]  ? xfrm_send_mapping+0x370/0x370
+[  248.511404][ T8302]  ? rcu_force_quiescent_state+0x1e0/0x1e0
+[  248.512055][ T8302]  ? xfrm_send_mapping+0x370/0x370
+[  248.512645][ T8302]  km_policy_notify+0xe1/0x190
+[  248.513182][ T8302]  xfrm_add_policy+0x3fa/0x620
+[  248.513733][ T8302]  ? end_current_label_crit_section+0x130/0x130
+[  248.514440][ T8302]  ? xfrm_dump_sa_done+0x70/0x70
+[  248.515010][ T8302]  ? apparmor_capable+0xfb/0x160
+[  248.515584][ T8302]  ? __nla_parse+0x40/0x50
+[  248.516107][ T8302]  ? xfrm_dump_sa_done+0x70/0x70
+[  248.516674][ T8302]  xfrm_user_rcv_msg+0x5ad/0x770
+[  248.517228][ T8302]  ? xfrm_netlink_rcv+0x60/0x60
+[  248.517814][ T8302]  ? __mutex_trylock_common+0x145/0x200
+[  248.518441][ T8302]  ? trace_raw_output_contention_end+0x90/0x90
+[  248.519178][ T8302]  netlink_rcv_skb+0x184/0x2b0
+[  248.519724][ T8302]  ? xfrm_netlink_rcv+0x60/0x60
+[  248.520346][ T8302]  ? netlink_ack+0xac0/0xac0
+[  248.520898][ T8302]  ? __lock_acquire+0x10d0/0x10d0
+[  248.521510][ T8302]  xfrm_netlink_rcv+0x49/0x60
+[  248.522079][ T8302]  netlink_unicast+0x605/0x6c0
+[  248.522659][ T8302]  ? copyout_mc+0x80/0x80
+[  248.523161][ T8302]  ? netlink_detachskb+0x90/0x90
+[  248.523708][ T8302]  ? __phys_addr_symbol+0x3b/0x50
+[  248.524266][ T8302]  ? __check_object_size+0x3f9/0x850
+[  248.524845][ T8302]  netlink_sendmsg+0x826/0x990
+[  248.525424][ T8302]  ? netlink_getsockopt+0x570/0x570
+[  248.525990][ T8302]  ? bpf_lsm_socket_sendmsg+0x9/0x10
+[  248.526550][ T8302]  ? netlink_getsockopt+0x570/0x570
+[  248.527106][ T8302]  ____sys_sendmsg+0x47d/0x650
+[  248.527627][ T8302]  ? __sys_sendmsg_sock+0x30/0x30
+[  248.528178][ T8302]  __sys_sendmsg+0x28f/0x360
+[  248.528673][ T8302]  ? __might_fault+0x9c/0xe0
+[  248.529172][ T8302]  ? ____sys_sendmsg+0x650/0x650
+[  248.529733][ T8302]  ? lockdep_hardirqs_on_prepare+0x2dc/0x410
+[  248.530375][ T8302]  ? syscall_enter_from_user_mode+0x32/0x230
+[  248.531005][ T8302]  ? lockdep_hardirqs_on+0xdd/0x180
+[  248.531554][ T8302]  ? syscall_enter_from_user_mode+0x32/0x230
+[  248.532184][ T8302]  do_syscall_64+0x41/0x90
+[  248.532665][ T8302]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  248.533290][ T8302] RIP: 0033:0x7f1fcbc8fddd
+[  248.533779][ T8302] Code: c3 e8 97 2b 00 00 0f 1f 80 00 00 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 b0 ff ff ff f7 d8 64 89 01 48
+[  248.535771][ T8302] RSP: 002b:00007f1fcc955028 EFLAGS: 00000246 ORIG_RAX: 000000000000002e
+[  248.536659][ T8302] RAX: ffffffffffffffda RBX: 00007f1fcbdcbf80 RCX: 00007f1fcbc8fddd
+[  248.537526][ T8302] RDX: 0000000000000000 RSI: 0000000020000cc0 RDI: 0000000000000004
+[  248.538338][ T8302] RBP: 00007f1fcbd01e18 R08: 0000000000000000 R09: 0000000000000000
+[  248.539150][ T8302] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000000
+[  248.539955][ T8302] R13: 000000000000000b R14: 00007f1fcbdcbf80 R15: 00007f1fcc935000
+[  248.540784][ T8302]  </TASK>
+[  248.541263][ T8302] Kernel Offset: disabled
+[  248.541753][ T8302] Rebooting in 86400 seconds..
+
+VM DIAGNOSIS:
+04:13:50  Registers:
+info registers vcpu 0
+RAX=000000000000000a RBX=0000000000000000 RCX=ffffffff8392d9be RDX=00000000000003f8
+RSI=dffffc0000000000 RDI=ffffffff8e7ea860 RBP=00000000000003f8 RSP=ffffc90003176a38
+R8 =ffffffff8e7ea867 R9 =ffffffff814f0843 R10=fffff5200062ed28 R11=dffffc0000000001
+R12=ffffffff8e502687 R13=0000000000000008 R14=000000000000000a R15=ffffffff8e7ea820
+RIP=ffffffff8392d9c8 RFL=00000002 [-------] CPL=0 II=0 A20=1 SMM=0 HLT=0
+ES =0000 0000000000000000 ffffffff 00c00000
+CS =0010 0000000000000000 ffffffff 00a09b00 DPL=0 CS64 [-RA]
+SS =0018 0000000000000000 ffffffff 00c09300 DPL=0 DS   [-WA]
+DS =0000 0000000000000000 ffffffff 00c00000
+FS =0000 00007f1fcc955640 ffffffff 00c00000
+GS =0000 ffff8880ba000000 ffffffff 00c00000
+LDT=0000 0000000000000000 ffffffff 00c00000
+TR =0040 fffffe0000003000 00004087 00008b00 DPL=0 TSS64-busy
+GDT=     fffffe0000001000 0000007f
+IDT=     fffffe0000000000 00000fff
+CR0=80050033 CR2=0000000020000cc0 CR3=00000000272f8000 CR4=00350ef0
+DR0=0000000000000000 DR1=0000000000000000 DR2=0000000000000000 DR3=0000000000000000 
+DR6=00000000fffe0ff0 DR7=0000000000000400
+EFER=0000000000000d01
+FCW=037f FSW=0000 [ST=0] FTW=00 MXCSR=00001f80
+FPR0=0000000000000000 0000 FPR1=0000000000000000 0000
+FPR2=0000000000000000 0000 FPR3=0000000000000000 0000
+FPR4=0000000000000000 0000 FPR5=0000000000000000 0000
+FPR6=0000000000000000 0000 FPR7=0000000000000000 0000
+YMM00=0000000000000000 0000000000000000 00000000000f4240 0000000000000000
+YMM01=0000000000000000 0000000000000000 0000000000000000 00000000000f4240
+YMM02=0000000000000000 0000000000000000 00007f1fcc8fb1a0 00007f1fcc8fb1a0
+YMM03=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffffffff
+YMM04=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffffffff
+YMM05=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffff0000
+YMM06=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffffffff
+YMM07=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffff0000
+YMM08=0000000000000000 0000000000000000 2570756c6c25706f 6f6c2f7665642f00
+YMM09=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM10=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM11=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM12=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM13=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM14=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM15=0000000000000000 0000000000000000 0000000000000000 0000000000000000

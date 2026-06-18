@@ -1,0 +1,9 @@
+# {Threaded:false Repeat:false RepeatTimes:0 Procs:1 Slowdown:1 Sandbox: SandboxArg:0 Leak:false NetInjection:false NetDevices:false NetReset:false Cgroups:false BinfmtMisc:false CloseFDs:false KCSAN:false DevlinkPCI:false NicVF:false USB:false VhciInjection:false Wifi:false IEEE802154:false Sysctl:false UseTmpDir:false HandleSegv:false Repro:false Trace:false LegacyOptions:{Collide:false Fault:false FaultCall:0 FaultNth:0}}
+accept(0xffffffffffffffff, 0x0, &(0x7f0000000000)) (enabled_site: 12848, site_type: 1)
+close_range(0xffffffffffffffff, 0xffffffffffffffff, 0x2)
+r0 = socket$key(0xf, 0x3, 0x2)
+sendmsg$key(r0, &(0x7f0000000100)={0x3, 0x0, &(0x7f0000000080)={&(0x7f0000000000)=ANY=[@ANYBLOB="0203f3031600000000000000000000000200090040000000e90000000000000003000600000000000200000000000000000000000000000002000100000000000000030200000020030005000000000002000000ac1414aa00000000000000000a00080008"], 0xb0}, 0x1, 0x7}, 0x0)
+sendmsg$TIPC_CMD_GET_NODES(0xffffffffffffffff, 0x0, 0x0)
+syz_init_net_socket$bt_l2cap(0x1f, 0x0, 0x0)
+socket$inet_mptcp(0x2, 0x1, 0x106)
+setsockopt$sock_int(r0, 0x1, 0x29, 0x0, 0x0)

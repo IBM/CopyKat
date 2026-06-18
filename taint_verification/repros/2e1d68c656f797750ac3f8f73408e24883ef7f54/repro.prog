@@ -1,0 +1,10 @@
+# {Threaded:false Repeat:false RepeatTimes:0 Procs:1 Slowdown:1 Sandbox: SandboxArg:0 Leak:false NetInjection:false NetDevices:false NetReset:false Cgroups:false BinfmtMisc:false CloseFDs:false KCSAN:false DevlinkPCI:false NicVF:false USB:false VhciInjection:false Wifi:false IEEE802154:false Sysctl:false UseTmpDir:false HandleSegv:false Repro:false Trace:false LegacyOptions:{Collide:false Fault:false FaultCall:0 FaultNth:0}}
+accept(0xffffffffffffffff, 0x0, &(0x7f0000000000)) (enabled_site: 15212, site_type: 1)
+r0 = openat$ptmx(0xffffffffffffff9c, &(0x7f0000000100), 0x161281, 0x0)
+bpf$PROG_LOAD(0x5, &(0x7f0000000200)={0x0, 0xc, &(0x7f0000000440)=ANY=[@ANYBLOB="0000000000000000b70800000000002c7b8af8ff00000000bfa200000000000007020000f8ffffffb703000008000000b704"], 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+write$binfmt_aout(r0, &(0x7f0000000380)=ANY=[], 0xff2e)
+ioctl$TCSETS(r0, 0x40045431, &(0x7f0000000080)={0x0, 0x0, 0x0, 0x0, 0x0, "0040041e1d113c812e5d601adda05c7b5d27c9"})
+r1 = syz_open_pts(r0, 0x0)
+r2 = dup3(r1, r0, 0x0)
+io_setup(0xba, &(0x7f0000000340)=<r3=>0x0)
+io_submit(r3, 0x1, &(0x7f0000000b80)=[&(0x7f0000000380)={0x0, 0x0, 0x0, 0x0, 0x0, r2, &(0x7f0000000400)='\x00', 0x1}])

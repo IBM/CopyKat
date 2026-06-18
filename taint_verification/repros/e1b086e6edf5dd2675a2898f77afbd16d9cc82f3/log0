@@ -1,0 +1,1115 @@
+Warning: Permanently added '[localhost]:28222' (ED25519) to the list of known hosts.
+2024/05/23 04:24:06 fuzzer started
+2024/05/23 04:24:07 dialing manager at localhost:34093
+syzkaller login: [  178.615987][ T8038] cgroup: Unknown subsys name 'net'
+[  178.782777][ T8038] cgroup: Unknown subsys name 'rlimit'
+2024/05/23 04:24:08 syscalls: 3922
+2024/05/23 04:24:08 code coverage: enabled
+2024/05/23 04:24:08 comparison tracing: enabled
+2024/05/23 04:24:08 extra coverage: enabled
+2024/05/23 04:24:08 delay kcov mmap: enabled
+2024/05/23 04:24:08 setuid sandbox: enabled
+2024/05/23 04:24:08 namespace sandbox: enabled
+2024/05/23 04:24:08 Android sandbox: /sys/fs/selinux/policy does not exist
+2024/05/23 04:24:08 fault injection: enabled
+2024/05/23 04:24:08 leak checking: CONFIG_DEBUG_KMEMLEAK is not enabled
+2024/05/23 04:24:08 net packet injection: enabled
+2024/05/23 04:24:08 net device setup: enabled
+2024/05/23 04:24:08 concurrency sanitizer: /sys/kernel/debug/kcsan does not exist
+2024/05/23 04:24:08 devlink PCI setup: PCI device 0000:00:10.0 is not available
+2024/05/23 04:24:08 NIC VF setup: PCI device 0000:00:11.0 is not available
+2024/05/23 04:24:08 USB emulation: enabled
+2024/05/23 04:24:08 hci packet injection: enabled
+2024/05/23 04:24:08 wifi device emulation: enabled
+2024/05/23 04:24:08 802.15.4 emulation: enabled
+2024/05/23 04:24:08 fetching corpus: 0, signal 0/2000 (executing program)
+2024/05/23 04:24:08 fetching corpus: 50, signal 20427/24150 (executing program)
+2024/05/23 04:24:08 fetching corpus: 100, signal 29384/34805 (executing program)
+2024/05/23 04:24:08 fetching corpus: 150, signal 37077/44088 (executing program)
+2024/05/23 04:24:09 fetching corpus: 200, signal 45646/54152 (executing program)
+2024/05/23 04:24:09 fetching corpus: 250, signal 52803/62733 (executing program)
+2024/05/23 04:24:09 fetching corpus: 300, signal 60192/71402 (executing program)
+2024/05/23 04:24:09 fetching corpus: 350, signal 64049/76659 (executing program)
+2024/05/23 04:24:10 fetching corpus: 400, signal 69155/83034 (executing program)
+2024/05/23 04:24:10 fetching corpus: 450, signal 72770/87922 (executing program)
+2024/05/23 04:24:10 fetching corpus: 500, signal 78304/94553 (executing program)
+2024/05/23 04:24:10 fetching corpus: 550, signal 81182/98648 (executing program)
+2024/05/23 04:24:10 fetching corpus: 600, signal 83397/102131 (executing program)
+2024/05/23 04:24:10 fetching corpus: 650, signal 86606/106432 (executing program)
+2024/05/23 04:24:10 fetching corpus: 700, signal 89912/110815 (executing program)
+2024/05/23 04:24:11 fetching corpus: 750, signal 91891/113944 (executing program)
+2024/05/23 04:24:11 fetching corpus: 800, signal 94502/117646 (executing program)
+2024/05/23 04:24:11 fetching corpus: 850, signal 96411/120701 (executing program)
+2024/05/23 04:24:11 fetching corpus: 900, signal 99845/125082 (executing program)
+2024/05/23 04:24:11 fetching corpus: 950, signal 101643/127947 (executing program)
+2024/05/23 04:24:11 fetching corpus: 1000, signal 103785/131071 (executing program)
+2024/05/23 04:24:11 fetching corpus: 1050, signal 105726/134005 (executing program)
+2024/05/23 04:24:12 fetching corpus: 1100, signal 107712/136936 (executing program)
+2024/05/23 04:24:12 fetching corpus: 1150, signal 110052/140133 (executing program)
+2024/05/23 04:24:12 fetching corpus: 1200, signal 113022/143834 (executing program)
+2024/05/23 04:24:12 fetching corpus: 1250, signal 115817/147390 (executing program)
+2024/05/23 04:24:12 fetching corpus: 1300, signal 117779/150174 (executing program)
+2024/05/23 04:24:13 fetching corpus: 1350, signal 119200/152474 (executing program)
+2024/05/23 04:24:13 fetching corpus: 1400, signal 121148/155254 (executing program)
+2024/05/23 04:24:13 fetching corpus: 1450, signal 122872/157766 (executing program)
+2024/05/23 04:24:13 fetching corpus: 1500, signal 124045/159818 (executing program)
+2024/05/23 04:24:13 fetching corpus: 1550, signal 125186/161846 (executing program)
+2024/05/23 04:24:13 fetching corpus: 1600, signal 126157/163740 (executing program)
+2024/05/23 04:24:14 fetching corpus: 1650, signal 127598/165982 (executing program)
+2024/05/23 04:24:14 fetching corpus: 1700, signal 128832/168015 (executing program)
+2024/05/23 04:24:14 fetching corpus: 1750, signal 129746/169855 (executing program)
+2024/05/23 04:24:14 fetching corpus: 1800, signal 130880/171792 (executing program)
+2024/05/23 04:24:14 fetching corpus: 1850, signal 132446/174072 (executing program)
+2024/05/23 04:24:14 fetching corpus: 1900, signal 133738/176125 (executing program)
+2024/05/23 04:24:14 fetching corpus: 1950, signal 135281/178344 (executing program)
+2024/05/23 04:24:15 fetching corpus: 2000, signal 136340/180161 (executing program)
+2024/05/23 04:24:15 fetching corpus: 2050, signal 137561/182122 (executing program)
+2024/05/23 04:24:15 fetching corpus: 2100, signal 139708/184665 (executing program)
+2024/05/23 04:24:15 fetching corpus: 2149, signal 140761/186467 (executing program)
+2024/05/23 04:24:15 fetching corpus: 2199, signal 141977/188405 (executing program)
+2024/05/23 04:24:15 fetching corpus: 2249, signal 143168/190265 (executing program)
+2024/05/23 04:24:16 fetching corpus: 2299, signal 144536/192209 (executing program)
+2024/05/23 04:24:16 fetching corpus: 2348, signal 145716/194013 (executing program)
+2024/05/23 04:24:16 fetching corpus: 2398, signal 147043/195878 (executing program)
+2024/05/23 04:24:16 fetching corpus: 2448, signal 148616/197915 (executing program)
+2024/05/23 04:24:16 fetching corpus: 2498, signal 151888/201054 (executing program)
+2024/05/23 04:24:16 fetching corpus: 2548, signal 152664/202536 (executing program)
+2024/05/23 04:24:17 fetching corpus: 2598, signal 153457/204028 (executing program)
+2024/05/23 04:24:17 fetching corpus: 2648, signal 154602/205668 (executing program)
+2024/05/23 04:24:17 fetching corpus: 2698, signal 155226/206988 (executing program)
+2024/05/23 04:24:17 fetching corpus: 2748, signal 157076/209072 (executing program)
+2024/05/23 04:24:17 fetching corpus: 2798, signal 158022/210571 (executing program)
+2024/05/23 04:24:17 fetching corpus: 2848, signal 160585/213070 (executing program)
+2024/05/23 04:24:18 fetching corpus: 2898, signal 161556/214551 (executing program)
+2024/05/23 04:24:18 fetching corpus: 2948, signal 162354/215890 (executing program)
+2024/05/23 04:24:18 fetching corpus: 2998, signal 163277/217303 (executing program)
+2024/05/23 04:24:18 fetching corpus: 3048, signal 164018/218599 (executing program)
+2024/05/23 04:24:18 fetching corpus: 3098, signal 165727/220460 (executing program)
+2024/05/23 04:24:18 fetching corpus: 3148, signal 166942/222039 (executing program)
+2024/05/23 04:24:18 fetching corpus: 3198, signal 167949/223520 (executing program)
+2024/05/23 04:24:19 fetching corpus: 3248, signal 168567/224717 (executing program)
+2024/05/23 04:24:19 fetching corpus: 3298, signal 169376/226054 (executing program)
+2024/05/23 04:24:19 fetching corpus: 3348, signal 170195/227345 (executing program)
+2024/05/23 04:24:19 fetching corpus: 3398, signal 171882/229074 (executing program)
+2024/05/23 04:24:19 fetching corpus: 3448, signal 172700/230335 (executing program)
+2024/05/23 04:24:19 fetching corpus: 3498, signal 174424/232083 (executing program)
+2024/05/23 04:24:19 fetching corpus: 3548, signal 175220/233255 (executing program)
+2024/05/23 04:24:20 fetching corpus: 3598, signal 176387/234660 (executing program)
+2024/05/23 04:24:20 fetching corpus: 3648, signal 177287/235914 (executing program)
+2024/05/23 04:24:20 fetching corpus: 3698, signal 178356/237259 (executing program)
+2024/05/23 04:24:20 fetching corpus: 3748, signal 179734/238721 (executing program)
+2024/05/23 04:24:20 fetching corpus: 3798, signal 180607/239929 (executing program)
+2024/05/23 04:24:20 fetching corpus: 3848, signal 181217/240993 (executing program)
+2024/05/23 04:24:21 fetching corpus: 3898, signal 182114/242145 (executing program)
+2024/05/23 04:24:21 fetching corpus: 3948, signal 183397/243484 (executing program)
+2024/05/23 04:24:21 fetching corpus: 3998, signal 183927/244476 (executing program)
+2024/05/23 04:24:21 fetching corpus: 4047, signal 184634/245526 (executing program)
+2024/05/23 04:24:21 fetching corpus: 4097, signal 185162/246496 (executing program)
+2024/05/23 04:24:22 fetching corpus: 4147, signal 185931/247548 (executing program)
+2024/05/23 04:24:22 fetching corpus: 4197, signal 186794/248635 (executing program)
+2024/05/23 04:24:22 fetching corpus: 4247, signal 187681/249713 (executing program)
+2024/05/23 04:24:22 fetching corpus: 4297, signal 188984/250970 (executing program)
+2024/05/23 04:24:22 fetching corpus: 4347, signal 190110/252129 (executing program)
+2024/05/23 04:24:22 fetching corpus: 4397, signal 190943/253198 (executing program)
+2024/05/23 04:24:22 fetching corpus: 4447, signal 191876/254263 (executing program)
+2024/05/23 04:24:23 fetching corpus: 4497, signal 192753/255310 (executing program)
+2024/05/23 04:24:23 fetching corpus: 4547, signal 193632/256307 (executing program)
+2024/05/23 04:24:23 fetching corpus: 4597, signal 194363/257229 (executing program)
+2024/05/23 04:24:23 fetching corpus: 4647, signal 195234/258248 (executing program)
+2024/05/23 04:24:23 fetching corpus: 4697, signal 195830/259170 (executing program)
+2024/05/23 04:24:23 fetching corpus: 4747, signal 196276/259988 (executing program)
+2024/05/23 04:24:23 fetching corpus: 4797, signal 197034/260920 (executing program)
+2024/05/23 04:24:24 fetching corpus: 4847, signal 197823/261832 (executing program)
+2024/05/23 04:24:24 fetching corpus: 4897, signal 198407/262656 (executing program)
+2024/05/23 04:24:24 fetching corpus: 4947, signal 199499/263638 (executing program)
+2024/05/23 04:24:24 fetching corpus: 4997, signal 200434/264534 (executing program)
+2024/05/23 04:24:24 fetching corpus: 5047, signal 201095/265378 (executing program)
+2024/05/23 04:24:24 fetching corpus: 5097, signal 201916/266294 (executing program)
+2024/05/23 04:24:25 fetching corpus: 5147, signal 202882/267224 (executing program)
+2024/05/23 04:24:25 fetching corpus: 5197, signal 203590/268070 (executing program)
+2024/05/23 04:24:25 fetching corpus: 5247, signal 204105/268837 (executing program)
+2024/05/23 04:24:25 fetching corpus: 5297, signal 204710/269599 (executing program)
+2024/05/23 04:24:25 fetching corpus: 5347, signal 205505/270416 (executing program)
+2024/05/23 04:24:25 fetching corpus: 5397, signal 206052/271129 (executing program)
+2024/05/23 04:24:25 fetching corpus: 5447, signal 206514/271837 (executing program)
+2024/05/23 04:24:25 fetching corpus: 5497, signal 207799/272736 (executing program)
+2024/05/23 04:24:26 fetching corpus: 5547, signal 208451/273514 (executing program)
+2024/05/23 04:24:26 fetching corpus: 5597, signal 209032/274261 (executing program)
+2024/05/23 04:24:26 fetching corpus: 5647, signal 209695/274975 (executing program)
+2024/05/23 04:24:26 fetching corpus: 5697, signal 210150/275616 (executing program)
+2024/05/23 04:24:26 fetching corpus: 5747, signal 210717/276328 (executing program)
+2024/05/23 04:24:26 fetching corpus: 5797, signal 211414/277041 (executing program)
+2024/05/23 04:24:26 fetching corpus: 5847, signal 212591/277826 (executing program)
+2024/05/23 04:24:27 fetching corpus: 5897, signal 213369/278529 (executing program)
+2024/05/23 04:24:27 fetching corpus: 5947, signal 213885/279149 (executing program)
+2024/05/23 04:24:27 fetching corpus: 5997, signal 214726/279825 (executing program)
+2024/05/23 04:24:27 fetching corpus: 6047, signal 215382/280486 (executing program)
+2024/05/23 04:24:28 fetching corpus: 6097, signal 215993/281163 (executing program)
+2024/05/23 04:24:28 fetching corpus: 6147, signal 216492/281791 (executing program)
+2024/05/23 04:24:28 fetching corpus: 6197, signal 216997/282400 (executing program)
+2024/05/23 04:24:28 fetching corpus: 6247, signal 217741/283070 (executing program)
+2024/05/23 04:24:28 fetching corpus: 6297, signal 218191/283658 (executing program)
+2024/05/23 04:24:28 fetching corpus: 6347, signal 219161/284327 (executing program)
+2024/05/23 04:24:28 fetching corpus: 6397, signal 219524/284880 (executing program)
+2024/05/23 04:24:28 fetching corpus: 6447, signal 220524/285509 (executing program)
+2024/05/23 04:24:29 fetching corpus: 6497, signal 221110/286087 (executing program)
+2024/05/23 04:24:29 fetching corpus: 6547, signal 221491/286603 (executing program)
+2024/05/23 04:24:29 fetching corpus: 6597, signal 222092/287117 (executing program)
+2024/05/23 04:24:29 fetching corpus: 6647, signal 222673/287696 (executing program)
+2024/05/23 04:24:29 fetching corpus: 6697, signal 223227/288203 (executing program)
+2024/05/23 04:24:29 fetching corpus: 6747, signal 223642/288729 (executing program)
+2024/05/23 04:24:29 fetching corpus: 6797, signal 224516/289261 (executing program)
+2024/05/23 04:24:30 fetching corpus: 6847, signal 225181/289776 (executing program)
+2024/05/23 04:24:30 fetching corpus: 6897, signal 225561/290264 (executing program)
+2024/05/23 04:24:30 fetching corpus: 6947, signal 225891/290705 (executing program)
+2024/05/23 04:24:30 fetching corpus: 6997, signal 226290/291197 (executing program)
+2024/05/23 04:24:30 fetching corpus: 7047, signal 226779/291654 (executing program)
+2024/05/23 04:24:30 fetching corpus: 7097, signal 227777/292147 (executing program)
+2024/05/23 04:24:30 fetching corpus: 7147, signal 228853/292620 (executing program)
+2024/05/23 04:24:30 fetching corpus: 7197, signal 229517/293074 (executing program)
+2024/05/23 04:24:31 fetching corpus: 7247, signal 229977/293475 (executing program)
+2024/05/23 04:24:31 fetching corpus: 7297, signal 230419/293780 (executing program)
+2024/05/23 04:24:31 fetching corpus: 7347, signal 230988/293780 (executing program)
+2024/05/23 04:24:31 fetching corpus: 7397, signal 231507/293780 (executing program)
+2024/05/23 04:24:31 fetching corpus: 7446, signal 232156/293780 (executing program)
+2024/05/23 04:24:31 fetching corpus: 7496, signal 232631/293780 (executing program)
+2024/05/23 04:24:32 fetching corpus: 7546, signal 233233/293782 (executing program)
+2024/05/23 04:24:32 fetching corpus: 7596, signal 233892/293782 (executing program)
+2024/05/23 04:24:32 fetching corpus: 7646, signal 234291/293784 (executing program)
+2024/05/23 04:24:32 fetching corpus: 7696, signal 234715/293784 (executing program)
+2024/05/23 04:24:32 fetching corpus: 7746, signal 235134/293784 (executing program)
+2024/05/23 04:24:32 fetching corpus: 7796, signal 235631/293784 (executing program)
+2024/05/23 04:24:32 fetching corpus: 7846, signal 236110/293784 (executing program)
+2024/05/23 04:24:33 fetching corpus: 7896, signal 237068/293784 (executing program)
+2024/05/23 04:24:33 fetching corpus: 7946, signal 237523/293789 (executing program)
+2024/05/23 04:24:33 fetching corpus: 7996, signal 237824/293789 (executing program)
+2024/05/23 04:24:33 fetching corpus: 8046, signal 238346/293791 (executing program)
+2024/05/23 04:24:33 fetching corpus: 8096, signal 238709/293791 (executing program)
+2024/05/23 04:24:33 fetching corpus: 8146, signal 239110/293791 (executing program)
+2024/05/23 04:24:33 fetching corpus: 8196, signal 239542/293791 (executing program)
+2024/05/23 04:24:34 fetching corpus: 8246, signal 240005/293793 (executing program)
+2024/05/23 04:24:34 fetching corpus: 8296, signal 240767/293803 (executing program)
+2024/05/23 04:24:34 fetching corpus: 8346, signal 241468/293812 (executing program)
+2024/05/23 04:24:34 fetching corpus: 8396, signal 241844/293812 (executing program)
+2024/05/23 04:24:34 fetching corpus: 8446, signal 242546/293812 (executing program)
+[  205.442461][ T1219] ieee802154 phy0 wpan0: encryption failed: -22
+[  205.443369][ T1219] ieee802154 phy1 wpan1: encryption failed: -22
+2024/05/23 04:24:34 fetching corpus: 8496, signal 243062/293812 (executing program)
+2024/05/23 04:24:35 fetching corpus: 8546, signal 243812/293812 (executing program)
+2024/05/23 04:24:35 fetching corpus: 8596, signal 244581/293813 (executing program)
+2024/05/23 04:24:35 fetching corpus: 8646, signal 245012/293813 (executing program)
+2024/05/23 04:24:35 fetching corpus: 8696, signal 245376/293815 (executing program)
+2024/05/23 04:24:35 fetching corpus: 8746, signal 246268/293822 (executing program)
+2024/05/23 04:24:35 fetching corpus: 8796, signal 246854/293822 (executing program)
+2024/05/23 04:24:35 fetching corpus: 8846, signal 247281/293822 (executing program)
+2024/05/23 04:24:36 fetching corpus: 8896, signal 247649/293822 (executing program)
+2024/05/23 04:24:36 fetching corpus: 8946, signal 248277/293826 (executing program)
+2024/05/23 04:24:36 fetching corpus: 8996, signal 248683/293846 (executing program)
+2024/05/23 04:24:36 fetching corpus: 9046, signal 249103/293846 (executing program)
+2024/05/23 04:24:36 fetching corpus: 9096, signal 249594/293847 (executing program)
+2024/05/23 04:24:36 fetching corpus: 9145, signal 250291/293847 (executing program)
+2024/05/23 04:24:36 fetching corpus: 9195, signal 250604/293850 (executing program)
+2024/05/23 04:24:36 fetching corpus: 9245, signal 251073/293850 (executing program)
+2024/05/23 04:24:37 fetching corpus: 9295, signal 251379/293851 (executing program)
+2024/05/23 04:24:37 fetching corpus: 9345, signal 251762/293851 (executing program)
+2024/05/23 04:24:37 fetching corpus: 9395, signal 252377/293851 (executing program)
+2024/05/23 04:24:37 fetching corpus: 9445, signal 252782/293851 (executing program)
+2024/05/23 04:24:37 fetching corpus: 9495, signal 253357/293851 (executing program)
+2024/05/23 04:24:37 fetching corpus: 9545, signal 253694/293851 (executing program)
+2024/05/23 04:24:37 fetching corpus: 9595, signal 254166/293851 (executing program)
+2024/05/23 04:24:38 fetching corpus: 9645, signal 254661/293854 (executing program)
+2024/05/23 04:24:38 fetching corpus: 9695, signal 255010/293854 (executing program)
+2024/05/23 04:24:38 fetching corpus: 9745, signal 255412/293854 (executing program)
+2024/05/23 04:24:38 fetching corpus: 9784, signal 255657/293854 (executing program)
+2024/05/23 04:24:38 fetching corpus: 9784, signal 255657/293854 (executing program)
+2024/05/23 04:24:44 starting 1 fuzzer processes
+[  215.095676][ T8022] memfd_create() without MFD_EXEC nor MFD_NOEXEC_SEAL, pid=8022 'syz-fuzzer'
+04:24:44 executing program 0:
+r0 = bpf$MAP_CREATE(0x0, &(0x7f0000000180)=@base={0xb, 0x8, 0x10001, 0x9, 0x1}, 0x48)
+r1 = bpf$PROG_LOAD(0x5, &(0x7f00000000c0)={0x11, 0xd, &(0x7f00000004c0)=ANY=[@ANYBLOB="1800000000000000000000000000000018110000", @ANYRES32=r0, @ANYBLOB="0000000000000000b7080000000080007b8af8ff00000000bfa200000000000007020000f8ffffffb703000008000000b7040000000000008500000003000000850000007d00000095"], &(0x7f0000000280)='GPL\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000080)='memory.events\x00', 0x26e1, 0x0)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f0000000ac0)={&(0x7f0000000a80)='ext4_writepages\x00', r1}, 0x10)
+r2 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000580)='memory.events\x00', 0x100002, 0x0)
+write$cgroup_type(r2, &(0x7f0000000000), 0x9)
+
+[  234.942943][ T8052] Bluetooth: hci0: unexpected cc 0x0c03 length: 249 > 1
+[  234.945713][ T8052] Bluetooth: hci0: unexpected cc 0x1003 length: 249 > 9
+[  234.947639][ T8052] Bluetooth: hci0: unexpected cc 0x1001 length: 249 > 9
+[  234.961206][ T8052] Bluetooth: hci0: unexpected cc 0x0c23 length: 249 > 4
+[  234.963600][ T8052] Bluetooth: hci0: unexpected cc 0x0c25 length: 249 > 3
+[  234.965239][ T8052] Bluetooth: hci0: unexpected cc 0x0c38 length: 249 > 2
+[  236.053598][ T8049] chnl_net:caif_netlink_parms(): no params data found
+[  236.243218][ T8049] bridge0: port 1(bridge_slave_0) entered blocking state
+[  236.245086][ T8049] bridge0: port 1(bridge_slave_0) entered disabled state
+[  236.246140][ T8049] bridge_slave_0: entered allmulticast mode
+[  236.248790][ T8049] bridge_slave_0: entered promiscuous mode
+[  236.257842][ T8049] bridge0: port 2(bridge_slave_1) entered blocking state
+[  236.259061][ T8049] bridge0: port 2(bridge_slave_1) entered disabled state
+[  236.259973][ T8049] bridge_slave_1: entered allmulticast mode
+[  236.267637][ T8049] bridge_slave_1: entered promiscuous mode
+[  236.329824][ T8049] bond0: (slave bond_slave_0): Enslaving as an active interface with an up link
+[  236.336124][ T8049] bond0: (slave bond_slave_1): Enslaving as an active interface with an up link
+[  236.398536][ T8049] team0: Port device team_slave_0 added
+[  236.407182][ T8049] team0: Port device team_slave_1 added
+[  236.465966][ T8049] batman_adv: batadv0: Adding interface: batadv_slave_0
+[  236.466759][ T8049] batman_adv: batadv0: The MTU of interface batadv_slave_0 is too small (1500) to handle the transport of batman-adv packets. Packets going over this interface will be fragmented on layer2 which could impact the performance. Setting the MTU to 1560 would solve the problem.
+[  236.469330][ T8049] batman_adv: batadv0: Not using interface batadv_slave_0 (retrying later): interface not active
+[  236.479043][ T8049] batman_adv: batadv0: Adding interface: batadv_slave_1
+[  236.479842][ T8049] batman_adv: batadv0: The MTU of interface batadv_slave_1 is too small (1500) to handle the transport of batman-adv packets. Packets going over this interface will be fragmented on layer2 which could impact the performance. Setting the MTU to 1560 would solve the problem.
+[  236.486878][ T8049] batman_adv: batadv0: Not using interface batadv_slave_1 (retrying later): interface not active
+[  236.567006][ T8049] hsr_slave_0: entered promiscuous mode
+[  236.577338][ T8049] hsr_slave_1: entered promiscuous mode
+[  236.956185][ T8049] netdevsim netdevsim0 netdevsim0: renamed from eth0
+[  236.987033][ T8049] netdevsim netdevsim0 netdevsim1: renamed from eth1
+[  236.999784][ T8049] netdevsim netdevsim0 netdevsim2: renamed from eth2
+[  237.016178][ T8049] netdevsim netdevsim0 netdevsim3: renamed from eth3
+[  237.041188][ T8052] Bluetooth: hci0: command 0x0409 tx timeout
+[  237.178975][ T8049] 8021q: adding VLAN 0 to HW filter on device bond0
+[  237.198860][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): veth1: link becomes ready
+[  237.203475][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): veth0: link becomes ready
+[  237.225914][ T8049] 8021q: adding VLAN 0 to HW filter on device team0
+[  237.237089][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_to_bridge: link becomes ready
+[  237.238943][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): bridge_slave_0: link becomes ready
+[  237.244709][    T9] bridge0: port 1(bridge_slave_0) entered blocking state
+[  237.245673][    T9] bridge0: port 1(bridge_slave_0) entered forwarding state
+[  237.248181][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): bridge0: link becomes ready
+[  237.261533][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_to_bridge: link becomes ready
+[  237.263523][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): bridge_slave_1: link becomes ready
+[  237.264968][ T4417] bridge0: port 2(bridge_slave_1) entered blocking state
+[  237.265771][ T4417] bridge0: port 2(bridge_slave_1) entered forwarding state
+[  237.286318][  T732] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_to_bond: link becomes ready
+[  237.304027][  T732] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_to_bond: link becomes ready
+[  237.315124][  T732] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_to_team: link becomes ready
+[  237.318088][  T732] IPv6: ADDRCONF(NETDEV_CHANGE): team_slave_0: link becomes ready
+[  237.324308][  T732] IPv6: ADDRCONF(NETDEV_CHANGE): team0: link becomes ready
+[  237.337686][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_to_team: link becomes ready
+[  237.339669][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): team_slave_1: link becomes ready
+[  237.353202][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_to_hsr: link becomes ready
+[  237.355513][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): hsr_slave_0: link becomes ready
+[  237.369510][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_to_hsr: link becomes ready
+[  237.372234][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): hsr_slave_1: link becomes ready
+[  237.388673][ T8049] IPv6: ADDRCONF(NETDEV_CHANGE): hsr0: link becomes ready
+[  237.672721][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): vxcan1: link becomes ready
+[  237.673776][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): vxcan0: link becomes ready
+[  237.695259][ T8049] 8021q: adding VLAN 0 to HW filter on device batadv0
+[  237.731669][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_virt_wifi: link becomes ready
+[  237.733523][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_virt_wifi: link becomes ready
+[  237.766404][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_vlan: link becomes ready
+[  237.768230][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_vlan: link becomes ready
+[  237.772039][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): vlan0: link becomes ready
+[  237.776075][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): vlan1: link becomes ready
+[  237.785608][ T8049] veth0_vlan: entered promiscuous mode
+[  237.804939][ T8049] veth1_vlan: entered promiscuous mode
+[  237.848163][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): macvlan0: link becomes ready
+[  237.850070][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): macvlan1: link becomes ready
+[  237.854062][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_macvtap: link becomes ready
+[  237.857467][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_macvtap: link becomes ready
+[  237.868227][ T8049] veth0_macvtap: entered promiscuous mode
+[  237.878631][ T8049] veth1_macvtap: entered promiscuous mode
+[  237.912117][ T8049] batman_adv: batadv0: Interface activated: batadv_slave_0
+[  237.913303][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): macvtap0: link becomes ready
+[  237.915188][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): macsec0: link becomes ready
+[  237.917963][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): batadv_slave_0: link becomes ready
+[  237.919769][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_to_batadv: link becomes ready
+[  237.935782][ T8049] batman_adv: batadv0: Interface activated: batadv_slave_1
+[  237.937180][  T732] IPv6: ADDRCONF(NETDEV_CHANGE): batadv_slave_1: link becomes ready
+[  237.939199][  T732] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_to_batadv: link becomes ready
+[  237.954601][ T8049] netdevsim netdevsim0 netdevsim0: set [1, 0] type 2 family 0 port 6081 - 0
+[  237.955691][ T8049] netdevsim netdevsim0 netdevsim1: set [1, 0] type 2 family 0 port 6081 - 0
+[  237.956671][ T8049] netdevsim netdevsim0 netdevsim2: set [1, 0] type 2 family 0 port 6081 - 0
+[  237.957654][ T8049] netdevsim netdevsim0 netdevsim3: set [1, 0] type 2 family 0 port 6081 - 0
+[  238.127072][ T8049] ieee80211 phy3: Selected rate control algorithm 'minstrel_ht'
+[  238.254120][ T2791] wlan0: Created IBSS using preconfigured BSSID 50:50:50:50:50:50
+[  238.255161][ T2791] wlan0: Creating new IBSS network, BSSID 50:50:50:50:50:50
+[  238.269552][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+[  238.293420][ T8049] ieee80211 phy4: Selected rate control algorithm 'minstrel_ht'
+[  238.375171][ T2791] wlan1: Created IBSS using preconfigured BSSID 50:50:50:50:50:50
+[  238.376156][ T2791] wlan1: Creating new IBSS network, BSSID 50:50:50:50:50:50
+[  238.379238][ T4447] IPv6: ADDRCONF(NETDEV_CHANGE): wlan1: link becomes ready
+[  239.121244][ T4406] Bluetooth: hci0: command 0x041b tx timeout
+04:25:09 executing program 0:
+r0 = bpf$MAP_CREATE(0x0, &(0x7f0000000180)=@base={0xb, 0x8, 0x10001, 0x9, 0x1}, 0x48)
+r1 = bpf$PROG_LOAD(0x5, &(0x7f00000000c0)={0x11, 0xd, &(0x7f00000004c0)=ANY=[@ANYBLOB="1800000000000000000000000000000018110000", @ANYRES32=r0, @ANYBLOB="0000000000000000b7080000000080007b8af8ff00000000bfa200000000000007020000f8ffffffb703000008000000b7040000000000008500000003000000850000007d00000095"], &(0x7f0000000280)='GPL\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000080)='memory.events\x00', 0x26e1, 0x0)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f0000000ac0)={&(0x7f0000000a80)='ext4_writepages\x00', r1}, 0x10)
+r2 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000580)='memory.events\x00', 0x100002, 0x0)
+write$cgroup_type(r2, &(0x7f0000000000), 0x9)
+
+2024/05/23 04:25:09 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x313d, Ip:0x8170cde2}
+2024/05/23 04:25:09 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/23 04:25:09 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x350d, Ip:0x8170cdf5}
+2024/05/23 04:25:09 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2b8d, Ip:0x8170f374}
+2024/05/23 04:25:09 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x313d, Ip:0x8170cde2}
+2024/05/23 04:25:09 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/23 04:25:09 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x350d, Ip:0x8170cdf5}
+2024/05/23 04:25:09 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+2024/05/23 04:25:09 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x5547, Ip:0x81ebd996}
+2024/05/23 04:25:09 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x12a3, Ip:0x81718809}
+2024/05/23 04:25:09 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x313d, Ip:0x8170cde2}
+2024/05/23 04:25:09 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/23 04:25:09 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x350d, Ip:0x8170cdf5}
+2024/05/23 04:25:09 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+2024/05/23 04:25:09 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3e9b, Ip:0x833c5e4c}
+[  241.201695][ T8052] Bluetooth: hci0: command 0x040f tx timeout
+04:25:10 executing program 0:
+r0 = bpf$MAP_CREATE(0x0, &(0x7f0000000180)=@base={0xb, 0x8, 0x10001, 0x9, 0x1}, 0x48)
+r1 = bpf$PROG_LOAD(0x5, &(0x7f00000000c0)={0x11, 0xd, &(0x7f00000004c0)=ANY=[@ANYBLOB="1800000000000000000000000000000018110000", @ANYRES32=r0, @ANYBLOB="0000000000000000b7080000000080007b8af8ff00000000bfa200000000000007020000f8ffffffb703000008000000b7040000000000008500000003000000850000007d00000095"], &(0x7f0000000280)='GPL\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000080)='memory.events\x00', 0x26e1, 0x0)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f0000000ac0)={&(0x7f0000000a80)='ext4_writepages\x00', r1}, 0x10)
+r2 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000580)='memory.events\x00', 0x100002, 0x0)
+write$cgroup_type(r2, &(0x7f0000000000), 0x9)
+
+04:25:12 executing program 0:
+r0 = bpf$MAP_CREATE(0x0, &(0x7f0000000180)=@base={0xb, 0x8, 0x10001, 0x9, 0x1}, 0x48)
+r1 = bpf$PROG_LOAD(0x5, &(0x7f00000000c0)={0x11, 0xd, &(0x7f00000004c0)=ANY=[@ANYBLOB="1800000000000000000000000000000018110000", @ANYRES32=r0, @ANYBLOB="0000000000000000b7080000000080007b8af8ff00000000bfa200000000000007020000f8ffffffb703000008000000b7040000000000008500000003000000850000007d00000095"], &(0x7f0000000280)='GPL\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000080)='memory.events\x00', 0x26e1, 0x0)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f0000000ac0)={&(0x7f0000000a80)='ext4_writepages\x00', r1}, 0x10)
+r2 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000580)='memory.events\x00', 0x100002, 0x0)
+write$cgroup_type(r2, &(0x7f0000000000), 0x9)
+
+[  243.281973][ T4406] Bluetooth: hci0: command 0x0419 tx timeout
+04:25:14 executing program 0:
+r0 = socket(0x1d, 0x2, 0x6)
+recvfrom$packet(r0, 0x0, 0x0, 0x0, 0x0, 0x0)
+
+04:25:15 executing program 0:
+r0 = socket(0x1d, 0x2, 0x6)
+recvfrom$packet(r0, 0x0, 0x0, 0x0, 0x0, 0x0)
+
+04:25:17 executing program 0:
+r0 = socket(0x1d, 0x2, 0x6)
+recvfrom$packet(r0, 0x0, 0x0, 0x0, 0x0, 0x0)
+
+04:25:18 executing program 0:
+r0 = socket(0x1d, 0x2, 0x6)
+recvfrom$packet(r0, 0x0, 0x0, 0x0, 0x0, 0x0)
+
+04:25:20 executing program 0:
+pipe2$9p(&(0x7f0000000280)={0xffffffffffffffff, <r0=>0xffffffffffffffff}, 0x0)
+r1 = dup(r0)
+r2 = socket$inet_udp(0x2, 0x2, 0x0)
+r3 = dup3(r2, r1, 0x0)
+ioctl$EXT4_IOC_GETSTATE(r3, 0x5452, &(0x7f0000001980))
+
+2024/05/23 04:25:21 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x281, Ip:0x81b80c12}
+04:25:21 executing program 0:
+pipe2$9p(&(0x7f0000000280)={0xffffffffffffffff, <r0=>0xffffffffffffffff}, 0x0)
+r1 = dup(r0)
+r2 = socket$inet_udp(0x2, 0x2, 0x0)
+r3 = dup3(r2, r1, 0x0)
+ioctl$EXT4_IOC_GETSTATE(r3, 0x5452, &(0x7f0000001980))
+
+04:25:23 executing program 0:
+pipe2$9p(&(0x7f0000000280)={0xffffffffffffffff, <r0=>0xffffffffffffffff}, 0x0)
+r1 = dup(r0)
+r2 = socket$inet_udp(0x2, 0x2, 0x0)
+r3 = dup3(r2, r1, 0x0)
+ioctl$EXT4_IOC_GETSTATE(r3, 0x5452, &(0x7f0000001980))
+
+04:25:24 executing program 0:
+pipe2$9p(&(0x7f0000000280)={0xffffffffffffffff, <r0=>0xffffffffffffffff}, 0x0)
+r1 = dup(r0)
+r2 = socket$inet_udp(0x2, 0x2, 0x0)
+r3 = dup3(r2, r1, 0x0)
+ioctl$EXT4_IOC_GETSTATE(r3, 0x5452, &(0x7f0000001980))
+
+04:25:26 executing program 0:
+r0 = seccomp$SECCOMP_SET_MODE_FILTER_LISTENER(0x1, 0x0, &(0x7f0000000080)={0x1, &(0x7f00000000c0)=[{0x6, 0x0, 0x0, 0x7fffffff}]})
+r1 = fanotify_init(0x200, 0x0)
+r2 = dup(r0)
+fanotify_mark(r1, 0x1, 0x8001043, r2, 0x0)
+writev(r0, &(0x7f0000000580)=[{&(0x7f0000000180)='F', 0x1}], 0x1)
+
+04:25:28 executing program 0:
+r0 = seccomp$SECCOMP_SET_MODE_FILTER_LISTENER(0x1, 0x0, &(0x7f0000000080)={0x1, &(0x7f00000000c0)=[{0x6, 0x0, 0x0, 0x7fffffff}]})
+r1 = fanotify_init(0x200, 0x0)
+r2 = dup(r0)
+fanotify_mark(r1, 0x1, 0x8001043, r2, 0x0)
+writev(r0, &(0x7f0000000580)=[{&(0x7f0000000180)='F', 0x1}], 0x1)
+
+2024/05/23 04:25:28 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x1bc, Ip:0x81665919}
+2024/05/23 04:25:28 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x18fc, Ip:0x860c4ef9}
+2024/05/23 04:25:28 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x1fa5, Ip:0x8166592b}
+2024/05/23 04:25:28 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2c23, Ip:0x860c4ee9}
+2024/05/23 04:25:28 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/23 04:25:28 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3e9b, Ip:0x833c12dd}
+04:25:29 executing program 0:
+r0 = seccomp$SECCOMP_SET_MODE_FILTER_LISTENER(0x1, 0x0, &(0x7f0000000080)={0x1, &(0x7f00000000c0)=[{0x6, 0x0, 0x0, 0x7fffffff}]})
+r1 = fanotify_init(0x200, 0x0)
+r2 = dup(r0)
+fanotify_mark(r1, 0x1, 0x8001043, r2, 0x0)
+writev(r0, &(0x7f0000000580)=[{&(0x7f0000000180)='F', 0x1}], 0x1)
+
+04:25:31 executing program 0:
+r0 = seccomp$SECCOMP_SET_MODE_FILTER_LISTENER(0x1, 0x0, &(0x7f0000000080)={0x1, &(0x7f00000000c0)=[{0x6, 0x0, 0x0, 0x7fffffff}]})
+r1 = fanotify_init(0x200, 0x0)
+r2 = dup(r0)
+fanotify_mark(r1, 0x1, 0x8001043, r2, 0x0)
+writev(r0, &(0x7f0000000580)=[{&(0x7f0000000180)='F', 0x1}], 0x1)
+
+04:25:32 executing program 0:
+bpf$BPF_PROG_QUERY(0x10, &(0x7f00000019c0)={0xffffffffffffffff, 0x16, 0x0, 0x0, 0x0}, 0x20)
+
+04:25:34 executing program 0:
+bpf$BPF_PROG_QUERY(0x10, &(0x7f00000019c0)={0xffffffffffffffff, 0x16, 0x0, 0x0, 0x0}, 0x20)
+
+2024/05/23 04:25:34 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x313d, Ip:0x8170cde2}
+2024/05/23 04:25:34 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/23 04:25:34 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x350d, Ip:0x8170cdf5}
+04:25:35 executing program 0:
+bpf$BPF_PROG_QUERY(0x10, &(0x7f00000019c0)={0xffffffffffffffff, 0x16, 0x0, 0x0, 0x0}, 0x20)
+
+[  266.884332][ T1219] ieee802154 phy0 wpan0: encryption failed: -22
+[  266.885138][ T1219] ieee802154 phy1 wpan1: encryption failed: -22
+04:25:37 executing program 0:
+bpf$BPF_PROG_QUERY(0x10, &(0x7f00000019c0)={0xffffffffffffffff, 0x16, 0x0, 0x0, 0x0}, 0x20)
+
+04:25:39 executing program 0:
+ioctl$sock_SIOCGIFINDEX_80211(0xffffffffffffffff, 0x8933, &(0x7f0000000000)={'wlan1\x00'})
+r0 = socket$nl_route(0x10, 0x3, 0x0)
+ioctl(r0, 0x8b27, &(0x7f0000000000))
+
+[  270.349596][ T8345] warning: `syz-executor.0' uses wireless extensions which will stop working for Wi-Fi 7 hardware; use nl80211
+04:25:40 executing program 0:
+ioctl$sock_SIOCGIFINDEX_80211(0xffffffffffffffff, 0x8933, &(0x7f0000000000)={'wlan1\x00'})
+r0 = socket$nl_route(0x10, 0x3, 0x0)
+ioctl(r0, 0x8b27, &(0x7f0000000000))
+
+2024/05/23 04:25:40 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x230d, Ip:0x870590d8}
+2024/05/23 04:25:40 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/23 04:25:40 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3eac, Ip:0x870590ea}
+04:25:42 executing program 0:
+ioctl$sock_SIOCGIFINDEX_80211(0xffffffffffffffff, 0x8933, &(0x7f0000000000)={'wlan1\x00'})
+r0 = socket$nl_route(0x10, 0x3, 0x0)
+ioctl(r0, 0x8b27, &(0x7f0000000000))
+
+04:25:44 executing program 0:
+ioctl$sock_SIOCGIFINDEX_80211(0xffffffffffffffff, 0x8933, &(0x7f0000000000)={'wlan1\x00'})
+r0 = socket$nl_route(0x10, 0x3, 0x0)
+ioctl(r0, 0x8b27, &(0x7f0000000000))
+
+04:25:45 executing program 0:
+bpf$BPF_PROG_ATTACH(0x8, &(0x7f0000000840)={@cgroup, 0xffffffffffffffff, 0x2b, 0x2019}, 0x20)
+
+04:25:47 executing program 0:
+bpf$BPF_PROG_RAW_TRACEPOINT_LOAD(0x5, &(0x7f0000000440)={0x11, 0x12, &(0x7f0000000080)=ANY=[@ANYBLOB="180200000000000000000000000031d0851000000600000018000000", @ANYRES32, @ANYBLOB="0000000000000000660000000000000018000000000000000000000000000000950000000000000018010000202070250000000000202020db1af8ff00000000bfa100000000000007010000f8ffffffb702000008000000b50200000000000085000000060000009500000000000000"], &(0x7f0000000000)='GPL\x00', 0x2, 0x2, &(0x7f0000000340)=""/222}, 0x90)
+r0 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000000)='cpuacct.usage_percpu_sys\x00', 0x275a, 0x0)
+write$binfmt_script(r0, &(0x7f0000000000), 0xfea7)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x1, 0x10012, r0, 0x0)
+bpf$BPF_PROG_RAW_TRACEPOINT_LOAD(0x5, &(0x7f0000000440)={0x0, 0x0, 0x0, 0x0}, 0x90)
+
+2024/05/23 04:25:47 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x313d, Ip:0x8170cde2}
+2024/05/23 04:25:47 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/23 04:25:47 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x350d, Ip:0x8170cdf5}
+04:25:48 executing program 0:
+bpf$BPF_PROG_RAW_TRACEPOINT_LOAD(0x5, &(0x7f0000000440)={0x11, 0x12, &(0x7f0000000080)=ANY=[@ANYBLOB="180200000000000000000000000031d0851000000600000018000000", @ANYRES32, @ANYBLOB="0000000000000000660000000000000018000000000000000000000000000000950000000000000018010000202070250000000000202020db1af8ff00000000bfa100000000000007010000f8ffffffb702000008000000b50200000000000085000000060000009500000000000000"], &(0x7f0000000000)='GPL\x00', 0x2, 0x2, &(0x7f0000000340)=""/222}, 0x90)
+r0 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000000)='cpuacct.usage_percpu_sys\x00', 0x275a, 0x0)
+write$binfmt_script(r0, &(0x7f0000000000), 0xfea7)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x1, 0x10012, r0, 0x0)
+bpf$BPF_PROG_RAW_TRACEPOINT_LOAD(0x5, &(0x7f0000000440)={0x0, 0x0, 0x0, 0x0}, 0x90)
+
+2024/05/23 04:25:48 cfuCover: ipc.CustomCov{Id:0xc001, Val:0xe72, Ip:0x8177d341}
+2024/05/23 04:25:48 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x1380, Ip:0x8177d3c8}
+2024/05/23 04:25:48 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2b8d, Ip:0x8170f374}
+2024/05/23 04:25:48 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x313d, Ip:0x8170cde2}
+2024/05/23 04:25:48 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/23 04:25:48 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x350d, Ip:0x8170cdf5}
+2024/05/23 04:25:48 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x4e19, Ip:0x8177d351}
+2024/05/23 04:25:48 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+2024/05/23 04:25:48 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x5547, Ip:0x81ebd996}
+2024/05/23 04:25:48 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3e9b, Ip:0x833c5e4c}
+2024/05/23 04:25:48 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2b8d, Ip:0x8170f374}
+2024/05/23 04:25:48 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x313d, Ip:0x8170cde2}
+2024/05/23 04:25:48 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/23 04:25:48 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x350d, Ip:0x8170cdf5}
+04:25:50 executing program 0:
+bpf$BPF_PROG_RAW_TRACEPOINT_LOAD(0x5, &(0x7f0000000440)={0x11, 0x12, &(0x7f0000000080)=ANY=[@ANYBLOB="180200000000000000000000000031d0851000000600000018000000", @ANYRES32, @ANYBLOB="0000000000000000660000000000000018000000000000000000000000000000950000000000000018010000202070250000000000202020db1af8ff00000000bfa100000000000007010000f8ffffffb702000008000000b50200000000000085000000060000009500000000000000"], &(0x7f0000000000)='GPL\x00', 0x2, 0x2, &(0x7f0000000340)=""/222}, 0x90)
+r0 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000000)='cpuacct.usage_percpu_sys\x00', 0x275a, 0x0)
+write$binfmt_script(r0, &(0x7f0000000000), 0xfea7)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x1, 0x10012, r0, 0x0)
+bpf$BPF_PROG_RAW_TRACEPOINT_LOAD(0x5, &(0x7f0000000440)={0x0, 0x0, 0x0, 0x0}, 0x90)
+
+04:25:51 executing program 0:
+bpf$BPF_PROG_RAW_TRACEPOINT_LOAD(0x5, &(0x7f0000000440)={0x11, 0x12, &(0x7f0000000080)=ANY=[@ANYBLOB="180200000000000000000000000031d0851000000600000018000000", @ANYRES32, @ANYBLOB="0000000000000000660000000000000018000000000000000000000000000000950000000000000018010000202070250000000000202020db1af8ff00000000bfa100000000000007010000f8ffffffb702000008000000b50200000000000085000000060000009500000000000000"], &(0x7f0000000000)='GPL\x00', 0x2, 0x2, &(0x7f0000000340)=""/222}, 0x90)
+r0 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000000)='cpuacct.usage_percpu_sys\x00', 0x275a, 0x0)
+write$binfmt_script(r0, &(0x7f0000000000), 0xfea7)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x1, 0x10012, r0, 0x0)
+bpf$BPF_PROG_RAW_TRACEPOINT_LOAD(0x5, &(0x7f0000000440)={0x0, 0x0, 0x0, 0x0}, 0x90)
+
+04:25:53 executing program 0:
+bpf$BPF_PROG_RAW_TRACEPOINT_LOAD(0x5, &(0x7f0000000440)={0x11, 0x12, &(0x7f0000000080)=ANY=[@ANYBLOB="180200000000000000000000000031d0851000000600000018000000", @ANYRES32, @ANYBLOB="0000000000000000660000000000000018000000000000000000000000000000950000000000000018010000202070250000000000202020db1af8ff00000000bfa100000000000007010000f8ffffffb702000008000000b50200000000000085000000060000009500000000000000"], &(0x7f0000000000)='GPL\x00', 0x2, 0x2, &(0x7f0000000340)=""/222}, 0x90)
+r0 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000000)='cpuacct.usage_percpu_sys\x00', 0x275a, 0x0)
+write$binfmt_script(r0, &(0x7f0000000000), 0xfea7)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x1, 0x10012, r0, 0x0)
+bpf$BPF_PROG_RAW_TRACEPOINT_LOAD(0x5, &(0x7f0000000440)={0x0, 0x0, 0x0, 0x0}, 0x90)
+
+04:25:54 executing program 0:
+bpf$BPF_PROG_RAW_TRACEPOINT_LOAD(0x5, &(0x7f0000000440)={0x11, 0x12, &(0x7f0000000080)=ANY=[@ANYBLOB="180200000000000000000000000031d0851000000600000018000000", @ANYRES32, @ANYBLOB="0000000000000000660000000000000018000000000000000000000000000000950000000000000018010000202070250000000000202020db1af8ff00000000bfa100000000000007010000f8ffffffb702000008000000b50200000000000085000000060000009500000000000000"], &(0x7f0000000000)='GPL\x00', 0x2, 0x2, &(0x7f0000000340)=""/222}, 0x90)
+r0 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000000)='cpuacct.usage_percpu_sys\x00', 0x275a, 0x0)
+write$binfmt_script(r0, &(0x7f0000000000), 0xfea7)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x1, 0x10012, r0, 0x0)
+bpf$BPF_PROG_RAW_TRACEPOINT_LOAD(0x5, &(0x7f0000000440)={0x0, 0x0, 0x0, 0x0}, 0x90)
+
+04:25:56 executing program 0:
+bpf$BPF_PROG_RAW_TRACEPOINT_LOAD(0x5, &(0x7f0000000440)={0x11, 0x12, &(0x7f0000000080)=ANY=[@ANYBLOB="180200000000000000000000000031d0851000000600000018000000", @ANYRES32, @ANYBLOB="0000000000000000660000000000000018000000000000000000000000000000950000000000000018010000202070250000000000202020db1af8ff00000000bfa100000000000007010000f8ffffffb702000008000000b50200000000000085000000060000009500000000000000"], &(0x7f0000000000)='GPL\x00', 0x2, 0x2, &(0x7f0000000340)=""/222}, 0x90)
+r0 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000000)='cpuacct.usage_percpu_sys\x00', 0x275a, 0x0)
+write$binfmt_script(r0, &(0x7f0000000000), 0xfea7)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x1, 0x10012, r0, 0x0)
+bpf$BPF_PROG_RAW_TRACEPOINT_LOAD(0x5, &(0x7f0000000440)={0x0, 0x0, 0x0, 0x0}, 0x90)
+
+04:25:57 executing program 0:
+bpf$BPF_PROG_RAW_TRACEPOINT_LOAD(0x5, &(0x7f0000000440)={0x11, 0x12, &(0x7f0000000080)=ANY=[@ANYBLOB="180200000000000000000000000031d0851000000600000018000000", @ANYRES32, @ANYBLOB="0000000000000000660000000000000018000000000000000000000000000000950000000000000018010000202070250000000000202020db1af8ff00000000bfa100000000000007010000f8ffffffb702000008000000b50200000000000085000000060000009500000000000000"], &(0x7f0000000000)='GPL\x00', 0x2, 0x2, &(0x7f0000000340)=""/222}, 0x90)
+r0 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000000)='cpuacct.usage_percpu_sys\x00', 0x275a, 0x0)
+write$binfmt_script(r0, &(0x7f0000000000), 0xfea7)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x1, 0x10012, r0, 0x0)
+bpf$BPF_PROG_RAW_TRACEPOINT_LOAD(0x5, &(0x7f0000000440)={0x0, 0x0, 0x0, 0x0}, 0x90)
+
+04:25:59 executing program 0:
+bpf$BPF_PROG_RAW_TRACEPOINT_LOAD(0x5, &(0x7f0000000440)={0x11, 0x12, &(0x7f0000000080)=ANY=[@ANYBLOB="180200000000000000000000000031d0851000000600000018000000", @ANYRES32, @ANYBLOB="0000000000000000660000000000000018000000000000000000000000000000950000000000000018010000202070250000000000202020db1af8ff00000000bfa100000000000007010000f8ffffffb702000008000000b50200000000000085000000060000009500000000000000"], &(0x7f0000000000)='GPL\x00', 0x2, 0x2, &(0x7f0000000340)=""/222}, 0x90)
+r0 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000000)='cpuacct.usage_percpu_sys\x00', 0x275a, 0x0)
+write$binfmt_script(r0, &(0x7f0000000000), 0xfea7)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x1, 0x10012, r0, 0x0)
+bpf$BPF_PROG_RAW_TRACEPOINT_LOAD(0x5, &(0x7f0000000440)={0x0, 0x0, 0x0, 0x0}, 0x90)
+
+04:26:01 executing program 0:
+bpf$BPF_PROG_RAW_TRACEPOINT_LOAD(0x5, &(0x7f0000000440)={0x11, 0x12, &(0x7f0000000080)=ANY=[@ANYBLOB="180200000000000000000000000031d0851000000600000018000000", @ANYRES32, @ANYBLOB="0000000000000000660000000000000018000000000000000000000000000000950000000000000018010000202070250000000000202020db1af8ff00000000bfa100000000000007010000f8ffffffb702000008000000b50200000000000085000000060000009500000000000000"], &(0x7f0000000000)='GPL\x00', 0x2, 0x2, &(0x7f0000000340)=""/222}, 0x90)
+r0 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000000)='cpuacct.usage_percpu_sys\x00', 0x275a, 0x0)
+write$binfmt_script(r0, &(0x7f0000000000), 0xfea7)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x1, 0x10012, r0, 0x0)
+bpf$BPF_PROG_RAW_TRACEPOINT_LOAD(0x5, &(0x7f0000000440)={0x0, 0x0, 0x0, 0x0}, 0x90)
+
+04:26:02 executing program 0:
+bpf$MAP_CREATE(0x0, &(0x7f00000009c0)=@base={0x2, 0x4, 0x8, 0x8}, 0x48)
+r0 = bpf$PROG_LOAD(0x5, &(0x7f00000000c0)={0x11, 0x14, &(0x7f0000000280)=ANY=[@ANYBLOB="0000000000000000b7080000000000007b8af8ff00000000bfa200000000000007"], &(0x7f0000000240)='GPL\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f00000001c0)={&(0x7f0000000080)='kfree\x00', r0}, 0x10)
+r1 = openat$vmci(0xffffffffffffff9c, &(0x7f0000000740), 0x2, 0x0)
+ioctl$IOCTL_VMCI_VERSION2(r1, 0x7a7, &(0x7f0000000100)=0x80000)
+ioctl$IOCTL_VMCI_INIT_CONTEXT(r1, 0x7a0, &(0x7f0000000140)={@local})
+ioctl$IOCTL_VMCI_DATAGRAM_SEND(r1, 0x7ab, &(0x7f0000000040)={&(0x7f0000000780)={{@local}, {@local}, 0x400, "787c2ce2fba15d4e9f8e96bc11e2ca247a20c3e26661b174fef725253be9e8480cb4f3524932f59ba189c1429727ef39b4164f93bb821987b3b7f73495bc8e745304668e0e46798c6f5917ea8428d41cab5612336fcfe86c481c8935a48e9c1c86a394feb64fb06f77dadbcb20fc62741432b7dca37007d68e98fe46135d6a1c5ed42102f58daa5211319db84aa9abac734be47c908dc3ffa3aa7b61ec16d3d1209fc618f6c4532ea582628502ac46d167db6d53d8f3184df68414e6b6ec0109664c570e155654e83d58dadd0e5a7bab42bbb4a9afdefc115eb1609e7b50dbd94b94ba8cd86587ad33743b1c9e4a41d3e16af21d6c897a1121bc14de16e78d6d7f2ae79db44e302539fd926e0b91e0fc589e2fa19b218d0508b5ce3ad40d03936693ca5aa41ddc07cf492874569ab037e0530e38245b98131ae0c9afd871df5f51331938764f5a7dd96890edd467b2fbc335ed08174bb5ea722a98b34d38ac6de995de4ee263c81b2567b3f87e2bcaab9d3c530897857edd5d7f97d61fc67076eab4846010d482a8c801f95cddb69ff6438f2a109285c46d8224c36069d30c3c9cf4a6800ae224111136bd9c1e06c4bfc4685d7bb6a7232dbb0d6de9bf105490743dc4b700f24ce6b250b95e6c383fe44967a55d140baf0ec339e3815b29a2245f46c953048c43f961d7fbd734c60a9695f567aa710ce9d3327568895d99dde0266485bbd9d0caecf00e9501a4001000000cba54e06607ada2f5d818e4804294fcf53058e58e0d33d4aa6dc943811056908fe9116e65cdddac1d2fb24d1eacee389af38b7e5a7056d0de50c6b49fb38388cf28c2d6dd3dbbab84ffbef4b0c02a77f018e8a9749a557909e6aa96185d268dad7744b094d8c6134b8defe26674d65f908f9c3a8c201f661fc22efe0eff248d3a473fe32a5b3643bfad8f186c2af3fbaa1d38560c1244c79a0e48893eefb792af281650f34f6c2d9a6c622aba234b63586713cb66179a0897d98ee5228569c32c1a682807c8db7eb197ccbbd6549db86a6a9aebbf5dc14060f22e2b07d6166f43c25ae0c88be7a4dc38e7ed08972a355b0e5d6fc43b8e5594fa6b36a36a44bb94b75eaff11dc1cc72f54beda54da2a1ea1acfab354745057dd2e7725f2c8450b19fdf37e19f6ce43449e9191f5a5beb4a1bc176f6130052e83acefd93197dc8d77b9245f86c9113e4bd67ad420c33ae706cdc10060277b83ef30a50d4ac19c9a791b309377aa20a4743bbb799abc3ba58071b628c9ba8103bbfe389939e55296ec9b4f8d3a03aff30ce9aa0dd6e5158a672be8f3da8349ed4ad82f6ca67ee29e8b234840cf7846e604e5b8135abd94d71fe0a79180e75d4e193ea8df466c087b660fe984943751a9f6df8545699701d478c2b3daa949155770e74835bcd9737e27afd20b02ce0e504c15b02374372"}, 0x418})
+ioctl$IOCTL_VMCI_DATAGRAM_RECEIVE(r1, 0x7ac, &(0x7f00000000c0)={&(0x7f0000000bc0)={{@hyper}, {@host}, 0x400, "eb2874023336281cd0e516cd1e2d5993189c2030766c5a9b905a35b0d32916fed16ee6ac227f398d34dcd7230494135dbd7f9786de9e003e2737dea8be913dd326bf084a27d5f8456ca2e0f093cb97bbe1f083e2895a7734e6b39e3e6869e1021f4d01a4bdea5d26a8e4e0adf10dc188190aee276cd1a1496dc6f67227aac77045b534e0e5249a86101faef19e20daea66c39c72ad3763891a30ca7b9692c94a4b79198da5f2d7815e2b02f939ccf5445d42b011ee1f9c3d9317e3b8f64ca14cfe65c3dd1b496a88b4498cf1d33bd418be858983252db3957f914deffc3af2fa39d98c9c0b3e52bf765aed03b94792a2c02ccf80ccede9a74aa9c6db4f8636dd03bede2624250db1b9ee53bbb689900f6d235956d3084cb246d69bfb1652b223cdea1b60c03828b4f179059d5861b5a6f264c930edb23e20c43cfdfc30a9965196da072a5eaa82ccd842100e582ec6e9b78dc67ae1c76a39b86022b693517af020566ea7b2e2b67153499878293f0d4c2ef63e6c09c7365209d0c3e2ba63708261a05bf642f08ee5b24a648e2c7ab1fdb3c9975b3b6ab235a2358a3dc83cceb2f2b004c7312bb1037bb397ad2c3b2213d3fa188070eec57be37f47022d7f27d6b81b2d4f7e93551bcc7346b6ed1eb520a6000a3a431642f53fedc55698e85be1069208109cc91fb1048239df984bcbf3b11e4e9004347201bfa17a9a61ea73fb93a05daf039237fac618aca47325ded2a3c15eecd9e77d2baa5a9f803acee0e71e4769684e7b90da3dbb95694efe43cbbe9985bba97645d7069b2765af43260320cb9a13aee01b66ac36dc6ae89697d00b7e5bcdb750c62bf87678201dc784b1122c90fab009e33b1ecf2e41e3ece5938c4187e5130d7e47cb88fa6ca1403ddfba15a260ec42556b2fe0f3c876cdc12e02f9273a94432fb51c91f3231f6a4ed8bdbc14bf3134af1ed882261e095ff8b0a376938e22a86097b719f2ff170d3d4260d59fd66bcd156d60c42d390fef0840e1a7429a2020ddc3e1c3e66e60b48ffbd6dbe1f05fde9c5215eddf647672d3c1a4a304b548ff5239e1cefdcf726196166dcaacf382dbb6d02cc19ab466572ed03e44b14cce9fcfca12a9d0a3f01572dc38679f7936436f3175364b72bb0ee79e6ca8cb8e9502100f6c8baa91a341f97da44a3691fafc36bb32f39fe0ad41e5e62fef4c67009788660f73122bf01f739b8ee9a47ff3c50280194b312faaadd7f1d56b836302fdbc2911baca45949610b27ea7a2471e3cc16fc1d02653cd56e72f4383468f132a6219a82ddd24720d1f5808092385e4160f08f82da04c52e55305658437f6879c6d687ffa38ba6f844f1806121e4670d81ab4e04f921c3e24596c389e41a89da2201f3e23a7e79d807269e03c9e858aaf05900e465112e812b243c46e361d5b11143f889f2ba7a04525c6"}, 0x418})
+
+04:26:04 executing program 0:
+bpf$MAP_CREATE(0x0, &(0x7f00000009c0)=@base={0x2, 0x4, 0x8, 0x8}, 0x48)
+r0 = bpf$PROG_LOAD(0x5, &(0x7f00000000c0)={0x11, 0x14, &(0x7f0000000280)=ANY=[@ANYBLOB="0000000000000000b7080000000000007b8af8ff00000000bfa200000000000007"], &(0x7f0000000240)='GPL\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f00000001c0)={&(0x7f0000000080)='kfree\x00', r0}, 0x10)
+r1 = openat$vmci(0xffffffffffffff9c, &(0x7f0000000740), 0x2, 0x0)
+ioctl$IOCTL_VMCI_VERSION2(r1, 0x7a7, &(0x7f0000000100)=0x80000)
+ioctl$IOCTL_VMCI_INIT_CONTEXT(r1, 0x7a0, &(0x7f0000000140)={@local})
+ioctl$IOCTL_VMCI_DATAGRAM_SEND(r1, 0x7ab, &(0x7f0000000040)={&(0x7f0000000780)={{@local}, {@local}, 0x400, "787c2ce2fba15d4e9f8e96bc11e2ca247a20c3e26661b174fef725253be9e8480cb4f3524932f59ba189c1429727ef39b4164f93bb821987b3b7f73495bc8e745304668e0e46798c6f5917ea8428d41cab5612336fcfe86c481c8935a48e9c1c86a394feb64fb06f77dadbcb20fc62741432b7dca37007d68e98fe46135d6a1c5ed42102f58daa5211319db84aa9abac734be47c908dc3ffa3aa7b61ec16d3d1209fc618f6c4532ea582628502ac46d167db6d53d8f3184df68414e6b6ec0109664c570e155654e83d58dadd0e5a7bab42bbb4a9afdefc115eb1609e7b50dbd94b94ba8cd86587ad33743b1c9e4a41d3e16af21d6c897a1121bc14de16e78d6d7f2ae79db44e302539fd926e0b91e0fc589e2fa19b218d0508b5ce3ad40d03936693ca5aa41ddc07cf492874569ab037e0530e38245b98131ae0c9afd871df5f51331938764f5a7dd96890edd467b2fbc335ed08174bb5ea722a98b34d38ac6de995de4ee263c81b2567b3f87e2bcaab9d3c530897857edd5d7f97d61fc67076eab4846010d482a8c801f95cddb69ff6438f2a109285c46d8224c36069d30c3c9cf4a6800ae224111136bd9c1e06c4bfc4685d7bb6a7232dbb0d6de9bf105490743dc4b700f24ce6b250b95e6c383fe44967a55d140baf0ec339e3815b29a2245f46c953048c43f961d7fbd734c60a9695f567aa710ce9d3327568895d99dde0266485bbd9d0caecf00e9501a4001000000cba54e06607ada2f5d818e4804294fcf53058e58e0d33d4aa6dc943811056908fe9116e65cdddac1d2fb24d1eacee389af38b7e5a7056d0de50c6b49fb38388cf28c2d6dd3dbbab84ffbef4b0c02a77f018e8a9749a557909e6aa96185d268dad7744b094d8c6134b8defe26674d65f908f9c3a8c201f661fc22efe0eff248d3a473fe32a5b3643bfad8f186c2af3fbaa1d38560c1244c79a0e48893eefb792af281650f34f6c2d9a6c622aba234b63586713cb66179a0897d98ee5228569c32c1a682807c8db7eb197ccbbd6549db86a6a9aebbf5dc14060f22e2b07d6166f43c25ae0c88be7a4dc38e7ed08972a355b0e5d6fc43b8e5594fa6b36a36a44bb94b75eaff11dc1cc72f54beda54da2a1ea1acfab354745057dd2e7725f2c8450b19fdf37e19f6ce43449e9191f5a5beb4a1bc176f6130052e83acefd93197dc8d77b9245f86c9113e4bd67ad420c33ae706cdc10060277b83ef30a50d4ac19c9a791b309377aa20a4743bbb799abc3ba58071b628c9ba8103bbfe389939e55296ec9b4f8d3a03aff30ce9aa0dd6e5158a672be8f3da8349ed4ad82f6ca67ee29e8b234840cf7846e604e5b8135abd94d71fe0a79180e75d4e193ea8df466c087b660fe984943751a9f6df8545699701d478c2b3daa949155770e74835bcd9737e27afd20b02ce0e504c15b02374372"}, 0x418})
+ioctl$IOCTL_VMCI_DATAGRAM_RECEIVE(r1, 0x7ac, &(0x7f00000000c0)={&(0x7f0000000bc0)={{@hyper}, {@host}, 0x400, "eb2874023336281cd0e516cd1e2d5993189c2030766c5a9b905a35b0d32916fed16ee6ac227f398d34dcd7230494135dbd7f9786de9e003e2737dea8be913dd326bf084a27d5f8456ca2e0f093cb97bbe1f083e2895a7734e6b39e3e6869e1021f4d01a4bdea5d26a8e4e0adf10dc188190aee276cd1a1496dc6f67227aac77045b534e0e5249a86101faef19e20daea66c39c72ad3763891a30ca7b9692c94a4b79198da5f2d7815e2b02f939ccf5445d42b011ee1f9c3d9317e3b8f64ca14cfe65c3dd1b496a88b4498cf1d33bd418be858983252db3957f914deffc3af2fa39d98c9c0b3e52bf765aed03b94792a2c02ccf80ccede9a74aa9c6db4f8636dd03bede2624250db1b9ee53bbb689900f6d235956d3084cb246d69bfb1652b223cdea1b60c03828b4f179059d5861b5a6f264c930edb23e20c43cfdfc30a9965196da072a5eaa82ccd842100e582ec6e9b78dc67ae1c76a39b86022b693517af020566ea7b2e2b67153499878293f0d4c2ef63e6c09c7365209d0c3e2ba63708261a05bf642f08ee5b24a648e2c7ab1fdb3c9975b3b6ab235a2358a3dc83cceb2f2b004c7312bb1037bb397ad2c3b2213d3fa188070eec57be37f47022d7f27d6b81b2d4f7e93551bcc7346b6ed1eb520a6000a3a431642f53fedc55698e85be1069208109cc91fb1048239df984bcbf3b11e4e9004347201bfa17a9a61ea73fb93a05daf039237fac618aca47325ded2a3c15eecd9e77d2baa5a9f803acee0e71e4769684e7b90da3dbb95694efe43cbbe9985bba97645d7069b2765af43260320cb9a13aee01b66ac36dc6ae89697d00b7e5bcdb750c62bf87678201dc784b1122c90fab009e33b1ecf2e41e3ece5938c4187e5130d7e47cb88fa6ca1403ddfba15a260ec42556b2fe0f3c876cdc12e02f9273a94432fb51c91f3231f6a4ed8bdbc14bf3134af1ed882261e095ff8b0a376938e22a86097b719f2ff170d3d4260d59fd66bcd156d60c42d390fef0840e1a7429a2020ddc3e1c3e66e60b48ffbd6dbe1f05fde9c5215eddf647672d3c1a4a304b548ff5239e1cefdcf726196166dcaacf382dbb6d02cc19ab466572ed03e44b14cce9fcfca12a9d0a3f01572dc38679f7936436f3175364b72bb0ee79e6ca8cb8e9502100f6c8baa91a341f97da44a3691fafc36bb32f39fe0ad41e5e62fef4c67009788660f73122bf01f739b8ee9a47ff3c50280194b312faaadd7f1d56b836302fdbc2911baca45949610b27ea7a2471e3cc16fc1d02653cd56e72f4383468f132a6219a82ddd24720d1f5808092385e4160f08f82da04c52e55305658437f6879c6d687ffa38ba6f844f1806121e4670d81ab4e04f921c3e24596c389e41a89da2201f3e23a7e79d807269e03c9e858aaf05900e465112e812b243c46e361d5b11143f889f2ba7a04525c6"}, 0x418})
+
+2024/05/23 04:26:04 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x313d, Ip:0x8170cde2}
+2024/05/23 04:26:04 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/23 04:26:04 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x350d, Ip:0x8170cdf5}
+2024/05/23 04:26:04 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2b8d, Ip:0x8170f374}
+2024/05/23 04:26:04 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x313d, Ip:0x8170cde2}
+2024/05/23 04:26:04 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/23 04:26:04 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x350d, Ip:0x8170cdf5}
+2024/05/23 04:26:04 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x313d, Ip:0x8170cde2}
+2024/05/23 04:26:04 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/23 04:26:04 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x350d, Ip:0x8170cdf5}
+2024/05/23 04:26:04 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+2024/05/23 04:26:04 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x4ff4, Ip:0x84025371}
+2024/05/23 04:26:04 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/23 04:26:04 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x4fcd, Ip:0x8402521e}
+2024/05/23 04:26:04 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x5429, Ip:0x84025230}
+2024/05/23 04:26:04 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x17f0, Ip:0x840252fc}
+2024/05/23 04:26:04 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2b09, Ip:0x8191ced7}
+2024/05/23 04:26:04 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/23 04:26:04 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x363c, Ip:0x8191cec7}
+2024/05/23 04:26:04 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x4fcd, Ip:0x840252ea}
+2024/05/23 04:26:04 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x1964, Ip:0x84025798}
+2024/05/23 04:26:04 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/23 04:26:04 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x4fcd, Ip:0x84025786}
+04:26:05 executing program 0:
+bpf$MAP_CREATE(0x0, &(0x7f00000009c0)=@base={0x2, 0x4, 0x8, 0x8}, 0x48)
+r0 = bpf$PROG_LOAD(0x5, &(0x7f00000000c0)={0x11, 0x14, &(0x7f0000000280)=ANY=[@ANYBLOB="0000000000000000b7080000000000007b8af8ff00000000bfa200000000000007"], &(0x7f0000000240)='GPL\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f00000001c0)={&(0x7f0000000080)='kfree\x00', r0}, 0x10)
+r1 = openat$vmci(0xffffffffffffff9c, &(0x7f0000000740), 0x2, 0x0)
+ioctl$IOCTL_VMCI_VERSION2(r1, 0x7a7, &(0x7f0000000100)=0x80000)
+ioctl$IOCTL_VMCI_INIT_CONTEXT(r1, 0x7a0, &(0x7f0000000140)={@local})
+ioctl$IOCTL_VMCI_DATAGRAM_SEND(r1, 0x7ab, &(0x7f0000000040)={&(0x7f0000000780)={{@local}, {@local}, 0x400, "787c2ce2fba15d4e9f8e96bc11e2ca247a20c3e26661b174fef725253be9e8480cb4f3524932f59ba189c1429727ef39b4164f93bb821987b3b7f73495bc8e745304668e0e46798c6f5917ea8428d41cab5612336fcfe86c481c8935a48e9c1c86a394feb64fb06f77dadbcb20fc62741432b7dca37007d68e98fe46135d6a1c5ed42102f58daa5211319db84aa9abac734be47c908dc3ffa3aa7b61ec16d3d1209fc618f6c4532ea582628502ac46d167db6d53d8f3184df68414e6b6ec0109664c570e155654e83d58dadd0e5a7bab42bbb4a9afdefc115eb1609e7b50dbd94b94ba8cd86587ad33743b1c9e4a41d3e16af21d6c897a1121bc14de16e78d6d7f2ae79db44e302539fd926e0b91e0fc589e2fa19b218d0508b5ce3ad40d03936693ca5aa41ddc07cf492874569ab037e0530e38245b98131ae0c9afd871df5f51331938764f5a7dd96890edd467b2fbc335ed08174bb5ea722a98b34d38ac6de995de4ee263c81b2567b3f87e2bcaab9d3c530897857edd5d7f97d61fc67076eab4846010d482a8c801f95cddb69ff6438f2a109285c46d8224c36069d30c3c9cf4a6800ae224111136bd9c1e06c4bfc4685d7bb6a7232dbb0d6de9bf105490743dc4b700f24ce6b250b95e6c383fe44967a55d140baf0ec339e3815b29a2245f46c953048c43f961d7fbd734c60a9695f567aa710ce9d3327568895d99dde0266485bbd9d0caecf00e9501a4001000000cba54e06607ada2f5d818e4804294fcf53058e58e0d33d4aa6dc943811056908fe9116e65cdddac1d2fb24d1eacee389af38b7e5a7056d0de50c6b49fb38388cf28c2d6dd3dbbab84ffbef4b0c02a77f018e8a9749a557909e6aa96185d268dad7744b094d8c6134b8defe26674d65f908f9c3a8c201f661fc22efe0eff248d3a473fe32a5b3643bfad8f186c2af3fbaa1d38560c1244c79a0e48893eefb792af281650f34f6c2d9a6c622aba234b63586713cb66179a0897d98ee5228569c32c1a682807c8db7eb197ccbbd6549db86a6a9aebbf5dc14060f22e2b07d6166f43c25ae0c88be7a4dc38e7ed08972a355b0e5d6fc43b8e5594fa6b36a36a44bb94b75eaff11dc1cc72f54beda54da2a1ea1acfab354745057dd2e7725f2c8450b19fdf37e19f6ce43449e9191f5a5beb4a1bc176f6130052e83acefd93197dc8d77b9245f86c9113e4bd67ad420c33ae706cdc10060277b83ef30a50d4ac19c9a791b309377aa20a4743bbb799abc3ba58071b628c9ba8103bbfe389939e55296ec9b4f8d3a03aff30ce9aa0dd6e5158a672be8f3da8349ed4ad82f6ca67ee29e8b234840cf7846e604e5b8135abd94d71fe0a79180e75d4e193ea8df466c087b660fe984943751a9f6df8545699701d478c2b3daa949155770e74835bcd9737e27afd20b02ce0e504c15b02374372"}, 0x418})
+ioctl$IOCTL_VMCI_DATAGRAM_RECEIVE(r1, 0x7ac, &(0x7f00000000c0)={&(0x7f0000000bc0)={{@hyper}, {@host}, 0x400, "eb2874023336281cd0e516cd1e2d5993189c2030766c5a9b905a35b0d32916fed16ee6ac227f398d34dcd7230494135dbd7f9786de9e003e2737dea8be913dd326bf084a27d5f8456ca2e0f093cb97bbe1f083e2895a7734e6b39e3e6869e1021f4d01a4bdea5d26a8e4e0adf10dc188190aee276cd1a1496dc6f67227aac77045b534e0e5249a86101faef19e20daea66c39c72ad3763891a30ca7b9692c94a4b79198da5f2d7815e2b02f939ccf5445d42b011ee1f9c3d9317e3b8f64ca14cfe65c3dd1b496a88b4498cf1d33bd418be858983252db3957f914deffc3af2fa39d98c9c0b3e52bf765aed03b94792a2c02ccf80ccede9a74aa9c6db4f8636dd03bede2624250db1b9ee53bbb689900f6d235956d3084cb246d69bfb1652b223cdea1b60c03828b4f179059d5861b5a6f264c930edb23e20c43cfdfc30a9965196da072a5eaa82ccd842100e582ec6e9b78dc67ae1c76a39b86022b693517af020566ea7b2e2b67153499878293f0d4c2ef63e6c09c7365209d0c3e2ba63708261a05bf642f08ee5b24a648e2c7ab1fdb3c9975b3b6ab235a2358a3dc83cceb2f2b004c7312bb1037bb397ad2c3b2213d3fa188070eec57be37f47022d7f27d6b81b2d4f7e93551bcc7346b6ed1eb520a6000a3a431642f53fedc55698e85be1069208109cc91fb1048239df984bcbf3b11e4e9004347201bfa17a9a61ea73fb93a05daf039237fac618aca47325ded2a3c15eecd9e77d2baa5a9f803acee0e71e4769684e7b90da3dbb95694efe43cbbe9985bba97645d7069b2765af43260320cb9a13aee01b66ac36dc6ae89697d00b7e5bcdb750c62bf87678201dc784b1122c90fab009e33b1ecf2e41e3ece5938c4187e5130d7e47cb88fa6ca1403ddfba15a260ec42556b2fe0f3c876cdc12e02f9273a94432fb51c91f3231f6a4ed8bdbc14bf3134af1ed882261e095ff8b0a376938e22a86097b719f2ff170d3d4260d59fd66bcd156d60c42d390fef0840e1a7429a2020ddc3e1c3e66e60b48ffbd6dbe1f05fde9c5215eddf647672d3c1a4a304b548ff5239e1cefdcf726196166dcaacf382dbb6d02cc19ab466572ed03e44b14cce9fcfca12a9d0a3f01572dc38679f7936436f3175364b72bb0ee79e6ca8cb8e9502100f6c8baa91a341f97da44a3691fafc36bb32f39fe0ad41e5e62fef4c67009788660f73122bf01f739b8ee9a47ff3c50280194b312faaadd7f1d56b836302fdbc2911baca45949610b27ea7a2471e3cc16fc1d02653cd56e72f4383468f132a6219a82ddd24720d1f5808092385e4160f08f82da04c52e55305658437f6879c6d687ffa38ba6f844f1806121e4670d81ab4e04f921c3e24596c389e41a89da2201f3e23a7e79d807269e03c9e858aaf05900e465112e812b243c46e361d5b11143f889f2ba7a04525c6"}, 0x418})
+
+04:26:07 executing program 0:
+bpf$MAP_CREATE(0x0, &(0x7f00000009c0)=@base={0x2, 0x4, 0x8, 0x8}, 0x48)
+r0 = bpf$PROG_LOAD(0x5, &(0x7f00000000c0)={0x11, 0x14, &(0x7f0000000280)=ANY=[@ANYBLOB="0000000000000000b7080000000000007b8af8ff00000000bfa200000000000007"], &(0x7f0000000240)='GPL\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f00000001c0)={&(0x7f0000000080)='kfree\x00', r0}, 0x10)
+r1 = openat$vmci(0xffffffffffffff9c, &(0x7f0000000740), 0x2, 0x0)
+ioctl$IOCTL_VMCI_VERSION2(r1, 0x7a7, &(0x7f0000000100)=0x80000)
+ioctl$IOCTL_VMCI_INIT_CONTEXT(r1, 0x7a0, &(0x7f0000000140)={@local})
+ioctl$IOCTL_VMCI_DATAGRAM_SEND(r1, 0x7ab, &(0x7f0000000040)={&(0x7f0000000780)={{@local}, {@local}, 0x400, "787c2ce2fba15d4e9f8e96bc11e2ca247a20c3e26661b174fef725253be9e8480cb4f3524932f59ba189c1429727ef39b4164f93bb821987b3b7f73495bc8e745304668e0e46798c6f5917ea8428d41cab5612336fcfe86c481c8935a48e9c1c86a394feb64fb06f77dadbcb20fc62741432b7dca37007d68e98fe46135d6a1c5ed42102f58daa5211319db84aa9abac734be47c908dc3ffa3aa7b61ec16d3d1209fc618f6c4532ea582628502ac46d167db6d53d8f3184df68414e6b6ec0109664c570e155654e83d58dadd0e5a7bab42bbb4a9afdefc115eb1609e7b50dbd94b94ba8cd86587ad33743b1c9e4a41d3e16af21d6c897a1121bc14de16e78d6d7f2ae79db44e302539fd926e0b91e0fc589e2fa19b218d0508b5ce3ad40d03936693ca5aa41ddc07cf492874569ab037e0530e38245b98131ae0c9afd871df5f51331938764f5a7dd96890edd467b2fbc335ed08174bb5ea722a98b34d38ac6de995de4ee263c81b2567b3f87e2bcaab9d3c530897857edd5d7f97d61fc67076eab4846010d482a8c801f95cddb69ff6438f2a109285c46d8224c36069d30c3c9cf4a6800ae224111136bd9c1e06c4bfc4685d7bb6a7232dbb0d6de9bf105490743dc4b700f24ce6b250b95e6c383fe44967a55d140baf0ec339e3815b29a2245f46c953048c43f961d7fbd734c60a9695f567aa710ce9d3327568895d99dde0266485bbd9d0caecf00e9501a4001000000cba54e06607ada2f5d818e4804294fcf53058e58e0d33d4aa6dc943811056908fe9116e65cdddac1d2fb24d1eacee389af38b7e5a7056d0de50c6b49fb38388cf28c2d6dd3dbbab84ffbef4b0c02a77f018e8a9749a557909e6aa96185d268dad7744b094d8c6134b8defe26674d65f908f9c3a8c201f661fc22efe0eff248d3a473fe32a5b3643bfad8f186c2af3fbaa1d38560c1244c79a0e48893eefb792af281650f34f6c2d9a6c622aba234b63586713cb66179a0897d98ee5228569c32c1a682807c8db7eb197ccbbd6549db86a6a9aebbf5dc14060f22e2b07d6166f43c25ae0c88be7a4dc38e7ed08972a355b0e5d6fc43b8e5594fa6b36a36a44bb94b75eaff11dc1cc72f54beda54da2a1ea1acfab354745057dd2e7725f2c8450b19fdf37e19f6ce43449e9191f5a5beb4a1bc176f6130052e83acefd93197dc8d77b9245f86c9113e4bd67ad420c33ae706cdc10060277b83ef30a50d4ac19c9a791b309377aa20a4743bbb799abc3ba58071b628c9ba8103bbfe389939e55296ec9b4f8d3a03aff30ce9aa0dd6e5158a672be8f3da8349ed4ad82f6ca67ee29e8b234840cf7846e604e5b8135abd94d71fe0a79180e75d4e193ea8df466c087b660fe984943751a9f6df8545699701d478c2b3daa949155770e74835bcd9737e27afd20b02ce0e504c15b02374372"}, 0x418})
+ioctl$IOCTL_VMCI_DATAGRAM_RECEIVE(r1, 0x7ac, &(0x7f00000000c0)={&(0x7f0000000bc0)={{@hyper}, {@host}, 0x400, "eb2874023336281cd0e516cd1e2d5993189c2030766c5a9b905a35b0d32916fed16ee6ac227f398d34dcd7230494135dbd7f9786de9e003e2737dea8be913dd326bf084a27d5f8456ca2e0f093cb97bbe1f083e2895a7734e6b39e3e6869e1021f4d01a4bdea5d26a8e4e0adf10dc188190aee276cd1a1496dc6f67227aac77045b534e0e5249a86101faef19e20daea66c39c72ad3763891a30ca7b9692c94a4b79198da5f2d7815e2b02f939ccf5445d42b011ee1f9c3d9317e3b8f64ca14cfe65c3dd1b496a88b4498cf1d33bd418be858983252db3957f914deffc3af2fa39d98c9c0b3e52bf765aed03b94792a2c02ccf80ccede9a74aa9c6db4f8636dd03bede2624250db1b9ee53bbb689900f6d235956d3084cb246d69bfb1652b223cdea1b60c03828b4f179059d5861b5a6f264c930edb23e20c43cfdfc30a9965196da072a5eaa82ccd842100e582ec6e9b78dc67ae1c76a39b86022b693517af020566ea7b2e2b67153499878293f0d4c2ef63e6c09c7365209d0c3e2ba63708261a05bf642f08ee5b24a648e2c7ab1fdb3c9975b3b6ab235a2358a3dc83cceb2f2b004c7312bb1037bb397ad2c3b2213d3fa188070eec57be37f47022d7f27d6b81b2d4f7e93551bcc7346b6ed1eb520a6000a3a431642f53fedc55698e85be1069208109cc91fb1048239df984bcbf3b11e4e9004347201bfa17a9a61ea73fb93a05daf039237fac618aca47325ded2a3c15eecd9e77d2baa5a9f803acee0e71e4769684e7b90da3dbb95694efe43cbbe9985bba97645d7069b2765af43260320cb9a13aee01b66ac36dc6ae89697d00b7e5bcdb750c62bf87678201dc784b1122c90fab009e33b1ecf2e41e3ece5938c4187e5130d7e47cb88fa6ca1403ddfba15a260ec42556b2fe0f3c876cdc12e02f9273a94432fb51c91f3231f6a4ed8bdbc14bf3134af1ed882261e095ff8b0a376938e22a86097b719f2ff170d3d4260d59fd66bcd156d60c42d390fef0840e1a7429a2020ddc3e1c3e66e60b48ffbd6dbe1f05fde9c5215eddf647672d3c1a4a304b548ff5239e1cefdcf726196166dcaacf382dbb6d02cc19ab466572ed03e44b14cce9fcfca12a9d0a3f01572dc38679f7936436f3175364b72bb0ee79e6ca8cb8e9502100f6c8baa91a341f97da44a3691fafc36bb32f39fe0ad41e5e62fef4c67009788660f73122bf01f739b8ee9a47ff3c50280194b312faaadd7f1d56b836302fdbc2911baca45949610b27ea7a2471e3cc16fc1d02653cd56e72f4383468f132a6219a82ddd24720d1f5808092385e4160f08f82da04c52e55305658437f6879c6d687ffa38ba6f844f1806121e4670d81ab4e04f921c3e24596c389e41a89da2201f3e23a7e79d807269e03c9e858aaf05900e465112e812b243c46e361d5b11143f889f2ba7a04525c6"}, 0x418})
+
+04:26:08 executing program 0:
+bpf$MAP_CREATE(0x0, &(0x7f00000009c0)=@base={0x2, 0x4, 0x8, 0x8}, 0x48)
+r0 = bpf$PROG_LOAD(0x5, &(0x7f00000000c0)={0x11, 0x14, &(0x7f0000000280)=ANY=[@ANYBLOB="0000000000000000b7080000000000007b8af8ff00000000bfa200000000000007"], &(0x7f0000000240)='GPL\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f00000001c0)={&(0x7f0000000080)='kfree\x00', r0}, 0x10)
+r1 = openat$vmci(0xffffffffffffff9c, &(0x7f0000000740), 0x2, 0x0)
+ioctl$IOCTL_VMCI_VERSION2(r1, 0x7a7, &(0x7f0000000100)=0x80000)
+ioctl$IOCTL_VMCI_INIT_CONTEXT(r1, 0x7a0, &(0x7f0000000140)={@local})
+ioctl$IOCTL_VMCI_DATAGRAM_SEND(r1, 0x7ab, &(0x7f0000000040)={&(0x7f0000000780)={{@local}, {@local}, 0x400, "787c2ce2fba15d4e9f8e96bc11e2ca247a20c3e26661b174fef725253be9e8480cb4f3524932f59ba189c1429727ef39b4164f93bb821987b3b7f73495bc8e745304668e0e46798c6f5917ea8428d41cab5612336fcfe86c481c8935a48e9c1c86a394feb64fb06f77dadbcb20fc62741432b7dca37007d68e98fe46135d6a1c5ed42102f58daa5211319db84aa9abac734be47c908dc3ffa3aa7b61ec16d3d1209fc618f6c4532ea582628502ac46d167db6d53d8f3184df68414e6b6ec0109664c570e155654e83d58dadd0e5a7bab42bbb4a9afdefc115eb1609e7b50dbd94b94ba8cd86587ad33743b1c9e4a41d3e16af21d6c897a1121bc14de16e78d6d7f2ae79db44e302539fd926e0b91e0fc589e2fa19b218d0508b5ce3ad40d03936693ca5aa41ddc07cf492874569ab037e0530e38245b98131ae0c9afd871df5f51331938764f5a7dd96890edd467b2fbc335ed08174bb5ea722a98b34d38ac6de995de4ee263c81b2567b3f87e2bcaab9d3c530897857edd5d7f97d61fc67076eab4846010d482a8c801f95cddb69ff6438f2a109285c46d8224c36069d30c3c9cf4a6800ae224111136bd9c1e06c4bfc4685d7bb6a7232dbb0d6de9bf105490743dc4b700f24ce6b250b95e6c383fe44967a55d140baf0ec339e3815b29a2245f46c953048c43f961d7fbd734c60a9695f567aa710ce9d3327568895d99dde0266485bbd9d0caecf00e9501a4001000000cba54e06607ada2f5d818e4804294fcf53058e58e0d33d4aa6dc943811056908fe9116e65cdddac1d2fb24d1eacee389af38b7e5a7056d0de50c6b49fb38388cf28c2d6dd3dbbab84ffbef4b0c02a77f018e8a9749a557909e6aa96185d268dad7744b094d8c6134b8defe26674d65f908f9c3a8c201f661fc22efe0eff248d3a473fe32a5b3643bfad8f186c2af3fbaa1d38560c1244c79a0e48893eefb792af281650f34f6c2d9a6c622aba234b63586713cb66179a0897d98ee5228569c32c1a682807c8db7eb197ccbbd6549db86a6a9aebbf5dc14060f22e2b07d6166f43c25ae0c88be7a4dc38e7ed08972a355b0e5d6fc43b8e5594fa6b36a36a44bb94b75eaff11dc1cc72f54beda54da2a1ea1acfab354745057dd2e7725f2c8450b19fdf37e19f6ce43449e9191f5a5beb4a1bc176f6130052e83acefd93197dc8d77b9245f86c9113e4bd67ad420c33ae706cdc10060277b83ef30a50d4ac19c9a791b309377aa20a4743bbb799abc3ba58071b628c9ba8103bbfe389939e55296ec9b4f8d3a03aff30ce9aa0dd6e5158a672be8f3da8349ed4ad82f6ca67ee29e8b234840cf7846e604e5b8135abd94d71fe0a79180e75d4e193ea8df466c087b660fe984943751a9f6df8545699701d478c2b3daa949155770e74835bcd9737e27afd20b02ce0e504c15b02374372"}, 0x418})
+ioctl$IOCTL_VMCI_DATAGRAM_RECEIVE(r1, 0x7ac, &(0x7f00000000c0)={&(0x7f0000000bc0)={{@hyper}, {@host}, 0x400, "eb2874023336281cd0e516cd1e2d5993189c2030766c5a9b905a35b0d32916fed16ee6ac227f398d34dcd7230494135dbd7f9786de9e003e2737dea8be913dd326bf084a27d5f8456ca2e0f093cb97bbe1f083e2895a7734e6b39e3e6869e1021f4d01a4bdea5d26a8e4e0adf10dc188190aee276cd1a1496dc6f67227aac77045b534e0e5249a86101faef19e20daea66c39c72ad3763891a30ca7b9692c94a4b79198da5f2d7815e2b02f939ccf5445d42b011ee1f9c3d9317e3b8f64ca14cfe65c3dd1b496a88b4498cf1d33bd418be858983252db3957f914deffc3af2fa39d98c9c0b3e52bf765aed03b94792a2c02ccf80ccede9a74aa9c6db4f8636dd03bede2624250db1b9ee53bbb689900f6d235956d3084cb246d69bfb1652b223cdea1b60c03828b4f179059d5861b5a6f264c930edb23e20c43cfdfc30a9965196da072a5eaa82ccd842100e582ec6e9b78dc67ae1c76a39b86022b693517af020566ea7b2e2b67153499878293f0d4c2ef63e6c09c7365209d0c3e2ba63708261a05bf642f08ee5b24a648e2c7ab1fdb3c9975b3b6ab235a2358a3dc83cceb2f2b004c7312bb1037bb397ad2c3b2213d3fa188070eec57be37f47022d7f27d6b81b2d4f7e93551bcc7346b6ed1eb520a6000a3a431642f53fedc55698e85be1069208109cc91fb1048239df984bcbf3b11e4e9004347201bfa17a9a61ea73fb93a05daf039237fac618aca47325ded2a3c15eecd9e77d2baa5a9f803acee0e71e4769684e7b90da3dbb95694efe43cbbe9985bba97645d7069b2765af43260320cb9a13aee01b66ac36dc6ae89697d00b7e5bcdb750c62bf87678201dc784b1122c90fab009e33b1ecf2e41e3ece5938c4187e5130d7e47cb88fa6ca1403ddfba15a260ec42556b2fe0f3c876cdc12e02f9273a94432fb51c91f3231f6a4ed8bdbc14bf3134af1ed882261e095ff8b0a376938e22a86097b719f2ff170d3d4260d59fd66bcd156d60c42d390fef0840e1a7429a2020ddc3e1c3e66e60b48ffbd6dbe1f05fde9c5215eddf647672d3c1a4a304b548ff5239e1cefdcf726196166dcaacf382dbb6d02cc19ab466572ed03e44b14cce9fcfca12a9d0a3f01572dc38679f7936436f3175364b72bb0ee79e6ca8cb8e9502100f6c8baa91a341f97da44a3691fafc36bb32f39fe0ad41e5e62fef4c67009788660f73122bf01f739b8ee9a47ff3c50280194b312faaadd7f1d56b836302fdbc2911baca45949610b27ea7a2471e3cc16fc1d02653cd56e72f4383468f132a6219a82ddd24720d1f5808092385e4160f08f82da04c52e55305658437f6879c6d687ffa38ba6f844f1806121e4670d81ab4e04f921c3e24596c389e41a89da2201f3e23a7e79d807269e03c9e858aaf05900e465112e812b243c46e361d5b11143f889f2ba7a04525c6"}, 0x418})
+
+04:26:10 executing program 0:
+bpf$MAP_CREATE(0x0, &(0x7f00000009c0)=@base={0x2, 0x4, 0x8, 0x8}, 0x48)
+r0 = bpf$PROG_LOAD(0x5, &(0x7f00000000c0)={0x11, 0x14, &(0x7f0000000280)=ANY=[@ANYBLOB="0000000000000000b7080000000000007b8af8ff00000000bfa200000000000007"], &(0x7f0000000240)='GPL\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f00000001c0)={&(0x7f0000000080)='kfree\x00', r0}, 0x10)
+r1 = openat$vmci(0xffffffffffffff9c, &(0x7f0000000740), 0x2, 0x0)
+ioctl$IOCTL_VMCI_VERSION2(r1, 0x7a7, &(0x7f0000000100)=0x80000)
+ioctl$IOCTL_VMCI_INIT_CONTEXT(r1, 0x7a0, &(0x7f0000000140)={@local})
+ioctl$IOCTL_VMCI_DATAGRAM_SEND(r1, 0x7ab, &(0x7f0000000040)={&(0x7f0000000780)={{@local}, {@local}, 0x400, "787c2ce2fba15d4e9f8e96bc11e2ca247a20c3e26661b174fef725253be9e8480cb4f3524932f59ba189c1429727ef39b4164f93bb821987b3b7f73495bc8e745304668e0e46798c6f5917ea8428d41cab5612336fcfe86c481c8935a48e9c1c86a394feb64fb06f77dadbcb20fc62741432b7dca37007d68e98fe46135d6a1c5ed42102f58daa5211319db84aa9abac734be47c908dc3ffa3aa7b61ec16d3d1209fc618f6c4532ea582628502ac46d167db6d53d8f3184df68414e6b6ec0109664c570e155654e83d58dadd0e5a7bab42bbb4a9afdefc115eb1609e7b50dbd94b94ba8cd86587ad33743b1c9e4a41d3e16af21d6c897a1121bc14de16e78d6d7f2ae79db44e302539fd926e0b91e0fc589e2fa19b218d0508b5ce3ad40d03936693ca5aa41ddc07cf492874569ab037e0530e38245b98131ae0c9afd871df5f51331938764f5a7dd96890edd467b2fbc335ed08174bb5ea722a98b34d38ac6de995de4ee263c81b2567b3f87e2bcaab9d3c530897857edd5d7f97d61fc67076eab4846010d482a8c801f95cddb69ff6438f2a109285c46d8224c36069d30c3c9cf4a6800ae224111136bd9c1e06c4bfc4685d7bb6a7232dbb0d6de9bf105490743dc4b700f24ce6b250b95e6c383fe44967a55d140baf0ec339e3815b29a2245f46c953048c43f961d7fbd734c60a9695f567aa710ce9d3327568895d99dde0266485bbd9d0caecf00e9501a4001000000cba54e06607ada2f5d818e4804294fcf53058e58e0d33d4aa6dc943811056908fe9116e65cdddac1d2fb24d1eacee389af38b7e5a7056d0de50c6b49fb38388cf28c2d6dd3dbbab84ffbef4b0c02a77f018e8a9749a557909e6aa96185d268dad7744b094d8c6134b8defe26674d65f908f9c3a8c201f661fc22efe0eff248d3a473fe32a5b3643bfad8f186c2af3fbaa1d38560c1244c79a0e48893eefb792af281650f34f6c2d9a6c622aba234b63586713cb66179a0897d98ee5228569c32c1a682807c8db7eb197ccbbd6549db86a6a9aebbf5dc14060f22e2b07d6166f43c25ae0c88be7a4dc38e7ed08972a355b0e5d6fc43b8e5594fa6b36a36a44bb94b75eaff11dc1cc72f54beda54da2a1ea1acfab354745057dd2e7725f2c8450b19fdf37e19f6ce43449e9191f5a5beb4a1bc176f6130052e83acefd93197dc8d77b9245f86c9113e4bd67ad420c33ae706cdc10060277b83ef30a50d4ac19c9a791b309377aa20a4743bbb799abc3ba58071b628c9ba8103bbfe389939e55296ec9b4f8d3a03aff30ce9aa0dd6e5158a672be8f3da8349ed4ad82f6ca67ee29e8b234840cf7846e604e5b8135abd94d71fe0a79180e75d4e193ea8df466c087b660fe984943751a9f6df8545699701d478c2b3daa949155770e74835bcd9737e27afd20b02ce0e504c15b02374372"}, 0x418})
+ioctl$IOCTL_VMCI_DATAGRAM_RECEIVE(r1, 0x7ac, &(0x7f00000000c0)={&(0x7f0000000bc0)={{@hyper}, {@host}, 0x400, "eb2874023336281cd0e516cd1e2d5993189c2030766c5a9b905a35b0d32916fed16ee6ac227f398d34dcd7230494135dbd7f9786de9e003e2737dea8be913dd326bf084a27d5f8456ca2e0f093cb97bbe1f083e2895a7734e6b39e3e6869e1021f4d01a4bdea5d26a8e4e0adf10dc188190aee276cd1a1496dc6f67227aac77045b534e0e5249a86101faef19e20daea66c39c72ad3763891a30ca7b9692c94a4b79198da5f2d7815e2b02f939ccf5445d42b011ee1f9c3d9317e3b8f64ca14cfe65c3dd1b496a88b4498cf1d33bd418be858983252db3957f914deffc3af2fa39d98c9c0b3e52bf765aed03b94792a2c02ccf80ccede9a74aa9c6db4f8636dd03bede2624250db1b9ee53bbb689900f6d235956d3084cb246d69bfb1652b223cdea1b60c03828b4f179059d5861b5a6f264c930edb23e20c43cfdfc30a9965196da072a5eaa82ccd842100e582ec6e9b78dc67ae1c76a39b86022b693517af020566ea7b2e2b67153499878293f0d4c2ef63e6c09c7365209d0c3e2ba63708261a05bf642f08ee5b24a648e2c7ab1fdb3c9975b3b6ab235a2358a3dc83cceb2f2b004c7312bb1037bb397ad2c3b2213d3fa188070eec57be37f47022d7f27d6b81b2d4f7e93551bcc7346b6ed1eb520a6000a3a431642f53fedc55698e85be1069208109cc91fb1048239df984bcbf3b11e4e9004347201bfa17a9a61ea73fb93a05daf039237fac618aca47325ded2a3c15eecd9e77d2baa5a9f803acee0e71e4769684e7b90da3dbb95694efe43cbbe9985bba97645d7069b2765af43260320cb9a13aee01b66ac36dc6ae89697d00b7e5bcdb750c62bf87678201dc784b1122c90fab009e33b1ecf2e41e3ece5938c4187e5130d7e47cb88fa6ca1403ddfba15a260ec42556b2fe0f3c876cdc12e02f9273a94432fb51c91f3231f6a4ed8bdbc14bf3134af1ed882261e095ff8b0a376938e22a86097b719f2ff170d3d4260d59fd66bcd156d60c42d390fef0840e1a7429a2020ddc3e1c3e66e60b48ffbd6dbe1f05fde9c5215eddf647672d3c1a4a304b548ff5239e1cefdcf726196166dcaacf382dbb6d02cc19ab466572ed03e44b14cce9fcfca12a9d0a3f01572dc38679f7936436f3175364b72bb0ee79e6ca8cb8e9502100f6c8baa91a341f97da44a3691fafc36bb32f39fe0ad41e5e62fef4c67009788660f73122bf01f739b8ee9a47ff3c50280194b312faaadd7f1d56b836302fdbc2911baca45949610b27ea7a2471e3cc16fc1d02653cd56e72f4383468f132a6219a82ddd24720d1f5808092385e4160f08f82da04c52e55305658437f6879c6d687ffa38ba6f844f1806121e4670d81ab4e04f921c3e24596c389e41a89da2201f3e23a7e79d807269e03c9e858aaf05900e465112e812b243c46e361d5b11143f889f2ba7a04525c6"}, 0x418})
+
+04:26:11 executing program 0:
+bpf$MAP_CREATE(0x0, &(0x7f00000009c0)=@base={0x2, 0x4, 0x8, 0x8}, 0x48)
+r0 = bpf$PROG_LOAD(0x5, &(0x7f00000000c0)={0x11, 0x14, &(0x7f0000000280)=ANY=[@ANYBLOB="0000000000000000b7080000000000007b8af8ff00000000bfa200000000000007"], &(0x7f0000000240)='GPL\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f00000001c0)={&(0x7f0000000080)='kfree\x00', r0}, 0x10)
+r1 = openat$vmci(0xffffffffffffff9c, &(0x7f0000000740), 0x2, 0x0)
+ioctl$IOCTL_VMCI_VERSION2(r1, 0x7a7, &(0x7f0000000100)=0x80000)
+ioctl$IOCTL_VMCI_INIT_CONTEXT(r1, 0x7a0, &(0x7f0000000140)={@local})
+ioctl$IOCTL_VMCI_DATAGRAM_SEND(r1, 0x7ab, &(0x7f0000000040)={&(0x7f0000000780)={{@local}, {@local}, 0x400, "787c2ce2fba15d4e9f8e96bc11e2ca247a20c3e26661b174fef725253be9e8480cb4f3524932f59ba189c1429727ef39b4164f93bb821987b3b7f73495bc8e745304668e0e46798c6f5917ea8428d41cab5612336fcfe86c481c8935a48e9c1c86a394feb64fb06f77dadbcb20fc62741432b7dca37007d68e98fe46135d6a1c5ed42102f58daa5211319db84aa9abac734be47c908dc3ffa3aa7b61ec16d3d1209fc618f6c4532ea582628502ac46d167db6d53d8f3184df68414e6b6ec0109664c570e155654e83d58dadd0e5a7bab42bbb4a9afdefc115eb1609e7b50dbd94b94ba8cd86587ad33743b1c9e4a41d3e16af21d6c897a1121bc14de16e78d6d7f2ae79db44e302539fd926e0b91e0fc589e2fa19b218d0508b5ce3ad40d03936693ca5aa41ddc07cf492874569ab037e0530e38245b98131ae0c9afd871df5f51331938764f5a7dd96890edd467b2fbc335ed08174bb5ea722a98b34d38ac6de995de4ee263c81b2567b3f87e2bcaab9d3c530897857edd5d7f97d61fc67076eab4846010d482a8c801f95cddb69ff6438f2a109285c46d8224c36069d30c3c9cf4a6800ae224111136bd9c1e06c4bfc4685d7bb6a7232dbb0d6de9bf105490743dc4b700f24ce6b250b95e6c383fe44967a55d140baf0ec339e3815b29a2245f46c953048c43f961d7fbd734c60a9695f567aa710ce9d3327568895d99dde0266485bbd9d0caecf00e9501a4001000000cba54e06607ada2f5d818e4804294fcf53058e58e0d33d4aa6dc943811056908fe9116e65cdddac1d2fb24d1eacee389af38b7e5a7056d0de50c6b49fb38388cf28c2d6dd3dbbab84ffbef4b0c02a77f018e8a9749a557909e6aa96185d268dad7744b094d8c6134b8defe26674d65f908f9c3a8c201f661fc22efe0eff248d3a473fe32a5b3643bfad8f186c2af3fbaa1d38560c1244c79a0e48893eefb792af281650f34f6c2d9a6c622aba234b63586713cb66179a0897d98ee5228569c32c1a682807c8db7eb197ccbbd6549db86a6a9aebbf5dc14060f22e2b07d6166f43c25ae0c88be7a4dc38e7ed08972a355b0e5d6fc43b8e5594fa6b36a36a44bb94b75eaff11dc1cc72f54beda54da2a1ea1acfab354745057dd2e7725f2c8450b19fdf37e19f6ce43449e9191f5a5beb4a1bc176f6130052e83acefd93197dc8d77b9245f86c9113e4bd67ad420c33ae706cdc10060277b83ef30a50d4ac19c9a791b309377aa20a4743bbb799abc3ba58071b628c9ba8103bbfe389939e55296ec9b4f8d3a03aff30ce9aa0dd6e5158a672be8f3da8349ed4ad82f6ca67ee29e8b234840cf7846e604e5b8135abd94d71fe0a79180e75d4e193ea8df466c087b660fe984943751a9f6df8545699701d478c2b3daa949155770e74835bcd9737e27afd20b02ce0e504c15b02374372"}, 0x418})
+ioctl$IOCTL_VMCI_DATAGRAM_RECEIVE(r1, 0x7ac, &(0x7f00000000c0)={&(0x7f0000000bc0)={{@hyper}, {@host}, 0x400, "eb2874023336281cd0e516cd1e2d5993189c2030766c5a9b905a35b0d32916fed16ee6ac227f398d34dcd7230494135dbd7f9786de9e003e2737dea8be913dd326bf084a27d5f8456ca2e0f093cb97bbe1f083e2895a7734e6b39e3e6869e1021f4d01a4bdea5d26a8e4e0adf10dc188190aee276cd1a1496dc6f67227aac77045b534e0e5249a86101faef19e20daea66c39c72ad3763891a30ca7b9692c94a4b79198da5f2d7815e2b02f939ccf5445d42b011ee1f9c3d9317e3b8f64ca14cfe65c3dd1b496a88b4498cf1d33bd418be858983252db3957f914deffc3af2fa39d98c9c0b3e52bf765aed03b94792a2c02ccf80ccede9a74aa9c6db4f8636dd03bede2624250db1b9ee53bbb689900f6d235956d3084cb246d69bfb1652b223cdea1b60c03828b4f179059d5861b5a6f264c930edb23e20c43cfdfc30a9965196da072a5eaa82ccd842100e582ec6e9b78dc67ae1c76a39b86022b693517af020566ea7b2e2b67153499878293f0d4c2ef63e6c09c7365209d0c3e2ba63708261a05bf642f08ee5b24a648e2c7ab1fdb3c9975b3b6ab235a2358a3dc83cceb2f2b004c7312bb1037bb397ad2c3b2213d3fa188070eec57be37f47022d7f27d6b81b2d4f7e93551bcc7346b6ed1eb520a6000a3a431642f53fedc55698e85be1069208109cc91fb1048239df984bcbf3b11e4e9004347201bfa17a9a61ea73fb93a05daf039237fac618aca47325ded2a3c15eecd9e77d2baa5a9f803acee0e71e4769684e7b90da3dbb95694efe43cbbe9985bba97645d7069b2765af43260320cb9a13aee01b66ac36dc6ae89697d00b7e5bcdb750c62bf87678201dc784b1122c90fab009e33b1ecf2e41e3ece5938c4187e5130d7e47cb88fa6ca1403ddfba15a260ec42556b2fe0f3c876cdc12e02f9273a94432fb51c91f3231f6a4ed8bdbc14bf3134af1ed882261e095ff8b0a376938e22a86097b719f2ff170d3d4260d59fd66bcd156d60c42d390fef0840e1a7429a2020ddc3e1c3e66e60b48ffbd6dbe1f05fde9c5215eddf647672d3c1a4a304b548ff5239e1cefdcf726196166dcaacf382dbb6d02cc19ab466572ed03e44b14cce9fcfca12a9d0a3f01572dc38679f7936436f3175364b72bb0ee79e6ca8cb8e9502100f6c8baa91a341f97da44a3691fafc36bb32f39fe0ad41e5e62fef4c67009788660f73122bf01f739b8ee9a47ff3c50280194b312faaadd7f1d56b836302fdbc2911baca45949610b27ea7a2471e3cc16fc1d02653cd56e72f4383468f132a6219a82ddd24720d1f5808092385e4160f08f82da04c52e55305658437f6879c6d687ffa38ba6f844f1806121e4670d81ab4e04f921c3e24596c389e41a89da2201f3e23a7e79d807269e03c9e858aaf05900e465112e812b243c46e361d5b11143f889f2ba7a04525c6"}, 0x418})
+
+04:26:13 executing program 0:
+r0 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000100)='memory.events\x00', 0x275a, 0x0)
+r1 = bpf$BPF_PROG_RAW_TRACEPOINT_LOAD(0x5, &(0x7f0000000180)={0x18, 0x5, &(0x7f0000000280)=ANY=[@ANYBLOB="1801000000000000000000004b64ffec850000006d000000850000000500000095"], &(0x7f0000000100)='GPL\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x2}, 0x80)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f0000000140)={&(0x7f0000000180)='tlb_flush\x00', r1}, 0x10)
+r2 = bpf$BPF_PROG_RAW_TRACEPOINT_LOAD(0x5, &(0x7f0000000180)={0x18, 0x5, &(0x7f0000000280)=ANY=[], &(0x7f0000000100)='GPL\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x2}, 0x80)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f0000000140)={&(0x7f0000000180)='tlb_flush\x00', r2}, 0x10)
+madvise(&(0x7f0000000000/0x600000)=nil, 0x600003, 0x19)
+mmap(&(0x7f0000002000/0x2000)=nil, 0x2000, 0x0, 0x2012, r0, 0x0)
+
+04:26:14 executing program 0:
+r0 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000100)='memory.events\x00', 0x275a, 0x0)
+r1 = bpf$BPF_PROG_RAW_TRACEPOINT_LOAD(0x5, &(0x7f0000000180)={0x18, 0x5, &(0x7f0000000280)=ANY=[@ANYBLOB="1801000000000000000000004b64ffec850000006d000000850000000500000095"], &(0x7f0000000100)='GPL\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x2}, 0x80)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f0000000140)={&(0x7f0000000180)='tlb_flush\x00', r1}, 0x10)
+r2 = bpf$BPF_PROG_RAW_TRACEPOINT_LOAD(0x5, &(0x7f0000000180)={0x18, 0x5, &(0x7f0000000280)=ANY=[], &(0x7f0000000100)='GPL\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x2}, 0x80)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f0000000140)={&(0x7f0000000180)='tlb_flush\x00', r2}, 0x10)
+madvise(&(0x7f0000000000/0x600000)=nil, 0x600003, 0x19)
+mmap(&(0x7f0000002000/0x2000)=nil, 0x2000, 0x0, 0x2012, r0, 0x0)
+
+2024/05/23 04:26:14 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+2024/05/23 04:26:14 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x5547, Ip:0x81ebd996}
+2024/05/23 04:26:14 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2b8d, Ip:0x8170f374}
+2024/05/23 04:26:14 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x313d, Ip:0x8170cde2}
+2024/05/23 04:26:14 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/23 04:26:14 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x350d, Ip:0x8170cdf5}
+2024/05/23 04:26:14 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x12a3, Ip:0x81718809}
+2024/05/23 04:26:14 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x313d, Ip:0x8170cde2}
+2024/05/23 04:26:14 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/23 04:26:14 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x350d, Ip:0x8170cdf5}
+2024/05/23 04:26:14 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2b8d, Ip:0x8170f374}
+2024/05/23 04:26:14 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x313d, Ip:0x8170cde2}
+2024/05/23 04:26:14 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/23 04:26:14 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x350d, Ip:0x8170cdf5}
+2024/05/23 04:26:14 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x12a3, Ip:0x81718809}
+2024/05/23 04:26:14 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x313d, Ip:0x8170cde2}
+2024/05/23 04:26:14 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/23 04:26:14 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x350d, Ip:0x8170cdf5}
+04:26:16 executing program 0:
+r0 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000100)='memory.events\x00', 0x275a, 0x0)
+r1 = bpf$BPF_PROG_RAW_TRACEPOINT_LOAD(0x5, &(0x7f0000000180)={0x18, 0x5, &(0x7f0000000280)=ANY=[@ANYBLOB="1801000000000000000000004b64ffec850000006d000000850000000500000095"], &(0x7f0000000100)='GPL\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x2}, 0x80)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f0000000140)={&(0x7f0000000180)='tlb_flush\x00', r1}, 0x10)
+r2 = bpf$BPF_PROG_RAW_TRACEPOINT_LOAD(0x5, &(0x7f0000000180)={0x18, 0x5, &(0x7f0000000280)=ANY=[], &(0x7f0000000100)='GPL\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x2}, 0x80)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f0000000140)={&(0x7f0000000180)='tlb_flush\x00', r2}, 0x10)
+madvise(&(0x7f0000000000/0x600000)=nil, 0x600003, 0x19)
+mmap(&(0x7f0000002000/0x2000)=nil, 0x2000, 0x0, 0x2012, r0, 0x0)
+
+04:26:17 executing program 0:
+r0 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000100)='memory.events\x00', 0x275a, 0x0)
+r1 = bpf$BPF_PROG_RAW_TRACEPOINT_LOAD(0x5, &(0x7f0000000180)={0x18, 0x5, &(0x7f0000000280)=ANY=[@ANYBLOB="1801000000000000000000004b64ffec850000006d000000850000000500000095"], &(0x7f0000000100)='GPL\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x2}, 0x80)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f0000000140)={&(0x7f0000000180)='tlb_flush\x00', r1}, 0x10)
+r2 = bpf$BPF_PROG_RAW_TRACEPOINT_LOAD(0x5, &(0x7f0000000180)={0x18, 0x5, &(0x7f0000000280)=ANY=[], &(0x7f0000000100)='GPL\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x2}, 0x80)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f0000000140)={&(0x7f0000000180)='tlb_flush\x00', r2}, 0x10)
+madvise(&(0x7f0000000000/0x600000)=nil, 0x600003, 0x19)
+mmap(&(0x7f0000002000/0x2000)=nil, 0x2000, 0x0, 0x2012, r0, 0x0)
+
+04:26:19 executing program 0:
+r0 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000100)='memory.events\x00', 0x275a, 0x0)
+r1 = bpf$BPF_PROG_RAW_TRACEPOINT_LOAD(0x5, &(0x7f0000000180)={0x18, 0x5, &(0x7f0000000280)=ANY=[@ANYBLOB="1801000000000000000000004b64ffec850000006d000000850000000500000095"], &(0x7f0000000100)='GPL\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x2}, 0x80)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f0000000140)={&(0x7f0000000180)='tlb_flush\x00', r1}, 0x10)
+r2 = bpf$BPF_PROG_RAW_TRACEPOINT_LOAD(0x5, &(0x7f0000000180)={0x18, 0x5, &(0x7f0000000280)=ANY=[], &(0x7f0000000100)='GPL\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x2}, 0x80)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f0000000140)={&(0x7f0000000180)='tlb_flush\x00', r2}, 0x10)
+madvise(&(0x7f0000000000/0x600000)=nil, 0x600003, 0x19)
+mmap(&(0x7f0000002000/0x2000)=nil, 0x2000, 0x0, 0x2012, r0, 0x0)
+
+04:26:21 executing program 0:
+r0 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000100)='memory.events\x00', 0x275a, 0x0)
+r1 = bpf$BPF_PROG_RAW_TRACEPOINT_LOAD(0x5, &(0x7f0000000180)={0x18, 0x5, &(0x7f0000000280)=ANY=[@ANYBLOB="1801000000000000000000004b64ffec850000006d000000850000000500000095"], &(0x7f0000000100)='GPL\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x2}, 0x80)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f0000000140)={&(0x7f0000000180)='tlb_flush\x00', r1}, 0x10)
+r2 = bpf$BPF_PROG_RAW_TRACEPOINT_LOAD(0x5, &(0x7f0000000180)={0x18, 0x5, &(0x7f0000000280)=ANY=[], &(0x7f0000000100)='GPL\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x2}, 0x80)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f0000000140)={&(0x7f0000000180)='tlb_flush\x00', r2}, 0x10)
+madvise(&(0x7f0000000000/0x600000)=nil, 0x600003, 0x19)
+mmap(&(0x7f0000002000/0x2000)=nil, 0x2000, 0x0, 0x2012, r0, 0x0)
+
+04:26:22 executing program 0:
+r0 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000100)='memory.events\x00', 0x275a, 0x0)
+r1 = bpf$BPF_PROG_RAW_TRACEPOINT_LOAD(0x5, &(0x7f0000000180)={0x18, 0x5, &(0x7f0000000280)=ANY=[@ANYBLOB="1801000000000000000000004b64ffec850000006d000000850000000500000095"], &(0x7f0000000100)='GPL\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x2}, 0x80)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f0000000140)={&(0x7f0000000180)='tlb_flush\x00', r1}, 0x10)
+r2 = bpf$BPF_PROG_RAW_TRACEPOINT_LOAD(0x5, &(0x7f0000000180)={0x18, 0x5, &(0x7f0000000280)=ANY=[], &(0x7f0000000100)='GPL\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x2}, 0x80)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f0000000140)={&(0x7f0000000180)='tlb_flush\x00', r2}, 0x10)
+madvise(&(0x7f0000000000/0x600000)=nil, 0x600003, 0x19)
+mmap(&(0x7f0000002000/0x2000)=nil, 0x2000, 0x0, 0x2012, r0, 0x0)
+
+04:26:24 executing program 0:
+r0 = syz_init_net_socket$netrom(0x6, 0x5, 0x0)
+setsockopt$netrom_NETROM_N2(r0, 0x103, 0x3, &(0x7f0000000740)=0x1a, 0x4)
+
+04:26:25 executing program 0:
+r0 = socket$alg(0x26, 0x5, 0x0)
+bind$alg(r0, &(0x7f0000000080)={0x26, 'skcipher\x00', 0x0, 0x0, 'cbc-camellia-asm\x00'}, 0x58)
+setsockopt$ALG_SET_KEY(r0, 0x117, 0x1, &(0x7f0000000300)="c99bfa00180133070000000f0000bd30", 0x10)
+ioctl$sock_SIOCGIFVLAN_GET_VLAN_REALDEV_NAME_CMD(0xffffffffffffffff, 0x8982, 0x0)
+r1 = accept4(r0, 0x0, 0x0, 0x0)
+sendmmsg$alg(r1, &(0x7f0000001800)=[{0x0, 0x0, &(0x7f0000000180)=[{&(0x7f00000005c0)='\vG\x00\x00\x00\x00\x00\x00\x00\x00\x00', 0xb}, {&(0x7f0000000600)="75bbf8406512d05b5f0d20e228166f9c4e9e6b75da8277799171b2e9d52130d48e3dbf971bae267f86f001cf53536ed858c1857e0e", 0x35}], 0x2}], 0x1, 0x0)
+recvmmsg(r1, &(0x7f0000000040)=[{{0x0, 0x0, &(0x7f0000001680)=[{&(0x7f0000000000)=""/16, 0x10}], 0x1}}], 0x1, 0x0, 0x0)
+
+2024/05/23 04:26:25 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+2024/05/23 04:26:25 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2aa, Ip:0x86b1652e}
+2024/05/23 04:26:25 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/23 04:26:25 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x5870, Ip:0x86b1651c}
+2024/05/23 04:26:27 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x30be, Ip:0x85ff2f15}
+04:26:27 executing program 0:
+accept() (enabled_site: 15490, site_type: 1)
+r0 = socket$alg(0x26, 0x5, 0x0)
+bind$alg(r0, &(0x7f0000000080)={0x26, 'skcipher\x00', 0x0, 0x0, 'cbc-camellia-asm\x00'}, 0x58)
+setsockopt$ALG_SET_KEY(r0, 0x117, 0x1, &(0x7f0000000300)="c99bfa00180133070000000f0000bd30", 0x10)
+ioctl$sock_SIOCGIFVLAN_GET_VLAN_REALDEV_NAME_CMD(0xffffffffffffffff, 0x8982, 0x0)
+r1 = accept4(r0, 0x0, 0x0, 0x0)
+sendmmsg$alg(r1, &(0x7f0000001800)=[{0x0, 0x0, &(0x7f0000000180)=[{&(0x7f00000005c0)='\vG\x00\x00\x00\x00\x00\x00\x00\x00\x00', 0xb}, {&(0x7f0000000600)="75bbf8406512d05b5f0d20e228166f9c4e9e6b75da8277799171b2e9d52130d48e3dbf971bae267f86f001cf53536ed858c1857e0e", 0x35}], 0x2}], 0x1, 0x0)
+recvmmsg(r1, &(0x7f0000000040)=[{{0x0, 0x0, &(0x7f0000001680)=[{&(0x7f0000000000)=""/16, 0x10}], 0x1}}], 0x1, 0x0, 0x0)
+
+2024/05/23 04:26:27 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/23 04:26:27 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3858, Ip:0x85ff2f25}
+2024/05/23 04:26:27 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x401, Ip:0x832364e1}
+2024/05/23 04:26:27 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/23 04:26:27 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x38c8, Ip:0x832364f1}
+2024/05/23 04:26:27 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x30be, Ip:0x85ffa1f0}
+2024/05/23 04:26:27 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/23 04:26:27 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3e9b, Ip:0x833c1f36}
+2024/05/23 04:26:27 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x4de3, Ip:0x85ffa202}
+2024/05/23 04:26:27 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x30be, Ip:0x85ffa1f0}
+2024/05/23 04:26:27 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/23 04:26:27 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x4de3, Ip:0x85ffa202}
+2024/05/23 04:26:27 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x3c82, Ip:0x812fd703}
+2024/05/23 04:26:27 KDO: #0: memintrinsic id=15490
+[  318.633323][ T8439] BUG: KASAN: unknown-crash in cbc_decrypt+0x543/0x620
+[  318.634624][ T8439] Write of size 8 at addr ffff88807a56ff40 by task syz-executor.0/8439
+[  318.635584][ T8439] 
+[  318.636145][ T8439] CPU: 0 PID: 8439 Comm: syz-executor.0 Not tainted 6.4.1-00011-gc173c3c31378 #20
+[  318.637575][ T8439] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+[  318.638569][ T8439] Call Trace:
+[  318.639918][ T8439]  <TASK>
+[  318.640301][ T8439]  dump_stack_lvl+0x1ce/0x2c0
+[  318.640897][ T8439]  ? nf_tcp_handle_invalid+0x3d0/0x3d0
+[  318.641559][ T8439]  ? preempt_count_add+0xa0/0xf0
+[  318.642159][ T8439]  ? panic+0x620/0x620
+[  318.642677][ T8439]  print_report+0x163/0x540
+[  318.643235][ T8439]  ? __virt_addr_valid+0x1cc/0x240
+[  318.643851][ T8439]  ? __phys_addr+0x99/0x110
+[  318.644408][ T8439]  kdo_kasan_report+0x7f/0x90
+[  318.644981][ T8439]  ? cbc_decrypt+0x543/0x620
+[  318.645528][ T8439]  ? cbc_decrypt+0x543/0x620
+[  318.646087][ T8439]  propagate_taint+0x1e1/0x210
+[  318.646659][ T8439]  ? cbc_decrypt+0x543/0x620
+[  318.647222][ T8439]  ? cbc_decrypt+0x543/0x620
+[  318.647783][ T8439]  __kdo_asan_memcpy+0x69/0xa0
+[  318.648364][ T8439]  cbc_decrypt+0x543/0x620
+[  318.648893][ T8439]  ? cbc_encrypt+0x350/0x350
+[  318.649456][ T8439]  ? af_alg_pull_tsgl+0x581/0x650
+[  318.650076][ T8439]  skcipher_recvmsg+0x850/0xa50
+[  318.650677][ T8439]  ? skcipher_sendmsg+0x80/0x80
+[  318.651268][ T8439]  ? bpf_lsm_socket_recvmsg+0x9/0x10
+[  318.651895][ T8439]  ? security_socket_recvmsg+0x5e/0x80
+[  318.652541][ T8439]  ? skcipher_sendmsg+0x80/0x80
+[  318.653132][ T8439]  ____sys_recvmsg+0x1c9/0x3e0
+[  318.653737][ T8439]  ? __sys_recvmsg_sock+0x50/0x50
+[  318.654341][ T8439]  ? copy_msghdr_from_user+0x36e/0x420
+[  318.655016][ T8439]  do_recvmmsg+0x407/0x980
+[  318.655576][ T8439]  ? __sys_recvmmsg+0x270/0x270
+[  318.656189][ T8439]  ? lock_release+0x4c6/0x630
+[  318.656766][ T8439]  ? __might_fault+0x9c/0xe0
+[  318.657332][ T8439]  ? __might_sleep+0x80/0x80
+[  318.657902][ T8439]  ? __lock_acquire+0x10d0/0x10d0
+[  318.658510][ T8439]  ? __might_resched+0x1c7/0x460
+[  318.659137][ T8439]  __x64_sys_recvmmsg+0x13f/0x1e0
+[  318.659747][ T8439]  ? do_recvmmsg+0x980/0x980
+[  318.660312][ T8439]  ? syscall_enter_from_user_mode+0x32/0x230
+[  318.661014][ T8439]  ? lockdep_hardirqs_on+0xdd/0x180
+[  318.661651][ T8439]  ? syscall_enter_from_user_mode+0x32/0x230
+[  318.662355][ T8439]  do_syscall_64+0x41/0x90
+[  318.662901][ T8439]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  318.663592][ T8439] RIP: 0033:0x7f04bfe8fddd
+[  318.664134][ T8439] Code: c3 e8 97 2b 00 00 0f 1f 80 00 00 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 b0 ff ff ff f7 d8 64 89 01 48
+[  318.666261][ T8439] RSP: 002b:00007f04c0c73028 EFLAGS: 00000246 ORIG_RAX: 000000000000012b
+[  318.667212][ T8439] RAX: ffffffffffffffda RBX: 00007f04bffcbf80 RCX: 00007f04bfe8fddd
+[  318.668106][ T8439] RDX: 0000000000000001 RSI: 0000000020000040 RDI: 0000000000000004
+[  318.669013][ T8439] RBP: 00007f04bff01e18 R08: 0000000000000000 R09: 0000000000000000
+[  318.669921][ T8439] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000000
+[  318.670813][ T8439] R13: 000000000000000b R14: 00007f04bffcbf80 R15: 00007f04c0c53000
+[  318.671724][ T8439]  </TASK>
+[  318.681403][ T8439] 
+[  318.681742][ T8439] Allocated by task 8439:
+[  318.682266][ T8439]  kasan_set_track+0x4f/0x70
+[  318.683215][ T8439]  __kasan_kmalloc+0x7d/0x90
+[  318.683772][ T8439]  __kmalloc+0xb9/0x230
+[  318.692080][ T8439]  sock_kmalloc+0x89/0xd0
+[  318.692625][ T8439]  skcipher_accept_parent_nokey+0x72/0x1d0
+[  318.693701][ T8439]  af_alg_accept+0x104/0x3d0
+[  318.694260][ T8439]  do_accept+0x3fe/0x4c0
+[  318.695162][ T8439]  __sys_accept4+0x9b/0x110
+[  318.695708][ T8439]  __x64_sys_accept4+0x53/0x60
+[  318.696647][ T8439]  do_syscall_64+0x41/0x90
+[  318.697209][ T8439]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  318.712129][ T8439] 
+[  318.712473][ T8439] The buggy address belongs to the object at ffff88807a56ff40
+[  318.712473][ T8439]  which belongs to the cache kmalloc-16 of size 16
+[  318.714404][ T8439] The buggy address is located 0 bytes inside of
+[  318.714404][ T8439]  16-byte region [ffff88807a56ff40, ffff88807a56ff50)
+[  318.716182][ T8439] 
+[  318.716473][ T8439] The buggy address belongs to the physical page:
+[  318.717572][ T8439] page:ffffea0001e95bc0 refcount:1 mapcount:0 mapping:0000000000000000 index:0x0 pfn:0x7a56f
+[  318.719045][ T8439] anon flags: 0xfff00000000200(slab|node=0|zone=1|lastcpupid=0x7ff)
+[  318.731689][ T8439] page_type: 0xffffffff()
+[  318.732270][ T8439] raw: 00fff00000000200 ffff88800ec413c0 0000000000000000 dead000000000001
+[  318.733620][ T8439] raw: 0000000000000000 0000000080800080 00000001ffffffff 0000000000000000
+[  318.734906][ T8439] page dumped because: kasan: bad access detected
+[  318.735615][ T8439] page_owner tracks the page as allocated
+[  318.736789][ T8439] page last allocated via order 0, migratetype Unmovable, gfp_mask 0x12cc0(GFP_KERNEL|__GFP_NOWARN|__GFP_NORETRY), pid 5968, tgid 5968 (systemd-udevd), ts 146176533121, free_ts 146164456435
+[  318.739134][ T8439]  post_alloc_hook+0x1e6/0x210
+[  318.739713][ T8439]  get_page_from_freelist+0x260a/0x2790
+[  318.751604][ T8439]  __alloc_pages+0x1f2/0x480
+[  318.752171][ T8439]  alloc_slab_page+0x6a/0x160
+[  318.753090][ T8439]  new_slab+0x84/0x2f0
+[  318.753575][ T8439]  ___slab_alloc+0xa85/0x10a0
+[  318.754491][ T8439]  __kmem_cache_alloc_node+0x1a8/0x240
+[  318.755142][ T8439]  __kmalloc_node_track_caller+0xa5/0x230
+[  318.756165][ T8439]  kmemdup+0x2a/0x60
+[  318.756617][ T8439]  shmem_symlink+0x1c8/0x650
+[  318.757497][ T8439]  vfs_symlink+0xc2/0x1c0
+[  318.758014][ T8439]  do_symlinkat+0x195/0x440
+[  318.758856][ T8439]  __x64_sys_symlink+0x56/0x60
+[  318.759392][ T8439]  do_syscall_64+0x41/0x90
+[  318.760314][ T8439]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  318.760984][ T8439] page last free stack trace:
+[  318.771687][ T8439]  free_unref_page_prepare+0x75a/0x820
+[  318.772331][ T8439]  free_unref_page+0x37/0x300
+[  318.773208][ T8439]  qlist_free_all+0x22/0x60
+[  318.773756][ T8439]  kasan_quarantine_reduce+0x14b/0x160
+[  318.774702][ T8439]  __kasan_slab_alloc+0x23/0x60
+[  318.775258][ T8439]  slab_post_alloc_hook+0x64/0x380
+[  318.776157][ T8439]  kmem_cache_alloc+0x111/0x2a0
+[  318.776708][ T8439]  getname_flags+0x85/0x3d0
+[  318.777574][ T8439]  __x64_sys_symlink+0x37/0x60
+[  318.778116][ T8439]  do_syscall_64+0x41/0x90
+[  318.778950][ T8439]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  318.786573][ T8439] 
+[  318.786879][ T8439] Memory state around the buggy address:
+[  318.787850][ T8439]  ffff88807a56fe00: fa fb fc fc fa fb fc fc ee 01 fc fc fa fb fc fc
+[  318.789088][ T8439]  ffff88807a56fe80: fa fb fc fc fb fb fc fc fb fb fc fc fa fb fc fc
+[  318.794029][ T8439] >ffff88807a56ff00: ec ec fc fc ee 01 fc fc ee ec fc fc ec ec fc fc
+[  318.798105][ T8439]                                            ^
+[  318.798805][ T8439]  ffff88807a56ff80: fa fb fc fc fa fb fc fc fa fb fc fc fa fb fc fc
+[  318.800050][ T8439]  ffff88807a570000: fa fb fb fb fb fb fb fb fb fb fb fb fb fb fb fb
+[  318.813064][ T8439] BUG: KASAN: unknown-crash in cbc_decrypt+0x543/0x620
+[  318.813862][ T8439] Write of size 8 at addr ffff888075a24000 by task syz-executor.0/8439
+[  318.815093][ T8439] 
+[  318.815391][ T8439] CPU: 0 PID: 8439 Comm: syz-executor.0 Not tainted 6.4.1-00011-gc173c3c31378 #20
+[  318.816368][ T8439] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+[  318.817341][ T8439] Call Trace:
+[  318.817714][ T8439]  <TASK>
+[  318.818047][ T8439]  dump_stack_lvl+0x1ce/0x2c0
+[  318.818581][ T8439]  ? nf_tcp_handle_invalid+0x3d0/0x3d0
+[  318.819205][ T8439]  ? preempt_count_add+0xa0/0xf0
+[  318.819788][ T8439]  ? panic+0x620/0x620
+[  318.820261][ T8439]  print_report+0x163/0x540
+[  318.820775][ T8439]  ? __virt_addr_valid+0x1cc/0x240
+[  318.821348][ T8439]  ? __phys_addr+0x99/0x110
+[  318.821865][ T8439]  kdo_kasan_report+0x7f/0x90
+[  318.822390][ T8439]  ? cbc_decrypt+0x543/0x620
+[  318.822909][ T8439]  ? cbc_decrypt+0x543/0x620
+[  318.823422][ T8439]  propagate_taint+0x1f6/0x210
+[  318.823952][ T8439]  ? cbc_decrypt+0x543/0x620
+[  318.824469][ T8439]  ? cbc_decrypt+0x543/0x620
+[  318.824985][ T8439]  __kdo_asan_memcpy+0x69/0xa0
+[  318.825527][ T8439]  cbc_decrypt+0x543/0x620
+[  318.826038][ T8439]  ? cbc_encrypt+0x350/0x350
+[  318.826574][ T8439]  ? af_alg_pull_tsgl+0x581/0x650
+[  318.827146][ T8439]  skcipher_recvmsg+0x850/0xa50
+[  318.827702][ T8439]  ? skcipher_sendmsg+0x80/0x80
+[  318.828247][ T8439]  ? bpf_lsm_socket_recvmsg+0x9/0x10
+[  318.828824][ T8439]  ? security_socket_recvmsg+0x5e/0x80
+[  318.829430][ T8439]  ? skcipher_sendmsg+0x80/0x80
+[  318.829974][ T8439]  ____sys_recvmsg+0x1c9/0x3e0
+[  318.830542][ T8439]  ? __sys_recvmsg_sock+0x50/0x50
+[  318.831124][ T8439]  ? copy_msghdr_from_user+0x36e/0x420
+[  318.831750][ T8439]  do_recvmmsg+0x407/0x980
+[  318.832267][ T8439]  ? __sys_recvmmsg+0x270/0x270
+[  318.832834][ T8439]  ? lock_release+0x4c6/0x630
+[  318.833386][ T8439]  ? __might_fault+0x9c/0xe0
+[  318.833924][ T8439]  ? __might_sleep+0x80/0x80
+[  318.834443][ T8439]  ? __lock_acquire+0x10d0/0x10d0
+[  318.835008][ T8439]  ? __might_resched+0x1c7/0x460
+[  318.835592][ T8439]  __x64_sys_recvmmsg+0x13f/0x1e0
+[  318.836158][ T8439]  ? do_recvmmsg+0x980/0x980
+[  318.836677][ T8439]  ? syscall_enter_from_user_mode+0x32/0x230
+[  318.837352][ T8439]  ? lockdep_hardirqs_on+0xdd/0x180
+[  318.837950][ T8439]  ? syscall_enter_from_user_mode+0x32/0x230
+[  318.838604][ T8439]  do_syscall_64+0x41/0x90
+[  318.839106][ T8439]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  318.839752][ T8439] RIP: 0033:0x7f04bfe8fddd
+[  318.840244][ T8439] Code: c3 e8 97 2b 00 00 0f 1f 80 00 00 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 b0 ff ff ff f7 d8 64 89 01 48
+[  318.842309][ T8439] RSP: 002b:00007f04c0c73028 EFLAGS: 00000246 ORIG_RAX: 000000000000012b
+[  318.843206][ T8439] RAX: ffffffffffffffda RBX: 00007f04bffcbf80 RCX: 00007f04bfe8fddd
+[  318.844052][ T8439] RDX: 0000000000000001 RSI: 0000000020000040 RDI: 0000000000000004
+[  318.844893][ T8439] RBP: 00007f04bff01e18 R08: 0000000000000000 R09: 0000000000000000
+[  318.845782][ T8439] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000000
+[  318.846624][ T8439] R13: 000000000000000b R14: 00007f04bffcbf80 R15: 00007f04c0c53000
+[  318.847485][ T8439]  </TASK>
+[  318.884173][ T8439] 
+[  318.884484][ T8439] The buggy address belongs to the physical page:
+[  318.891486][ T8439] page:ffffea0001d68900 refcount:2 mapcount:0 mapping:0000000000000000 index:0x0 pfn:0x75a24
+[  318.892995][ T8439] flags: 0xfff00000000000(node=0|zone=1|lastcpupid=0x7ff)
+[  318.893836][ T8439] page_type: 0xffffffff()
+[  318.895967][ T8439] raw: 00fff00000000000 0000000000000000 dead000000000122 0000000000000000
+[  318.902242][ T8439] raw: 0000000000000000 0000000000000000 00000002ffffffff 0000000000000000
+[  318.903635][ T8439] page dumped because: kasan: bad access detected
+[  318.904374][ T8439] page_owner tracks the page as allocated
+[  318.910637][ T8439] page last allocated via order 0, migratetype Unmovable, gfp_mask 0x100cc0(GFP_USER), pid 8439, tgid 8438 (syz-executor.0), ts 318632444973, free_ts 317953965048
+[  318.912778][ T8439]  post_alloc_hook+0x1e6/0x210
+[  318.913369][ T8439]  get_page_from_freelist+0x260a/0x2790
+[  318.914406][ T8439]  __alloc_pages+0x1f2/0x480
+[  318.914955][ T8439]  af_alg_sendmsg+0x9bf/0xe80
+[  318.919722][ T8439]  ____sys_sendmsg+0x47d/0x650
+[  318.923675][ T8439]  __sys_sendmmsg+0x360/0x6c0
+[  318.924269][ T8439]  __x64_sys_sendmmsg+0x57/0x60
+[  318.925187][ T8439]  do_syscall_64+0x41/0x90
+[  318.925744][ T8439]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  318.930579][ T8439] page last free stack trace:
+[  318.931153][ T8439]  free_unref_page_prepare+0x75a/0x820
+[  318.932153][ T8439]  free_unref_page_list+0x49c/0x640
+[  318.932781][ T8439]  release_pages+0x1fc4/0x22d0
+[  318.938878][ T8439]  tlb_flush_mmu+0xcf/0x170
+[  318.939470][ T8439]  tlb_finish_mmu+0x9f/0x140
+[  318.941722][ T8439]  exit_mmap+0x3b9/0x910
+[  318.942274][ T8439]  __mmput+0xf3/0x330
+[  318.943131][ T8439]  exit_mm+0x1f5/0x2d0
+[  318.943616][ T8439]  do_exit+0x4dc/0x1870
+[  318.944488][ T8439]  do_group_exit+0x15e/0x160
+[  318.945027][ T8439]  get_signal+0xfca/0x1040
+[  318.950534][ T8439]  arch_do_signal_or_restart+0x91/0x4d0
+[  318.951198][ T8439]  exit_to_user_mode_loop+0x6a/0x100
+[  318.952196][ T8439]  exit_to_user_mode_prepare+0xb1/0x140
+[  318.952838][ T8439]  syscall_exit_to_user_mode+0x64/0x280
+[  318.953872][ T8439]  do_syscall_64+0x4d/0x90
+[  318.962848][ T8439] 
+[  318.963184][ T8439] Memory state around the buggy address:
+[  318.964215][ T8439]  ffff888075a23f00: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[  318.965489][ T8439]  ffff888075a23f80: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[  318.966784][ T8439] >ffff888075a24000: e9 e9 e9 e9 e9 e9 e9 e9 00 00 00 00 00 00 00 00
+[  318.971223][ T8439]                    ^
+[  318.971738][ T8439]  ffff888075a24080: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[  318.973017][ T8439]  ffff888075a24100: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[  318.979476][ T8439] Kernel panic - not syncing: KDO: memcpy hit (id: cbc_decrypt+0x543/0x620, callid: 15490S)
+[  318.980610][ T8439] CPU: 0 PID: 8439 Comm: syz-executor.0 Not tainted 6.4.1-00011-gc173c3c31378 #20
+[  318.981649][ T8439] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+[  318.982655][ T8439] Call Trace:
+[  318.983067][ T8439]  <TASK>
+[  318.983439][ T8439]  dump_stack_lvl+0x1ce/0x2c0
+[  318.984011][ T8439]  ? nf_tcp_handle_invalid+0x3d0/0x3d0
+[  318.984656][ T8439]  ? panic+0x620/0x620
+[  318.985162][ T8439]  ? vscnprintf+0x5d/0x80
+[  318.985707][ T8439]  panic+0x2ba/0x620
+[  318.986190][ T8439]  ? cbc_decrypt+0x543/0x620
+[  318.986747][ T8439]  ? __wake_up_klogd+0xb7/0xf0
+[  318.987320][ T8439]  ? preempt_count_add+0xa0/0xf0
+[  318.987914][ T8439]  ? kdo_sanitizer_cov_write+0x100/0x100
+[  318.988576][ T8439]  ? __phys_addr+0x99/0x110
+[  318.989130][ T8439]  ? kdo_kasan_report+0x7f/0x90
+[  318.989728][ T8439]  ? cbc_decrypt+0x543/0x620
+[  318.990260][ T8439]  ? cbc_decrypt+0x543/0x620
+[  318.990798][ T8439]  propagate_taint+0x20a/0x210
+[  318.991365][ T8439]  ? cbc_decrypt+0x543/0x620
+[  318.991922][ T8439]  ? cbc_decrypt+0x543/0x620
+[  318.992480][ T8439]  __kdo_asan_memcpy+0x69/0xa0
+[  318.993053][ T8439]  cbc_decrypt+0x543/0x620
+[  318.993585][ T8439]  ? cbc_encrypt+0x350/0x350
+[  318.994163][ T8439]  ? af_alg_pull_tsgl+0x581/0x650
+[  318.994773][ T8439]  skcipher_recvmsg+0x850/0xa50
+[  318.995366][ T8439]  ? skcipher_sendmsg+0x80/0x80
+[  318.995952][ T8439]  ? bpf_lsm_socket_recvmsg+0x9/0x10
+[  318.996574][ T8439]  ? security_socket_recvmsg+0x5e/0x80
+[  318.997214][ T8439]  ? skcipher_sendmsg+0x80/0x80
+[  318.997814][ T8439]  ____sys_recvmsg+0x1c9/0x3e0
+[  318.998404][ T8439]  ? __sys_recvmsg_sock+0x50/0x50
+[  318.999001][ T8439]  ? copy_msghdr_from_user+0x36e/0x420
+[  318.999667][ T8439]  do_recvmmsg+0x407/0x980
+[  319.000222][ T8439]  ? __sys_recvmmsg+0x270/0x270
+[  319.000829][ T8439]  ? lock_release+0x4c6/0x630
+[  319.001402][ T8439]  ? __might_fault+0x9c/0xe0
+[  319.001957][ T8439]  ? __might_sleep+0x80/0x80
+[  319.002514][ T8439]  ? __lock_acquire+0x10d0/0x10d0
+[  319.003115][ T8439]  ? __might_resched+0x1c7/0x460
+[  319.003736][ T8439]  __x64_sys_recvmmsg+0x13f/0x1e0
+[  319.004340][ T8439]  ? do_recvmmsg+0x980/0x980
+[  319.004897][ T8439]  ? syscall_enter_from_user_mode+0x32/0x230
+[  319.005578][ T8439]  ? lockdep_hardirqs_on+0xdd/0x180
+[  319.006189][ T8439]  ? syscall_enter_from_user_mode+0x32/0x230
+[  319.006885][ T8439]  do_syscall_64+0x41/0x90
+[  319.007427][ T8439]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  319.008117][ T8439] RIP: 0033:0x7f04bfe8fddd
+[  319.008627][ T8439] Code: c3 e8 97 2b 00 00 0f 1f 80 00 00 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 b0 ff ff ff f7 d8 64 89 01 48
+[  319.010698][ T8439] RSP: 002b:00007f04c0c73028 EFLAGS: 00000246 ORIG_RAX: 000000000000012b
+[  319.011639][ T8439] RAX: ffffffffffffffda RBX: 00007f04bffcbf80 RCX: 00007f04bfe8fddd
+[  319.012528][ T8439] RDX: 0000000000000001 RSI: 0000000020000040 RDI: 0000000000000004
+[  319.013421][ T8439] RBP: 00007f04bff01e18 R08: 0000000000000000 R09: 0000000000000000
+[  319.014306][ T8439] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000000
+[  319.015191][ T8439] R13: 000000000000000b R14: 00007f04bffcbf80 R15: 00007f04c0c53000
+[  319.016092][ T8439]  </TASK>
+[  319.016530][ T8439] Kernel Offset: disabled
+[  319.017045][ T8439] Rebooting in 86400 seconds..
+
+VM DIAGNOSIS:
+04:26:28  Registers:
+info registers vcpu 0
+RAX=0000000000000072 RBX=0000000000000000 RCX=ffffffff8392d9be RDX=00000000000003f8
+RSI=dffffc0000000000 RDI=ffffffff8e7ea860 RBP=00000000000003f8 RSP=ffffc90003ceed38
+R8 =ffffffff8e7ea867 R9 =ffffffff814f0843 R10=fffff5200079dd88 R11=dffffc0000000001
+R12=ffffffff8e50263e R13=000000000000000e R14=0000000000000072 R15=ffffffff8e7ea820
+RIP=ffffffff8392d9c8 RFL=00000002 [-------] CPL=0 II=0 A20=1 SMM=0 HLT=0
+ES =0000 0000000000000000 ffffffff 00c00000
+CS =0010 0000000000000000 ffffffff 00a09b00 DPL=0 CS64 [-RA]
+SS =0018 0000000000000000 ffffffff 00c09300 DPL=0 DS   [-WA]
+DS =0000 0000000000000000 ffffffff 00c00000
+FS =0000 00007f04c0c73640 ffffffff 00c00000
+GS =0000 ffff8880ba000000 ffffffff 00c00000
+LDT=0000 0000000000000000 ffffffff 00c00000
+TR =0040 fffffe0000003000 00004087 00008b00 DPL=0 TSS64-busy
+GDT=     fffffe0000001000 0000007f
+IDT=     fffffe0000000000 00000fff
+CR0=80050033 CR2=0000000020001800 CR3=0000000024b60000 CR4=00350ef0
+DR0=0000000000000000 DR1=0000000000000000 DR2=0000000000000000 DR3=0000000000000000 
+DR6=00000000fffe0ff0 DR7=0000000000000400
+EFER=0000000000000d01
+FCW=037f FSW=0000 [ST=0] FTW=00 MXCSR=00001f80
+FPR0=0000000000000000 0000 FPR1=0000000000000000 0000
+FPR2=0000000000000000 0000 FPR3=0000000000000000 0000
+FPR4=0000000000000000 0000 FPR5=0000000000000000 0000
+FPR6=0000000000000000 0000 FPR7=0000000000000000 0000
+YMM00=0000000000000000 0000000000000000 00000000000f4240 0000000000000000
+YMM01=0000000000000000 0000000000000000 0000000000000000 00000000000f4240
+YMM02=0000000000000000 0000000000000000 00007f04c0afb1a0 00007f04c0afb1a0
+YMM03=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffffffff
+YMM04=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffffffff
+YMM05=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffffff00
+YMM06=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffffffff
+YMM07=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffffff00
+YMM08=0000000000000000 0000000000000000 2570756c6c25706f 6f6c2f7665642f00
+YMM09=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM10=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM11=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM12=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM13=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM14=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM15=0000000000000000 0000000000000000 0000000000000000 0000000000000000

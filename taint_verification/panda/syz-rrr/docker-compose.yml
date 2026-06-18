@@ -1,0 +1,10 @@
+version: "3"
+services:
+  syz-rrr:
+    build: .
+    network_mode: host
+    volumes:
+      - ./rrr:/root/rrr
+      - ./repro.c:/root/repro.c
+      - /home/aso/kdo_project/linux/6.4.y/:/root/kernel
+      - ./out:/root/out

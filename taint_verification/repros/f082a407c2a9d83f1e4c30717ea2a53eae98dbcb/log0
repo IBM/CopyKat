@@ -1,0 +1,290 @@
+[  316.649249][ T8058] BUG: KASAN: unknown-crash in pfkey_register+0x157/0x480
+[  316.650378][ T8058] Write of size 8 at addr ffff8881750a8600 by task a.out/8058
+[  316.653831][ T8058]
+[  316.654215][ T8058] CPU: 0 PID: 8058 Comm: a.out Not tainted 6.4.1-00011-gc173c3c31378 #20
+[  316.655284][ T8058] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+[  316.656398][ T8058] Call Trace:
+[  316.656855][ T8058]  <TASK>
+[  316.657268][ T8058]  dump_stack_lvl+0x1ce/0x2c0
+[  316.657947][ T8058]  ? nf_tcp_handle_invalid+0x3d0/0x3d0
+[  316.658687][ T8058]  ? panic+0x620/0x620
+[  316.659231][ T8058]  ? __kasan_slab_alloc+0x50/0x60
+[  316.659835][ T8058]  ? slab_post_alloc_hook+0x7f/0x380
+[  316.660459][ T8058]  print_report+0x163/0x540
+[  316.661002][ T8058]  ? rcu_is_watching+0x39/0x70
+[  316.661577][ T8058]  ? kmem_cache_alloc_node+0x181/0x310
+[  316.662203][ T8058]  ? __virt_addr_valid+0x1cc/0x240
+[  316.662816][ T8058]  ? __phys_addr+0x99/0x110
+[  316.663359][ T8058]  kdo_kasan_report+0x7f/0x90
+[  316.663923][ T8058]  ? pfkey_register+0x157/0x480
+[  316.664529][ T8058]  ? pfkey_register+0x157/0x480
+[  316.665209][ T8058]  propagate_taint+0x1e1/0x210
+[  316.665875][ T8058]  ? pfkey_register+0x157/0x480
+[  316.666549][ T8058]  ? pfkey_register+0x157/0x480
+[  316.667200][ T8058]  __kdo_asan_memcpy+0x69/0xa0
+[  316.667883][ T8058]  pfkey_register+0x157/0x480
+[  316.668543][ T8058]  pfkey_sendmsg+0x853/0xaf0
+[  316.669094][ T8058]  ? pfkey_release+0x2b0/0x2b0
+[  316.669678][ T8058]  ? __import_iovec+0x5d1/0x6f0
+[  316.670269][ T8058]  ? bpf_lsm_socket_sendmsg+0x9/0x10
+[  316.670902][ T8058]  ? pfkey_release+0x2b0/0x2b0
+[  316.671466][ T8058]  ____sys_sendmsg+0x47d/0x650
+[  316.672054][ T8058]  ? __sys_sendmsg_sock+0x30/0x30
+[  316.672662][ T8058]  __sys_sendmsg+0x28f/0x360
+[  316.673239][ T8058]  ? ____sys_sendmsg+0x650/0x650
+[  316.673923][ T8058]  ? lock_release+0x4c6/0x630
+[  316.674598][ T8058]  ? rcu_read_lock_sched_held+0x8b/0x130
+[  316.675368][ T8058]  ? lockdep_hardirqs_on_prepare+0x2dc/0x410
+[  316.676135][ T8058]  ? syscall_enter_from_user_mode+0x32/0x230
+[  316.676803][ T8058]  ? lockdep_hardirqs_on+0xdd/0x180
+[  316.677429][ T8058]  ? syscall_enter_from_user_mode+0x32/0x230
+[  316.678238][ T8058]  do_syscall_64+0x41/0x90
+[  316.678822][ T8058]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  316.679521][ T8058] RIP: 0033:0x7f782eebbf29
+[  316.680064][ T8058] Code: 00 c3 66 2e 0f 1f 84 00 00 00 00 00 0f 1f 44 00 00 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 8b 0d 37 8f 0d 00 f7 d8 64 89 01 48
+[  316.682627][ T8058] RSP: 002b:00007ffe8d609228 EFLAGS: 00000286 ORIG_RAX: 000000000000002e
+[  316.683650][ T8058] RAX: ffffffffffffffda RBX: 0000000000000000 RCX: 00007f782eebbf29
+[  316.684509][ T8058] RDX: 0000000000000000 RSI: 0000000020000080 RDI: 0000000000000004
+[  316.685483][ T8058] RBP: 00007ffe8d609250 R08: 000055d6d42822a0 R09: 000055d6d42822a0
+[  316.686541][ T8058] R10: 000055d6d42822a0 R11: 0000000000000286 R12: 000055d6d2f240a0
+[  316.687591][ T8058] R13: 0000000000000000 R14: 0000000000000000 R15: 0000000000000000
+[  316.688674][ T8058]  </TASK>
+[  316.713277][ T8058]
+[  316.713639][ T8058] Allocated by task 8058:
+[  316.714226][ T8058]  kasan_set_track+0x4f/0x70
+[  316.714862][ T8058]  __kasan_slab_alloc+0x50/0x60
+[  316.715543][ T8058]  slab_post_alloc_hook+0x64/0x380
+[  316.716235][ T8058]  kmem_cache_alloc_node+0x152/0x310
+[  316.716948][ T8058]  kmalloc_reserve+0x73/0x170
+[  316.717610][ T8058]  __alloc_skb+0x192/0x2e0
+[  316.718235][ T8058]  pfkey_register+0x11e/0x480
+[  316.718886][ T8058]  pfkey_sendmsg+0x853/0xaf0
+[  316.719458][ T8058]  ____sys_sendmsg+0x47d/0x650
+[  316.720130][ T8058]  __sys_sendmsg+0x28f/0x360
+[  316.720788][ T8058]  do_syscall_64+0x41/0x90
+[  316.729983][ T8058]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  316.730856][ T8058]
+[  316.732869][ T8058] The buggy address belongs to the object at ffff8881750a8600
+[  316.732869][ T8058]  which belongs to the cache skbuff_small_head of size 640
+[  316.734867][ T8058] The buggy address is located 0 bytes inside of
+[  316.734867][ T8058]  640-byte region [ffff8881750a8600, ffff8881750a8880)
+[  316.736633][ T8058]
+[  316.736952][ T8058] The buggy address belongs to the physical page:
+[  316.737780][ T8058] page:ffffea0005d42a00 refcount:1 mapcount:0 mapping:0000000000000000 index:0x0 pfn:0x1750a8
+[  316.738888][ T8058] head:ffffea0005d42a00 order:1 entire_mapcount:0 nr_pages_mapped:0 pincount:0
+[  316.739852][ T8058] anon flags: 0x17ff00000010200(slab|head|node=0|zone=2|lastcpupid=0x7ff)
+[  316.740886][ T8058] page_type: 0xffffffff()
+[  316.748196][ T8058] raw: 017ff00000010200 ffff888105e6d640 0000000000000000 0000000000000001
+[  316.749192][ T8058] raw: 0000000000000000 00000000800a000a 00000001ffffffff 0000000000000000
+[  316.750130][ T8058] page dumped because: kasan: bad access detected
+[  316.750844][ T8058] page_owner tracks the page as allocated
+[  316.755367][ T8058] page last allocated via order 1, migratetype Unmovable, gfp_mask 0xd20c0(__GFP_IO|__GFP_FS|__GFP_NOWARN|__GFP_NORETRY|__GFP_COMP|__GFP_NOMEMALLOC), pid 4457, tgid 4457 (systemd-udevd), ts 112881320060, free_ts 112616275760
+[  316.758230][ T8058]  post_alloc_hook+0x1e6/0x210
+[  316.758904][ T8058]  get_page_from_freelist+0x260a/0x2790
+[  316.759648][ T8058]  __alloc_pages+0x1f2/0x480
+[  316.760276][ T8058]  alloc_slab_page+0x6a/0x160
+[  316.760901][ T8058]  new_slab+0x84/0x2f0
+[  316.766821][ T8058]  ___slab_alloc+0xa85/0x10a0
+[  316.767495][ T8058]  kmem_cache_alloc_node+0x1ee/0x310
+[  316.768191][ T8058]  kmalloc_reserve+0x73/0x170
+[  316.768834][ T8058]  __alloc_skb+0x192/0x2e0
+[  316.769450][ T8058]  netlink_sendmsg+0x5f1/0x990
+[  316.770127][ T8058]  ____sys_sendmsg+0x47d/0x650
+[  316.770810][ T8058]  __sys_sendmsg+0x28f/0x360
+[  316.775491][ T8058]  do_syscall_64+0x41/0x90
+[  316.776176][ T8058]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  316.776950][ T8058] page last free stack trace:
+[  316.777584][ T8058]  free_unref_page_prepare+0x75a/0x820
+[  316.778332][ T8058]  free_unref_page+0x37/0x300
+[  316.778976][ T8058]  __unfreeze_partials+0x1b1/0x1f0
+[  316.779653][ T8058]  put_cpu_partial+0x116/0x180
+[  316.780295][ T8058]  qlist_free_all+0x22/0x60
+[  316.780908][ T8058]  kasan_quarantine_reduce+0x14b/0x160
+[  316.784695][ T8058]  __kasan_slab_alloc+0x23/0x60
+[  316.785388][ T8058]  slab_post_alloc_hook+0x64/0x380
+[  316.786070][ T8058]  __kmem_cache_alloc_node+0x13d/0x240
+[  316.786785][ T8058]  __kmalloc+0xa8/0x230
+[  316.787347][ T8058]  tomoyo_realpath_from_path+0x89/0x340
+[  316.787993][ T8058]  tomoyo_path_perm+0x227/0x590
+[  316.788679][ T8058]  security_inode_getattr+0x79/0xb0
+[  316.789356][ T8058]  vfs_fstat+0x49/0x2c0
+[  316.789869][ T8058]  __x64_sys_newfstat+0xb4/0x120
+[  316.790572][ T8058]  do_syscall_64+0x41/0x90
+[  316.800788][ T8058]
+[  316.802897][ T8058] Memory state around the buggy address:
+[  316.803586][ T8058]  ffff8881750a8500: fb fb fb fb fb fb fb fb fb fb fb fb fb fb fb fb
+[  316.804482][ T8058]  ffff8881750a8580: fc fc fc fc fc fc fc fc fc fc fc fc fc fc fc fc
+[  316.805356][ T8058] >ffff8881750a8600: ee ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec
+[  316.806292][ T8058]                    ^
+[  316.806841][ T8058]  ffff8881750a8680: ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec
+[  316.807920][ T8058]  ffff8881750a8700: ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec
+[  316.808982][ T8058] BUG: KASAN: unknown-crash in pfkey_register+0x157/0x480
+[  316.809939][ T8058] Write of size 8 at addr ffff8881750a8900 by task a.out/8058
+[  316.810929][ T8058]
+[  316.818188][ T8058] CPU: 0 PID: 8058 Comm: a.out Not tainted 6.4.1-00011-gc173c3c31378 #20
+[  316.819337][ T8058] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+[  316.820548][ T8058] Call Trace:
+[  316.821002][ T8058]  <TASK>
+[  316.821411][ T8058]  dump_stack_lvl+0x1ce/0x2c0
+[  316.822037][ T8058]  ? nf_tcp_handle_invalid+0x3d0/0x3d0
+[  316.822801][ T8058]  ? preempt_count_add+0xa0/0xf0
+[  316.823473][ T8058]  ? panic+0x620/0x620
+[  316.824063][ T8058]  print_report+0x163/0x540
+[  316.824713][ T8058]  ? kmem_cache_alloc_node+0x181/0x310
+[  316.825489][ T8058]  ? __virt_addr_valid+0x1cc/0x240
+[  316.826217][ T8058]  ? __phys_addr+0x99/0x110
+[  316.826855][ T8058]  kdo_kasan_report+0x7f/0x90
+[  316.827538][ T8058]  ? pfkey_register+0x157/0x480
+[  316.828224][ T8058]  ? pfkey_register+0x157/0x480
+[  316.828906][ T8058]  propagate_taint+0x1f6/0x210
+[  316.829569][ T8058]  ? pfkey_register+0x157/0x480
+[  316.830251][ T8058]  ? pfkey_register+0x157/0x480
+[  316.830895][ T8058]  __kdo_asan_memcpy+0x69/0xa0
+[  316.831480][ T8058]  pfkey_register+0x157/0x480
+[  316.832149][ T8058]  pfkey_sendmsg+0x853/0xaf0
+[  316.832784][ T8058]  ? pfkey_release+0x2b0/0x2b0
+[  316.833472][ T8058]  ? __import_iovec+0x5d1/0x6f0
+[  316.834163][ T8058]  ? bpf_lsm_socket_sendmsg+0x9/0x10
+[  316.834856][ T8058]  ? pfkey_release+0x2b0/0x2b0
+[  316.835540][ T8058]  ____sys_sendmsg+0x47d/0x650
+[  316.836221][ T8058]  ? __sys_sendmsg_sock+0x30/0x30
+[  316.836891][ T8058]  __sys_sendmsg+0x28f/0x360
+[  316.837460][ T8058]  ? ____sys_sendmsg+0x650/0x650
+[  316.838150][ T8058]  ? lock_release+0x4c6/0x630
+[  316.838822][ T8058]  ? rcu_read_lock_sched_held+0x8b/0x130
+[  316.839626][ T8058]  ? lockdep_hardirqs_on_prepare+0x2dc/0x410
+[  316.840399][ T8058]  ? syscall_enter_from_user_mode+0x32/0x230
+[  316.841149][ T8058]  ? lockdep_hardirqs_on+0xdd/0x180
+[  316.841834][ T8058]  ? syscall_enter_from_user_mode+0x32/0x230
+[  316.842654][ T8058]  do_syscall_64+0x41/0x90
+[  316.843245][ T8058]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  316.844015][ T8058] RIP: 0033:0x7f782eebbf29
+[  316.844641][ T8058] Code: 00 c3 66 2e 0f 1f 84 00 00 00 00 00 0f 1f 44 00 00 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 8b 0d 37 8f 0d 00 f7 d8 64 89 01 48
+[  316.846852][ T8058] RSP: 002b:00007ffe8d609228 EFLAGS: 00000286 ORIG_RAX: 000000000000002e
+[  316.847963][ T8058] RAX: ffffffffffffffda RBX: 0000000000000000 RCX: 00007f782eebbf29
+[  316.848821][ T8058] RDX: 0000000000000000 RSI: 0000000020000080 RDI: 0000000000000004
+[  316.849678][ T8058] RBP: 00007ffe8d609250 R08: 000055d6d42822a0 R09: 000055d6d42822a0
+[  316.850532][ T8058] R10: 000055d6d42822a0 R11: 0000000000000286 R12: 000055d6d2f240a0
+[  316.851395][ T8058] R13: 0000000000000000 R14: 0000000000000000 R15: 0000000000000000
+[  316.852271][ T8058]  </TASK>
+[  316.863163][ T8058]
+[  316.863496][ T8058] Allocated by task 8058:
+[  316.864004][ T8058]  kasan_set_track+0x4f/0x70
+[  316.864558][ T8058]  __kasan_slab_alloc+0x50/0x60
+[  316.865160][ T8058]  slab_post_alloc_hook+0x64/0x380
+[  316.865842][ T8058]  kmem_cache_alloc_node+0x152/0x310
+[  316.866572][ T8058]  kmalloc_reserve+0x73/0x170
+[  316.867224][ T8058]  __alloc_skb+0x192/0x2e0
+[  316.867858][ T8058]  pfkey_sendmsg+0x195/0xaf0
+[  316.868512][ T8058]  ____sys_sendmsg+0x47d/0x650
+[  316.869156][ T8058]  __sys_sendmsg+0x28f/0x360
+[  316.869712][ T8058]  do_syscall_64+0x41/0x90
+[  316.870268][ T8058]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  316.881259][ T8058]
+[  316.881626][ T8058] The buggy address belongs to the object at ffff8881750a8900
+[  316.881626][ T8058]  which belongs to the cache skbuff_small_head of size 640
+[  316.883443][ T8058] The buggy address is located 0 bytes inside of
+[  316.883443][ T8058]  640-byte region [ffff8881750a8900, ffff8881750a8b80)
+[  316.884963][ T8058]
+[  316.885233][ T8058] The buggy address belongs to the physical page:
+[  316.885984][ T8058] page:ffffea0005d42a00 refcount:1 mapcount:0 mapping:0000000000000000 index:0x0 pfn:0x1750a8
+[  316.887215][ T8058] head:ffffea0005d42a00 order:1 entire_mapcount:0 nr_pages_mapped:0 pincount:0
+[  316.888283][ T8058] anon flags: 0x17ff00000010200(slab|head|node=0|zone=2|lastcpupid=0x7ff)
+[  316.889233][ T8058] page_type: 0xffffffff()
+[  316.889712][ T8058] raw: 017ff00000010200 ffff888105e6d640 0000000000000000 0000000000000001
+[  316.890631][ T8058] raw: 0000000000000000 00000000800a000a 00000001ffffffff 0000000000000000
+[  316.901978][ T8058] page dumped because: kasan: bad access detected
+[  316.902878][ T8058] page_owner tracks the page as allocated
+[  316.903689][ T8058] page last allocated via order 1, migratetype Unmovable, gfp_mask 0xd20c0(__GFP_IO|__GFP_FS|__GFP_NOWARN|__GFP_NORETRY|__GFP_COMP|__GFP_NOMEMALLOC), pid 4457, tgid 4457 (systemd-udevd), ts 112881320060, free_ts 112616275760
+[  316.906084][ T8058]  post_alloc_hook+0x1e6/0x210
+[  316.906656][ T8058]  get_page_from_freelist+0x260a/0x2790
+[  316.907318][ T8058]  __alloc_pages+0x1f2/0x480
+[  316.907860][ T8058]  alloc_slab_page+0x6a/0x160
+[  316.908437][ T8058]  new_slab+0x84/0x2f0
+[  316.909036][ T8058]  ___slab_alloc+0xa85/0x10a0
+[  316.909706][ T8058]  kmem_cache_alloc_node+0x1ee/0x310
+[  316.910444][ T8058]  kmalloc_reserve+0x73/0x170
+[  316.918059][ T8058]  __alloc_skb+0x192/0x2e0
+[  316.918729][ T8058]  netlink_sendmsg+0x5f1/0x990
+[  316.919418][ T8058]  ____sys_sendmsg+0x47d/0x650
+[  316.920087][ T8058]  __sys_sendmsg+0x28f/0x360
+[  316.920729][ T8058]  do_syscall_64+0x41/0x90
+[  316.927934][ T8058]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  316.928754][ T8058] page last free stack trace:
+[  316.929365][ T8058]  free_unref_page_prepare+0x75a/0x820
+[  316.929986][ T8058]  free_unref_page+0x37/0x300
+[  316.930530][ T8058]  __unfreeze_partials+0x1b1/0x1f0
+[  316.934102][ T8058]  put_cpu_partial+0x116/0x180
+[  316.934803][ T8058]  qlist_free_all+0x22/0x60
+[  316.935426][ T8058]  kasan_quarantine_reduce+0x14b/0x160
+[  316.936145][ T8058]  __kasan_slab_alloc+0x23/0x60
+[  316.936805][ T8058]  slab_post_alloc_hook+0x64/0x380
+[  316.937481][ T8058]  __kmem_cache_alloc_node+0x13d/0x240
+[  316.938194][ T8058]  __kmalloc+0xa8/0x230
+[  316.938755][ T8058]  tomoyo_realpath_from_path+0x89/0x340
+[  316.939501][ T8058]  tomoyo_path_perm+0x227/0x590
+[  316.940119][ T8058]  security_inode_getattr+0x79/0xb0
+[  316.940739][ T8058]  vfs_fstat+0x49/0x2c0
+[  316.947985][ T8058]  __x64_sys_newfstat+0xb4/0x120
+[  316.948647][ T8058]  do_syscall_64+0x41/0x90
+[  316.949507][ T8058]
+[  316.949841][ T8058] Memory state around the buggy address:
+[  316.950451][ T8058]  ffff8881750a8800: ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec
+[  316.955883][ T8058]  ffff8881750a8880: fc fc fc fc fc fc fc fc fc fc fc fc fc fc fc fc
+[  316.956987][ T8058] >ffff8881750a8900: ee ee ec ec ec ec ec ec ec ec ec ec ec ec ec ec
+[  316.957960][ T8058]                    ^
+[  316.958413][ T8058]  ffff8881750a8980: ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec
+[  316.959428][ T8058]  ffff8881750a8a00: ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec
+[  316.960416][ T8058] Kernel panic - not syncing: KDO: memcpy hit (id: pfkey_register+0x157/0x480, callid: 12774S)
+[  316.961672][ T8058] CPU: 0 PID: 8058 Comm: a.out Not tainted 6.4.1-00011-gc173c3c31378 #20
+[  316.962793][ T8058] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+[  316.964020][ T8058] Call Trace:
+[  316.964453][ T8058]  <TASK>
+[  316.964878][ T8058]  dump_stack_lvl+0x1ce/0x2c0
+[  316.965562][ T8058]  ? nf_tcp_handle_invalid+0x3d0/0x3d0
+[  316.966284][ T8058]  ? panic+0x620/0x620
+[  316.966833][ T8058]  ? vscnprintf+0x5d/0x80
+[  316.967397][ T8058]  panic+0x2ba/0x620
+[  316.967903][ T8058]  ? pfkey_register+0x157/0x480
+[  316.968525][ T8058]  ? __wake_up_klogd+0xb7/0xf0
+[  316.969123][ T8058]  ? preempt_count_add+0xa0/0xf0
+[  316.969743][ T8058]  ? kdo_sanitizer_cov_write+0x100/0x100
+[  316.970447][ T8058]  ? kmem_cache_alloc_node+0x181/0x310
+[  316.971146][ T8058]  ? __phys_addr+0x99/0x110
+[  316.971727][ T8058]  ? kdo_kasan_report+0x7f/0x90
+[  316.972344][ T8058]  ? pfkey_register+0x157/0x480
+[  316.972936][ T8058]  ? pfkey_register+0x157/0x480
+[  316.973555][ T8058]  propagate_taint+0x20a/0x210
+[  316.974170][ T8058]  ? pfkey_register+0x157/0x480
+[  316.974838][ T8058]  ? pfkey_register+0x157/0x480
+[  316.975487][ T8058]  __kdo_asan_memcpy+0x69/0xa0
+[  316.976087][ T8058]  pfkey_register+0x157/0x480
+[  316.976724][ T8058]  pfkey_sendmsg+0x853/0xaf0
+[  316.977342][ T8058]  ? pfkey_release+0x2b0/0x2b0
+[  316.977904][ T8058]  ? __import_iovec+0x5d1/0x6f0
+[  316.978539][ T8058]  ? bpf_lsm_socket_sendmsg+0x9/0x10
+[  316.979242][ T8058]  ? pfkey_release+0x2b0/0x2b0
+[  316.979838][ T8058]  ____sys_sendmsg+0x47d/0x650
+[  316.980376][ T8058]  ? __sys_sendmsg_sock+0x30/0x30
+[  316.981039][ T8058]  __sys_sendmsg+0x28f/0x360
+[  316.981626][ T8058]  ? ____sys_sendmsg+0x650/0x650
+[  316.982303][ T8058]  ? lock_release+0x4c6/0x630
+[  316.982919][ T8058]  ? rcu_read_lock_sched_held+0x8b/0x130
+[  316.983640][ T8058]  ? lockdep_hardirqs_on_prepare+0x2dc/0x410
+[  316.984408][ T8058]  ? syscall_enter_from_user_mode+0x32/0x230
+[  316.985199][ T8058]  ? lockdep_hardirqs_on+0xdd/0x180
+[  316.985864][ T8058]  ? syscall_enter_from_user_mode+0x32/0x230
+[  316.986633][ T8058]  do_syscall_64+0x41/0x90
+[  316.987201][ T8058]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  316.987979][ T8058] RIP: 0033:0x7f782eebbf29
+[  316.988571][ T8058] Code: 00 c3 66 2e 0f 1f 84 00 00 00 00 00 0f 1f 44 00 00 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 8b 0d 37 8f 0d 00 f7 d8 64 89 01 48
+[  316.991055][ T8058] RSP: 002b:00007ffe8d609228 EFLAGS: 00000286 ORIG_RAX: 000000000000002e
+[  316.992162][ T8058] RAX: ffffffffffffffda RBX: 0000000000000000 RCX: 00007f782eebbf29
+[  316.993169][ T8058] RDX: 0000000000000000 RSI: 0000000020000080 RDI: 0000000000000004
+[  316.994162][ T8058] RBP: 00007ffe8d609250 R08: 000055d6d42822a0 R09: 000055d6d42822a0
+[  316.995174][ T8058] R10: 000055d6d42822a0 R11: 0000000000000286 R12: 000055d6d2f240a0
+[  316.996205][ T8058] R13: 0000000000000000 R14: 0000000000000000 R15: 0000000000000000
+[  316.997212][ T8058]  </TASK>
+[  316.997766][ T8058] Kernel Offset: disabled
+[  316.998361][ T8058] Rebooting in 86400 seconds..
+

@@ -1,0 +1,11 @@
+# {Threaded:false Repeat:false RepeatTimes:0 Procs:1 Slowdown:1 Sandbox: SandboxArg:0 Leak:false NetInjection:false NetDevices:false NetReset:false Cgroups:false BinfmtMisc:false CloseFDs:false KCSAN:false DevlinkPCI:false NicVF:false USB:false VhciInjection:false Wifi:false IEEE802154:false Sysctl:false UseTmpDir:false HandleSegv:false Repro:false Trace:false LegacyOptions:{Collide:false Fault:false FaultCall:0 FaultNth:0}}
+accept(0xffffffffffffffff, 0x0, &(0x7f0000000000)) (enabled_site: 17629, site_type: 1)
+r0 = socket$inet6_tcp(0xa, 0x1, 0x0)
+close(r0)
+r1 = socket$inet6_mptcp(0xa, 0x1, 0x106)
+bind$inet6(r0, &(0x7f0000000040)={0xa, 0x4e22, 0x0, @empty}, 0x1c)
+listen(r1, 0x0)
+r2 = socket$inet_mptcp(0x2, 0x1, 0x106)
+connect$inet(r2, &(0x7f0000000000)={0x2, 0x4e22, @local}, 0x10)
+r3 = accept(r0, 0x0, 0x0)
+sendmsg$DEVLINK_CMD_RATE_NEW(r3, &(0x7f00000003c0)={0x0, 0x0, &(0x7f0000000300)={0x0}}, 0x24000040)

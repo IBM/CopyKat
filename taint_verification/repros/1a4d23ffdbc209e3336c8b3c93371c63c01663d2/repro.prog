@@ -1,0 +1,6 @@
+# {Threaded:false Repeat:false RepeatTimes:0 Procs:1 Slowdown:1 Sandbox:none SandboxArg:0 Leak:false NetInjection:true NetDevices:true NetReset:false Cgroups:false BinfmtMisc:true CloseFDs:true KCSAN:false DevlinkPCI:false NicVF:false USB:true VhciInjection:true Wifi:true IEEE802154:true Sysctl:true UseTmpDir:true HandleSegv:true Repro:false Trace:false LegacyOptions:{Collide:false Fault:false FaultCall:0 FaultNth:0}}
+accept(0xffffffffffffffff, 0x0, &(0x7f0000000000)) (enabled_site: 6354, site_type: 1)
+r0 = openat$adsp1(0xffffffffffffff9c, &(0x7f0000000040), 0x8a802, 0x0)
+ioctl$SNDCTL_DSP_SETFRAGMENT(r0, 0xc004500a, &(0x7f0000000000))
+ioctl$SNDCTL_DSP_CHANNELS(r0, 0xc0045006, &(0x7f0000000100)=0x30)
+writev(r0, &(0x7f00000000c0)=[{&(0x7f0000000140)="01717c061cf9ec3e828a0cfd6a3940bbd57fac4d9f269f850a3b1ccb3386a257d7b47d0e0e89fe12", 0x28}, {&(0x7f0000000200)="fa1259122adfb871fc", 0x9}], 0x2)

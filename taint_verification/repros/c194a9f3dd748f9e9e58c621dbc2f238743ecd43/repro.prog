@@ -1,0 +1,4 @@
+# {Threaded:false Repeat:false RepeatTimes:0 Procs:1 Slowdown:1 Sandbox: SandboxArg:0 Leak:false NetInjection:false NetDevices:false NetReset:false Cgroups:false BinfmtMisc:false CloseFDs:false KCSAN:false DevlinkPCI:false NicVF:false USB:false VhciInjection:false Wifi:false IEEE802154:false Sysctl:false UseTmpDir:false HandleSegv:false Repro:false Trace:false LegacyOptions:{Collide:false Fault:false FaultCall:0 FaultNth:0}}
+accept(0xffffffffffffffff, 0x0, &(0x7f0000000000)) (enabled_site: 2955, site_type: 1)
+r0 = socket$nl_xfrm(0x10, 0x3, 0x6)
+sendmsg$nl_xfrm(r0, &(0x7f00000000c0)={0x0, 0x0, &(0x7f0000000080)={&(0x7f0000000100)=@updsa={0x17c, 0x1a, 0x1, 0x0, 0x0, {{@in6=@private0, @in6=@empty}, {@in=@local, 0x0, 0x33}, @in6=@private1, {}, {}, {}, 0x0, 0x0, 0x2}, [@algo_auth={0x89, 0x1, {{'md5\x00'}, 0x208, "0b70300c40f378db21493b8adde7fba7d4222bff4ab7d8b8468f1e939d1007000000047d773aa413421527cb498b861a2e22a678db82270dbed8d4df060000000b"}}]}, 0x17c}}, 0x0)

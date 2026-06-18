@@ -1,0 +1,10 @@
+# {Threaded:false Repeat:false RepeatTimes:0 Procs:1 Slowdown:1 Sandbox: SandboxArg:0 Leak:false NetInjection:false NetDevices:false NetReset:false Cgroups:false BinfmtMisc:false CloseFDs:false KCSAN:false DevlinkPCI:false NicVF:false USB:false VhciInjection:false Wifi:false IEEE802154:false Sysctl:false UseTmpDir:false HandleSegv:false Repro:false Trace:false LegacyOptions:{Collide:false Fault:false FaultCall:0 FaultNth:0}}
+accept(0xffffffffffffffff, 0x0, &(0x7f0000000000)) (enabled_site: 14274, site_type: 1)
+mkdirat(0xffffffffffffff9c, &(0x7f0000000000)='./file0\x00', 0x0)
+mkdirat(0xffffffffffffff9c, &(0x7f0000000400)='./file1\x00', 0x0)
+mkdir(&(0x7f0000000300)='./bus\x00', 0x0)
+utime(&(0x7f0000000040)='./file1\x00', &(0x7f0000000100)={0x8, 0x4})
+mount$overlay(0x0, &(0x7f00000000c0)='./bus\x00', &(0x7f0000000340), 0x0, &(0x7f0000000080)={[{@workdir={'workdir', 0x3d, './bus'}}, {@lowerdir={'lowerdir', 0x3d, './file0'}}, {@upperdir={'upperdir', 0x3d, './file1'}}]})
+chdir(&(0x7f0000000140)='./bus\x00')
+r0 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000080)='memory.events.local\x00', 0x275a, 0x0)
+fadvise64(r0, 0x0, 0x0, 0x5)

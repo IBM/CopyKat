@@ -1,0 +1,1308 @@
+Warning: Permanently added '[localhost]:33529' (ED25519) to the list of known hosts.
+2024/05/22 21:00:11 fuzzer started
+2024/05/22 21:00:12 dialing manager at localhost:34093
+syzkaller login: [  174.617915][ T8011] cgroup: Unknown subsys name 'net'
+[  174.783628][ T8011] cgroup: Unknown subsys name 'rlimit'
+2024/05/22 21:00:13 syscalls: 3922
+2024/05/22 21:00:13 code coverage: enabled
+2024/05/22 21:00:13 comparison tracing: enabled
+2024/05/22 21:00:13 extra coverage: enabled
+2024/05/22 21:00:13 delay kcov mmap: enabled
+2024/05/22 21:00:13 setuid sandbox: enabled
+2024/05/22 21:00:13 namespace sandbox: enabled
+2024/05/22 21:00:13 Android sandbox: /sys/fs/selinux/policy does not exist
+2024/05/22 21:00:13 fault injection: enabled
+2024/05/22 21:00:13 leak checking: CONFIG_DEBUG_KMEMLEAK is not enabled
+2024/05/22 21:00:13 net packet injection: enabled
+2024/05/22 21:00:13 net device setup: enabled
+2024/05/22 21:00:13 concurrency sanitizer: /sys/kernel/debug/kcsan does not exist
+2024/05/22 21:00:13 devlink PCI setup: PCI device 0000:00:10.0 is not available
+2024/05/22 21:00:13 NIC VF setup: PCI device 0000:00:11.0 is not available
+2024/05/22 21:00:13 USB emulation: enabled
+2024/05/22 21:00:13 hci packet injection: enabled
+2024/05/22 21:00:13 wifi device emulation: enabled
+2024/05/22 21:00:13 802.15.4 emulation: enabled
+2024/05/22 21:00:13 fetching corpus: 0, signal 0/2000 (executing program)
+2024/05/22 21:00:13 fetching corpus: 50, signal 18106/21598 (executing program)
+2024/05/22 21:00:13 fetching corpus: 100, signal 30104/34901 (executing program)
+2024/05/22 21:00:14 fetching corpus: 150, signal 35437/41561 (executing program)
+2024/05/22 21:00:14 fetching corpus: 200, signal 40570/47919 (executing program)
+2024/05/22 21:00:14 fetching corpus: 250, signal 45050/53509 (executing program)
+2024/05/22 21:00:14 fetching corpus: 300, signal 50414/59816 (executing program)
+2024/05/22 21:00:14 fetching corpus: 350, signal 57600/67622 (executing program)
+2024/05/22 21:00:15 fetching corpus: 400, signal 62175/72932 (executing program)
+2024/05/22 21:00:15 fetching corpus: 450, signal 66390/77842 (executing program)
+2024/05/22 21:00:15 fetching corpus: 500, signal 68614/80876 (executing program)
+2024/05/22 21:00:15 fetching corpus: 550, signal 73210/85927 (executing program)
+2024/05/22 21:00:15 fetching corpus: 600, signal 77143/90226 (executing program)
+2024/05/22 21:00:15 fetching corpus: 650, signal 79409/93087 (executing program)
+2024/05/22 21:00:16 fetching corpus: 700, signal 82089/96242 (executing program)
+2024/05/22 21:00:16 fetching corpus: 750, signal 84237/98911 (executing program)
+2024/05/22 21:00:16 fetching corpus: 800, signal 86494/101618 (executing program)
+2024/05/22 21:00:16 fetching corpus: 850, signal 89809/105074 (executing program)
+2024/05/22 21:00:16 fetching corpus: 900, signal 91784/107406 (executing program)
+2024/05/22 21:00:17 fetching corpus: 950, signal 94705/110394 (executing program)
+2024/05/22 21:00:17 fetching corpus: 1000, signal 97745/113470 (executing program)
+2024/05/22 21:00:17 fetching corpus: 1050, signal 99483/115525 (executing program)
+2024/05/22 21:00:17 fetching corpus: 1100, signal 101513/117674 (executing program)
+2024/05/22 21:00:17 fetching corpus: 1150, signal 103508/119785 (executing program)
+2024/05/22 21:00:18 fetching corpus: 1200, signal 105856/122085 (executing program)
+2024/05/22 21:00:18 fetching corpus: 1250, signal 107294/123699 (executing program)
+2024/05/22 21:00:18 fetching corpus: 1300, signal 108951/125356 (executing program)
+2024/05/22 21:00:18 fetching corpus: 1350, signal 110821/127145 (executing program)
+2024/05/22 21:00:18 fetching corpus: 1400, signal 112576/128852 (executing program)
+2024/05/22 21:00:19 fetching corpus: 1450, signal 114370/130510 (executing program)
+2024/05/22 21:00:19 fetching corpus: 1500, signal 116524/132352 (executing program)
+2024/05/22 21:00:19 fetching corpus: 1550, signal 117958/133730 (executing program)
+2024/05/22 21:00:19 fetching corpus: 1600, signal 119406/135073 (executing program)
+2024/05/22 21:00:19 fetching corpus: 1650, signal 121173/136526 (executing program)
+2024/05/22 21:00:19 fetching corpus: 1700, signal 122895/137955 (executing program)
+2024/05/22 21:00:19 fetching corpus: 1729, signal 123786/138867 (executing program)
+2024/05/22 21:00:19 fetching corpus: 1729, signal 123786/139280 (executing program)
+2024/05/22 21:00:19 fetching corpus: 1729, signal 123786/139704 (executing program)
+2024/05/22 21:00:19 fetching corpus: 1729, signal 123786/140102 (executing program)
+2024/05/22 21:00:20 fetching corpus: 1729, signal 123786/140547 (executing program)
+2024/05/22 21:00:20 fetching corpus: 1729, signal 123786/140966 (executing program)
+2024/05/22 21:00:20 fetching corpus: 1729, signal 123786/141371 (executing program)
+2024/05/22 21:00:20 fetching corpus: 1729, signal 123786/141791 (executing program)
+2024/05/22 21:00:20 fetching corpus: 1729, signal 123786/142181 (executing program)
+2024/05/22 21:00:20 fetching corpus: 1729, signal 123786/142608 (executing program)
+2024/05/22 21:00:20 fetching corpus: 1729, signal 123786/143022 (executing program)
+2024/05/22 21:00:20 fetching corpus: 1729, signal 123786/143417 (executing program)
+2024/05/22 21:00:20 fetching corpus: 1729, signal 123786/143852 (executing program)
+2024/05/22 21:00:20 fetching corpus: 1729, signal 123786/144272 (executing program)
+2024/05/22 21:00:20 fetching corpus: 1729, signal 123786/144688 (executing program)
+2024/05/22 21:00:20 fetching corpus: 1729, signal 123786/145092 (executing program)
+2024/05/22 21:00:20 fetching corpus: 1729, signal 123786/145485 (executing program)
+2024/05/22 21:00:20 fetching corpus: 1729, signal 123786/145882 (executing program)
+2024/05/22 21:00:20 fetching corpus: 1729, signal 123786/146285 (executing program)
+2024/05/22 21:00:20 fetching corpus: 1729, signal 123786/146702 (executing program)
+2024/05/22 21:00:20 fetching corpus: 1729, signal 123786/147139 (executing program)
+2024/05/22 21:00:20 fetching corpus: 1729, signal 123786/147534 (executing program)
+2024/05/22 21:00:20 fetching corpus: 1730, signal 123795/147962 (executing program)
+2024/05/22 21:00:20 fetching corpus: 1730, signal 123795/148356 (executing program)
+2024/05/22 21:00:20 fetching corpus: 1730, signal 123795/148739 (executing program)
+2024/05/22 21:00:20 fetching corpus: 1730, signal 123795/149130 (executing program)
+2024/05/22 21:00:20 fetching corpus: 1730, signal 123795/149496 (executing program)
+2024/05/22 21:00:20 fetching corpus: 1730, signal 123795/149900 (executing program)
+2024/05/22 21:00:20 fetching corpus: 1730, signal 123795/150322 (executing program)
+2024/05/22 21:00:20 fetching corpus: 1730, signal 123795/150719 (executing program)
+2024/05/22 21:00:20 fetching corpus: 1730, signal 123795/151107 (executing program)
+2024/05/22 21:00:20 fetching corpus: 1730, signal 123795/151512 (executing program)
+2024/05/22 21:00:20 fetching corpus: 1730, signal 123795/151923 (executing program)
+2024/05/22 21:00:20 fetching corpus: 1730, signal 123795/152342 (executing program)
+2024/05/22 21:00:20 fetching corpus: 1730, signal 123795/152786 (executing program)
+2024/05/22 21:00:20 fetching corpus: 1730, signal 123795/153215 (executing program)
+2024/05/22 21:00:20 fetching corpus: 1730, signal 123795/153638 (executing program)
+2024/05/22 21:00:20 fetching corpus: 1730, signal 123795/154060 (executing program)
+2024/05/22 21:00:20 fetching corpus: 1730, signal 123795/154465 (executing program)
+2024/05/22 21:00:20 fetching corpus: 1730, signal 123795/154856 (executing program)
+2024/05/22 21:00:20 fetching corpus: 1730, signal 123795/155238 (executing program)
+2024/05/22 21:00:20 fetching corpus: 1730, signal 123795/155660 (executing program)
+2024/05/22 21:00:20 fetching corpus: 1730, signal 123795/156060 (executing program)
+2024/05/22 21:00:20 fetching corpus: 1730, signal 123795/156060 (executing program)
+2024/05/22 21:00:27 starting 1 fuzzer processes
+[  188.875352][ T7998] memfd_create() without MFD_EXEC nor MFD_NOEXEC_SEAL, pid=7998 'syz-fuzzer'
+21:00:27 executing program 0:
+r0 = socket$nl_route(0x10, 0x3, 0x0)
+r1 = socket$nl_route(0x10, 0x3, 0x0)
+ioctl$ifreq_SIOCGIFINDEX_batadv_hard(r1, 0x8933, &(0x7f0000000040)={'batadv_slave_1\x00', <r2=>0x0})
+sendmsg$nl_route(r0, &(0x7f0000000100)={0x0, 0x0, &(0x7f00000000c0)={&(0x7f0000000140)=@ipv4_newaddr={0x3c, 0x14, 0x509, 0x0, 0x0, {0x2, 0x0, 0x0, 0x0, r2}, [@IFA_LOCAL={0x8, 0x2, @initdev={0xac, 0x1e, 0x0, 0x0}}, @IFA_BROADCAST={0x8, 0x4, @loopback}, @IFA_LABEL={0x14}]}, 0x3c}}, 0x0)
+
+[  205.273963][ T1219] ieee802154 phy0 wpan0: encryption failed: -22
+[  205.274934][ T1219] ieee802154 phy1 wpan1: encryption failed: -22
+[  208.434878][ T8026] Bluetooth: hci0: unexpected cc 0x0c03 length: 249 > 1
+[  208.443671][ T8026] Bluetooth: hci0: unexpected cc 0x1003 length: 249 > 9
+[  208.445568][ T8026] Bluetooth: hci0: unexpected cc 0x1001 length: 249 > 9
+[  208.448709][ T8026] Bluetooth: hci0: unexpected cc 0x0c23 length: 249 > 4
+[  208.451164][ T8026] Bluetooth: hci0: unexpected cc 0x0c25 length: 249 > 3
+[  208.462935][ T8026] Bluetooth: hci0: unexpected cc 0x0c38 length: 249 > 2
+[  209.488295][ T8023] chnl_net:caif_netlink_parms(): no params data found
+[  209.715385][ T8023] bridge0: port 1(bridge_slave_0) entered blocking state
+[  209.717441][ T8023] bridge0: port 1(bridge_slave_0) entered disabled state
+[  209.718511][ T8023] bridge_slave_0: entered allmulticast mode
+[  209.721173][ T8023] bridge_slave_0: entered promiscuous mode
+[  209.734008][ T8023] bridge0: port 2(bridge_slave_1) entered blocking state
+[  209.735332][ T8023] bridge0: port 2(bridge_slave_1) entered disabled state
+[  209.736281][ T8023] bridge_slave_1: entered allmulticast mode
+[  209.738869][ T8023] bridge_slave_1: entered promiscuous mode
+[  209.803345][ T8023] bond0: (slave bond_slave_0): Enslaving as an active interface with an up link
+[  209.809076][ T8023] bond0: (slave bond_slave_1): Enslaving as an active interface with an up link
+[  209.873833][ T8023] team0: Port device team_slave_0 added
+[  209.878398][ T8023] team0: Port device team_slave_1 added
+[  209.948364][ T8023] batman_adv: batadv0: Adding interface: batadv_slave_0
+[  209.949177][ T8023] batman_adv: batadv0: The MTU of interface batadv_slave_0 is too small (1500) to handle the transport of batman-adv packets. Packets going over this interface will be fragmented on layer2 which could impact the performance. Setting the MTU to 1560 would solve the problem.
+[  209.954638][ T8023] batman_adv: batadv0: Not using interface batadv_slave_0 (retrying later): interface not active
+[  209.959671][ T8023] batman_adv: batadv0: Adding interface: batadv_slave_1
+[  209.960464][ T8023] batman_adv: batadv0: The MTU of interface batadv_slave_1 is too small (1500) to handle the transport of batman-adv packets. Packets going over this interface will be fragmented on layer2 which could impact the performance. Setting the MTU to 1560 would solve the problem.
+[  209.968261][ T8023] batman_adv: batadv0: Not using interface batadv_slave_1 (retrying later): interface not active
+[  210.054447][ T8023] hsr_slave_0: entered promiscuous mode
+[  210.059391][ T8023] hsr_slave_1: entered promiscuous mode
+[  210.472669][ T4404] Bluetooth: hci0: command 0x0409 tx timeout
+[  210.546384][ T8023] netdevsim netdevsim0 netdevsim0: renamed from eth0
+[  210.585467][ T8023] netdevsim netdevsim0 netdevsim1: renamed from eth1
+[  210.615054][ T8023] netdevsim netdevsim0 netdevsim2: renamed from eth2
+[  210.650946][ T8023] netdevsim netdevsim0 netdevsim3: renamed from eth3
+[  210.929151][ T8023] 8021q: adding VLAN 0 to HW filter on device bond0
+[  210.983827][ T8023] 8021q: adding VLAN 0 to HW filter on device team0
+[  210.984926][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): veth1: link becomes ready
+[  210.994017][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): veth0: link becomes ready
+[  211.037236][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_to_bridge: link becomes ready
+[  211.039032][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): bridge_slave_0: link becomes ready
+[  211.041713][    T9] bridge0: port 1(bridge_slave_0) entered blocking state
+[  211.042796][    T9] bridge0: port 1(bridge_slave_0) entered forwarding state
+[  211.047809][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_to_bridge: link becomes ready
+[  211.049641][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): bridge_slave_1: link becomes ready
+[  211.051326][    T9] bridge0: port 2(bridge_slave_1) entered blocking state
+[  211.052237][    T9] bridge0: port 2(bridge_slave_1) entered forwarding state
+[  211.060201][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): bridge0: link becomes ready
+[  211.094972][ T4445] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_to_bond: link becomes ready
+[  211.098079][ T4445] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_to_bond: link becomes ready
+[  211.143510][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_to_team: link becomes ready
+[  211.145727][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): team_slave_0: link becomes ready
+[  211.147375][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_to_team: link becomes ready
+[  211.149627][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): team_slave_1: link becomes ready
+[  211.177462][ T4415] IPv6: ADDRCONF(NETDEV_CHANGE): team0: link becomes ready
+[  211.179287][ T4415] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_to_hsr: link becomes ready
+[  211.182456][ T4415] IPv6: ADDRCONF(NETDEV_CHANGE): hsr_slave_0: link becomes ready
+[  211.187923][ T4415] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_to_hsr: link becomes ready
+[  211.189704][ T4415] IPv6: ADDRCONF(NETDEV_CHANGE): hsr_slave_1: link becomes ready
+[  211.215165][ T8023] IPv6: ADDRCONF(NETDEV_CHANGE): hsr0: link becomes ready
+[  211.696066][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): vxcan1: link becomes ready
+[  211.697143][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): vxcan0: link becomes ready
+[  211.715252][ T8023] 8021q: adding VLAN 0 to HW filter on device batadv0
+[  211.748706][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_virt_wifi: link becomes ready
+[  211.750621][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_virt_wifi: link becomes ready
+[  211.780918][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_vlan: link becomes ready
+[  211.783993][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_vlan: link becomes ready
+[  211.787615][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): vlan0: link becomes ready
+[  211.789445][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): vlan1: link becomes ready
+[  211.803337][ T8023] veth0_vlan: entered promiscuous mode
+[  211.820102][ T8023] veth1_vlan: entered promiscuous mode
+[  211.866857][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): macvlan0: link becomes ready
+[  211.868843][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): macvlan1: link becomes ready
+[  211.874920][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_macvtap: link becomes ready
+[  211.876829][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_macvtap: link becomes ready
+[  211.887431][ T8023] veth0_macvtap: entered promiscuous mode
+[  211.898656][ T8023] veth1_macvtap: entered promiscuous mode
+[  211.929771][ T8023] batman_adv: batadv0: Interface activated: batadv_slave_0
+[  211.930875][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): macvtap0: link becomes ready
+[  211.932893][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): macsec0: link becomes ready
+[  211.934464][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): batadv_slave_0: link becomes ready
+[  211.936070][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_to_batadv: link becomes ready
+[  211.951012][ T8023] batman_adv: batadv0: Interface activated: batadv_slave_1
+[  211.954619][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): batadv_slave_1: link becomes ready
+[  211.956290][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_to_batadv: link becomes ready
+[  211.976031][ T8023] netdevsim netdevsim0 netdevsim0: set [1, 0] type 2 family 0 port 6081 - 0
+[  211.977134][ T8023] netdevsim netdevsim0 netdevsim1: set [1, 0] type 2 family 0 port 6081 - 0
+[  211.978103][ T8023] netdevsim netdevsim0 netdevsim2: set [1, 0] type 2 family 0 port 6081 - 0
+[  211.979054][ T8023] netdevsim netdevsim0 netdevsim3: set [1, 0] type 2 family 0 port 6081 - 0
+[  212.115882][ T8023] ieee80211 phy3: Selected rate control algorithm 'minstrel_ht'
+[  212.229666][   T10] wlan0: Created IBSS using preconfigured BSSID 50:50:50:50:50:50
+[  212.230701][   T10] wlan0: Creating new IBSS network, BSSID 50:50:50:50:50:50
+[  212.240730][ T8247] IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+[  212.269464][ T8023] ieee80211 phy4: Selected rate control algorithm 'minstrel_ht'
+[  212.359514][   T10] wlan1: Created IBSS using preconfigured BSSID 50:50:50:50:50:50
+[  212.360591][   T10] wlan1: Creating new IBSS network, BSSID 50:50:50:50:50:50
+[  212.365271][ T8247] IPv6: ADDRCONF(NETDEV_CHANGE): wlan1: link becomes ready
+[  212.557190][ T8026] Bluetooth: hci0: command 0x041b tx timeout
+2024/05/22 21:00:52 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2297, Ip:0x85ffe255}
+2024/05/22 21:00:52 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x30be, Ip:0x85ffe243}
+2024/05/22 21:00:52 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 21:00:52 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x30be, Ip:0x85ffa1f0}
+2024/05/22 21:00:52 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+21:00:52 executing program 0:
+r0 = socket$nl_route(0x10, 0x3, 0x0)
+r1 = socket$nl_route(0x10, 0x3, 0x0)
+ioctl$ifreq_SIOCGIFINDEX_batadv_hard(r1, 0x8933, &(0x7f0000000040)={'batadv_slave_1\x00', <r2=>0x0})
+sendmsg$nl_route(r0, &(0x7f0000000100)={0x0, 0x0, &(0x7f00000000c0)={&(0x7f0000000140)=@ipv4_newaddr={0x3c, 0x14, 0x509, 0x0, 0x0, {0x2, 0x0, 0x0, 0x0, r2}, [@IFA_LOCAL={0x8, 0x2, @initdev={0xac, 0x1e, 0x0, 0x0}}, @IFA_BROADCAST={0x8, 0x4, @loopback}, @IFA_LABEL={0x14}]}, 0x3c}}, 0x0)
+
+2024/05/22 21:00:52 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3e9b, Ip:0x833c12dd}
+2024/05/22 21:00:52 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x4de3, Ip:0x85ffa202}
+[  214.632310][ T4404] Bluetooth: hci0: command 0x040f tx timeout
+21:00:54 executing program 0:
+r0 = socket$nl_route(0x10, 0x3, 0x0)
+r1 = socket$nl_route(0x10, 0x3, 0x0)
+ioctl$ifreq_SIOCGIFINDEX_batadv_hard(r1, 0x8933, &(0x7f0000000040)={'batadv_slave_1\x00', <r2=>0x0})
+sendmsg$nl_route(r0, &(0x7f0000000100)={0x0, 0x0, &(0x7f00000000c0)={&(0x7f0000000140)=@ipv4_newaddr={0x3c, 0x14, 0x509, 0x0, 0x0, {0x2, 0x0, 0x0, 0x0, r2}, [@IFA_LOCAL={0x8, 0x2, @initdev={0xac, 0x1e, 0x0, 0x0}}, @IFA_BROADCAST={0x8, 0x4, @loopback}, @IFA_LABEL={0x14}]}, 0x3c}}, 0x0)
+
+[  216.712516][ T8026] Bluetooth: hci0: command 0x0419 tx timeout
+21:00:55 executing program 0:
+r0 = socket$nl_route(0x10, 0x3, 0x0)
+r1 = socket$nl_route(0x10, 0x3, 0x0)
+ioctl$ifreq_SIOCGIFINDEX_batadv_hard(r1, 0x8933, &(0x7f0000000040)={'batadv_slave_1\x00', <r2=>0x0})
+sendmsg$nl_route(r0, &(0x7f0000000100)={0x0, 0x0, &(0x7f00000000c0)={&(0x7f0000000140)=@ipv4_newaddr={0x3c, 0x14, 0x509, 0x0, 0x0, {0x2, 0x0, 0x0, 0x0, r2}, [@IFA_LOCAL={0x8, 0x2, @initdev={0xac, 0x1e, 0x0, 0x0}}, @IFA_BROADCAST={0x8, 0x4, @loopback}, @IFA_LABEL={0x14}]}, 0x3c}}, 0x0)
+
+21:00:57 executing program 0:
+syz_io_uring_submit(0x0, 0x0, &(0x7f00000001c0)=@IORING_OP_REMOVE_BUFFERS={0x1f, 0x4}, 0x0)
+r0 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000080)='cpu.stat\x00', 0x275a, 0x0)
+write$UHID_CREATE2(r0, &(0x7f00000001c0)=ANY=[], 0x118)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x5, 0x12, r0, 0x0)
+r1 = syz_open_dev$tty1(0xc, 0x4, 0x1)
+ioctl$PIO_SCRNMAP(r1, 0x4bfb, &(0x7f0000000000))
+
+21:00:58 executing program 0:
+syz_io_uring_submit(0x0, 0x0, &(0x7f00000001c0)=@IORING_OP_REMOVE_BUFFERS={0x1f, 0x4}, 0x0)
+r0 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000080)='cpu.stat\x00', 0x275a, 0x0)
+write$UHID_CREATE2(r0, &(0x7f00000001c0)=ANY=[], 0x118)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x5, 0x12, r0, 0x0)
+r1 = syz_open_dev$tty1(0xc, 0x4, 0x1)
+ioctl$PIO_SCRNMAP(r1, 0x4bfb, &(0x7f0000000000))
+
+2024/05/22 21:00:58 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x53e9, Ip:0x81235ebf}
+2024/05/22 21:00:58 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+2024/05/22 21:00:58 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x5547, Ip:0x81ebd996}
+2024/05/22 21:00:58 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3e9b, Ip:0x833c5e4c}
+2024/05/22 21:00:58 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+2024/05/22 21:00:58 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x185e, Ip:0x838ee3a3}
+21:01:00 executing program 0:
+syz_io_uring_submit(0x0, 0x0, &(0x7f00000001c0)=@IORING_OP_REMOVE_BUFFERS={0x1f, 0x4}, 0x0)
+r0 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000080)='cpu.stat\x00', 0x275a, 0x0)
+write$UHID_CREATE2(r0, &(0x7f00000001c0)=ANY=[], 0x118)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x5, 0x12, r0, 0x0)
+r1 = syz_open_dev$tty1(0xc, 0x4, 0x1)
+ioctl$PIO_SCRNMAP(r1, 0x4bfb, &(0x7f0000000000))
+
+21:01:01 executing program 0:
+syz_io_uring_submit(0x0, 0x0, &(0x7f00000001c0)=@IORING_OP_REMOVE_BUFFERS={0x1f, 0x4}, 0x0)
+r0 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000080)='cpu.stat\x00', 0x275a, 0x0)
+write$UHID_CREATE2(r0, &(0x7f00000001c0)=ANY=[], 0x118)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x5, 0x12, r0, 0x0)
+r1 = syz_open_dev$tty1(0xc, 0x4, 0x1)
+ioctl$PIO_SCRNMAP(r1, 0x4bfb, &(0x7f0000000000))
+
+21:01:03 executing program 0:
+r0 = bpf$MAP_CREATE(0x0, &(0x7f0000000100)=@base={0x6, 0x4, 0x599, 0xa, 0x0, 0x1}, 0x48)
+bpf$MAP_LOOKUP_BATCH(0x18, &(0x7f00000000c0)={0x0, 0x0, 0x0, 0x0, 0xfffff359, r0}, 0x38)
+r1 = socket$inet6(0xa, 0x2, 0x0)
+setsockopt$inet6_udp_int(r1, 0x11, 0x66, &(0x7f00000004c0)=0x9, 0x4)
+r2 = creat(&(0x7f0000000540)='./file0\x00', 0x0)
+close(r2)
+socket$xdp(0x2c, 0x3, 0x0)
+r3 = socket$packet(0x11, 0x3, 0x300)
+setsockopt$packet_int(r3, 0x107, 0xa, &(0x7f0000000000)=0x2, 0x4)
+setsockopt$packet_tx_ring(r3, 0x107, 0xd, &(0x7f0000000040)=@req3={0x10000, 0x100000001, 0x10000, 0x1}, 0x1c)
+mount$9p_fd(0x0, &(0x7f0000000000)='./file0\x00', &(0x7f0000000640), 0x0, &(0x7f0000000200)={'trans=fd,', {'rfdno', 0x3d, r2}, 0x2c, {'wfdno', 0x3d, r3}})
+creat(&(0x7f0000000080)='./file0\x00', 0x42)
+bind$inet6(r1, &(0x7f0000000040)={0xa, 0xe22}, 0x1c)
+syz_emit_ethernet(0x46, &(0x7f0000000480)=ANY=[@ANYBLOB="ffffffffffe3ffffffffffff86dd600111fa00101100fe8000000000000000000000000000bbfe8000000000000000000000000000aa00000e22"], 0x0)
+
+2024/05/22 21:01:04 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x313d, Ip:0x8170cde2}
+21:01:04 executing program 0:
+r0 = bpf$MAP_CREATE(0x0, &(0x7f0000000100)=@base={0x6, 0x4, 0x599, 0xa, 0x0, 0x1}, 0x48)
+bpf$MAP_LOOKUP_BATCH(0x18, &(0x7f00000000c0)={0x0, 0x0, 0x0, 0x0, 0xfffff359, r0}, 0x38)
+r1 = socket$inet6(0xa, 0x2, 0x0)
+setsockopt$inet6_udp_int(r1, 0x11, 0x66, &(0x7f00000004c0)=0x9, 0x4)
+r2 = creat(&(0x7f0000000540)='./file0\x00', 0x0)
+close(r2)
+socket$xdp(0x2c, 0x3, 0x0)
+r3 = socket$packet(0x11, 0x3, 0x300)
+setsockopt$packet_int(r3, 0x107, 0xa, &(0x7f0000000000)=0x2, 0x4)
+setsockopt$packet_tx_ring(r3, 0x107, 0xd, &(0x7f0000000040)=@req3={0x10000, 0x100000001, 0x10000, 0x1}, 0x1c)
+mount$9p_fd(0x0, &(0x7f0000000000)='./file0\x00', &(0x7f0000000640), 0x0, &(0x7f0000000200)={'trans=fd,', {'rfdno', 0x3d, r2}, 0x2c, {'wfdno', 0x3d, r3}})
+creat(&(0x7f0000000080)='./file0\x00', 0x42)
+bind$inet6(r1, &(0x7f0000000040)={0xa, 0xe22}, 0x1c)
+syz_emit_ethernet(0x46, &(0x7f0000000480)=ANY=[@ANYBLOB="ffffffffffe3ffffffffffff86dd600111fa00101100fe8000000000000000000000000000bbfe8000000000000000000000000000aa00000e22"], 0x0)
+
+2024/05/22 21:01:04 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 21:01:04 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x350d, Ip:0x8170cdf5}
+2024/05/22 21:01:04 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x313d, Ip:0x8170cde2}
+2024/05/22 21:01:04 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 21:01:04 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x350d, Ip:0x8170cdf5}
+2024/05/22 21:01:04 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x1a63, Ip:0x8669a591}
+2024/05/22 21:01:04 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 21:01:04 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x49e2, Ip:0x8669a5a3}
+2024/05/22 21:01:04 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+2024/05/22 21:01:04 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x5547, Ip:0x81ebd996}
+2024/05/22 21:01:04 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 21:01:04 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x4a2d, Ip:0x869d2c26}
+2024/05/22 21:01:04 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x5629, Ip:0x869d2c16}
+2024/05/22 21:01:04 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 21:01:04 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x4a2d, Ip:0x869c6b5b}
+2024/05/22 21:01:04 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x5629, Ip:0x869c6b4b}
+2024/05/22 21:01:04 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x1bb7, Ip:0x81bb4bc6}
+2024/05/22 21:01:04 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x1bf4, Ip:0x81bb4bd8}
+2024/05/22 21:01:04 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2b09, Ip:0x8191ced7}
+2024/05/22 21:01:04 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 21:01:04 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x363c, Ip:0x8191cec7}
+2024/05/22 21:01:04 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+2024/05/22 21:01:04 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+2024/05/22 21:01:04 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x30be, Ip:0x85ff2f15}
+2024/05/22 21:01:04 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 21:01:04 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3858, Ip:0x85ff2f25}
+2024/05/22 21:01:04 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0xfc7, Ip:0x8684d496}
+2024/05/22 21:01:04 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x4823, Ip:0x8684d46e}
+2024/05/22 21:01:04 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3e9b, Ip:0x833c12dd}
+21:01:06 executing program 0:
+r0 = bpf$MAP_CREATE(0x0, &(0x7f0000000100)=@base={0x6, 0x4, 0x599, 0xa, 0x0, 0x1}, 0x48)
+bpf$MAP_LOOKUP_BATCH(0x18, &(0x7f00000000c0)={0x0, 0x0, 0x0, 0x0, 0xfffff359, r0}, 0x38)
+r1 = socket$inet6(0xa, 0x2, 0x0)
+setsockopt$inet6_udp_int(r1, 0x11, 0x66, &(0x7f00000004c0)=0x9, 0x4)
+r2 = creat(&(0x7f0000000540)='./file0\x00', 0x0)
+close(r2)
+socket$xdp(0x2c, 0x3, 0x0)
+r3 = socket$packet(0x11, 0x3, 0x300)
+setsockopt$packet_int(r3, 0x107, 0xa, &(0x7f0000000000)=0x2, 0x4)
+setsockopt$packet_tx_ring(r3, 0x107, 0xd, &(0x7f0000000040)=@req3={0x10000, 0x100000001, 0x10000, 0x1}, 0x1c)
+mount$9p_fd(0x0, &(0x7f0000000000)='./file0\x00', &(0x7f0000000640), 0x0, &(0x7f0000000200)={'trans=fd,', {'rfdno', 0x3d, r2}, 0x2c, {'wfdno', 0x3d, r3}})
+creat(&(0x7f0000000080)='./file0\x00', 0x42)
+bind$inet6(r1, &(0x7f0000000040)={0xa, 0xe22}, 0x1c)
+syz_emit_ethernet(0x46, &(0x7f0000000480)=ANY=[@ANYBLOB="ffffffffffe3ffffffffffff86dd600111fa00101100fe8000000000000000000000000000bbfe8000000000000000000000000000aa00000e22"], 0x0)
+
+21:01:08 executing program 0:
+r0 = bpf$MAP_CREATE(0x0, &(0x7f0000000100)=@base={0x6, 0x4, 0x599, 0xa, 0x0, 0x1}, 0x48)
+bpf$MAP_LOOKUP_BATCH(0x18, &(0x7f00000000c0)={0x0, 0x0, 0x0, 0x0, 0xfffff359, r0}, 0x38)
+r1 = socket$inet6(0xa, 0x2, 0x0)
+setsockopt$inet6_udp_int(r1, 0x11, 0x66, &(0x7f00000004c0)=0x9, 0x4)
+r2 = creat(&(0x7f0000000540)='./file0\x00', 0x0)
+close(r2)
+socket$xdp(0x2c, 0x3, 0x0)
+r3 = socket$packet(0x11, 0x3, 0x300)
+setsockopt$packet_int(r3, 0x107, 0xa, &(0x7f0000000000)=0x2, 0x4)
+setsockopt$packet_tx_ring(r3, 0x107, 0xd, &(0x7f0000000040)=@req3={0x10000, 0x100000001, 0x10000, 0x1}, 0x1c)
+mount$9p_fd(0x0, &(0x7f0000000000)='./file0\x00', &(0x7f0000000640), 0x0, &(0x7f0000000200)={'trans=fd,', {'rfdno', 0x3d, r2}, 0x2c, {'wfdno', 0x3d, r3}})
+creat(&(0x7f0000000080)='./file0\x00', 0x42)
+bind$inet6(r1, &(0x7f0000000040)={0xa, 0xe22}, 0x1c)
+syz_emit_ethernet(0x46, &(0x7f0000000480)=ANY=[@ANYBLOB="ffffffffffe3ffffffffffff86dd600111fa00101100fe8000000000000000000000000000bbfe8000000000000000000000000000aa00000e22"], 0x0)
+
+21:01:09 executing program 0:
+r0 = bpf$MAP_CREATE(0x0, &(0x7f0000000100)=@base={0x6, 0x4, 0x599, 0xa, 0x0, 0x1}, 0x48)
+bpf$MAP_LOOKUP_BATCH(0x18, &(0x7f00000000c0)={0x0, 0x0, 0x0, 0x0, 0xfffff359, r0}, 0x38)
+r1 = socket$inet6(0xa, 0x2, 0x0)
+setsockopt$inet6_udp_int(r1, 0x11, 0x66, &(0x7f00000004c0)=0x9, 0x4)
+r2 = creat(&(0x7f0000000540)='./file0\x00', 0x0)
+close(r2)
+socket$xdp(0x2c, 0x3, 0x0)
+r3 = socket$packet(0x11, 0x3, 0x300)
+setsockopt$packet_int(r3, 0x107, 0xa, &(0x7f0000000000)=0x2, 0x4)
+setsockopt$packet_tx_ring(r3, 0x107, 0xd, &(0x7f0000000040)=@req3={0x10000, 0x100000001, 0x10000, 0x1}, 0x1c)
+mount$9p_fd(0x0, &(0x7f0000000000)='./file0\x00', &(0x7f0000000640), 0x0, &(0x7f0000000200)={'trans=fd,', {'rfdno', 0x3d, r2}, 0x2c, {'wfdno', 0x3d, r3}})
+creat(&(0x7f0000000080)='./file0\x00', 0x42)
+bind$inet6(r1, &(0x7f0000000040)={0xa, 0xe22}, 0x1c)
+syz_emit_ethernet(0x46, &(0x7f0000000480)=ANY=[@ANYBLOB="ffffffffffe3ffffffffffff86dd600111fa00101100fe8000000000000000000000000000bbfe8000000000000000000000000000aa00000e22"], 0x0)
+
+21:01:11 executing program 0:
+r0 = bpf$MAP_CREATE(0x0, &(0x7f0000000100)=@base={0x6, 0x4, 0x599, 0xa, 0x0, 0x1}, 0x48)
+bpf$MAP_LOOKUP_BATCH(0x18, &(0x7f00000000c0)={0x0, 0x0, 0x0, 0x0, 0xfffff359, r0}, 0x38)
+r1 = socket$inet6(0xa, 0x2, 0x0)
+setsockopt$inet6_udp_int(r1, 0x11, 0x66, &(0x7f00000004c0)=0x9, 0x4)
+r2 = creat(&(0x7f0000000540)='./file0\x00', 0x0)
+close(r2)
+socket$xdp(0x2c, 0x3, 0x0)
+r3 = socket$packet(0x11, 0x3, 0x300)
+setsockopt$packet_int(r3, 0x107, 0xa, &(0x7f0000000000)=0x2, 0x4)
+setsockopt$packet_tx_ring(r3, 0x107, 0xd, &(0x7f0000000040)=@req3={0x10000, 0x100000001, 0x10000, 0x1}, 0x1c)
+mount$9p_fd(0x0, &(0x7f0000000000)='./file0\x00', &(0x7f0000000640), 0x0, &(0x7f0000000200)={'trans=fd,', {'rfdno', 0x3d, r2}, 0x2c, {'wfdno', 0x3d, r3}})
+creat(&(0x7f0000000080)='./file0\x00', 0x42)
+bind$inet6(r1, &(0x7f0000000040)={0xa, 0xe22}, 0x1c)
+syz_emit_ethernet(0x46, &(0x7f0000000480)=ANY=[@ANYBLOB="ffffffffffe3ffffffffffff86dd600111fa00101100fe8000000000000000000000000000bbfe8000000000000000000000000000aa00000e22"], 0x0)
+
+21:01:12 executing program 0:
+r0 = bpf$MAP_CREATE(0x0, &(0x7f0000000100)=@base={0x6, 0x4, 0x599, 0xa, 0x0, 0x1}, 0x48)
+bpf$MAP_LOOKUP_BATCH(0x18, &(0x7f00000000c0)={0x0, 0x0, 0x0, 0x0, 0xfffff359, r0}, 0x38)
+r1 = socket$inet6(0xa, 0x2, 0x0)
+setsockopt$inet6_udp_int(r1, 0x11, 0x66, &(0x7f00000004c0)=0x9, 0x4)
+r2 = creat(&(0x7f0000000540)='./file0\x00', 0x0)
+close(r2)
+socket$xdp(0x2c, 0x3, 0x0)
+r3 = socket$packet(0x11, 0x3, 0x300)
+setsockopt$packet_int(r3, 0x107, 0xa, &(0x7f0000000000)=0x2, 0x4)
+setsockopt$packet_tx_ring(r3, 0x107, 0xd, &(0x7f0000000040)=@req3={0x10000, 0x100000001, 0x10000, 0x1}, 0x1c)
+mount$9p_fd(0x0, &(0x7f0000000000)='./file0\x00', &(0x7f0000000640), 0x0, &(0x7f0000000200)={'trans=fd,', {'rfdno', 0x3d, r2}, 0x2c, {'wfdno', 0x3d, r3}})
+creat(&(0x7f0000000080)='./file0\x00', 0x42)
+bind$inet6(r1, &(0x7f0000000040)={0xa, 0xe22}, 0x1c)
+syz_emit_ethernet(0x46, &(0x7f0000000480)=ANY=[@ANYBLOB="ffffffffffe3ffffffffffff86dd600111fa00101100fe8000000000000000000000000000bbfe8000000000000000000000000000aa00000e22"], 0x0)
+
+21:01:14 executing program 0:
+r0 = bpf$MAP_CREATE(0x0, &(0x7f0000000100)=@base={0x6, 0x4, 0x599, 0xa, 0x0, 0x1}, 0x48)
+bpf$MAP_LOOKUP_BATCH(0x18, &(0x7f00000000c0)={0x0, 0x0, 0x0, 0x0, 0xfffff359, r0}, 0x38)
+r1 = socket$inet6(0xa, 0x2, 0x0)
+setsockopt$inet6_udp_int(r1, 0x11, 0x66, &(0x7f00000004c0)=0x9, 0x4)
+r2 = creat(&(0x7f0000000540)='./file0\x00', 0x0)
+close(r2)
+socket$xdp(0x2c, 0x3, 0x0)
+r3 = socket$packet(0x11, 0x3, 0x300)
+setsockopt$packet_int(r3, 0x107, 0xa, &(0x7f0000000000)=0x2, 0x4)
+setsockopt$packet_tx_ring(r3, 0x107, 0xd, &(0x7f0000000040)=@req3={0x10000, 0x100000001, 0x10000, 0x1}, 0x1c)
+mount$9p_fd(0x0, &(0x7f0000000000)='./file0\x00', &(0x7f0000000640), 0x0, &(0x7f0000000200)={'trans=fd,', {'rfdno', 0x3d, r2}, 0x2c, {'wfdno', 0x3d, r3}})
+creat(&(0x7f0000000080)='./file0\x00', 0x42)
+bind$inet6(r1, &(0x7f0000000040)={0xa, 0xe22}, 0x1c)
+syz_emit_ethernet(0x46, &(0x7f0000000480)=ANY=[@ANYBLOB="ffffffffffe3ffffffffffff86dd600111fa00101100fe8000000000000000000000000000bbfe8000000000000000000000000000aa00000e22"], 0x0)
+
+21:01:15 executing program 0:
+r0 = bpf$MAP_CREATE(0x0, &(0x7f0000000100)=@base={0x6, 0x4, 0x599, 0xa, 0x0, 0x1}, 0x48)
+bpf$MAP_LOOKUP_BATCH(0x18, &(0x7f00000000c0)={0x0, 0x0, 0x0, 0x0, 0xfffff359, r0}, 0x38)
+r1 = socket$inet6(0xa, 0x2, 0x0)
+setsockopt$inet6_udp_int(r1, 0x11, 0x66, &(0x7f00000004c0)=0x9, 0x4)
+r2 = creat(&(0x7f0000000540)='./file0\x00', 0x0)
+close(r2)
+socket$xdp(0x2c, 0x3, 0x0)
+r3 = socket$packet(0x11, 0x3, 0x300)
+setsockopt$packet_int(r3, 0x107, 0xa, &(0x7f0000000000)=0x2, 0x4)
+setsockopt$packet_tx_ring(r3, 0x107, 0xd, &(0x7f0000000040)=@req3={0x10000, 0x100000001, 0x10000, 0x1}, 0x1c)
+mount$9p_fd(0x0, &(0x7f0000000000)='./file0\x00', &(0x7f0000000640), 0x0, &(0x7f0000000200)={'trans=fd,', {'rfdno', 0x3d, r2}, 0x2c, {'wfdno', 0x3d, r3}})
+creat(&(0x7f0000000080)='./file0\x00', 0x42)
+bind$inet6(r1, &(0x7f0000000040)={0xa, 0xe22}, 0x1c)
+syz_emit_ethernet(0x46, &(0x7f0000000480)=ANY=[@ANYBLOB="ffffffffffe3ffffffffffff86dd600111fa00101100fe8000000000000000000000000000bbfe8000000000000000000000000000aa00000e22"], 0x0)
+
+21:01:17 executing program 0:
+r0 = bpf$MAP_CREATE(0x0, &(0x7f0000000100)=@base={0x6, 0x4, 0x599, 0xa, 0x0, 0x1}, 0x48)
+bpf$MAP_LOOKUP_BATCH(0x18, &(0x7f00000000c0)={0x0, 0x0, 0x0, 0x0, 0xfffff359, r0}, 0x38)
+r1 = socket$inet6(0xa, 0x2, 0x0)
+setsockopt$inet6_udp_int(r1, 0x11, 0x66, &(0x7f00000004c0)=0x9, 0x4)
+r2 = creat(&(0x7f0000000540)='./file0\x00', 0x0)
+close(r2)
+socket$xdp(0x2c, 0x3, 0x0)
+r3 = socket$packet(0x11, 0x3, 0x300)
+setsockopt$packet_int(r3, 0x107, 0xa, &(0x7f0000000000)=0x2, 0x4)
+setsockopt$packet_tx_ring(r3, 0x107, 0xd, &(0x7f0000000040)=@req3={0x10000, 0x100000001, 0x10000, 0x1}, 0x1c)
+mount$9p_fd(0x0, &(0x7f0000000000)='./file0\x00', &(0x7f0000000640), 0x0, &(0x7f0000000200)={'trans=fd,', {'rfdno', 0x3d, r2}, 0x2c, {'wfdno', 0x3d, r3}})
+creat(&(0x7f0000000080)='./file0\x00', 0x42)
+bind$inet6(r1, &(0x7f0000000040)={0xa, 0xe22}, 0x1c)
+syz_emit_ethernet(0x46, &(0x7f0000000480)=ANY=[@ANYBLOB="ffffffffffe3ffffffffffff86dd600111fa00101100fe8000000000000000000000000000bbfe8000000000000000000000000000aa00000e22"], 0x0)
+
+21:01:19 executing program 0:
+r0 = bpf$MAP_CREATE(0x0, &(0x7f0000000100)=@base={0x6, 0x4, 0x599, 0xa, 0x0, 0x1}, 0x48)
+bpf$MAP_LOOKUP_BATCH(0x18, &(0x7f00000000c0)={0x0, 0x0, 0x0, 0x0, 0xfffff359, r0}, 0x38)
+r1 = socket$inet6(0xa, 0x2, 0x0)
+setsockopt$inet6_udp_int(r1, 0x11, 0x66, &(0x7f00000004c0)=0x9, 0x4)
+r2 = creat(&(0x7f0000000540)='./file0\x00', 0x0)
+close(r2)
+socket$xdp(0x2c, 0x3, 0x0)
+r3 = socket$packet(0x11, 0x3, 0x300)
+setsockopt$packet_int(r3, 0x107, 0xa, &(0x7f0000000000)=0x2, 0x4)
+setsockopt$packet_tx_ring(r3, 0x107, 0xd, &(0x7f0000000040)=@req3={0x10000, 0x100000001, 0x10000, 0x1}, 0x1c)
+mount$9p_fd(0x0, &(0x7f0000000000)='./file0\x00', &(0x7f0000000640), 0x0, &(0x7f0000000200)={'trans=fd,', {'rfdno', 0x3d, r2}, 0x2c, {'wfdno', 0x3d, r3}})
+creat(&(0x7f0000000080)='./file0\x00', 0x42)
+bind$inet6(r1, &(0x7f0000000040)={0xa, 0xe22}, 0x1c)
+syz_emit_ethernet(0x46, &(0x7f0000000480)=ANY=[@ANYBLOB="ffffffffffe3ffffffffffff86dd600111fa00101100fe8000000000000000000000000000bbfe8000000000000000000000000000aa00000e22"], 0x0)
+
+21:01:20 executing program 0:
+r0 = bpf$MAP_CREATE(0x0, &(0x7f0000000100)=@base={0x6, 0x4, 0x599, 0xa, 0x0, 0x1}, 0x48)
+bpf$MAP_LOOKUP_BATCH(0x18, &(0x7f00000000c0)={0x0, 0x0, 0x0, 0x0, 0xfffff359, r0}, 0x38)
+r1 = socket$inet6(0xa, 0x2, 0x0)
+setsockopt$inet6_udp_int(r1, 0x11, 0x66, &(0x7f00000004c0)=0x9, 0x4)
+r2 = creat(&(0x7f0000000540)='./file0\x00', 0x0)
+close(r2)
+socket$xdp(0x2c, 0x3, 0x0)
+r3 = socket$packet(0x11, 0x3, 0x300)
+setsockopt$packet_int(r3, 0x107, 0xa, &(0x7f0000000000)=0x2, 0x4)
+setsockopt$packet_tx_ring(r3, 0x107, 0xd, &(0x7f0000000040)=@req3={0x10000, 0x100000001, 0x10000, 0x1}, 0x1c)
+mount$9p_fd(0x0, &(0x7f0000000000)='./file0\x00', &(0x7f0000000640), 0x0, &(0x7f0000000200)={'trans=fd,', {'rfdno', 0x3d, r2}, 0x2c, {'wfdno', 0x3d, r3}})
+creat(&(0x7f0000000080)='./file0\x00', 0x42)
+bind$inet6(r1, &(0x7f0000000040)={0xa, 0xe22}, 0x1c)
+syz_emit_ethernet(0x46, &(0x7f0000000480)=ANY=[@ANYBLOB="ffffffffffe3ffffffffffff86dd600111fa00101100fe8000000000000000000000000000bbfe8000000000000000000000000000aa00000e22"], 0x0)
+
+21:01:22 executing program 0:
+r0 = bpf$MAP_CREATE(0x0, &(0x7f0000000100)=@base={0x6, 0x4, 0x599, 0xa, 0x0, 0x1}, 0x48)
+bpf$MAP_LOOKUP_BATCH(0x18, &(0x7f00000000c0)={0x0, 0x0, 0x0, 0x0, 0xfffff359, r0}, 0x38)
+r1 = socket$inet6(0xa, 0x2, 0x0)
+setsockopt$inet6_udp_int(r1, 0x11, 0x66, &(0x7f00000004c0)=0x9, 0x4)
+r2 = creat(&(0x7f0000000540)='./file0\x00', 0x0)
+close(r2)
+socket$xdp(0x2c, 0x3, 0x0)
+r3 = socket$packet(0x11, 0x3, 0x300)
+setsockopt$packet_int(r3, 0x107, 0xa, &(0x7f0000000000)=0x2, 0x4)
+setsockopt$packet_tx_ring(r3, 0x107, 0xd, &(0x7f0000000040)=@req3={0x10000, 0x100000001, 0x10000, 0x1}, 0x1c)
+mount$9p_fd(0x0, &(0x7f0000000000)='./file0\x00', &(0x7f0000000640), 0x0, &(0x7f0000000200)={'trans=fd,', {'rfdno', 0x3d, r2}, 0x2c, {'wfdno', 0x3d, r3}})
+creat(&(0x7f0000000080)='./file0\x00', 0x42)
+bind$inet6(r1, &(0x7f0000000040)={0xa, 0xe22}, 0x1c)
+syz_emit_ethernet(0x46, &(0x7f0000000480)=ANY=[@ANYBLOB="ffffffffffe3ffffffffffff86dd600111fa00101100fe8000000000000000000000000000bbfe8000000000000000000000000000aa00000e22"], 0x0)
+
+21:01:23 executing program 0:
+r0 = bpf$MAP_CREATE(0x0, &(0x7f0000000100)=@base={0x6, 0x4, 0x599, 0xa, 0x0, 0x1}, 0x48)
+bpf$MAP_LOOKUP_BATCH(0x18, &(0x7f00000000c0)={0x0, 0x0, 0x0, 0x0, 0xfffff359, r0}, 0x38)
+r1 = socket$inet6(0xa, 0x2, 0x0)
+setsockopt$inet6_udp_int(r1, 0x11, 0x66, &(0x7f00000004c0)=0x9, 0x4)
+r2 = creat(&(0x7f0000000540)='./file0\x00', 0x0)
+close(r2)
+socket$xdp(0x2c, 0x3, 0x0)
+r3 = socket$packet(0x11, 0x3, 0x300)
+setsockopt$packet_int(r3, 0x107, 0xa, &(0x7f0000000000)=0x2, 0x4)
+setsockopt$packet_tx_ring(r3, 0x107, 0xd, &(0x7f0000000040)=@req3={0x10000, 0x100000001, 0x10000, 0x1}, 0x1c)
+mount$9p_fd(0x0, &(0x7f0000000000)='./file0\x00', &(0x7f0000000640), 0x0, &(0x7f0000000200)={'trans=fd,', {'rfdno', 0x3d, r2}, 0x2c, {'wfdno', 0x3d, r3}})
+creat(&(0x7f0000000080)='./file0\x00', 0x42)
+bind$inet6(r1, &(0x7f0000000040)={0xa, 0xe22}, 0x1c)
+syz_emit_ethernet(0x46, &(0x7f0000000480)=ANY=[@ANYBLOB="ffffffffffe3ffffffffffff86dd600111fa00101100fe8000000000000000000000000000bbfe8000000000000000000000000000aa00000e22"], 0x0)
+
+21:01:25 executing program 0:
+r0 = bpf$MAP_CREATE(0x0, &(0x7f0000000100)=@base={0x6, 0x4, 0x599, 0xa, 0x0, 0x1}, 0x48)
+bpf$MAP_LOOKUP_BATCH(0x18, &(0x7f00000000c0)={0x0, 0x0, 0x0, 0x0, 0xfffff359, r0}, 0x38)
+r1 = socket$inet6(0xa, 0x2, 0x0)
+setsockopt$inet6_udp_int(r1, 0x11, 0x66, &(0x7f00000004c0)=0x9, 0x4)
+r2 = creat(&(0x7f0000000540)='./file0\x00', 0x0)
+close(r2)
+socket$xdp(0x2c, 0x3, 0x0)
+r3 = socket$packet(0x11, 0x3, 0x300)
+setsockopt$packet_int(r3, 0x107, 0xa, &(0x7f0000000000)=0x2, 0x4)
+setsockopt$packet_tx_ring(r3, 0x107, 0xd, &(0x7f0000000040)=@req3={0x10000, 0x100000001, 0x10000, 0x1}, 0x1c)
+mount$9p_fd(0x0, &(0x7f0000000000)='./file0\x00', &(0x7f0000000640), 0x0, &(0x7f0000000200)={'trans=fd,', {'rfdno', 0x3d, r2}, 0x2c, {'wfdno', 0x3d, r3}})
+creat(&(0x7f0000000080)='./file0\x00', 0x42)
+bind$inet6(r1, &(0x7f0000000040)={0xa, 0xe22}, 0x1c)
+syz_emit_ethernet(0x46, &(0x7f0000000480)=ANY=[@ANYBLOB="ffffffffffe3ffffffffffff86dd600111fa00101100fe8000000000000000000000000000bbfe8000000000000000000000000000aa00000e22"], 0x0)
+
+21:01:26 executing program 0:
+r0 = bpf$MAP_CREATE(0x0, &(0x7f0000000100)=@base={0x6, 0x4, 0x599, 0xa, 0x0, 0x1}, 0x48)
+bpf$MAP_LOOKUP_BATCH(0x18, &(0x7f00000000c0)={0x0, 0x0, 0x0, 0x0, 0xfffff359, r0}, 0x38)
+r1 = socket$inet6(0xa, 0x2, 0x0)
+setsockopt$inet6_udp_int(r1, 0x11, 0x66, &(0x7f00000004c0)=0x9, 0x4)
+r2 = creat(&(0x7f0000000540)='./file0\x00', 0x0)
+close(r2)
+socket$xdp(0x2c, 0x3, 0x0)
+r3 = socket$packet(0x11, 0x3, 0x300)
+setsockopt$packet_int(r3, 0x107, 0xa, &(0x7f0000000000)=0x2, 0x4)
+setsockopt$packet_tx_ring(r3, 0x107, 0xd, &(0x7f0000000040)=@req3={0x10000, 0x100000001, 0x10000, 0x1}, 0x1c)
+mount$9p_fd(0x0, &(0x7f0000000000)='./file0\x00', &(0x7f0000000640), 0x0, &(0x7f0000000200)={'trans=fd,', {'rfdno', 0x3d, r2}, 0x2c, {'wfdno', 0x3d, r3}})
+creat(&(0x7f0000000080)='./file0\x00', 0x42)
+bind$inet6(r1, &(0x7f0000000040)={0xa, 0xe22}, 0x1c)
+syz_emit_ethernet(0x46, &(0x7f0000000480)=ANY=[@ANYBLOB="ffffffffffe3ffffffffffff86dd600111fa00101100fe8000000000000000000000000000bbfe8000000000000000000000000000aa00000e22"], 0x0)
+
+21:01:28 executing program 0:
+r0 = bpf$MAP_CREATE(0x0, &(0x7f0000000100)=@base={0x6, 0x4, 0x599, 0xa, 0x0, 0x1}, 0x48)
+bpf$MAP_LOOKUP_BATCH(0x18, &(0x7f00000000c0)={0x0, 0x0, 0x0, 0x0, 0xfffff359, r0}, 0x38)
+r1 = socket$inet6(0xa, 0x2, 0x0)
+setsockopt$inet6_udp_int(r1, 0x11, 0x66, &(0x7f00000004c0)=0x9, 0x4)
+r2 = creat(&(0x7f0000000540)='./file0\x00', 0x0)
+close(r2)
+socket$xdp(0x2c, 0x3, 0x0)
+r3 = socket$packet(0x11, 0x3, 0x300)
+setsockopt$packet_int(r3, 0x107, 0xa, &(0x7f0000000000)=0x2, 0x4)
+setsockopt$packet_tx_ring(r3, 0x107, 0xd, &(0x7f0000000040)=@req3={0x10000, 0x100000001, 0x10000, 0x1}, 0x1c)
+mount$9p_fd(0x0, &(0x7f0000000000)='./file0\x00', &(0x7f0000000640), 0x0, &(0x7f0000000200)={'trans=fd,', {'rfdno', 0x3d, r2}, 0x2c, {'wfdno', 0x3d, r3}})
+creat(&(0x7f0000000080)='./file0\x00', 0x42)
+bind$inet6(r1, &(0x7f0000000040)={0xa, 0xe22}, 0x1c)
+syz_emit_ethernet(0x46, &(0x7f0000000480)=ANY=[@ANYBLOB="ffffffffffe3ffffffffffff86dd600111fa00101100fe8000000000000000000000000000bbfe8000000000000000000000000000aa00000e22"], 0x0)
+
+21:01:29 executing program 0:
+r0 = bpf$MAP_CREATE(0x0, &(0x7f0000000100)=@base={0x6, 0x4, 0x599, 0xa, 0x0, 0x1}, 0x48)
+bpf$MAP_LOOKUP_BATCH(0x18, &(0x7f00000000c0)={0x0, 0x0, 0x0, 0x0, 0xfffff359, r0}, 0x38)
+r1 = socket$inet6(0xa, 0x2, 0x0)
+setsockopt$inet6_udp_int(r1, 0x11, 0x66, &(0x7f00000004c0)=0x9, 0x4)
+r2 = creat(&(0x7f0000000540)='./file0\x00', 0x0)
+close(r2)
+socket$xdp(0x2c, 0x3, 0x0)
+r3 = socket$packet(0x11, 0x3, 0x300)
+setsockopt$packet_int(r3, 0x107, 0xa, &(0x7f0000000000)=0x2, 0x4)
+setsockopt$packet_tx_ring(r3, 0x107, 0xd, &(0x7f0000000040)=@req3={0x10000, 0x100000001, 0x10000, 0x1}, 0x1c)
+mount$9p_fd(0x0, &(0x7f0000000000)='./file0\x00', &(0x7f0000000640), 0x0, &(0x7f0000000200)={'trans=fd,', {'rfdno', 0x3d, r2}, 0x2c, {'wfdno', 0x3d, r3}})
+creat(&(0x7f0000000080)='./file0\x00', 0x42)
+bind$inet6(r1, &(0x7f0000000040)={0xa, 0xe22}, 0x1c)
+syz_emit_ethernet(0x46, &(0x7f0000000480)=ANY=[@ANYBLOB="ffffffffffe3ffffffffffff86dd600111fa00101100fe8000000000000000000000000000bbfe8000000000000000000000000000aa00000e22"], 0x0)
+
+21:01:31 executing program 0:
+r0 = bpf$MAP_CREATE(0x0, &(0x7f0000000100)=@base={0x6, 0x4, 0x599, 0xa, 0x0, 0x1}, 0x48)
+bpf$MAP_LOOKUP_BATCH(0x18, &(0x7f00000000c0)={0x0, 0x0, 0x0, 0x0, 0xfffff359, r0}, 0x38)
+r1 = socket$inet6(0xa, 0x2, 0x0)
+setsockopt$inet6_udp_int(r1, 0x11, 0x66, &(0x7f00000004c0)=0x9, 0x4)
+r2 = creat(&(0x7f0000000540)='./file0\x00', 0x0)
+close(r2)
+socket$xdp(0x2c, 0x3, 0x0)
+r3 = socket$packet(0x11, 0x3, 0x300)
+setsockopt$packet_int(r3, 0x107, 0xa, &(0x7f0000000000)=0x2, 0x4)
+setsockopt$packet_tx_ring(r3, 0x107, 0xd, &(0x7f0000000040)=@req3={0x10000, 0x100000001, 0x10000, 0x1}, 0x1c)
+mount$9p_fd(0x0, &(0x7f0000000000)='./file0\x00', &(0x7f0000000640), 0x0, &(0x7f0000000200)={'trans=fd,', {'rfdno', 0x3d, r2}, 0x2c, {'wfdno', 0x3d, r3}})
+creat(&(0x7f0000000080)='./file0\x00', 0x42)
+bind$inet6(r1, &(0x7f0000000040)={0xa, 0xe22}, 0x1c)
+syz_emit_ethernet(0x46, &(0x7f0000000480)=ANY=[@ANYBLOB="ffffffffffe3ffffffffffff86dd600111fa00101100fe8000000000000000000000000000bbfe8000000000000000000000000000aa00000e22"], 0x0)
+
+21:01:32 executing program 0:
+r0 = socket$inet6_tcp(0xa, 0x1, 0x0)
+r1 = bpf$MAP_CREATE(0x0, &(0x7f0000000100)=@base={0x9, 0x4, 0x7fe2, 0x1}, 0x48)
+r2 = bpf$PROG_LOAD(0x5, &(0x7f00000000c0)={0x11, 0xc, &(0x7f0000000440)=ANY=[@ANYBLOB="1800000000000000000000000000000018110000", @ANYRES32=r1, @ANYBLOB="0000000000000000b7080000000000007b8af8ff00000000bfa200000000000007020000f8ffffffb703000008000000b704000000000000850000000300000095"], &(0x7f0000000240)='GPL\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f0000000000)={&(0x7f0000000080)='sched_switch\x00', r2}, 0x10)
+socketpair$unix(0x1, 0x1, 0x0, &(0x7f0000000040)={0xffffffffffffffff, <r3=>0xffffffffffffffff})
+r4 = memfd_create(&(0x7f0000000300)='+\x8b\x8a\x16\x11O\xdd\xdfk(F\x99\xdf\x92\xd5>oJ\x02u\x9b\xafa\xac\x06\x9c&\xf5\xe3j\xfa\tcqM\xb8R\x86\xd9\xd2.\x9f\x12\xed\x10\f\xbd\x1a|\x8a\xbb\xda\xcfY\x98gU@\xf2M\xc0\xb5\xdf\x9a\x8d\xdb,n\xae\x0eT\x80\x8c\xfd\xd7\xb0\x94\x82t\x96\rKx\xc5\x9b\x8c\x87\x96\x8bc\xbc\xee\xcc\x9f\xe3F\x99V4\x8e;M\xa9\x823\xe3\xb3mG\x8f\xdb\xed\x1b\x05\xec\xfc\xd1\xb5\xfd\xec@\xdeU\xdd\xa4\xc1\xe4L)\x8e\xe5\x91\x8e\xd4\x89\xef\x95T\x05G\xac\xb8\xc1: )mh\xc7\xf1?\xbb\x13;\xad\x95\xd70\xb6\x0e\x7f\x84r\x0e\xbf\xc5\xf6\xd4\xdd\t\x14\x18\xf7\xefi\x93\x03\xd2\xf2\bK\"\xd2\xb5\xaa\xb8\xc8\xe0\xac\x99\xe8su\xcd\xc3E\x12\xd7\xdd\x96!\x16Tu\xe3\xf0\x84#R\xd9\xe3~Wj\xb0r\x87\'\xea\a\xcfOeK\x9daW\xf4\x87@\x9c\xf3\xf1K\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x91\xe6\xdb\xc2\xa5h\'\xdfIn\x97\x0263~\xeb\xbe(i\n\xc2k4\x7f\x12\xa9e`SOs\x8c\xb4\xe7FeQ\xc6$\x92j_U\xfa\b\xea\xb0bYkW\xc0\x05\aC{\xcc\x03T\x17\xa5Sk\x87P\xc2\x97D\xb2\xfa\x1b\x9fe\xf4\x10\x1a\xad\x92\xce\x88\x1b\xbc\xe14\x19\xaa\xd3\r\xf4\xa2\xc3\x9e=\xa0 \xe6j\xe5\x85\xf8\x97\x03\x15\xaa\x920\xdcrI\xd8\b\xfb\xc7\xe7xX\x00>d\xbb\xa71\xad\x9a\xfb\xe6\x13\x87\x93\\\xe5W-\xfc\xfd\xb8O\xb9j\xb8\xf2\x9dx\xb2\x86\xad\x92', 0x3)
+write$binfmt_elf64(r4, &(0x7f0000000000)=ANY=[], 0x78)
+sendfile(r3, r4, &(0x7f00000001c0), 0x8)
+fcntl$addseals(r4, 0x409, 0x8)
+fallocate(r4, 0x3, 0x0, 0x3)
+close_range(r0, 0xffffffffffffffff, 0x0)
+
+2024/05/22 21:01:34 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x313d, Ip:0x8170cde2}
+2024/05/22 21:01:34 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 21:01:34 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x350d, Ip:0x8170cdf5}
+2024/05/22 21:01:34 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2b8d, Ip:0x8170f374}
+2024/05/22 21:01:34 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x313d, Ip:0x8170cde2}
+2024/05/22 21:01:34 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+21:01:34 executing program 0:
+r0 = socket$inet6_tcp(0xa, 0x1, 0x0)
+r1 = bpf$MAP_CREATE(0x0, &(0x7f0000000100)=@base={0x9, 0x4, 0x7fe2, 0x1}, 0x48)
+r2 = bpf$PROG_LOAD(0x5, &(0x7f00000000c0)={0x11, 0xc, &(0x7f0000000440)=ANY=[@ANYBLOB="1800000000000000000000000000000018110000", @ANYRES32=r1, @ANYBLOB="0000000000000000b7080000000000007b8af8ff00000000bfa200000000000007020000f8ffffffb703000008000000b704000000000000850000000300000095"], &(0x7f0000000240)='GPL\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f0000000000)={&(0x7f0000000080)='sched_switch\x00', r2}, 0x10)
+socketpair$unix(0x1, 0x1, 0x0, &(0x7f0000000040)={0xffffffffffffffff, <r3=>0xffffffffffffffff})
+r4 = memfd_create(&(0x7f0000000300)='+\x8b\x8a\x16\x11O\xdd\xdfk(F\x99\xdf\x92\xd5>oJ\x02u\x9b\xafa\xac\x06\x9c&\xf5\xe3j\xfa\tcqM\xb8R\x86\xd9\xd2.\x9f\x12\xed\x10\f\xbd\x1a|\x8a\xbb\xda\xcfY\x98gU@\xf2M\xc0\xb5\xdf\x9a\x8d\xdb,n\xae\x0eT\x80\x8c\xfd\xd7\xb0\x94\x82t\x96\rKx\xc5\x9b\x8c\x87\x96\x8bc\xbc\xee\xcc\x9f\xe3F\x99V4\x8e;M\xa9\x823\xe3\xb3mG\x8f\xdb\xed\x1b\x05\xec\xfc\xd1\xb5\xfd\xec@\xdeU\xdd\xa4\xc1\xe4L)\x8e\xe5\x91\x8e\xd4\x89\xef\x95T\x05G\xac\xb8\xc1: )mh\xc7\xf1?\xbb\x13;\xad\x95\xd70\xb6\x0e\x7f\x84r\x0e\xbf\xc5\xf6\xd4\xdd\t\x14\x18\xf7\xefi\x93\x03\xd2\xf2\bK\"\xd2\xb5\xaa\xb8\xc8\xe0\xac\x99\xe8su\xcd\xc3E\x12\xd7\xdd\x96!\x16Tu\xe3\xf0\x84#R\xd9\xe3~Wj\xb0r\x87\'\xea\a\xcfOeK\x9daW\xf4\x87@\x9c\xf3\xf1K\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x91\xe6\xdb\xc2\xa5h\'\xdfIn\x97\x0263~\xeb\xbe(i\n\xc2k4\x7f\x12\xa9e`SOs\x8c\xb4\xe7FeQ\xc6$\x92j_U\xfa\b\xea\xb0bYkW\xc0\x05\aC{\xcc\x03T\x17\xa5Sk\x87P\xc2\x97D\xb2\xfa\x1b\x9fe\xf4\x10\x1a\xad\x92\xce\x88\x1b\xbc\xe14\x19\xaa\xd3\r\xf4\xa2\xc3\x9e=\xa0 \xe6j\xe5\x85\xf8\x97\x03\x15\xaa\x920\xdcrI\xd8\b\xfb\xc7\xe7xX\x00>d\xbb\xa71\xad\x9a\xfb\xe6\x13\x87\x93\\\xe5W-\xfc\xfd\xb8O\xb9j\xb8\xf2\x9dx\xb2\x86\xad\x92', 0x3)
+write$binfmt_elf64(r4, &(0x7f0000000000)=ANY=[], 0x78)
+sendfile(r3, r4, &(0x7f00000001c0), 0x8)
+fcntl$addseals(r4, 0x409, 0x8)
+fallocate(r4, 0x3, 0x0, 0x3)
+close_range(r0, 0xffffffffffffffff, 0x0)
+
+2024/05/22 21:01:34 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x350d, Ip:0x8170cdf5}
+2024/05/22 21:01:34 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x12a3, Ip:0x81718809}
+2024/05/22 21:01:34 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x313d, Ip:0x8170cde2}
+2024/05/22 21:01:34 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 21:01:34 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x350d, Ip:0x8170cdf5}
+2024/05/22 21:01:34 cfuCover: ipc.CustomCov{Id:0xc001, Val:0xc46, Ip:0x81b34cde}
+2024/05/22 21:01:34 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x1762, Ip:0x81b34cee}
+2024/05/22 21:01:34 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 21:01:34 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3e9b, Ip:0x833c5e4c}
+2024/05/22 21:01:34 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 21:01:34 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x4a13, Ip:0x81b4700f}
+2024/05/22 21:01:34 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x536e, Ip:0x81b46ffd}
+21:01:36 executing program 0:
+r0 = socket$inet6_tcp(0xa, 0x1, 0x0)
+r1 = bpf$MAP_CREATE(0x0, &(0x7f0000000100)=@base={0x9, 0x4, 0x7fe2, 0x1}, 0x48)
+r2 = bpf$PROG_LOAD(0x5, &(0x7f00000000c0)={0x11, 0xc, &(0x7f0000000440)=ANY=[@ANYBLOB="1800000000000000000000000000000018110000", @ANYRES32=r1, @ANYBLOB="0000000000000000b7080000000000007b8af8ff00000000bfa200000000000007020000f8ffffffb703000008000000b704000000000000850000000300000095"], &(0x7f0000000240)='GPL\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f0000000000)={&(0x7f0000000080)='sched_switch\x00', r2}, 0x10)
+socketpair$unix(0x1, 0x1, 0x0, &(0x7f0000000040)={0xffffffffffffffff, <r3=>0xffffffffffffffff})
+r4 = memfd_create(&(0x7f0000000300)='+\x8b\x8a\x16\x11O\xdd\xdfk(F\x99\xdf\x92\xd5>oJ\x02u\x9b\xafa\xac\x06\x9c&\xf5\xe3j\xfa\tcqM\xb8R\x86\xd9\xd2.\x9f\x12\xed\x10\f\xbd\x1a|\x8a\xbb\xda\xcfY\x98gU@\xf2M\xc0\xb5\xdf\x9a\x8d\xdb,n\xae\x0eT\x80\x8c\xfd\xd7\xb0\x94\x82t\x96\rKx\xc5\x9b\x8c\x87\x96\x8bc\xbc\xee\xcc\x9f\xe3F\x99V4\x8e;M\xa9\x823\xe3\xb3mG\x8f\xdb\xed\x1b\x05\xec\xfc\xd1\xb5\xfd\xec@\xdeU\xdd\xa4\xc1\xe4L)\x8e\xe5\x91\x8e\xd4\x89\xef\x95T\x05G\xac\xb8\xc1: )mh\xc7\xf1?\xbb\x13;\xad\x95\xd70\xb6\x0e\x7f\x84r\x0e\xbf\xc5\xf6\xd4\xdd\t\x14\x18\xf7\xefi\x93\x03\xd2\xf2\bK\"\xd2\xb5\xaa\xb8\xc8\xe0\xac\x99\xe8su\xcd\xc3E\x12\xd7\xdd\x96!\x16Tu\xe3\xf0\x84#R\xd9\xe3~Wj\xb0r\x87\'\xea\a\xcfOeK\x9daW\xf4\x87@\x9c\xf3\xf1K\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x91\xe6\xdb\xc2\xa5h\'\xdfIn\x97\x0263~\xeb\xbe(i\n\xc2k4\x7f\x12\xa9e`SOs\x8c\xb4\xe7FeQ\xc6$\x92j_U\xfa\b\xea\xb0bYkW\xc0\x05\aC{\xcc\x03T\x17\xa5Sk\x87P\xc2\x97D\xb2\xfa\x1b\x9fe\xf4\x10\x1a\xad\x92\xce\x88\x1b\xbc\xe14\x19\xaa\xd3\r\xf4\xa2\xc3\x9e=\xa0 \xe6j\xe5\x85\xf8\x97\x03\x15\xaa\x920\xdcrI\xd8\b\xfb\xc7\xe7xX\x00>d\xbb\xa71\xad\x9a\xfb\xe6\x13\x87\x93\\\xe5W-\xfc\xfd\xb8O\xb9j\xb8\xf2\x9dx\xb2\x86\xad\x92', 0x3)
+write$binfmt_elf64(r4, &(0x7f0000000000)=ANY=[], 0x78)
+sendfile(r3, r4, &(0x7f00000001c0), 0x8)
+fcntl$addseals(r4, 0x409, 0x8)
+fallocate(r4, 0x3, 0x0, 0x3)
+close_range(r0, 0xffffffffffffffff, 0x0)
+
+21:01:37 executing program 0:
+r0 = socket$inet6_tcp(0xa, 0x1, 0x0)
+r1 = bpf$MAP_CREATE(0x0, &(0x7f0000000100)=@base={0x9, 0x4, 0x7fe2, 0x1}, 0x48)
+r2 = bpf$PROG_LOAD(0x5, &(0x7f00000000c0)={0x11, 0xc, &(0x7f0000000440)=ANY=[@ANYBLOB="1800000000000000000000000000000018110000", @ANYRES32=r1, @ANYBLOB="0000000000000000b7080000000000007b8af8ff00000000bfa200000000000007020000f8ffffffb703000008000000b704000000000000850000000300000095"], &(0x7f0000000240)='GPL\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f0000000000)={&(0x7f0000000080)='sched_switch\x00', r2}, 0x10)
+socketpair$unix(0x1, 0x1, 0x0, &(0x7f0000000040)={0xffffffffffffffff, <r3=>0xffffffffffffffff})
+r4 = memfd_create(&(0x7f0000000300)='+\x8b\x8a\x16\x11O\xdd\xdfk(F\x99\xdf\x92\xd5>oJ\x02u\x9b\xafa\xac\x06\x9c&\xf5\xe3j\xfa\tcqM\xb8R\x86\xd9\xd2.\x9f\x12\xed\x10\f\xbd\x1a|\x8a\xbb\xda\xcfY\x98gU@\xf2M\xc0\xb5\xdf\x9a\x8d\xdb,n\xae\x0eT\x80\x8c\xfd\xd7\xb0\x94\x82t\x96\rKx\xc5\x9b\x8c\x87\x96\x8bc\xbc\xee\xcc\x9f\xe3F\x99V4\x8e;M\xa9\x823\xe3\xb3mG\x8f\xdb\xed\x1b\x05\xec\xfc\xd1\xb5\xfd\xec@\xdeU\xdd\xa4\xc1\xe4L)\x8e\xe5\x91\x8e\xd4\x89\xef\x95T\x05G\xac\xb8\xc1: )mh\xc7\xf1?\xbb\x13;\xad\x95\xd70\xb6\x0e\x7f\x84r\x0e\xbf\xc5\xf6\xd4\xdd\t\x14\x18\xf7\xefi\x93\x03\xd2\xf2\bK\"\xd2\xb5\xaa\xb8\xc8\xe0\xac\x99\xe8su\xcd\xc3E\x12\xd7\xdd\x96!\x16Tu\xe3\xf0\x84#R\xd9\xe3~Wj\xb0r\x87\'\xea\a\xcfOeK\x9daW\xf4\x87@\x9c\xf3\xf1K\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x91\xe6\xdb\xc2\xa5h\'\xdfIn\x97\x0263~\xeb\xbe(i\n\xc2k4\x7f\x12\xa9e`SOs\x8c\xb4\xe7FeQ\xc6$\x92j_U\xfa\b\xea\xb0bYkW\xc0\x05\aC{\xcc\x03T\x17\xa5Sk\x87P\xc2\x97D\xb2\xfa\x1b\x9fe\xf4\x10\x1a\xad\x92\xce\x88\x1b\xbc\xe14\x19\xaa\xd3\r\xf4\xa2\xc3\x9e=\xa0 \xe6j\xe5\x85\xf8\x97\x03\x15\xaa\x920\xdcrI\xd8\b\xfb\xc7\xe7xX\x00>d\xbb\xa71\xad\x9a\xfb\xe6\x13\x87\x93\\\xe5W-\xfc\xfd\xb8O\xb9j\xb8\xf2\x9dx\xb2\x86\xad\x92', 0x3)
+write$binfmt_elf64(r4, &(0x7f0000000000)=ANY=[], 0x78)
+sendfile(r3, r4, &(0x7f00000001c0), 0x8)
+fcntl$addseals(r4, 0x409, 0x8)
+fallocate(r4, 0x3, 0x0, 0x3)
+close_range(r0, 0xffffffffffffffff, 0x0)
+
+21:01:39 executing program 0:
+r0 = socket$inet6_tcp(0xa, 0x1, 0x0)
+r1 = bpf$MAP_CREATE(0x0, &(0x7f0000000100)=@base={0x9, 0x4, 0x7fe2, 0x1}, 0x48)
+r2 = bpf$PROG_LOAD(0x5, &(0x7f00000000c0)={0x11, 0xc, &(0x7f0000000440)=ANY=[@ANYBLOB="1800000000000000000000000000000018110000", @ANYRES32=r1, @ANYBLOB="0000000000000000b7080000000000007b8af8ff00000000bfa200000000000007020000f8ffffffb703000008000000b704000000000000850000000300000095"], &(0x7f0000000240)='GPL\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f0000000000)={&(0x7f0000000080)='sched_switch\x00', r2}, 0x10)
+socketpair$unix(0x1, 0x1, 0x0, &(0x7f0000000040)={0xffffffffffffffff, <r3=>0xffffffffffffffff})
+r4 = memfd_create(&(0x7f0000000300)='+\x8b\x8a\x16\x11O\xdd\xdfk(F\x99\xdf\x92\xd5>oJ\x02u\x9b\xafa\xac\x06\x9c&\xf5\xe3j\xfa\tcqM\xb8R\x86\xd9\xd2.\x9f\x12\xed\x10\f\xbd\x1a|\x8a\xbb\xda\xcfY\x98gU@\xf2M\xc0\xb5\xdf\x9a\x8d\xdb,n\xae\x0eT\x80\x8c\xfd\xd7\xb0\x94\x82t\x96\rKx\xc5\x9b\x8c\x87\x96\x8bc\xbc\xee\xcc\x9f\xe3F\x99V4\x8e;M\xa9\x823\xe3\xb3mG\x8f\xdb\xed\x1b\x05\xec\xfc\xd1\xb5\xfd\xec@\xdeU\xdd\xa4\xc1\xe4L)\x8e\xe5\x91\x8e\xd4\x89\xef\x95T\x05G\xac\xb8\xc1: )mh\xc7\xf1?\xbb\x13;\xad\x95\xd70\xb6\x0e\x7f\x84r\x0e\xbf\xc5\xf6\xd4\xdd\t\x14\x18\xf7\xefi\x93\x03\xd2\xf2\bK\"\xd2\xb5\xaa\xb8\xc8\xe0\xac\x99\xe8su\xcd\xc3E\x12\xd7\xdd\x96!\x16Tu\xe3\xf0\x84#R\xd9\xe3~Wj\xb0r\x87\'\xea\a\xcfOeK\x9daW\xf4\x87@\x9c\xf3\xf1K\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x91\xe6\xdb\xc2\xa5h\'\xdfIn\x97\x0263~\xeb\xbe(i\n\xc2k4\x7f\x12\xa9e`SOs\x8c\xb4\xe7FeQ\xc6$\x92j_U\xfa\b\xea\xb0bYkW\xc0\x05\aC{\xcc\x03T\x17\xa5Sk\x87P\xc2\x97D\xb2\xfa\x1b\x9fe\xf4\x10\x1a\xad\x92\xce\x88\x1b\xbc\xe14\x19\xaa\xd3\r\xf4\xa2\xc3\x9e=\xa0 \xe6j\xe5\x85\xf8\x97\x03\x15\xaa\x920\xdcrI\xd8\b\xfb\xc7\xe7xX\x00>d\xbb\xa71\xad\x9a\xfb\xe6\x13\x87\x93\\\xe5W-\xfc\xfd\xb8O\xb9j\xb8\xf2\x9dx\xb2\x86\xad\x92', 0x3)
+write$binfmt_elf64(r4, &(0x7f0000000000)=ANY=[], 0x78)
+sendfile(r3, r4, &(0x7f00000001c0), 0x8)
+fcntl$addseals(r4, 0x409, 0x8)
+fallocate(r4, 0x3, 0x0, 0x3)
+close_range(r0, 0xffffffffffffffff, 0x0)
+
+21:01:41 executing program 0:
+r0 = socket$inet6_tcp(0xa, 0x1, 0x0)
+r1 = bpf$MAP_CREATE(0x0, &(0x7f0000000100)=@base={0x9, 0x4, 0x7fe2, 0x1}, 0x48)
+r2 = bpf$PROG_LOAD(0x5, &(0x7f00000000c0)={0x11, 0xc, &(0x7f0000000440)=ANY=[@ANYBLOB="1800000000000000000000000000000018110000", @ANYRES32=r1, @ANYBLOB="0000000000000000b7080000000000007b8af8ff00000000bfa200000000000007020000f8ffffffb703000008000000b704000000000000850000000300000095"], &(0x7f0000000240)='GPL\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f0000000000)={&(0x7f0000000080)='sched_switch\x00', r2}, 0x10)
+socketpair$unix(0x1, 0x1, 0x0, &(0x7f0000000040)={0xffffffffffffffff, <r3=>0xffffffffffffffff})
+r4 = memfd_create(&(0x7f0000000300)='+\x8b\x8a\x16\x11O\xdd\xdfk(F\x99\xdf\x92\xd5>oJ\x02u\x9b\xafa\xac\x06\x9c&\xf5\xe3j\xfa\tcqM\xb8R\x86\xd9\xd2.\x9f\x12\xed\x10\f\xbd\x1a|\x8a\xbb\xda\xcfY\x98gU@\xf2M\xc0\xb5\xdf\x9a\x8d\xdb,n\xae\x0eT\x80\x8c\xfd\xd7\xb0\x94\x82t\x96\rKx\xc5\x9b\x8c\x87\x96\x8bc\xbc\xee\xcc\x9f\xe3F\x99V4\x8e;M\xa9\x823\xe3\xb3mG\x8f\xdb\xed\x1b\x05\xec\xfc\xd1\xb5\xfd\xec@\xdeU\xdd\xa4\xc1\xe4L)\x8e\xe5\x91\x8e\xd4\x89\xef\x95T\x05G\xac\xb8\xc1: )mh\xc7\xf1?\xbb\x13;\xad\x95\xd70\xb6\x0e\x7f\x84r\x0e\xbf\xc5\xf6\xd4\xdd\t\x14\x18\xf7\xefi\x93\x03\xd2\xf2\bK\"\xd2\xb5\xaa\xb8\xc8\xe0\xac\x99\xe8su\xcd\xc3E\x12\xd7\xdd\x96!\x16Tu\xe3\xf0\x84#R\xd9\xe3~Wj\xb0r\x87\'\xea\a\xcfOeK\x9daW\xf4\x87@\x9c\xf3\xf1K\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x91\xe6\xdb\xc2\xa5h\'\xdfIn\x97\x0263~\xeb\xbe(i\n\xc2k4\x7f\x12\xa9e`SOs\x8c\xb4\xe7FeQ\xc6$\x92j_U\xfa\b\xea\xb0bYkW\xc0\x05\aC{\xcc\x03T\x17\xa5Sk\x87P\xc2\x97D\xb2\xfa\x1b\x9fe\xf4\x10\x1a\xad\x92\xce\x88\x1b\xbc\xe14\x19\xaa\xd3\r\xf4\xa2\xc3\x9e=\xa0 \xe6j\xe5\x85\xf8\x97\x03\x15\xaa\x920\xdcrI\xd8\b\xfb\xc7\xe7xX\x00>d\xbb\xa71\xad\x9a\xfb\xe6\x13\x87\x93\\\xe5W-\xfc\xfd\xb8O\xb9j\xb8\xf2\x9dx\xb2\x86\xad\x92', 0x3)
+write$binfmt_elf64(r4, &(0x7f0000000000)=ANY=[], 0x78)
+sendfile(r3, r4, &(0x7f00000001c0), 0x8)
+fcntl$addseals(r4, 0x409, 0x8)
+fallocate(r4, 0x3, 0x0, 0x3)
+close_range(r0, 0xffffffffffffffff, 0x0)
+
+21:01:43 executing program 0:
+r0 = socket$inet6_tcp(0xa, 0x1, 0x0)
+r1 = bpf$MAP_CREATE(0x0, &(0x7f0000000100)=@base={0x9, 0x4, 0x7fe2, 0x1}, 0x48)
+r2 = bpf$PROG_LOAD(0x5, &(0x7f00000000c0)={0x11, 0xc, &(0x7f0000000440)=ANY=[@ANYBLOB="1800000000000000000000000000000018110000", @ANYRES32=r1, @ANYBLOB="0000000000000000b7080000000000007b8af8ff00000000bfa200000000000007020000f8ffffffb703000008000000b704000000000000850000000300000095"], &(0x7f0000000240)='GPL\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f0000000000)={&(0x7f0000000080)='sched_switch\x00', r2}, 0x10)
+socketpair$unix(0x1, 0x1, 0x0, &(0x7f0000000040)={0xffffffffffffffff, <r3=>0xffffffffffffffff})
+r4 = memfd_create(&(0x7f0000000300)='+\x8b\x8a\x16\x11O\xdd\xdfk(F\x99\xdf\x92\xd5>oJ\x02u\x9b\xafa\xac\x06\x9c&\xf5\xe3j\xfa\tcqM\xb8R\x86\xd9\xd2.\x9f\x12\xed\x10\f\xbd\x1a|\x8a\xbb\xda\xcfY\x98gU@\xf2M\xc0\xb5\xdf\x9a\x8d\xdb,n\xae\x0eT\x80\x8c\xfd\xd7\xb0\x94\x82t\x96\rKx\xc5\x9b\x8c\x87\x96\x8bc\xbc\xee\xcc\x9f\xe3F\x99V4\x8e;M\xa9\x823\xe3\xb3mG\x8f\xdb\xed\x1b\x05\xec\xfc\xd1\xb5\xfd\xec@\xdeU\xdd\xa4\xc1\xe4L)\x8e\xe5\x91\x8e\xd4\x89\xef\x95T\x05G\xac\xb8\xc1: )mh\xc7\xf1?\xbb\x13;\xad\x95\xd70\xb6\x0e\x7f\x84r\x0e\xbf\xc5\xf6\xd4\xdd\t\x14\x18\xf7\xefi\x93\x03\xd2\xf2\bK\"\xd2\xb5\xaa\xb8\xc8\xe0\xac\x99\xe8su\xcd\xc3E\x12\xd7\xdd\x96!\x16Tu\xe3\xf0\x84#R\xd9\xe3~Wj\xb0r\x87\'\xea\a\xcfOeK\x9daW\xf4\x87@\x9c\xf3\xf1K\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x91\xe6\xdb\xc2\xa5h\'\xdfIn\x97\x0263~\xeb\xbe(i\n\xc2k4\x7f\x12\xa9e`SOs\x8c\xb4\xe7FeQ\xc6$\x92j_U\xfa\b\xea\xb0bYkW\xc0\x05\aC{\xcc\x03T\x17\xa5Sk\x87P\xc2\x97D\xb2\xfa\x1b\x9fe\xf4\x10\x1a\xad\x92\xce\x88\x1b\xbc\xe14\x19\xaa\xd3\r\xf4\xa2\xc3\x9e=\xa0 \xe6j\xe5\x85\xf8\x97\x03\x15\xaa\x920\xdcrI\xd8\b\xfb\xc7\xe7xX\x00>d\xbb\xa71\xad\x9a\xfb\xe6\x13\x87\x93\\\xe5W-\xfc\xfd\xb8O\xb9j\xb8\xf2\x9dx\xb2\x86\xad\x92', 0x3)
+write$binfmt_elf64(r4, &(0x7f0000000000)=ANY=[], 0x78)
+sendfile(r3, r4, &(0x7f00000001c0), 0x8)
+fcntl$addseals(r4, 0x409, 0x8)
+fallocate(r4, 0x3, 0x0, 0x3)
+close_range(r0, 0xffffffffffffffff, 0x0)
+
+21:01:44 executing program 0:
+r0 = socket$inet6_tcp(0xa, 0x1, 0x0)
+r1 = bpf$MAP_CREATE(0x0, &(0x7f0000000100)=@base={0x9, 0x4, 0x7fe2, 0x1}, 0x48)
+r2 = bpf$PROG_LOAD(0x5, &(0x7f00000000c0)={0x11, 0xc, &(0x7f0000000440)=ANY=[@ANYBLOB="1800000000000000000000000000000018110000", @ANYRES32=r1, @ANYBLOB="0000000000000000b7080000000000007b8af8ff00000000bfa200000000000007020000f8ffffffb703000008000000b704000000000000850000000300000095"], &(0x7f0000000240)='GPL\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f0000000000)={&(0x7f0000000080)='sched_switch\x00', r2}, 0x10)
+socketpair$unix(0x1, 0x1, 0x0, &(0x7f0000000040)={0xffffffffffffffff, <r3=>0xffffffffffffffff})
+r4 = memfd_create(&(0x7f0000000300)='+\x8b\x8a\x16\x11O\xdd\xdfk(F\x99\xdf\x92\xd5>oJ\x02u\x9b\xafa\xac\x06\x9c&\xf5\xe3j\xfa\tcqM\xb8R\x86\xd9\xd2.\x9f\x12\xed\x10\f\xbd\x1a|\x8a\xbb\xda\xcfY\x98gU@\xf2M\xc0\xb5\xdf\x9a\x8d\xdb,n\xae\x0eT\x80\x8c\xfd\xd7\xb0\x94\x82t\x96\rKx\xc5\x9b\x8c\x87\x96\x8bc\xbc\xee\xcc\x9f\xe3F\x99V4\x8e;M\xa9\x823\xe3\xb3mG\x8f\xdb\xed\x1b\x05\xec\xfc\xd1\xb5\xfd\xec@\xdeU\xdd\xa4\xc1\xe4L)\x8e\xe5\x91\x8e\xd4\x89\xef\x95T\x05G\xac\xb8\xc1: )mh\xc7\xf1?\xbb\x13;\xad\x95\xd70\xb6\x0e\x7f\x84r\x0e\xbf\xc5\xf6\xd4\xdd\t\x14\x18\xf7\xefi\x93\x03\xd2\xf2\bK\"\xd2\xb5\xaa\xb8\xc8\xe0\xac\x99\xe8su\xcd\xc3E\x12\xd7\xdd\x96!\x16Tu\xe3\xf0\x84#R\xd9\xe3~Wj\xb0r\x87\'\xea\a\xcfOeK\x9daW\xf4\x87@\x9c\xf3\xf1K\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x91\xe6\xdb\xc2\xa5h\'\xdfIn\x97\x0263~\xeb\xbe(i\n\xc2k4\x7f\x12\xa9e`SOs\x8c\xb4\xe7FeQ\xc6$\x92j_U\xfa\b\xea\xb0bYkW\xc0\x05\aC{\xcc\x03T\x17\xa5Sk\x87P\xc2\x97D\xb2\xfa\x1b\x9fe\xf4\x10\x1a\xad\x92\xce\x88\x1b\xbc\xe14\x19\xaa\xd3\r\xf4\xa2\xc3\x9e=\xa0 \xe6j\xe5\x85\xf8\x97\x03\x15\xaa\x920\xdcrI\xd8\b\xfb\xc7\xe7xX\x00>d\xbb\xa71\xad\x9a\xfb\xe6\x13\x87\x93\\\xe5W-\xfc\xfd\xb8O\xb9j\xb8\xf2\x9dx\xb2\x86\xad\x92', 0x3)
+write$binfmt_elf64(r4, &(0x7f0000000000)=ANY=[], 0x78)
+sendfile(r3, r4, &(0x7f00000001c0), 0x8)
+fcntl$addseals(r4, 0x409, 0x8)
+fallocate(r4, 0x3, 0x0, 0x3)
+close_range(r0, 0xffffffffffffffff, 0x0)
+
+[  266.713923][ T1219] ieee802154 phy0 wpan0: encryption failed: -22
+[  266.714670][ T1219] ieee802154 phy1 wpan1: encryption failed: -22
+21:01:46 executing program 0:
+r0 = socket$inet6_tcp(0xa, 0x1, 0x0)
+r1 = bpf$MAP_CREATE(0x0, &(0x7f0000000100)=@base={0x9, 0x4, 0x7fe2, 0x1}, 0x48)
+r2 = bpf$PROG_LOAD(0x5, &(0x7f00000000c0)={0x11, 0xc, &(0x7f0000000440)=ANY=[@ANYBLOB="1800000000000000000000000000000018110000", @ANYRES32=r1, @ANYBLOB="0000000000000000b7080000000000007b8af8ff00000000bfa200000000000007020000f8ffffffb703000008000000b704000000000000850000000300000095"], &(0x7f0000000240)='GPL\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f0000000000)={&(0x7f0000000080)='sched_switch\x00', r2}, 0x10)
+socketpair$unix(0x1, 0x1, 0x0, &(0x7f0000000040)={0xffffffffffffffff, <r3=>0xffffffffffffffff})
+r4 = memfd_create(&(0x7f0000000300)='+\x8b\x8a\x16\x11O\xdd\xdfk(F\x99\xdf\x92\xd5>oJ\x02u\x9b\xafa\xac\x06\x9c&\xf5\xe3j\xfa\tcqM\xb8R\x86\xd9\xd2.\x9f\x12\xed\x10\f\xbd\x1a|\x8a\xbb\xda\xcfY\x98gU@\xf2M\xc0\xb5\xdf\x9a\x8d\xdb,n\xae\x0eT\x80\x8c\xfd\xd7\xb0\x94\x82t\x96\rKx\xc5\x9b\x8c\x87\x96\x8bc\xbc\xee\xcc\x9f\xe3F\x99V4\x8e;M\xa9\x823\xe3\xb3mG\x8f\xdb\xed\x1b\x05\xec\xfc\xd1\xb5\xfd\xec@\xdeU\xdd\xa4\xc1\xe4L)\x8e\xe5\x91\x8e\xd4\x89\xef\x95T\x05G\xac\xb8\xc1: )mh\xc7\xf1?\xbb\x13;\xad\x95\xd70\xb6\x0e\x7f\x84r\x0e\xbf\xc5\xf6\xd4\xdd\t\x14\x18\xf7\xefi\x93\x03\xd2\xf2\bK\"\xd2\xb5\xaa\xb8\xc8\xe0\xac\x99\xe8su\xcd\xc3E\x12\xd7\xdd\x96!\x16Tu\xe3\xf0\x84#R\xd9\xe3~Wj\xb0r\x87\'\xea\a\xcfOeK\x9daW\xf4\x87@\x9c\xf3\xf1K\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x91\xe6\xdb\xc2\xa5h\'\xdfIn\x97\x0263~\xeb\xbe(i\n\xc2k4\x7f\x12\xa9e`SOs\x8c\xb4\xe7FeQ\xc6$\x92j_U\xfa\b\xea\xb0bYkW\xc0\x05\aC{\xcc\x03T\x17\xa5Sk\x87P\xc2\x97D\xb2\xfa\x1b\x9fe\xf4\x10\x1a\xad\x92\xce\x88\x1b\xbc\xe14\x19\xaa\xd3\r\xf4\xa2\xc3\x9e=\xa0 \xe6j\xe5\x85\xf8\x97\x03\x15\xaa\x920\xdcrI\xd8\b\xfb\xc7\xe7xX\x00>d\xbb\xa71\xad\x9a\xfb\xe6\x13\x87\x93\\\xe5W-\xfc\xfd\xb8O\xb9j\xb8\xf2\x9dx\xb2\x86\xad\x92', 0x3)
+write$binfmt_elf64(r4, &(0x7f0000000000)=ANY=[], 0x78)
+sendfile(r3, r4, &(0x7f00000001c0), 0x8)
+fcntl$addseals(r4, 0x409, 0x8)
+fallocate(r4, 0x3, 0x0, 0x3)
+close_range(r0, 0xffffffffffffffff, 0x0)
+
+21:01:48 executing program 0:
+r0 = socket$inet6_tcp(0xa, 0x1, 0x0)
+r1 = bpf$MAP_CREATE(0x0, &(0x7f0000000100)=@base={0x9, 0x4, 0x7fe2, 0x1}, 0x48)
+r2 = bpf$PROG_LOAD(0x5, &(0x7f00000000c0)={0x11, 0xc, &(0x7f0000000440)=ANY=[@ANYBLOB="1800000000000000000000000000000018110000", @ANYRES32=r1, @ANYBLOB="0000000000000000b7080000000000007b8af8ff00000000bfa200000000000007020000f8ffffffb703000008000000b704000000000000850000000300000095"], &(0x7f0000000240)='GPL\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f0000000000)={&(0x7f0000000080)='sched_switch\x00', r2}, 0x10)
+socketpair$unix(0x1, 0x1, 0x0, &(0x7f0000000040)={0xffffffffffffffff, <r3=>0xffffffffffffffff})
+r4 = memfd_create(&(0x7f0000000300)='+\x8b\x8a\x16\x11O\xdd\xdfk(F\x99\xdf\x92\xd5>oJ\x02u\x9b\xafa\xac\x06\x9c&\xf5\xe3j\xfa\tcqM\xb8R\x86\xd9\xd2.\x9f\x12\xed\x10\f\xbd\x1a|\x8a\xbb\xda\xcfY\x98gU@\xf2M\xc0\xb5\xdf\x9a\x8d\xdb,n\xae\x0eT\x80\x8c\xfd\xd7\xb0\x94\x82t\x96\rKx\xc5\x9b\x8c\x87\x96\x8bc\xbc\xee\xcc\x9f\xe3F\x99V4\x8e;M\xa9\x823\xe3\xb3mG\x8f\xdb\xed\x1b\x05\xec\xfc\xd1\xb5\xfd\xec@\xdeU\xdd\xa4\xc1\xe4L)\x8e\xe5\x91\x8e\xd4\x89\xef\x95T\x05G\xac\xb8\xc1: )mh\xc7\xf1?\xbb\x13;\xad\x95\xd70\xb6\x0e\x7f\x84r\x0e\xbf\xc5\xf6\xd4\xdd\t\x14\x18\xf7\xefi\x93\x03\xd2\xf2\bK\"\xd2\xb5\xaa\xb8\xc8\xe0\xac\x99\xe8su\xcd\xc3E\x12\xd7\xdd\x96!\x16Tu\xe3\xf0\x84#R\xd9\xe3~Wj\xb0r\x87\'\xea\a\xcfOeK\x9daW\xf4\x87@\x9c\xf3\xf1K\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x91\xe6\xdb\xc2\xa5h\'\xdfIn\x97\x0263~\xeb\xbe(i\n\xc2k4\x7f\x12\xa9e`SOs\x8c\xb4\xe7FeQ\xc6$\x92j_U\xfa\b\xea\xb0bYkW\xc0\x05\aC{\xcc\x03T\x17\xa5Sk\x87P\xc2\x97D\xb2\xfa\x1b\x9fe\xf4\x10\x1a\xad\x92\xce\x88\x1b\xbc\xe14\x19\xaa\xd3\r\xf4\xa2\xc3\x9e=\xa0 \xe6j\xe5\x85\xf8\x97\x03\x15\xaa\x920\xdcrI\xd8\b\xfb\xc7\xe7xX\x00>d\xbb\xa71\xad\x9a\xfb\xe6\x13\x87\x93\\\xe5W-\xfc\xfd\xb8O\xb9j\xb8\xf2\x9dx\xb2\x86\xad\x92', 0x3)
+write$binfmt_elf64(r4, &(0x7f0000000000)=ANY=[], 0x78)
+sendfile(r3, r4, &(0x7f00000001c0), 0x8)
+fcntl$addseals(r4, 0x409, 0x8)
+fallocate(r4, 0x3, 0x0, 0x3)
+close_range(r0, 0xffffffffffffffff, 0x0)
+
+21:01:50 executing program 0:
+r0 = socket$inet6_tcp(0xa, 0x1, 0x0)
+r1 = bpf$MAP_CREATE(0x0, &(0x7f0000000100)=@base={0x9, 0x4, 0x7fe2, 0x1}, 0x48)
+r2 = bpf$PROG_LOAD(0x5, &(0x7f00000000c0)={0x11, 0xc, &(0x7f0000000440)=ANY=[@ANYBLOB="1800000000000000000000000000000018110000", @ANYRES32=r1, @ANYBLOB="0000000000000000b7080000000000007b8af8ff00000000bfa200000000000007020000f8ffffffb703000008000000b704000000000000850000000300000095"], &(0x7f0000000240)='GPL\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f0000000000)={&(0x7f0000000080)='sched_switch\x00', r2}, 0x10)
+socketpair$unix(0x1, 0x1, 0x0, &(0x7f0000000040)={0xffffffffffffffff, <r3=>0xffffffffffffffff})
+r4 = memfd_create(&(0x7f0000000300)='+\x8b\x8a\x16\x11O\xdd\xdfk(F\x99\xdf\x92\xd5>oJ\x02u\x9b\xafa\xac\x06\x9c&\xf5\xe3j\xfa\tcqM\xb8R\x86\xd9\xd2.\x9f\x12\xed\x10\f\xbd\x1a|\x8a\xbb\xda\xcfY\x98gU@\xf2M\xc0\xb5\xdf\x9a\x8d\xdb,n\xae\x0eT\x80\x8c\xfd\xd7\xb0\x94\x82t\x96\rKx\xc5\x9b\x8c\x87\x96\x8bc\xbc\xee\xcc\x9f\xe3F\x99V4\x8e;M\xa9\x823\xe3\xb3mG\x8f\xdb\xed\x1b\x05\xec\xfc\xd1\xb5\xfd\xec@\xdeU\xdd\xa4\xc1\xe4L)\x8e\xe5\x91\x8e\xd4\x89\xef\x95T\x05G\xac\xb8\xc1: )mh\xc7\xf1?\xbb\x13;\xad\x95\xd70\xb6\x0e\x7f\x84r\x0e\xbf\xc5\xf6\xd4\xdd\t\x14\x18\xf7\xefi\x93\x03\xd2\xf2\bK\"\xd2\xb5\xaa\xb8\xc8\xe0\xac\x99\xe8su\xcd\xc3E\x12\xd7\xdd\x96!\x16Tu\xe3\xf0\x84#R\xd9\xe3~Wj\xb0r\x87\'\xea\a\xcfOeK\x9daW\xf4\x87@\x9c\xf3\xf1K\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x91\xe6\xdb\xc2\xa5h\'\xdfIn\x97\x0263~\xeb\xbe(i\n\xc2k4\x7f\x12\xa9e`SOs\x8c\xb4\xe7FeQ\xc6$\x92j_U\xfa\b\xea\xb0bYkW\xc0\x05\aC{\xcc\x03T\x17\xa5Sk\x87P\xc2\x97D\xb2\xfa\x1b\x9fe\xf4\x10\x1a\xad\x92\xce\x88\x1b\xbc\xe14\x19\xaa\xd3\r\xf4\xa2\xc3\x9e=\xa0 \xe6j\xe5\x85\xf8\x97\x03\x15\xaa\x920\xdcrI\xd8\b\xfb\xc7\xe7xX\x00>d\xbb\xa71\xad\x9a\xfb\xe6\x13\x87\x93\\\xe5W-\xfc\xfd\xb8O\xb9j\xb8\xf2\x9dx\xb2\x86\xad\x92', 0x3)
+write$binfmt_elf64(r4, &(0x7f0000000000)=ANY=[], 0x78)
+sendfile(r3, r4, &(0x7f00000001c0), 0x8)
+fcntl$addseals(r4, 0x409, 0x8)
+fallocate(r4, 0x3, 0x0, 0x3)
+close_range(r0, 0xffffffffffffffff, 0x0)
+
+21:01:52 executing program 0:
+r0 = socket$inet6_tcp(0xa, 0x1, 0x0)
+r1 = bpf$MAP_CREATE(0x0, &(0x7f0000000100)=@base={0x9, 0x4, 0x7fe2, 0x1}, 0x48)
+r2 = bpf$PROG_LOAD(0x5, &(0x7f00000000c0)={0x11, 0xc, &(0x7f0000000440)=ANY=[@ANYBLOB="1800000000000000000000000000000018110000", @ANYRES32=r1, @ANYBLOB="0000000000000000b7080000000000007b8af8ff00000000bfa200000000000007020000f8ffffffb703000008000000b704000000000000850000000300000095"], &(0x7f0000000240)='GPL\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f0000000000)={&(0x7f0000000080)='sched_switch\x00', r2}, 0x10)
+socketpair$unix(0x1, 0x1, 0x0, &(0x7f0000000040)={0xffffffffffffffff, <r3=>0xffffffffffffffff})
+r4 = memfd_create(&(0x7f0000000300)='+\x8b\x8a\x16\x11O\xdd\xdfk(F\x99\xdf\x92\xd5>oJ\x02u\x9b\xafa\xac\x06\x9c&\xf5\xe3j\xfa\tcqM\xb8R\x86\xd9\xd2.\x9f\x12\xed\x10\f\xbd\x1a|\x8a\xbb\xda\xcfY\x98gU@\xf2M\xc0\xb5\xdf\x9a\x8d\xdb,n\xae\x0eT\x80\x8c\xfd\xd7\xb0\x94\x82t\x96\rKx\xc5\x9b\x8c\x87\x96\x8bc\xbc\xee\xcc\x9f\xe3F\x99V4\x8e;M\xa9\x823\xe3\xb3mG\x8f\xdb\xed\x1b\x05\xec\xfc\xd1\xb5\xfd\xec@\xdeU\xdd\xa4\xc1\xe4L)\x8e\xe5\x91\x8e\xd4\x89\xef\x95T\x05G\xac\xb8\xc1: )mh\xc7\xf1?\xbb\x13;\xad\x95\xd70\xb6\x0e\x7f\x84r\x0e\xbf\xc5\xf6\xd4\xdd\t\x14\x18\xf7\xefi\x93\x03\xd2\xf2\bK\"\xd2\xb5\xaa\xb8\xc8\xe0\xac\x99\xe8su\xcd\xc3E\x12\xd7\xdd\x96!\x16Tu\xe3\xf0\x84#R\xd9\xe3~Wj\xb0r\x87\'\xea\a\xcfOeK\x9daW\xf4\x87@\x9c\xf3\xf1K\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x91\xe6\xdb\xc2\xa5h\'\xdfIn\x97\x0263~\xeb\xbe(i\n\xc2k4\x7f\x12\xa9e`SOs\x8c\xb4\xe7FeQ\xc6$\x92j_U\xfa\b\xea\xb0bYkW\xc0\x05\aC{\xcc\x03T\x17\xa5Sk\x87P\xc2\x97D\xb2\xfa\x1b\x9fe\xf4\x10\x1a\xad\x92\xce\x88\x1b\xbc\xe14\x19\xaa\xd3\r\xf4\xa2\xc3\x9e=\xa0 \xe6j\xe5\x85\xf8\x97\x03\x15\xaa\x920\xdcrI\xd8\b\xfb\xc7\xe7xX\x00>d\xbb\xa71\xad\x9a\xfb\xe6\x13\x87\x93\\\xe5W-\xfc\xfd\xb8O\xb9j\xb8\xf2\x9dx\xb2\x86\xad\x92', 0x3)
+write$binfmt_elf64(r4, &(0x7f0000000000)=ANY=[], 0x78)
+sendfile(r3, r4, &(0x7f00000001c0), 0x8)
+fcntl$addseals(r4, 0x409, 0x8)
+fallocate(r4, 0x3, 0x0, 0x3)
+close_range(r0, 0xffffffffffffffff, 0x0)
+
+21:01:53 executing program 0:
+r0 = socket$inet6_tcp(0xa, 0x1, 0x0)
+r1 = bpf$MAP_CREATE(0x0, &(0x7f0000000100)=@base={0x9, 0x4, 0x7fe2, 0x1}, 0x48)
+r2 = bpf$PROG_LOAD(0x5, &(0x7f00000000c0)={0x11, 0xc, &(0x7f0000000440)=ANY=[@ANYBLOB="1800000000000000000000000000000018110000", @ANYRES32=r1, @ANYBLOB="0000000000000000b7080000000000007b8af8ff00000000bfa200000000000007020000f8ffffffb703000008000000b704000000000000850000000300000095"], &(0x7f0000000240)='GPL\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f0000000000)={&(0x7f0000000080)='sched_switch\x00', r2}, 0x10)
+socketpair$unix(0x1, 0x1, 0x0, &(0x7f0000000040)={0xffffffffffffffff, <r3=>0xffffffffffffffff})
+r4 = memfd_create(&(0x7f0000000300)='+\x8b\x8a\x16\x11O\xdd\xdfk(F\x99\xdf\x92\xd5>oJ\x02u\x9b\xafa\xac\x06\x9c&\xf5\xe3j\xfa\tcqM\xb8R\x86\xd9\xd2.\x9f\x12\xed\x10\f\xbd\x1a|\x8a\xbb\xda\xcfY\x98gU@\xf2M\xc0\xb5\xdf\x9a\x8d\xdb,n\xae\x0eT\x80\x8c\xfd\xd7\xb0\x94\x82t\x96\rKx\xc5\x9b\x8c\x87\x96\x8bc\xbc\xee\xcc\x9f\xe3F\x99V4\x8e;M\xa9\x823\xe3\xb3mG\x8f\xdb\xed\x1b\x05\xec\xfc\xd1\xb5\xfd\xec@\xdeU\xdd\xa4\xc1\xe4L)\x8e\xe5\x91\x8e\xd4\x89\xef\x95T\x05G\xac\xb8\xc1: )mh\xc7\xf1?\xbb\x13;\xad\x95\xd70\xb6\x0e\x7f\x84r\x0e\xbf\xc5\xf6\xd4\xdd\t\x14\x18\xf7\xefi\x93\x03\xd2\xf2\bK\"\xd2\xb5\xaa\xb8\xc8\xe0\xac\x99\xe8su\xcd\xc3E\x12\xd7\xdd\x96!\x16Tu\xe3\xf0\x84#R\xd9\xe3~Wj\xb0r\x87\'\xea\a\xcfOeK\x9daW\xf4\x87@\x9c\xf3\xf1K\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x91\xe6\xdb\xc2\xa5h\'\xdfIn\x97\x0263~\xeb\xbe(i\n\xc2k4\x7f\x12\xa9e`SOs\x8c\xb4\xe7FeQ\xc6$\x92j_U\xfa\b\xea\xb0bYkW\xc0\x05\aC{\xcc\x03T\x17\xa5Sk\x87P\xc2\x97D\xb2\xfa\x1b\x9fe\xf4\x10\x1a\xad\x92\xce\x88\x1b\xbc\xe14\x19\xaa\xd3\r\xf4\xa2\xc3\x9e=\xa0 \xe6j\xe5\x85\xf8\x97\x03\x15\xaa\x920\xdcrI\xd8\b\xfb\xc7\xe7xX\x00>d\xbb\xa71\xad\x9a\xfb\xe6\x13\x87\x93\\\xe5W-\xfc\xfd\xb8O\xb9j\xb8\xf2\x9dx\xb2\x86\xad\x92', 0x3)
+write$binfmt_elf64(r4, &(0x7f0000000000)=ANY=[], 0x78)
+sendfile(r3, r4, &(0x7f00000001c0), 0x8)
+fcntl$addseals(r4, 0x409, 0x8)
+fallocate(r4, 0x3, 0x0, 0x3)
+close_range(r0, 0xffffffffffffffff, 0x0)
+
+21:01:55 executing program 0:
+r0 = socket$inet6_tcp(0xa, 0x1, 0x0)
+r1 = bpf$MAP_CREATE(0x0, &(0x7f0000000100)=@base={0x9, 0x4, 0x7fe2, 0x1}, 0x48)
+r2 = bpf$PROG_LOAD(0x5, &(0x7f00000000c0)={0x11, 0xc, &(0x7f0000000440)=ANY=[@ANYBLOB="1800000000000000000000000000000018110000", @ANYRES32=r1, @ANYBLOB="0000000000000000b7080000000000007b8af8ff00000000bfa200000000000007020000f8ffffffb703000008000000b704000000000000850000000300000095"], &(0x7f0000000240)='GPL\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f0000000000)={&(0x7f0000000080)='sched_switch\x00', r2}, 0x10)
+socketpair$unix(0x1, 0x1, 0x0, &(0x7f0000000040)={0xffffffffffffffff, <r3=>0xffffffffffffffff})
+r4 = memfd_create(&(0x7f0000000300)='+\x8b\x8a\x16\x11O\xdd\xdfk(F\x99\xdf\x92\xd5>oJ\x02u\x9b\xafa\xac\x06\x9c&\xf5\xe3j\xfa\tcqM\xb8R\x86\xd9\xd2.\x9f\x12\xed\x10\f\xbd\x1a|\x8a\xbb\xda\xcfY\x98gU@\xf2M\xc0\xb5\xdf\x9a\x8d\xdb,n\xae\x0eT\x80\x8c\xfd\xd7\xb0\x94\x82t\x96\rKx\xc5\x9b\x8c\x87\x96\x8bc\xbc\xee\xcc\x9f\xe3F\x99V4\x8e;M\xa9\x823\xe3\xb3mG\x8f\xdb\xed\x1b\x05\xec\xfc\xd1\xb5\xfd\xec@\xdeU\xdd\xa4\xc1\xe4L)\x8e\xe5\x91\x8e\xd4\x89\xef\x95T\x05G\xac\xb8\xc1: )mh\xc7\xf1?\xbb\x13;\xad\x95\xd70\xb6\x0e\x7f\x84r\x0e\xbf\xc5\xf6\xd4\xdd\t\x14\x18\xf7\xefi\x93\x03\xd2\xf2\bK\"\xd2\xb5\xaa\xb8\xc8\xe0\xac\x99\xe8su\xcd\xc3E\x12\xd7\xdd\x96!\x16Tu\xe3\xf0\x84#R\xd9\xe3~Wj\xb0r\x87\'\xea\a\xcfOeK\x9daW\xf4\x87@\x9c\xf3\xf1K\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x91\xe6\xdb\xc2\xa5h\'\xdfIn\x97\x0263~\xeb\xbe(i\n\xc2k4\x7f\x12\xa9e`SOs\x8c\xb4\xe7FeQ\xc6$\x92j_U\xfa\b\xea\xb0bYkW\xc0\x05\aC{\xcc\x03T\x17\xa5Sk\x87P\xc2\x97D\xb2\xfa\x1b\x9fe\xf4\x10\x1a\xad\x92\xce\x88\x1b\xbc\xe14\x19\xaa\xd3\r\xf4\xa2\xc3\x9e=\xa0 \xe6j\xe5\x85\xf8\x97\x03\x15\xaa\x920\xdcrI\xd8\b\xfb\xc7\xe7xX\x00>d\xbb\xa71\xad\x9a\xfb\xe6\x13\x87\x93\\\xe5W-\xfc\xfd\xb8O\xb9j\xb8\xf2\x9dx\xb2\x86\xad\x92', 0x3)
+write$binfmt_elf64(r4, &(0x7f0000000000)=ANY=[], 0x78)
+sendfile(r3, r4, &(0x7f00000001c0), 0x8)
+fcntl$addseals(r4, 0x409, 0x8)
+fallocate(r4, 0x3, 0x0, 0x3)
+close_range(r0, 0xffffffffffffffff, 0x0)
+
+21:01:57 executing program 0:
+r0 = socket$inet6_tcp(0xa, 0x1, 0x0)
+r1 = bpf$MAP_CREATE(0x0, &(0x7f0000000100)=@base={0x9, 0x4, 0x7fe2, 0x1}, 0x48)
+r2 = bpf$PROG_LOAD(0x5, &(0x7f00000000c0)={0x11, 0xc, &(0x7f0000000440)=ANY=[@ANYBLOB="1800000000000000000000000000000018110000", @ANYRES32=r1, @ANYBLOB="0000000000000000b7080000000000007b8af8ff00000000bfa200000000000007020000f8ffffffb703000008000000b704000000000000850000000300000095"], &(0x7f0000000240)='GPL\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f0000000000)={&(0x7f0000000080)='sched_switch\x00', r2}, 0x10)
+socketpair$unix(0x1, 0x1, 0x0, &(0x7f0000000040)={0xffffffffffffffff, <r3=>0xffffffffffffffff})
+r4 = memfd_create(&(0x7f0000000300)='+\x8b\x8a\x16\x11O\xdd\xdfk(F\x99\xdf\x92\xd5>oJ\x02u\x9b\xafa\xac\x06\x9c&\xf5\xe3j\xfa\tcqM\xb8R\x86\xd9\xd2.\x9f\x12\xed\x10\f\xbd\x1a|\x8a\xbb\xda\xcfY\x98gU@\xf2M\xc0\xb5\xdf\x9a\x8d\xdb,n\xae\x0eT\x80\x8c\xfd\xd7\xb0\x94\x82t\x96\rKx\xc5\x9b\x8c\x87\x96\x8bc\xbc\xee\xcc\x9f\xe3F\x99V4\x8e;M\xa9\x823\xe3\xb3mG\x8f\xdb\xed\x1b\x05\xec\xfc\xd1\xb5\xfd\xec@\xdeU\xdd\xa4\xc1\xe4L)\x8e\xe5\x91\x8e\xd4\x89\xef\x95T\x05G\xac\xb8\xc1: )mh\xc7\xf1?\xbb\x13;\xad\x95\xd70\xb6\x0e\x7f\x84r\x0e\xbf\xc5\xf6\xd4\xdd\t\x14\x18\xf7\xefi\x93\x03\xd2\xf2\bK\"\xd2\xb5\xaa\xb8\xc8\xe0\xac\x99\xe8su\xcd\xc3E\x12\xd7\xdd\x96!\x16Tu\xe3\xf0\x84#R\xd9\xe3~Wj\xb0r\x87\'\xea\a\xcfOeK\x9daW\xf4\x87@\x9c\xf3\xf1K\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x91\xe6\xdb\xc2\xa5h\'\xdfIn\x97\x0263~\xeb\xbe(i\n\xc2k4\x7f\x12\xa9e`SOs\x8c\xb4\xe7FeQ\xc6$\x92j_U\xfa\b\xea\xb0bYkW\xc0\x05\aC{\xcc\x03T\x17\xa5Sk\x87P\xc2\x97D\xb2\xfa\x1b\x9fe\xf4\x10\x1a\xad\x92\xce\x88\x1b\xbc\xe14\x19\xaa\xd3\r\xf4\xa2\xc3\x9e=\xa0 \xe6j\xe5\x85\xf8\x97\x03\x15\xaa\x920\xdcrI\xd8\b\xfb\xc7\xe7xX\x00>d\xbb\xa71\xad\x9a\xfb\xe6\x13\x87\x93\\\xe5W-\xfc\xfd\xb8O\xb9j\xb8\xf2\x9dx\xb2\x86\xad\x92', 0x3)
+write$binfmt_elf64(r4, &(0x7f0000000000)=ANY=[], 0x78)
+sendfile(r3, r4, &(0x7f00000001c0), 0x8)
+fcntl$addseals(r4, 0x409, 0x8)
+fallocate(r4, 0x3, 0x0, 0x3)
+close_range(r0, 0xffffffffffffffff, 0x0)
+
+21:01:59 executing program 0:
+r0 = socket$inet6_tcp(0xa, 0x1, 0x0)
+r1 = bpf$MAP_CREATE(0x0, &(0x7f0000000100)=@base={0x9, 0x4, 0x7fe2, 0x1}, 0x48)
+r2 = bpf$PROG_LOAD(0x5, &(0x7f00000000c0)={0x11, 0xc, &(0x7f0000000440)=ANY=[@ANYBLOB="1800000000000000000000000000000018110000", @ANYRES32=r1, @ANYBLOB="0000000000000000b7080000000000007b8af8ff00000000bfa200000000000007020000f8ffffffb703000008000000b704000000000000850000000300000095"], &(0x7f0000000240)='GPL\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f0000000000)={&(0x7f0000000080)='sched_switch\x00', r2}, 0x10)
+socketpair$unix(0x1, 0x1, 0x0, &(0x7f0000000040)={0xffffffffffffffff, <r3=>0xffffffffffffffff})
+r4 = memfd_create(&(0x7f0000000300)='+\x8b\x8a\x16\x11O\xdd\xdfk(F\x99\xdf\x92\xd5>oJ\x02u\x9b\xafa\xac\x06\x9c&\xf5\xe3j\xfa\tcqM\xb8R\x86\xd9\xd2.\x9f\x12\xed\x10\f\xbd\x1a|\x8a\xbb\xda\xcfY\x98gU@\xf2M\xc0\xb5\xdf\x9a\x8d\xdb,n\xae\x0eT\x80\x8c\xfd\xd7\xb0\x94\x82t\x96\rKx\xc5\x9b\x8c\x87\x96\x8bc\xbc\xee\xcc\x9f\xe3F\x99V4\x8e;M\xa9\x823\xe3\xb3mG\x8f\xdb\xed\x1b\x05\xec\xfc\xd1\xb5\xfd\xec@\xdeU\xdd\xa4\xc1\xe4L)\x8e\xe5\x91\x8e\xd4\x89\xef\x95T\x05G\xac\xb8\xc1: )mh\xc7\xf1?\xbb\x13;\xad\x95\xd70\xb6\x0e\x7f\x84r\x0e\xbf\xc5\xf6\xd4\xdd\t\x14\x18\xf7\xefi\x93\x03\xd2\xf2\bK\"\xd2\xb5\xaa\xb8\xc8\xe0\xac\x99\xe8su\xcd\xc3E\x12\xd7\xdd\x96!\x16Tu\xe3\xf0\x84#R\xd9\xe3~Wj\xb0r\x87\'\xea\a\xcfOeK\x9daW\xf4\x87@\x9c\xf3\xf1K\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x91\xe6\xdb\xc2\xa5h\'\xdfIn\x97\x0263~\xeb\xbe(i\n\xc2k4\x7f\x12\xa9e`SOs\x8c\xb4\xe7FeQ\xc6$\x92j_U\xfa\b\xea\xb0bYkW\xc0\x05\aC{\xcc\x03T\x17\xa5Sk\x87P\xc2\x97D\xb2\xfa\x1b\x9fe\xf4\x10\x1a\xad\x92\xce\x88\x1b\xbc\xe14\x19\xaa\xd3\r\xf4\xa2\xc3\x9e=\xa0 \xe6j\xe5\x85\xf8\x97\x03\x15\xaa\x920\xdcrI\xd8\b\xfb\xc7\xe7xX\x00>d\xbb\xa71\xad\x9a\xfb\xe6\x13\x87\x93\\\xe5W-\xfc\xfd\xb8O\xb9j\xb8\xf2\x9dx\xb2\x86\xad\x92', 0x3)
+write$binfmt_elf64(r4, &(0x7f0000000000)=ANY=[], 0x78)
+sendfile(r3, r4, &(0x7f00000001c0), 0x8)
+fcntl$addseals(r4, 0x409, 0x8)
+fallocate(r4, 0x3, 0x0, 0x3)
+close_range(r0, 0xffffffffffffffff, 0x0)
+
+21:02:00 executing program 0:
+r0 = socket$inet6_tcp(0xa, 0x1, 0x0)
+r1 = bpf$MAP_CREATE(0x0, &(0x7f0000000100)=@base={0x9, 0x4, 0x7fe2, 0x1}, 0x48)
+r2 = bpf$PROG_LOAD(0x5, &(0x7f00000000c0)={0x11, 0xc, &(0x7f0000000440)=ANY=[@ANYBLOB="1800000000000000000000000000000018110000", @ANYRES32=r1, @ANYBLOB="0000000000000000b7080000000000007b8af8ff00000000bfa200000000000007020000f8ffffffb703000008000000b704000000000000850000000300000095"], &(0x7f0000000240)='GPL\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f0000000000)={&(0x7f0000000080)='sched_switch\x00', r2}, 0x10)
+socketpair$unix(0x1, 0x1, 0x0, &(0x7f0000000040)={0xffffffffffffffff, <r3=>0xffffffffffffffff})
+r4 = memfd_create(&(0x7f0000000300)='+\x8b\x8a\x16\x11O\xdd\xdfk(F\x99\xdf\x92\xd5>oJ\x02u\x9b\xafa\xac\x06\x9c&\xf5\xe3j\xfa\tcqM\xb8R\x86\xd9\xd2.\x9f\x12\xed\x10\f\xbd\x1a|\x8a\xbb\xda\xcfY\x98gU@\xf2M\xc0\xb5\xdf\x9a\x8d\xdb,n\xae\x0eT\x80\x8c\xfd\xd7\xb0\x94\x82t\x96\rKx\xc5\x9b\x8c\x87\x96\x8bc\xbc\xee\xcc\x9f\xe3F\x99V4\x8e;M\xa9\x823\xe3\xb3mG\x8f\xdb\xed\x1b\x05\xec\xfc\xd1\xb5\xfd\xec@\xdeU\xdd\xa4\xc1\xe4L)\x8e\xe5\x91\x8e\xd4\x89\xef\x95T\x05G\xac\xb8\xc1: )mh\xc7\xf1?\xbb\x13;\xad\x95\xd70\xb6\x0e\x7f\x84r\x0e\xbf\xc5\xf6\xd4\xdd\t\x14\x18\xf7\xefi\x93\x03\xd2\xf2\bK\"\xd2\xb5\xaa\xb8\xc8\xe0\xac\x99\xe8su\xcd\xc3E\x12\xd7\xdd\x96!\x16Tu\xe3\xf0\x84#R\xd9\xe3~Wj\xb0r\x87\'\xea\a\xcfOeK\x9daW\xf4\x87@\x9c\xf3\xf1K\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x91\xe6\xdb\xc2\xa5h\'\xdfIn\x97\x0263~\xeb\xbe(i\n\xc2k4\x7f\x12\xa9e`SOs\x8c\xb4\xe7FeQ\xc6$\x92j_U\xfa\b\xea\xb0bYkW\xc0\x05\aC{\xcc\x03T\x17\xa5Sk\x87P\xc2\x97D\xb2\xfa\x1b\x9fe\xf4\x10\x1a\xad\x92\xce\x88\x1b\xbc\xe14\x19\xaa\xd3\r\xf4\xa2\xc3\x9e=\xa0 \xe6j\xe5\x85\xf8\x97\x03\x15\xaa\x920\xdcrI\xd8\b\xfb\xc7\xe7xX\x00>d\xbb\xa71\xad\x9a\xfb\xe6\x13\x87\x93\\\xe5W-\xfc\xfd\xb8O\xb9j\xb8\xf2\x9dx\xb2\x86\xad\x92', 0x3)
+write$binfmt_elf64(r4, &(0x7f0000000000)=ANY=[], 0x78)
+sendfile(r3, r4, &(0x7f00000001c0), 0x8)
+fcntl$addseals(r4, 0x409, 0x8)
+fallocate(r4, 0x3, 0x0, 0x3)
+close_range(r0, 0xffffffffffffffff, 0x0)
+
+21:02:02 executing program 0:
+r0 = socket$inet6_tcp(0xa, 0x1, 0x0)
+r1 = bpf$MAP_CREATE(0x0, &(0x7f0000000100)=@base={0x9, 0x4, 0x7fe2, 0x1}, 0x48)
+r2 = bpf$PROG_LOAD(0x5, &(0x7f00000000c0)={0x11, 0xc, &(0x7f0000000440)=ANY=[@ANYBLOB="1800000000000000000000000000000018110000", @ANYRES32=r1, @ANYBLOB="0000000000000000b7080000000000007b8af8ff00000000bfa200000000000007020000f8ffffffb703000008000000b704000000000000850000000300000095"], &(0x7f0000000240)='GPL\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f0000000000)={&(0x7f0000000080)='sched_switch\x00', r2}, 0x10)
+socketpair$unix(0x1, 0x1, 0x0, &(0x7f0000000040)={0xffffffffffffffff, <r3=>0xffffffffffffffff})
+r4 = memfd_create(&(0x7f0000000300)='+\x8b\x8a\x16\x11O\xdd\xdfk(F\x99\xdf\x92\xd5>oJ\x02u\x9b\xafa\xac\x06\x9c&\xf5\xe3j\xfa\tcqM\xb8R\x86\xd9\xd2.\x9f\x12\xed\x10\f\xbd\x1a|\x8a\xbb\xda\xcfY\x98gU@\xf2M\xc0\xb5\xdf\x9a\x8d\xdb,n\xae\x0eT\x80\x8c\xfd\xd7\xb0\x94\x82t\x96\rKx\xc5\x9b\x8c\x87\x96\x8bc\xbc\xee\xcc\x9f\xe3F\x99V4\x8e;M\xa9\x823\xe3\xb3mG\x8f\xdb\xed\x1b\x05\xec\xfc\xd1\xb5\xfd\xec@\xdeU\xdd\xa4\xc1\xe4L)\x8e\xe5\x91\x8e\xd4\x89\xef\x95T\x05G\xac\xb8\xc1: )mh\xc7\xf1?\xbb\x13;\xad\x95\xd70\xb6\x0e\x7f\x84r\x0e\xbf\xc5\xf6\xd4\xdd\t\x14\x18\xf7\xefi\x93\x03\xd2\xf2\bK\"\xd2\xb5\xaa\xb8\xc8\xe0\xac\x99\xe8su\xcd\xc3E\x12\xd7\xdd\x96!\x16Tu\xe3\xf0\x84#R\xd9\xe3~Wj\xb0r\x87\'\xea\a\xcfOeK\x9daW\xf4\x87@\x9c\xf3\xf1K\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x91\xe6\xdb\xc2\xa5h\'\xdfIn\x97\x0263~\xeb\xbe(i\n\xc2k4\x7f\x12\xa9e`SOs\x8c\xb4\xe7FeQ\xc6$\x92j_U\xfa\b\xea\xb0bYkW\xc0\x05\aC{\xcc\x03T\x17\xa5Sk\x87P\xc2\x97D\xb2\xfa\x1b\x9fe\xf4\x10\x1a\xad\x92\xce\x88\x1b\xbc\xe14\x19\xaa\xd3\r\xf4\xa2\xc3\x9e=\xa0 \xe6j\xe5\x85\xf8\x97\x03\x15\xaa\x920\xdcrI\xd8\b\xfb\xc7\xe7xX\x00>d\xbb\xa71\xad\x9a\xfb\xe6\x13\x87\x93\\\xe5W-\xfc\xfd\xb8O\xb9j\xb8\xf2\x9dx\xb2\x86\xad\x92', 0x3)
+write$binfmt_elf64(r4, &(0x7f0000000000)=ANY=[], 0x78)
+sendfile(r3, r4, &(0x7f00000001c0), 0x8)
+fcntl$addseals(r4, 0x409, 0x8)
+fallocate(r4, 0x3, 0x0, 0x3)
+close_range(r0, 0xffffffffffffffff, 0x0)
+
+21:02:04 executing program 0:
+r0 = socket$inet6_tcp(0xa, 0x1, 0x0)
+r1 = bpf$MAP_CREATE(0x0, &(0x7f0000000100)=@base={0x9, 0x4, 0x7fe2, 0x1}, 0x48)
+r2 = bpf$PROG_LOAD(0x5, &(0x7f00000000c0)={0x11, 0xc, &(0x7f0000000440)=ANY=[@ANYBLOB="1800000000000000000000000000000018110000", @ANYRES32=r1, @ANYBLOB="0000000000000000b7080000000000007b8af8ff00000000bfa200000000000007020000f8ffffffb703000008000000b704000000000000850000000300000095"], &(0x7f0000000240)='GPL\x00', 0x0, 0x0, 0x0, 0x0, 0x0, '\x00', 0x0, 0x0, 0xffffffffffffffff, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}, 0x90)
+bpf$BPF_RAW_TRACEPOINT_OPEN(0x11, &(0x7f0000000000)={&(0x7f0000000080)='sched_switch\x00', r2}, 0x10)
+socketpair$unix(0x1, 0x1, 0x0, &(0x7f0000000040)={0xffffffffffffffff, <r3=>0xffffffffffffffff})
+r4 = memfd_create(&(0x7f0000000300)='+\x8b\x8a\x16\x11O\xdd\xdfk(F\x99\xdf\x92\xd5>oJ\x02u\x9b\xafa\xac\x06\x9c&\xf5\xe3j\xfa\tcqM\xb8R\x86\xd9\xd2.\x9f\x12\xed\x10\f\xbd\x1a|\x8a\xbb\xda\xcfY\x98gU@\xf2M\xc0\xb5\xdf\x9a\x8d\xdb,n\xae\x0eT\x80\x8c\xfd\xd7\xb0\x94\x82t\x96\rKx\xc5\x9b\x8c\x87\x96\x8bc\xbc\xee\xcc\x9f\xe3F\x99V4\x8e;M\xa9\x823\xe3\xb3mG\x8f\xdb\xed\x1b\x05\xec\xfc\xd1\xb5\xfd\xec@\xdeU\xdd\xa4\xc1\xe4L)\x8e\xe5\x91\x8e\xd4\x89\xef\x95T\x05G\xac\xb8\xc1: )mh\xc7\xf1?\xbb\x13;\xad\x95\xd70\xb6\x0e\x7f\x84r\x0e\xbf\xc5\xf6\xd4\xdd\t\x14\x18\xf7\xefi\x93\x03\xd2\xf2\bK\"\xd2\xb5\xaa\xb8\xc8\xe0\xac\x99\xe8su\xcd\xc3E\x12\xd7\xdd\x96!\x16Tu\xe3\xf0\x84#R\xd9\xe3~Wj\xb0r\x87\'\xea\a\xcfOeK\x9daW\xf4\x87@\x9c\xf3\xf1K\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x91\xe6\xdb\xc2\xa5h\'\xdfIn\x97\x0263~\xeb\xbe(i\n\xc2k4\x7f\x12\xa9e`SOs\x8c\xb4\xe7FeQ\xc6$\x92j_U\xfa\b\xea\xb0bYkW\xc0\x05\aC{\xcc\x03T\x17\xa5Sk\x87P\xc2\x97D\xb2\xfa\x1b\x9fe\xf4\x10\x1a\xad\x92\xce\x88\x1b\xbc\xe14\x19\xaa\xd3\r\xf4\xa2\xc3\x9e=\xa0 \xe6j\xe5\x85\xf8\x97\x03\x15\xaa\x920\xdcrI\xd8\b\xfb\xc7\xe7xX\x00>d\xbb\xa71\xad\x9a\xfb\xe6\x13\x87\x93\\\xe5W-\xfc\xfd\xb8O\xb9j\xb8\xf2\x9dx\xb2\x86\xad\x92', 0x3)
+write$binfmt_elf64(r4, &(0x7f0000000000)=ANY=[], 0x78)
+sendfile(r3, r4, &(0x7f00000001c0), 0x8)
+fcntl$addseals(r4, 0x409, 0x8)
+fallocate(r4, 0x3, 0x0, 0x3)
+close_range(r0, 0xffffffffffffffff, 0x0)
+
+21:02:05 executing program 0:
+pipe(&(0x7f0000000140)={<r0=>0xffffffffffffffff, <r1=>0xffffffffffffffff})
+vmsplice(r1, &(0x7f0000000240)=[{&(0x7f0000001340)="e6", 0xfffffffffffffedf}], 0x1, 0x0)
+splice(r1, &(0x7f0000000380)=0x100, r0, &(0x7f0000000180)=0xfffffffffffffff7, 0x1ff, 0x0)
+ioctl$DRM_IOCTL_IRQ_BUSID(r1, 0xc0106403, &(0x7f00000002c0)={0x0, 0xbca, 0x6ba6a23c, 0x6})
+splice(r1, &(0x7f0000000040)=0x1, 0xffffffffffffffff, &(0x7f00000000c0), 0x10001, 0x0)
+r2 = syz_init_net_socket$bt_l2cap(0x1f, 0x1, 0x3)
+connect$bt_l2cap(r0, &(0x7f0000000000)={0x1f, 0x200, @any, 0x1, 0x1}, 0xe)
+r3 = openat$procfs(0xffffffffffffff9c, &(0x7f00000000c0)='/proc/tty/ldiscs\x00', 0x0, 0x0)
+pread64(r3, &(0x7f0000000040)=""/48, 0x30, 0x3275eb19)
+write(r1, &(0x7f0000000300)="74251a38ad116febcb3f66b79eeab2e12f778c617facaafb935dac17c7aa71700b3f648990cca2815c9af2c177dae8c501b761181d4d39f019db95a8d9a7f44e62aee294e0d411712d4da74e95978bf76906e47b9a5a3d96ec0e75c50951a24fff6ad406daed53", 0x67)
+pwritev(r3, 0x0, 0x0, 0x2, 0x0)
+splice(r0, 0x0, r2, 0x0, 0xcc2, 0x0)
+splice(0xffffffffffffffff, 0x0, r1, &(0x7f0000000280)=0x5, 0x9, 0xd)
+
+2024/05/22 21:02:07 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+2024/05/22 21:02:07 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x30be, Ip:0x85ff2f15}
+2024/05/22 21:02:07 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 21:02:07 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3858, Ip:0x85ff2f25}
+2024/05/22 21:02:07 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+2024/05/22 21:02:07 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3e9b, Ip:0x833c12dd}
+21:02:07 executing program 0:
+accept() (enabled_site: 6015, site_type: 1)
+pipe(&(0x7f0000000140)={<r0=>0xffffffffffffffff, <r1=>0xffffffffffffffff})
+vmsplice(r1, &(0x7f0000000240)=[{&(0x7f0000001340)="e6", 0xfffffffffffffedf}], 0x1, 0x0)
+splice(r1, &(0x7f0000000380)=0x100, r0, &(0x7f0000000180)=0xfffffffffffffff7, 0x1ff, 0x0)
+ioctl$DRM_IOCTL_IRQ_BUSID(r1, 0xc0106403, &(0x7f00000002c0)={0x0, 0xbca, 0x6ba6a23c, 0x6})
+splice(r1, &(0x7f0000000040)=0x1, 0xffffffffffffffff, &(0x7f00000000c0), 0x10001, 0x0)
+r2 = syz_init_net_socket$bt_l2cap(0x1f, 0x1, 0x3)
+connect$bt_l2cap(r0, &(0x7f0000000000)={0x1f, 0x200, @any, 0x1, 0x1}, 0xe)
+r3 = openat$procfs(0xffffffffffffff9c, &(0x7f00000000c0)='/proc/tty/ldiscs\x00', 0x0, 0x0)
+pread64(r3, &(0x7f0000000040)=""/48, 0x30, 0x3275eb19)
+write(r1, &(0x7f0000000300)="74251a38ad116febcb3f66b79eeab2e12f778c617facaafb935dac17c7aa71700b3f648990cca2815c9af2c177dae8c501b761181d4d39f019db95a8d9a7f44e62aee294e0d411712d4da74e95978bf76906e47b9a5a3d96ec0e75c50951a24fff6ad406daed53", 0x67)
+pwritev(r3, 0x0, 0x0, 0x2, 0x0)
+splice(r0, 0x0, r2, 0x0, 0xcc2, 0x0)
+splice(0xffffffffffffffff, 0x0, r1, &(0x7f0000000280)=0x5, 0x9, 0xd)
+
+2024/05/22 21:02:07 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x177f, Ip:0x833c1913}
+2024/05/22 21:02:07 KDO: #0: memintrinsic id=6015
+[  289.906863][ T8439] BUG: KASAN: unknown-crash in _copy_from_iter+0x813/0xdb0
+[  289.908297][ T8439] Write of size 8 at addr ffff888143bc5510 by task syz-executor.0/8439
+[  289.909579][ T8439] 
+[  289.909912][ T8439] CPU: 0 PID: 8439 Comm: syz-executor.0 Not tainted 6.4.1-00011-gc173c3c31378 #20
+[  289.911728][ T8439] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+[  289.914309][ T8439] Call Trace:
+[  289.914689][ T8439]  <TASK>
+[  289.915028][ T8439]  dump_stack_lvl+0x1ce/0x2c0
+[  289.915569][ T8439]  ? nf_tcp_handle_invalid+0x3d0/0x3d0
+[  289.916179][ T8439]  ? preempt_count_add+0xa0/0xf0
+[  289.916763][ T8439]  ? panic+0x620/0x620
+[  289.917209][ T8439]  ? kmem_cache_alloc_node+0x181/0x310
+[  289.917800][ T8439]  ? __build_skb_around+0x1e6/0x230
+[  289.918367][ T8439]  print_report+0x163/0x540
+[  289.918864][ T8439]  ? napi_build_skb+0x1c0/0x1c0
+[  289.919504][ T8439]  ? __virt_addr_valid+0x1cc/0x240
+[  289.920343][ T8439]  ? __phys_addr+0x99/0x110
+[  289.920851][ T8439]  kdo_kasan_report+0x7f/0x90
+[  289.921365][ T8439]  ? _copy_from_iter+0x813/0xdb0
+[  289.921901][ T8439]  ? _copy_from_iter+0x813/0xdb0
+[  289.922458][ T8439]  propagate_taint+0x1e1/0x210
+[  289.923234][ T8439]  ? _copy_from_iter+0x813/0xdb0
+[  289.923869][ T8439]  ? _copy_from_iter+0x813/0xdb0
+[  289.924408][ T8439]  __kdo_asan_memcpy+0x69/0xa0
+[  289.924987][ T8439]  ? _copy_from_iter+0x7fa/0xdb0
+[  289.925574][ T8439]  _copy_from_iter+0x813/0xdb0
+[  289.926153][ T8439]  ? copyout_mc+0x80/0x80
+[  289.926675][ T8439]  ? lockdep_hardirqs_on_prepare+0x2dc/0x410
+[  289.927378][ T8439]  ? __phys_addr_symbol+0x3b/0x50
+[  289.928183][ T8439]  ? __check_object_size+0x3f9/0x850
+[  289.928997][ T8439]  bt_skb_sendmsg+0x321/0x490
+[  289.929550][ T8439]  ? lockdep_hardirqs_on+0xdd/0x180
+[  289.930233][ T8439]  ? __rfcomm_sock_close+0x1d0/0x1d0
+[  289.931113][ T8439]  ? do_raw_spin_unlock+0xd0/0x450
+[  289.931729][ T8439]  rfcomm_sock_sendmsg+0x179/0x2c0
+[  289.932354][ T8439]  ? rfcomm_sock_getsockopt+0x7b0/0x7b0
+[  289.933293][ T8439]  kernel_sendmsg+0x9b/0xf0
+[  289.933908][ T8439]  sock_no_sendpage+0x15a/0x1b0
+[  289.934502][ T8439]  ? __receive_sock+0x70/0x70
+[  289.935376][ T8439]  kernel_sendpage+0x1b1/0x470
+[  289.935959][ T8439]  sock_sendpage+0x5e/0xa0
+[  289.936493][ T8439]  pipe_to_sendpage+0x1af/0x200
+[  289.937070][ T8439]  ? sock_fasync+0xd0/0xd0
+[  289.937593][ T8439]  ? generic_splice_sendpage+0x1f0/0x1f0
+[  289.938245][ T8439]  ? generic_splice_sendpage+0x175/0x1f0
+[  289.938903][ T8439]  __splice_from_pipe+0x24f/0x520
+[  289.939498][ T8439]  ? generic_splice_sendpage+0x1f0/0x1f0
+[  289.940159][ T8439]  generic_splice_sendpage+0x187/0x1f0
+[  289.940824][ T8439]  ? iter_file_splice_write+0xa70/0xa70
+[  289.941489][ T8439]  ? common_file_perm+0x10e/0x160
+[  289.942092][ T8439]  ? fsnotify_perm+0x5a/0x390
+[  289.942636][ T8439]  ? security_file_permission+0x4f/0x70
+[  289.943272][ T8439]  ? iter_file_splice_write+0xa70/0xa70
+[  289.943916][ T8439]  do_splice+0x9dd/0x11a0
+[  289.944439][ T8439]  ? print_irqtrace_events+0x110/0x110
+[  289.945081][ T8439]  ? asm_sysvec_apic_timer_interrupt+0x1a/0x20
+[  289.945789][ T8439]  ? lockdep_hardirqs_on+0xdd/0x180
+[  289.946403][ T8439]  ? pipe_clear_nowait+0x147/0x190
+[  289.947004][ T8439]  ? wait_for_space+0x1a0/0x1a0
+[  289.947803][ T8439]  ? get_pipe_info+0x13/0x90
+[  289.948406][ T8439]  ? __sanitizer_cov_trace_pc+0x49/0x60
+[  289.949103][ T8439]  __se_sys_splice+0x35c/0x510
+[  289.949889][ T8439]  ? __x64_sys_splice+0x80/0x80
+[  289.950467][ T8439]  ? syscall_enter_from_user_mode+0x32/0x230
+[  289.951153][ T8439]  ? lockdep_hardirqs_on+0xdd/0x180
+[  289.952002][ T8439]  ? __x64_sys_splice+0x60/0x80
+[  289.952651][ T8439]  do_syscall_64+0x41/0x90
+[  289.953181][ T8439]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  289.953858][ T8439] RIP: 0033:0x7f5ebe48fddd
+[  289.954379][ T8439] Code: c3 e8 97 2b 00 00 0f 1f 80 00 00 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 b0 ff ff ff f7 d8 64 89 01 48
+[  289.956542][ T8439] RSP: 002b:00007f5ebf1df028 EFLAGS: 00000246 ORIG_RAX: 0000000000000113
+[  289.957525][ T8439] RAX: ffffffffffffffda RBX: 00007f5ebe5cbf80 RCX: 00007f5ebe48fddd
+[  289.958619][ T8439] RDX: 0000000000000006 RSI: 0000000000000000 RDI: 0000000000000003
+[  289.959705][ T8439] RBP: 00007f5ebe501e18 R08: 0000000000000cc2 R09: 0000000000000000
+[  289.960644][ T8439] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000000
+[  289.961527][ T8439] R13: 000000000000000b R14: 00007f5ebe5cbf80 R15: 00007f5ebf1bf000
+[  289.962580][ T8439]  </TASK>
+[  289.979823][ T8439] 
+[  289.980273][ T8439] Allocated by task 8439:
+[  289.994448][ T8439]  kasan_set_track+0x4f/0x70
+[  289.995040][ T8439]  __kasan_slab_alloc+0x50/0x60
+[  289.995847][ T8439]  slab_post_alloc_hook+0x64/0x380
+[  289.996500][ T8439]  kmem_cache_alloc_node+0x152/0x310
+[  290.002009][ T8439]  kmalloc_reserve+0x73/0x170
+[  290.002613][ T8439]  __alloc_skb+0x192/0x2e0
+[  290.014007][ T8439]  alloc_skb_with_frags+0x80/0x510
+[  290.014660][ T8439]  sock_alloc_send_pskb+0x64e/0x750
+[  290.015741][ T8439]  bt_skb_sendmsg+0xd3/0x490
+[  290.016332][ T8439]  rfcomm_sock_sendmsg+0x179/0x2c0
+[  290.017285][ T8439]  kernel_sendmsg+0x9b/0xf0
+[  290.017822][ T8439]  sock_no_sendpage+0x15a/0x1b0
+[  290.018708][ T8439]  kernel_sendpage+0x1b1/0x470
+[  290.019262][ T8439]  sock_sendpage+0x5e/0xa0
+[  290.020098][ T8439]  pipe_to_sendpage+0x1af/0x200
+[  290.020666][ T8439]  __splice_from_pipe+0x24f/0x520
+[  290.021567][ T8439]  generic_splice_sendpage+0x187/0x1f0
+[  290.034323][ T8439]  do_splice+0x9dd/0x11a0
+[  290.034845][ T8439]  __se_sys_splice+0x35c/0x510
+[  290.036840][ T8439]  do_syscall_64+0x41/0x90
+[  290.037382][ T8439]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  290.038526][ T8439] 
+[  290.038834][ T8439] The buggy address belongs to the object at ffff888143bc5500
+[  290.038834][ T8439]  which belongs to the cache skbuff_small_head of size 640
+[  290.040870][ T8439] The buggy address is located 16 bytes inside of
+[  290.040870][ T8439]  640-byte region [ffff888143bc5500, ffff888143bc5780)
+[  290.042894][ T8439] 
+[  290.043204][ T8439] The buggy address belongs to the physical page:
+[  290.054752][ T8439] page:ffffea00050ef100 refcount:1 mapcount:0 mapping:0000000000000000 index:0x0 pfn:0x143bc4
+[  290.056461][ T8439] head:ffffea00050ef100 order:1 entire_mapcount:0 nr_pages_mapped:0 pincount:0
+[  290.057844][ T8439] flags: 0x57ff00000010200(slab|head|node=1|zone=2|lastcpupid=0x7ff)
+[  290.059571][ T8439] page_type: 0xffffffff()
+[  290.060118][ T8439] raw: 057ff00000010200 ffff88801426d780 ffffea00050ef000 0000000000000002
+[  290.061464][ T8439] raw: 0000000000000000 00000000000a000a 00000001ffffffff 0000000000000000
+[  290.074782][ T8439] page dumped because: kasan: bad access detected
+[  290.075570][ T8439] page_owner tracks the page as allocated
+[  290.076828][ T8439] page last allocated via order 1, migratetype Unmovable, gfp_mask 0x1d2820(GFP_ATOMIC|__GFP_NOWARN|__GFP_NORETRY|__GFP_COMP|__GFP_NOMEMALLOC|__GFP_HARDWALL), pid 8023, tgid 8023 (syz-executor.0), ts 225112233649, free_ts 43224527904
+[  290.079962][ T8439]  post_alloc_hook+0x1e6/0x210
+[  290.080627][ T8439]  get_page_from_freelist+0x260a/0x2790
+[  290.083757][ T8439]  __alloc_pages+0x1f2/0x480
+[  290.084341][ T8439]  alloc_slab_page+0x6a/0x160
+[  290.090124][ T8439]  new_slab+0x84/0x2f0
+[  290.090643][ T8439]  ___slab_alloc+0xa85/0x10a0
+[  290.091594][ T8439]  kmem_cache_alloc_node+0x1ee/0x310
+[  290.094194][ T8439]  kmalloc_reserve+0x73/0x170
+[  290.095343][ T8439]  __alloc_skb+0x192/0x2e0
+[  290.095906][ T8439]  skb_copy+0x8e/0x3f0
+[  290.102007][ T8439]  mac80211_hwsim_tx_frame_no_nl+0xc83/0xef0
+[  290.103328][ T8439]  mac80211_hwsim_tx+0x1124/0x14f0
+[  290.104092][ T8439]  ieee80211_handle_wake_tx_queue+0x13a/0x200
+[  290.105351][ T8439]  ieee80211_queue_skb+0x108a/0x14b0
+[  290.113463][ T8439]  ieee80211_tx+0x24e/0x350
+[  290.114125][ T8439]  __ieee80211_subif_start_xmit+0xb71/0xf10
+[  290.115365][ T8439] page last free stack trace:
+[  290.115924][ T8439]  free_unref_page_prepare+0x75a/0x820
+[  290.117201][ T8439]  free_unref_page+0x37/0x300
+[  290.117777][ T8439]  __unfreeze_partials+0x1b1/0x1f0
+[  290.121964][ T8439]  put_cpu_partial+0x116/0x180
+[  290.122546][ T8439]  qlist_free_all+0x22/0x60
+[  290.123464][ T8439]  kasan_quarantine_reduce+0x14b/0x160
+[  290.124105][ T8439]  __kasan_slab_alloc+0x23/0x60
+[  290.133666][ T8439]  slab_post_alloc_hook+0x64/0x380
+[  290.134278][ T8439]  __kmem_cache_alloc_node+0x13d/0x240
+[  290.135317][ T8439]  __kmalloc+0xa8/0x230
+[  290.135850][ T8439]  tomoyo_realpath_from_path+0x89/0x340
+[  290.136928][ T8439]  tomoyo_path_number_perm+0x1f1/0x610
+[  290.137577][ T8439]  security_file_ioctl+0x47/0x70
+[  290.139550][ T8439]  __se_sys_ioctl+0x47/0x140
+[  290.140119][ T8439]  do_syscall_64+0x41/0x90
+[  290.141011][ T8439]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  290.145163][ T8439] 
+[  290.145474][ T8439] Memory state around the buggy address:
+[  290.146476][ T8439]  ffff888143bc5400: fb fb fb fb fb fb fb fb fb fb fb fb fb fb fb fb
+[  290.150530][ T8439]  ffff888143bc5480: fc fc fc fc fc fc fc fc fc fc fc fc fc fc fc fc
+[  290.160373][ T8439] >ffff888143bc5500: ec ec ee ec ec ec ec ec ec ec ec ec ec ec ec ec
+[  290.163863][ T8439]                          ^
+[  290.164429][ T8439]  ffff888143bc5580: ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec
+[  290.165726][ T8439]  ffff888143bc5600: ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec
+[  290.173254][ T8439] BUG: KASAN: unknown-crash in _copy_from_iter+0x813/0xdb0
+[  290.174083][ T8439] Write of size 8 at addr ffff888072645000 by task syz-executor.0/8439
+[  290.175376][ T8439] 
+[  290.175676][ T8439] CPU: 0 PID: 8439 Comm: syz-executor.0 Not tainted 6.4.1-00011-gc173c3c31378 #20
+[  290.176748][ T8439] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+[  290.177763][ T8439] Call Trace:
+[  290.178175][ T8439]  <TASK>
+[  290.178548][ T8439]  dump_stack_lvl+0x1ce/0x2c0
+[  290.179120][ T8439]  ? nf_tcp_handle_invalid+0x3d0/0x3d0
+[  290.179792][ T8439]  ? preempt_count_add+0xa0/0xf0
+[  290.180454][ T8439]  ? panic+0x620/0x620
+[  290.180999][ T8439]  print_report+0x163/0x540
+[  290.181568][ T8439]  ? __virt_addr_valid+0x1cc/0x240
+[  290.182167][ T8439]  ? __phys_addr+0x99/0x110
+[  290.182709][ T8439]  kdo_kasan_report+0x7f/0x90
+[  290.183261][ T8439]  ? _copy_from_iter+0x813/0xdb0
+[  290.183836][ T8439]  ? _copy_from_iter+0x813/0xdb0
+[  290.184409][ T8439]  propagate_taint+0x1f6/0x210
+[  290.184964][ T8439]  ? _copy_from_iter+0x813/0xdb0
+[  290.185538][ T8439]  ? _copy_from_iter+0x813/0xdb0
+[  290.186114][ T8439]  __kdo_asan_memcpy+0x69/0xa0
+[  290.186666][ T8439]  ? _copy_from_iter+0x7fa/0xdb0
+[  290.187242][ T8439]  _copy_from_iter+0x813/0xdb0
+[  290.187809][ T8439]  ? copyout_mc+0x80/0x80
+[  290.188323][ T8439]  ? lockdep_hardirqs_on_prepare+0x2dc/0x410
+[  290.189014][ T8439]  ? __phys_addr_symbol+0x3b/0x50
+[  290.189581][ T8439]  ? __check_object_size+0x3f9/0x850
+[  290.190197][ T8439]  bt_skb_sendmsg+0x321/0x490
+[  290.190745][ T8439]  ? lockdep_hardirqs_on+0xdd/0x180
+[  290.191351][ T8439]  ? __rfcomm_sock_close+0x1d0/0x1d0
+[  290.191966][ T8439]  ? do_raw_spin_unlock+0xd0/0x450
+[  290.192570][ T8439]  rfcomm_sock_sendmsg+0x179/0x2c0
+[  290.193166][ T8439]  ? rfcomm_sock_getsockopt+0x7b0/0x7b0
+[  290.193794][ T8439]  kernel_sendmsg+0x9b/0xf0
+[  290.194359][ T8439]  sock_no_sendpage+0x15a/0x1b0
+[  290.194970][ T8439]  ? __receive_sock+0x70/0x70
+[  290.195590][ T8439]  kernel_sendpage+0x1b1/0x470
+[  290.196194][ T8439]  sock_sendpage+0x5e/0xa0
+[  290.196779][ T8439]  pipe_to_sendpage+0x1af/0x200
+[  290.197392][ T8439]  ? sock_fasync+0xd0/0xd0
+[  290.197954][ T8439]  ? generic_splice_sendpage+0x1f0/0x1f0
+[  290.198645][ T8439]  ? generic_splice_sendpage+0x175/0x1f0
+[  290.199338][ T8439]  __splice_from_pipe+0x24f/0x520
+[  290.199961][ T8439]  ? generic_splice_sendpage+0x1f0/0x1f0
+[  290.200665][ T8439]  generic_splice_sendpage+0x187/0x1f0
+[  290.201323][ T8439]  ? iter_file_splice_write+0xa70/0xa70
+[  290.202002][ T8439]  ? common_file_perm+0x10e/0x160
+[  290.202629][ T8439]  ? fsnotify_perm+0x5a/0x390
+[  290.203198][ T8439]  ? security_file_permission+0x4f/0x70
+[  290.203872][ T8439]  ? iter_file_splice_write+0xa70/0xa70
+[  290.204560][ T8439]  do_splice+0x9dd/0x11a0
+[  290.205085][ T8439]  ? print_irqtrace_events+0x110/0x110
+[  290.205739][ T8439]  ? asm_sysvec_apic_timer_interrupt+0x1a/0x20
+[  290.206455][ T8439]  ? lockdep_hardirqs_on+0xdd/0x180
+[  290.207064][ T8439]  ? pipe_clear_nowait+0x147/0x190
+[  290.207694][ T8439]  ? wait_for_space+0x1a0/0x1a0
+[  290.208284][ T8439]  ? get_pipe_info+0x13/0x90
+[  290.208849][ T8439]  ? __sanitizer_cov_trace_pc+0x49/0x60
+[  290.209514][ T8439]  __se_sys_splice+0x35c/0x510
+[  290.210078][ T8439]  ? __x64_sys_splice+0x80/0x80
+[  290.210644][ T8439]  ? syscall_enter_from_user_mode+0x32/0x230
+[  290.211364][ T8439]  ? lockdep_hardirqs_on+0xdd/0x180
+[  290.211990][ T8439]  ? __x64_sys_splice+0x60/0x80
+[  290.212595][ T8439]  do_syscall_64+0x41/0x90
+[  290.213138][ T8439]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  290.213821][ T8439] RIP: 0033:0x7f5ebe48fddd
+[  290.214347][ T8439] Code: c3 e8 97 2b 00 00 0f 1f 80 00 00 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 b0 ff ff ff f7 d8 64 89 01 48
+[  290.216599][ T8439] RSP: 002b:00007f5ebf1df028 EFLAGS: 00000246 ORIG_RAX: 0000000000000113
+[  290.217586][ T8439] RAX: ffffffffffffffda RBX: 00007f5ebe5cbf80 RCX: 00007f5ebe48fddd
+[  290.218496][ T8439] RDX: 0000000000000006 RSI: 0000000000000000 RDI: 0000000000000003
+[  290.219377][ T8439] RBP: 00007f5ebe501e18 R08: 0000000000000cc2 R09: 0000000000000000
+[  290.220272][ T8439] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000000
+[  290.221144][ T8439] R13: 000000000000000b R14: 00007f5ebe5cbf80 R15: 00007f5ebf1bf000
+[  290.222082][ T8439]  </TASK>
+[  290.283797][ T8439] 
+[  290.284150][ T8439] The buggy address belongs to the physical page:
+[  290.285286][ T8439] page:ffffea0001c99140 refcount:1 mapcount:0 mapping:0000000000000000 index:0x0 pfn:0x72645
+[  290.292936][ T8439] memcg:ffff888025407202
+[  290.293438][ T8439] flags: 0xfff00000000000(node=0|zone=1|lastcpupid=0x7ff)
+[  290.294657][ T8439] page_type: 0xffffffff()
+[  290.295208][ T8439] raw: 00fff00000000000 0000000000000000 dead000000000122 0000000000000000
+[  290.296600][ T8439] raw: 0000000000000000 0000000000000000 00000001ffffffff ffff888025407202
+[  290.304555][ T8439] page dumped because: kasan: bad access detected
+[  290.305295][ T8439] page_owner tracks the page as allocated
+[  290.306271][ T8439] page last allocated via order 0, migratetype Unmovable, gfp_mask 0x500cc2(GFP_HIGHUSER|__GFP_ACCOUNT), pid 8439, tgid 8438 (syz-executor.0), ts 289904967367, free_ts 289115202748
+[  290.311572][ T8439]  post_alloc_hook+0x1e6/0x210
+[  290.313097][ T8439]  get_page_from_freelist+0x260a/0x2790
+[  290.313740][ T8439]  __alloc_pages+0x1f2/0x480
+[  290.317014][ T8439]  pipe_write+0x823/0x1140
+[  290.317566][ T8439]  vfs_write+0x5cf/0x870
+[  290.318404][ T8439]  ksys_write+0x169/0x260
+[  290.318922][ T8439]  do_syscall_64+0x41/0x90
+[  290.324020][ T8439]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  290.324760][ T8439] page last free stack trace:
+[  290.325710][ T8439]  free_unref_page_prepare+0x75a/0x820
+[  290.326418][ T8439]  free_unref_page_list+0x49c/0x640
+[  290.331123][ T8439]  release_pages+0x1fc4/0x22d0
+[  290.333989][ T8439]  tlb_flush_mmu+0xcf/0x170
+[  290.334539][ T8439]  tlb_finish_mmu+0x9f/0x140
+[  290.335467][ T8439]  exit_mmap+0x3b9/0x910
+[  290.335988][ T8439]  __mmput+0xf3/0x330
+[  290.339877][ T8439]  exit_mm+0x1f5/0x2d0
+[  290.340423][ T8439]  do_exit+0x4dc/0x1870
+[  290.341310][ T8439]  do_group_exit+0x15e/0x160
+[  290.350215][ T8439]  get_signal+0xfca/0x1040
+[  290.350764][ T8439]  arch_do_signal_or_restart+0x91/0x4d0
+[  290.352005][ T8439]  exit_to_user_mode_loop+0x6a/0x100
+[  290.352886][ T8439]  exit_to_user_mode_prepare+0xb1/0x140
+[  290.353730][ T8439]  syscall_exit_to_user_mode+0x64/0x280
+[  290.354576][ T8439]  do_syscall_64+0x4d/0x90
+[  290.357603][ T8439] 
+[  290.357921][ T8439] Memory state around the buggy address:
+[  290.358923][ T8439]  ffff888072644f00: eb eb eb eb eb eb eb eb eb eb eb eb eb eb eb eb
+[  290.367149][ T8439]  ffff888072644f80: eb eb eb eb eb eb eb eb eb eb eb eb eb eb eb eb
+[  290.368425][ T8439] >ffff888072645000: e9 e9 e9 e9 e9 e9 e9 e9 e9 e9 e9 e9 e9 00 00 00
+[  290.369692][ T8439]                    ^
+[  290.370166][ T8439]  ffff888072645080: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[  290.371399][ T8439]  ffff888072645100: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[  290.377377][ T8439] Kernel panic - not syncing: KDO: memcpy hit (id: _copy_from_iter+0x813/0xdb0, callid: 6015S)
+[  290.378610][ T8439] CPU: 0 PID: 8439 Comm: syz-executor.0 Not tainted 6.4.1-00011-gc173c3c31378 #20
+[  290.379713][ T8439] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+[  290.380830][ T8439] Call Trace:
+[  290.381269][ T8439]  <TASK>
+[  290.381658][ T8439]  dump_stack_lvl+0x1ce/0x2c0
+[  290.382262][ T8439]  ? nf_tcp_handle_invalid+0x3d0/0x3d0
+[  290.382922][ T8439]  ? panic+0x620/0x620
+[  290.383494][ T8439]  ? vscnprintf+0x5d/0x80
+[  290.384059][ T8439]  panic+0x2ba/0x620
+[  290.384609][ T8439]  ? _copy_from_iter+0x813/0xdb0
+[  290.385208][ T8439]  ? __wake_up_klogd+0xb7/0xf0
+[  290.385837][ T8439]  ? kdo_sanitizer_cov_write+0x100/0x100
+[  290.386557][ T8439]  ? __phys_addr+0x99/0x110
+[  290.387131][ T8439]  ? kdo_kasan_report+0x7f/0x90
+[  290.387727][ T8439]  ? _copy_from_iter+0x813/0xdb0
+[  290.388355][ T8439]  ? _copy_from_iter+0x813/0xdb0
+[  290.388977][ T8439]  propagate_taint+0x20a/0x210
+[  290.389581][ T8439]  ? _copy_from_iter+0x813/0xdb0
+[  290.390238][ T8439]  ? _copy_from_iter+0x813/0xdb0
+[  290.390882][ T8439]  __kdo_asan_memcpy+0x69/0xa0
+[  290.391469][ T8439]  ? _copy_from_iter+0x7fa/0xdb0
+[  290.392106][ T8439]  _copy_from_iter+0x813/0xdb0
+[  290.392722][ T8439]  ? copyout_mc+0x80/0x80
+[  290.393267][ T8439]  ? lockdep_hardirqs_on_prepare+0x2dc/0x410
+[  290.394004][ T8439]  ? __phys_addr_symbol+0x3b/0x50
+[  290.394644][ T8439]  ? __check_object_size+0x3f9/0x850
+[  290.395298][ T8439]  bt_skb_sendmsg+0x321/0x490
+[  290.395882][ T8439]  ? lockdep_hardirqs_on+0xdd/0x180
+[  290.396492][ T8439]  ? __rfcomm_sock_close+0x1d0/0x1d0
+[  290.397168][ T8439]  ? do_raw_spin_unlock+0xd0/0x450
+[  290.397822][ T8439]  rfcomm_sock_sendmsg+0x179/0x2c0
+[  290.398482][ T8439]  ? rfcomm_sock_getsockopt+0x7b0/0x7b0
+[  290.399151][ T8439]  kernel_sendmsg+0x9b/0xf0
+[  290.399715][ T8439]  sock_no_sendpage+0x15a/0x1b0
+[  290.400342][ T8439]  ? __receive_sock+0x70/0x70
+[  290.400986][ T8439]  kernel_sendpage+0x1b1/0x470
+[  290.401593][ T8439]  sock_sendpage+0x5e/0xa0
+[  290.402164][ T8439]  pipe_to_sendpage+0x1af/0x200
+[  290.402762][ T8439]  ? sock_fasync+0xd0/0xd0
+[  290.403308][ T8439]  ? generic_splice_sendpage+0x1f0/0x1f0
+[  290.404027][ T8439]  ? generic_splice_sendpage+0x175/0x1f0
+[  290.404738][ T8439]  __splice_from_pipe+0x24f/0x520
+[  290.405385][ T8439]  ? generic_splice_sendpage+0x1f0/0x1f0
+[  290.406080][ T8439]  generic_splice_sendpage+0x187/0x1f0
+[  290.406777][ T8439]  ? iter_file_splice_write+0xa70/0xa70
+[  290.407471][ T8439]  ? common_file_perm+0x10e/0x160
+[  290.408125][ T8439]  ? fsnotify_perm+0x5a/0x390
+[  290.408726][ T8439]  ? security_file_permission+0x4f/0x70
+[  290.409393][ T8439]  ? iter_file_splice_write+0xa70/0xa70
+[  290.410060][ T8439]  do_splice+0x9dd/0x11a0
+[  290.410607][ T8439]  ? print_irqtrace_events+0x110/0x110
+[  290.411277][ T8439]  ? asm_sysvec_apic_timer_interrupt+0x1a/0x20
+[  290.412017][ T8439]  ? lockdep_hardirqs_on+0xdd/0x180
+[  290.412645][ T8439]  ? pipe_clear_nowait+0x147/0x190
+[  290.413285][ T8439]  ? wait_for_space+0x1a0/0x1a0
+[  290.413874][ T8439]  ? get_pipe_info+0x13/0x90
+[  290.414429][ T8439]  ? __sanitizer_cov_trace_pc+0x49/0x60
+[  290.415077][ T8439]  __se_sys_splice+0x35c/0x510
+[  290.415629][ T8439]  ? __x64_sys_splice+0x80/0x80
+[  290.416189][ T8439]  ? syscall_enter_from_user_mode+0x32/0x230
+[  290.416937][ T8439]  ? lockdep_hardirqs_on+0xdd/0x180
+[  290.417552][ T8439]  ? __x64_sys_splice+0x60/0x80
+[  290.418119][ T8439]  do_syscall_64+0x41/0x90
+[  290.418628][ T8439]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  290.419315][ T8439] RIP: 0033:0x7f5ebe48fddd
+[  290.419869][ T8439] Code: c3 e8 97 2b 00 00 0f 1f 80 00 00 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 b0 ff ff ff f7 d8 64 89 01 48
+[  290.421994][ T8439] RSP: 002b:00007f5ebf1df028 EFLAGS: 00000246 ORIG_RAX: 0000000000000113
+[  290.422960][ T8439] RAX: ffffffffffffffda RBX: 00007f5ebe5cbf80 RCX: 00007f5ebe48fddd
+[  290.423846][ T8439] RDX: 0000000000000006 RSI: 0000000000000000 RDI: 0000000000000003
+[  290.424705][ T8439] RBP: 00007f5ebe501e18 R08: 0000000000000cc2 R09: 0000000000000000
+[  290.425562][ T8439] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000000
+[  290.426414][ T8439] R13: 000000000000000b R14: 00007f5ebe5cbf80 R15: 00007f5ebf1bf000
+[  290.427283][ T8439]  </TASK>
+[  290.427772][ T8439] Kernel Offset: disabled
+[  290.428290][ T8439] Rebooting in 86400 seconds..
+
+VM DIAGNOSIS:
+21:02:08  Registers:
+info registers vcpu 0
+RAX=0000000000000005 RBX=00000000000003f9 RCX=ffffffff8392d93d RDX=00000000000003f9
+RSI=dffffc0000000000 RDI=ffffffff8e7ea860 RBP=ffffc90005c3ef50 RSP=ffffc90005c3eda0
+R8 =ffffffff8e7ea867 R9 =ffffffff814f0843 R10=fffff52000b87d94 R11=dffffc0000000001
+R12=ffffffff8e502620 R13=ffffffff8e7ea820 R14=ffffffff8e7ea820 R15=0000000000000000
+RIP=ffffffff8392d944 RFL=00000006 [-----P-] CPL=0 II=0 A20=1 SMM=0 HLT=0
+ES =0000 0000000000000000 ffffffff 00c00000
+CS =0010 0000000000000000 ffffffff 00a09b00 DPL=0 CS64 [-RA]
+SS =0018 0000000000000000 ffffffff 00c09300 DPL=0 DS   [-WA]
+DS =0000 0000000000000000 ffffffff 00c00000
+FS =0000 00007f5ebf1df640 ffffffff 00c00000
+GS =0000 ffff8880ba000000 ffffffff 00c00000
+LDT=0000 0000000000000000 ffffffff 00c00000
+TR =0040 fffffe0000003000 00004087 00008b00 DPL=0 TSS64-busy
+GDT=     fffffe0000001000 0000007f
+IDT=     fffffe0000000000 00000fff
+CR0=80050033 CR2=0000001b31122000 CR3=000000007c996000 CR4=00350ef0
+DR0=0000000000000000 DR1=0000000000000000 DR2=0000000000000000 DR3=0000000000000000 
+DR6=00000000fffe0ff0 DR7=0000000000000400
+EFER=0000000000000d01
+FCW=037f FSW=0000 [ST=0] FTW=00 MXCSR=00001f80
+FPR0=0000000000000000 0000 FPR1=0000000000000000 0000
+FPR2=0000000000000000 0000 FPR3=0000000000000000 0000
+FPR4=0000000000000000 0000 FPR5=0000000000000000 0000
+FPR6=0000000000000000 0000 FPR7=0000000000000000 0000
+YMM00=0000000000000000 0000000000000000 00000000000f4240 0000000000000000
+YMM01=0000000000000000 0000000000000000 0000000000000000 00000000000f4240
+YMM02=0000000000000000 0000000000000000 00007f5ebf0fb1a0 00007f5ebf0fb1a0
+YMM03=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffffffff
+YMM04=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffffffff
+YMM05=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffffff00
+YMM06=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffffffff
+YMM07=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffffff00
+YMM08=0000000000000000 0000000000000000 2570756c6c25706f 6f6c2f7665642f00
+YMM09=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM10=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM11=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM12=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM13=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM14=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM15=0000000000000000 0000000000000000 0000000000000000 0000000000000000

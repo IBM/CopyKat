@@ -1,0 +1,594 @@
+Warning: Permanently added '[localhost]:47978' (ED25519) to the list of known hosts.
+2024/05/22 23:18:21 fuzzer started
+2024/05/22 23:18:23 dialing manager at localhost:34093
+syzkaller login: [  179.218914][ T8029] cgroup: Unknown subsys name 'net'
+[  179.363357][ T8029] cgroup: Unknown subsys name 'rlimit'
+2024/05/22 23:18:23 syscalls: 3922
+2024/05/22 23:18:23 code coverage: enabled
+2024/05/22 23:18:23 comparison tracing: enabled
+2024/05/22 23:18:23 extra coverage: enabled
+2024/05/22 23:18:23 delay kcov mmap: enabled
+2024/05/22 23:18:23 setuid sandbox: enabled
+2024/05/22 23:18:23 namespace sandbox: enabled
+2024/05/22 23:18:23 Android sandbox: /sys/fs/selinux/policy does not exist
+2024/05/22 23:18:23 fault injection: enabled
+2024/05/22 23:18:23 leak checking: CONFIG_DEBUG_KMEMLEAK is not enabled
+2024/05/22 23:18:23 net packet injection: enabled
+2024/05/22 23:18:23 net device setup: enabled
+2024/05/22 23:18:23 concurrency sanitizer: /sys/kernel/debug/kcsan does not exist
+2024/05/22 23:18:23 devlink PCI setup: PCI device 0000:00:10.0 is not available
+2024/05/22 23:18:23 NIC VF setup: PCI device 0000:00:11.0 is not available
+2024/05/22 23:18:23 USB emulation: enabled
+2024/05/22 23:18:23 hci packet injection: enabled
+2024/05/22 23:18:23 wifi device emulation: enabled
+2024/05/22 23:18:23 802.15.4 emulation: enabled
+2024/05/22 23:18:24 fetching corpus: 0, signal 0/2000 (executing program)
+2024/05/22 23:18:24 fetching corpus: 50, signal 22767/26347 (executing program)
+2024/05/22 23:18:24 fetching corpus: 100, signal 31700/36825 (executing program)
+2024/05/22 23:18:24 fetching corpus: 150, signal 43726/50088 (executing program)
+2024/05/22 23:18:25 fetching corpus: 200, signal 48219/55975 (executing program)
+2024/05/22 23:18:25 fetching corpus: 250, signal 54492/63435 (executing program)
+2024/05/22 23:18:25 fetching corpus: 300, signal 59249/69347 (executing program)
+2024/05/22 23:18:25 fetching corpus: 350, signal 62742/74002 (executing program)
+2024/05/22 23:18:26 fetching corpus: 400, signal 66407/78805 (executing program)
+2024/05/22 23:18:26 fetching corpus: 450, signal 68723/82317 (executing program)
+2024/05/22 23:18:26 fetching corpus: 500, signal 71634/86311 (executing program)
+2024/05/22 23:18:26 fetching corpus: 550, signal 74830/90448 (executing program)
+2024/05/22 23:18:26 fetching corpus: 600, signal 77799/94386 (executing program)
+2024/05/22 23:18:26 fetching corpus: 650, signal 78948/96654 (executing program)
+2024/05/22 23:18:26 fetching corpus: 700, signal 80557/99285 (executing program)
+2024/05/22 23:18:26 fetching corpus: 750, signal 83809/103276 (executing program)
+2024/05/22 23:18:27 fetching corpus: 799, signal 87996/108027 (executing program)
+2024/05/22 23:18:27 fetching corpus: 849, signal 90284/111150 (executing program)
+2024/05/22 23:18:27 fetching corpus: 899, signal 93249/114770 (executing program)
+2024/05/22 23:18:27 fetching corpus: 949, signal 94917/117223 (executing program)
+2024/05/22 23:18:27 fetching corpus: 999, signal 97238/120158 (executing program)
+2024/05/22 23:18:27 fetching corpus: 1049, signal 99107/122743 (executing program)
+2024/05/22 23:18:27 fetching corpus: 1099, signal 101328/125542 (executing program)
+2024/05/22 23:18:28 fetching corpus: 1149, signal 103268/128109 (executing program)
+2024/05/22 23:18:28 fetching corpus: 1199, signal 105559/130855 (executing program)
+2024/05/22 23:18:28 fetching corpus: 1249, signal 108214/133880 (executing program)
+2024/05/22 23:18:28 fetching corpus: 1299, signal 110357/136487 (executing program)
+2024/05/22 23:18:28 fetching corpus: 1349, signal 111687/138472 (executing program)
+2024/05/22 23:18:28 fetching corpus: 1399, signal 113627/140866 (executing program)
+2024/05/22 23:18:29 fetching corpus: 1449, signal 115059/142814 (executing program)
+2024/05/22 23:18:29 fetching corpus: 1499, signal 116333/144682 (executing program)
+2024/05/22 23:18:29 fetching corpus: 1549, signal 117601/146413 (executing program)
+2024/05/22 23:18:29 fetching corpus: 1599, signal 119086/148314 (executing program)
+2024/05/22 23:18:29 fetching corpus: 1649, signal 120374/150070 (executing program)
+2024/05/22 23:18:29 fetching corpus: 1699, signal 121605/151765 (executing program)
+2024/05/22 23:18:29 fetching corpus: 1749, signal 123669/154039 (executing program)
+2024/05/22 23:18:30 fetching corpus: 1799, signal 125394/156006 (executing program)
+2024/05/22 23:18:30 fetching corpus: 1849, signal 126528/157538 (executing program)
+2024/05/22 23:18:30 fetching corpus: 1899, signal 127551/159032 (executing program)
+2024/05/22 23:18:30 fetching corpus: 1949, signal 129139/160905 (executing program)
+2024/05/22 23:18:30 fetching corpus: 1999, signal 130795/162729 (executing program)
+2024/05/22 23:18:30 fetching corpus: 2049, signal 132317/164464 (executing program)
+2024/05/22 23:18:30 fetching corpus: 2099, signal 133025/165653 (executing program)
+2024/05/22 23:18:31 fetching corpus: 2149, signal 134799/167466 (executing program)
+2024/05/22 23:18:31 fetching corpus: 2199, signal 136849/169391 (executing program)
+2024/05/22 23:18:31 fetching corpus: 2249, signal 137950/170753 (executing program)
+2024/05/22 23:18:31 fetching corpus: 2299, signal 139985/172582 (executing program)
+2024/05/22 23:18:31 fetching corpus: 2349, signal 141297/173979 (executing program)
+2024/05/22 23:18:31 fetching corpus: 2399, signal 142193/175149 (executing program)
+2024/05/22 23:18:31 fetching corpus: 2449, signal 143144/176350 (executing program)
+2024/05/22 23:18:32 fetching corpus: 2499, signal 144215/177539 (executing program)
+2024/05/22 23:18:32 fetching corpus: 2549, signal 145167/178703 (executing program)
+2024/05/22 23:18:32 fetching corpus: 2599, signal 146705/180092 (executing program)
+2024/05/22 23:18:32 fetching corpus: 2649, signal 147904/181329 (executing program)
+2024/05/22 23:18:32 fetching corpus: 2699, signal 148942/182429 (executing program)
+2024/05/22 23:18:32 fetching corpus: 2749, signal 149623/183367 (executing program)
+2024/05/22 23:18:32 fetching corpus: 2799, signal 151042/184667 (executing program)
+2024/05/22 23:18:33 fetching corpus: 2849, signal 151953/185737 (executing program)
+2024/05/22 23:18:33 fetching corpus: 2899, signal 153137/186839 (executing program)
+2024/05/22 23:18:33 fetching corpus: 2949, signal 154272/187885 (executing program)
+2024/05/22 23:18:33 fetching corpus: 2999, signal 155571/189012 (executing program)
+2024/05/22 23:18:33 fetching corpus: 3049, signal 156472/189909 (executing program)
+2024/05/22 23:18:33 fetching corpus: 3099, signal 157660/190939 (executing program)
+2024/05/22 23:18:34 fetching corpus: 3149, signal 158376/191731 (executing program)
+2024/05/22 23:18:34 fetching corpus: 3199, signal 159305/192584 (executing program)
+2024/05/22 23:18:34 fetching corpus: 3249, signal 160641/193594 (executing program)
+2024/05/22 23:18:34 fetching corpus: 3299, signal 161866/194545 (executing program)
+2024/05/22 23:18:34 fetching corpus: 3349, signal 162762/195365 (executing program)
+2024/05/22 23:18:34 fetching corpus: 3399, signal 164123/196302 (executing program)
+2024/05/22 23:18:34 fetching corpus: 3449, signal 164946/197064 (executing program)
+2024/05/22 23:18:35 fetching corpus: 3499, signal 165558/197737 (executing program)
+2024/05/22 23:18:35 fetching corpus: 3549, signal 166610/198514 (executing program)
+2024/05/22 23:18:35 fetching corpus: 3599, signal 167779/199318 (executing program)
+2024/05/22 23:18:35 fetching corpus: 3649, signal 168966/200134 (executing program)
+2024/05/22 23:18:35 fetching corpus: 3699, signal 169573/200758 (executing program)
+2024/05/22 23:18:35 fetching corpus: 3749, signal 170563/201449 (executing program)
+2024/05/22 23:18:35 fetching corpus: 3799, signal 171249/202094 (executing program)
+2024/05/22 23:18:35 fetching corpus: 3849, signal 172162/202737 (executing program)
+2024/05/22 23:18:36 fetching corpus: 3899, signal 172752/203265 (executing program)
+2024/05/22 23:18:36 fetching corpus: 3934, signal 173461/203878 (executing program)
+2024/05/22 23:18:36 fetching corpus: 3934, signal 173461/204281 (executing program)
+2024/05/22 23:18:36 fetching corpus: 3934, signal 173461/204669 (executing program)
+2024/05/22 23:18:36 fetching corpus: 3934, signal 173461/205050 (executing program)
+2024/05/22 23:18:36 fetching corpus: 3934, signal 173461/205442 (executing program)
+2024/05/22 23:18:36 fetching corpus: 3934, signal 173461/205803 (executing program)
+2024/05/22 23:18:36 fetching corpus: 3934, signal 173461/206173 (executing program)
+2024/05/22 23:18:36 fetching corpus: 3934, signal 173461/206535 (executing program)
+2024/05/22 23:18:36 fetching corpus: 3934, signal 173461/206912 (executing program)
+2024/05/22 23:18:36 fetching corpus: 3934, signal 173461/207300 (executing program)
+2024/05/22 23:18:36 fetching corpus: 3934, signal 173461/207665 (executing program)
+2024/05/22 23:18:36 fetching corpus: 3934, signal 173461/208040 (executing program)
+2024/05/22 23:18:36 fetching corpus: 3934, signal 173461/208408 (executing program)
+2024/05/22 23:18:36 fetching corpus: 3934, signal 173461/208762 (executing program)
+2024/05/22 23:18:36 fetching corpus: 3934, signal 173461/209147 (executing program)
+2024/05/22 23:18:36 fetching corpus: 3934, signal 173461/209538 (executing program)
+2024/05/22 23:18:36 fetching corpus: 3934, signal 173461/209915 (executing program)
+2024/05/22 23:18:36 fetching corpus: 3934, signal 173461/210314 (executing program)
+2024/05/22 23:18:36 fetching corpus: 3934, signal 173461/210706 (executing program)
+2024/05/22 23:18:36 fetching corpus: 3934, signal 173461/211060 (executing program)
+2024/05/22 23:18:36 fetching corpus: 3934, signal 173461/211438 (executing program)
+2024/05/22 23:18:36 fetching corpus: 3934, signal 173461/211805 (executing program)
+2024/05/22 23:18:36 fetching corpus: 3934, signal 173461/212195 (executing program)
+2024/05/22 23:18:36 fetching corpus: 3934, signal 173461/212570 (executing program)
+2024/05/22 23:18:36 fetching corpus: 3934, signal 173461/212948 (executing program)
+2024/05/22 23:18:36 fetching corpus: 3934, signal 173461/213317 (executing program)
+2024/05/22 23:18:36 fetching corpus: 3934, signal 173461/213667 (executing program)
+2024/05/22 23:18:36 fetching corpus: 3934, signal 173461/213981 (executing program)
+2024/05/22 23:18:36 fetching corpus: 3934, signal 173461/213981 (executing program)
+2024/05/22 23:18:42 starting 1 fuzzer processes
+[  198.419499][ T8012] memfd_create() without MFD_EXEC nor MFD_NOEXEC_SEAL, pid=8012 'syz-fuzzer'
+23:18:42 executing program 0:
+syz_mount_image$hfsplus(&(0x7f0000000000), &(0x7f0000002380)='./file0\x00', 0x80000c, &(0x7f00000003c0)=ANY=[@ANYRES8=0x0, @ANYRESHEX=0x0, @ANYRES16, @ANYRESHEX=0x0, @ANYBLOB="2c756d61736b3d30303030303030303030303030303030303030303030302c6465636f6d706f73652c666f7263652c6e6f6465636f6d706f73652c626172726965722c6e6f6465636f6d706f73652c747970653db029e1c02c7569643d", @ANYRESHEX=0x0, @ANYBLOB="2c747970653dd2100d1b2c7529643dd4f81c66210bbcbf82440a104ab956f2ba5e36e41ccb1b040fa8b829b0b87078de654c66ac22aebaa2c653ef127e38e0aa2229f9cf6a8503", @ANYRESHEX=0x0, @ANYBLOB='\x00\x00\x00\x00\x00', @ANYRESHEX=0x0, @ANYRES8=0x0], 0x2, 0x6e6, &(0x7f0000000f40)="$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")
+openat$cgroup_ro(0xffffffffffffff9c, &(0x7f00000000c0)='memory.events\x00', 0x26e1, 0x0)
+bpf$PROG_LOAD_XDP(0x5, 0x0, 0x0)
+r0 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000140)='memory.events\x00', 0x7a05, 0x1700)
+r1 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000000)='devices.list\x00', 0x275a, 0x0)
+ftruncate(r1, 0xc17a)
+write$cgroup_type(r0, &(0x7f0000000000), 0x6e000)
+
+[  205.406062][ T1220] ieee802154 phy0 wpan0: encryption failed: -22
+[  205.406916][ T1220] ieee802154 phy1 wpan1: encryption failed: -22
+[  217.835294][ T8043] Bluetooth: hci0: unexpected cc 0x0c03 length: 249 > 1
+[  217.838249][ T8043] Bluetooth: hci0: unexpected cc 0x1003 length: 249 > 9
+[  217.840212][ T8043] Bluetooth: hci0: unexpected cc 0x1001 length: 249 > 9
+[  217.846480][ T8043] Bluetooth: hci0: unexpected cc 0x0c23 length: 249 > 4
+[  217.848928][ T8043] Bluetooth: hci0: unexpected cc 0x0c25 length: 249 > 3
+[  217.850487][ T8043] Bluetooth: hci0: unexpected cc 0x0c38 length: 249 > 2
+[  219.008248][ T8040] chnl_net:caif_netlink_parms(): no params data found
+[  219.232466][ T8040] bridge0: port 1(bridge_slave_0) entered blocking state
+[  219.236818][ T8040] bridge0: port 1(bridge_slave_0) entered disabled state
+[  219.237903][ T8040] bridge_slave_0: entered allmulticast mode
+[  219.241419][ T8040] bridge_slave_0: entered promiscuous mode
+[  219.253952][ T8040] bridge0: port 2(bridge_slave_1) entered blocking state
+[  219.255124][ T8040] bridge0: port 2(bridge_slave_1) entered disabled state
+[  219.256159][ T8040] bridge_slave_1: entered allmulticast mode
+[  219.259741][ T8040] bridge_slave_1: entered promiscuous mode
+[  219.335497][ T8040] bond0: (slave bond_slave_0): Enslaving as an active interface with an up link
+[  219.342112][ T8040] bond0: (slave bond_slave_1): Enslaving as an active interface with an up link
+[  219.420401][ T8040] team0: Port device team_slave_0 added
+[  219.438880][ T8040] team0: Port device team_slave_1 added
+[  219.512358][ T8040] batman_adv: batadv0: Adding interface: batadv_slave_0
+[  219.513567][ T8040] batman_adv: batadv0: The MTU of interface batadv_slave_0 is too small (1500) to handle the transport of batman-adv packets. Packets going over this interface will be fragmented on layer2 which could impact the performance. Setting the MTU to 1560 would solve the problem.
+[  219.516220][ T8040] batman_adv: batadv0: Not using interface batadv_slave_0 (retrying later): interface not active
+[  219.521798][ T8040] batman_adv: batadv0: Adding interface: batadv_slave_1
+[  219.522540][ T8040] batman_adv: batadv0: The MTU of interface batadv_slave_1 is too small (1500) to handle the transport of batman-adv packets. Packets going over this interface will be fragmented on layer2 which could impact the performance. Setting the MTU to 1560 would solve the problem.
+[  219.535539][ T8040] batman_adv: batadv0: Not using interface batadv_slave_1 (retrying later): interface not active
+[  219.637511][ T8040] hsr_slave_0: entered promiscuous mode
+[  219.642178][ T8040] hsr_slave_1: entered promiscuous mode
+[  219.883804][ T4404] Bluetooth: hci0: command 0x0409 tx timeout
+[  220.150395][ T8040] netdevsim netdevsim0 netdevsim0: renamed from eth0
+[  220.171571][ T8040] netdevsim netdevsim0 netdevsim1: renamed from eth1
+[  220.187998][ T8040] netdevsim netdevsim0 netdevsim2: renamed from eth2
+[  220.207559][ T8040] netdevsim netdevsim0 netdevsim3: renamed from eth3
+[  220.375562][ T8040] 8021q: adding VLAN 0 to HW filter on device bond0
+[  220.399355][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): veth1: link becomes ready
+[  220.402094][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): veth0: link becomes ready
+[  220.416822][ T8040] 8021q: adding VLAN 0 to HW filter on device team0
+[  220.430250][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_to_bridge: link becomes ready
+[  220.432173][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): bridge_slave_0: link becomes ready
+[  220.436549][    T9] bridge0: port 1(bridge_slave_0) entered blocking state
+[  220.437554][    T9] bridge0: port 1(bridge_slave_0) entered forwarding state
+[  220.440397][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): bridge0: link becomes ready
+[  220.457839][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_to_bridge: link becomes ready
+[  220.459818][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): bridge_slave_1: link becomes ready
+[  220.466955][    T9] bridge0: port 2(bridge_slave_1) entered blocking state
+[  220.467828][    T9] bridge0: port 2(bridge_slave_1) entered forwarding state
+[  220.488083][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_to_bond: link becomes ready
+[  220.501151][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_to_bond: link becomes ready
+[  220.527809][    T7] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_to_team: link becomes ready
+[  220.530099][    T7] IPv6: ADDRCONF(NETDEV_CHANGE): team_slave_0: link becomes ready
+[  220.533693][    T7] IPv6: ADDRCONF(NETDEV_CHANGE): team0: link becomes ready
+[  220.547750][    T7] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_to_team: link becomes ready
+[  220.550080][    T7] IPv6: ADDRCONF(NETDEV_CHANGE): team_slave_1: link becomes ready
+[  220.562973][    T7] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_to_hsr: link becomes ready
+[  220.564672][    T7] IPv6: ADDRCONF(NETDEV_CHANGE): hsr_slave_0: link becomes ready
+[  220.586137][    T7] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_to_hsr: link becomes ready
+[  220.588002][    T7] IPv6: ADDRCONF(NETDEV_CHANGE): hsr_slave_1: link becomes ready
+[  220.600376][ T8040] IPv6: ADDRCONF(NETDEV_CHANGE): hsr0: link becomes ready
+[  220.936249][    T7] IPv6: ADDRCONF(NETDEV_CHANGE): vxcan1: link becomes ready
+[  220.937228][    T7] IPv6: ADDRCONF(NETDEV_CHANGE): vxcan0: link becomes ready
+[  220.957505][ T8040] 8021q: adding VLAN 0 to HW filter on device batadv0
+[  220.994954][ T1135] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_virt_wifi: link becomes ready
+[  220.996843][ T1135] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_virt_wifi: link becomes ready
+[  221.036930][    T7] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_vlan: link becomes ready
+[  221.038907][    T7] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_vlan: link becomes ready
+[  221.042335][    T7] IPv6: ADDRCONF(NETDEV_CHANGE): vlan0: link becomes ready
+[  221.048462][    T7] IPv6: ADDRCONF(NETDEV_CHANGE): vlan1: link becomes ready
+[  221.058413][ T8040] veth0_vlan: entered promiscuous mode
+[  221.077789][ T8040] veth1_vlan: entered promiscuous mode
+[  221.128400][    T7] IPv6: ADDRCONF(NETDEV_CHANGE): macvlan0: link becomes ready
+[  221.130425][    T7] IPv6: ADDRCONF(NETDEV_CHANGE): macvlan1: link becomes ready
+[  221.133701][    T7] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_macvtap: link becomes ready
+[  221.137454][    T7] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_macvtap: link becomes ready
+[  221.150442][ T8040] veth0_macvtap: entered promiscuous mode
+[  221.160219][ T8040] veth1_macvtap: entered promiscuous mode
+[  221.204448][ T8040] batman_adv: batadv0: Interface activated: batadv_slave_0
+[  221.205561][    T7] IPv6: ADDRCONF(NETDEV_CHANGE): macvtap0: link becomes ready
+[  221.207492][    T7] IPv6: ADDRCONF(NETDEV_CHANGE): macsec0: link becomes ready
+[  221.210301][    T7] IPv6: ADDRCONF(NETDEV_CHANGE): batadv_slave_0: link becomes ready
+[  221.212121][    T7] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_to_batadv: link becomes ready
+[  221.228559][ T8040] batman_adv: batadv0: Interface activated: batadv_slave_1
+[  221.229747][ T1135] IPv6: ADDRCONF(NETDEV_CHANGE): batadv_slave_1: link becomes ready
+[  221.231656][ T1135] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_to_batadv: link becomes ready
+[  221.249219][ T8040] netdevsim netdevsim0 netdevsim0: set [1, 0] type 2 family 0 port 6081 - 0
+[  221.250293][ T8040] netdevsim netdevsim0 netdevsim1: set [1, 0] type 2 family 0 port 6081 - 0
+[  221.251237][ T8040] netdevsim netdevsim0 netdevsim2: set [1, 0] type 2 family 0 port 6081 - 0
+[  221.252197][ T8040] netdevsim netdevsim0 netdevsim3: set [1, 0] type 2 family 0 port 6081 - 0
+[  221.381930][ T8040] ieee80211 phy3: Selected rate control algorithm 'minstrel_ht'
+[  221.503652][   T20] wlan0: Created IBSS using preconfigured BSSID 50:50:50:50:50:50
+[  221.504693][   T20] wlan0: Creating new IBSS network, BSSID 50:50:50:50:50:50
+[  221.509281][  T731] IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+[  221.540283][ T8040] ieee80211 phy4: Selected rate control algorithm 'minstrel_ht'
+[  221.651657][   T20] wlan1: Created IBSS using preconfigured BSSID 50:50:50:50:50:50
+[  221.653617][   T20] wlan1: Creating new IBSS network, BSSID 50:50:50:50:50:50
+[  221.656675][ T7950] IPv6: ADDRCONF(NETDEV_CHANGE): wlan1: link becomes ready
+[  221.969078][ T8043] Bluetooth: hci0: command 0x041b tx timeout
+[  222.545299][ T8276] loop0: detected capacity change from 0 to 1024
+[  223.580783][ T1003] hfsplus: b-tree write err: -5, ino 4
+2024/05/22 23:19:08 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x1bb7, Ip:0x81bb4bc6}
+2024/05/22 23:19:08 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x1bf4, Ip:0x81bb4bd8}
+2024/05/22 23:19:08 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2b09, Ip:0x8191ced7}
+2024/05/22 23:19:08 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x363c, Ip:0x8191cec7}
+2024/05/22 23:19:08 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x1c13, Ip:0x81b665d9}
+2024/05/22 23:19:08 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x21fe, Ip:0x820068b5}
+23:19:08 executing program 0:
+accept() (enabled_site: 12367, site_type: 1)
+syz_mount_image$hfsplus(&(0x7f0000000000), &(0x7f0000002380)='./file0\x00', 0x80000c, &(0x7f00000003c0)=ANY=[@ANYRES8=0x0, @ANYRESHEX=0x0, @ANYRES16, @ANYRESHEX=0x0, @ANYBLOB="2c756d61736b3d30303030303030303030303030303030303030303030302c6465636f6d706f73652c666f7263652c6e6f6465636f6d706f73652c626172726965722c6e6f6465636f6d706f73652c747970653db029e1c02c7569643d", @ANYRESHEX=0x0, @ANYBLOB="2c747970653dd2100d1b2c7529643dd4f81c66210bbcbf82440a104ab956f2ba5e36e41ccb1b040fa8b829b0b87078de654c66ac22aebaa2c653ef127e38e0aa2229f9cf6a8503", @ANYRESHEX=0x0, @ANYBLOB='\x00\x00\x00\x00\x00', @ANYRESHEX=0x0, @ANYRES8=0x0], 0x2, 0x6e6, &(0x7f0000000f40)="$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")
+openat$cgroup_ro(0xffffffffffffff9c, &(0x7f00000000c0)='memory.events\x00', 0x26e1, 0x0)
+bpf$PROG_LOAD_XDP(0x5, 0x0, 0x0)
+r0 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000140)='memory.events\x00', 0x7a05, 0x1700)
+r1 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000000)='devices.list\x00', 0x275a, 0x0)
+ftruncate(r1, 0xc17a)
+write$cgroup_type(r0, &(0x7f0000000000), 0x6e000)
+
+2024/05/22 23:19:08 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x459b, Ip:0x81ff9258}
+2024/05/22 23:19:08 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+2024/05/22 23:19:08 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x21fe, Ip:0x820068b5}
+2024/05/22 23:19:08 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2b8d, Ip:0x8170f374}
+2024/05/22 23:19:08 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x313d, Ip:0x8170cde2}
+2024/05/22 23:19:08 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/22 23:19:08 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x350d, Ip:0x8170cdf5}
+2024/05/22 23:19:08 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+2024/05/22 23:19:08 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+2024/05/22 23:19:08 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x21fe, Ip:0x820068b5}
+2024/05/22 23:19:08 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x304f, Ip:0x82005499}
+2024/05/22 23:19:08 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x16c0, Ip:0x82005ca7}
+2024/05/22 23:19:08 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x21fe, Ip:0x820068b5}
+2024/05/22 23:19:08 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x304f, Ip:0x82005499}
+2024/05/22 23:19:08 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x30e9, Ip:0x820067b9}
+2024/05/22 23:19:08 KDO: #0: memintrinsic id=12367
+[  224.044101][ T4404] Bluetooth: hci0: command 0x040f tx timeout
+[  224.388596][ T8281] loop0: detected capacity change from 0 to 1024
+[  224.470640][ T8281] BUG: KASAN: unknown-crash in hfsplus_bnode_read+0xb9/0x180
+[  224.471891][ T8281] Write of size 8 at addr ffff88807a99e8d8 by task syz-executor.0/8281
+[  224.483741][ T8281] 
+[  224.484047][ T8281] CPU: 0 PID: 8281 Comm: syz-executor.0 Not tainted 6.4.1-00011-gc173c3c31378 #20
+[  224.485056][ T8281] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+[  224.486040][ T8281] Call Trace:
+[  224.486435][ T8281]  <TASK>
+[  224.486803][ T8281]  dump_stack_lvl+0x1ce/0x2c0
+[  224.487391][ T8281]  ? nf_tcp_handle_invalid+0x3d0/0x3d0
+[  224.488087][ T8281]  ? panic+0x620/0x620
+[  224.488627][ T8281]  ? hfsplus_ext_cmp_key+0xef/0x110
+[  224.489273][ T8281]  ? hfs_find_rec_by_key+0xdd/0xf0
+[  224.489878][ T8281]  print_report+0x163/0x540
+[  224.490419][ T8281]  ? __virt_addr_valid+0x1cc/0x240
+[  224.491012][ T8281]  ? __phys_addr+0x99/0x110
+[  224.491554][ T8281]  kdo_kasan_report+0x7f/0x90
+[  224.492100][ T8281]  ? hfsplus_bnode_read+0xb9/0x180
+[  224.492659][ T8281]  ? hfsplus_bnode_read+0xb9/0x180
+[  224.493203][ T8281]  propagate_taint+0x1e1/0x210
+[  224.493710][ T8281]  ? hfsplus_bnode_read+0xb9/0x180
+[  224.494258][ T8281]  ? hfsplus_bnode_read+0xb9/0x180
+[  224.494804][ T8281]  __kdo_asan_memcpy+0x69/0xa0
+[  224.495317][ T8281]  hfsplus_bnode_read+0xb9/0x180
+[  224.495853][ T8281]  __hfsplus_ext_cache_extent+0x255/0x410
+[  224.496467][ T8281]  hfsplus_file_truncate+0x3bd/0x7a0
+[  224.497029][ T8281]  ? preempt_count_sub+0x13/0xc0
+[  224.497623][ T8281]  ? hfsplus_add_extent+0x320/0x320
+[  224.498186][ T8281]  ? unmap_mapping_range+0xde/0x230
+[  224.498743][ T8281]  ? current_time+0x198/0x270
+[  224.499247][ T8281]  ? unmap_mapping_pages+0x150/0x150
+[  224.499809][ T8281]  ? setattr_prepare+0x16d/0x6d0
+[  224.500350][ T8281]  hfsplus_setattr+0x12a/0x1d0
+[  224.500864][ T8281]  ? hfsplus_fileattr_set+0x1e0/0x1e0
+[  224.501437][ T8281]  notify_change+0x984/0xa10
+[  224.501996][ T8281]  do_truncate+0x1da/0x250
+[  224.502531][ T8281]  ? put_page_bootmem+0x280/0x280
+[  224.503096][ T8281]  ? apparmor_file_truncate+0x1bb/0x210
+[  224.503799][ T8281]  ? rcu_read_lock_bh_held+0x110/0x110
+[  224.504481][ T8281]  ? sb_start_write+0x59/0x170
+[  224.505025][ T8281]  do_sys_ftruncate+0x219/0x240
+[  224.505576][ T8281]  do_syscall_64+0x41/0x90
+[  224.506086][ T8281]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  224.506732][ T8281] RIP: 0033:0x7f8e3c08fddd
+[  224.507234][ T8281] Code: c3 e8 97 2b 00 00 0f 1f 80 00 00 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 b0 ff ff ff f7 d8 64 89 01 48
+[  224.509201][ T8281] RSP: 002b:00007f8e3cec1028 EFLAGS: 00000246 ORIG_RAX: 000000000000004d
+[  224.510071][ T8281] RAX: ffffffffffffffda RBX: 00007f8e3c1cbf80 RCX: 00007f8e3c08fddd
+[  224.510886][ T8281] RDX: 0000000000000000 RSI: 000000000000c17a RDI: 0000000000000006
+[  224.511764][ T8281] RBP: 00007f8e3c101e18 R08: 0000000000000000 R09: 0000000000000000
+[  224.512631][ T8281] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000000
+[  224.513487][ T8281] R13: 000000000000000b R14: 00007f8e3c1cbf80 R15: 00007f8e3cea1000
+[  224.514362][ T8281]  </TASK>
+[  224.556805][ T8281] 
+[  224.557147][ T8281] Allocated by task 8281:
+[  224.557648][ T8281]  kasan_set_track+0x4f/0x70
+[  224.566364][ T8281]  __kasan_slab_alloc+0x50/0x60
+[  224.566944][ T8281]  slab_post_alloc_hook+0x64/0x380
+[  224.577330][ T8281]  kmem_cache_alloc_lru+0x10d/0x2a0
+[  224.577967][ T8281]  hfsplus_alloc_inode+0x28/0x40
+[  224.580043][ T8281]  new_inode_pseudo+0x3c/0x180
+[  224.580650][ T8281]  new_inode+0x25/0x160
+[  224.584837][ T8281]  hfsplus_new_inode+0x3b/0x580
+[  224.585414][ T8281]  hfsplus_mknod+0x70/0x230
+[  224.594292][ T8281]  path_openat+0xe64/0x1f00
+[  224.594828][ T8281]  do_filp_open+0x1f4/0x370
+[  224.596764][ T8281]  do_sys_openat2+0x10f/0x390
+[  224.597334][ T8281]  __x64_sys_openat+0x1f7/0x250
+[  224.605832][ T8281]  do_syscall_64+0x41/0x90
+[  224.606354][ T8281]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  224.615561][ T8281] 
+[  224.615856][ T8281] The buggy address belongs to the object at ffff88807a99e880
+[  224.615856][ T8281]  which belongs to the cache hfsplus_icache of size 1600
+[  224.634520][ T8281] The buggy address is located 88 bytes inside of
+[  224.634520][ T8281]  1600-byte region [ffff88807a99e880, ffff88807a99eec0)
+[  224.637852][ T8281] 
+[  224.638192][ T8281] The buggy address belongs to the physical page:
+[  224.639316][ T8281] page:ffffea0001ea6700 refcount:1 mapcount:0 mapping:0000000000000000 index:0x0 pfn:0x7a99c
+[  224.644586][ T8281] head:ffffea0001ea6700 order:2 entire_mapcount:0 nr_pages_mapped:0 pincount:0
+[  224.645943][ T8281] memcg:ffff88807e37df01
+[  224.646432][ T8281] flags: 0xfff00000010200(slab|head|node=0|zone=1|lastcpupid=0x7ff)
+[  224.654310][ T8281] page_type: 0xffffffff()
+[  224.654914][ T8281] raw: 00fff00000010200 ffff88800fb39500 dead000000000122 0000000000000000
+[  224.656243][ T8281] raw: 0000000000000000 0000000080090009 00000001ffffffff ffff88807e37df01
+[  224.657525][ T8281] page dumped because: kasan: bad access detected
+[  224.658217][ T8281] page_owner tracks the page as allocated
+[  224.663494][ T8281] page last allocated via order 2, migratetype Unmovable, gfp_mask 0x1d20c0(__GFP_IO|__GFP_FS|__GFP_NOWARN|__GFP_NORETRY|__GFP_COMP|__GFP_NOMEMALLOC|__GFP_HARDWALL), pid 8281, tgid 8280 (syz-executor.0), ts 224402037274, free_ts 172121057013
+[  224.666392][ T8281]  post_alloc_hook+0x1e6/0x210
+[  224.666982][ T8281]  get_page_from_freelist+0x260a/0x2790
+[  224.674223][ T8281]  __alloc_pages+0x1f2/0x480
+[  224.674772][ T8281]  alloc_slab_page+0x6a/0x160
+[  224.675717][ T8281]  new_slab+0x84/0x2f0
+[  224.676219][ T8281]  ___slab_alloc+0xa85/0x10a0
+[  224.677184][ T8281]  kmem_cache_alloc_lru+0x1a7/0x2a0
+[  224.677792][ T8281]  hfsplus_alloc_inode+0x28/0x40
+[  224.683140][ T8281]  iget_locked+0x190/0x710
+[  224.683658][ T8281]  hfsplus_iget+0x9c/0x530
+[  224.684589][ T8281]  hfsplus_btree_open+0xb9/0x730
+[  224.685145][ T8281]  hfsplus_fill_super+0x8df/0x11c0
+[  224.686091][ T8281]  mount_bdev+0x215/0x300
+[  224.686579][ T8281]  legacy_get_tree+0x86/0x100
+[  224.691040][ T8281]  vfs_get_tree+0x57/0x1d0
+[  224.691651][ T8281]  do_new_mount+0x284/0x750
+[  224.692548][ T8281] page last free stack trace:
+[  224.702970][ T8281]  free_unref_page_prepare+0x75a/0x820
+[  224.703604][ T8281]  free_unref_page+0x37/0x300
+[  224.704529][ T8281]  skb_release_data+0x318/0x4a0
+[  224.705094][ T8281]  skb_attempt_defer_free+0x2ee/0x3c0
+[  224.706072][ T8281]  tcp_recvmsg_locked+0xe39/0x17a0
+[  224.706650][ T8281]  tcp_recvmsg+0x2e4/0x5d0
+[  224.707574][ T8281]  inet_recvmsg+0xf8/0x190
+[  224.708104][ T8281]  sock_read_iter+0x2ce/0x380
+[  224.709017][ T8281]  vfs_read+0x5bc/0x830
+[  224.709499][ T8281]  ksys_read+0x169/0x260
+[  224.710361][ T8281]  do_syscall_64+0x41/0x90
+[  224.710880][ T8281]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  224.719254][ T8281] 
+[  224.719569][ T8281] Memory state around the buggy address:
+[  224.720580][ T8281]  ffff88807a99e780: ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec
+[  224.730973][ T8281]  ffff88807a99e800: fc fc fc fc fc fc fc fc fc fc fc fc fc fc fc fc
+[  224.732269][ T8281] >ffff88807a99e880: ec ec ec ec ec ec ec ec ec ec ec ee ec ec ec ec
+[  224.735154][ T8281]                                                     ^
+[  224.735922][ T8281]  ffff88807a99e900: ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec
+[  224.737165][ T8281]  ffff88807a99e980: ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec
+[  224.738428][ T8281] BUG: KASAN: unknown-crash in hfsplus_bnode_read+0xb9/0x180
+[  224.739252][ T8281] Write of size 8 at addr ffff88805f95101a by task syz-executor.0/8281
+[  224.744623][ T8281] 
+[  224.744902][ T8281] CPU: 0 PID: 8281 Comm: syz-executor.0 Not tainted 6.4.1-00011-gc173c3c31378 #20
+[  224.745865][ T8281] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+[  224.746818][ T8281] Call Trace:
+[  224.747174][ T8281]  <TASK>
+[  224.747503][ T8281]  dump_stack_lvl+0x1ce/0x2c0
+[  224.748078][ T8281]  ? nf_tcp_handle_invalid+0x3d0/0x3d0
+[  224.748729][ T8281]  ? panic+0x620/0x620
+[  224.749235][ T8281]  ? dump_page+0x784/0xcf0
+[  224.749765][ T8281]  print_report+0x163/0x540
+[  224.750326][ T8281]  ? __virt_addr_valid+0x1cc/0x240
+[  224.750917][ T8281]  ? __phys_addr+0x99/0x110
+[  224.751426][ T8281]  kdo_kasan_report+0x7f/0x90
+[  224.751952][ T8281]  ? hfsplus_bnode_read+0xb9/0x180
+[  224.752542][ T8281]  ? hfsplus_bnode_read+0xb9/0x180
+[  224.753137][ T8281]  propagate_taint+0x1f6/0x210
+[  224.753688][ T8281]  ? hfsplus_bnode_read+0xb9/0x180
+[  224.754283][ T8281]  ? hfsplus_bnode_read+0xb9/0x180
+[  224.754869][ T8281]  __kdo_asan_memcpy+0x69/0xa0
+[  224.755423][ T8281]  hfsplus_bnode_read+0xb9/0x180
+[  224.756005][ T8281]  __hfsplus_ext_cache_extent+0x255/0x410
+[  224.756653][ T8281]  hfsplus_file_truncate+0x3bd/0x7a0
+[  224.757279][ T8281]  ? preempt_count_sub+0x13/0xc0
+[  224.757869][ T8281]  ? hfsplus_add_extent+0x320/0x320
+[  224.758465][ T8281]  ? unmap_mapping_range+0xde/0x230
+[  224.759066][ T8281]  ? current_time+0x198/0x270
+[  224.759616][ T8281]  ? unmap_mapping_pages+0x150/0x150
+[  224.760202][ T8281]  ? setattr_prepare+0x16d/0x6d0
+[  224.760780][ T8281]  hfsplus_setattr+0x12a/0x1d0
+[  224.761330][ T8281]  ? hfsplus_fileattr_set+0x1e0/0x1e0
+[  224.761947][ T8281]  notify_change+0x984/0xa10
+[  224.762512][ T8281]  do_truncate+0x1da/0x250
+[  224.763052][ T8281]  ? put_page_bootmem+0x280/0x280
+[  224.763643][ T8281]  ? apparmor_file_truncate+0x1bb/0x210
+[  224.764319][ T8281]  ? rcu_read_lock_bh_held+0x110/0x110
+[  224.764945][ T8281]  ? sb_start_write+0x59/0x170
+[  224.765527][ T8281]  do_sys_ftruncate+0x219/0x240
+[  224.766112][ T8281]  do_syscall_64+0x41/0x90
+[  224.766636][ T8281]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  224.767303][ T8281] RIP: 0033:0x7f8e3c08fddd
+[  224.767820][ T8281] Code: c3 e8 97 2b 00 00 0f 1f 80 00 00 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 b0 ff ff ff f7 d8 64 89 01 48
+[  224.769904][ T8281] RSP: 002b:00007f8e3cec1028 EFLAGS: 00000246 ORIG_RAX: 000000000000004d
+[  224.770823][ T8281] RAX: ffffffffffffffda RBX: 00007f8e3c1cbf80 RCX: 00007f8e3c08fddd
+[  224.771681][ T8281] RDX: 0000000000000000 RSI: 000000000000c17a RDI: 0000000000000006
+[  224.772633][ T8281] RBP: 00007f8e3c101e18 R08: 0000000000000000 R09: 0000000000000000
+[  224.773519][ T8281] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000000
+[  224.774372][ T8281] R13: 000000000000000b R14: 00007f8e3c1cbf80 R15: 00007f8e3cea1000
+[  224.775288][ T8281]  </TASK>
+[  224.807901][ T8281] 
+[  224.808242][ T8281] The buggy address belongs to the physical page:
+[  224.809337][ T8281] page:ffffea00017e5440 refcount:3 mapcount:0 mapping:ffff8880767a79d8 index:0x1 pfn:0x5f951
+[  224.810788][ T8281] memcg:ffff88807ef8a000
+[  224.811278][ T8281] aops:hfsplus_btree_aops ino:3
+[  224.812228][ T8281] flags: 0xfff2800000205e(referenced|uptodate|dirty|lru|workingset|private|node=0|zone=1|lastcpupid=0x7ff)
+[  224.820321][ T8281] page_type: 0xffffffff()
+[  224.820841][ T8281] raw: 00fff2800000205e ffffea00017e5408 ffff88807508a158 ffff8880767a79d8
+[  224.822146][ T8281] raw: 0000000000000001 ffff88806e765488 00000003ffffffff ffff88807ef8a000
+[  224.826281][ T8281] page dumped because: kasan: bad access detected
+[  224.827019][ T8281] page_owner tracks the page as allocated
+[  224.828068][ T8281] page last allocated via order 0, migratetype Movable, gfp_mask 0x140cca(GFP_HIGHUSER_MOVABLE|__GFP_COMP), pid 8281, tgid 8280 (syz-executor.0), ts 224468497011, free_ts 198505062892
+[  224.830338][ T8281]  post_alloc_hook+0x1e6/0x210
+[  224.830912][ T8281]  get_page_from_freelist+0x260a/0x2790
+[  224.831954][ T8281]  __alloc_pages+0x1f2/0x480
+[  224.832502][ T8281]  folio_alloc+0x1e/0x60
+[  224.840645][ T8281]  filemap_alloc_folio+0xd7/0x460
+[  224.841263][ T8281]  do_read_cache_folio+0xa8/0x660
+[  224.842222][ T8281]  do_read_cache_page+0x30/0x1b0
+[  224.847075][ T8281]  __hfs_bnode_create+0x3b8/0x580
+[  224.847685][ T8281]  hfsplus_bnode_create+0xcd/0x2e0
+[  224.848676][ T8281]  hfsplus_bmap_alloc+0x466/0x4c0
+[  224.849281][ T8281]  hfs_btree_inc_height+0xf5/0x5b0
+[  224.850621][ T8281]  hfsplus_brec_insert+0x107/0x770
+[  224.851457][ T8281]  __hfsplus_ext_write_extent+0x1ef/0x240
+[  224.852331][ T8281]  __hfsplus_ext_cache_extent+0x70/0x410
+[  224.859010][ T8281]  hfsplus_file_truncate+0x3bd/0x7a0
+[  224.859652][ T8281]  hfsplus_setattr+0x12a/0x1d0
+[  224.860585][ T8281] page last free stack trace:
+[  224.861127][ T8281]  free_unref_page_prepare+0x75a/0x820
+[  224.862121][ T8281]  free_unref_page_list+0x49c/0x640
+[  224.867862][ T8281]  release_pages+0x1fc4/0x22d0
+[  224.868446][ T8281]  tlb_flush_mmu+0xcf/0x170
+[  224.869351][ T8281]  tlb_finish_mmu+0x9f/0x140
+[  224.869894][ T8281]  zap_page_range_single+0x365/0x3d0
+[  224.871232][ T8281]  do_madvise+0x1ea5/0x37a0
+[  224.871795][ T8281]  __x64_sys_madvise+0x60/0x70
+[  224.877778][ T8281]  do_syscall_64+0x41/0x90
+[  224.878334][ T8281]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  224.879635][ T8281] 
+[  224.879955][ T8281] Memory state around the buggy address:
+[  224.880988][ T8281]  ffff88805f950f00: eb eb eb eb eb eb eb eb eb eb eb eb eb eb eb eb
+[  224.882266][ T8281]  ffff88805f950f80: eb eb eb eb eb eb eb eb eb eb eb eb eb eb eb eb
+[  224.891608][ T8281] >ffff88805f951000: ed ed ed ed ed ed ed ed ed ed ed ed ed ed ed ed
+[  224.895874][ T8281]                             ^
+[  224.896458][ T8281]  ffff88805f951080: ed ed ed ed ed ed ed ed ed ed ed ed ed ed ed ed
+[  224.897721][ T8281]  ffff88805f951100: ed ed ed ed ed ed ed ed ed ed ed ed ed ed ed ed
+[  224.902282][ T8281] Kernel panic - not syncing: KDO: memcpy hit (id: hfsplus_bnode_read+0xb9/0x180, callid: 12367S)
+[  224.903443][ T8281] CPU: 0 PID: 8281 Comm: syz-executor.0 Not tainted 6.4.1-00011-gc173c3c31378 #20
+[  224.904469][ T8281] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+[  224.905496][ T8281] Call Trace:
+[  224.905889][ T8281]  <TASK>
+[  224.906234][ T8281]  dump_stack_lvl+0x1ce/0x2c0
+[  224.906819][ T8281]  ? nf_tcp_handle_invalid+0x3d0/0x3d0
+[  224.907445][ T8281]  ? panic+0x620/0x620
+[  224.907963][ T8281]  ? preempt_count_add+0xa0/0xf0
+[  224.908593][ T8281]  ? vscnprintf+0x5d/0x80
+[  224.909097][ T8281]  panic+0x2ba/0x620
+[  224.909549][ T8281]  ? print_report+0x4fb/0x540
+[  224.910080][ T8281]  ? hfsplus_bnode_read+0xb9/0x180
+[  224.910649][ T8281]  ? __wake_up_klogd+0xb7/0xf0
+[  224.911167][ T8281]  ? preempt_count_add+0xa0/0xf0
+[  224.911705][ T8281]  ? kdo_sanitizer_cov_write+0x100/0x100
+[  224.912343][ T8281]  ? __phys_addr+0x99/0x110
+[  224.912865][ T8281]  ? kdo_kasan_report+0x7f/0x90
+[  224.913415][ T8281]  ? hfsplus_bnode_read+0xb9/0x180
+[  224.914038][ T8281]  ? hfsplus_bnode_read+0xb9/0x180
+[  224.914639][ T8281]  propagate_taint+0x20a/0x210
+[  224.915183][ T8281]  ? hfsplus_bnode_read+0xb9/0x180
+[  224.915825][ T8281]  ? hfsplus_bnode_read+0xb9/0x180
+[  224.916495][ T8281]  __kdo_asan_memcpy+0x69/0xa0
+[  224.917105][ T8281]  hfsplus_bnode_read+0xb9/0x180
+[  224.917715][ T8281]  __hfsplus_ext_cache_extent+0x255/0x410
+[  224.918407][ T8281]  hfsplus_file_truncate+0x3bd/0x7a0
+[  224.918998][ T8281]  ? preempt_count_sub+0x13/0xc0
+[  224.919574][ T8281]  ? hfsplus_add_extent+0x320/0x320
+[  224.920220][ T8281]  ? unmap_mapping_range+0xde/0x230
+[  224.920843][ T8281]  ? current_time+0x198/0x270
+[  224.921391][ T8281]  ? unmap_mapping_pages+0x150/0x150
+[  224.922000][ T8281]  ? setattr_prepare+0x16d/0x6d0
+[  224.922582][ T8281]  hfsplus_setattr+0x12a/0x1d0
+[  224.923136][ T8281]  ? hfsplus_fileattr_set+0x1e0/0x1e0
+[  224.923761][ T8281]  notify_change+0x984/0xa10
+[  224.924322][ T8281]  do_truncate+0x1da/0x250
+[  224.924831][ T8281]  ? put_page_bootmem+0x280/0x280
+[  224.925387][ T8281]  ? apparmor_file_truncate+0x1bb/0x210
+[  224.926033][ T8281]  ? rcu_read_lock_bh_held+0x110/0x110
+[  224.926689][ T8281]  ? sb_start_write+0x59/0x170
+[  224.927254][ T8281]  do_sys_ftruncate+0x219/0x240
+[  224.927842][ T8281]  do_syscall_64+0x41/0x90
+[  224.928382][ T8281]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  224.929028][ T8281] RIP: 0033:0x7f8e3c08fddd
+[  224.929548][ T8281] Code: c3 e8 97 2b 00 00 0f 1f 80 00 00 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 b0 ff ff ff f7 d8 64 89 01 48
+[  224.931607][ T8281] RSP: 002b:00007f8e3cec1028 EFLAGS: 00000246 ORIG_RAX: 000000000000004d
+[  224.932506][ T8281] RAX: ffffffffffffffda RBX: 00007f8e3c1cbf80 RCX: 00007f8e3c08fddd
+[  224.933416][ T8281] RDX: 0000000000000000 RSI: 000000000000c17a RDI: 0000000000000006
+[  224.934271][ T8281] RBP: 00007f8e3c101e18 R08: 0000000000000000 R09: 0000000000000000
+[  224.935127][ T8281] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000000
+[  224.935982][ T8281] R13: 000000000000000b R14: 00007f8e3c1cbf80 R15: 00007f8e3cea1000
+[  224.936857][ T8281]  </TASK>
+[  224.937350][ T8281] Kernel Offset: disabled
+[  224.937850][ T8281] Rebooting in 86400 seconds..
+
+VM DIAGNOSIS:
+23:19:08  Registers:
+info registers vcpu 0
+RAX=00000000000000ec RBX=ffffed100f5b24db RCX=00000000000000e8 RDX=000000000003db1a
+RSI=0000000123123123 RDI=1ffff1100f5b23cd RBP=ffffc9000c55f4f0 RSP=ffffc9000c55f4b0
+R8 =ffffffff895e7619 R9 =fffffbfff162df56 R10=0000000000000000 R11=dffffc0000000001
+R12=dffffbfffffffffe R13=ffffed100f5b24dc R14=ffff88807ad926d8 R15=ffff8880219680b0
+RIP=ffffffff87602daf RFL=00000046 [---Z-P-] CPL=0 II=0 A20=1 SMM=0 HLT=0
+ES =0000 0000000000000000 ffffffff 00c00000
+CS =0010 0000000000000000 ffffffff 00a09b00 DPL=0 CS64 [-RA]
+SS =0018 0000000000000000 ffffffff 00c09300 DPL=0 DS   [-WA]
+DS =0000 0000000000000000 ffffffff 00c00000
+FS =0000 00007f18e82e3700 ffffffff 00c00000
+GS =0000 ffff8880ba000000 ffffffff 00c00000
+LDT=0000 0000000000000000 ffffffff 00c00000
+TR =0040 fffffe0000003000 00004087 00008b00 DPL=0 TSS64-busy
+GDT=     fffffe0000001000 0000007f
+IDT=     fffffe0000000000 00000fff
+CR0=80050033 CR2=0000000000000000 CR3=000000007dabb000 CR4=00350ef0
+DR0=0000000000000000 DR1=0000000000000000 DR2=0000000000000000 DR3=0000000000000000 
+DR6=00000000fffe0ff0 DR7=0000000000000400
+EFER=0000000000000d01
+FCW=037f FSW=0000 [ST=0] FTW=00 MXCSR=00001f80
+FPR0=0000000000000000 0000 FPR1=0000000000000000 0000
+FPR2=0000000000000000 0000 FPR3=0000000000000000 0000
+FPR4=0000000000000000 0000 FPR5=0000000000000000 0000
+FPR6=0000000000000000 0000 FPR7=0000000000000000 0000
+YMM00=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM01=0000000000000000 0000000000000000 0000000000000000 00000000000000ff
+YMM02=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM03=0000000000000000 0000000000000000 6120746120382065 7a697320666f2065
+YMM04=0000000000000000 0000000000000000 205b5d3034353232 352e39313220205b
+YMM05=0000000000000000 0000000000000000 6f7320646c756f77 2030363531206f74
+YMM06=0000000000000000 0000000000000000 202e65636e616d72 6f66726570206568
+YMM07=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM08=0000000000000000 0000000000000000 382f302e726f7475 636578652d7a7973
+YMM09=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM10=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM11=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM12=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM13=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM14=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM15=0000000000000000 0000000000000000 0000000000000000 0000000000000000

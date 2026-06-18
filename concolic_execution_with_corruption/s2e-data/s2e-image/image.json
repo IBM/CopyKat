@@ -1,0 +1,18 @@
+{
+    "image_group": "linux",
+    "memory": "1G",
+    "name": "Ubuntu x86_64 image",
+    "os": {
+        "arch": "x86_64",
+        "binary_formats": [
+            "elf"
+        ],
+        "build": "",
+        "name": "ubuntu",
+        "version": "20.04"
+    },
+    "qemu_build": "x86_64",
+    "qemu_extra_flags": "-net none -net nic,model=e1000 ",
+    "snapshot": "ready",
+    "version": 3
+}

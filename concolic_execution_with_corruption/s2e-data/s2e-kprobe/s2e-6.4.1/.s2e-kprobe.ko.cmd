@@ -1,0 +1,1 @@
+savedcmd_/home/mbr/fakes2edir/images/jammy/s2e-kprobe/s2e-6.4.1/s2e-kprobe.ko := ld -r -m elf_x86_64 -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/mbr/fakes2edir/images/jammy/s2e-kprobe/s2e-6.4.1/s2e-kprobe.ko /home/mbr/fakes2edir/images/jammy/s2e-kprobe/s2e-6.4.1/s2e-kprobe.o /home/mbr/fakes2edir/images/jammy/s2e-kprobe/s2e-6.4.1/s2e-kprobe.mod.o;  true

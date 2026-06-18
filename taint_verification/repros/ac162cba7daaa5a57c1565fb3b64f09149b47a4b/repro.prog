@@ -1,0 +1,11 @@
+# {Threaded:false Repeat:false RepeatTimes:0 Procs:1 Slowdown:1 Sandbox: SandboxArg:0 Leak:false NetInjection:false NetDevices:false NetReset:false Cgroups:false BinfmtMisc:false CloseFDs:false KCSAN:false DevlinkPCI:false NicVF:false USB:false VhciInjection:false Wifi:false IEEE802154:false Sysctl:false UseTmpDir:false HandleSegv:false Repro:false Trace:false LegacyOptions:{Collide:false Fault:false FaultCall:0 FaultNth:0}}
+accept(0xffffffffffffffff, 0x0, &(0x7f0000000000)) (enabled_site: 18747, site_type: 1)
+r0 = socket$inet6_tcp(0xa, 0x1, 0x0)
+setsockopt$inet6_tcp_int(r0, 0x6, 0x13, &(0x7f0000000040)=0x100000001, 0x4)
+connect$inet6(r0, &(0x7f0000000080)={0xa, 0x0, 0x0, @loopback}, 0x1c)
+setsockopt$inet6_tcp_TCP_ULP(r0, 0x6, 0x1f, &(0x7f00000002c0), 0x4)
+setsockopt$inet6_tcp_TLS_TX(r0, 0x11a, 0x2, &(0x7f0000000200)=@ccm_128={{0x304}, "76131e58a256d4af", "4448076cc60af592e807e038c4797041", "8076e30e", "f79d7fbbf3985dbb"}, 0x28)
+r1 = openat$cgroup_ro(0xffffffffffffff9c, &(0x7f0000000000)='cpuacct.usage_sys\x00', 0x275a, 0x0)
+write$binfmt_script(r1, &(0x7f0000000040), 0xb)
+mmap(&(0x7f0000000000/0x400000)=nil, 0x400000, 0x1, 0x10012, r1, 0x0)
+setsockopt$inet6_tcp_TLS_TX(r0, 0x11a, 0x4, &(0x7f0000000100)=@gcm_256={{}, "2474794233890da1", "d830005894bf527ae179a7173985202bbfb61b36f3678de8ea2d0d6616076243", "5615d9f5", "7c5cec21291a43fe"}, 0x38)

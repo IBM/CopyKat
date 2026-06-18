@@ -1,0 +1,8 @@
+# {Threaded:false Repeat:false RepeatTimes:0 Procs:1 Slowdown:1 Sandbox: SandboxArg:0 Leak:false NetInjection:false NetDevices:false NetReset:false Cgroups:false BinfmtMisc:false CloseFDs:false KCSAN:false DevlinkPCI:false NicVF:false USB:false VhciInjection:false Wifi:false IEEE802154:false Sysctl:false UseTmpDir:false HandleSegv:false Repro:false Trace:false LegacyOptions:{Collide:false Fault:false FaultCall:0 FaultNth:0}}
+accept(0xffffffffffffffff, 0x0, &(0x7f0000000000)) (enabled_site: 2691, site_type: 1)
+getsockopt$SO_J1939_SEND_PRIO(0xffffffffffffffff, 0x6b, 0x3, 0x0, 0x0)
+openat$procfs(0xffffffffffffff9c, &(0x7f0000000100)='/proc/slabinfo\x00', 0x0, 0x0)
+r0 = socket$nl_route(0x10, 0x3, 0x0)
+r1 = socket(0x1, 0x803, 0x0)
+getsockname$packet(r1, &(0x7f0000000100)={0x11, 0x0, <r2=>0x0, 0x1, 0x0, 0x6, @broadcast}, &(0x7f0000000280)=0x14)
+sendmsg$nl_route(r0, &(0x7f0000000000)={0x0, 0x0, &(0x7f0000000040)={&(0x7f0000001700)=ANY=[@ANYBLOB="6c0000001000010400"/20, @ANYRES32=0x0, @ANYBLOB="0000000000000000440012800b000100697036746e6c000034000280040013000800080000000000060010000000000014000200ff01000000000000e4ffffff00000001050004000000000008000300", @ANYRES32=r2], 0x6c}}, 0x0)

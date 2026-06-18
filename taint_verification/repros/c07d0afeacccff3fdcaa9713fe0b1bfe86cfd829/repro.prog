@@ -1,0 +1,7 @@
+# {Threaded:false Repeat:false RepeatTimes:0 Procs:1 Slowdown:1 Sandbox:none SandboxArg:0 Leak:false NetInjection:false NetDevices:false NetReset:false Cgroups:false BinfmtMisc:false CloseFDs:false KCSAN:false DevlinkPCI:false NicVF:false USB:false VhciInjection:false Wifi:true IEEE802154:false Sysctl:false UseTmpDir:false HandleSegv:false Repro:false Trace:false LegacyOptions:{Collide:false Fault:false FaultCall:0 FaultNth:0}}
+accept(0xffffffffffffffff, 0x0, &(0x7f0000000000)) (enabled_site: 12568, site_type: 1)
+r0 = socket$nl_generic(0x10, 0x3, 0x10)
+r1 = syz_genetlink_get_family_id$nl80211(&(0x7f0000001400), 0xffffffffffffffff)
+r2 = socket$inet6_tcp(0xa, 0x1, 0x0)
+ioctl$sock_SIOCGIFINDEX_80211(r2, 0x8933, &(0x7f0000002340)={'wlan0\x00', <r3=>0x0})
+sendmsg$NL80211_CMD_TRIGGER_SCAN(r0, &(0x7f0000002640)={0x0, 0x0, &(0x7f0000002600)={&(0x7f00000000c0)=ANY=[@ANYBLOB='T\x00\x00\x00', @ANYRES16=r1, @ANYBLOB="010000000000000000002100000008000300", @ANYRES32=r3, @ANYBLOB="38002d800a000000010101010101000028"], 0x54}}, 0x0)

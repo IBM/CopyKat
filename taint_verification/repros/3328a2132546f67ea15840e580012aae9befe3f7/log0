@@ -1,0 +1,1743 @@
+syzkaller login: [  155.729228][ T7957] sshd (7957) used greatest stack depth: 20264 bytes left
+Warning: Permanently added '[localhost]:58113' (ED25519) to the list of known hosts.
+2024/05/25 02:23:31 fuzzer started
+2024/05/25 02:23:33 dialing manager at localhost:34093
+[  174.058156][ T8021] cgroup: Unknown subsys name 'net'
+[  174.227575][ T8021] cgroup: Unknown subsys name 'rlimit'
+2024/05/25 02:23:34 syscalls: 3922
+2024/05/25 02:23:34 code coverage: enabled
+2024/05/25 02:23:34 comparison tracing: enabled
+2024/05/25 02:23:34 extra coverage: enabled
+2024/05/25 02:23:34 delay kcov mmap: enabled
+2024/05/25 02:23:34 setuid sandbox: enabled
+2024/05/25 02:23:34 namespace sandbox: enabled
+2024/05/25 02:23:34 Android sandbox: /sys/fs/selinux/policy does not exist
+2024/05/25 02:23:34 fault injection: enabled
+2024/05/25 02:23:34 leak checking: CONFIG_DEBUG_KMEMLEAK is not enabled
+2024/05/25 02:23:34 net packet injection: enabled
+2024/05/25 02:23:34 net device setup: enabled
+2024/05/25 02:23:34 concurrency sanitizer: /sys/kernel/debug/kcsan does not exist
+2024/05/25 02:23:34 devlink PCI setup: PCI device 0000:00:10.0 is not available
+2024/05/25 02:23:34 NIC VF setup: PCI device 0000:00:11.0 is not available
+2024/05/25 02:23:34 USB emulation: enabled
+2024/05/25 02:23:34 hci packet injection: enabled
+2024/05/25 02:23:34 wifi device emulation: enabled
+2024/05/25 02:23:34 802.15.4 emulation: enabled
+2024/05/25 02:23:34 fetching corpus: 0, signal 0/2000 (executing program)
+2024/05/25 02:23:35 fetching corpus: 50, signal 24296/28154 (executing program)
+2024/05/25 02:23:35 fetching corpus: 100, signal 32703/38402 (executing program)
+2024/05/25 02:23:35 fetching corpus: 150, signal 39089/46600 (executing program)
+2024/05/25 02:23:36 fetching corpus: 200, signal 47734/56950 (executing program)
+2024/05/25 02:23:36 fetching corpus: 250, signal 53784/64717 (executing program)
+2024/05/25 02:23:36 fetching corpus: 300, signal 61818/74381 (executing program)
+2024/05/25 02:23:36 fetching corpus: 350, signal 67879/82058 (executing program)
+2024/05/25 02:23:36 fetching corpus: 400, signal 74923/90645 (executing program)
+2024/05/25 02:23:37 fetching corpus: 450, signal 79606/96947 (executing program)
+2024/05/25 02:23:37 fetching corpus: 500, signal 84871/103751 (executing program)
+2024/05/25 02:23:37 fetching corpus: 550, signal 88638/109100 (executing program)
+2024/05/25 02:23:37 fetching corpus: 600, signal 93850/115783 (executing program)
+2024/05/25 02:23:38 fetching corpus: 650, signal 98411/121809 (executing program)
+2024/05/25 02:23:38 fetching corpus: 700, signal 101073/126001 (executing program)
+2024/05/25 02:23:38 fetching corpus: 750, signal 103092/129554 (executing program)
+2024/05/25 02:23:38 fetching corpus: 800, signal 105598/133585 (executing program)
+2024/05/25 02:23:38 fetching corpus: 850, signal 108194/137673 (executing program)
+2024/05/25 02:23:39 fetching corpus: 900, signal 109892/140878 (executing program)
+2024/05/25 02:23:39 fetching corpus: 950, signal 113704/146100 (executing program)
+2024/05/25 02:23:39 fetching corpus: 1000, signal 116810/150609 (executing program)
+2024/05/25 02:23:39 fetching corpus: 1050, signal 119168/154405 (executing program)
+2024/05/25 02:23:39 fetching corpus: 1100, signal 121536/158196 (executing program)
+2024/05/25 02:23:39 fetching corpus: 1150, signal 124542/162580 (executing program)
+2024/05/25 02:23:40 fetching corpus: 1200, signal 126625/166077 (executing program)
+2024/05/25 02:23:40 fetching corpus: 1250, signal 128526/169353 (executing program)
+2024/05/25 02:23:40 fetching corpus: 1300, signal 130999/173146 (executing program)
+2024/05/25 02:23:40 fetching corpus: 1350, signal 132933/176478 (executing program)
+2024/05/25 02:23:40 fetching corpus: 1400, signal 134119/179086 (executing program)
+2024/05/25 02:23:41 fetching corpus: 1450, signal 135705/182066 (executing program)
+2024/05/25 02:23:41 fetching corpus: 1500, signal 137723/185391 (executing program)
+2024/05/25 02:23:41 fetching corpus: 1550, signal 139328/188349 (executing program)
+2024/05/25 02:23:41 fetching corpus: 1600, signal 141217/191574 (executing program)
+2024/05/25 02:23:42 fetching corpus: 1650, signal 143227/194895 (executing program)
+2024/05/25 02:23:42 fetching corpus: 1700, signal 145923/198797 (executing program)
+2024/05/25 02:23:42 fetching corpus: 1750, signal 147986/202129 (executing program)
+2024/05/25 02:23:42 fetching corpus: 1800, signal 150192/205547 (executing program)
+2024/05/25 02:23:42 fetching corpus: 1850, signal 152294/208900 (executing program)
+2024/05/25 02:23:43 fetching corpus: 1900, signal 153574/211538 (executing program)
+2024/05/25 02:23:46 fetching corpus: 1950, signal 155233/214459 (executing program)
+2024/05/25 02:23:46 fetching corpus: 2000, signal 159586/219722 (executing program)
+2024/05/25 02:23:46 fetching corpus: 2050, signal 160899/222318 (executing program)
+2024/05/25 02:23:46 fetching corpus: 2100, signal 162285/224991 (executing program)
+2024/05/25 02:23:46 fetching corpus: 2150, signal 163851/227762 (executing program)
+2024/05/25 02:23:47 fetching corpus: 2200, signal 165207/230381 (executing program)
+2024/05/25 02:23:47 fetching corpus: 2250, signal 167119/233457 (executing program)
+2024/05/25 02:23:47 fetching corpus: 2300, signal 168702/236231 (executing program)
+2024/05/25 02:23:47 fetching corpus: 2350, signal 171189/239700 (executing program)
+2024/05/25 02:23:47 fetching corpus: 2400, signal 172776/242447 (executing program)
+2024/05/25 02:23:47 fetching corpus: 2450, signal 174172/245047 (executing program)
+2024/05/25 02:23:48 fetching corpus: 2500, signal 175469/247546 (executing program)
+2024/05/25 02:23:48 fetching corpus: 2550, signal 177383/250586 (executing program)
+2024/05/25 02:23:48 fetching corpus: 2600, signal 179058/253361 (executing program)
+2024/05/25 02:23:48 fetching corpus: 2650, signal 180632/256048 (executing program)
+2024/05/25 02:23:49 fetching corpus: 2700, signal 182370/258909 (executing program)
+2024/05/25 02:23:49 fetching corpus: 2750, signal 183529/261226 (executing program)
+2024/05/25 02:23:49 fetching corpus: 2800, signal 184356/263304 (executing program)
+2024/05/25 02:23:49 fetching corpus: 2850, signal 185990/265985 (executing program)
+2024/05/25 02:23:50 fetching corpus: 2900, signal 187538/268658 (executing program)
+2024/05/25 02:23:50 fetching corpus: 2950, signal 188587/270838 (executing program)
+2024/05/25 02:23:50 fetching corpus: 3000, signal 189986/273327 (executing program)
+2024/05/25 02:23:51 fetching corpus: 3050, signal 190911/275476 (executing program)
+2024/05/25 02:23:51 fetching corpus: 3100, signal 192050/277718 (executing program)
+2024/05/25 02:23:51 fetching corpus: 3150, signal 193442/280211 (executing program)
+2024/05/25 02:23:51 fetching corpus: 3200, signal 194779/282621 (executing program)
+2024/05/25 02:23:52 fetching corpus: 3250, signal 195901/284811 (executing program)
+2024/05/25 02:23:52 fetching corpus: 3300, signal 196721/286781 (executing program)
+2024/05/25 02:23:52 fetching corpus: 3350, signal 197727/288892 (executing program)
+2024/05/25 02:23:52 fetching corpus: 3400, signal 198786/291034 (executing program)
+2024/05/25 02:23:52 fetching corpus: 3450, signal 200049/293359 (executing program)
+2024/05/25 02:23:53 fetching corpus: 3500, signal 201814/296037 (executing program)
+2024/05/25 02:23:53 fetching corpus: 3550, signal 202940/298176 (executing program)
+2024/05/25 02:23:53 fetching corpus: 3600, signal 203927/300248 (executing program)
+2024/05/25 02:23:53 fetching corpus: 3650, signal 205315/302617 (executing program)
+2024/05/25 02:23:54 fetching corpus: 3700, signal 206241/304596 (executing program)
+2024/05/25 02:23:54 fetching corpus: 3750, signal 208456/307557 (executing program)
+2024/05/25 02:23:54 fetching corpus: 3800, signal 209276/309459 (executing program)
+2024/05/25 02:23:55 fetching corpus: 3850, signal 210544/311732 (executing program)
+2024/05/25 02:23:55 fetching corpus: 3900, signal 211591/313829 (executing program)
+2024/05/25 02:23:55 fetching corpus: 3950, signal 212745/315950 (executing program)
+2024/05/25 02:23:56 fetching corpus: 4000, signal 214005/318134 (executing program)
+2024/05/25 02:23:56 fetching corpus: 4050, signal 215065/320171 (executing program)
+2024/05/25 02:23:56 fetching corpus: 4100, signal 215857/322007 (executing program)
+2024/05/25 02:23:56 fetching corpus: 4150, signal 217120/324186 (executing program)
+2024/05/25 02:23:57 fetching corpus: 4200, signal 218480/326406 (executing program)
+2024/05/25 02:23:57 fetching corpus: 4250, signal 219590/328453 (executing program)
+2024/05/25 02:23:57 fetching corpus: 4300, signal 220433/330301 (executing program)
+2024/05/25 02:23:57 fetching corpus: 4350, signal 221352/332198 (executing program)
+2024/05/25 02:23:57 fetching corpus: 4400, signal 222201/334085 (executing program)
+2024/05/25 02:23:58 fetching corpus: 4450, signal 223126/336031 (executing program)
+2024/05/25 02:23:58 fetching corpus: 4500, signal 224069/337941 (executing program)
+2024/05/25 02:23:58 fetching corpus: 4550, signal 225395/340088 (executing program)
+2024/05/25 02:23:58 fetching corpus: 4600, signal 226386/342056 (executing program)
+2024/05/25 02:23:59 fetching corpus: 4650, signal 227558/344046 (executing program)
+2024/05/25 02:23:59 fetching corpus: 4700, signal 228570/345970 (executing program)
+2024/05/25 02:23:59 fetching corpus: 4750, signal 229257/347628 (executing program)
+2024/05/25 02:24:00 fetching corpus: 4800, signal 230384/349639 (executing program)
+2024/05/25 02:24:00 fetching corpus: 4850, signal 231821/351810 (executing program)
+2024/05/25 02:24:00 fetching corpus: 4900, signal 232622/353551 (executing program)
+2024/05/25 02:24:00 fetching corpus: 4950, signal 233185/355156 (executing program)
+2024/05/25 02:24:00 fetching corpus: 5000, signal 234513/357259 (executing program)
+2024/05/25 02:24:01 fetching corpus: 5050, signal 235333/359029 (executing program)
+2024/05/25 02:24:01 fetching corpus: 5100, signal 235768/360493 (executing program)
+2024/05/25 02:24:01 fetching corpus: 5150, signal 236644/362274 (executing program)
+2024/05/25 02:24:01 fetching corpus: 5200, signal 237396/363960 (executing program)
+2024/05/25 02:24:02 fetching corpus: 5250, signal 238325/365787 (executing program)
+2024/05/25 02:24:02 fetching corpus: 5300, signal 238991/367401 (executing program)
+2024/05/25 02:24:02 fetching corpus: 5350, signal 240059/369260 (executing program)
+2024/05/25 02:24:02 fetching corpus: 5400, signal 240753/370879 (executing program)
+2024/05/25 02:24:02 fetching corpus: 5450, signal 241977/372877 (executing program)
+2024/05/25 02:24:03 fetching corpus: 5500, signal 242734/374563 (executing program)
+2024/05/25 02:24:03 fetching corpus: 5550, signal 243551/376259 (executing program)
+2024/05/25 02:24:03 fetching corpus: 5600, signal 244970/378270 (executing program)
+2024/05/25 02:24:03 fetching corpus: 5650, signal 245747/379907 (executing program)
+2024/05/25 02:24:04 fetching corpus: 5700, signal 246474/381559 (executing program)
+2024/05/25 02:24:04 fetching corpus: 5750, signal 247441/383328 (executing program)
+2024/05/25 02:24:04 fetching corpus: 5800, signal 248117/384914 (executing program)
+2024/05/25 02:24:04 fetching corpus: 5850, signal 248919/386567 (executing program)
+2024/05/25 02:24:04 fetching corpus: 5900, signal 249634/388197 (executing program)
+2024/05/25 02:24:05 fetching corpus: 5950, signal 250451/389834 (executing program)
+2024/05/25 02:24:05 fetching corpus: 6000, signal 251247/391477 (executing program)
+2024/05/25 02:24:05 fetching corpus: 6050, signal 251884/392963 (executing program)
+2024/05/25 02:24:05 fetching corpus: 6100, signal 253023/394849 (executing program)
+[  205.323730][ T1219] ieee802154 phy0 wpan0: encryption failed: -22
+[  205.324736][ T1219] ieee802154 phy1 wpan1: encryption failed: -22
+2024/05/25 02:24:05 fetching corpus: 6150, signal 253622/396332 (executing program)
+2024/05/25 02:24:06 fetching corpus: 6200, signal 254542/397993 (executing program)
+2024/05/25 02:24:06 fetching corpus: 6250, signal 255223/399500 (executing program)
+2024/05/25 02:24:10 fetching corpus: 6300, signal 255871/401038 (executing program)
+2024/05/25 02:24:11 fetching corpus: 6350, signal 256567/402650 (executing program)
+2024/05/25 02:24:11 fetching corpus: 6400, signal 257384/404266 (executing program)
+2024/05/25 02:24:12 fetching corpus: 6450, signal 258797/406182 (executing program)
+2024/05/25 02:24:12 fetching corpus: 6500, signal 259613/407755 (executing program)
+2024/05/25 02:24:12 fetching corpus: 6550, signal 260352/409326 (executing program)
+2024/05/25 02:24:12 fetching corpus: 6600, signal 260966/410804 (executing program)
+2024/05/25 02:24:13 fetching corpus: 6650, signal 261724/412383 (executing program)
+2024/05/25 02:24:13 fetching corpus: 6700, signal 262501/413959 (executing program)
+2024/05/25 02:24:13 fetching corpus: 6750, signal 263658/415691 (executing program)
+2024/05/25 02:24:13 fetching corpus: 6800, signal 264426/417175 (executing program)
+2024/05/25 02:24:13 fetching corpus: 6850, signal 264994/418604 (executing program)
+2024/05/25 02:24:14 fetching corpus: 6900, signal 265702/420081 (executing program)
+2024/05/25 02:24:14 fetching corpus: 6950, signal 266119/421411 (executing program)
+2024/05/25 02:24:14 fetching corpus: 7000, signal 266874/422875 (executing program)
+2024/05/25 02:24:14 fetching corpus: 7050, signal 267734/424417 (executing program)
+2024/05/25 02:24:14 fetching corpus: 7100, signal 268358/425848 (executing program)
+2024/05/25 02:24:15 fetching corpus: 7150, signal 268959/427243 (executing program)
+2024/05/25 02:24:15 fetching corpus: 7200, signal 269546/428637 (executing program)
+2024/05/25 02:24:15 fetching corpus: 7250, signal 270256/430071 (executing program)
+2024/05/25 02:24:15 fetching corpus: 7300, signal 272201/432168 (executing program)
+2024/05/25 02:24:16 fetching corpus: 7350, signal 273051/433656 (executing program)
+2024/05/25 02:24:16 fetching corpus: 7400, signal 273746/435083 (executing program)
+2024/05/25 02:24:16 fetching corpus: 7450, signal 274259/436443 (executing program)
+2024/05/25 02:24:17 fetching corpus: 7500, signal 274968/437816 (executing program)
+2024/05/25 02:24:17 fetching corpus: 7549, signal 275386/439125 (executing program)
+2024/05/25 02:24:17 fetching corpus: 7599, signal 275882/440462 (executing program)
+2024/05/25 02:24:17 fetching corpus: 7649, signal 276480/441824 (executing program)
+2024/05/25 02:24:17 fetching corpus: 7699, signal 277152/443187 (executing program)
+2024/05/25 02:24:18 fetching corpus: 7749, signal 277960/444644 (executing program)
+2024/05/25 02:24:18 fetching corpus: 7798, signal 278799/446103 (executing program)
+2024/05/25 02:24:18 fetching corpus: 7848, signal 279380/447461 (executing program)
+2024/05/25 02:24:18 fetching corpus: 7898, signal 280508/449078 (executing program)
+2024/05/25 02:24:19 fetching corpus: 7948, signal 281081/450420 (executing program)
+2024/05/25 02:24:19 fetching corpus: 7998, signal 281469/451663 (executing program)
+2024/05/25 02:24:19 fetching corpus: 8048, signal 282010/452971 (executing program)
+2024/05/25 02:24:19 fetching corpus: 8098, signal 282661/454321 (executing program)
+2024/05/25 02:24:19 fetching corpus: 8148, signal 283254/455685 (executing program)
+2024/05/25 02:24:20 fetching corpus: 8198, signal 283761/456969 (executing program)
+2024/05/25 02:24:20 fetching corpus: 8248, signal 284688/458437 (executing program)
+2024/05/25 02:24:20 fetching corpus: 8298, signal 285197/459723 (executing program)
+2024/05/25 02:24:20 fetching corpus: 8348, signal 285828/461045 (executing program)
+2024/05/25 02:24:21 fetching corpus: 8398, signal 286300/462270 (executing program)
+2024/05/25 02:24:21 fetching corpus: 8448, signal 286992/463612 (executing program)
+2024/05/25 02:24:21 fetching corpus: 8498, signal 287689/464948 (executing program)
+2024/05/25 02:24:21 fetching corpus: 8548, signal 288189/466209 (executing program)
+2024/05/25 02:24:22 fetching corpus: 8598, signal 288703/467446 (executing program)
+2024/05/25 02:24:22 fetching corpus: 8648, signal 289302/468695 (executing program)
+2024/05/25 02:24:22 fetching corpus: 8698, signal 289729/469907 (executing program)
+2024/05/25 02:24:22 fetching corpus: 8748, signal 290212/471156 (executing program)
+2024/05/25 02:24:22 fetching corpus: 8798, signal 290669/472378 (executing program)
+2024/05/25 02:24:23 fetching corpus: 8848, signal 291124/473575 (executing program)
+2024/05/25 02:24:23 fetching corpus: 8898, signal 291601/474764 (executing program)
+2024/05/25 02:24:23 fetching corpus: 8948, signal 292191/476034 (executing program)
+2024/05/25 02:24:23 fetching corpus: 8998, signal 292689/477207 (executing program)
+2024/05/25 02:24:23 fetching corpus: 9048, signal 293116/478387 (executing program)
+2024/05/25 02:24:23 fetching corpus: 9098, signal 293642/479628 (executing program)
+2024/05/25 02:24:24 fetching corpus: 9148, signal 294191/480841 (executing program)
+2024/05/25 02:24:24 fetching corpus: 9198, signal 294670/482029 (executing program)
+2024/05/25 02:24:24 fetching corpus: 9248, signal 295308/483291 (executing program)
+2024/05/25 02:24:25 fetching corpus: 9298, signal 295964/484552 (executing program)
+2024/05/25 02:24:25 fetching corpus: 9348, signal 296588/485820 (executing program)
+2024/05/25 02:24:25 fetching corpus: 9398, signal 297093/487049 (executing program)
+2024/05/25 02:24:25 fetching corpus: 9448, signal 297528/488224 (executing program)
+2024/05/25 02:24:26 fetching corpus: 9498, signal 297998/489406 (executing program)
+2024/05/25 02:24:26 fetching corpus: 9548, signal 298993/490742 (executing program)
+2024/05/25 02:24:26 fetching corpus: 9598, signal 299424/491890 (executing program)
+2024/05/25 02:24:26 fetching corpus: 9648, signal 300113/493099 (executing program)
+2024/05/25 02:24:26 fetching corpus: 9698, signal 300696/494334 (executing program)
+2024/05/25 02:24:26 fetching corpus: 9748, signal 301261/495537 (executing program)
+2024/05/25 02:24:26 fetching corpus: 9798, signal 301885/496749 (executing program)
+2024/05/25 02:24:27 fetching corpus: 9848, signal 302838/498007 (executing program)
+2024/05/25 02:24:27 fetching corpus: 9898, signal 303261/499120 (executing program)
+2024/05/25 02:24:27 fetching corpus: 9948, signal 303711/500226 (executing program)
+2024/05/25 02:24:27 fetching corpus: 9998, signal 304234/501347 (executing program)
+2024/05/25 02:24:27 fetching corpus: 10048, signal 304609/502464 (executing program)
+2024/05/25 02:24:28 fetching corpus: 10098, signal 305091/503567 (executing program)
+2024/05/25 02:24:28 fetching corpus: 10148, signal 305737/504765 (executing program)
+2024/05/25 02:24:28 fetching corpus: 10198, signal 306126/505809 (executing program)
+2024/05/25 02:24:28 fetching corpus: 10248, signal 306625/506923 (executing program)
+2024/05/25 02:24:28 fetching corpus: 10298, signal 307135/508038 (executing program)
+2024/05/25 02:24:28 fetching corpus: 10348, signal 307751/509160 (executing program)
+2024/05/25 02:24:29 fetching corpus: 10398, signal 308345/510272 (executing program)
+2024/05/25 02:24:29 fetching corpus: 10448, signal 308796/511344 (executing program)
+2024/05/25 02:24:29 fetching corpus: 10498, signal 309639/512550 (executing program)
+2024/05/25 02:24:29 fetching corpus: 10548, signal 310208/513674 (executing program)
+2024/05/25 02:24:29 fetching corpus: 10598, signal 310731/514795 (executing program)
+2024/05/25 02:24:30 fetching corpus: 10648, signal 311169/515871 (executing program)
+2024/05/25 02:24:30 fetching corpus: 10698, signal 311712/517001 (executing program)
+2024/05/25 02:24:30 fetching corpus: 10748, signal 312055/518049 (executing program)
+2024/05/25 02:24:30 fetching corpus: 10798, signal 312611/519163 (executing program)
+2024/05/25 02:24:31 fetching corpus: 10848, signal 313131/520224 (executing program)
+2024/05/25 02:24:31 fetching corpus: 10898, signal 313643/521292 (executing program)
+2024/05/25 02:24:31 fetching corpus: 10948, signal 314006/522303 (executing program)
+2024/05/25 02:24:31 fetching corpus: 10998, signal 314314/523341 (executing program)
+2024/05/25 02:24:31 fetching corpus: 11048, signal 314843/524426 (executing program)
+2024/05/25 02:24:32 fetching corpus: 11098, signal 315356/525469 (executing program)
+2024/05/25 02:24:32 fetching corpus: 11148, signal 315920/526571 (executing program)
+2024/05/25 02:24:32 fetching corpus: 11198, signal 316413/527578 (executing program)
+2024/05/25 02:24:32 fetching corpus: 11248, signal 317076/528654 (executing program)
+2024/05/25 02:24:33 fetching corpus: 11298, signal 317565/529728 (executing program)
+2024/05/25 02:24:33 fetching corpus: 11348, signal 318692/530953 (executing program)
+2024/05/25 02:24:33 fetching corpus: 11398, signal 319409/532071 (executing program)
+2024/05/25 02:24:34 fetching corpus: 11448, signal 320089/533172 (executing program)
+2024/05/25 02:24:34 fetching corpus: 11498, signal 320529/534188 (executing program)
+2024/05/25 02:24:34 fetching corpus: 11548, signal 320956/535181 (executing program)
+2024/05/25 02:24:35 fetching corpus: 11598, signal 321750/536259 (executing program)
+2024/05/25 02:24:35 fetching corpus: 11648, signal 322125/537305 (executing program)
+2024/05/25 02:24:35 fetching corpus: 11698, signal 322725/538350 (executing program)
+2024/05/25 02:24:35 fetching corpus: 11748, signal 323340/539405 (executing program)
+2024/05/25 02:24:35 fetching corpus: 11798, signal 324418/540547 (executing program)
+2024/05/25 02:24:36 fetching corpus: 11848, signal 324756/541544 (executing program)
+2024/05/25 02:24:36 fetching corpus: 11898, signal 325159/542548 (executing program)
+2024/05/25 02:24:36 fetching corpus: 11948, signal 325911/543617 (executing program)
+2024/05/25 02:24:36 fetching corpus: 11998, signal 326414/544628 (executing program)
+2024/05/25 02:24:36 fetching corpus: 12048, signal 326845/545644 (executing program)
+2024/05/25 02:24:36 fetching corpus: 12098, signal 327151/546587 (executing program)
+2024/05/25 02:24:37 fetching corpus: 12148, signal 327570/547570 (executing program)
+2024/05/25 02:24:37 fetching corpus: 12198, signal 327929/548503 (executing program)
+2024/05/25 02:24:37 fetching corpus: 12248, signal 328301/549496 (executing program)
+2024/05/25 02:24:37 fetching corpus: 12298, signal 329154/550568 (executing program)
+2024/05/25 02:24:37 fetching corpus: 12348, signal 329787/551605 (executing program)
+2024/05/25 02:24:38 fetching corpus: 12398, signal 330455/552630 (executing program)
+2024/05/25 02:24:38 fetching corpus: 12448, signal 330953/553602 (executing program)
+2024/05/25 02:24:38 fetching corpus: 12498, signal 331457/554565 (executing program)
+2024/05/25 02:24:38 fetching corpus: 12548, signal 331818/555516 (executing program)
+2024/05/25 02:24:38 fetching corpus: 12598, signal 332174/556456 (executing program)
+2024/05/25 02:24:39 fetching corpus: 12648, signal 332641/557380 (executing program)
+2024/05/25 02:24:39 fetching corpus: 12698, signal 333171/558347 (executing program)
+2024/05/25 02:24:39 fetching corpus: 12748, signal 333584/559291 (executing program)
+2024/05/25 02:24:39 fetching corpus: 12798, signal 333995/560261 (executing program)
+2024/05/25 02:24:40 fetching corpus: 12848, signal 334529/561222 (executing program)
+2024/05/25 02:24:40 fetching corpus: 12898, signal 334914/562144 (executing program)
+2024/05/25 02:24:40 fetching corpus: 12948, signal 335581/563134 (executing program)
+2024/05/25 02:24:40 fetching corpus: 12998, signal 335986/564112 (executing program)
+2024/05/25 02:24:40 fetching corpus: 13048, signal 336463/565009 (executing program)
+2024/05/25 02:24:41 fetching corpus: 13098, signal 337311/565960 (executing program)
+2024/05/25 02:24:41 fetching corpus: 13148, signal 337720/566903 (executing program)
+2024/05/25 02:24:41 fetching corpus: 13198, signal 338232/567842 (executing program)
+2024/05/25 02:24:41 fetching corpus: 13248, signal 338606/568735 (executing program)
+2024/05/25 02:24:41 fetching corpus: 13298, signal 338899/569594 (executing program)
+2024/05/25 02:24:41 fetching corpus: 13348, signal 339271/570504 (executing program)
+2024/05/25 02:24:42 fetching corpus: 13398, signal 339719/571405 (executing program)
+2024/05/25 02:24:42 fetching corpus: 13448, signal 340109/572322 (executing program)
+2024/05/25 02:24:42 fetching corpus: 13498, signal 340409/573154 (executing program)
+2024/05/25 02:24:42 fetching corpus: 13548, signal 340760/574066 (executing program)
+2024/05/25 02:24:42 fetching corpus: 13598, signal 341219/574991 (executing program)
+2024/05/25 02:24:43 fetching corpus: 13648, signal 341777/575907 (executing program)
+2024/05/25 02:24:44 fetching corpus: 13698, signal 342193/576756 (executing program)
+2024/05/25 02:24:44 fetching corpus: 13748, signal 342640/577674 (executing program)
+2024/05/25 02:24:44 fetching corpus: 13798, signal 343361/578552 (executing program)
+2024/05/25 02:24:45 fetching corpus: 13848, signal 343791/579432 (executing program)
+2024/05/25 02:24:45 fetching corpus: 13898, signal 344170/580316 (executing program)
+2024/05/25 02:24:45 fetching corpus: 13948, signal 344508/581139 (executing program)
+2024/05/25 02:24:46 fetching corpus: 13998, signal 344975/582028 (executing program)
+2024/05/25 02:24:46 fetching corpus: 14048, signal 345436/582911 (executing program)
+2024/05/25 02:24:47 fetching corpus: 14098, signal 345823/583768 (executing program)
+2024/05/25 02:24:47 fetching corpus: 14148, signal 346262/584636 (executing program)
+2024/05/25 02:24:48 fetching corpus: 14198, signal 346817/585514 (executing program)
+2024/05/25 02:24:48 fetching corpus: 14248, signal 347114/586344 (executing program)
+2024/05/25 02:24:48 fetching corpus: 14298, signal 347457/587263 (executing program)
+2024/05/25 02:24:48 fetching corpus: 14348, signal 347924/588101 (executing program)
+2024/05/25 02:24:48 fetching corpus: 14398, signal 348401/588952 (executing program)
+2024/05/25 02:24:49 fetching corpus: 14448, signal 348803/589776 (executing program)
+2024/05/25 02:24:49 fetching corpus: 14498, signal 349152/590590 (executing program)
+2024/05/25 02:24:49 fetching corpus: 14548, signal 349532/591439 (executing program)
+2024/05/25 02:24:49 fetching corpus: 14598, signal 349941/592303 (executing program)
+2024/05/25 02:24:50 fetching corpus: 14648, signal 350672/593175 (executing program)
+2024/05/25 02:24:50 fetching corpus: 14698, signal 351041/594002 (executing program)
+2024/05/25 02:24:50 fetching corpus: 14748, signal 351430/594831 (executing program)
+2024/05/25 02:24:50 fetching corpus: 14798, signal 351755/595641 (executing program)
+2024/05/25 02:24:50 fetching corpus: 14848, signal 352249/596338 (executing program)
+2024/05/25 02:24:50 fetching corpus: 14898, signal 352614/596338 (executing program)
+2024/05/25 02:24:51 fetching corpus: 14948, signal 353041/596340 (executing program)
+2024/05/25 02:24:51 fetching corpus: 14998, signal 353432/596340 (executing program)
+2024/05/25 02:24:51 fetching corpus: 15048, signal 353986/596340 (executing program)
+2024/05/25 02:24:51 fetching corpus: 15098, signal 354301/596341 (executing program)
+2024/05/25 02:24:51 fetching corpus: 15148, signal 354846/596341 (executing program)
+2024/05/25 02:24:52 fetching corpus: 15198, signal 355262/596341 (executing program)
+2024/05/25 02:24:52 fetching corpus: 15248, signal 355548/596341 (executing program)
+2024/05/25 02:24:52 fetching corpus: 15298, signal 356309/596342 (executing program)
+2024/05/25 02:24:52 fetching corpus: 15348, signal 356775/596342 (executing program)
+2024/05/25 02:24:52 fetching corpus: 15398, signal 357000/596342 (executing program)
+2024/05/25 02:24:53 fetching corpus: 15448, signal 357549/596342 (executing program)
+2024/05/25 02:24:53 fetching corpus: 15498, signal 357858/596342 (executing program)
+2024/05/25 02:24:53 fetching corpus: 15548, signal 358245/596342 (executing program)
+2024/05/25 02:24:53 fetching corpus: 15598, signal 358701/596342 (executing program)
+2024/05/25 02:24:53 fetching corpus: 15648, signal 359294/596342 (executing program)
+2024/05/25 02:24:53 fetching corpus: 15698, signal 359553/596342 (executing program)
+2024/05/25 02:24:54 fetching corpus: 15748, signal 360088/596342 (executing program)
+2024/05/25 02:24:54 fetching corpus: 15798, signal 360738/596343 (executing program)
+2024/05/25 02:24:54 fetching corpus: 15848, signal 361138/596343 (executing program)
+2024/05/25 02:24:54 fetching corpus: 15898, signal 361481/596343 (executing program)
+2024/05/25 02:24:54 fetching corpus: 15948, signal 361874/596350 (executing program)
+2024/05/25 02:24:55 fetching corpus: 15998, signal 362261/596350 (executing program)
+2024/05/25 02:24:55 fetching corpus: 16048, signal 362611/596350 (executing program)
+2024/05/25 02:24:55 fetching corpus: 16098, signal 362929/596351 (executing program)
+2024/05/25 02:24:56 fetching corpus: 16148, signal 363210/596351 (executing program)
+2024/05/25 02:24:56 fetching corpus: 16198, signal 363619/596353 (executing program)
+2024/05/25 02:24:56 fetching corpus: 16247, signal 364073/596353 (executing program)
+2024/05/25 02:24:56 fetching corpus: 16297, signal 364414/596353 (executing program)
+2024/05/25 02:24:56 fetching corpus: 16347, signal 364815/596353 (executing program)
+2024/05/25 02:24:56 fetching corpus: 16397, signal 365076/596353 (executing program)
+2024/05/25 02:24:56 fetching corpus: 16447, signal 365640/596353 (executing program)
+2024/05/25 02:24:57 fetching corpus: 16497, signal 366071/596353 (executing program)
+2024/05/25 02:24:57 fetching corpus: 16547, signal 366581/596353 (executing program)
+2024/05/25 02:24:57 fetching corpus: 16597, signal 366836/596365 (executing program)
+2024/05/25 02:24:57 fetching corpus: 16647, signal 367108/596365 (executing program)
+2024/05/25 02:24:57 fetching corpus: 16697, signal 367391/596365 (executing program)
+2024/05/25 02:24:58 fetching corpus: 16747, signal 367744/596365 (executing program)
+2024/05/25 02:24:58 fetching corpus: 16797, signal 368071/596365 (executing program)
+2024/05/25 02:24:58 fetching corpus: 16847, signal 368578/596365 (executing program)
+2024/05/25 02:24:58 fetching corpus: 16897, signal 368945/596365 (executing program)
+2024/05/25 02:24:58 fetching corpus: 16947, signal 369346/596365 (executing program)
+2024/05/25 02:24:59 fetching corpus: 16997, signal 370594/596365 (executing program)
+2024/05/25 02:24:59 fetching corpus: 17047, signal 370968/596367 (executing program)
+2024/05/25 02:24:59 fetching corpus: 17097, signal 371315/596367 (executing program)
+2024/05/25 02:24:59 fetching corpus: 17147, signal 371723/596369 (executing program)
+2024/05/25 02:25:00 fetching corpus: 17197, signal 372071/596369 (executing program)
+2024/05/25 02:25:00 fetching corpus: 17247, signal 372345/596369 (executing program)
+2024/05/25 02:25:00 fetching corpus: 17297, signal 372615/596369 (executing program)
+2024/05/25 02:25:00 fetching corpus: 17347, signal 372983/596369 (executing program)
+2024/05/25 02:25:00 fetching corpus: 17397, signal 373233/596369 (executing program)
+2024/05/25 02:25:00 fetching corpus: 17447, signal 373681/596378 (executing program)
+2024/05/25 02:25:01 fetching corpus: 17497, signal 374250/596383 (executing program)
+2024/05/25 02:25:01 fetching corpus: 17547, signal 374831/596383 (executing program)
+2024/05/25 02:25:01 fetching corpus: 17597, signal 375100/596383 (executing program)
+2024/05/25 02:25:01 fetching corpus: 17647, signal 375359/596383 (executing program)
+2024/05/25 02:25:01 fetching corpus: 17697, signal 375644/596383 (executing program)
+2024/05/25 02:25:02 fetching corpus: 17747, signal 375944/596383 (executing program)
+2024/05/25 02:25:02 fetching corpus: 17797, signal 376219/596383 (executing program)
+2024/05/25 02:25:02 fetching corpus: 17847, signal 376631/596383 (executing program)
+2024/05/25 02:25:02 fetching corpus: 17897, signal 377126/596383 (executing program)
+2024/05/25 02:25:02 fetching corpus: 17947, signal 377551/596389 (executing program)
+2024/05/25 02:25:03 fetching corpus: 17997, signal 377920/596389 (executing program)
+2024/05/25 02:25:03 fetching corpus: 18047, signal 378198/596389 (executing program)
+2024/05/25 02:25:03 fetching corpus: 18097, signal 378490/596389 (executing program)
+2024/05/25 02:25:04 fetching corpus: 18147, signal 378938/596389 (executing program)
+2024/05/25 02:25:04 fetching corpus: 18197, signal 379260/596389 (executing program)
+2024/05/25 02:25:04 fetching corpus: 18247, signal 379588/596389 (executing program)
+2024/05/25 02:25:04 fetching corpus: 18297, signal 379980/596389 (executing program)
+2024/05/25 02:25:04 fetching corpus: 18347, signal 380297/596390 (executing program)
+2024/05/25 02:25:05 fetching corpus: 18397, signal 380715/596392 (executing program)
+2024/05/25 02:25:05 fetching corpus: 18447, signal 381172/596397 (executing program)
+2024/05/25 02:25:05 fetching corpus: 18497, signal 381478/596397 (executing program)
+2024/05/25 02:25:05 fetching corpus: 18547, signal 381773/596397 (executing program)
+2024/05/25 02:25:05 fetching corpus: 18597, signal 382142/596397 (executing program)
+2024/05/25 02:25:05 fetching corpus: 18647, signal 382483/596397 (executing program)
+2024/05/25 02:25:06 fetching corpus: 18697, signal 383145/596398 (executing program)
+2024/05/25 02:25:06 fetching corpus: 18747, signal 383540/596398 (executing program)
+2024/05/25 02:25:06 fetching corpus: 18797, signal 383923/596398 (executing program)
+2024/05/25 02:25:06 fetching corpus: 18847, signal 384217/596398 (executing program)
+2024/05/25 02:25:07 fetching corpus: 18897, signal 384579/596398 (executing program)
+[  266.764190][ T1219] ieee802154 phy0 wpan0: encryption failed: -22
+[  266.765041][ T1219] ieee802154 phy1 wpan1: encryption failed: -22
+2024/05/25 02:25:07 fetching corpus: 18947, signal 384906/596411 (executing program)
+2024/05/25 02:25:07 fetching corpus: 18997, signal 385167/596413 (executing program)
+2024/05/25 02:25:07 fetching corpus: 19047, signal 385575/596413 (executing program)
+2024/05/25 02:25:07 fetching corpus: 19097, signal 385830/596416 (executing program)
+2024/05/25 02:25:07 fetching corpus: 19147, signal 386130/596420 (executing program)
+2024/05/25 02:25:07 fetching corpus: 19197, signal 386504/596420 (executing program)
+2024/05/25 02:25:08 fetching corpus: 19247, signal 386901/596420 (executing program)
+2024/05/25 02:25:08 fetching corpus: 19297, signal 387193/596422 (executing program)
+2024/05/25 02:25:08 fetching corpus: 19347, signal 387852/596422 (executing program)
+2024/05/25 02:25:08 fetching corpus: 19397, signal 388182/596424 (executing program)
+2024/05/25 02:25:08 fetching corpus: 19447, signal 388658/596426 (executing program)
+2024/05/25 02:25:08 fetching corpus: 19497, signal 388917/596426 (executing program)
+2024/05/25 02:25:09 fetching corpus: 19547, signal 389192/596426 (executing program)
+2024/05/25 02:25:09 fetching corpus: 19597, signal 389484/596426 (executing program)
+2024/05/25 02:25:09 fetching corpus: 19647, signal 389990/596426 (executing program)
+2024/05/25 02:25:09 fetching corpus: 19697, signal 390803/596426 (executing program)
+2024/05/25 02:25:09 fetching corpus: 19747, signal 391173/596433 (executing program)
+2024/05/25 02:25:09 fetching corpus: 19797, signal 391493/596433 (executing program)
+2024/05/25 02:25:10 fetching corpus: 19847, signal 391846/596433 (executing program)
+2024/05/25 02:25:10 fetching corpus: 19897, signal 392172/596433 (executing program)
+2024/05/25 02:25:10 fetching corpus: 19947, signal 392437/596444 (executing program)
+2024/05/25 02:25:10 fetching corpus: 19997, signal 392764/596444 (executing program)
+2024/05/25 02:25:10 fetching corpus: 20047, signal 393150/596444 (executing program)
+2024/05/25 02:25:11 fetching corpus: 20097, signal 393428/596444 (executing program)
+2024/05/25 02:25:11 fetching corpus: 20147, signal 393894/596446 (executing program)
+2024/05/25 02:25:11 fetching corpus: 20197, signal 394349/596456 (executing program)
+2024/05/25 02:25:11 fetching corpus: 20247, signal 394711/596459 (executing program)
+2024/05/25 02:25:11 fetching corpus: 20297, signal 395331/596459 (executing program)
+2024/05/25 02:25:12 fetching corpus: 20347, signal 395939/596459 (executing program)
+2024/05/25 02:25:12 fetching corpus: 20397, signal 396253/596459 (executing program)
+2024/05/25 02:25:12 fetching corpus: 20447, signal 396543/596459 (executing program)
+2024/05/25 02:25:13 fetching corpus: 20497, signal 396839/596459 (executing program)
+2024/05/25 02:25:13 fetching corpus: 20547, signal 397353/596464 (executing program)
+2024/05/25 02:25:13 fetching corpus: 20597, signal 397709/596467 (executing program)
+2024/05/25 02:25:13 fetching corpus: 20647, signal 397987/596467 (executing program)
+2024/05/25 02:25:14 fetching corpus: 20697, signal 398248/596467 (executing program)
+2024/05/25 02:25:14 fetching corpus: 20747, signal 398492/596467 (executing program)
+2024/05/25 02:25:14 fetching corpus: 20797, signal 398825/596467 (executing program)
+2024/05/25 02:25:14 fetching corpus: 20847, signal 399107/596471 (executing program)
+2024/05/25 02:25:14 fetching corpus: 20897, signal 399490/596471 (executing program)
+2024/05/25 02:25:14 fetching corpus: 20946, signal 399794/596488 (executing program)
+2024/05/25 02:25:15 fetching corpus: 20996, signal 400092/596488 (executing program)
+2024/05/25 02:25:15 fetching corpus: 21046, signal 400380/596488 (executing program)
+2024/05/25 02:25:15 fetching corpus: 21096, signal 400721/596488 (executing program)
+2024/05/25 02:25:15 fetching corpus: 21146, signal 401036/596488 (executing program)
+2024/05/25 02:25:15 fetching corpus: 21196, signal 401257/596488 (executing program)
+2024/05/25 02:25:15 fetching corpus: 21246, signal 401772/596488 (executing program)
+2024/05/25 02:25:15 fetching corpus: 21296, signal 402010/596488 (executing program)
+2024/05/25 02:25:16 fetching corpus: 21346, signal 402398/596488 (executing program)
+2024/05/25 02:25:16 fetching corpus: 21396, signal 402811/596488 (executing program)
+2024/05/25 02:25:16 fetching corpus: 21446, signal 403124/596494 (executing program)
+2024/05/25 02:25:16 fetching corpus: 21496, signal 403451/596494 (executing program)
+2024/05/25 02:25:16 fetching corpus: 21546, signal 404005/596495 (executing program)
+2024/05/25 02:25:17 fetching corpus: 21596, signal 404422/596495 (executing program)
+2024/05/25 02:25:17 fetching corpus: 21646, signal 404678/596495 (executing program)
+2024/05/25 02:25:17 fetching corpus: 21696, signal 405035/596495 (executing program)
+2024/05/25 02:25:17 fetching corpus: 21746, signal 405328/596497 (executing program)
+2024/05/25 02:25:18 fetching corpus: 21796, signal 405604/596497 (executing program)
+2024/05/25 02:25:18 fetching corpus: 21846, signal 406000/596497 (executing program)
+2024/05/25 02:25:18 fetching corpus: 21896, signal 406363/596497 (executing program)
+2024/05/25 02:25:18 fetching corpus: 21946, signal 406649/596498 (executing program)
+2024/05/25 02:25:18 fetching corpus: 21996, signal 407029/596500 (executing program)
+2024/05/25 02:25:19 fetching corpus: 22046, signal 407424/596500 (executing program)
+2024/05/25 02:25:19 fetching corpus: 22096, signal 407769/596500 (executing program)
+2024/05/25 02:25:20 fetching corpus: 22146, signal 408073/596500 (executing program)
+2024/05/25 02:25:20 fetching corpus: 22196, signal 408347/596500 (executing program)
+2024/05/25 02:25:20 fetching corpus: 22246, signal 408674/596500 (executing program)
+2024/05/25 02:25:20 fetching corpus: 22296, signal 408993/596500 (executing program)
+2024/05/25 02:25:20 fetching corpus: 22346, signal 409234/596500 (executing program)
+2024/05/25 02:25:20 fetching corpus: 22396, signal 409599/596500 (executing program)
+2024/05/25 02:25:21 fetching corpus: 22446, signal 409926/596502 (executing program)
+2024/05/25 02:25:21 fetching corpus: 22496, signal 410142/596502 (executing program)
+2024/05/25 02:25:21 fetching corpus: 22546, signal 410504/596502 (executing program)
+2024/05/25 02:25:21 fetching corpus: 22596, signal 410826/596504 (executing program)
+2024/05/25 02:25:21 fetching corpus: 22646, signal 411104/596504 (executing program)
+2024/05/25 02:25:21 fetching corpus: 22696, signal 411344/596506 (executing program)
+2024/05/25 02:25:22 fetching corpus: 22746, signal 411580/596506 (executing program)
+2024/05/25 02:25:22 fetching corpus: 22796, signal 411856/596506 (executing program)
+2024/05/25 02:25:22 fetching corpus: 22846, signal 412137/596506 (executing program)
+2024/05/25 02:25:22 fetching corpus: 22896, signal 412523/596506 (executing program)
+2024/05/25 02:25:23 fetching corpus: 22946, signal 412865/596506 (executing program)
+2024/05/25 02:25:23 fetching corpus: 22996, signal 413110/596506 (executing program)
+2024/05/25 02:25:23 fetching corpus: 23046, signal 413363/596506 (executing program)
+2024/05/25 02:25:23 fetching corpus: 23096, signal 413712/596506 (executing program)
+2024/05/25 02:25:23 fetching corpus: 23146, signal 414049/596507 (executing program)
+2024/05/25 02:25:24 fetching corpus: 23196, signal 414405/596507 (executing program)
+2024/05/25 02:25:24 fetching corpus: 23246, signal 414594/596507 (executing program)
+2024/05/25 02:25:24 fetching corpus: 23296, signal 414890/596507 (executing program)
+2024/05/25 02:25:24 fetching corpus: 23346, signal 415187/596507 (executing program)
+2024/05/25 02:25:24 fetching corpus: 23396, signal 415709/596507 (executing program)
+2024/05/25 02:25:24 fetching corpus: 23446, signal 415924/596507 (executing program)
+2024/05/25 02:25:25 fetching corpus: 23496, signal 416226/596507 (executing program)
+2024/05/25 02:25:25 fetching corpus: 23546, signal 416488/596507 (executing program)
+2024/05/25 02:25:25 fetching corpus: 23596, signal 416719/596507 (executing program)
+2024/05/25 02:25:25 fetching corpus: 23646, signal 417000/596513 (executing program)
+2024/05/25 02:25:26 fetching corpus: 23696, signal 417300/596513 (executing program)
+2024/05/25 02:25:26 fetching corpus: 23746, signal 417501/596513 (executing program)
+2024/05/25 02:25:26 fetching corpus: 23796, signal 417722/596513 (executing program)
+2024/05/25 02:25:26 fetching corpus: 23846, signal 418006/596513 (executing program)
+2024/05/25 02:25:26 fetching corpus: 23896, signal 418341/596513 (executing program)
+2024/05/25 02:25:26 fetching corpus: 23946, signal 418701/596514 (executing program)
+2024/05/25 02:25:26 fetching corpus: 23996, signal 418950/596514 (executing program)
+2024/05/25 02:25:27 fetching corpus: 24046, signal 419267/596520 (executing program)
+2024/05/25 02:25:27 fetching corpus: 24096, signal 419468/596520 (executing program)
+2024/05/25 02:25:27 fetching corpus: 24146, signal 419789/596520 (executing program)
+2024/05/25 02:25:27 fetching corpus: 24196, signal 420079/596520 (executing program)
+2024/05/25 02:25:27 fetching corpus: 24246, signal 420450/596521 (executing program)
+2024/05/25 02:25:27 fetching corpus: 24296, signal 420688/596522 (executing program)
+2024/05/25 02:25:28 fetching corpus: 24346, signal 420908/596522 (executing program)
+2024/05/25 02:25:28 fetching corpus: 24396, signal 421191/596532 (executing program)
+2024/05/25 02:25:28 fetching corpus: 24446, signal 421594/596532 (executing program)
+2024/05/25 02:25:28 fetching corpus: 24496, signal 421874/596532 (executing program)
+2024/05/25 02:25:28 fetching corpus: 24546, signal 422145/596532 (executing program)
+2024/05/25 02:25:28 fetching corpus: 24596, signal 422381/596532 (executing program)
+2024/05/25 02:25:29 fetching corpus: 24646, signal 422605/596535 (executing program)
+2024/05/25 02:25:29 fetching corpus: 24696, signal 422924/596535 (executing program)
+2024/05/25 02:25:29 fetching corpus: 24746, signal 423127/596535 (executing program)
+2024/05/25 02:25:29 fetching corpus: 24796, signal 423321/596535 (executing program)
+2024/05/25 02:25:29 fetching corpus: 24846, signal 423604/596535 (executing program)
+2024/05/25 02:25:30 fetching corpus: 24896, signal 423928/596535 (executing program)
+2024/05/25 02:25:30 fetching corpus: 24946, signal 424320/596537 (executing program)
+2024/05/25 02:25:30 fetching corpus: 24996, signal 424508/596537 (executing program)
+2024/05/25 02:25:30 fetching corpus: 25046, signal 424828/596537 (executing program)
+2024/05/25 02:25:30 fetching corpus: 25096, signal 425063/596537 (executing program)
+2024/05/25 02:25:31 fetching corpus: 25146, signal 425261/596538 (executing program)
+2024/05/25 02:25:31 fetching corpus: 25196, signal 425501/596538 (executing program)
+2024/05/25 02:25:31 fetching corpus: 25246, signal 425687/596538 (executing program)
+2024/05/25 02:25:31 fetching corpus: 25296, signal 425925/596538 (executing program)
+2024/05/25 02:25:31 fetching corpus: 25346, signal 426198/596538 (executing program)
+2024/05/25 02:25:31 fetching corpus: 25396, signal 426504/596538 (executing program)
+2024/05/25 02:25:32 fetching corpus: 25446, signal 426754/596538 (executing program)
+2024/05/25 02:25:32 fetching corpus: 25496, signal 427019/596538 (executing program)
+2024/05/25 02:25:32 fetching corpus: 25546, signal 427208/596538 (executing program)
+2024/05/25 02:25:32 fetching corpus: 25596, signal 427456/596540 (executing program)
+2024/05/25 02:25:32 fetching corpus: 25646, signal 427743/596540 (executing program)
+2024/05/25 02:25:33 fetching corpus: 25696, signal 428005/596540 (executing program)
+2024/05/25 02:25:33 fetching corpus: 25746, signal 428225/596540 (executing program)
+2024/05/25 02:25:33 fetching corpus: 25796, signal 428548/596552 (executing program)
+2024/05/25 02:25:33 fetching corpus: 25846, signal 428863/596552 (executing program)
+2024/05/25 02:25:34 fetching corpus: 25896, signal 429157/596552 (executing program)
+2024/05/25 02:25:34 fetching corpus: 25946, signal 429430/596552 (executing program)
+2024/05/25 02:25:34 fetching corpus: 25996, signal 429666/596552 (executing program)
+2024/05/25 02:25:34 fetching corpus: 26046, signal 430131/596552 (executing program)
+2024/05/25 02:25:34 fetching corpus: 26096, signal 430385/596552 (executing program)
+2024/05/25 02:25:34 fetching corpus: 26146, signal 430789/596552 (executing program)
+2024/05/25 02:25:35 fetching corpus: 26196, signal 431103/596552 (executing program)
+2024/05/25 02:25:35 fetching corpus: 26246, signal 431437/596552 (executing program)
+2024/05/25 02:25:35 fetching corpus: 26296, signal 431691/596552 (executing program)
+2024/05/25 02:25:35 fetching corpus: 26346, signal 431931/596552 (executing program)
+2024/05/25 02:25:35 fetching corpus: 26396, signal 432193/596552 (executing program)
+2024/05/25 02:25:36 fetching corpus: 26446, signal 432440/596553 (executing program)
+2024/05/25 02:25:36 fetching corpus: 26496, signal 432688/596557 (executing program)
+2024/05/25 02:25:36 fetching corpus: 26546, signal 432930/596557 (executing program)
+2024/05/25 02:25:36 fetching corpus: 26596, signal 433216/596557 (executing program)
+2024/05/25 02:25:36 fetching corpus: 26646, signal 433498/596557 (executing program)
+2024/05/25 02:25:36 fetching corpus: 26696, signal 433735/596557 (executing program)
+2024/05/25 02:25:37 fetching corpus: 26746, signal 433920/596557 (executing program)
+2024/05/25 02:25:37 fetching corpus: 26796, signal 434158/596557 (executing program)
+2024/05/25 02:25:37 fetching corpus: 26846, signal 434653/596557 (executing program)
+2024/05/25 02:25:38 fetching corpus: 26896, signal 434890/596558 (executing program)
+2024/05/25 02:25:38 fetching corpus: 26946, signal 435078/596560 (executing program)
+2024/05/25 02:25:38 fetching corpus: 26996, signal 435381/596560 (executing program)
+2024/05/25 02:25:38 fetching corpus: 27046, signal 435665/596560 (executing program)
+2024/05/25 02:25:38 fetching corpus: 27096, signal 435963/596570 (executing program)
+2024/05/25 02:25:38 fetching corpus: 27146, signal 436215/596570 (executing program)
+2024/05/25 02:25:39 fetching corpus: 27196, signal 436536/596570 (executing program)
+2024/05/25 02:25:39 fetching corpus: 27246, signal 436755/596570 (executing program)
+2024/05/25 02:25:39 fetching corpus: 27296, signal 436983/596570 (executing program)
+2024/05/25 02:25:39 fetching corpus: 27346, signal 437219/596570 (executing program)
+2024/05/25 02:25:39 fetching corpus: 27396, signal 437425/596570 (executing program)
+2024/05/25 02:25:39 fetching corpus: 27446, signal 437699/596570 (executing program)
+2024/05/25 02:25:40 fetching corpus: 27496, signal 437909/596570 (executing program)
+2024/05/25 02:25:40 fetching corpus: 27546, signal 438132/596570 (executing program)
+2024/05/25 02:25:40 fetching corpus: 27596, signal 438358/596570 (executing program)
+2024/05/25 02:25:40 fetching corpus: 27646, signal 438715/596570 (executing program)
+2024/05/25 02:25:40 fetching corpus: 27696, signal 438976/596573 (executing program)
+2024/05/25 02:25:41 fetching corpus: 27746, signal 439345/596573 (executing program)
+2024/05/25 02:25:41 fetching corpus: 27796, signal 439582/596573 (executing program)
+2024/05/25 02:25:41 fetching corpus: 27846, signal 439858/596573 (executing program)
+2024/05/25 02:25:41 fetching corpus: 27896, signal 440130/596573 (executing program)
+2024/05/25 02:25:41 fetching corpus: 27946, signal 440342/596573 (executing program)
+2024/05/25 02:25:42 fetching corpus: 27996, signal 440658/596573 (executing program)
+2024/05/25 02:25:42 fetching corpus: 28046, signal 440942/596573 (executing program)
+2024/05/25 02:25:42 fetching corpus: 28096, signal 441286/596573 (executing program)
+2024/05/25 02:25:42 fetching corpus: 28146, signal 441536/596573 (executing program)
+2024/05/25 02:25:43 fetching corpus: 28196, signal 441884/596573 (executing program)
+2024/05/25 02:25:43 fetching corpus: 28246, signal 442121/596573 (executing program)
+2024/05/25 02:25:43 fetching corpus: 28296, signal 442437/596573 (executing program)
+2024/05/25 02:25:43 fetching corpus: 28346, signal 442652/596573 (executing program)
+2024/05/25 02:25:43 fetching corpus: 28396, signal 442878/596573 (executing program)
+2024/05/25 02:25:43 fetching corpus: 28446, signal 443070/596573 (executing program)
+2024/05/25 02:25:44 fetching corpus: 28496, signal 443365/596573 (executing program)
+2024/05/25 02:25:44 fetching corpus: 28546, signal 443646/596573 (executing program)
+2024/05/25 02:25:44 fetching corpus: 28596, signal 443966/596573 (executing program)
+2024/05/25 02:25:44 fetching corpus: 28646, signal 444284/596573 (executing program)
+2024/05/25 02:25:44 fetching corpus: 28696, signal 444558/596573 (executing program)
+2024/05/25 02:25:44 fetching corpus: 28746, signal 444776/596573 (executing program)
+2024/05/25 02:25:45 fetching corpus: 28796, signal 444992/596576 (executing program)
+2024/05/25 02:25:45 fetching corpus: 28846, signal 445220/596576 (executing program)
+2024/05/25 02:25:45 fetching corpus: 28896, signal 445432/596576 (executing program)
+2024/05/25 02:25:45 fetching corpus: 28946, signal 445638/596576 (executing program)
+2024/05/25 02:25:45 fetching corpus: 28996, signal 445856/596576 (executing program)
+2024/05/25 02:25:45 fetching corpus: 29046, signal 446331/596587 (executing program)
+2024/05/25 02:25:45 fetching corpus: 29096, signal 446556/596587 (executing program)
+2024/05/25 02:25:46 fetching corpus: 29146, signal 446797/596587 (executing program)
+2024/05/25 02:25:46 fetching corpus: 29196, signal 447005/596587 (executing program)
+2024/05/25 02:25:46 fetching corpus: 29246, signal 447274/596587 (executing program)
+2024/05/25 02:25:46 fetching corpus: 29296, signal 447543/596587 (executing program)
+2024/05/25 02:25:46 fetching corpus: 29346, signal 447798/596588 (executing program)
+2024/05/25 02:25:47 fetching corpus: 29396, signal 447982/596588 (executing program)
+2024/05/25 02:25:47 fetching corpus: 29446, signal 448399/596588 (executing program)
+2024/05/25 02:25:47 fetching corpus: 29496, signal 448720/596588 (executing program)
+2024/05/25 02:25:48 fetching corpus: 29546, signal 448927/596588 (executing program)
+2024/05/25 02:25:48 fetching corpus: 29596, signal 449103/596588 (executing program)
+2024/05/25 02:25:48 fetching corpus: 29646, signal 449340/596588 (executing program)
+2024/05/25 02:25:48 fetching corpus: 29696, signal 449539/596588 (executing program)
+2024/05/25 02:25:48 fetching corpus: 29746, signal 449884/596588 (executing program)
+2024/05/25 02:25:48 fetching corpus: 29796, signal 450070/596588 (executing program)
+2024/05/25 02:25:48 fetching corpus: 29846, signal 450247/596588 (executing program)
+2024/05/25 02:25:49 fetching corpus: 29896, signal 450893/596588 (executing program)
+2024/05/25 02:25:49 fetching corpus: 29946, signal 451124/596588 (executing program)
+2024/05/25 02:25:49 fetching corpus: 29996, signal 451406/596588 (executing program)
+2024/05/25 02:25:49 fetching corpus: 30046, signal 451767/596588 (executing program)
+2024/05/25 02:25:49 fetching corpus: 30096, signal 452046/596588 (executing program)
+2024/05/25 02:25:50 fetching corpus: 30146, signal 452324/596588 (executing program)
+2024/05/25 02:25:50 fetching corpus: 30196, signal 452556/596588 (executing program)
+2024/05/25 02:25:50 fetching corpus: 30246, signal 452765/596588 (executing program)
+2024/05/25 02:25:50 fetching corpus: 30296, signal 453017/596589 (executing program)
+2024/05/25 02:25:50 fetching corpus: 30346, signal 453260/596589 (executing program)
+2024/05/25 02:25:50 fetching corpus: 30396, signal 453457/596589 (executing program)
+2024/05/25 02:25:50 fetching corpus: 30446, signal 453685/596590 (executing program)
+2024/05/25 02:25:51 fetching corpus: 30496, signal 453953/596590 (executing program)
+2024/05/25 02:25:51 fetching corpus: 30546, signal 454219/596590 (executing program)
+2024/05/25 02:25:51 fetching corpus: 30596, signal 454450/596595 (executing program)
+2024/05/25 02:25:51 fetching corpus: 30646, signal 454673/596595 (executing program)
+2024/05/25 02:25:51 fetching corpus: 30696, signal 454874/596595 (executing program)
+2024/05/25 02:25:51 fetching corpus: 30746, signal 455099/596595 (executing program)
+2024/05/25 02:25:51 fetching corpus: 30796, signal 455545/596595 (executing program)
+2024/05/25 02:25:52 fetching corpus: 30846, signal 455744/596595 (executing program)
+2024/05/25 02:25:52 fetching corpus: 30896, signal 456035/596595 (executing program)
+2024/05/25 02:25:52 fetching corpus: 30946, signal 456389/596595 (executing program)
+2024/05/25 02:25:52 fetching corpus: 30996, signal 456674/596595 (executing program)
+2024/05/25 02:25:53 fetching corpus: 31046, signal 456885/596595 (executing program)
+2024/05/25 02:25:53 fetching corpus: 31096, signal 457197/596595 (executing program)
+2024/05/25 02:25:53 fetching corpus: 31146, signal 457394/596595 (executing program)
+2024/05/25 02:25:53 fetching corpus: 31196, signal 457653/596596 (executing program)
+2024/05/25 02:25:53 fetching corpus: 31246, signal 457941/596596 (executing program)
+2024/05/25 02:25:54 fetching corpus: 31296, signal 458296/596596 (executing program)
+2024/05/25 02:25:54 fetching corpus: 31346, signal 458498/596596 (executing program)
+2024/05/25 02:25:54 fetching corpus: 31396, signal 458777/596596 (executing program)
+2024/05/25 02:25:54 fetching corpus: 31446, signal 459041/596596 (executing program)
+2024/05/25 02:25:54 fetching corpus: 31496, signal 459306/596596 (executing program)
+2024/05/25 02:25:54 fetching corpus: 31546, signal 459481/596596 (executing program)
+2024/05/25 02:25:54 fetching corpus: 31596, signal 459666/596596 (executing program)
+2024/05/25 02:25:55 fetching corpus: 31646, signal 459848/596599 (executing program)
+2024/05/25 02:25:55 fetching corpus: 31696, signal 460117/596599 (executing program)
+2024/05/25 02:25:55 fetching corpus: 31746, signal 460438/596601 (executing program)
+2024/05/25 02:25:55 fetching corpus: 31796, signal 460662/596601 (executing program)
+2024/05/25 02:25:55 fetching corpus: 31846, signal 460921/596601 (executing program)
+2024/05/25 02:25:55 fetching corpus: 31896, signal 461179/596601 (executing program)
+2024/05/25 02:25:56 fetching corpus: 31946, signal 461698/596601 (executing program)
+2024/05/25 02:25:56 fetching corpus: 31996, signal 461959/596601 (executing program)
+2024/05/25 02:25:56 fetching corpus: 32046, signal 462208/596601 (executing program)
+2024/05/25 02:25:56 fetching corpus: 32096, signal 462450/596601 (executing program)
+2024/05/25 02:25:56 fetching corpus: 32146, signal 462665/596601 (executing program)
+2024/05/25 02:25:57 fetching corpus: 32196, signal 462942/596601 (executing program)
+2024/05/25 02:25:57 fetching corpus: 32246, signal 463157/596602 (executing program)
+2024/05/25 02:25:57 fetching corpus: 32296, signal 463515/596603 (executing program)
+2024/05/25 02:25:57 fetching corpus: 32346, signal 463747/596603 (executing program)
+2024/05/25 02:25:58 fetching corpus: 32396, signal 464050/596603 (executing program)
+2024/05/25 02:25:58 fetching corpus: 32446, signal 464305/596603 (executing program)
+2024/05/25 02:25:58 fetching corpus: 32496, signal 464510/596603 (executing program)
+2024/05/25 02:25:58 fetching corpus: 32546, signal 464783/596603 (executing program)
+2024/05/25 02:25:58 fetching corpus: 32596, signal 465059/596604 (executing program)
+2024/05/25 02:25:59 fetching corpus: 32646, signal 465352/596604 (executing program)
+2024/05/25 02:25:59 fetching corpus: 32696, signal 465557/596604 (executing program)
+2024/05/25 02:25:59 fetching corpus: 32746, signal 465768/596604 (executing program)
+2024/05/25 02:25:59 fetching corpus: 32796, signal 465934/596604 (executing program)
+2024/05/25 02:25:59 fetching corpus: 32846, signal 466224/596604 (executing program)
+2024/05/25 02:26:00 fetching corpus: 32896, signal 466405/596604 (executing program)
+2024/05/25 02:26:00 fetching corpus: 32946, signal 466663/596606 (executing program)
+2024/05/25 02:26:00 fetching corpus: 32996, signal 466965/596607 (executing program)
+2024/05/25 02:26:00 fetching corpus: 33046, signal 467131/596607 (executing program)
+2024/05/25 02:26:00 fetching corpus: 33096, signal 467327/596607 (executing program)
+2024/05/25 02:26:00 fetching corpus: 33146, signal 467582/596607 (executing program)
+2024/05/25 02:26:00 fetching corpus: 33196, signal 467821/596607 (executing program)
+2024/05/25 02:26:01 fetching corpus: 33245, signal 468174/596608 (executing program)
+2024/05/25 02:26:01 fetching corpus: 33295, signal 468375/596608 (executing program)
+2024/05/25 02:26:01 fetching corpus: 33345, signal 468609/596608 (executing program)
+2024/05/25 02:26:01 fetching corpus: 33395, signal 468825/596610 (executing program)
+2024/05/25 02:26:01 fetching corpus: 33445, signal 469030/596610 (executing program)
+2024/05/25 02:26:01 fetching corpus: 33495, signal 469198/596610 (executing program)
+2024/05/25 02:26:02 fetching corpus: 33545, signal 469417/596610 (executing program)
+2024/05/25 02:26:02 fetching corpus: 33595, signal 469682/596612 (executing program)
+2024/05/25 02:26:02 fetching corpus: 33645, signal 469938/596612 (executing program)
+2024/05/25 02:26:02 fetching corpus: 33695, signal 470114/596612 (executing program)
+2024/05/25 02:26:03 fetching corpus: 33745, signal 470327/596612 (executing program)
+2024/05/25 02:26:03 fetching corpus: 33795, signal 470538/596612 (executing program)
+2024/05/25 02:26:03 fetching corpus: 33845, signal 470932/596612 (executing program)
+2024/05/25 02:26:03 fetching corpus: 33895, signal 471176/596612 (executing program)
+2024/05/25 02:26:03 fetching corpus: 33945, signal 471369/596612 (executing program)
+2024/05/25 02:26:03 fetching corpus: 33995, signal 471617/596614 (executing program)
+2024/05/25 02:26:04 fetching corpus: 34045, signal 471787/596614 (executing program)
+2024/05/25 02:26:04 fetching corpus: 34095, signal 471940/596614 (executing program)
+2024/05/25 02:26:04 fetching corpus: 34145, signal 472271/596615 (executing program)
+2024/05/25 02:26:04 fetching corpus: 34195, signal 472459/596615 (executing program)
+2024/05/25 02:26:04 fetching corpus: 34245, signal 472697/596615 (executing program)
+2024/05/25 02:26:04 fetching corpus: 34295, signal 472914/596615 (executing program)
+2024/05/25 02:26:05 fetching corpus: 34345, signal 473134/596617 (executing program)
+2024/05/25 02:26:05 fetching corpus: 34395, signal 473432/596617 (executing program)
+2024/05/25 02:26:05 fetching corpus: 34445, signal 473652/596617 (executing program)
+2024/05/25 02:26:05 fetching corpus: 34495, signal 473874/596617 (executing program)
+2024/05/25 02:26:05 fetching corpus: 34545, signal 474030/596617 (executing program)
+2024/05/25 02:26:06 fetching corpus: 34595, signal 474236/596617 (executing program)
+2024/05/25 02:26:06 fetching corpus: 34645, signal 474471/596617 (executing program)
+2024/05/25 02:26:06 fetching corpus: 34695, signal 474662/596617 (executing program)
+2024/05/25 02:26:06 fetching corpus: 34745, signal 474861/596617 (executing program)
+2024/05/25 02:26:06 fetching corpus: 34795, signal 475124/596617 (executing program)
+2024/05/25 02:26:06 fetching corpus: 34845, signal 475329/596617 (executing program)
+2024/05/25 02:26:07 fetching corpus: 34895, signal 475560/596617 (executing program)
+2024/05/25 02:26:07 fetching corpus: 34945, signal 475824/596617 (executing program)
+2024/05/25 02:26:07 fetching corpus: 34994, signal 476050/596617 (executing program)
+2024/05/25 02:26:07 fetching corpus: 35044, signal 476300/596617 (executing program)
+2024/05/25 02:26:07 fetching corpus: 35094, signal 476519/596617 (executing program)
+2024/05/25 02:26:07 fetching corpus: 35144, signal 476719/596617 (executing program)
+2024/05/25 02:26:08 fetching corpus: 35194, signal 476946/596617 (executing program)
+[  328.204287][ T1219] ieee802154 phy0 wpan0: encryption failed: -22
+[  328.205139][ T1219] ieee802154 phy1 wpan1: encryption failed: -22
+2024/05/25 02:26:08 fetching corpus: 35244, signal 477158/596617 (executing program)
+2024/05/25 02:26:08 fetching corpus: 35294, signal 477375/596621 (executing program)
+2024/05/25 02:26:09 fetching corpus: 35344, signal 477608/596621 (executing program)
+2024/05/25 02:26:09 fetching corpus: 35394, signal 477855/596621 (executing program)
+2024/05/25 02:26:09 fetching corpus: 35444, signal 478071/596626 (executing program)
+2024/05/25 02:26:09 fetching corpus: 35494, signal 478349/596626 (executing program)
+2024/05/25 02:26:09 fetching corpus: 35544, signal 478569/596628 (executing program)
+2024/05/25 02:26:09 fetching corpus: 35594, signal 478936/596628 (executing program)
+2024/05/25 02:26:10 fetching corpus: 35644, signal 479247/596628 (executing program)
+2024/05/25 02:26:10 fetching corpus: 35694, signal 479464/596630 (executing program)
+2024/05/25 02:26:10 fetching corpus: 35744, signal 479684/596631 (executing program)
+2024/05/25 02:26:10 fetching corpus: 35794, signal 479910/596631 (executing program)
+2024/05/25 02:26:10 fetching corpus: 35844, signal 480082/596634 (executing program)
+2024/05/25 02:26:10 fetching corpus: 35894, signal 480367/596643 (executing program)
+2024/05/25 02:26:11 fetching corpus: 35944, signal 480574/596643 (executing program)
+2024/05/25 02:26:11 fetching corpus: 35994, signal 480778/596643 (executing program)
+2024/05/25 02:26:11 fetching corpus: 36044, signal 480972/596643 (executing program)
+2024/05/25 02:26:11 fetching corpus: 36094, signal 481243/596645 (executing program)
+2024/05/25 02:26:11 fetching corpus: 36144, signal 481490/596647 (executing program)
+2024/05/25 02:26:11 fetching corpus: 36194, signal 481706/596647 (executing program)
+2024/05/25 02:26:11 fetching corpus: 36244, signal 481892/596647 (executing program)
+2024/05/25 02:26:12 fetching corpus: 36294, signal 482114/596662 (executing program)
+2024/05/25 02:26:12 fetching corpus: 36344, signal 482298/596662 (executing program)
+2024/05/25 02:26:12 fetching corpus: 36394, signal 482503/596662 (executing program)
+2024/05/25 02:26:12 fetching corpus: 36444, signal 482701/596662 (executing program)
+2024/05/25 02:26:12 fetching corpus: 36494, signal 482866/596662 (executing program)
+2024/05/25 02:26:12 fetching corpus: 36544, signal 483130/596662 (executing program)
+2024/05/25 02:26:13 fetching corpus: 36594, signal 483287/596662 (executing program)
+2024/05/25 02:26:13 fetching corpus: 36644, signal 483555/596662 (executing program)
+2024/05/25 02:26:13 fetching corpus: 36694, signal 483800/596662 (executing program)
+2024/05/25 02:26:13 fetching corpus: 36744, signal 483964/596662 (executing program)
+2024/05/25 02:26:14 fetching corpus: 36794, signal 484185/596668 (executing program)
+2024/05/25 02:26:14 fetching corpus: 36844, signal 484344/596668 (executing program)
+2024/05/25 02:26:14 fetching corpus: 36894, signal 484549/596673 (executing program)
+2024/05/25 02:26:15 fetching corpus: 36944, signal 484760/596673 (executing program)
+2024/05/25 02:26:15 fetching corpus: 36994, signal 485007/596675 (executing program)
+2024/05/25 02:26:15 fetching corpus: 37044, signal 485244/596675 (executing program)
+2024/05/25 02:26:15 fetching corpus: 37094, signal 485484/596675 (executing program)
+2024/05/25 02:26:15 fetching corpus: 37144, signal 485686/596675 (executing program)
+2024/05/25 02:26:15 fetching corpus: 37194, signal 485871/596675 (executing program)
+2024/05/25 02:26:16 fetching corpus: 37244, signal 486078/596675 (executing program)
+2024/05/25 02:26:16 fetching corpus: 37294, signal 486293/596675 (executing program)
+2024/05/25 02:26:16 fetching corpus: 37344, signal 486469/596675 (executing program)
+2024/05/25 02:26:16 fetching corpus: 37394, signal 486747/596675 (executing program)
+2024/05/25 02:26:16 fetching corpus: 37444, signal 486974/596680 (executing program)
+2024/05/25 02:26:16 fetching corpus: 37494, signal 487148/596680 (executing program)
+2024/05/25 02:26:16 fetching corpus: 37544, signal 487393/596680 (executing program)
+2024/05/25 02:26:17 fetching corpus: 37594, signal 487578/596680 (executing program)
+2024/05/25 02:26:17 fetching corpus: 37644, signal 487774/596681 (executing program)
+2024/05/25 02:26:17 fetching corpus: 37694, signal 488005/596683 (executing program)
+2024/05/25 02:26:17 fetching corpus: 37744, signal 488221/596683 (executing program)
+2024/05/25 02:26:17 fetching corpus: 37794, signal 488422/596684 (executing program)
+2024/05/25 02:26:18 fetching corpus: 37844, signal 488572/596684 (executing program)
+2024/05/25 02:26:18 fetching corpus: 37894, signal 488780/596685 (executing program)
+2024/05/25 02:26:18 fetching corpus: 37944, signal 488986/596685 (executing program)
+2024/05/25 02:26:18 fetching corpus: 37994, signal 489253/596685 (executing program)
+2024/05/25 02:26:18 fetching corpus: 38044, signal 489427/596685 (executing program)
+2024/05/25 02:26:18 fetching corpus: 38094, signal 489577/596687 (executing program)
+2024/05/25 02:26:18 fetching corpus: 38144, signal 489800/596687 (executing program)
+2024/05/25 02:26:19 fetching corpus: 38194, signal 490027/596688 (executing program)
+2024/05/25 02:26:19 fetching corpus: 38244, signal 490217/596690 (executing program)
+2024/05/25 02:26:19 fetching corpus: 38294, signal 490442/596690 (executing program)
+2024/05/25 02:26:19 fetching corpus: 38344, signal 490607/596690 (executing program)
+2024/05/25 02:26:19 fetching corpus: 38394, signal 490837/596692 (executing program)
+2024/05/25 02:26:20 fetching corpus: 38444, signal 491026/596692 (executing program)
+2024/05/25 02:26:20 fetching corpus: 38494, signal 491242/596692 (executing program)
+2024/05/25 02:26:20 fetching corpus: 38544, signal 491458/596692 (executing program)
+2024/05/25 02:26:20 fetching corpus: 38594, signal 491632/596696 (executing program)
+2024/05/25 02:26:21 fetching corpus: 38644, signal 491837/596696 (executing program)
+2024/05/25 02:26:21 fetching corpus: 38694, signal 492220/596696 (executing program)
+2024/05/25 02:26:21 fetching corpus: 38744, signal 492451/596697 (executing program)
+2024/05/25 02:26:21 fetching corpus: 38794, signal 492665/596697 (executing program)
+2024/05/25 02:26:21 fetching corpus: 38844, signal 492882/596697 (executing program)
+2024/05/25 02:26:21 fetching corpus: 38894, signal 493123/596699 (executing program)
+2024/05/25 02:26:22 fetching corpus: 38944, signal 493282/596699 (executing program)
+2024/05/25 02:26:22 fetching corpus: 38994, signal 493484/596699 (executing program)
+2024/05/25 02:26:22 fetching corpus: 39044, signal 493729/596699 (executing program)
+2024/05/25 02:26:22 fetching corpus: 39094, signal 493929/596699 (executing program)
+2024/05/25 02:26:22 fetching corpus: 39144, signal 494284/596699 (executing program)
+2024/05/25 02:26:23 fetching corpus: 39194, signal 494444/596703 (executing program)
+2024/05/25 02:26:23 fetching corpus: 39244, signal 494626/596703 (executing program)
+2024/05/25 02:26:23 fetching corpus: 39294, signal 494774/596703 (executing program)
+2024/05/25 02:26:23 fetching corpus: 39344, signal 494959/596703 (executing program)
+2024/05/25 02:26:23 fetching corpus: 39394, signal 495195/596705 (executing program)
+2024/05/25 02:26:23 fetching corpus: 39444, signal 495387/596705 (executing program)
+2024/05/25 02:26:24 fetching corpus: 39494, signal 495561/596705 (executing program)
+2024/05/25 02:26:24 fetching corpus: 39544, signal 495742/596705 (executing program)
+2024/05/25 02:26:24 fetching corpus: 39594, signal 495931/596705 (executing program)
+2024/05/25 02:26:24 fetching corpus: 39644, signal 496257/596705 (executing program)
+2024/05/25 02:26:24 fetching corpus: 39694, signal 496511/596711 (executing program)
+2024/05/25 02:26:25 fetching corpus: 39744, signal 496716/596711 (executing program)
+2024/05/25 02:26:25 fetching corpus: 39794, signal 497377/596711 (executing program)
+2024/05/25 02:26:25 fetching corpus: 39844, signal 497542/596711 (executing program)
+2024/05/25 02:26:25 fetching corpus: 39894, signal 497713/596722 (executing program)
+2024/05/25 02:26:26 fetching corpus: 39944, signal 497907/596722 (executing program)
+2024/05/25 02:26:26 fetching corpus: 39994, signal 498095/596722 (executing program)
+2024/05/25 02:26:26 fetching corpus: 40044, signal 498304/596722 (executing program)
+2024/05/25 02:26:27 fetching corpus: 40094, signal 498509/596722 (executing program)
+2024/05/25 02:26:27 fetching corpus: 40144, signal 498682/596722 (executing program)
+2024/05/25 02:26:27 fetching corpus: 40194, signal 498870/596722 (executing program)
+2024/05/25 02:26:27 fetching corpus: 40244, signal 499057/596722 (executing program)
+2024/05/25 02:26:27 fetching corpus: 40294, signal 499335/596722 (executing program)
+2024/05/25 02:26:27 fetching corpus: 40344, signal 499646/596722 (executing program)
+2024/05/25 02:26:28 fetching corpus: 40394, signal 499826/596722 (executing program)
+2024/05/25 02:26:28 fetching corpus: 40444, signal 499976/596722 (executing program)
+2024/05/25 02:26:28 fetching corpus: 40494, signal 500179/596722 (executing program)
+2024/05/25 02:26:28 fetching corpus: 40544, signal 500347/596722 (executing program)
+2024/05/25 02:26:28 fetching corpus: 40594, signal 500530/596722 (executing program)
+2024/05/25 02:26:28 fetching corpus: 40644, signal 500663/596723 (executing program)
+2024/05/25 02:26:29 fetching corpus: 40694, signal 500913/596725 (executing program)
+2024/05/25 02:26:29 fetching corpus: 40744, signal 501081/596725 (executing program)
+2024/05/25 02:26:29 fetching corpus: 40794, signal 501243/596725 (executing program)
+2024/05/25 02:26:29 fetching corpus: 40844, signal 501380/596725 (executing program)
+2024/05/25 02:26:29 fetching corpus: 40894, signal 501717/596730 (executing program)
+2024/05/25 02:26:29 fetching corpus: 40944, signal 501972/596735 (executing program)
+2024/05/25 02:26:30 fetching corpus: 40994, signal 502146/596735 (executing program)
+2024/05/25 02:26:30 fetching corpus: 41044, signal 502364/596735 (executing program)
+2024/05/25 02:26:30 fetching corpus: 41094, signal 502613/596735 (executing program)
+2024/05/25 02:26:30 fetching corpus: 41144, signal 502816/596735 (executing program)
+2024/05/25 02:26:31 fetching corpus: 41194, signal 503081/596735 (executing program)
+2024/05/25 02:26:31 fetching corpus: 41244, signal 503284/596735 (executing program)
+2024/05/25 02:26:31 fetching corpus: 41294, signal 503460/596735 (executing program)
+2024/05/25 02:26:31 fetching corpus: 41344, signal 503623/596735 (executing program)
+2024/05/25 02:26:31 fetching corpus: 41394, signal 503902/596740 (executing program)
+2024/05/25 02:26:32 fetching corpus: 41444, signal 504079/596740 (executing program)
+2024/05/25 02:26:32 fetching corpus: 41494, signal 504408/596740 (executing program)
+2024/05/25 02:26:32 fetching corpus: 41544, signal 504639/596740 (executing program)
+2024/05/25 02:26:32 fetching corpus: 41594, signal 504892/596740 (executing program)
+2024/05/25 02:26:32 fetching corpus: 41644, signal 505215/596741 (executing program)
+2024/05/25 02:26:32 fetching corpus: 41694, signal 505429/596741 (executing program)
+2024/05/25 02:26:33 fetching corpus: 41744, signal 505663/596741 (executing program)
+2024/05/25 02:26:34 fetching corpus: 41794, signal 505860/596744 (executing program)
+2024/05/25 02:26:34 fetching corpus: 41844, signal 506021/596744 (executing program)
+2024/05/25 02:26:34 fetching corpus: 41894, signal 506187/596744 (executing program)
+2024/05/25 02:26:34 fetching corpus: 41944, signal 506349/596744 (executing program)
+2024/05/25 02:26:34 fetching corpus: 41994, signal 506531/596744 (executing program)
+2024/05/25 02:26:34 fetching corpus: 42044, signal 506744/596744 (executing program)
+2024/05/25 02:26:35 fetching corpus: 42094, signal 506954/596744 (executing program)
+2024/05/25 02:26:35 fetching corpus: 42144, signal 507121/596744 (executing program)
+2024/05/25 02:26:35 fetching corpus: 42194, signal 507395/596744 (executing program)
+2024/05/25 02:26:36 fetching corpus: 42244, signal 507600/596745 (executing program)
+2024/05/25 02:26:36 fetching corpus: 42294, signal 507769/596745 (executing program)
+2024/05/25 02:26:36 fetching corpus: 42344, signal 508245/596745 (executing program)
+2024/05/25 02:26:36 fetching corpus: 42394, signal 508452/596746 (executing program)
+2024/05/25 02:26:36 fetching corpus: 42444, signal 508609/596746 (executing program)
+2024/05/25 02:26:36 fetching corpus: 42494, signal 508779/596746 (executing program)
+2024/05/25 02:26:37 fetching corpus: 42544, signal 508952/596746 (executing program)
+2024/05/25 02:26:37 fetching corpus: 42594, signal 509160/596755 (executing program)
+2024/05/25 02:26:37 fetching corpus: 42644, signal 509409/596755 (executing program)
+2024/05/25 02:26:37 fetching corpus: 42694, signal 509570/596755 (executing program)
+2024/05/25 02:26:37 fetching corpus: 42744, signal 509786/596766 (executing program)
+2024/05/25 02:26:38 fetching corpus: 42794, signal 509948/596766 (executing program)
+2024/05/25 02:26:38 fetching corpus: 42844, signal 510131/596767 (executing program)
+2024/05/25 02:26:38 fetching corpus: 42894, signal 510475/596767 (executing program)
+2024/05/25 02:26:38 fetching corpus: 42944, signal 510644/596767 (executing program)
+2024/05/25 02:26:38 fetching corpus: 42994, signal 510836/596767 (executing program)
+2024/05/25 02:26:38 fetching corpus: 43044, signal 511066/596767 (executing program)
+2024/05/25 02:26:39 fetching corpus: 43094, signal 511346/596778 (executing program)
+2024/05/25 02:26:39 fetching corpus: 43144, signal 511511/596778 (executing program)
+2024/05/25 02:26:39 fetching corpus: 43194, signal 511671/596782 (executing program)
+2024/05/25 02:26:39 fetching corpus: 43244, signal 511880/596782 (executing program)
+2024/05/25 02:26:39 fetching corpus: 43294, signal 512086/596782 (executing program)
+2024/05/25 02:26:40 fetching corpus: 43344, signal 512312/596782 (executing program)
+2024/05/25 02:26:40 fetching corpus: 43394, signal 512498/596782 (executing program)
+2024/05/25 02:26:40 fetching corpus: 43444, signal 512655/596782 (executing program)
+2024/05/25 02:26:41 fetching corpus: 43494, signal 512966/596783 (executing program)
+2024/05/25 02:26:41 fetching corpus: 43544, signal 513209/596783 (executing program)
+2024/05/25 02:26:41 fetching corpus: 43594, signal 513365/596783 (executing program)
+2024/05/25 02:26:41 fetching corpus: 43644, signal 513584/596783 (executing program)
+2024/05/25 02:26:41 fetching corpus: 43694, signal 513760/596789 (executing program)
+2024/05/25 02:26:42 fetching corpus: 43744, signal 513958/596789 (executing program)
+2024/05/25 02:26:42 fetching corpus: 43794, signal 514179/596789 (executing program)
+2024/05/25 02:26:42 fetching corpus: 43844, signal 514371/596789 (executing program)
+2024/05/25 02:26:42 fetching corpus: 43894, signal 514548/596789 (executing program)
+2024/05/25 02:26:42 fetching corpus: 43944, signal 514757/596789 (executing program)
+2024/05/25 02:26:42 fetching corpus: 43994, signal 514921/596789 (executing program)
+2024/05/25 02:26:42 fetching corpus: 44044, signal 515104/596789 (executing program)
+2024/05/25 02:26:43 fetching corpus: 44094, signal 515308/596802 (executing program)
+2024/05/25 02:26:43 fetching corpus: 44144, signal 515514/596805 (executing program)
+2024/05/25 02:26:43 fetching corpus: 44194, signal 515689/596805 (executing program)
+2024/05/25 02:26:43 fetching corpus: 44244, signal 515877/596805 (executing program)
+2024/05/25 02:26:43 fetching corpus: 44294, signal 516099/596805 (executing program)
+2024/05/25 02:26:44 fetching corpus: 44344, signal 516310/596805 (executing program)
+2024/05/25 02:26:44 fetching corpus: 44394, signal 516435/596805 (executing program)
+2024/05/25 02:26:44 fetching corpus: 44444, signal 516615/596805 (executing program)
+2024/05/25 02:26:44 fetching corpus: 44494, signal 516771/596805 (executing program)
+2024/05/25 02:26:44 fetching corpus: 44544, signal 516944/596805 (executing program)
+2024/05/25 02:26:45 fetching corpus: 44594, signal 517268/596806 (executing program)
+2024/05/25 02:26:45 fetching corpus: 44644, signal 517430/596806 (executing program)
+2024/05/25 02:26:45 fetching corpus: 44694, signal 517596/596806 (executing program)
+2024/05/25 02:26:45 fetching corpus: 44744, signal 517810/596812 (executing program)
+2024/05/25 02:26:45 fetching corpus: 44794, signal 518105/596812 (executing program)
+2024/05/25 02:26:45 fetching corpus: 44844, signal 518259/596813 (executing program)
+2024/05/25 02:26:46 fetching corpus: 44894, signal 518442/596813 (executing program)
+2024/05/25 02:26:46 fetching corpus: 44944, signal 518692/596813 (executing program)
+2024/05/25 02:26:46 fetching corpus: 44994, signal 518883/596813 (executing program)
+2024/05/25 02:26:46 fetching corpus: 45044, signal 519103/596813 (executing program)
+2024/05/25 02:26:46 fetching corpus: 45094, signal 519290/596813 (executing program)
+2024/05/25 02:26:46 fetching corpus: 45144, signal 519467/596813 (executing program)
+2024/05/25 02:26:46 fetching corpus: 45194, signal 519668/596813 (executing program)
+2024/05/25 02:26:47 fetching corpus: 45244, signal 519841/596815 (executing program)
+2024/05/25 02:26:47 fetching corpus: 45294, signal 520031/596815 (executing program)
+2024/05/25 02:26:47 fetching corpus: 45344, signal 520202/596815 (executing program)
+2024/05/25 02:26:47 fetching corpus: 45394, signal 520451/596815 (executing program)
+2024/05/25 02:26:48 fetching corpus: 45444, signal 520661/596815 (executing program)
+2024/05/25 02:26:48 fetching corpus: 45494, signal 521022/596818 (executing program)
+2024/05/25 02:26:48 fetching corpus: 45544, signal 521175/596818 (executing program)
+2024/05/25 02:26:48 fetching corpus: 45594, signal 521380/596826 (executing program)
+2024/05/25 02:26:48 fetching corpus: 45644, signal 521519/596826 (executing program)
+2024/05/25 02:26:49 fetching corpus: 45694, signal 521672/596827 (executing program)
+2024/05/25 02:26:49 fetching corpus: 45744, signal 521859/596827 (executing program)
+2024/05/25 02:26:49 fetching corpus: 45794, signal 522032/596827 (executing program)
+2024/05/25 02:26:49 fetching corpus: 45844, signal 522223/596827 (executing program)
+2024/05/25 02:26:49 fetching corpus: 45894, signal 522398/596827 (executing program)
+2024/05/25 02:26:49 fetching corpus: 45944, signal 522581/596827 (executing program)
+2024/05/25 02:26:49 fetching corpus: 45994, signal 522754/596827 (executing program)
+2024/05/25 02:26:50 fetching corpus: 46044, signal 522930/596830 (executing program)
+2024/05/25 02:26:50 fetching corpus: 46094, signal 523124/596830 (executing program)
+2024/05/25 02:26:50 fetching corpus: 46143, signal 523290/596830 (executing program)
+2024/05/25 02:26:50 fetching corpus: 46193, signal 523483/596830 (executing program)
+2024/05/25 02:26:50 fetching corpus: 46243, signal 523676/596830 (executing program)
+2024/05/25 02:26:51 fetching corpus: 46293, signal 523921/596830 (executing program)
+2024/05/25 02:26:51 fetching corpus: 46343, signal 524106/596830 (executing program)
+2024/05/25 02:26:51 fetching corpus: 46393, signal 524287/596831 (executing program)
+2024/05/25 02:26:51 fetching corpus: 46443, signal 524419/596831 (executing program)
+2024/05/25 02:26:52 fetching corpus: 46493, signal 524685/596832 (executing program)
+2024/05/25 02:26:52 fetching corpus: 46543, signal 524851/596832 (executing program)
+2024/05/25 02:26:52 fetching corpus: 46593, signal 525025/596832 (executing program)
+2024/05/25 02:26:52 fetching corpus: 46643, signal 525246/596832 (executing program)
+2024/05/25 02:26:52 fetching corpus: 46693, signal 525504/596832 (executing program)
+2024/05/25 02:26:53 fetching corpus: 46743, signal 525718/596832 (executing program)
+2024/05/25 02:26:53 fetching corpus: 46793, signal 525904/596832 (executing program)
+2024/05/25 02:26:53 fetching corpus: 46843, signal 526071/596838 (executing program)
+2024/05/25 02:26:53 fetching corpus: 46893, signal 526242/596838 (executing program)
+2024/05/25 02:26:54 fetching corpus: 46943, signal 526431/596838 (executing program)
+2024/05/25 02:26:54 fetching corpus: 46993, signal 526679/596838 (executing program)
+2024/05/25 02:26:54 fetching corpus: 47043, signal 526836/596842 (executing program)
+2024/05/25 02:26:54 fetching corpus: 47093, signal 527057/596842 (executing program)
+2024/05/25 02:26:54 fetching corpus: 47143, signal 527279/596842 (executing program)
+2024/05/25 02:26:55 fetching corpus: 47193, signal 527426/596842 (executing program)
+2024/05/25 02:26:55 fetching corpus: 47243, signal 527591/596842 (executing program)
+2024/05/25 02:26:55 fetching corpus: 47293, signal 527742/596842 (executing program)
+2024/05/25 02:26:55 fetching corpus: 47343, signal 527925/596842 (executing program)
+2024/05/25 02:26:55 fetching corpus: 47393, signal 528093/596845 (executing program)
+2024/05/25 02:26:55 fetching corpus: 47443, signal 528395/596845 (executing program)
+2024/05/25 02:26:56 fetching corpus: 47493, signal 528527/596845 (executing program)
+2024/05/25 02:26:56 fetching corpus: 47543, signal 528693/596845 (executing program)
+2024/05/25 02:26:56 fetching corpus: 47593, signal 528862/596845 (executing program)
+2024/05/25 02:26:56 fetching corpus: 47643, signal 529129/596845 (executing program)
+2024/05/25 02:26:56 fetching corpus: 47693, signal 529275/596845 (executing program)
+2024/05/25 02:26:57 fetching corpus: 47743, signal 529461/596845 (executing program)
+2024/05/25 02:26:57 fetching corpus: 47793, signal 529686/596845 (executing program)
+2024/05/25 02:26:57 fetching corpus: 47843, signal 529822/596845 (executing program)
+2024/05/25 02:26:57 fetching corpus: 47893, signal 529952/596845 (executing program)
+2024/05/25 02:26:57 fetching corpus: 47943, signal 530207/596845 (executing program)
+2024/05/25 02:26:57 fetching corpus: 47993, signal 530333/596845 (executing program)
+2024/05/25 02:26:57 fetching corpus: 48043, signal 530528/596845 (executing program)
+2024/05/25 02:26:58 fetching corpus: 48093, signal 530734/596845 (executing program)
+2024/05/25 02:26:58 fetching corpus: 48143, signal 530867/596845 (executing program)
+2024/05/25 02:26:58 fetching corpus: 48193, signal 531040/596845 (executing program)
+2024/05/25 02:26:58 fetching corpus: 48243, signal 531270/596845 (executing program)
+2024/05/25 02:26:58 fetching corpus: 48293, signal 531410/596845 (executing program)
+2024/05/25 02:26:58 fetching corpus: 48343, signal 531559/596845 (executing program)
+2024/05/25 02:26:59 fetching corpus: 48393, signal 531709/596845 (executing program)
+2024/05/25 02:26:59 fetching corpus: 48443, signal 531881/596845 (executing program)
+2024/05/25 02:26:59 fetching corpus: 48493, signal 532061/596845 (executing program)
+2024/05/25 02:26:59 fetching corpus: 48543, signal 532278/596845 (executing program)
+2024/05/25 02:26:59 fetching corpus: 48593, signal 532469/596845 (executing program)
+2024/05/25 02:27:00 fetching corpus: 48643, signal 532615/596845 (executing program)
+2024/05/25 02:27:00 fetching corpus: 48693, signal 532759/596845 (executing program)
+2024/05/25 02:27:00 fetching corpus: 48743, signal 532979/596845 (executing program)
+2024/05/25 02:27:00 fetching corpus: 48793, signal 533147/596845 (executing program)
+2024/05/25 02:27:00 fetching corpus: 48843, signal 533294/596845 (executing program)
+2024/05/25 02:27:01 fetching corpus: 48893, signal 533463/596845 (executing program)
+2024/05/25 02:27:01 fetching corpus: 48943, signal 533675/596845 (executing program)
+2024/05/25 02:27:01 fetching corpus: 48993, signal 533864/596846 (executing program)
+2024/05/25 02:27:01 fetching corpus: 49043, signal 533988/596846 (executing program)
+2024/05/25 02:27:01 fetching corpus: 49093, signal 534183/596846 (executing program)
+2024/05/25 02:27:02 fetching corpus: 49143, signal 534328/596846 (executing program)
+2024/05/25 02:27:02 fetching corpus: 49193, signal 534515/596846 (executing program)
+2024/05/25 02:27:02 fetching corpus: 49243, signal 534665/596846 (executing program)
+2024/05/25 02:27:02 fetching corpus: 49293, signal 534846/596848 (executing program)
+2024/05/25 02:27:02 fetching corpus: 49343, signal 534986/596849 (executing program)
+2024/05/25 02:27:03 fetching corpus: 49393, signal 535165/596849 (executing program)
+2024/05/25 02:27:03 fetching corpus: 49443, signal 535323/596849 (executing program)
+2024/05/25 02:27:03 fetching corpus: 49493, signal 535534/596849 (executing program)
+2024/05/25 02:27:03 fetching corpus: 49543, signal 535667/596849 (executing program)
+2024/05/25 02:27:03 fetching corpus: 49593, signal 535838/596849 (executing program)
+2024/05/25 02:27:03 fetching corpus: 49643, signal 536016/596849 (executing program)
+2024/05/25 02:27:03 fetching corpus: 49693, signal 536232/596849 (executing program)
+2024/05/25 02:27:04 fetching corpus: 49743, signal 536434/596849 (executing program)
+2024/05/25 02:27:04 fetching corpus: 49792, signal 536565/596850 (executing program)
+2024/05/25 02:27:04 fetching corpus: 49842, signal 536710/596850 (executing program)
+2024/05/25 02:27:04 fetching corpus: 49892, signal 536869/596850 (executing program)
+2024/05/25 02:27:04 fetching corpus: 49942, signal 537022/596850 (executing program)
+2024/05/25 02:27:04 fetching corpus: 49992, signal 537140/596850 (executing program)
+2024/05/25 02:27:05 fetching corpus: 50042, signal 537337/596850 (executing program)
+2024/05/25 02:27:05 fetching corpus: 50092, signal 537559/596854 (executing program)
+2024/05/25 02:27:05 fetching corpus: 50142, signal 537726/596854 (executing program)
+2024/05/25 02:27:05 fetching corpus: 50192, signal 537933/596854 (executing program)
+2024/05/25 02:27:05 fetching corpus: 50242, signal 538096/596858 (executing program)
+2024/05/25 02:27:06 fetching corpus: 50292, signal 538274/596858 (executing program)
+2024/05/25 02:27:06 fetching corpus: 50342, signal 538407/596858 (executing program)
+2024/05/25 02:27:06 fetching corpus: 50392, signal 538570/596858 (executing program)
+2024/05/25 02:27:06 fetching corpus: 50442, signal 538729/596858 (executing program)
+2024/05/25 02:27:06 fetching corpus: 50492, signal 538889/596858 (executing program)
+2024/05/25 02:27:06 fetching corpus: 50542, signal 539115/596858 (executing program)
+2024/05/25 02:27:07 fetching corpus: 50592, signal 539290/596863 (executing program)
+2024/05/25 02:27:07 fetching corpus: 50642, signal 539405/596864 (executing program)
+2024/05/25 02:27:07 fetching corpus: 50692, signal 539621/596864 (executing program)
+2024/05/25 02:27:08 fetching corpus: 50742, signal 539827/596864 (executing program)
+2024/05/25 02:27:08 fetching corpus: 50792, signal 540041/596864 (executing program)
+2024/05/25 02:27:08 fetching corpus: 50842, signal 540207/596864 (executing program)
+2024/05/25 02:27:08 fetching corpus: 50892, signal 540377/596864 (executing program)
+2024/05/25 02:27:09 fetching corpus: 50942, signal 540530/596864 (executing program)
+2024/05/25 02:27:09 fetching corpus: 50992, signal 540725/596865 (executing program)
+2024/05/25 02:27:09 fetching corpus: 51042, signal 540870/596865 (executing program)
+2024/05/25 02:27:09 fetching corpus: 51092, signal 541032/596865 (executing program)
+2024/05/25 02:27:09 fetching corpus: 51142, signal 541261/596865 (executing program)
+[  389.643512][ T1219] ieee802154 phy0 wpan0: encryption failed: -22
+[  389.644313][ T1219] ieee802154 phy1 wpan1: encryption failed: -22
+2024/05/25 02:27:10 fetching corpus: 51192, signal 541450/596867 (executing program)
+2024/05/25 02:27:10 fetching corpus: 51242, signal 541731/596867 (executing program)
+2024/05/25 02:27:10 fetching corpus: 51292, signal 542003/596880 (executing program)
+2024/05/25 02:27:10 fetching corpus: 51342, signal 542137/596882 (executing program)
+2024/05/25 02:27:10 fetching corpus: 51392, signal 542374/596882 (executing program)
+2024/05/25 02:27:10 fetching corpus: 51442, signal 542527/596882 (executing program)
+2024/05/25 02:27:11 fetching corpus: 51492, signal 542724/596882 (executing program)
+2024/05/25 02:27:11 fetching corpus: 51542, signal 542866/596882 (executing program)
+2024/05/25 02:27:11 fetching corpus: 51592, signal 543011/596882 (executing program)
+2024/05/25 02:27:11 fetching corpus: 51642, signal 543156/596882 (executing program)
+2024/05/25 02:27:11 fetching corpus: 51692, signal 543286/596882 (executing program)
+2024/05/25 02:27:11 fetching corpus: 51742, signal 543416/596882 (executing program)
+2024/05/25 02:27:12 fetching corpus: 51792, signal 543614/596882 (executing program)
+2024/05/25 02:27:12 fetching corpus: 51842, signal 544672/596882 (executing program)
+2024/05/25 02:27:12 fetching corpus: 51892, signal 544860/596882 (executing program)
+2024/05/25 02:27:12 fetching corpus: 51942, signal 545043/596882 (executing program)
+2024/05/25 02:27:12 fetching corpus: 51992, signal 545179/596882 (executing program)
+2024/05/25 02:27:13 fetching corpus: 52042, signal 545314/596885 (executing program)
+2024/05/25 02:27:13 fetching corpus: 52092, signal 545484/596885 (executing program)
+2024/05/25 02:27:13 fetching corpus: 52142, signal 545708/596887 (executing program)
+2024/05/25 02:27:13 fetching corpus: 52192, signal 545893/596887 (executing program)
+2024/05/25 02:27:13 fetching corpus: 52242, signal 546053/596887 (executing program)
+2024/05/25 02:27:14 fetching corpus: 52292, signal 546224/596887 (executing program)
+2024/05/25 02:27:14 fetching corpus: 52342, signal 546392/596887 (executing program)
+2024/05/25 02:27:14 fetching corpus: 52392, signal 546571/596887 (executing program)
+2024/05/25 02:27:14 fetching corpus: 52442, signal 546844/596887 (executing program)
+2024/05/25 02:27:15 fetching corpus: 52492, signal 547012/596889 (executing program)
+2024/05/25 02:27:15 fetching corpus: 52542, signal 547128/596889 (executing program)
+2024/05/25 02:27:16 fetching corpus: 52592, signal 547318/596889 (executing program)
+2024/05/25 02:27:16 fetching corpus: 52642, signal 547484/596896 (executing program)
+2024/05/25 02:27:16 fetching corpus: 52692, signal 547675/596896 (executing program)
+2024/05/25 02:27:16 fetching corpus: 52742, signal 547807/596896 (executing program)
+2024/05/25 02:27:17 fetching corpus: 52792, signal 548013/596897 (executing program)
+2024/05/25 02:27:17 fetching corpus: 52842, signal 548168/596897 (executing program)
+2024/05/25 02:27:17 fetching corpus: 52892, signal 548326/596897 (executing program)
+2024/05/25 02:27:17 fetching corpus: 52942, signal 548492/596897 (executing program)
+2024/05/25 02:27:17 fetching corpus: 52992, signal 548687/596897 (executing program)
+2024/05/25 02:27:18 fetching corpus: 53042, signal 548815/596897 (executing program)
+2024/05/25 02:27:18 fetching corpus: 53092, signal 549039/596897 (executing program)
+2024/05/25 02:27:18 fetching corpus: 53142, signal 549265/596897 (executing program)
+2024/05/25 02:27:18 fetching corpus: 53192, signal 549425/596897 (executing program)
+2024/05/25 02:27:18 fetching corpus: 53242, signal 549582/596897 (executing program)
+2024/05/25 02:27:18 fetching corpus: 53292, signal 549742/596898 (executing program)
+2024/05/25 02:27:19 fetching corpus: 53342, signal 549906/596898 (executing program)
+2024/05/25 02:27:19 fetching corpus: 53392, signal 550078/596898 (executing program)
+2024/05/25 02:27:19 fetching corpus: 53442, signal 550267/596898 (executing program)
+2024/05/25 02:27:19 fetching corpus: 53492, signal 550397/596898 (executing program)
+2024/05/25 02:27:19 fetching corpus: 53542, signal 550598/596898 (executing program)
+2024/05/25 02:27:20 fetching corpus: 53592, signal 550807/596898 (executing program)
+2024/05/25 02:27:20 fetching corpus: 53642, signal 550966/596898 (executing program)
+2024/05/25 02:27:20 fetching corpus: 53692, signal 551168/596900 (executing program)
+2024/05/25 02:27:20 fetching corpus: 53742, signal 551322/596900 (executing program)
+2024/05/25 02:27:20 fetching corpus: 53792, signal 551495/596900 (executing program)
+2024/05/25 02:27:20 fetching corpus: 53841, signal 551619/596900 (executing program)
+2024/05/25 02:27:21 fetching corpus: 53891, signal 551764/596900 (executing program)
+2024/05/25 02:27:21 fetching corpus: 53941, signal 551894/596900 (executing program)
+2024/05/25 02:27:21 fetching corpus: 53991, signal 552067/596900 (executing program)
+2024/05/25 02:27:21 fetching corpus: 54041, signal 552238/596900 (executing program)
+2024/05/25 02:27:21 fetching corpus: 54091, signal 552372/596900 (executing program)
+2024/05/25 02:27:21 fetching corpus: 54141, signal 552572/596900 (executing program)
+2024/05/25 02:27:22 fetching corpus: 54191, signal 552738/596901 (executing program)
+2024/05/25 02:27:22 fetching corpus: 54241, signal 552951/596901 (executing program)
+2024/05/25 02:27:22 fetching corpus: 54291, signal 553144/596910 (executing program)
+2024/05/25 02:27:22 fetching corpus: 54341, signal 553339/596910 (executing program)
+2024/05/25 02:27:22 fetching corpus: 54391, signal 553545/596910 (executing program)
+2024/05/25 02:27:23 fetching corpus: 54441, signal 553747/596910 (executing program)
+2024/05/25 02:27:23 fetching corpus: 54491, signal 553908/596910 (executing program)
+2024/05/25 02:27:23 fetching corpus: 54541, signal 554428/596910 (executing program)
+2024/05/25 02:27:24 fetching corpus: 54591, signal 554639/596910 (executing program)
+2024/05/25 02:27:24 fetching corpus: 54641, signal 554779/596910 (executing program)
+2024/05/25 02:27:24 fetching corpus: 54691, signal 554905/596911 (executing program)
+2024/05/25 02:27:24 fetching corpus: 54741, signal 555054/596911 (executing program)
+2024/05/25 02:27:24 fetching corpus: 54791, signal 555225/596911 (executing program)
+2024/05/25 02:27:25 fetching corpus: 54841, signal 555381/596911 (executing program)
+2024/05/25 02:27:25 fetching corpus: 54891, signal 555514/596911 (executing program)
+2024/05/25 02:27:25 fetching corpus: 54941, signal 555770/596911 (executing program)
+2024/05/25 02:27:25 fetching corpus: 54991, signal 555920/596911 (executing program)
+2024/05/25 02:27:25 fetching corpus: 55041, signal 556052/596911 (executing program)
+2024/05/25 02:27:26 fetching corpus: 55091, signal 556172/596911 (executing program)
+2024/05/25 02:27:26 fetching corpus: 55141, signal 556377/596911 (executing program)
+2024/05/25 02:27:26 fetching corpus: 55191, signal 556506/596918 (executing program)
+2024/05/25 02:27:26 fetching corpus: 55241, signal 556665/596918 (executing program)
+2024/05/25 02:27:26 fetching corpus: 55291, signal 556793/596919 (executing program)
+2024/05/25 02:27:26 fetching corpus: 55341, signal 556967/596919 (executing program)
+2024/05/25 02:27:27 fetching corpus: 55391, signal 557092/596919 (executing program)
+2024/05/25 02:27:27 fetching corpus: 55441, signal 557239/596919 (executing program)
+2024/05/25 02:27:27 fetching corpus: 55491, signal 557383/596921 (executing program)
+2024/05/25 02:27:27 fetching corpus: 55541, signal 557583/596921 (executing program)
+2024/05/25 02:27:27 fetching corpus: 55591, signal 557769/596922 (executing program)
+2024/05/25 02:27:27 fetching corpus: 55641, signal 557946/596922 (executing program)
+2024/05/25 02:27:28 fetching corpus: 55691, signal 558101/596922 (executing program)
+2024/05/25 02:27:28 fetching corpus: 55741, signal 558213/596925 (executing program)
+2024/05/25 02:27:28 fetching corpus: 55791, signal 558375/596931 (executing program)
+2024/05/25 02:27:28 fetching corpus: 55841, signal 558547/596931 (executing program)
+2024/05/25 02:27:28 fetching corpus: 55891, signal 558716/596931 (executing program)
+2024/05/25 02:27:29 fetching corpus: 55941, signal 558867/596931 (executing program)
+2024/05/25 02:27:29 fetching corpus: 55991, signal 559043/596931 (executing program)
+2024/05/25 02:27:29 fetching corpus: 56041, signal 559210/596931 (executing program)
+2024/05/25 02:27:29 fetching corpus: 56091, signal 559391/596931 (executing program)
+2024/05/25 02:27:29 fetching corpus: 56141, signal 559550/596932 (executing program)
+2024/05/25 02:27:30 fetching corpus: 56191, signal 559748/596932 (executing program)
+2024/05/25 02:27:30 fetching corpus: 56241, signal 559943/596932 (executing program)
+2024/05/25 02:27:30 fetching corpus: 56291, signal 560110/596932 (executing program)
+2024/05/25 02:27:30 fetching corpus: 56341, signal 560230/596932 (executing program)
+2024/05/25 02:27:31 fetching corpus: 56391, signal 560465/596932 (executing program)
+2024/05/25 02:27:31 fetching corpus: 56441, signal 560568/596934 (executing program)
+2024/05/25 02:27:31 fetching corpus: 56490, signal 560690/596934 (executing program)
+2024/05/25 02:27:31 fetching corpus: 56540, signal 560878/596934 (executing program)
+2024/05/25 02:27:31 fetching corpus: 56590, signal 561039/596934 (executing program)
+2024/05/25 02:27:32 fetching corpus: 56640, signal 561194/596936 (executing program)
+2024/05/25 02:27:32 fetching corpus: 56690, signal 561348/596936 (executing program)
+2024/05/25 02:27:32 fetching corpus: 56740, signal 561517/596936 (executing program)
+2024/05/25 02:27:33 fetching corpus: 56790, signal 561696/596936 (executing program)
+2024/05/25 02:27:33 fetching corpus: 56840, signal 561926/596936 (executing program)
+2024/05/25 02:27:33 fetching corpus: 56890, signal 562086/596936 (executing program)
+2024/05/25 02:27:33 fetching corpus: 56940, signal 562237/596936 (executing program)
+2024/05/25 02:27:33 fetching corpus: 56990, signal 562441/596941 (executing program)
+2024/05/25 02:27:33 fetching corpus: 57040, signal 562583/596941 (executing program)
+2024/05/25 02:27:34 fetching corpus: 57090, signal 562703/596942 (executing program)
+2024/05/25 02:27:34 fetching corpus: 57140, signal 562879/596942 (executing program)
+2024/05/25 02:27:34 fetching corpus: 57190, signal 563010/596942 (executing program)
+2024/05/25 02:27:34 fetching corpus: 57240, signal 563142/596942 (executing program)
+2024/05/25 02:27:34 fetching corpus: 57290, signal 563316/596943 (executing program)
+2024/05/25 02:27:34 fetching corpus: 57340, signal 563458/596945 (executing program)
+2024/05/25 02:27:34 fetching corpus: 57390, signal 563644/596945 (executing program)
+2024/05/25 02:27:35 fetching corpus: 57440, signal 563769/596945 (executing program)
+2024/05/25 02:27:35 fetching corpus: 57490, signal 563985/596945 (executing program)
+2024/05/25 02:27:35 fetching corpus: 57540, signal 564106/596945 (executing program)
+2024/05/25 02:27:35 fetching corpus: 57589, signal 564256/596945 (executing program)
+2024/05/25 02:27:35 fetching corpus: 57639, signal 564408/596945 (executing program)
+2024/05/25 02:27:35 fetching corpus: 57689, signal 564677/596945 (executing program)
+2024/05/25 02:27:36 fetching corpus: 57739, signal 564926/596945 (executing program)
+2024/05/25 02:27:36 fetching corpus: 57789, signal 565095/596945 (executing program)
+2024/05/25 02:27:36 fetching corpus: 57839, signal 565256/596945 (executing program)
+2024/05/25 02:27:36 fetching corpus: 57889, signal 565412/596945 (executing program)
+2024/05/25 02:27:36 fetching corpus: 57939, signal 565576/596945 (executing program)
+2024/05/25 02:27:37 fetching corpus: 57989, signal 565716/596945 (executing program)
+2024/05/25 02:27:37 fetching corpus: 58039, signal 565890/596946 (executing program)
+2024/05/25 02:27:37 fetching corpus: 58089, signal 566049/596946 (executing program)
+2024/05/25 02:27:37 fetching corpus: 58139, signal 566218/596946 (executing program)
+2024/05/25 02:27:37 fetching corpus: 58189, signal 566399/596948 (executing program)
+2024/05/25 02:27:37 fetching corpus: 58239, signal 566587/596948 (executing program)
+2024/05/25 02:27:38 fetching corpus: 58289, signal 566910/596949 (executing program)
+2024/05/25 02:27:38 fetching corpus: 58339, signal 567071/596949 (executing program)
+2024/05/25 02:27:38 fetching corpus: 58389, signal 567240/596949 (executing program)
+2024/05/25 02:27:38 fetching corpus: 58439, signal 567442/596951 (executing program)
+2024/05/25 02:27:38 fetching corpus: 58489, signal 567574/596952 (executing program)
+2024/05/25 02:27:38 fetching corpus: 58539, signal 567753/596952 (executing program)
+2024/05/25 02:27:39 fetching corpus: 58589, signal 567931/596952 (executing program)
+2024/05/25 02:27:39 fetching corpus: 58639, signal 568098/596952 (executing program)
+2024/05/25 02:27:39 fetching corpus: 58688, signal 568298/596952 (executing program)
+2024/05/25 02:27:39 fetching corpus: 58738, signal 568391/596953 (executing program)
+2024/05/25 02:27:39 fetching corpus: 58788, signal 568530/596953 (executing program)
+2024/05/25 02:27:39 fetching corpus: 58838, signal 568673/596953 (executing program)
+2024/05/25 02:27:40 fetching corpus: 58888, signal 568949/596953 (executing program)
+2024/05/25 02:27:40 fetching corpus: 58937, signal 569082/596953 (executing program)
+2024/05/25 02:27:40 fetching corpus: 58987, signal 569211/596953 (executing program)
+2024/05/25 02:27:41 fetching corpus: 59037, signal 569359/596953 (executing program)
+2024/05/25 02:27:41 fetching corpus: 59087, signal 569524/596953 (executing program)
+2024/05/25 02:27:41 fetching corpus: 59137, signal 569666/596953 (executing program)
+2024/05/25 02:27:41 fetching corpus: 59187, signal 569857/596953 (executing program)
+2024/05/25 02:27:41 fetching corpus: 59237, signal 570090/596953 (executing program)
+2024/05/25 02:27:41 fetching corpus: 59287, signal 570223/596954 (executing program)
+2024/05/25 02:27:42 fetching corpus: 59337, signal 570378/596956 (executing program)
+2024/05/25 02:27:42 fetching corpus: 59387, signal 570511/596956 (executing program)
+2024/05/25 02:27:42 fetching corpus: 59437, signal 570647/596956 (executing program)
+2024/05/25 02:27:42 fetching corpus: 59487, signal 570775/596956 (executing program)
+2024/05/25 02:27:42 fetching corpus: 59537, signal 570913/596956 (executing program)
+2024/05/25 02:27:42 fetching corpus: 59587, signal 571111/596956 (executing program)
+2024/05/25 02:27:43 fetching corpus: 59637, signal 571290/596956 (executing program)
+2024/05/25 02:27:43 fetching corpus: 59687, signal 571488/596956 (executing program)
+2024/05/25 02:27:43 fetching corpus: 59737, signal 571689/596958 (executing program)
+2024/05/25 02:27:43 fetching corpus: 59787, signal 571835/596958 (executing program)
+2024/05/25 02:27:43 fetching corpus: 59837, signal 572059/596958 (executing program)
+2024/05/25 02:27:43 fetching corpus: 59887, signal 572200/596958 (executing program)
+2024/05/25 02:27:44 fetching corpus: 59937, signal 572329/596958 (executing program)
+2024/05/25 02:27:44 fetching corpus: 59987, signal 572521/596958 (executing program)
+2024/05/25 02:27:44 fetching corpus: 60037, signal 572636/596960 (executing program)
+2024/05/25 02:27:44 fetching corpus: 60087, signal 572773/596960 (executing program)
+2024/05/25 02:27:44 fetching corpus: 60137, signal 572884/596960 (executing program)
+2024/05/25 02:27:44 fetching corpus: 60187, signal 573005/596963 (executing program)
+2024/05/25 02:27:44 fetching corpus: 60237, signal 573130/596963 (executing program)
+2024/05/25 02:27:45 fetching corpus: 60287, signal 573366/596963 (executing program)
+2024/05/25 02:27:45 fetching corpus: 60337, signal 573521/596963 (executing program)
+2024/05/25 02:27:45 fetching corpus: 60387, signal 573667/596963 (executing program)
+2024/05/25 02:27:45 fetching corpus: 60437, signal 573796/596963 (executing program)
+2024/05/25 02:27:45 fetching corpus: 60487, signal 573934/596963 (executing program)
+2024/05/25 02:27:45 fetching corpus: 60537, signal 574084/596963 (executing program)
+2024/05/25 02:27:45 fetching corpus: 60587, signal 574203/596963 (executing program)
+2024/05/25 02:27:46 fetching corpus: 60637, signal 574315/596963 (executing program)
+2024/05/25 02:27:46 fetching corpus: 60687, signal 574456/596963 (executing program)
+2024/05/25 02:27:46 fetching corpus: 60737, signal 574590/596963 (executing program)
+2024/05/25 02:27:46 fetching corpus: 60787, signal 574738/596963 (executing program)
+2024/05/25 02:27:46 fetching corpus: 60837, signal 574895/596964 (executing program)
+2024/05/25 02:27:46 fetching corpus: 60887, signal 575016/596964 (executing program)
+2024/05/25 02:27:47 fetching corpus: 60937, signal 575139/596965 (executing program)
+2024/05/25 02:27:47 fetching corpus: 60987, signal 575308/596966 (executing program)
+2024/05/25 02:27:47 fetching corpus: 61037, signal 575474/596966 (executing program)
+2024/05/25 02:27:47 fetching corpus: 61087, signal 575582/596966 (executing program)
+2024/05/25 02:27:48 fetching corpus: 61137, signal 575721/596966 (executing program)
+2024/05/25 02:27:48 fetching corpus: 61186, signal 575956/596966 (executing program)
+2024/05/25 02:27:48 fetching corpus: 61236, signal 576057/596966 (executing program)
+2024/05/25 02:27:49 fetching corpus: 61286, signal 576245/596966 (executing program)
+2024/05/25 02:27:49 fetching corpus: 61298, signal 576296/596966 (executing program)
+2024/05/25 02:27:49 fetching corpus: 61298, signal 576296/596966 (executing program)
+2024/05/25 02:28:01 starting 1 fuzzer processes
+[  441.242967][ T8009] memfd_create() without MFD_EXEC nor MFD_NOEXEC_SEAL, pid=8009 'syz-fuzzer'
+02:28:01 executing program 0:
+r0 = syz_init_net_socket$802154_dgram(0x24, 0x2, 0x0)
+close_range(0xffffffffffffffff, 0xffffffffffffffff, 0x2)
+connect$802154_dgram(r0, &(0x7f0000000000)={0x2, @short={0x3}}, 0x8)
+
+[  451.094899][ T1219] ieee802154 phy0 wpan0: encryption failed: -22
+[  451.095779][ T1219] ieee802154 phy1 wpan1: encryption failed: -22
+[  462.288179][ T8036] Bluetooth: hci0: unexpected cc 0x0c03 length: 249 > 1
+[  462.291152][ T8036] Bluetooth: hci0: unexpected cc 0x1003 length: 249 > 9
+[  462.296377][ T8036] Bluetooth: hci0: unexpected cc 0x1001 length: 249 > 9
+[  462.299715][ T8036] Bluetooth: hci0: unexpected cc 0x0c23 length: 249 > 4
+[  462.311855][ T8036] Bluetooth: hci0: unexpected cc 0x0c25 length: 249 > 3
+[  462.313747][ T8036] Bluetooth: hci0: unexpected cc 0x0c38 length: 249 > 2
+[  463.481168][ T8033] chnl_net:caif_netlink_parms(): no params data found
+[  463.667935][ T8033] bridge0: port 1(bridge_slave_0) entered blocking state
+[  463.673799][ T8033] bridge0: port 1(bridge_slave_0) entered disabled state
+[  463.674899][ T8033] bridge_slave_0: entered allmulticast mode
+[  463.677467][ T8033] bridge_slave_0: entered promiscuous mode
+[  463.687337][ T8033] bridge0: port 2(bridge_slave_1) entered blocking state
+[  463.688591][ T8033] bridge0: port 2(bridge_slave_1) entered disabled state
+[  463.689557][ T8033] bridge_slave_1: entered allmulticast mode
+[  463.696211][ T8033] bridge_slave_1: entered promiscuous mode
+[  463.763402][ T8033] bond0: (slave bond_slave_0): Enslaving as an active interface with an up link
+[  463.768912][ T8033] bond0: (slave bond_slave_1): Enslaving as an active interface with an up link
+[  463.830896][ T8033] team0: Port device team_slave_0 added
+[  463.845853][ T8033] team0: Port device team_slave_1 added
+[  463.903642][ T8033] batman_adv: batadv0: Adding interface: batadv_slave_0
+[  463.904440][ T8033] batman_adv: batadv0: The MTU of interface batadv_slave_0 is too small (1500) to handle the transport of batman-adv packets. Packets going over this interface will be fragmented on layer2 which could impact the performance. Setting the MTU to 1560 would solve the problem.
+[  463.907080][ T8033] batman_adv: batadv0: Not using interface batadv_slave_0 (retrying later): interface not active
+[  463.916858][ T8033] batman_adv: batadv0: Adding interface: batadv_slave_1
+[  463.917617][ T8033] batman_adv: batadv0: The MTU of interface batadv_slave_1 is too small (1500) to handle the transport of batman-adv packets. Packets going over this interface will be fragmented on layer2 which could impact the performance. Setting the MTU to 1560 would solve the problem.
+[  463.920277][ T8033] batman_adv: batadv0: Not using interface batadv_slave_1 (retrying later): interface not active
+[  464.018471][ T8033] hsr_slave_0: entered promiscuous mode
+[  464.025568][ T8033] hsr_slave_1: entered promiscuous mode
+[  464.362349][ T8036] Bluetooth: hci0: command 0x0409 tx timeout
+[  464.463013][ T8033] netdevsim netdevsim0 netdevsim0: renamed from eth0
+[  464.480274][ T8033] netdevsim netdevsim0 netdevsim1: renamed from eth1
+[  464.499371][ T8033] netdevsim netdevsim0 netdevsim2: renamed from eth2
+[  464.515913][ T8033] netdevsim netdevsim0 netdevsim3: renamed from eth3
+[  464.694382][ T8033] 8021q: adding VLAN 0 to HW filter on device bond0
+[  464.714835][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): veth1: link becomes ready
+[  464.717535][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): veth0: link becomes ready
+[  464.733944][ T8033] 8021q: adding VLAN 0 to HW filter on device team0
+[  464.741428][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_to_bridge: link becomes ready
+[  464.743406][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): bridge_slave_0: link becomes ready
+[  464.745186][    T9] bridge0: port 1(bridge_slave_0) entered blocking state
+[  464.746486][    T9] bridge0: port 1(bridge_slave_0) entered forwarding state
+[  464.748736][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): bridge0: link becomes ready
+[  464.769448][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_to_bridge: link becomes ready
+[  464.772880][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): bridge_slave_1: link becomes ready
+[  464.781164][    T9] bridge0: port 2(bridge_slave_1) entered blocking state
+[  464.782037][    T9] bridge0: port 2(bridge_slave_1) entered forwarding state
+[  464.803722][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_to_bond: link becomes ready
+[  464.816753][    T9] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_to_bond: link becomes ready
+[  464.830300][ T8253] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_to_team: link becomes ready
+[  464.834535][ T8253] IPv6: ADDRCONF(NETDEV_CHANGE): team_slave_0: link becomes ready
+[  464.837258][ T8253] IPv6: ADDRCONF(NETDEV_CHANGE): team0: link becomes ready
+[  464.853323][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_to_team: link becomes ready
+[  464.855187][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): team_slave_1: link becomes ready
+[  464.867682][ T8253] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_to_hsr: link becomes ready
+[  464.869944][ T8253] IPv6: ADDRCONF(NETDEV_CHANGE): hsr_slave_0: link becomes ready
+[  464.889565][ T8253] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_to_hsr: link becomes ready
+[  464.893702][ T8253] IPv6: ADDRCONF(NETDEV_CHANGE): hsr_slave_1: link becomes ready
+[  464.906987][ T8033] IPv6: ADDRCONF(NETDEV_CHANGE): hsr0: link becomes ready
+[  465.205796][ T8253] IPv6: ADDRCONF(NETDEV_CHANGE): vxcan1: link becomes ready
+[  465.206794][ T8253] IPv6: ADDRCONF(NETDEV_CHANGE): vxcan0: link becomes ready
+[  465.234592][ T8033] 8021q: adding VLAN 0 to HW filter on device batadv0
+[  465.303241][ T8253] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_virt_wifi: link becomes ready
+[  465.305351][ T8253] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_virt_wifi: link becomes ready
+[  465.347615][ T8253] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_vlan: link becomes ready
+[  465.359837][ T8253] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_vlan: link becomes ready
+[  465.369232][ T8033] veth0_vlan: entered promiscuous mode
+[  465.373563][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): vlan0: link becomes ready
+[  465.375134][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): vlan1: link becomes ready
+[  465.394355][ T8033] veth1_vlan: entered promiscuous mode
+[  465.438304][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): macvlan0: link becomes ready
+[  465.440243][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): macvlan1: link becomes ready
+[  465.444672][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_macvtap: link becomes ready
+[  465.447895][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_macvtap: link becomes ready
+[  465.464853][ T8033] veth0_macvtap: entered promiscuous mode
+[  465.479805][ T8033] veth1_macvtap: entered promiscuous mode
+[  465.514436][ T8033] batman_adv: batadv0: Interface activated: batadv_slave_0
+[  465.515556][ T8253] IPv6: ADDRCONF(NETDEV_CHANGE): macvtap0: link becomes ready
+[  465.517362][ T8253] IPv6: ADDRCONF(NETDEV_CHANGE): macsec0: link becomes ready
+[  465.520107][ T8253] IPv6: ADDRCONF(NETDEV_CHANGE): batadv_slave_0: link becomes ready
+[  465.524987][ T8253] IPv6: ADDRCONF(NETDEV_CHANGE): veth0_to_batadv: link becomes ready
+[  465.536984][ T8033] batman_adv: batadv0: Interface activated: batadv_slave_1
+[  465.537977][ T8253] IPv6: ADDRCONF(NETDEV_CHANGE): batadv_slave_1: link becomes ready
+[  465.539873][ T8253] IPv6: ADDRCONF(NETDEV_CHANGE): veth1_to_batadv: link becomes ready
+[  465.550747][ T8033] netdevsim netdevsim0 netdevsim0: set [1, 0] type 2 family 0 port 6081 - 0
+[  465.555114][ T8033] netdevsim netdevsim0 netdevsim1: set [1, 0] type 2 family 0 port 6081 - 0
+[  465.556066][ T8033] netdevsim netdevsim0 netdevsim2: set [1, 0] type 2 family 0 port 6081 - 0
+[  465.557030][ T8033] netdevsim netdevsim0 netdevsim3: set [1, 0] type 2 family 0 port 6081 - 0
+[  465.716950][ T8033] ieee80211 phy3: Selected rate control algorithm 'minstrel_ht'
+[  465.837484][   T49] wlan0: Created IBSS using preconfigured BSSID 50:50:50:50:50:50
+[  465.838560][   T49] wlan0: Creating new IBSS network, BSSID 50:50:50:50:50:50
+[  465.847491][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+[  465.875977][ T8033] ieee80211 phy4: Selected rate control algorithm 'minstrel_ht'
+[  465.990596][   T20] wlan1: Created IBSS using preconfigured BSSID 50:50:50:50:50:50
+[  465.992682][   T20] wlan1: Creating new IBSS network, BSSID 50:50:50:50:50:50
+[  465.996013][ T4417] IPv6: ADDRCONF(NETDEV_CHANGE): wlan1: link becomes ready
+[  466.446659][ T4406] Bluetooth: hci0: command 0x041b tx timeout
+2024/05/25 02:28:28 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+2024/05/25 02:28:28 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x30be, Ip:0x85ff2f15}
+2024/05/25 02:28:28 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/25 02:28:28 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3858, Ip:0x85ff2f25}
+02:28:28 executing program 0:
+r0 = syz_open_dev$tty1(0xc, 0x4, 0x1)
+getdents64(0xffffffffffffffff, 0x0, 0x0)
+r1 = dup(r0)
+ioctl$KDENABIO(r1, 0x4b36)
+prctl$PR_SET_MM_MAP(0x23, 0xe, &(0x7f0000000180)={&(0x7f0000fff000/0x1000)=nil, &(0x7f0000ffd000/0x3000)=nil, &(0x7f0000ffd000/0x2000)=nil, &(0x7f0000ffd000/0x3000)=nil, &(0x7f0000ffa000/0x4000)=nil, &(0x7f0000ffc000/0x4000)=nil, &(0x7f0000ffe000/0x2000)=nil, &(0x7f0000ffe000/0x2000)=nil, &(0x7f0000ffb000/0x2000)=nil, &(0x7f0000ff9000/0x4000)=nil, &(0x7f0000ff9000/0x4000)=nil, 0x0}, 0x68)
+
+[  468.523375][ T8036] Bluetooth: hci0: command 0x040f tx timeout
+02:28:29 executing program 0:
+r0 = openat$vmci(0xffffffffffffff9c, &(0x7f0000000740), 0x2, 0x0)
+ioctl$IOCTL_VMCI_VERSION2(r0, 0x7a7, &(0x7f0000000080)=0xb0000)
+ioctl$IOCTL_VMCI_INIT_CONTEXT(r0, 0x7a0, &(0x7f0000000000)={@my=0x0})
+ioctl$IOCTL_VMCI_NOTIFY_RESOURCE(r0, 0x7a5, &(0x7f0000000200)={{@my=0x0}, 0x0, 0x1})
+ioctl$IOCTL_VMCI_NOTIFY_RESOURCE(r0, 0x7a5, &(0x7f00000000c0)={{@my=0x0}, 0x1})
+r1 = epoll_create(0x1ff)
+epoll_ctl$EPOLL_CTL_ADD(r1, 0x1, r0, &(0x7f0000000100)={0x15})
+epoll_pwait2(r1, &(0x7f00000001c0)=[{}], 0x1, 0x0, 0x0, 0x0)
+
+2024/05/25 02:28:29 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+2024/05/25 02:28:29 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x17c0, Ip:0x81420f46}
+2024/05/25 02:28:29 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/25 02:28:29 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3eef, Ip:0x81420f34}
+[  470.602320][ T4406] Bluetooth: hci0: command 0x0419 tx timeout
+02:28:31 executing program 0:
+socket$nl_generic(0x10, 0x3, 0x10)
+syz_open_procfs(0xffffffffffffffff, 0x0)
+r0 = socket$nl_generic(0x10, 0x3, 0x10)
+r1 = syz_genetlink_get_family_id$ipvs(&(0x7f00000000c0), 0xffffffffffffffff)
+sendmsg$IPVS_CMD_NEW_SERVICE(r0, &(0x7f00000002c0)={0x0, 0x0, &(0x7f0000000280)={&(0x7f00000001c0)={0x38, r1, 0x1, 0x0, 0x0, {}, [@IPVS_CMD_ATTR_SERVICE={0x24, 0x1, 0x0, 0x1, [@IPVS_SVC_ATTR_TIMEOUT={0x8}, @IPVS_SVC_ATTR_AF={0x6, 0x1, 0x2}, @IPVS_SVC_ATTR_FWMARK={0x8}, @IPVS_SVC_ATTR_NETMASK={0x8}]}]}, 0x38}}, 0x0)
+
+2024/05/25 02:28:31 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+2024/05/25 02:28:31 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x4ff4, Ip:0x84025371}
+2024/05/25 02:28:31 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/25 02:28:31 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x4fcd, Ip:0x8402521e}
+2024/05/25 02:28:31 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x5429, Ip:0x84025230}
+2024/05/25 02:28:31 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x15d0, Ip:0x84025bb0}
+2024/05/25 02:28:31 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/25 02:28:31 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x4fcd, Ip:0x84025b9e}
+2024/05/25 02:28:31 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x15d0, Ip:0x84025bb0}
+2024/05/25 02:28:31 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/25 02:28:31 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x4fcd, Ip:0x84025b9e}
+2024/05/25 02:28:31 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x1b4c, Ip:0x81c37b5a}
+2024/05/25 02:28:31 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x1d82, Ip:0x81c37b48}
+2024/05/25 02:28:31 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/25 02:28:31 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x52b6, Ip:0x81c36350}
+02:28:33 executing program 0:
+socketpair$nbd(0x1, 0x1, 0x0, &(0x7f0000000040)={0xffffffffffffffff, <r0=>0xffffffffffffffff})
+ioctl$SIOCSIFHWADDR(r0, 0x8937, &(0x7f0000000000)={'veth0_vlan\x00', @random="010001361000"})
+
+2024/05/25 02:28:33 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x55de, Ip:0x81b6609b}
+2024/05/25 02:28:33 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x30be, Ip:0x85ff2f15}
+2024/05/25 02:28:33 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/25 02:28:33 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3858, Ip:0x85ff2f25}
+2024/05/25 02:28:33 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3e9b, Ip:0x833c12dd}
+2024/05/25 02:28:33 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x13f6, Ip:0x862cc7c9}
+2024/05/25 02:28:33 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x30be, Ip:0x85ffa1f0}
+2024/05/25 02:28:33 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/25 02:28:33 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x3e9b, Ip:0x833c12dd}
+2024/05/25 02:28:33 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x4de3, Ip:0x85ffa202}
+2024/05/25 02:28:33 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0xa83, Ip:0x862ccaac}
+2024/05/25 02:28:33 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x13f6, Ip:0x862cc7c9}
+02:28:35 executing program 0:
+accept() (enabled_site: 12469, site_type: 1)
+socketpair$nbd(0x1, 0x1, 0x0, &(0x7f0000000040)={0xffffffffffffffff, <r0=>0xffffffffffffffff})
+ioctl$SIOCSIFHWADDR(r0, 0x8937, &(0x7f0000000000)={'veth0_vlan\x00', @random="010001361000"})
+
+2024/05/25 02:28:35 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x2297, Ip:0x85ffe255}
+2024/05/25 02:28:35 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x30be, Ip:0x85ffe243}
+2024/05/25 02:28:35 cfuCover: ipc.CustomCov{Id:0xc001, Val:0x33db, Ip:0x833dcc12}
+2024/05/25 02:28:35 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x1975, Ip:0x86089d20}
+2024/05/25 02:28:35 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x30b5, Ip:0x860fdfc4}
+2024/05/25 02:28:35 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x523f, Ip:0x86089d38}
+2024/05/25 02:28:35 mintrinsicCover: ipc.CustomCov{Id:0xc003, Val:0x59bd, Ip:0x835b1664}
+2024/05/25 02:28:35 KDO: #0: memintrinsic id=12469
+[  475.514949][ T8286] BUG: KASAN: unknown-crash in dev_ifsioc+0x604/0xaf0
+[  475.516038][ T8286] Write of size 8 at addr ffff88802288a3e8 by task syz-executor.0/8286
+[  475.516867][ T8286] 
+[  475.517344][ T8286] CPU: 0 PID: 8286 Comm: syz-executor.0 Not tainted 6.4.1-00011-gc173c3c31378 #20
+[  475.518306][ T8286] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+[  475.519434][ T8286] Call Trace:
+[  475.519796][ T8286]  <TASK>
+[  475.520512][ T8286]  dump_stack_lvl+0x1ce/0x2c0
+[  475.521010][ T8286]  ? nf_tcp_handle_invalid+0x3d0/0x3d0
+[  475.521599][ T8286]  ? preempt_count_add+0xa0/0xf0
+[  475.522105][ T8286]  ? panic+0x620/0x620
+[  475.522523][ T8286]  ? lock_acquire+0x21e/0x4a0
+[  475.523020][ T8286]  ? read_lock_is_recursive+0x20/0x20
+[  475.523572][ T8286]  print_report+0x163/0x540
+[  475.524064][ T8286]  ? __mutex_trylock_common+0x145/0x200
+[  475.524626][ T8286]  ? __virt_addr_valid+0x1cc/0x240
+[  475.525137][ T8286]  ? __phys_addr+0x99/0x110
+[  475.525627][ T8286]  kdo_kasan_report+0x7f/0x90
+[  475.526157][ T8286]  ? dev_ifsioc+0x604/0xaf0
+[  475.526649][ T8286]  ? dev_ifsioc+0x604/0xaf0
+[  475.527165][ T8286]  propagate_taint+0x1e1/0x210
+[  475.527719][ T8286]  ? dev_ifsioc+0x604/0xaf0
+[  475.528216][ T8286]  ? dev_ifsioc+0x604/0xaf0
+[  475.528714][ T8286]  __kdo_asan_memcpy+0x69/0xa0
+[  475.529235][ T8286]  dev_ifsioc+0x604/0xaf0
+[  475.529714][ T8286]  ? dev_ioctl+0xc50/0xc50
+[  475.530207][ T8286]  ? full_name_hash+0x93/0xe0
+[  475.530724][ T8286]  ? strcmp+0x2e/0x60
+[  475.531150][ T8286]  dev_ioctl+0x642/0xc50
+[  475.531629][ T8286]  sock_do_ioctl+0x1bf/0x2e0
+[  475.532124][ T8286]  ? sock_show_fdinfo+0x70/0x70
+[  475.532642][ T8286]  sock_ioctl+0x591/0x790
+[  475.533116][ T8286]  ? sock_poll+0x280/0x280
+[  475.533622][ T8286]  ? __fget_files+0x2f0/0x340
+[  475.534161][ T8286]  ? bpf_lsm_file_ioctl+0x9/0x10
+[  475.534742][ T8286]  ? sock_poll+0x280/0x280
+[  475.535228][ T8286]  __se_sys_ioctl+0xc9/0x140
+[  475.535759][ T8286]  do_syscall_64+0x41/0x90
+[  475.536226][ T8286]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  475.536828][ T8286] RIP: 0033:0x7f485b88fddd
+[  475.537298][ T8286] Code: c3 e8 97 2b 00 00 0f 1f 80 00 00 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 b0 ff ff ff f7 d8 64 89 01 48
+[  475.539166][ T8286] RSP: 002b:00007f485c5ad028 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[  475.540020][ T8286] RAX: ffffffffffffffda RBX: 00007f485b9cbf80 RCX: 00007f485b88fddd
+[  475.540821][ T8286] RDX: 0000000020000000 RSI: 0000000000008937 RDI: 0000000000000004
+[  475.541667][ T8286] RBP: 00007f485b901e18 R08: 0000000000000000 R09: 0000000000000000
+[  475.542471][ T8286] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000000
+[  475.543318][ T8286] R13: 000000000000000b R14: 00007f485b9cbf80 R15: 00007f485c58d000
+[  475.544141][ T8286]  </TASK>
+[  475.553549][ T8286] 
+[  475.553837][ T8286] Allocated by task 8033:
+[  475.554364][ T8286]  kasan_set_track+0x4f/0x70
+[  475.555151][ T8286]  __kasan_kmalloc+0x7d/0x90
+[  475.555766][ T8286]  __kmalloc_node+0xb8/0x230
+[  475.556502][ T8286]  kvmalloc_node+0x72/0x160
+[  475.557004][ T8286]  alloc_netdev_mqs+0x8a/0xb50
+[  475.562160][ T8286]  rtnl_create_link+0x256/0x7e0
+[  475.562796][ T8286]  rtnl_newlink+0xfc1/0x1890
+[  475.563536][ T8286]  rtnetlink_rcv_msg+0x6ea/0xc70
+[  475.564108][ T8286]  netlink_rcv_skb+0x184/0x2b0
+[  475.565451][ T8286]  netlink_unicast+0x605/0x6c0
+[  475.565975][ T8286]  netlink_sendmsg+0x826/0x990
+[  475.573260][ T8286]  __sys_sendto+0x3d9/0x500
+[  475.574211][ T8286]  __x64_sys_sendto+0x78/0x90
+[  475.574753][ T8286]  do_syscall_64+0x41/0x90
+[  475.575640][ T8286]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  475.576307][ T8286] 
+[  475.576895][ T8286] The buggy address belongs to the object at ffff88802288a000
+[  475.576895][ T8286]  which belongs to the cache kmalloc-cg-4k of size 4096
+[  475.592958][ T8286] The buggy address is located 1000 bytes inside of
+[  475.592958][ T8286]  4096-byte region [ffff88802288a000, ffff88802288b000)
+[  475.594791][ T8286] 
+[  475.595078][ T8286] The buggy address belongs to the physical page:
+[  475.596173][ T8286] page:ffffea00008a2200 refcount:1 mapcount:0 mapping:0000000000000000 index:0x0 pfn:0x22888
+[  475.597633][ T8286] head:ffffea00008a2200 order:3 entire_mapcount:0 nr_pages_mapped:0 pincount:0
+[  475.599036][ T8286] memcg:ffff8880732de881
+[  475.599540][ T8286] flags: 0xfff00000010200(slab|head|node=0|zone=1|lastcpupid=0x7ff)
+[  475.600873][ T8286] page_type: 0xffffffff()
+[  475.602140][ T8286] raw: 00fff00000010200 ffff88800ec4f500 dead000000000122 0000000000000000
+[  475.603499][ T8286] raw: 0000000000000000 0000000000040004 00000001ffffffff ffff8880732de881
+[  475.604777][ T8286] page dumped because: kasan: bad access detected
+[  475.605551][ T8286] page_owner tracks the page as allocated
+[  475.614123][ T8286] page last allocated via order 3, migratetype Unmovable, gfp_mask 0xd20c0(__GFP_IO|__GFP_FS|__GFP_NOWARN|__GFP_NORETRY|__GFP_COMP|__GFP_NOMEMALLOC), pid 8033, tgid 8033 (syz-executor.0), ts 464068621018, free_ts 372563638784
+[  475.616962][ T8286]  post_alloc_hook+0x1e6/0x210
+[  475.617542][ T8286]  get_page_from_freelist+0x260a/0x2790
+[  475.623419][ T8286]  __alloc_pages+0x1f2/0x480
+[  475.623983][ T8286]  alloc_slab_page+0x6a/0x160
+[  475.624902][ T8286]  new_slab+0x84/0x2f0
+[  475.625424][ T8286]  ___slab_alloc+0xa85/0x10a0
+[  475.633034][ T8286]  __kmem_cache_alloc_node+0x1a8/0x240
+[  475.633700][ T8286]  __kmalloc_node_track_caller+0xa5/0x230
+[  475.634744][ T8286]  kmemdup+0x2a/0x60
+[  475.635238][ T8286]  __addrconf_sysctl_register+0xb3/0x370
+[  475.636271][ T8286]  addrconf_sysctl_register+0xd8/0x110
+[  475.636953][ T8286]  ipv6_add_dev+0xa3f/0xc50
+[  475.637857][ T8286]  addrconf_notify+0x680/0xb30
+[  475.638433][ T8286]  notifier_call_chain+0x137/0x300
+[  475.648083][ T8286]  call_netdevice_notifiers+0x13d/0x1c0
+[  475.648784][ T8286]  register_netdevice+0x1028/0x1210
+[  475.649793][ T8286] page last free stack trace:
+[  475.650353][ T8286]  free_unref_page_prepare+0x75a/0x820
+[  475.653466][ T8286]  free_unref_page+0x37/0x300
+[  475.654074][ T8286]  qlist_free_all+0x22/0x60
+[  475.654991][ T8286]  kasan_quarantine_reduce+0x14b/0x160
+[  475.655707][ T8286]  __kasan_slab_alloc+0x23/0x60
+[  475.661666][ T8286]  slab_post_alloc_hook+0x64/0x380
+[  475.662300][ T8286]  kmem_cache_alloc_node+0x152/0x310
+[  475.663325][ T8286]  __alloc_skb+0x15c/0x2e0
+[  475.663906][ T8286]  tcp_stream_alloc_skb+0x34/0x210
+[  475.664883][ T8286]  tcp_sendmsg_locked+0xadd/0x2690
+[  475.665512][ T8286]  tcp_sendmsg+0x30/0x50
+[  475.671161][ T8286]  sock_write_iter+0x2bd/0x390
+[  475.673491][ T8286]  vfs_write+0x5cf/0x870
+[  475.674027][ T8286]  ksys_write+0x169/0x260
+[  475.674914][ T8286]  do_syscall_64+0x41/0x90
+[  475.675475][ T8286]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  475.679757][ T8286] 
+[  475.680075][ T8286] Memory state around the buggy address:
+[  475.681077][ T8286]  ffff88802288a280: ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec
+[  475.682676][ T8286]  ffff88802288a300: ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec
+[  475.694487][ T8286] >ffff88802288a380: ec ec ec ec ec ec ec ec ec ec ec ec ec ee ec ec
+[  475.695841][ T8286]                                                           ^
+[  475.697101][ T8286]  ffff88802288a400: ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec
+[  475.698363][ T8286]  ffff88802288a480: ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec ec
+[  475.699176][ T8286] BUG: KASAN: unknown-crash in dev_ifsioc+0x604/0xaf0
+[  475.700305][ T8286] Write of size 8 at addr ffffc9000c7efcf2 by task syz-executor.0/8286
+[  475.705142][ T8286] 
+[  475.705440][ T8286] CPU: 0 PID: 8286 Comm: syz-executor.0 Not tainted 6.4.1-00011-gc173c3c31378 #20
+[  475.706364][ T8286] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+[  475.707277][ T8286] Call Trace:
+[  475.707696][ T8286]  <TASK>
+[  475.708065][ T8286]  dump_stack_lvl+0x1ce/0x2c0
+[  475.708606][ T8286]  ? nf_tcp_handle_invalid+0x3d0/0x3d0
+[  475.709189][ T8286]  ? panic+0x620/0x620
+[  475.709661][ T8286]  print_report+0x163/0x540
+[  475.710162][ T8286]  ? __virt_addr_valid+0xa6/0x240
+[  475.710738][ T8286]  kdo_kasan_report+0x7f/0x90
+[  475.711309][ T8286]  ? dev_ifsioc+0x604/0xaf0
+[  475.711866][ T8286]  ? dev_ifsioc+0x604/0xaf0
+[  475.712360][ T8286]  propagate_taint+0x1f6/0x210
+[  475.712875][ T8286]  ? dev_ifsioc+0x604/0xaf0
+[  475.713400][ T8286]  ? dev_ifsioc+0x604/0xaf0
+[  475.713908][ T8286]  __kdo_asan_memcpy+0x69/0xa0
+[  475.714484][ T8286]  dev_ifsioc+0x604/0xaf0
+[  475.714966][ T8286]  ? dev_ioctl+0xc50/0xc50
+[  475.715456][ T8286]  ? full_name_hash+0x93/0xe0
+[  475.715988][ T8286]  ? strcmp+0x2e/0x60
+[  475.716441][ T8286]  dev_ioctl+0x642/0xc50
+[  475.716935][ T8286]  sock_do_ioctl+0x1bf/0x2e0
+[  475.717507][ T8286]  ? sock_show_fdinfo+0x70/0x70
+[  475.718111][ T8286]  sock_ioctl+0x591/0x790
+[  475.718647][ T8286]  ? sock_poll+0x280/0x280
+[  475.719178][ T8286]  ? __fget_files+0x2f0/0x340
+[  475.719765][ T8286]  ? bpf_lsm_file_ioctl+0x9/0x10
+[  475.720328][ T8286]  ? sock_poll+0x280/0x280
+[  475.720828][ T8286]  __se_sys_ioctl+0xc9/0x140
+[  475.721338][ T8286]  do_syscall_64+0x41/0x90
+[  475.721831][ T8286]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  475.722457][ T8286] RIP: 0033:0x7f485b88fddd
+[  475.722977][ T8286] Code: c3 e8 97 2b 00 00 0f 1f 80 00 00 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 b0 ff ff ff f7 d8 64 89 01 48
+[  475.725048][ T8286] RSP: 002b:00007f485c5ad028 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[  475.725900][ T8286] RAX: ffffffffffffffda RBX: 00007f485b9cbf80 RCX: 00007f485b88fddd
+[  475.726703][ T8286] RDX: 0000000020000000 RSI: 0000000000008937 RDI: 0000000000000004
+[  475.727537][ T8286] RBP: 00007f485b901e18 R08: 0000000000000000 R09: 0000000000000000
+[  475.728359][ T8286] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000000
+[  475.729158][ T8286] R13: 000000000000000b R14: 00007f485b9cbf80 R15: 00007f485c58d000
+[  475.729974][ T8286]  </TASK>
+[  475.763053][ T8286] 
+[  475.763394][ T8286] The buggy address belongs to stack of task syz-executor.0/8286
+[  475.773169][ T8286]  and is located at offset 50 in frame:
+[  475.773814][ T8286]  sock_do_ioctl+0x0/0x2e0
+[  475.774673][ T8286] 
+[  475.774960][ T8286] This frame has 3 objects:
+[  475.775491][ T8286]  [32, 72) 'ifr'
+[  475.775905][ T8286]  [112, 113) 'need_copyout'
+[  475.776345][ T8286]  [128, 136) 'data'
+[  475.777237][ T8286] 
+[  475.778009][ T8286] The buggy address belongs to the virtual mapping at
+[  475.778009][ T8286]  [ffffc9000c7e8000, ffffc9000c7f1000) created by:
+[  475.778009][ T8286]  copy_process+0x4c3/0x2e60
+[  475.793713][ T8286] 
+[  475.794029][ T8286] The buggy address belongs to the physical page:
+[  475.795138][ T8286] page:ffffea0005b88a80 refcount:1 mapcount:0 mapping:0000000000000000 index:0x0 pfn:0x16e22a
+[  475.796655][ T8286] memcg:ffff88801c61cb82
+[  475.797152][ T8286] flags: 0x57ff00000000000(node=1|zone=2|lastcpupid=0x7ff)
+[  475.798274][ T8286] page_type: 0xffffffff()
+[  475.798796][ T8286] raw: 057ff00000000000 0000000000000000 dead000000000122 0000000000000000
+[  475.800120][ T8286] raw: 0000000000000000 0000000000000000 00000001ffffffff ffff88801c61cb82
+[  475.804323][ T8286] page dumped because: kasan: bad access detected
+[  475.805094][ T8286] page_owner tracks the page as allocated
+[  475.806097][ T8286] page last allocated via order 0, migratetype Unmovable, gfp_mask 0x2dc2(GFP_KERNEL|__GFP_HIGHMEM|__GFP_NOWARN|__GFP_ZERO), pid 1, tgid 1 (systemd), ts 462252395993, free_ts 0
+[  475.813842][ T8286]  post_alloc_hook+0x1e6/0x210
+[  475.814449][ T8286]  get_page_from_freelist+0x260a/0x2790
+[  475.815465][ T8286]  __alloc_pages+0x1f2/0x480
+[  475.816026][ T8286]  __vmalloc_node_range+0x864/0x1050
+[  475.821742][ T8286]  dup_task_struct+0x343/0x5b0
+[  475.822322][ T8286]  copy_process+0x4c3/0x2e60
+[  475.823225][ T8286]  kernel_clone+0x1c9/0x760
+[  475.823810][ T8286]  __x64_sys_clone+0x28e/0x2e0
+[  475.824741][ T8286]  do_syscall_64+0x41/0x90
+[  475.825287][ T8286]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  475.829762][ T8286] page_owner free stack trace missing
+[  475.831020][ T8286] 
+[  475.833250][ T8286] Memory state around the buggy address:
+[  475.833879][ T8286]  ffffc9000c7efb80: 00 00 00 00 f1 f1 f1 f1 00 f3 f3 f3 00 00 00 00
+[  475.837521][ T8286]  ffffc9000c7efc00: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[  475.838787][ T8286] >ffffc9000c7efc80: 00 00 00 00 00 00 00 00 f1 f1 f1 f1 e9 e9 e9 e9
+[  475.844449][ T8286]                                                              ^
+[  475.845718][ T8286]  ffffc9000c7efd00: e9 f2 f2 f2 f2 f2 01 f2 00 f3 f3 f3 00 00 00 00
+[  475.851186][ T8286]  ffffc9000c7efd80: 00 00 00 00 00 00 00 00 00 00 00 00 f1 f1 f1 f1
+[  475.855147][ T8286] Kernel panic - not syncing: KDO: memcpy hit (id: dev_ifsioc+0x604/0xaf0, callid: 12469S)
+[  475.856220][ T8286] CPU: 0 PID: 8286 Comm: syz-executor.0 Not tainted 6.4.1-00011-gc173c3c31378 #20
+[  475.857169][ T8286] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+[  475.858145][ T8286] Call Trace:
+[  475.858568][ T8286]  <TASK>
+[  475.858960][ T8286]  dump_stack_lvl+0x1ce/0x2c0
+[  475.859573][ T8286]  ? nf_tcp_handle_invalid+0x3d0/0x3d0
+[  475.860223][ T8286]  ? panic+0x620/0x620
+[  475.860753][ T8286]  ? vscnprintf+0x5d/0x80
+[  475.861299][ T8286]  panic+0x2ba/0x620
+[  475.861803][ T8286]  ? dev_ifsioc+0x604/0xaf0
+[  475.862365][ T8286]  ? __wake_up_klogd+0xb7/0xf0
+[  475.862966][ T8286]  ? kdo_sanitizer_cov_write+0x100/0x100
+[  475.863657][ T8286]  ? kdo_kasan_report+0x7f/0x90
+[  475.864259][ T8286]  ? dev_ifsioc+0x604/0xaf0
+[  475.864811][ T8286]  ? dev_ifsioc+0x604/0xaf0
+[  475.865343][ T8286]  propagate_taint+0x20a/0x210
+[  475.865926][ T8286]  ? dev_ifsioc+0x604/0xaf0
+[  475.866490][ T8286]  ? dev_ifsioc+0x604/0xaf0
+[  475.867003][ T8286]  __kdo_asan_memcpy+0x69/0xa0
+[  475.867578][ T8286]  dev_ifsioc+0x604/0xaf0
+[  475.868147][ T8286]  ? dev_ioctl+0xc50/0xc50
+[  475.868679][ T8286]  ? full_name_hash+0x93/0xe0
+[  475.869240][ T8286]  ? strcmp+0x2e/0x60
+[  475.869774][ T8286]  dev_ioctl+0x642/0xc50
+[  475.870305][ T8286]  sock_do_ioctl+0x1bf/0x2e0
+[  475.870858][ T8286]  ? sock_show_fdinfo+0x70/0x70
+[  475.871442][ T8286]  sock_ioctl+0x591/0x790
+[  475.871981][ T8286]  ? sock_poll+0x280/0x280
+[  475.872519][ T8286]  ? __fget_files+0x2f0/0x340
+[  475.873089][ T8286]  ? bpf_lsm_file_ioctl+0x9/0x10
+[  475.873684][ T8286]  ? sock_poll+0x280/0x280
+[  475.874199][ T8286]  __se_sys_ioctl+0xc9/0x140
+[  475.874766][ T8286]  do_syscall_64+0x41/0x90
+[  475.875349][ T8286]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  475.876047][ T8286] RIP: 0033:0x7f485b88fddd
+[  475.876591][ T8286] Code: c3 e8 97 2b 00 00 0f 1f 80 00 00 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 b0 ff ff ff f7 d8 64 89 01 48
+[  475.878664][ T8286] RSP: 002b:00007f485c5ad028 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[  475.879625][ T8286] RAX: ffffffffffffffda RBX: 00007f485b9cbf80 RCX: 00007f485b88fddd
+[  475.880469][ T8286] RDX: 0000000020000000 RSI: 0000000000008937 RDI: 0000000000000004
+[  475.881327][ T8286] RBP: 00007f485b901e18 R08: 0000000000000000 R09: 0000000000000000
+[  475.882192][ T8286] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000000
+[  475.883079][ T8286] R13: 000000000000000b R14: 00007f485b9cbf80 R15: 00007f485c58d000
+[  475.884019][ T8286]  </TASK>
+[  475.884544][ T8286] Kernel Offset: disabled
+[  475.885064][ T8286] Rebooting in 86400 seconds..
+
+VM DIAGNOSIS:
+02:28:35  Registers:
+info registers vcpu 0
+RAX=0000000000000037 RBX=0000000000000000 RCX=ffffffff8392d9be RDX=00000000000003f8
+RSI=dffffc0000000000 RDI=ffffffff8e7ea860 RBP=00000000000003f8 RSP=ffffc9000c7ef2b8
+R8 =ffffffff8e7ea867 R9 =ffffffff814f0843 R10=fffff520018fde38 R11=dffffc0000000001
+R12=ffffffff8e50262b R13=000000000000000b R14=0000000000000037 R15=ffffffff8e7ea820
+RIP=ffffffff8392d9c8 RFL=00000002 [-------] CPL=0 II=0 A20=1 SMM=0 HLT=0
+ES =0000 0000000000000000 ffffffff 00c00000
+CS =0010 0000000000000000 ffffffff 00a09b00 DPL=0 CS64 [-RA]
+SS =0018 0000000000000000 ffffffff 00c09300 DPL=0 DS   [-WA]
+DS =0000 0000000000000000 ffffffff 00c00000
+FS =0000 00007f485c5ad640 ffffffff 00c00000
+GS =0000 ffff8880ba000000 ffffffff 00c00000
+LDT=0000 0000000000000000 ffffffff 00c00000
+TR =0040 fffffe0000003000 00004087 00008b00 DPL=0 TSS64-busy
+GDT=     fffffe0000001000 0000007f
+IDT=     fffffe0000000000 00000fff
+CR0=80050033 CR2=00007f485b9c3524 CR3=000000007203f000 CR4=00350ef0
+DR0=0000000000000000 DR1=0000000000000000 DR2=0000000000000000 DR3=0000000000000000 
+DR6=00000000fffe0ff0 DR7=0000000000000400
+EFER=0000000000000d01
+FCW=037f FSW=0000 [ST=0] FTW=00 MXCSR=00001f80
+FPR0=0000000000000000 0000 FPR1=0000000000000000 0000
+FPR2=0000000000000000 0000 FPR3=0000000000000000 0000
+FPR4=0000000000000000 0000 FPR5=0000000000000000 0000
+FPR6=0000000000000000 0000 FPR7=0000000000000000 0000
+YMM00=0000000000000000 0000000000000000 00000000000f4240 0000000000000000
+YMM01=0000000000000000 0000000000000000 0000000000000000 00000000000f4240
+YMM02=0000000000000000 0000000000000000 00007f485c4fb1a0 00007f485c4fb1a0
+YMM03=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffffffff
+YMM04=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffffffff
+YMM05=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffffff00
+YMM06=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffffffff
+YMM07=0000000000000000 0000000000000000 ffffffffffffffff ffffffffffffff00
+YMM08=0000000000000000 0000000000000000 2570756c6c25706f 6f6c2f7665642f00
+YMM09=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM10=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM11=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM12=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM13=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM14=0000000000000000 0000000000000000 0000000000000000 0000000000000000
+YMM15=0000000000000000 0000000000000000 0000000000000000 0000000000000000

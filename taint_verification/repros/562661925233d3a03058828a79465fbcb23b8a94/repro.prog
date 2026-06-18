@@ -1,0 +1,7 @@
+# {Threaded:false Repeat:false RepeatTimes:0 Procs:1 Slowdown:1 Sandbox: SandboxArg:0 Leak:false NetInjection:false NetDevices:false NetReset:false Cgroups:false BinfmtMisc:false CloseFDs:false KCSAN:false DevlinkPCI:false NicVF:false USB:false VhciInjection:false Wifi:false IEEE802154:false Sysctl:false UseTmpDir:false HandleSegv:false Repro:false Trace:false LegacyOptions:{Collide:false Fault:false FaultCall:0 FaultNth:0}}
+accept(0xffffffffffffffff, 0x0, &(0x7f0000000000)) (enabled_site: 21334, site_type: 1)
+r0 = socket$key(0xf, 0x3, 0x2)
+sendmsg$key(0xffffffffffffffff, &(0x7f0000000180)={0x0, 0x0, &(0x7f0000000040)={0x0}}, 0x0)
+sendmsg$key(0xffffffffffffffff, &(0x7f00000001c0)={0x40000000, 0x0, &(0x7f0000000040)={&(0x7f0000000080)=ANY=[@ANYBLOB="02030609100000000000004c9e000000020013000200000000000000ff0800ed05000600200000000a00060000000000000500e50000070000001ffeff0001000003f1dc7f7c6e870200010000000000004000020000000005000500000000000a"], 0x80}}, 0x0)
+sendmsg$key(0xffffffffffffffff, &(0x7f0000000200)={0x0, 0x0, &(0x7f0000000000)={&(0x7f0000000280)={0x2, 0xa, 0x0, 0x9, 0x2}, 0x10}}, 0x0)
+sendmmsg(r0, &(0x7f0000000180), 0x400008a, 0x0)

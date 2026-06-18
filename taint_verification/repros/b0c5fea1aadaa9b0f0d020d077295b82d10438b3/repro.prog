@@ -1,0 +1,6 @@
+# {Threaded:false Repeat:false RepeatTimes:0 Procs:1 Slowdown:1 Sandbox:none SandboxArg:0 Leak:false NetInjection:true NetDevices:false NetReset:false Cgroups:false BinfmtMisc:false CloseFDs:false KCSAN:false DevlinkPCI:false NicVF:false USB:false VhciInjection:false Wifi:false IEEE802154:false Sysctl:false UseTmpDir:false HandleSegv:false Repro:false Trace:false LegacyOptions:{Collide:false Fault:false FaultCall:0 FaultNth:0}}
+accept(0xffffffffffffffff, 0x0, &(0x7f0000000000)) (enabled_site: 21251, site_type: 1)
+r0 = socket$inet6(0xa, 0x3, 0xff)
+syz_emit_ethernet(0x46, &(0x7f00000003c0)={@local, @remote, @void, {@ipv6={0x86dd, @icmpv6={0x0, 0x6, '\x00', 0x10, 0x3a, 0xff, @remote, @mcast2, {[], @ndisc_ra={0x86, 0x0, 0x0, 0x0, 0x0, 0x200}}}}}}, 0x0)
+connect$inet6(r0, &(0x7f0000000500)={0xa, 0x0, 0x0, @rand_addr=' \x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02'}, 0x1c)
+write$binfmt_elf64(r0, &(0x7f0000000000)=ANY=[], 0xc9)

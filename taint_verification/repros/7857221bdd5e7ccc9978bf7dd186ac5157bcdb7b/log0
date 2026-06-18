@@ -1,0 +1,249 @@
+[  555.649393][ T8108] BUG: KASAN: unknown-crash in copy_msg+0xda/0x180
+[  555.650511][ T8108] Write of size 8 at addr ffff88817dfd4008 by task a.out/8108
+[  555.652613][ T8108]
+[  555.652991][ T8108] CPU: 0 PID: 8108 Comm: a.out Not tainted 6.4.1-00011-gc173c3c31378 #20
+[  555.654156][ T8108] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+[  555.655369][ T8108] Call Trace:
+[  555.655837][ T8108]  <TASK>
+[  555.656284][ T8108]  dump_stack_lvl+0x1ce/0x2c0
+[  555.656976][ T8108]  ? nf_tcp_handle_invalid+0x3d0/0x3d0
+[  555.657716][ T8108]  ? panic+0x620/0x620
+[  555.658194][ T8108]  ? __lock_acquire+0xd9a/0x10d0
+[  555.658851][ T8108]  print_report+0x163/0x540
+[  555.659529][ T8108]  ? __virt_addr_valid+0x1cc/0x240
+[  555.660271][ T8108]  ? __phys_addr+0x99/0x110
+[  555.660895][ T8108]  kdo_kasan_report+0x7f/0x90
+[  555.661474][ T8108]  ? copy_msg+0xda/0x180
+[  555.661999][ T8108]  ? copy_msg+0xda/0x180
+[  555.662521][ T8108]  propagate_taint+0x1e1/0x210
+[  555.663127][ T8108]  ? copy_msg+0xda/0x180
+[  555.663756][ T8108]  ? copy_msg+0xda/0x180
+[  555.664360][ T8108]  __kdo_asan_memcpy+0x69/0xa0
+[  555.665068][ T8108]  copy_msg+0xda/0x180
+[  555.665671][ T8108]  do_msgrcv+0xf10/0x11d0
+[  555.666343][ T8108]  ? do_msgrcv+0x11d0/0x11d0
+[  555.666998][ T8108]  ? ksys_msgrcv+0x40/0x40
+[  555.667645][ T8108]  ? print_irqtrace_events+0x110/0x110
+[  555.668444][ T8108]  ? syscall_enter_from_user_mode+0x32/0x230
+[  555.669287][ T8108]  ? lockdep_hardirqs_on+0xdd/0x180
+[  555.669993][ T8108]  ? syscall_enter_from_user_mode+0x32/0x230
+[  555.670804][ T8108]  do_syscall_64+0x41/0x90
+[  555.671419][ T8108]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  555.672170][ T8108] RIP: 0033:0x7ff9fa0e0f29
+[  555.672714][ T8108] Code: 00 c3 66 2e 0f 1f 84 00 00 00 00 00 0f 1f 44 00 00 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 8b 0d 37 8f 0d 00 f7 d8 64 89 01 48
+[  555.675339][ T8108] RSP: 002b:00007ffe426d3a68 EFLAGS: 00000217 ORIG_RAX: 0000000000000046
+[  555.676508][ T8108] RAX: ffffffffffffffda RBX: 0000000000000000 RCX: 00007ff9fa0e0f29
+[  555.677587][ T8108] RDX: 00000000319abb17 RSI: 0000000020001380 RDI: 0000000000000000
+[  555.678659][ T8108] RBP: 00007ffe426d3a80 R08: 0000000000004800 R09: 00007ffe426d3b70
+[  555.679748][ T8108] R10: 0000000000000000 R11: 0000000000000217 R12: 0000557ccf661090
+[  555.680852][ T8108] R13: 0000000000000000 R14: 0000000000000000 R15: 0000000000000000
+[  555.681972][ T8108]  </TASK>
+[  555.682461][ T8108]
+[  555.682791][ T8108] Allocated by task 8108:
+[  555.683387][ T8108]  kasan_set_track+0x4f/0x70
+[  555.684035][ T8108]  __kasan_kmalloc+0x7d/0x90
+[  555.684729][ T8108]  __kmalloc+0xb9/0x230
+[  555.685303][ T8108]  load_msg+0xc0/0x390
+[  555.685875][ T8108]  do_msgrcv+0x28b/0x11d0
+[  555.686512][ T8108]  do_syscall_64+0x41/0x90
+[  555.687130][ T8108]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  555.687933][ T8108]
+[  555.688282][ T8108] The buggy address belongs to the object at ffff88817dfd4000
+[  555.688282][ T8108]  which belongs to the cache kmalloc-cg-4k of size 4096
+[  555.690188][ T8108] The buggy address is located 8 bytes inside of
+[  555.690188][ T8108]  4096-byte region [ffff88817dfd4000, ffff88817dfd5000)
+[  555.691727][ T8108]
+[  555.692010][ T8108] The buggy address belongs to the physical page:
+[  555.692738][ T8108] page:ffffea0005f7f400 refcount:1 mapcount:0 mapping:0000000000000000 index:0x0 pfn:0x17dfd0
+[  555.693872][ T8108] head:ffffea0005f7f400 order:3 entire_mapcount:0 nr_pages_mapped:0 pincount:0
+[  555.694972][ T8108] memcg:ffff88810babe281
+[  555.695554][ T8108] anon flags: 0x17ff00000010200(slab|head|node=0|zone=2|lastcpupid=0x7ff)
+[  555.696722][ T8108] page_type: 0xffffffff()
+[  555.697312][ T8108] raw: 017ff00000010200 ffff88810004f500 0000000000000000 dead000000000001
+[  555.698257][ T8108] raw: 0000000000000000 0000000080040004 00000001ffffffff ffff88810babe281
+[  555.699200][ T8108] page dumped because: kasan: bad access detected
+[  555.699970][ T8108] page_owner tracks the page as allocated
+[  555.700859][ T8108] page last allocated via order 3, migratetype Unmovable, gfp_mask 0xd20c0(__GFP_IO|__GFP_FS|__GFP_NOWARN|__GFP_NORETRY|__GFP_COMP|__GFP_NOMEMALLOC), pid 5883, tgid 5883 (udevadm), ts 62447484641, free_ts 62444381121
+[  555.703502][ T8108]  post_alloc_hook+0x1e6/0x210
+[  555.704178][ T8108]  get_page_from_freelist+0x260a/0x2790
+[  555.704882][ T8108]  __alloc_pages+0x1f2/0x480
+[  555.705406][ T8108]  alloc_slab_page+0x6a/0x160
+[  555.705982][ T8108]  new_slab+0x84/0x2f0
+[  555.706552][ T8108]  ___slab_alloc+0xa85/0x10a0
+[  555.707196][ T8108]  __kmem_cache_alloc_node+0x1a8/0x240
+[  555.707937][ T8108]  __kmalloc_node+0xa7/0x230
+[  555.708594][ T8108]  kvmalloc_node+0x72/0x160
+[  555.709184][ T8108]  seq_read_iter+0x17c/0xaf0
+[  555.709810][ T8108]  vfs_read+0x5bc/0x830
+[  555.710401][ T8108]  ksys_read+0x169/0x260
+[  555.710992][ T8108]  do_syscall_64+0x41/0x90
+[  555.711676][ T8108]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  555.712513][ T8108] page last free stack trace:
+[  555.713138][ T8108]  free_unref_page_prepare+0x75a/0x820
+[  555.713781][ T8108]  free_unref_page+0x37/0x300
+[  555.714337][ T8108]  __unfreeze_partials+0x1b1/0x1f0
+[  555.714981][ T8108]  put_cpu_partial+0x116/0x180
+[  555.715612][ T8108]  qlist_free_all+0x22/0x60
+[  555.716187][ T8108]  kasan_quarantine_reduce+0x14b/0x160
+[  555.716834][ T8108]  __kasan_slab_alloc+0x23/0x60
+[  555.717530][ T8108]  slab_post_alloc_hook+0x64/0x380
+[  555.718214][ T8108]  kmem_cache_alloc+0x111/0x2a0
+[  555.718890][ T8108]  getname_flags+0x85/0x3d0
+[  555.719513][ T8108]  do_sys_openat2+0xc7/0x390
+[  555.720146][ T8108]  __x64_sys_openat+0x1f7/0x250
+[  555.720848][ T8108]  do_syscall_64+0x41/0x90
+[  555.721516][ T8108]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  555.722191][ T8108]
+[  555.722468][ T8108] Memory state around the buggy address:
+[  555.723092][ T8108]  ffff88817dfd3f00: fc fc fc fc fc fc fc fc fc fc fc fc fc fc fc fc
+[  555.723975][ T8108]  ffff88817dfd3f80: fc fc fc fc fc fc fc fc fc fc fc fc fc fc fc fc
+[  555.725021][ T8108] >ffff88817dfd4000: ec ee ee ee ee ee ee ee ee ee ee ee ee ee ee ee
+[  555.726112][ T8108]                       ^
+[  555.726700][ T8108]  ffff88817dfd4080: ee ee ee ee ee ee ee ee ee ee ee ee ee ee ee ee
+[  555.727751][ T8108]  ffff88817dfd4100: ee ee ee ee ee ee ee ee ee ee ee ee ee ee ee ee
+[  555.728725][ T8108] BUG: KASAN: unknown-crash in copy_msg+0xda/0x180
+[  555.729519][ T8108] Write of size 8 at addr ffff88817dfd0008 by task a.out/8108
+[  555.730513][ T8108]
+[  555.730834][ T8108] CPU: 0 PID: 8108 Comm: a.out Not tainted 6.4.1-00011-gc173c3c31378 #20
+[  555.731958][ T8108] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+[  555.733168][ T8108] Call Trace:
+[  555.733621][ T8108]  <TASK>
+[  555.734028][ T8108]  dump_stack_lvl+0x1ce/0x2c0
+[  555.734681][ T8108]  ? nf_tcp_handle_invalid+0x3d0/0x3d0
+[  555.735368][ T8108]  ? panic+0x620/0x620
+[  555.735843][ T8108]  print_report+0x163/0x540
+[  555.736388][ T8108]  ? __virt_addr_valid+0x1cc/0x240
+[  555.737024][ T8108]  ? __phys_addr+0x99/0x110
+[  555.737646][ T8108]  kdo_kasan_report+0x7f/0x90
+[  555.738311][ T8108]  ? copy_msg+0xda/0x180
+[  555.738880][ T8108]  ? copy_msg+0xda/0x180
+[  555.739384][ T8108]  propagate_taint+0x1f6/0x210
+[  555.739945][ T8108]  ? copy_msg+0xda/0x180
+[  555.740433][ T8108]  ? copy_msg+0xda/0x180
+[  555.740937][ T8108]  __kdo_asan_memcpy+0x69/0xa0
+[  555.741551][ T8108]  copy_msg+0xda/0x180
+[  555.742155][ T8108]  do_msgrcv+0xf10/0x11d0
+[  555.742802][ T8108]  ? do_msgrcv+0x11d0/0x11d0
+[  555.743398][ T8108]  ? ksys_msgrcv+0x40/0x40
+[  555.743926][ T8108]  ? print_irqtrace_events+0x110/0x110
+[  555.744678][ T8108]  ? syscall_enter_from_user_mode+0x32/0x230
+[  555.745483][ T8108]  ? lockdep_hardirqs_on+0xdd/0x180
+[  555.746198][ T8108]  ? syscall_enter_from_user_mode+0x32/0x230
+[  555.746995][ T8108]  do_syscall_64+0x41/0x90
+[  555.747608][ T8108]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  555.748335][ T8108] RIP: 0033:0x7ff9fa0e0f29
+[  555.748952][ T8108] Code: 00 c3 66 2e 0f 1f 84 00 00 00 00 00 0f 1f 44 00 00 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 8b 0d 37 8f 0d 00 f7 d8 64 89 01 48
+[  555.751504][ T8108] RSP: 002b:00007ffe426d3a68 EFLAGS: 00000217 ORIG_RAX: 0000000000000046
+[  555.752595][ T8108] RAX: ffffffffffffffda RBX: 0000000000000000 RCX: 00007ff9fa0e0f29
+[  555.753459][ T8108] RDX: 00000000319abb17 RSI: 0000000020001380 RDI: 0000000000000000
+[  555.754320][ T8108] RBP: 00007ffe426d3a80 R08: 0000000000004800 R09: 00007ffe426d3b70
+[  555.755182][ T8108] R10: 0000000000000000 R11: 0000000000000217 R12: 0000557ccf661090
+[  555.756058][ T8108] R13: 0000000000000000 R14: 0000000000000000 R15: 0000000000000000
+[  555.756936][ T8108]  </TASK>
+[  555.757323][ T8108]
+[  555.757603][ T8108] Allocated by task 8108:
+[  555.758080][ T8108]  kasan_set_track+0x4f/0x70
+[  555.758599][ T8108]  __kasan_kmalloc+0x7d/0x90
+[  555.759117][ T8108]  __kmalloc+0xb9/0x230
+[  555.759587][ T8108]  load_msg+0xc0/0x390
+[  555.760043][ T8108]  do_msgsnd+0x177/0xe40
+[  555.760532][ T8108]  __x64_sys_msgsnd+0x172/0x1c0
+[  555.761142][ T8108]  do_syscall_64+0x41/0x90
+[  555.761680][ T8108]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  555.762365][ T8108]
+[  555.762633][ T8108] The buggy address belongs to the object at ffff88817dfd0000
+[  555.762633][ T8108]  which belongs to the cache kmalloc-cg-4k of size 4096
+[  555.764185][ T8108] The buggy address is located 8 bytes inside of
+[  555.764185][ T8108]  4096-byte region [ffff88817dfd0000, ffff88817dfd1000)
+[  555.765622][ T8108]
+[  555.765894][ T8108] The buggy address belongs to the physical page:
+[  555.766594][ T8108] page:ffffea0005f7f400 refcount:1 mapcount:0 mapping:0000000000000000 index:0x0 pfn:0x17dfd0
+[  555.767715][ T8108] head:ffffea0005f7f400 order:3 entire_mapcount:0 nr_pages_mapped:0 pincount:0
+[  555.768691][ T8108] memcg:ffff88810babe281
+[  555.769162][ T8108] anon flags: 0x17ff00000010200(slab|head|node=0|zone=2|lastcpupid=0x7ff)
+[  555.770108][ T8108] page_type: 0xffffffff()
+[  555.770623][ T8108] raw: 017ff00000010200 ffff88810004f500 0000000000000000 dead000000000001
+[  555.771604][ T8108] raw: 0000000000000000 0000000080040004 00000001ffffffff ffff88810babe281
+[  555.772539][ T8108] page dumped because: kasan: bad access detected
+[  555.773264][ T8108] page_owner tracks the page as allocated
+[  555.773885][ T8108] page last allocated via order 3, migratetype Unmovable, gfp_mask 0xd20c0(__GFP_IO|__GFP_FS|__GFP_NOWARN|__GFP_NORETRY|__GFP_COMP|__GFP_NOMEMALLOC), pid 5883, tgid 5883 (udevadm), ts 62447484641, free_ts 62444381121
+[  555.776127][ T8108]  post_alloc_hook+0x1e6/0x210
+[  555.776663][ T8108]  get_page_from_freelist+0x260a/0x2790
+[  555.777305][ T8108]  __alloc_pages+0x1f2/0x480
+[  555.777820][ T8108]  alloc_slab_page+0x6a/0x160
+[  555.778372][ T8108]  new_slab+0x84/0x2f0
+[  555.778857][ T8108]  ___slab_alloc+0xa85/0x10a0
+[  555.779379][ T8108]  __kmem_cache_alloc_node+0x1a8/0x240
+[  555.780009][ T8108]  __kmalloc_node+0xa7/0x230
+[  555.780524][ T8108]  kvmalloc_node+0x72/0x160
+[  555.781025][ T8108]  seq_read_iter+0x17c/0xaf0
+[  555.781583][ T8108]  vfs_read+0x5bc/0x830
+[  555.782058][ T8108]  ksys_read+0x169/0x260
+[  555.782531][ T8108]  do_syscall_64+0x41/0x90
+[  555.783031][ T8108]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  555.783677][ T8108] page last free stack trace:
+[  555.784194][ T8108]  free_unref_page_prepare+0x75a/0x820
+[  555.784797][ T8108]  free_unref_page+0x37/0x300
+[  555.785307][ T8108]  __unfreeze_partials+0x1b1/0x1f0
+[  555.785862][ T8108]  put_cpu_partial+0x116/0x180
+[  555.786379][ T8108]  qlist_free_all+0x22/0x60
+[  555.786875][ T8108]  kasan_quarantine_reduce+0x14b/0x160
+[  555.787474][ T8108]  __kasan_slab_alloc+0x23/0x60
+[  555.788004][ T8108]  slab_post_alloc_hook+0x64/0x380
+[  555.788755][ T8108]  kmem_cache_alloc+0x111/0x2a0
+[  555.789524][ T8108]  getname_flags+0x85/0x3d0
+[  555.790064][ T8108]  do_sys_openat2+0xc7/0x390
+[  555.790560][ T8108]  __x64_sys_openat+0x1f7/0x250
+[  555.791121][ T8108]  do_syscall_64+0x41/0x90
+[  555.791608][ T8108]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  555.792266][ T8108]
+[  555.792548][ T8108] Memory state around the buggy address:
+[  555.793139][ T8108]  ffff88817dfcff00: fc fc fc fc fc fc fc fc fc fc fc fc fc fc fc fc
+[  555.793971][ T8108]  ffff88817dfcff80: fc fc fc fc fc fc fc fc fc fc fc fc fc fc fc fc
+[  555.794806][ T8108] >ffff88817dfd0000: ec ee ee ee ee ee ee ee ee ee ee ee ee ee ee ee
+[  555.795634][ T8108]                       ^
+[  555.796094][ T8108]  ffff88817dfd0080: ee ee ee ee ee ee ee ee ee ee ee ee ee ee ee ee
+[  555.796973][ T8108]  ffff88817dfd0100: ee ee ee ee ee ee ee ee ee ee ee ee ee ee ee ee
+[  555.797824][ T8108] Kernel panic - not syncing: KDO: memcpy hit (id: copy_msg+0xda/0x180, callid: 20566S)
+[  555.798821][ T8108] CPU: 0 PID: 8108 Comm: a.out Not tainted 6.4.1-00011-gc173c3c31378 #20
+[  555.799696][ T8108] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014
+[  555.800685][ T8108] Call Trace:
+[  555.801041][ T8108]  <TASK>
+[  555.801368][ T8108]  dump_stack_lvl+0x1ce/0x2c0
+[  555.801884][ T8108]  ? nf_tcp_handle_invalid+0x3d0/0x3d0
+[  555.802468][ T8108]  ? panic+0x620/0x620
+[  555.802919][ T8108]  ? vscnprintf+0x5d/0x80
+[  555.803391][ T8108]  panic+0x2ba/0x620
+[  555.803819][ T8108]  ? copy_msg+0xda/0x180
+[  555.804304][ T8108]  ? __wake_up_klogd+0xb7/0xf0
+[  555.804843][ T8108]  ? kdo_sanitizer_cov_write+0x100/0x100
+[  555.805441][ T8108]  ? __phys_addr+0x99/0x110
+[  555.805938][ T8108]  ? kdo_kasan_report+0x7f/0x90
+[  555.806466][ T8108]  ? copy_msg+0xda/0x180
+[  555.806925][ T8108]  ? copy_msg+0xda/0x180
+[  555.807385][ T8108]  propagate_taint+0x20a/0x210
+[  555.807921][ T8108]  ? copy_msg+0xda/0x180
+[  555.808429][ T8108]  ? copy_msg+0xda/0x180
+[  555.808909][ T8108]  __kdo_asan_memcpy+0x69/0xa0
+[  555.809426][ T8108]  copy_msg+0xda/0x180
+[  555.809873][ T8108]  do_msgrcv+0xf10/0x11d0
+[  555.810358][ T8108]  ? do_msgrcv+0x11d0/0x11d0
+[  555.810855][ T8108]  ? ksys_msgrcv+0x40/0x40
+[  555.811335][ T8108]  ? print_irqtrace_events+0x110/0x110
+[  555.811924][ T8108]  ? syscall_enter_from_user_mode+0x32/0x230
+[  555.812603][ T8108]  ? lockdep_hardirqs_on+0xdd/0x180
+[  555.813159][ T8108]  ? syscall_enter_from_user_mode+0x32/0x230
+[  555.813797][ T8108]  do_syscall_64+0x41/0x90
+[  555.814283][ T8108]  entry_SYSCALL_64_after_hwframe+0x63/0xcd
+[  555.814915][ T8108] RIP: 0033:0x7ff9fa0e0f29
+[  555.815392][ T8108] Code: 00 c3 66 2e 0f 1f 84 00 00 00 00 00 0f 1f 44 00 00 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 8b 0d 37 8f 0d 00 f7 d8 64 89 01 48
+[  555.817417][ T8108] RSP: 002b:00007ffe426d3a68 EFLAGS: 00000217 ORIG_RAX: 0000000000000046
+[  555.818303][ T8108] RAX: ffffffffffffffda RBX: 0000000000000000 RCX: 00007ff9fa0e0f29
+[  555.819131][ T8108] RDX: 00000000319abb17 RSI: 0000000020001380 RDI: 0000000000000000
+[  555.819959][ T8108] RBP: 00007ffe426d3a80 R08: 0000000000004800 R09: 00007ffe426d3b70
+[  555.820827][ T8108] R10: 0000000000000000 R11: 0000000000000217 R12: 0000557ccf661090
+[  555.821654][ T8108] R13: 0000000000000000 R14: 0000000000000000 R15: 0000000000000000
+[  555.822491][ T8108]  </TASK>
+[  555.822982][ T8108] Kernel Offset: disabled
+[  555.823492][ T8108] Rebooting in 86400 seconds..
+

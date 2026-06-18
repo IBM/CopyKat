@@ -1,0 +1,8 @@
+# {Threaded:false Repeat:false RepeatTimes:0 Procs:1 Slowdown:1 Sandbox:none SandboxArg:0 Leak:false NetInjection:false NetDevices:false NetReset:false Cgroups:false BinfmtMisc:false CloseFDs:false KCSAN:false DevlinkPCI:false NicVF:false USB:false VhciInjection:false Wifi:false IEEE802154:false Sysctl:false UseTmpDir:false HandleSegv:false Repro:false Trace:false LegacyOptions:{Collide:false Fault:false FaultCall:0 FaultNth:0}}
+accept(0xffffffffffffffff, 0x0, &(0x7f0000000000)) (enabled_site: 187, site_type: 1)
+r0 = socket$inet6(0xa, 0x2, 0x3a)
+ioctl$ifreq_SIOCGIFINDEX_batadv_mesh(r0, 0x8933, &(0x7f00000000c0)={'batadv0\x00', <r1=>0x0})
+setsockopt$inet6_IPV6_PKTINFO(r0, 0x29, 0x32, &(0x7f0000000080)={@local, r1}, 0x14)
+sendmmsg$inet6(r0, &(0x7f0000000040)=[{{&(0x7f0000000380)={0xa, 0x0, 0x0, @remote}, 0x1c, &(0x7f0000000240)=[{&(0x7f0000000100)="a0002883591ecc0e", 0x8}], 0x1}}], 0x1, 0x0)
+r2 = socket$nl_route(0x10, 0x3, 0x0)
+sendmsg$nl_route(r2, &(0x7f0000000200)={0x0, 0x0, &(0x7f00000001c0)={&(0x7f0000000040)=ANY=[@ANYBLOB="4c0000006c000100"/20, @ANYRES32, @ANYBLOB="1c3001000000000014000300767863616e310000000000000000000018003480"], 0x4c}}, 0x0)

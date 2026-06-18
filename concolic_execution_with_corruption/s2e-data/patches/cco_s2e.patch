@@ -1,0 +1,381 @@
+diff --git a/guest/common/include/s2e/monitors/commands/linux.h b/guest/common/include/s2e/monitors/commands/linux.h
+index 7541e82..31ade29 100644
+--- a/guest/common/include/s2e/monitors/commands/linux.h
++++ b/guest/common/include/s2e/monitors/commands/linux.h
+@@ -42,7 +42,8 @@ enum S2E_LINUXMON_COMMANDS {
+     LINUX_MEMORY_MAP,
+     LINUX_MEMORY_UNMAP,
+     LINUX_MEMORY_PROTECT,
+-    LINUX_TASK_SWITCH
++    LINUX_TASK_SWITCH,
++    LINUX_KERNEL_CLONE
+ };
+ 
+ struct S2E_LINUXMON_COMMAND_MEMORY_MAP {
+@@ -135,6 +136,10 @@ struct S2E_LINUXMON_COMMAND_TASK_SWITCH {
+     struct S2E_LINUXMON_TASK next;
+ } __attribute__((packed));
+ 
++struct S2E_LINUXMON_COMMAND_KERNEL_CLONE {
++    uint64_t pid;
++} __attribute__((packed));
++
+ struct S2E_LINUXMON_COMMAND {
+     uint64_t version;
+     enum S2E_LINUXMON_COMMANDS Command;
+@@ -152,6 +157,7 @@ struct S2E_LINUXMON_COMMAND {
+         struct S2E_LINUXMON_COMMAND_MEMORY_UNMAP MemUnmap;
+         struct S2E_LINUXMON_COMMAND_MEMORY_PROTECT MemProtect;
+         struct S2E_LINUXMON_COMMAND_TASK_SWITCH TaskSwitch;
++        struct S2E_LINUXMON_COMMAND_KERNEL_CLONE KernelClone;
+     };
+ } __attribute__((packed));
+ 
+diff --git a/guest/linux/scripts/launch.sh b/guest/linux/scripts/launch.sh
+index 194bfb9..1b4e462 100755
+--- a/guest/linux/scripts/launch.sh
++++ b/guest/linux/scripts/launch.sh
+@@ -31,8 +31,6 @@ set -v
+ # When QEMU reads this message on the serial port, it exits immediately.
+ # The space at the end of the string is important.
+ # XXX: fix hardcoded snapshot name
+-SECRET_MESSAGE_KILL='?!?MAGIC?!?k 0 '
+-SECRET_MESSAGE_SAVEVM='?!?MAGIC?!?s ready '
+ 
+ # If the image is run in non-S2E mode execution will loop indefinitely on
+ # s2eget. This gives the user the opportunity to take a snapshot. When the
+@@ -40,7 +38,8 @@ SECRET_MESSAGE_SAVEVM='?!?MAGIC?!?s ready '
+ # start executing it immediately.
+ echo "booted kernel $(uname -r)" > /dev/ttyS0
+ 
+-echo "$SECRET_MESSAGE_SAVEVM" > /dev/ttyS0
++echo -n "PyE/TUFHSUM/IT9zIHJlYWR5IA==" | base64 -d > /dev/ttyS0
++
+ 
+ ./s2ecmd get bootstrap.sh
+ chmod +x bootstrap.sh
+diff --git a/klee/include/klee/ExecutionState.h b/klee/include/klee/ExecutionState.h
+index e4cb668..171214e 100644
+--- a/klee/include/klee/ExecutionState.h
++++ b/klee/include/klee/ExecutionState.h
+@@ -135,7 +135,7 @@ public:
+     /// constraint is valid but does not evaluate to true with the current set of concolic values
+     /// \return true if the constraint was successfully added, false otherwise
+     ///
+-    virtual bool addConstraint(const ref<Expr> &e, bool recomputeConcolics = false) __attribute__((warn_unused_result));
++    virtual bool addConstraint(const ref<Expr> &e, bool recomputeConcolics = false, bool *skip = NULL) __attribute__((warn_unused_result));
+ 
+     ///
+     /// \brief Compute a set of concrete inputs for the given constraints
+diff --git a/klee/lib/Core/ExecutionState.cpp b/klee/lib/Core/ExecutionState.cpp
+index c17b223..6b230ba 100644
+--- a/klee/lib/Core/ExecutionState.cpp
++++ b/klee/lib/Core/ExecutionState.cpp
+@@ -510,9 +510,14 @@ bool ExecutionState::solve(const ConstraintManager &mgr, Assignment &assignment)
+     return true;
+ }
+ 
+-bool ExecutionState::addConstraint(const ref<Expr> &constraint, bool recomputeConcolics) {
++bool ExecutionState::addConstraint(const ref<Expr> &constraint, bool recomputeConcolics, bool *skip) {
+     auto simplified = simplifyExpr(constraint);
+     auto se = dyn_cast<ConstantExpr>(simplified);
++
++    if (*skip) {
++        return true;
++    }
++
+     if (se && !se->isTrue()) {
+         *klee_warning_stream << "Attempt to add invalid constraint:" << simplified << "\n";
+         return false;
+diff --git a/libcpu/include/cpu/se_libcpu.h b/libcpu/include/cpu/se_libcpu.h
+index a3b601a..f681b27 100644
+--- a/libcpu/include/cpu/se_libcpu.h
++++ b/libcpu/include/cpu/se_libcpu.h
+@@ -42,7 +42,7 @@ void se_do_interrupt_all(int intno, int is_int, int error_code, target_ulong nex
+ #define MEM_TRACE_FLAG_PRECISE 4
+ #define MEM_TRACE_FLAG_PLUGIN  8
+ 
+-enum special_instruction_t { RDTSC, SYSENTER, SYSCALL, PUSHIM };
++enum special_instruction_t { RDTSC, SYSENTER, SYSCALL, PUSHIM, SYSRET };
+ 
+ struct special_instruction_data_t {
+     union {
+diff --git a/libcpu/src/target-i386/translate.c b/libcpu/src/target-i386/translate.c
+index a49d9b5..21a8523 100644
+--- a/libcpu/src/target-i386/translate.c
++++ b/libcpu/src/target-i386/translate.c
+@@ -6970,6 +6970,11 @@ reswitch:
+                 gen_update_cc_op(s);
+                 gen_jmp_im(s, pc_start - s->cs_base);
+                 gen_helper_sysret(tcg_constant_i32(s->dflag));
++#ifdef CONFIG_SYMBEX
++            if (unlikely(*g_sqi.events.on_translate_special_instruction_end_signals_count)) {
++                g_sqi.events.on_translate_special_instruction_end(s, s->tb, pc_start, SYSRET, NULL, 0);
++            }
++#endif
+                 /* condition codes are modified only in long mode */
+                 if (s->lma)
+                     s->cc_op = CC_OP_EFLAGS;
+diff --git a/libs2ecore/include/s2e/CorePlugin.h b/libs2ecore/include/s2e/CorePlugin.h
+index 0e05bde..8db77ae 100644
+--- a/libs2ecore/include/s2e/CorePlugin.h
++++ b/libs2ecore/include/s2e/CorePlugin.h
+@@ -378,6 +378,18 @@ public:
+         onStateForkDecide;
+ 
+ 
++    sigc::signal<void,
++        S2EExecutionState *,
++        klee::ref<klee::Expr>,
++        bool*>
++        onConstraint;
++
++    sigc::signal<void,
++        S2EExecutionState *,
++        klee::ref<klee::Expr>,
++        const std::string &>
++        onConcretization;
++
+     ///
+     /// Signal emitted when spawning a new S2E process.
+     ///
+diff --git a/libs2ecore/include/s2e/S2EExecutionState.h b/libs2ecore/include/s2e/S2EExecutionState.h
+index 3a98708..c9e0f67 100644
+--- a/libs2ecore/include/s2e/S2EExecutionState.h
++++ b/libs2ecore/include/s2e/S2EExecutionState.h
+@@ -313,6 +313,8 @@ public:
+     bool testConstraints(const std::vector<klee::ref<klee::Expr>> &c, klee::ConstraintManager *newConstraints = nullptr,
+                          klee::Assignment *newConcolics = nullptr);
+ 
++    klee::ref<klee::ConstantExpr> toConstant(klee::ref<klee::Expr> e, const std::string &reason);
++
+     /** Creates new unconstrained symbolic value */
+     klee::ref<klee::Expr> createSymbolicValue(const std::string &name = std::string(),
+                                               klee::Expr::Width width = klee::Expr::Int32);
+@@ -410,6 +412,7 @@ public:
+ 
+     void enumPossibleRanges(klee::ref<klee::Expr> e, klee::ref<klee::Expr> start, klee::ref<klee::Expr> end,
+                             std::vector<klee::Range> &ranges);
++    virtual bool addConstraint(const klee::ref<klee::Expr> &e, bool recomputeConcolics = false, bool *skip = NULL) __attribute__((warn_unused_result));
+ };
+ } // namespace s2e
+ 
+diff --git a/libs2ecore/include/s2e/S2EExecutor.h b/libs2ecore/include/s2e/S2EExecutor.h
+index a8947a7..9f346b0 100644
+--- a/libs2ecore/include/s2e/S2EExecutor.h
++++ b/libs2ecore/include/s2e/S2EExecutor.h
+@@ -68,6 +68,8 @@ protected:
+ 
+     bool m_inLoadBalancing;
+ 
++    bool m_first_run;
++
+     struct CPUTimer *m_stateSwitchTimer;
+ 
+     // This is a set of TBs that are currently stored in libcpu's TB cache
+diff --git a/libs2ecore/src/S2EExecutionState.cpp b/libs2ecore/src/S2EExecutionState.cpp
+index 36248c0..573ce1f 100644
+--- a/libs2ecore/src/S2EExecutionState.cpp
++++ b/libs2ecore/src/S2EExecutionState.cpp
+@@ -66,6 +66,17 @@ using namespace klee;
+ 
+ unsigned S2EExecutionState::s_lastSymbolicId = 0;
+ 
++bool S2EExecutionState::addConstraint(const ref<Expr> &constraint, bool recomputeConcolics, bool *skip) {
++    bool _skip;
++    g_s2e->getCorePlugin()->onConstraint.emit(this, constraint, &_skip);
++    return ExecutionState::addConstraint(constraint, recomputeConcolics, &_skip);
++}
++
++ref<ConstantExpr> S2EExecutionState::toConstant(ref<Expr> e, const std::string &reason) {
++    g_s2e->getCorePlugin()->onConcretization.emit(this, e, reason);
++    return ExecutionState::toConstant(e, reason);
++}
++
+ S2EExecutionState::S2EExecutionState(klee::KFunction *kf)
+     : klee::ExecutionState(kf), m_stateID(g_s2e->fetchAndIncrementStateId()), m_startSymbexAtPC((uint64_t) -1),
+       m_active(true), m_zombie(false), m_yielded(false), m_runningConcrete(true), m_pinned(false),
+diff --git a/libs2ecore/src/S2EExecutor.cpp b/libs2ecore/src/S2EExecutor.cpp
+index 180a54c..a0252e7 100644
+--- a/libs2ecore/src/S2EExecutor.cpp
++++ b/libs2ecore/src/S2EExecutor.cpp
+@@ -130,7 +130,7 @@ namespace {
+     cl::opt<bool>
+     EnableForking("enable-forking",
+             cl::desc("Enable forking of S2E states"),
+-            cl::init(true));
++            cl::init(false));
+ 
+     cl::opt<bool>
+     VerboseFork("verbose-fork-info",
+@@ -193,7 +193,7 @@ PrintModeSwitch("print-mode-switch",
+ cl::opt<bool>
+ PrintForkingStatus("print-forking-status",
+             cl::desc("Print message when enabling/disabling forking."),
+-            cl::init(false));
++            cl::init(true));
+ 
+ cl::opt<bool>
+ VerboseStateDeletion("verbose-state-deletion",
+@@ -1371,7 +1371,7 @@ S2EExecutor::StatePair S2EExecutor::doFork(ExecutionState &current, const klee::
+     bool forkOk = true;
+     if (!condition || !dyn_cast<klee::ConstantExpr>(condition)) {
+         if (currentState->forkDisabled) {
+-            g_s2e->getDebugStream(currentState) << "fork disabled at " << hexval(currentState->regs()->getPc()) << "\n";
++            //g_s2e->getDebugStream(currentState) << "fork disabled at " << hexval(currentState->regs()->getPc()) << "\n";
+         }
+ 
+         g_s2e->getCorePlugin()->onStateForkDecide.emit(currentState, condition, forkOk);
+@@ -1388,6 +1388,7 @@ S2EExecutor::StatePair S2EExecutor::doFork(ExecutionState &current, const klee::
+     if (condition) {
+         res = Executor::fork(current, condition, keepConditionTrueInCurrentState);
+     } else {
++        m_s2e->getDebugStream() << "Calling fork without condition\n";
+         res = Executor::fork(current);
+     }
+ 
+diff --git a/libs2eplugins/src/CMakeLists.txt b/libs2eplugins/src/CMakeLists.txt
+index bd8a541..24c98ee 100644
+--- a/libs2eplugins/src/CMakeLists.txt
++++ b/libs2eplugins/src/CMakeLists.txt
+@@ -23,6 +23,8 @@ PROTOBUF_GENERATE_CPP(PROTO_SRCS PROTO_HDRS ${CMAKE_CURRENT_SOURCE_DIR}/s2e/Plug
+ add_library(
+     s2eplugins
+ 
++    s2e/Plugins/cco/cco.cpp
++
+     # Core plugins
+     s2e/Plugins/Core/BaseInstructions.cpp
+     s2e/Plugins/Core/HostFiles.cpp
+diff --git a/libs2eplugins/src/s2e/Plugins/OSMonitors/Linux/LinuxMonitor.cpp b/libs2eplugins/src/s2e/Plugins/OSMonitors/Linux/LinuxMonitor.cpp
+index 0b82b6e..074bbd4 100644
+--- a/libs2eplugins/src/s2e/Plugins/OSMonitors/Linux/LinuxMonitor.cpp
++++ b/libs2eplugins/src/s2e/Plugins/OSMonitors/Linux/LinuxMonitor.cpp
+@@ -183,6 +183,12 @@ void LinuxMonitor::handleTaskSwitch(S2EExecutionState *state, const S2E_LINUXMON
+     BaseLinuxMonitor::handleTaskSwitch(state, cmd.CurrentTask, cmd.TaskSwitch);
+ }
+ 
++void LinuxMonitor::handleKernelClone(S2EExecutionState *state, const S2E_LINUXMON_COMMAND &cmd) {
++    getDebugStream(state) << "Received pid " << hexval(cmd.KernelClone.pid) <<
++        " from kernel clone\n";
++    onKernelClone.emit(state, cmd.KernelClone.pid);
++}
++
+ void LinuxMonitor::handleCommand(S2EExecutionState *state, uint64_t guestDataPtr, uint64_t guestDataSize, void *_cmd) {
+     S2E_LINUXMON_COMMAND &cmd = *(S2E_LINUXMON_COMMAND *) _cmd;
+     switch (cmd.Command) {
+@@ -233,6 +239,10 @@ void LinuxMonitor::handleCommand(S2EExecutionState *state, uint64_t guestDataPtr
+         case LINUX_TASK_SWITCH:
+             handleTaskSwitch(state, cmd);
+             break;
++
++        case LINUX_KERNEL_CLONE:
++            handleKernelClone(state, cmd);
++            break;
+     }
+ }
+ 
+diff --git a/libs2eplugins/src/s2e/Plugins/OSMonitors/Linux/LinuxMonitor.h b/libs2eplugins/src/s2e/Plugins/OSMonitors/Linux/LinuxMonitor.h
+index 988d50b..6f5475f 100644
+--- a/libs2eplugins/src/s2e/Plugins/OSMonitors/Linux/LinuxMonitor.h
++++ b/libs2eplugins/src/s2e/Plugins/OSMonitors/Linux/LinuxMonitor.h
+@@ -89,6 +89,7 @@ private:
+     void handleMemUnmap(S2EExecutionState *state, const S2E_LINUXMON_COMMAND &cmd);
+     void handleMemProtect(S2EExecutionState *state, const S2E_LINUXMON_COMMAND &cmd);
+     void handleTaskSwitch(S2EExecutionState *state, const S2E_LINUXMON_COMMAND &cmd);
++    void handleKernelClone(S2EExecutionState *state, const S2E_LINUXMON_COMMAND &cmd);
+ 
+ public:
+     /// Emitted when a trap occurs in the kernel (e.g. divide by zero, etc.)
+@@ -107,6 +108,9 @@ public:
+     sigc::signal<void, S2EExecutionState *, uint64_t /* pid */, uint64_t /* start */, uint64_t /* size */,
+                  uint64_t /* prot */>
+         onMemoryProtect;
++
++    sigc::signal<void, S2EExecutionState *, uint64_t /* pid */>
++        onKernelClone;
+ };
+ 
+ } // namespace plugins
+diff --git a/libs2eplugins/src/s2e/Plugins/OSMonitors/Support/ProcessExecutionDetector.cpp b/libs2eplugins/src/s2e/Plugins/OSMonitors/Support/ProcessExecutionDetector.cpp
+index b283fe4..f45f0ee 100644
+--- a/libs2eplugins/src/s2e/Plugins/OSMonitors/Support/ProcessExecutionDetector.cpp
++++ b/libs2eplugins/src/s2e/Plugins/OSMonitors/Support/ProcessExecutionDetector.cpp
+@@ -61,6 +61,7 @@ public:
+ 
+ void ProcessExecutionDetector::initialize() {
+     m_monitor = static_cast<OSMonitor *>(s2e()->getPlugin("OSMonitor"));
++    m_linmon = dynamic_cast <LinuxMonitor *>(m_monitor);
+ 
+     // Fetch the list of modules where to report the calls
+     bool ok;
+@@ -83,6 +84,8 @@ void ProcessExecutionDetector::initialize() {
+     m_monitor->onProcessUnload.connect(sigc::mem_fun(*this, &ProcessExecutionDetector::onProcessUnload));
+ 
+     m_monitor->onMonitorLoad.connect(sigc::mem_fun(*this, &ProcessExecutionDetector::onMonitorLoadCb));
++
++    m_linmon->onKernelClone.connect(sigc::mem_fun(*this, &ProcessExecutionDetector::onKernelClone));
+ }
+ 
+ void ProcessExecutionDetector::onProcessLoad(S2EExecutionState *state, uint64_t pageDir, uint64_t pid,
+@@ -96,10 +99,22 @@ void ProcessExecutionDetector::onProcessLoad(S2EExecutionState *state, uint64_t
+         plgState->m_trackedPids.insert(pid);
+         plgState->m_hadTrackedProcesses = true;
+         plgState->m_trackKernel = m_trackKernel;
++        onTargetLoad.emit(state);
+         onConfigChange.emit(state);
+     }
+ }
+ 
++void ProcessExecutionDetector::onKernelClone(S2EExecutionState *state, uint64_t pid) {
++    DECLARE_PLUGINSTATE(ProcessExecutionDetectorState, state);
++
++    if (!isTrackedPid(state,m_linmon->getPid(state)))
++        return;
++
++    getDebugStream(state) << "New process created from target - adding to trace " << pid <<"\n";
++
++    plgState->m_trackedPids.insert(pid);
++}
++
+ void ProcessExecutionDetector::onProcessUnload(S2EExecutionState *state, uint64_t pageDir, uint64_t pid,
+                                                uint64_t returnCode) {
+     DECLARE_PLUGINSTATE(ProcessExecutionDetectorState, state);
+diff --git a/libs2eplugins/src/s2e/Plugins/OSMonitors/Support/ProcessExecutionDetector.h b/libs2eplugins/src/s2e/Plugins/OSMonitors/Support/ProcessExecutionDetector.h
+index 2ca73fb..2fa5389 100644
+--- a/libs2eplugins/src/s2e/Plugins/OSMonitors/Support/ProcessExecutionDetector.h
++++ b/libs2eplugins/src/s2e/Plugins/OSMonitors/Support/ProcessExecutionDetector.h
+@@ -26,6 +26,8 @@
+ #include <s2e/CorePlugin.h>
+ #include <s2e/Plugin.h>
+ #include <s2e/Plugins/Core/BaseInstructions.h>
++#include <s2e/Plugins/OSMonitors/Linux/LinuxMonitor.h>
++
+ #include <s2e/S2EExecutionState.h>
+ 
+ #include <llvm/ADT/DenseSet.h>
+@@ -66,6 +68,7 @@ public:
+ 
+     void trackPid(S2EExecutionState *state, uint64_t pid);
+ 
++    sigc::signal<void, S2EExecutionState *> onTargetLoad;
+     sigc::signal<void, S2EExecutionState *> onMonitorLoad;
+     sigc::signal<void, S2EExecutionState *> onAllProcessesTerminated;
+ 
+@@ -75,6 +78,7 @@ private:
+     typedef std::unordered_set<std::string> StringSet;
+ 
+     OSMonitor *m_monitor;
++    LinuxMonitor *m_linmon;
+ 
+     StringSet m_trackedModules;
+ 
+@@ -83,6 +87,8 @@ private:
+     void onProcessLoad(S2EExecutionState *state, uint64_t pageDir, uint64_t pid, const std::string &ImageFileName);
+     void onProcessUnload(S2EExecutionState *state, uint64_t pageDir, uint64_t pid, uint64_t returnCode);
+ 
++    void onKernelClone(S2EExecutionState *state, uint64_t pid);
++
+     void onMonitorLoadCb(S2EExecutionState *state);
+ 
+     void handleOpcodeInvocation(S2EExecutionState *state, uint64_t guestDataPtr, uint64_t guestDataSize);

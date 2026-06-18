@@ -1,0 +1,6 @@
+# {Threaded:false Repeat:false RepeatTimes:0 Procs:1 Slowdown:1 Sandbox: SandboxArg:0 Leak:false NetInjection:false NetDevices:false NetReset:false Cgroups:false BinfmtMisc:false CloseFDs:false KCSAN:false DevlinkPCI:false NicVF:false USB:false VhciInjection:false Wifi:false IEEE802154:false Sysctl:false UseTmpDir:false HandleSegv:false Repro:false Trace:false LegacyOptions:{Collide:false Fault:false FaultCall:0 FaultNth:0}}
+accept(0xffffffffffffffff, 0x0, &(0x7f0000000000)) (enabled_site: 15808, site_type: 1)
+r0 = openat$sndseq(0xffffffffffffff9c, &(0x7f0000000000), 0x1a0682)
+ioctl$SNDRV_SEQ_IOCTL_CREATE_QUEUE(r0, 0xc08c5332, &(0x7f0000000280)={0x0, 0x0, 0x0, 'queue0\x00'})
+ioctl$SNDRV_SEQ_IOCTL_SET_CLIENT_INFO(r0, 0x40bc5311, &(0x7f0000000340)={0x80, 0x1, 'client1\x00', 0xffffffff80000006, "d62e980da99179cf", "20e48560999fd132b6a5426180a8c27a00fcfffff0003336f794d20352346f8f"})
+write$sndseq(r0, &(0x7f00000000c0)=[{0x0, 0x0, 0x0, 0x0, @time, {}, {}, @raw8={"a357b6b140cbb6215dd33459"}}], 0xfffffee4)

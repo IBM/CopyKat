@@ -1,0 +1,8 @@
+# {Threaded:false Repeat:false RepeatTimes:0 Procs:1 Slowdown:1 Sandbox: SandboxArg:0 Leak:false NetInjection:false NetDevices:false NetReset:false Cgroups:false BinfmtMisc:false CloseFDs:false KCSAN:false DevlinkPCI:false NicVF:false USB:false VhciInjection:false Wifi:false IEEE802154:false Sysctl:false UseTmpDir:false HandleSegv:false Repro:false Trace:false LegacyOptions:{Collide:false Fault:false FaultCall:0 FaultNth:0}}
+accept(0xffffffffffffffff, 0x0, &(0x7f0000000000)) (enabled_site: 19540, site_type: 1)
+r0 = io_uring_setup(0x30d3, &(0x7f00000000c0))
+r1 = socket$qrtr(0x2a, 0x2, 0x0)
+connect$qrtr(r1, &(0x7f0000000080), 0xc)
+read(r1, &(0x7f0000000180)=""/52, 0xfffffdef)
+ioctl$sock_qrtr_TIOCOUTQ(r1, 0x891a, 0x0)
+close_range(r0, 0xffffffffffffffff, 0x0)

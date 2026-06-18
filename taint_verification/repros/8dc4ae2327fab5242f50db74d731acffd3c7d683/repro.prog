@@ -1,0 +1,9 @@
+# {Threaded:true Repeat:false RepeatTimes:0 Procs:1 Slowdown:1 Sandbox:none SandboxArg:0 Leak:false NetInjection:true NetDevices:true NetReset:false Cgroups:false BinfmtMisc:true CloseFDs:true KCSAN:false DevlinkPCI:false NicVF:false USB:true VhciInjection:true Wifi:true IEEE802154:true Sysctl:true UseTmpDir:true HandleSegv:true Repro:false Trace:false LegacyOptions:{Collide:false Fault:false FaultCall:0 FaultNth:0}}
+accept(0xffffffffffffffff, 0x0, &(0x7f0000000000)) (enabled_site: 6015, site_type: 1)
+pipe(&(0x7f0000000140)={<r0=>0xffffffffffffffff, <r1=>0xffffffffffffffff})
+r2 = socket$inet_udp(0x2, 0x2, 0x0)
+close(r2)
+writev(r1, &(0x7f0000001700)=[{&(0x7f0000000080)="11", 0x1}], 0x1)
+socket$nl_netfilter(0x10, 0x3, 0xc)
+poll(&(0x7f00000014c0)=[{r1}], 0x1, 0x1000)
+splice(r0, 0x0, r2, 0x0, 0x4ffe3, 0x0)

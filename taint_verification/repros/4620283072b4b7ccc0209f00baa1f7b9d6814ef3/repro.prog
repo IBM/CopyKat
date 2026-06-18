@@ -1,0 +1,8 @@
+# {Threaded:false Repeat:false RepeatTimes:0 Procs:1 Slowdown:1 Sandbox:none SandboxArg:0 Leak:false NetInjection:true NetDevices:true NetReset:false Cgroups:false BinfmtMisc:true CloseFDs:true KCSAN:false DevlinkPCI:false NicVF:false USB:true VhciInjection:true Wifi:true IEEE802154:true Sysctl:true UseTmpDir:true HandleSegv:true Repro:false Trace:false LegacyOptions:{Collide:false Fault:false FaultCall:0 FaultNth:0}}
+accept(0xffffffffffffffff, 0x0, &(0x7f0000000000)) (enabled_site: 19070, site_type: 1)
+r0 = socket(0x10, 0x2, 0x0)
+ioctl$sock_ipv6_tunnel_SIOCADDTUNNEL(r0, 0x89f1, &(0x7f00000000c0)={'ip6_vti0\x00', &(0x7f0000000000)={'syztnl0\x00', 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, @ipv4={'\x00', '\xff\xff', @remote}, @mcast2}})
+r1 = syz_open_procfs(0x0, &(0x7f0000000000)='net/ip_vs_stats_percpu\x00')
+pread64(r1, &(0x7f00000000c0)=""/130, 0x82, 0x20000000005e)
+ioctl$sock_inet6_udp_SIOCOUTQ(r1, 0x5411, &(0x7f0000000080))
+ioctl$sock_ipv6_tunnel_SIOCDELTUNNEL(r0, 0x89f2, &(0x7f0000000480)={'syztnl0\x00', 0x0})
